@@ -5,6 +5,9 @@
 
 /* append your custom style below */
 
+@import 'colors/light-syntax';
+@import 'colors/dark-syntax';
+
 hr {
   border-color: var(--text-muted-color);
 }
