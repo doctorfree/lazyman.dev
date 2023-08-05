@@ -5,9 +5,8 @@
 
 /* append your custom style below */
 
-@import 'colors/light-syntax';
-@import 'colors/dark-syntax';
-
-hr {
-  border-color: rgb(175, 176, 177);
-}
+@mixin dark-scheme {
+  hr {
+    border-color: rgb(175, 176, 177);
+  }
+} /* dark-scheme */
