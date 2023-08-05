@@ -46,7 +46,7 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
     <a href="https://dotfyle.com/doctorfree/nvim-lazyman"><img src="https://dotfyle.com/doctorfree/nvim-lazyman/badges/leaderkey?style=flat" alt="Leader"/></a>
     <a href="https://dotfyle.com/doctorfree/nvim-lazyman"><img src="https://dotfyle.com/doctorfree/nvim-lazyman/badges/plugin-manager?style=flat" alt="Manager"/></a>
 </p><p>
-  <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/lazyman-plugins.png" style="width:800px;height:600px;">
+  <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/lazyman-plugins.png" alt="Plugins" style="width:870px;height:510px;">
 </p></div>
 
 #### General
