@@ -49,7 +49,7 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
   <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/lazyman-plugins.png" style="width:800px;height:600px;">
 </p></div>
 
-#### General ⚙️
+#### General
 
 - Package management and plugin configuration via [lazy.nvim](https://github.com/folke/lazy.nvim)
 - Easily configure namespace, theme, active plugins, and their configuration via `configuration.lua`
@@ -387,7 +387,7 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
 - Better Tmux navigation with your home row via [Navigator.nvim](https://github.com/numToStr/Navigator.nvim)
 - Convenient jumping through windows with [nvim-window-picker](https://gitlab.com/s1n7ax/nvim-window-picker)
 
-#### Coding 🖥️
+#### Coding
 
 <div align="center"><p>
   <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/diagnostics.png" style="width:800px;height:600px;">
