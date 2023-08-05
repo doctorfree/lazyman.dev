@@ -375,7 +375,7 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
 - `yamlls`
 - `zk`
 
-#### Navigation 🧭
+#### Navigation
 
 <div align="center"><p>
   <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/alpha.png" style="width:800px;height:800px;">
