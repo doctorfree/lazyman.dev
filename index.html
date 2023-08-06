@@ -213,18 +213,14 @@ layout: page
   and cache, execute the following command:
 </p>
 <pre>
-  <code>
-    $HOME/.config/nvim-Lazyman/lazyman.sh -l -r
-  </code>
+  <code>$HOME/.config/nvim-Lazyman/lazyman.sh -l -r</code>
 </pre>
 <p>
   To remove the <code>nvim-Lazyman</code> configuration and associated plugins,
   state, and cache:
 </p>
 <pre>
-  <code>
-    $HOME/.config/nvim-Lazyman/lazyman.sh -r
-  </code>
+  <code>$HOME/.config/nvim-Lazyman/lazyman.sh -r</code>
 </pre>
 <p>
   All <code>lazyman.sh</code> operations can be performed as a dry run with
@@ -232,9 +228,7 @@ layout: page
   be removed without removing any:
 </p>
 <pre>
-  <code>
-    $HOME/.config/nvim-Lazyman/lazyman.sh -n -l -r
-  </code>
+  <code>$HOME/.config/nvim-Lazyman/lazyman.sh -n -l -r</code>
 </pre>
 <h2 id="known-limitations">Known limitations</h2>
 <h3 id="interactive-neovim-configuration-initialization">
@@ -258,9 +252,7 @@ layout: page
   be manually initialized:
 </p>
 <pre>
-  <code>
-    NVIM_APPNAME="&lt;nvim dir&gt; nvim
-  </code>
+  <code>NVIM_APPNAME="&lt;nvim dir&gt;" nvim</code>
 </pre>
 <h3 id="external-configuration-dependencies">
   External Configuration Dependencies
@@ -462,10 +454,8 @@ layout: page
   mode to try and determine the cause of the failure:
 </p>
 <pre>
-  <code>
-    brew update
-    lazyman -d
-  </code>
+  <code> brew update
+    lazyman -d</code>
 </pre>
 <p>
   The <code>lazyman -d</code> command should run the
@@ -539,10 +529,8 @@ layout: page
   configuration with shell commands like:
 </p>
 <pre>
-  <code>
-    GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
-    confval=$(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2&gt;&amp;1)
-  </code>
+  <code> GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
+    confval=$(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2&gt;&amp;1)</code>
 </pre>
 
 The <code>get_conf.lua</code> script can also be used to retrieve option or
@@ -551,10 +539,8 @@ value of the ‘mouse’ option in the <code>nvim-Webdev</code> Neovim
 configuration:
 
 <pre>
-  <code>
-    GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
-    NVIM_APPNAME="nvim-Webdev" nvim -l ${GET_CONF} mouse
-  </code>
+  <code> GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
+    NVIM_APPNAME="nvim-Webdev" nvim -l ${GET_CONF} mouse</code>
 </pre>
 
 <h3 id="lazyman-source-code">Lazyman source code</h3>
