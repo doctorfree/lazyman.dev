@@ -72,7 +72,7 @@ img_cdn:
 avatar: "/assets/neovim-hicontrast.png"
 
 # boolean type, the global switch for TOC in posts.
-toc: false
+toc: true
 
 comments:
   active: "giscus" # The global switch for posts comments, e.g., 'disqus'. Empty means disable
