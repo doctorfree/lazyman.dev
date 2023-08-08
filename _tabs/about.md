@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 11
+order: 10
 ---
 
 <h1 align="center">Lazyman Neovim Configuration Manager</h1>
@@ -40,6 +40,10 @@ to install, initialize, remove, and manage multiple Neovim configurations.
     <a href="https://www.reddit.com/user/No-Blackberry-3160"><img align="center" height="40"
       alt="reddit"
       src="https://raw.githubusercontent.com/doctorfree/doctorfree/master/icons/reddit.png"
+    /></a>
+    <a href="https://github.com/doctorfree"><img align="center" height="40"
+      alt="github"
+      src="https://raw.githubusercontent.com/doctorfree/doctorfree/master/icons/github.png"
     /></a>
     <a href="https://gitlab.com/doctorfree"><img align="center" height="40"
       alt="gitlab"

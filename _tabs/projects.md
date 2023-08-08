@@ -1,6 +1,6 @@
 ---
 icon: fas fa-gg-circle
-order: 10
+order: 9
 ---
 
 [Doctorfree](https://github.com/doctorfree) maintains the following sister projects
@@ -31,6 +31,10 @@ which may be of interest:
     <a href="https://www.reddit.com/user/No-Blackberry-3160"><img align="center" height="40"
       alt="reddit"
       src="https://raw.githubusercontent.com/doctorfree/doctorfree/master/icons/reddit.png"
+    /></a>
+    <a href="https://github.com/doctorfree"><img align="center" height="40"
+      alt="github"
+      src="https://raw.githubusercontent.com/doctorfree/doctorfree/master/icons/github.png"
     /></a>
     <a href="https://gitlab.com/doctorfree"><img align="center" height="40"
       alt="gitlab"
