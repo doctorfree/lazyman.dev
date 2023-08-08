@@ -2,7 +2,6 @@
 title: Neovim Configuration Distributions
 author: doctorfree
 date: 2023-07-20 12:45:00 +0800
-categories: [Blogging, Neovim]
 tags: [neovim, config, configuration, preconfigured, distribution]
 pin: true
 img_path: "/posts/20230720"
