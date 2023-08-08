@@ -1,7 +1,9 @@
 ---
-# the default layout is 'page'
+layout: post
 icon: fas fa-plus-circle
 order: 4
+toc: true
+post_style: page
 ---
 
 ## Lazyman Neovim Configuration Manager News
