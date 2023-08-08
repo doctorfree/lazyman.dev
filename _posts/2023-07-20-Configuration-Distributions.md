@@ -8,7 +8,7 @@ pin: true
 img_path: "/posts/20230720"
 ---
 
-# Neovim Configuration Distributions
+## Introduction
 
 [Neovim](https://neovim.io/) refers to itself as "hyperextensible". Much if not
 most of the ability to extend `Neovim` derives from its plugin architecture.
