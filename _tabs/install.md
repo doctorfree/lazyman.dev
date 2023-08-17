@@ -144,3 +144,38 @@ can be performed. See the Lazyman Wiki article on
 [Manual Installation](https://github.com/doctorfree/nvim-lazyman/wiki/Manual_Installation)
 to manually install rather than use the automated installation feature of
 the `lazyman` command.
+
+## Removal
+
+The `lazyman` command can be used to remove previously installed
+Neovim configurations with the `-r` or `-R` command line option.
+For example, to remove a previously installed `LazyVim` configuration,
+its initialized plugins, state, and cache, execute the following command:
+
+```bash
+lazyman -l -r
+```
+
+A Neovim configuration managed by `lazyman` can be removed by name:
+
+```bash
+lazyman -R -N MagicVim
+```
+
+To remove the `nvim-Lazyman` configuration and associated plugins, state,
+backups, and cache:
+
+```bash
+lazyman -R -N nvim-Lazyman
+```
+
+**WARNING:** removing the `nvim-Lazyman` configuration disables `lazyman`
+features. Remove `nvim-Lazyman` only if you no longer wish to use the Lazyman
+Neovim configuration manager.
+
+All `lazyman.sh` operations can be performed as a dry run with `-n`. For
+example, to see which `LazyVim` folders would be removed without removing any:
+
+```bash
+lazyman -n -l -r
+```
