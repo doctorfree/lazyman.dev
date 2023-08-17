@@ -125,14 +125,6 @@ post_style: page
   <li><a href="#removal">Removal</a></li>
   <li><a href="#known-limitations-and-troubleshooting">Known limitations and troubleshooting</a></li>
   <li><a href="#connect">Connect</a></li>
-  <li>
-    <a href="#appendix">Appendix</a>
-    <ul>
-      <li><a href="#get-configuration-script">get_conf.lua</a></li>
-      <li><a href="#lazyman-source-code">lazyman.sh</a></li>
-      <li><a href="#install-neovim-and-tools">install_neovim.sh</a></li>
-    </ul>
-  </li>
 </ul>
 <h2 id="requirements">Requirements and Installation</h2>
 <p>
@@ -299,66 +291,3 @@ Known Limitations and Troubleshooting</a> for details on limitations and debuggi
       src="https://raw.githubusercontent.com/doctorfree/doctorfree/master/icons/wikipedia.png"
   /></a>
 </div>
-<h2 id="appendix">Appendix</h2>
-<h3 id="get-configuration-script">Get configuration script</h3>
-<p>
-  Neovim 0.9 introduced a new feature which allows execution of Lua scripts in
-  Neovim from the shell command line. The <code>lazyman</code> configuration
-  menu interface uses this new feature to get the current Lazyman Neovim
-  configuration with shell commands like:
-</p>
-<pre>
-  <code> GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
-    confval=$(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2&gt;&amp;1)</code>
-</pre>
-
-The <code>get_conf.lua</code> script can also be used to retrieve option or
-variable settings in any Neovim configuration. For example, to retrieve the
-value of the ‘mouse’ option in the <code>nvim-Webdev</code> Neovim
-configuration:
-
-<pre>
-  <code> GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
-    NVIM_APPNAME="nvim-Webdev" nvim -l ${GET_CONF} mouse</code>
-</pre>
-
-<h3 id="lazyman-source-code">Lazyman source code</h3>
-<p>
-  The convenience script to install and initialize <code>nvim-Lazyman</code> is
-  provided at
-  <a href="https://github.com/doctorfree/nvim-lazyman/wiki/lazyman_command"
-    >lazyman.sh</a
-  >. The automated install and initialization is performed by
-  <code>lazyman</code> and
-  <a href="https://github.com/doctorfree/nvim-lazyman/wiki/install_neovim"
-    >install_neovim.sh</a
-  >.
-</p>
-<p>
-  View the lazyman.sh script in the
-  <a href="https://github.com/doctorfree/nvim-lazyman/wiki/lazyman"
-    >Lazyman Wiki</a
-  >
-</p>
-<h3 id="install-neovim-and-tools">Install neovim and tools</h3>
-<p>
-  The <code>lazyman</code> command checks for a current version of Neovim and,
-  if not found or if the existing version is less than 0.9, invokes the
-  <code>install_neovim.sh</code> script to install Neovim, dependencies,
-  language servers, and tools.
-</p>
-<p>
-  Not all language servers and tools are installed. If additional language
-  support is desired, it can usually be provided by Mason or Homebrew. For
-  example, to provide support for Composer run
-  <code>brew install composer</code>.
-</p>
-<p>
-  The automated Neovim installation is performed by
-  <a href="https://github.com/doctorfree/nvim-lazyman/wiki/install_neovim"
-    >install_neovim.sh</a
-  >. View the <code>install_neovim.sh</code> script in the
-  <a href="https://github.com/doctorfree/nvim-lazyman/wiki/install_neovim"
-    >Lazyman Wiki</a
-  >.
-</p>

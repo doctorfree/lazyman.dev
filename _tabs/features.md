@@ -7,6 +7,9 @@ post_style: page
 ---
 
 - [Lazyman Command Features](#lazyman-command-features)
+- [Get configuration script](#get-configuration-script)
+- [Lazyman source code](#lazyman-source-code)
+- [Install neovim and tools](#install-neovim-and-tools)
 - [Lazyman Neovim Configuration Features](#lazyman-neovim-configuration-features)
   - [General](#general)
   - [Lazyman configuration plugins list](#lazyman-configuration-plugins-list)
@@ -17,7 +20,7 @@ post_style: page
   - [Coding](#coding)
 - [What's New](https://lazyman.dev/news)
 
-### Lazyman Command Features
+## Lazyman Command Features
 
 - `lazyman` command to easily install, initialize, manage, and explore multiple Neovim configurations
 - support for `Lazy`, `Packer`, and `vim-plug` plugin managers (`dein` for `SpaceVim` only)
@@ -41,7 +44,52 @@ post_style: page
 
 See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` command usage.
 
-### Lazyman Neovim Configuration Features
+## Get configuration script
+
+Neovim 0.9 introduced a new feature which allows execution of Lua scripts
+in Neovim from the shell command line. The `lazyman` configuration menu
+interface uses this new feature to get the current Lazyman Neovim
+configuration with shell commands like:
+
+```bash
+GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
+confval=$(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
+```
+
+The `get_conf.lua` script can also be used to retrieve option or variable
+settings in any Neovim configuration. For example, to retrieve the value of
+the 'mouse' option in the `nvim-Webdev` Neovim configuration:
+
+```bash
+GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
+NVIM_APPNAME="nvim-Webdev" nvim -l ${GET_CONF} mouse
+```
+
+## Lazyman source code
+
+The convenience script to install and initialize `nvim-Lazyman` is provided by
+[lazyman](https://github.com/doctorfree/nvim-lazyman/wiki/lazyman_command).
+
+View the lazyman.sh script in the
+[Lazyman Wiki](https://github.com/doctorfree/nvim-lazyman/wiki/lazyman)
+
+## Install neovim and tools
+
+The `lazyman` command checks for a current version of Neovim and, if not found
+or if the existing version is less than 0.9, invokes the `install_neovim.sh`
+script to install Neovim, dependencies, language servers, and tools.
+
+Not all language servers and tools are installed. If additional language
+support is desired, it can usually be provided by Mason or native package
+installation. For example, to provide support for `composer`, `php`, `julia`,
+and `luarocks` run `lazyman -I`.
+
+The automated install and initialization is performed by `lazyman` and
+[install_neovim.sh](https://github.com/doctorfree/nvim-lazyman/wiki/install_neovim).
+View the `install_neovim.sh` script in the
+[Lazyman Wiki](https://github.com/doctorfree/nvim-lazyman/wiki/install_neovim).
+
+## Lazyman Neovim Configuration Features
 
 <div align="center"><p>
     <a href="https://dotfyle.com/doctorfree/nvim-lazyman"><img src="https://dotfyle.com/doctorfree/nvim-lazyman/badges/plugins?style=flat" alt="Plugins"/></a>
@@ -51,7 +99,7 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
   <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/lazyman-plugins.png" alt="Plugins" style="width:870px;height:510px;">
 </p></div>
 
-#### General
+### General
 
 - Package management and plugin configuration via [lazy.nvim](https://github.com/folke/lazy.nvim)
 - Easily configure namespace, theme, active plugins, and their configuration via `configuration.lua`
@@ -84,33 +132,33 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
 - Github actions to publish docker image on Docker Hub, check spelling/syntax, and auto-generate vim help doc (see `.github/workflows/*.yml`)
 - Over 100 plugins with custom configuration and management via menu system
 
-#### Lazyman configuration plugins list
+### Lazyman configuration plugins list
 
-##### Plugins used in the Lazyman Neovim configuration
+#### Plugins used in the Lazyman Neovim configuration
 
-###### AI
+##### AI
 
 - [jackMort/ChatGPT.nvim](https://dotfyle.com/plugins/jackMort/ChatGPT.nvim)
 
-###### bars-and-lines
+##### bars-and-lines
 
 - [m4xshen/smartcolumn.nvim](https://dotfyle.com/plugins/m4xshen/smartcolumn.nvim)
 - [utilyre/barbecue.nvim](https://dotfyle.com/plugins/utilyre/barbecue.nvim)
 - [SmiteshP/nvim-navic](https://dotfyle.com/plugins/SmiteshP/nvim-navic)
 - [luukvbaal/statuscol.nvim](https://dotfyle.com/plugins/luukvbaal/statuscol.nvim)
 
-###### code-runner
+##### code-runner
 
 - [michaelb/sniprun](https://dotfyle.com/plugins/michaelb/sniprun)
 
-###### color
+##### color
 
 - [NvChad/nvim-colorizer.lua](https://dotfyle.com/plugins/NvChad/nvim-colorizer.lua)
 - [folke/twilight.nvim](https://dotfyle.com/plugins/folke/twilight.nvim)
 - [xiyaowong/nvim-transparent](https://dotfyle.com/plugins/xiyaowong/nvim-transparent)
 - [uga-rosa/ccc.nvim](https://dotfyle.com/plugins/uga-rosa/ccc.nvim)
 
-###### colorscheme
+##### colorscheme
 
 - [folke/tokyonight.nvim](https://dotfyle.com/plugins/folke/tokyonight.nvim)
 - [catppuccin/nvim](https://dotfyle.com/plugins/catppuccin/nvim)
@@ -120,36 +168,36 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
 - [EdenEast/nightfox.nvim](https://dotfyle.com/plugins/EdenEast/nightfox.nvim)
 - [neanias/everforest-nvim](https://dotfyle.com/plugins/neanias/everforest-nvim)
 
-###### command-line
+##### command-line
 
 - [gelguy/wilder.nvim](https://dotfyle.com/plugins/gelguy/wilder.nvim)
 
-###### comment
+##### comment
 
 - [echasnovski/mini.comment](https://dotfyle.com/plugins/echasnovski/mini.comment)
 - [JoosepAlviste/nvim-ts-context-commentstring](https://dotfyle.com/plugins/JoosepAlviste/nvim-ts-context-commentstring)
 - [folke/todo-comments.nvim](https://dotfyle.com/plugins/folke/todo-comments.nvim)
 
-###### completion
+##### completion
 
 - [zbirenbaum/copilot.lua](https://dotfyle.com/plugins/zbirenbaum/copilot.lua)
 - [simrat39/rust-tools.nvim](https://dotfyle.com/plugins/simrat39/rust-tools.nvim)
 - [hrsh7th/nvim-cmp](https://dotfyle.com/plugins/hrsh7th/nvim-cmp)
 
-###### cursorline
+##### cursorline
 
 - [RRethy/vim-illuminate](https://dotfyle.com/plugins/RRethy/vim-illuminate)
 
-###### debugging
+##### debugging
 
 - [rcarriga/nvim-dap-ui](https://dotfyle.com/plugins/rcarriga/nvim-dap-ui)
 - [mfussenegger/nvim-dap](https://dotfyle.com/plugins/mfussenegger/nvim-dap)
 
-###### diagnostics
+##### diagnostics
 
 - [folke/trouble.nvim](https://dotfyle.com/plugins/folke/trouble.nvim)
 
-###### editing-support
+##### editing-support
 
 - [echasnovski/mini.pairs](https://dotfyle.com/plugins/echasnovski/mini.pairs)
 - [filipdutescu/renamer.nvim](https://dotfyle.com/plugins/filipdutescu/renamer.nvim)
@@ -158,47 +206,47 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
 - [windwp/nvim-ts-autotag](https://dotfyle.com/plugins/windwp/nvim-ts-autotag)
 - [Wansmer/treesj](https://dotfyle.com/plugins/Wansmer/treesj)
 
-###### file-explorer
+##### file-explorer
 
 - [kevinhwang91/rnvimr](https://dotfyle.com/plugins/kevinhwang91/rnvimr)
 - [nvim-neo-tree/neo-tree.nvim](https://dotfyle.com/plugins/nvim-neo-tree/neo-tree.nvim)
 
-###### fuzzy-finder
+##### fuzzy-finder
 
 - [jvgrootveld/telescope-zoxide](https://dotfyle.com/plugins/jvgrootveld/telescope-zoxide)
 - [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
 
-###### game
+##### game
 
 - [alanfortlink/blackjack.nvim](https://dotfyle.com/plugins/alanfortlink/blackjack.nvim)
 - [ThePrimeagen/vim-be-good](https://dotfyle.com/plugins/ThePrimeagen/vim-be-good)
 - [jim-fx/sudoku.nvim](https://dotfyle.com/plugins/jim-fx/sudoku.nvim)
 
-###### git
+##### git
 
 - [lewis6991/gitsigns.nvim](https://dotfyle.com/plugins/lewis6991/gitsigns.nvim)
 - [NeogitOrg/neogit](https://dotfyle.com/plugins/NeogitOrg/neogit)
 - [sindrets/diffview.nvim](https://dotfyle.com/plugins/sindrets/diffview.nvim)
 
-###### github
+##### github
 
 - [pwntester/octo.nvim](https://dotfyle.com/plugins/pwntester/octo.nvim)
 
-###### golang
+##### golang
 
 - [ray-x/go.nvim](https://dotfyle.com/plugins/ray-x/go.nvim)
 
-###### indent
+##### indent
 
 - [echasnovski/mini.indentscope](https://dotfyle.com/plugins/echasnovski/mini.indentscope)
 - [lukas-reineke/indent-blankline.nvim](https://dotfyle.com/plugins/lukas-reineke/indent-blankline.nvim)
 
-###### keybinding
+##### keybinding
 
 - [anuvyklack/hydra.nvim](https://dotfyle.com/plugins/anuvyklack/hydra.nvim)
 - [folke/which-key.nvim](https://dotfyle.com/plugins/folke/which-key.nvim)
 
-###### lsp
+##### lsp
 
 - [simrat39/symbols-outline.nvim](https://dotfyle.com/plugins/simrat39/symbols-outline.nvim)
 - [jose-elias-alvarez/null-ls.nvim](https://dotfyle.com/plugins/jose-elias-alvarez/null-ls.nvim)
@@ -212,11 +260,11 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
 - [jose-elias-alvarez/typescript.nvim](https://dotfyle.com/plugins/jose-elias-alvarez/typescript.nvim)
 - [glepnir/lspsaga.nvim](https://dotfyle.com/plugins/glepnir/lspsaga.nvim)
 
-###### lsp-installer
+##### lsp-installer
 
 - [williamboman/mason.nvim](https://dotfyle.com/plugins/williamboman/mason.nvim)
 
-###### markdown-and-latex
+##### markdown-and-latex
 
 - [AckslD/nvim-FeMaco.lua](https://dotfyle.com/plugins/AckslD/nvim-FeMaco.lua)
 - [toppair/peek.nvim](https://dotfyle.com/plugins/toppair/peek.nvim)
@@ -224,17 +272,17 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
 - [iamcco/markdown-preview.nvim](https://dotfyle.com/plugins/iamcco/markdown-preview.nvim)
 - [frabjous/knap](https://dotfyle.com/plugins/frabjous/knap)
 
-###### marks
+##### marks
 
 - [ThePrimeagen/harpoon](https://dotfyle.com/plugins/ThePrimeagen/harpoon)
 
-###### motion
+##### motion
 
 - [gen740/SmoothCursor.nvim](https://dotfyle.com/plugins/gen740/SmoothCursor.nvim)
 - [phaazon/hop.nvim](https://dotfyle.com/plugins/phaazon/hop.nvim)
 - [ggandor/leap.nvim](https://dotfyle.com/plugins/ggandor/leap.nvim)
 
-###### note-taking
+##### note-taking
 
 - [nvim-orgmode/orgmode](https://dotfyle.com/plugins/nvim-orgmode/orgmode)
 - [jbyuki/nabla.nvim](https://dotfyle.com/plugins/jbyuki/nabla.nvim)
@@ -243,7 +291,7 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
 - [renerocksai/telekasten.nvim](https://dotfyle.com/plugins/renerocksai/telekasten.nvim)
 - [epwalsh/obsidian.nvim](https://dotfyle.com/plugins/epwalsh/obsidian.nvim)
 
-###### nvim-dev
+##### nvim-dev
 
 - [anuvyklack/animation.nvim](https://dotfyle.com/plugins/anuvyklack/animation.nvim)
 - [ray-x/guihua.lua](https://dotfyle.com/plugins/ray-x/guihua.lua)
@@ -252,86 +300,86 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
 - [MunifTanjim/nui.nvim](https://dotfyle.com/plugins/MunifTanjim/nui.nvim)
 - [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
 
-###### plugin-manager
+##### plugin-manager
 
 - [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
 
-###### preconfigured
+##### preconfigured
 
 - [ldelossa/nvim-ide](https://dotfyle.com/plugins/ldelossa/nvim-ide)
 
-###### programming-languages-support
+##### programming-languages-support
 
 - [AckslD/swenv.nvim](https://dotfyle.com/plugins/AckslD/swenv.nvim)
 
-###### project
+##### project
 
 - [ahmedkhalf/project.nvim](https://dotfyle.com/plugins/ahmedkhalf/project.nvim)
 
-###### quickfix
+##### quickfix
 
 - [kevinhwang91/nvim-bqf](https://dotfyle.com/plugins/kevinhwang91/nvim-bqf)
 
-###### scrollbar
+##### scrollbar
 
 - [petertriho/nvim-scrollbar](https://dotfyle.com/plugins/petertriho/nvim-scrollbar)
 
-###### scrolling
+##### scrolling
 
 - [declancm/cinnamon.nvim](https://dotfyle.com/plugins/declancm/cinnamon.nvim)
 - [karb94/neoscroll.nvim](https://dotfyle.com/plugins/karb94/neoscroll.nvim)
 
-###### search
+##### search
 
 - [kevinhwang91/nvim-hlslens](https://dotfyle.com/plugins/kevinhwang91/nvim-hlslens)
 
-###### session
+##### session
 
 - [jedrzejboczar/possession.nvim](https://dotfyle.com/plugins/jedrzejboczar/possession.nvim)
 
-###### snippet
+##### snippet
 
 - [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
 
-###### split-and-window
+##### split-and-window
 
 - [anuvyklack/windows.nvim](https://dotfyle.com/plugins/anuvyklack/windows.nvim)
 
-###### startup
+##### startup
 
 - [glepnir/dashboard-nvim](https://dotfyle.com/plugins/glepnir/dashboard-nvim)
 - [goolord/alpha-nvim](https://dotfyle.com/plugins/goolord/alpha-nvim)
 - [echasnovski/mini.starter](https://dotfyle.com/plugins/echasnovski/mini.starter)
 
-###### statusline
+##### statusline
 
 - [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
 
-###### syntax
+##### syntax
 
 - [m-demare/hlargs.nvim](https://dotfyle.com/plugins/m-demare/hlargs.nvim)
 - [kylechui/nvim-surround](https://dotfyle.com/plugins/kylechui/nvim-surround)
 - [nvim-treesitter/nvim-treesitter-textobjects](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter-textobjects)
 - [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
 
-###### tabline
+##### tabline
 
 - [akinsho/bufferline.nvim](https://dotfyle.com/plugins/akinsho/bufferline.nvim)
 
-###### test
+##### test
 
 - [nvim-neotest/neotest](https://dotfyle.com/plugins/nvim-neotest/neotest)
 
-###### tmux
+##### tmux
 
 - [numToStr/Navigator.nvim](https://dotfyle.com/plugins/numToStr/Navigator.nvim)
 
-###### treesitter-based
+##### treesitter-based
 
 - [ziontee113/syntax-tree-surfer](https://dotfyle.com/plugins/ziontee113/syntax-tree-surfer)
 - [mfussenegger/nvim-ts-hint-textobject](https://dotfyle.com/plugins/mfussenegger/nvim-ts-hint-textobject)
 
-###### utility
+##### utility
 
 - [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
 - [rcarriga/nvim-notify](https://dotfyle.com/plugins/rcarriga/nvim-notify)
@@ -339,9 +387,9 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
 - [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
 - [kevinhwang91/nvim-ufo](https://dotfyle.com/plugins/kevinhwang91/nvim-ufo)
 
-#### Lazyman configuration language server support
+### Lazyman configuration language server support
 
-##### Language Servers supported in the Lazyman Neovim configuration
+#### Language Servers supported in the Lazyman Neovim configuration
 
 - `ansiblels`
 - `astro`
@@ -377,7 +425,7 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
 - `yamlls`
 - `zk`
 
-#### Navigation
+### Navigation
 
 <div align="center"><p>
   <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/alpha.png" style="width:800px;height:800px;">
@@ -389,7 +437,7 @@ See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` comm
 - Better Tmux navigation with your home row via [Navigator.nvim](https://github.com/numToStr/Navigator.nvim)
 - Convenient jumping through windows with [nvim-window-picker](https://gitlab.com/s1n7ax/nvim-window-picker)
 
-#### Coding
+### Coding
 
 <div align="center"><p>
   <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/diagnostics.png" style="width:800px;height:600px;">
