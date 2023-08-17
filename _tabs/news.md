@@ -73,7 +73,7 @@ Examples:
 
 <details><summary>Click here to view the
 
-**`.lazymanrc` shell initialization script**
+**Lazyman .lazymanrc shell initialization script**
 </summary>
 
 ```bash
@@ -463,7 +463,7 @@ NVIM_APPNAME="nvim-Webdev" nvim -l ${GET_CONF} mouse
 
 <details><summary>Click here to view the
 
-**Lazyman `get_conf.lua` script**
+**Lazyman get_conf.lua script**
 </summary>
 
 ```lua
