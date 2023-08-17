@@ -95,11 +95,7 @@ GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
 NVIM_APPNAME="nvim-Webdev" nvim -l ${GET_CONF} mouse
 ```
 
-<details><summary>Click here to view the
-
-**Lazyman get_conf.lua script**
-
-</summary>
+The Lazyman `get_conf.lua` script:
 
 ```lua
 -- Invoke with 'nvim -l get_conf.lua conf_name'
@@ -176,7 +172,5 @@ else
   end
 end
 ```
-
-</details>
 
 Pretty simple, huh? Thanks Neovim!
