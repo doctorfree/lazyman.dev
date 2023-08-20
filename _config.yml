@@ -20,7 +20,7 @@ tagline: Manage Multiple Neovim Configurations # it will display as the sub-titl
 
 description: >- # this means to ignore newlines until "baseurl:"
   The Lazyman project can be used to install, initialize, and manage multiple
-  Neovim configurations. 100 popular Neovim configurations are supported.
+  Neovim configurations. 101 popular Neovim configurations are supported.
 baseurl: ""
 url: "https://lazyman.dev"
 

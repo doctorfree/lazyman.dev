@@ -40,7 +40,7 @@ post_style: page
 - vimdoc help for `Lazyman` with `:h Lazyman` or `,hl`
 - vimdoc help for `nvims` with `:h Nvims` or `,hn`
 - vimdoc help for `Lazyman` keymaps with `:h Lazyman-Keymaps` or `,hk`
-- 100 supported Neovim configurations out of the box, additional custom configs
+- 101 supported Neovim configurations out of the box, additional custom configs
 
 See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` command usage.
 

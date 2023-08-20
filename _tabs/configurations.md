@@ -18,7 +18,7 @@ presented by invoking `lazyman` without arguments after the initial
 bootstrap process is complete. Lazyman Neovim configurations can
 also be managed with `lazyman` command line operations.
 
-Currently 100 popular Neovim configurations are supported in the
+Currently 101 popular Neovim configurations are supported in the
 following configuration categories:
 
 - [Base configurations](#base-configurations)
