@@ -8,6 +8,12 @@ post_style: page
 
 # Lazyman Neovim Configuration Manager News
 
+## Supported configurations information documents
+
+Each Lazyman supported Neovim configuration now has an
+information document providing configuration details at
+[https://lazyman.dev/info](https://lazyman.dev/info).
+
 ## Lazyman configuration category websites
 
 Lazyman supported configurations using popular Neovim configuration
