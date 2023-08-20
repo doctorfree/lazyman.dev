@@ -14,9 +14,9 @@ $HOME/.config/nvim-Lazyman/lazyman.sh
 
 ## Requirements
 
-The `lazyman` Neovim configuration manager requires Neovim 0.9. The `lazyman`
-installation and initialization process checks for Neovim 0.9 and, if not
-found, installs it and required dependencies and tools.
+The [lazyman](https://lazyman.dev/usage) Neovim configuration manager requires
+Neovim 0.9. The `lazyman` installation and initialization process checks for
+Neovim 0.9 and, if not found, installs it and required dependencies and tools.
 
 Lazyman requires Linux or macOS, git, and the Bash shell.
 
