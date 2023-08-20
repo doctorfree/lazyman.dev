@@ -6,7 +6,19 @@ toc: true
 post_style: page
 ---
 
-## Lazyman Neovim Configuration Manager News
+# Lazyman Neovim Configuration Manager News
+
+## Lazyman configuration category websites
+
+Lazyman supported configurations using popular Neovim configuration
+frameworks are now detailed in newly available websites. These include:
+
+- [AstroNvim configurations](https://astronvim.lazyman.dev)
+- [LazyVim configurations](https://lazyvim.lazyman.dev)
+- [LunarVim configurations](https://lunarvim.lazyman.dev)
+- [NvChad configurations](https://nvchad.lazyman.dev)
+
+## New features, fixes, and improvements
 
 Recent releases of `lazyman` include several new features, fixes, and improvements:
 
