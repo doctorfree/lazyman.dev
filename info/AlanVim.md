@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: AlanVim Configuration Info
+toc: true
+post_style: page
 ---
 
 ## AlanVim Neovim Configuration Information
@@ -8,12 +10,12 @@ title: AlanVim Configuration Info
 Oriented toward Python development
 
 - Install and initialize: **`lazyman -L AlanVim`**
-- Configuration category: [Language](https://github.com/doctorfree/nvim-lazyman#language-configurations)
+- Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-AlanVim`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

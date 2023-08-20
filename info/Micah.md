@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Micah Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Micah Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Micah Configuration Info
 One of the AstroNvim 'Black Belt' example advanced configurations
 
 - Install and initialize: **`lazyman -x Micah`**
-- Configuration category: [Starter](https://github.com/doctorfree/nvim-lazyman#starter-configurations)
+- Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     [AstroNvim](https://astronvim.com)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Micah`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

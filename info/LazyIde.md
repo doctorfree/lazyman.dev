@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: LazyIde Configuration Info
+toc: true
+post_style: page
 ---
 
 ## LazyIde Neovim Configuration Information
@@ -8,12 +10,12 @@ title: LazyIde Configuration Info
 LazyVim IDE config for Neovim
 
 - Install and initialize: **`lazyman -L LazyIde`**
-- Configuration category: [Language](https://github.com/doctorfree/nvim-lazyman#language-configurations)
+- Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     [LazyVim](https://lazyvim.github.io)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-LazyIde`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: LazyVim Configuration Info
+toc: true
+post_style: page
 ---
 
 ## LazyVim Neovim Configuration Information
@@ -8,12 +10,12 @@ title: LazyVim Configuration Info
 The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 
 - Install and initialize: **`lazyman -l`**
-- Configuration category: [Base](https://github.com/doctorfree/nvim-lazyman#base-configurations)
+- Configuration category: [Base](https://lazyman.dev/configurations/#base-configurations)
 - Base configuration:     [LazyVim](https://lazyvim.github.io)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-LazyVim`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

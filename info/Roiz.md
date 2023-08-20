@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Roiz Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Roiz Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Roiz Configuration Info
 Just a random Neovim config found on Github, works well
 
 - Install and initialize: **`lazyman -w Roiz`**
-- Configuration category: [Personal](https://github.com/doctorfree/nvim-lazyman#personal-configurations)
+- Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Roiz`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

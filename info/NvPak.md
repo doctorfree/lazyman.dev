@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: NvPak Configuration Info
+toc: true
+post_style: page
 ---
 
 ## NvPak Neovim Configuration Information
@@ -8,12 +10,12 @@ title: NvPak Configuration Info
 PaK in Farsi means pure, something that is in its purest form
 
 - Install and initialize: **`lazyman -x NvPak`**
-- Configuration category: [Starter](https://github.com/doctorfree/nvim-lazyman#starter-configurations)
+- Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-NvPak`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

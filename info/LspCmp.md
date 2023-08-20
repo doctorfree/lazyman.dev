@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: LspCmp Configuration Info
+toc: true
+post_style: page
 ---
 
 ## LspCmp Neovim Configuration Information
@@ -8,12 +10,12 @@ title: LspCmp Configuration Info
 Minimal setup with 'nvim-lspconfig' and 'nvim-cmp'
 
 - Install and initialize: **`lazyman -x LspCmp`**
-- Configuration category: [Starter](https://github.com/doctorfree/nvim-lazyman#starter-configurations)
+- Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-LspCmp`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

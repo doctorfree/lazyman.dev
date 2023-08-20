@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Normal Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Normal Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Normal Configuration Info
 Based on AstroNvim with additional features
 
 - Install and initialize: **`lazyman -x Normal`**
-- Configuration category: [Starter](https://github.com/doctorfree/nvim-lazyman#starter-configurations)
+- Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     [AstroNvim](https://astronvim.com)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Normal`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

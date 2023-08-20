@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Opinion Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Opinion Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Opinion Configuration Info
 Includes a combination of popular plugins
 
 - Install and initialize: **`lazyman -x Opinion`**
-- Configuration category: [Starter](https://github.com/doctorfree/nvim-lazyman#starter-configurations)
+- Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Opinion`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

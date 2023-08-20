@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: MagicVim Configuration Info
+toc: true
+post_style: page
 ---
 
 ## MagicVim Neovim Configuration Information
@@ -8,12 +10,12 @@ title: MagicVim Configuration Info
 Custom Neovim configuration designed to be light and fast. LSP, Treesitter & Code Completion all work out of the box and auto install when you open a file type that doesn't have code completion for it yet.
 
 - Install and initialize: **`lazyman -m`**
-- Configuration category: [Base](https://github.com/doctorfree/nvim-lazyman#base-configurations)
+- Configuration category: [Base](https://lazyman.dev/configurations/#base-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-MagicVim`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

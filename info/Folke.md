@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Folke Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Folke Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Folke Configuration Info
 Personal Neovim configuration of the great Folke Lemaitre, author of `lazy.nvim`, `noice.nvim`, `LazyVim`, and more
 
 - Install and initialize: **`lazyman -w Folke`**
-- Configuration category: [Personal](https://github.com/doctorfree/nvim-lazyman#personal-configurations)
+- Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     [LazyVim](https://lazyvim.github.io)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Folke`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

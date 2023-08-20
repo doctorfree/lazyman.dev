@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: AstroNvimPlus Configuration Info
+toc: true
+post_style: page
 ---
 
 ## AstroNvimPlus Neovim Configuration Information
@@ -8,12 +10,12 @@ title: AstroNvimPlus Configuration Info
 An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) plugins configuration
 
 - Install and initialize: **`lazyman -a`**
-- Configuration category: [Base](https://github.com/doctorfree/nvim-lazyman#base-configurations)
+- Configuration category: [Base](https://lazyman.dev/configurations/#base-configurations)
 - Base configuration:     [AstroNvim](https://astronvim.com)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-AstroNvimPlus`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

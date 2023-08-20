@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Fennel Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Fennel Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Fennel Configuration Info
 An opinionated configuration reminiscent of Doom-Emacs, written in Fennel
 
 - Install and initialize: **`lazyman -x Fennel`**
-- Configuration category: [Starter](https://github.com/doctorfree/nvim-lazyman#starter-configurations)
+- Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Fennel`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

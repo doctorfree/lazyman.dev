@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Barebones Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Barebones Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Barebones Configuration Info
 Bare bones LazyVim configuration by Traap with a [video introduction](https://youtu.be/xpBoiTIiepc)
 
 - Install and initialize: **`lazyman -x Barebones`**
-- Configuration category: [Starter](https://github.com/doctorfree/nvim-lazyman#starter-configurations)
+- Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     [LazyVim](https://lazyvim.github.io)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Barebones`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

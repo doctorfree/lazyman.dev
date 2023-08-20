@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Insis Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Insis Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Insis Configuration Info
 An out-of-the-box Neovim IDE solution with simple development environment setup
 
 - Install and initialize: **`lazyman -L Insis`**
-- Configuration category: [Language](https://github.com/doctorfree/nvim-lazyman#language-configurations)
+- Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Insis`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

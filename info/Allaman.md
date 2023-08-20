@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Allaman Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Allaman Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Allaman Configuration Info
 One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust, YAML, and more
 
 - Install and initialize: **`lazyman -L Allaman`**
-- Configuration category: [Language](https://github.com/doctorfree/nvim-lazyman#language-configurations)
+- Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Allaman`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

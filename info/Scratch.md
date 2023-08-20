@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Scratch Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Scratch Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Scratch Configuration Info
 Jumping-off point for new Neovim users or those who have declared config bankruptcy
 
 - Install and initialize: **`lazyman -x Scratch`**
-- Configuration category: [Starter](https://github.com/doctorfree/nvim-lazyman#starter-configurations)
+- Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Scratch`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

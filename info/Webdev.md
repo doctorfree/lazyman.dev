@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Webdev Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Webdev Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Webdev Configuration Info
 LazyVim based config for web developers. JavaScript, Typescript, React, and Tailwind CSS support
 
 - Install and initialize: **`lazyman -L Webdev`**
-- Configuration category: [Language](https://github.com/doctorfree/nvim-lazyman#language-configurations)
+- Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     [LazyVim](https://lazyvim.github.io)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Webdev`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

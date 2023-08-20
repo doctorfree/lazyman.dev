@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Abstract Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Abstract Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Abstract Configuration Info
 Preconfigured Neovim as an IDE
 
 - Install and initialize: **`lazyman -g`**
-- Configuration category: [Base](https://github.com/doctorfree/nvim-lazyman#base-configurations)
+- Configuration category: [Base](https://lazyman.dev/configurations/#base-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Abstract`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Orange Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Orange Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Orange Configuration Info
 Modern Neovim configuration for coding React and TypeScript
 
 - Install and initialize: **`lazyman -L Orange`**
-- Configuration category: [Language](https://github.com/doctorfree/nvim-lazyman#language-configurations)
+- Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Orange`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

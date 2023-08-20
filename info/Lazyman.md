@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Lazyman Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Lazyman Neovim Configuration Information
@@ -8,16 +10,16 @@ title: Lazyman Configuration Info
 The Lazyman Neovim configuration serves as a reference implementation of a configuration with multiple namespaces and managed via a command line menu interface. Currently the Lazyman Neovim configuration provides two separate and distinct namespaces ('free' and 'onno'). To switch between namespaces, set the 'namespace' value in 'lua/configuration.lua'.
 
 - Install and initialize: **`Installed and initialized by default`**
-- Configuration category: [Default](https://github.com/doctorfree/nvim-lazyman#lazyman-neovim-configuration-features)
+- Configuration category: [Default](https://lazyman.dev/configurations/#lazyman-neovim-configuration-features)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Lazyman`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 
-[https://github.com/doctorfree/nvim-lazyman](https://github.com/doctorfree/nvim-lazyman)
+[https://lazyman.dev/configurations/](https://github.com/doctorfree/nvim-lazyman)
 
 ### Neovimcraft entry
 

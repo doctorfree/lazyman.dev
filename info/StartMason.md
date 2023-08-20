@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: StartMason Configuration Info
+toc: true
+post_style: page
 ---
 
 ## StartMason Neovim Configuration Information
@@ -8,12 +10,12 @@ title: StartMason Configuration Info
 Same as 'StartLsp' but uses [mason.nvim](https://github.com/williamboman/mason.nvim) to install language servers
 
 - Install and initialize: **`lazyman -x StartMason`**
-- Configuration category: [Starter](https://github.com/doctorfree/nvim-lazyman#starter-configurations)
+- Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-StartMason`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

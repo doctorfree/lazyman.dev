@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Kodo Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Kodo Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Kodo Configuration Info
 Personal Neovim configuration of chadcat, a high school student with no life. Kodo is a Neovim configuration that looks good and is fast (startuptime < 0.035s).
 
 - Install and initialize: **`lazyman -w Kodo`**
-- Configuration category: [Personal](https://github.com/doctorfree/nvim-lazyman#personal-configurations)
+- Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Kodo`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

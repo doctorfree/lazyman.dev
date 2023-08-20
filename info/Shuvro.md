@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Shuvro Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Shuvro Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Shuvro Configuration Info
 Significantly improved fork of [Abouzar Parvan's](https://github.com/abzcoding/lvim) advanced 'LunarVim' config
 
 - Install and initialize: **`lazyman -L Shuvro`**
-- Configuration category: [Language](https://github.com/doctorfree/nvim-lazyman#language-configurations)
+- Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     [LunarVim](https://www.lunarvim.org)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Shuvro`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: BasicIde Configuration Info
+toc: true
+post_style: page
 ---
 
 ## BasicIde Neovim Configuration Information
@@ -8,12 +10,12 @@ title: BasicIde Configuration Info
 Maintained by LunarVim, this is a descendent of 'Neovim from Scratch'.All plugins are pinned to known working versions
 
 - Install and initialize: **`lazyman -j`**
-- Configuration category: [Base](https://github.com/doctorfree/nvim-lazyman#base-configurations)
+- Configuration category: [Base](https://lazyman.dev/configurations/#base-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-BasicIde`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

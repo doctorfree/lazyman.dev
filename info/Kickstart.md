@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Kickstart Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Kickstart Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Kickstart Configuration Info
 Popular starting point, small, single file, well documented, modular
 
 - Install and initialize: **`lazyman -k`**
-- Configuration category: [Starter](https://github.com/doctorfree/nvim-lazyman#starter-configurations)
+- Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     [Kickstart](https://github.com/nvim-lua/kickstart.nvim)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Kickstart`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

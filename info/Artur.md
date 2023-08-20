@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Artur Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Artur Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Artur Configuration Info
 Personal Neovim config of Artur Gomes
 
 - Install and initialize: **`lazyman -w Artur`**
-- Configuration category: [Personal](https://github.com/doctorfree/nvim-lazyman#personal-configurations)
+- Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Artur`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

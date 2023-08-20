@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: JustinLvim Configuration Info
+toc: true
+post_style: page
 ---
 
 ## JustinLvim Neovim Configuration Information
@@ -8,12 +10,12 @@ title: JustinLvim Configuration Info
 LunarVim based Neovim configuration by Justin Angeles
 
 - Install and initialize: **`lazyman -w JustinLvim`**
-- Configuration category: [Personal](https://github.com/doctorfree/nvim-lazyman#personal-configurations)
+- Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     [LunarVim](https://www.lunarvim.org)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-JustinLvim`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Lukas Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Lukas Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Lukas Configuration Info
 Personal Neovim configuration of Lukas Reineke, author of many excellent Neovim plugins. Requires an externally installed `lua-language-server` and `efm-langserver`
 
 - Install and initialize: **`lazyman -w Lukas`**
-- Configuration category: [Personal](https://github.com/doctorfree/nvim-lazyman#personal-configurations)
+- Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Lukas`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

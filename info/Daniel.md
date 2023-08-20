@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Daniel Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Daniel Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Daniel Configuration Info
 'LunarVim' based config of Daniel Vera Gilliard
 
 - Install and initialize: **`lazyman -w Daniel`**
-- Configuration category: [Personal](https://github.com/doctorfree/nvim-lazyman#personal-configurations)
+- Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     [LunarVim](https://www.lunarvim.org)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Daniel`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

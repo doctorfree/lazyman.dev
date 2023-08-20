@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Beethoven Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Beethoven Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Beethoven Configuration Info
 Personal Neovim configuration of mechanical engineering student Alexander Vazquez. See the videos on [plugin setup](https://youtu.be/f5-XZadSFBc) and [workstation setup](https://youtu.be/adODck89qVk).
 
 - Install and initialize: **`lazyman -w Beethoven`**
-- Configuration category: [Personal](https://github.com/doctorfree/nvim-lazyman#personal-configurations)
+- Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Beethoven`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

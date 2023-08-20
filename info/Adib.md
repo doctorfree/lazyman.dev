@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Adib Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Adib Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Adib Configuration Info
 Personal Neovim configuration of Adib Hanna. Tips, distros, and configuration [demo video](https://youtu.be/8SVPOKZVaMU)
 
 - Install and initialize: **`lazyman -w Adib`**
-- Configuration category: [Personal](https://github.com/doctorfree/nvim-lazyman#personal-configurations)
+- Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Adib`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

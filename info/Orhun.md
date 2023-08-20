@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Orhun Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Orhun Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Orhun Configuration Info
 AstroNvim based configuration of open source developer Orhun Parmaksiz
 
 - Install and initialize: **`lazyman -w Orhun`**
-- Configuration category: [Personal](https://github.com/doctorfree/nvim-lazyman#personal-configurations)
+- Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     [AstroNvim](https://astronvim.com)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Orhun`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

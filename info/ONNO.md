@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: ONNO Configuration Info
+toc: true
+post_style: page
 ---
 
 ## ONNO Neovim Configuration Information
@@ -8,12 +10,12 @@ title: ONNO Configuration Info
 One of the primary inspirations for Lazyman
 
 - Install and initialize: **`lazyman -w ONNO`**
-- Configuration category: [Personal](https://github.com/doctorfree/nvim-lazyman#personal-configurations)
+- Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-ONNO`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

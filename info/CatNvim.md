@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: CatNvim Configuration Info
+toc: true
+post_style: page
 ---
 
 ## CatNvim Neovim Configuration Information
@@ -8,12 +10,12 @@ title: CatNvim Configuration Info
 Neovim configuration written in the [C programming language](https://en.wikipedia.org/wiki/C_(programming_language))
 
 - Install and initialize: **`lazyman -L CatNvim`**
-- Configuration category: [Language](https://github.com/doctorfree/nvim-lazyman#language-configurations)
+- Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     [LazyVim](https://lazyvim.github.io)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-CatNvim`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

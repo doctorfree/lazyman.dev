@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Cpp Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Cpp Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Cpp Configuration Info
 'NvChad' based Neovim config with C++ formatting, debugging, and diagnostics. Dreams of Code [video tutorial](https://youtu.be/lsFoZIg-oDs)
 
 - Install and initialize: **`lazyman -L Cpp`**
-- Configuration category: [Language](https://github.com/doctorfree/nvim-lazyman#language-configurations)
+- Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     [NvChad](https://nvchad.com)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Cpp`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

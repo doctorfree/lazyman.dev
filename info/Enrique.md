@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Enrique Configuration Info
+toc: true
+post_style: page
 ---
 
 ## Enrique Neovim Configuration Information
@@ -8,12 +10,12 @@ title: Enrique Configuration Info
 Personal Neovim configuration of Enrique Mejidas
 
 - Install and initialize: **`lazyman -w Enrique`**
-- Configuration category: [Personal](https://github.com/doctorfree/nvim-lazyman#personal-configurations)
+- Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Enrique`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: NV-IDE Configuration Info
+toc: true
+post_style: page
 ---
 
 ## NV-IDE Neovim Configuration Information
@@ -8,12 +10,12 @@ title: NV-IDE Configuration Info
 Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, javascript)
 
 - Install and initialize: **`lazyman -L NV-IDE`**
-- Configuration category: [Language](https://github.com/doctorfree/nvim-lazyman#language-configurations)
+- Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-NV-IDE`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

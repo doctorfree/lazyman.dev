@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: xero Configuration Info
+toc: true
+post_style: page
 ---
 
 ## xero Neovim Configuration Information
@@ -8,12 +10,12 @@ title: xero Configuration Info
 Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fine example, as are many here, of the Unix Greybeard
 
 - Install and initialize: **`lazyman -w xero`**
-- Configuration category: [Personal](https://github.com/doctorfree/nvim-lazyman#personal-configurations)
+- Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-xero`**
 
-[Links to all Lazyman supported configuration documents](https://github.com/doctorfree/nvim-lazyman/wiki/infodocs)
+[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 
