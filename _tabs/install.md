@@ -106,7 +106,8 @@ resolving some `:checkhealth` warnings.
 
 ### Bootstrap
 
-To bootstrap the Lazyman Neovim configuration manager, the `lazyman.sh` script
+To bootstrap the Lazyman Neovim configuration manager, the
+[lazyman.sh](https://lazyman.dev/info/lazyman.html) script
 must be downloaded and executed. The download can be performed with `git`,
 `curl`, `wget`, or a copy/paste.
 

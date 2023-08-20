@@ -68,10 +68,7 @@ NVIM_APPNAME="nvim-Webdev" nvim -l ${GET_CONF} mouse
 ## Lazyman source code
 
 The convenience script to install and initialize `nvim-Lazyman` is provided by
-[lazyman](https://github.com/doctorfree/nvim-lazyman/wiki/lazyman_command).
-
-View the lazyman.sh script in the
-[Lazyman Wiki](https://github.com/doctorfree/nvim-lazyman/wiki/lazyman)
+[lazyman.sh](https://lazyman.dev/info/lazyman.html).
 
 ## Install neovim and tools
 

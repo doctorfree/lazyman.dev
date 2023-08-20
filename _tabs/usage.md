@@ -8,11 +8,11 @@ post_style: page
 
 ## Lazyman Neovim Configuration Manager Usage
 
-The `lazyman.sh` script is located in `~/.config/nvim-Lazyman`.
-It installs itself as `$HOME/.local/bin/lazyman`. If `$HOME/.local/bin` is
-in your execution `PATH` then `lazyman` can be executed from the command
-line as simply `lazyman`. The manual page can be viewed with `man lazyman`.
-Within Neovim the `Lazyman` help doc can be viewed with `:h Lazyman`.
+The [lazyman.sh](https://lazyman.dev/info/lazyman.html) script is located in
+`~/.config/nvim-Lazyman`. It installs itself as `$HOME/.local/bin/lazyman`.
+If `$HOME/.local/bin` is in your execution `PATH` then `lazyman` can be executed
+from the command line as simply `lazyman`. The manual page can be viewed with
+`man lazyman`. Within Neovim the `Lazyman` help doc can be viewed with `:h Lazyman`.
 
 The `lazyman` command can be used to install and initialize multiple Neovim
 configurations. For example, to install and initialize the LazyVim starter
