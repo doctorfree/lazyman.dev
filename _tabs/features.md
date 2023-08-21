@@ -98,6 +98,14 @@ View the `install_neovim.sh` script in the
 
 ### General
 
+The Lazyman Neovim configuration can be managed via the `lazyman` menu
+system. When managing the Lazyman Neovim configuration, the `lazyman`
+command invokes
+[scripts/lazyman_config.sh](https://lazyman.dev/info/lazyman_config.html).
+
+In addition to the menu configuration management, the following features
+are supported:
+
 - Package management and plugin configuration via [lazy.nvim](https://github.com/folke/lazy.nvim)
 - Easily configure namespace, theme, active plugins, and their configuration via `configuration.lua`
 - Two supported namespaces, `free` and `onno`, to easily switch between two completely different configurations
@@ -451,4 +459,3 @@ View the `install_neovim.sh` script in the
 - Outlining symbols with [symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim)
 - Snippets provided by [Luasnip](https://github.com/L3MON4D3/LuaSnip) and [friendly snippets](https://github.com/rafamadriz/friendly-snippets) with autocompletion
 - Auto-install and setup of dozens of language servers including: `ansiblels`, `astro`, `awk_ls`, `bashls`, `clangd`, `ccls`, `cmake`, `cssmodules_ls`, `denols`, `dockerls`, `eslint`, `gopls`, `graphql`, `html`, `jdtls`, `jsonls`, `julials`, `lua_ls`, `ltex`, `marksman`, `pylsp`, `pyright`, `rust_analyzer`, `sqlls`, `svelte`, `tailwindcss`, `taplo`, `texlab`, `tflint`, `tsserver`, `vimls`, `yamlls`
-

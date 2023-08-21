@@ -9,8 +9,13 @@ post_style: page
 
 At the heart of the Lazyman project is the `lazyman` command. It is used
 to initialize Lazyman and subsequently install, initialize, manage, and
-explore multiple Neovim configurations. The source code for the `lazyman`
-command can be reviewed here:
+explore multiple Neovim configurations.
+
+When managing the Lazyman Neovim configuration in `~/.config/nvim-Lazyman`,
+the `lazyman` command invokes
+[scripts/lazyman_config.sh](https://lazyman.dev/info/lazyman_config.html).
+
+The source code for the `lazyman` command can be reviewed here:
 
 ```bash
 #!/usr/bin/env bash
@@ -2767,10 +2772,10 @@ show_main_menu() {
                 nvims
               fi
               ;;
-	  esac
-	fi
-	break
-	;;
+   esac
+ fi
+ break
+ ;;
       "Open Lazyman"*,* | *,"Open Lazyman"*)
         if [ "${USEGUI}" ]; then
           NVIM_APPNAME="nvim-Lazyman" neovide
