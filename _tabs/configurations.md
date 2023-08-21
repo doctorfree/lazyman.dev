@@ -25,9 +25,13 @@ following configuration categories:
 | :------------ | :----: | :----: | ---------: |
 | [AstroNvim configurations](https://astronvim.lazyman.dev) | [LazyVim configurations](https://lazyvim.lazyman.dev) | [LunarVim configurations](https://lunarvim.lazyman.dev) | [NvChad configurations](https://nvchad.lazyman.dev) |
 
-| Configuration |        |        |        | Categories |
-| :------------ | :----: | :----: | :----: | ---------: |
-| [Base](#base-configurations) | [Language](#language-configurations) | [Personal](#personal-configurations) | [Starter](#starter-configurations) | [Custom](#custom-configurations) |
+| Configuration |        |        | Categories |
+| :------------ | :----: | :----: | ---------: |
+| [Base configurations](#base-configurations) | [Language configurations](#language-configurations) | [Personal configurations](#personal-configurations) | [Starter configurations](#starter-configurations) |
+
+In addition to the supported configuration categories,
+[Custom configurations](#custom-configurations) can be installed
+and initialized using [lazyman command line arguments](https://lazyman.dev/usage).
 
 ### Base configurations
 
