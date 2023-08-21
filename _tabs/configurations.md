@@ -18,19 +18,16 @@ presented by invoking `lazyman` without arguments after the initial
 bootstrap process is complete. Lazyman Neovim configurations can
 also be managed with `lazyman` command line operations.
 
-Currently 101 popular Neovim configurations are supported in the
+Currently over 100 popular Neovim configurations are supported in the
 following configuration categories:
 
-- [AstroNvim configurations](https://astronvim.lazyman.dev)
-- [LazyVim configurations](https://lazyvim.lazyman.dev)
-- [LunarVim configurations](https://lunarvim.lazyman.dev)
-- [NvChad configurations](https://nvchad.lazyman.dev)
+| Configuration |        |        | Frameworks |
+| :------------ | :----: | :----: | ---------: |
+| [AstroNvim configurations](https://astronvim.lazyman.dev) | [LazyVim configurations](https://lazyvim.lazyman.dev) | [LunarVim configurations](https://lunarvim.lazyman.dev) | [NvChad configurations](https://nvchad.lazyman.dev) |
 
-- [Base configurations](#base-configurations)
-- [Language configurations](#language-configurations)
-- [Personal configurations](#personal-configurations)
-- [Starter configurations](#starter-configurations)
-- [Custom configurations](#custom-configurations)
+| Configuration |        |        |        | Categories |
+| :------------ | :----: | :----: | :----: | ---------: |
+| [Base configurations](#base-configurations) | [Language configurations](#language-configurations) | [Personal configurations](#personal-configurations) | [Starter configurations](#starter-configurations) | [Custom configurations](#custom-configurations) |
 
 ### Base configurations
 
@@ -42,42 +39,42 @@ All "Base" Neovim configurations can be installed and initialized with `lazyman 
 
 #### Lazyman "Base" Neovim configurations
 
-- [nvim-Lazyman](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Lazyman.md)
+- [nvim-Lazyman](https://lazyman.dev/info/Lazyman.html)
   - See the [Installation section](https://lazyman.dev/install)
   - Installed and initialized by default
-- [Abstract](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Abstract.md)
+- [Abstract](https://lazyman.dev/info/Abstract.html)
   - Preconfigured Neovim as IDE (see <https://abstract-ide.github.io/site/>)
   - Install and initialize with `lazyman -g`
-- [AstroNvimPlus](https://github.com/doctorfree/nvim-lazyman/blob/main/info/AstroNvimPlus.md)
+- [AstroNvimPlus](https://lazyman.dev/info/AstroNvimPlus.html)
   - Install and initialize with `lazyman -a`
   - An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) plugins configuration is added
-- [Basic IDE](https://github.com/doctorfree/nvim-lazyman/blob/main/info/BasicIde.md)
+- [Basic IDE](https://lazyman.dev/info/BasicIde.html)
   - Maintained by LunarVim, this is a descendent of "Neovim from Scratch"
   - All plugins are pinned to known working versions
   - Install and initialize with `lazyman -j`
-- [Ecovim](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Ecovim.md)
+- [Ecovim](https://lazyman.dev/info/Ecovim.html)
   - Install and initialize with `lazyman -e`
   - Tailored for frontend development with React and Vue.js
-- [LazyVim](https://github.com/doctorfree/nvim-lazyman/blob/main/info/LazyVim.md)
+- [LazyVim](https://lazyman.dev/info/LazyVim.html)
   - The [LazyVim starter](https://github.com/LazyVim/starter) configuration
   - Install and initialize with `lazyman -l`
-- [LunarVim](https://github.com/doctorfree/nvim-lazyman/blob/main/info/LunarVim.md)
+- [LunarVim](https://lazyman.dev/info/LunarVim.html)
   - Installs LunarVim plus the [IfCodingWereNatural custom user config](https://youtu.be/Qf9gfx7gWEY)
   - Install and initialize with `lazyman -v`
-- [MagicVim](https://github.com/doctorfree/nvim-lazyman/blob/main/info/MagicVim.md)
+- [MagicVim](https://lazyman.dev/info/MagicVim.html)
   - Custom Neovim configuration designed to be light and fast
   - LSP, Treesitter & Code Completion all work out of the box
   - Auto install when you open a file type that doesn't have code completion for it yet
   - Uses Packer plugin manager, installs in `~/.config/nvim-MagicVim`
   - Install and initialize with `lazyman -m`
-- [NvChad](https://github.com/doctorfree/nvim-lazyman/blob/main/info/NvChad.md)
+- [NvChad](https://lazyman.dev/info/NvChad.html)
   - Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom)
   - Good [introductory video](https://youtu.be/Mtgo-nP_r8Y) to NvChad
   - Install and initialize with `lazyman -c`
-- [penguinVim](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Penguin.md)
+- [penguinVim](https://lazyman.dev/info/Penguin.html)
   - Aims to provide a base configuration with beautiful UI and fast startup time
   - Install and initialize with `lazyman -o`
-- [SpaceVim](https://github.com/doctorfree/nvim-lazyman/blob/main/info/SpaceVim.md)
+- [SpaceVim](https://lazyman.dev/info/SpaceVim.html)
   - SpaceVim started in December 2016, mature and well supported
   - Standard SpaceVim install uses `curl`:
     - `curl -sLf https://spacevim.org/install.sh | bash`
@@ -103,85 +100,85 @@ installed with the `-L lang` option.
 
 #### Lazyman "Language" Neovim configurations
 
-- [AlanVim](https://github.com/doctorfree/nvim-lazyman/blob/main/info/AlanVim.md)
+- [AlanVim](https://lazyman.dev/info/AlanVim.html)
   - Oriented toward Python development
   - Install and initialize with `lazyman -L AlanVim`
-- [Allaman](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Allaman.md)
+- [Allaman](https://lazyman.dev/info/Allaman.html)
   - One of the inspirations for `Lazyman`
   - Excellent support for Python, Golang, Rust, YAML, and more
   - Install and initialize with `lazyman -L Allaman`
-- [CatNvim](https://github.com/doctorfree/nvim-lazyman/blob/main/info/CatNvim.md)
+- [CatNvim](https://lazyman.dev/info/CatNvim.html)
   - Included in the `Language` category as the configuration is written in `C`
   - Yes, this is a Neovim configuration written in the [C programming language](https://en.wikipedia.org/wiki/C_(programming_language))
   - `CatNvim` is a `LazyVim` based configuration
   - Install and initialize with `lazyman -L CatNvim`
-- [Cpp](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Cpp.md)
+- [Cpp](https://lazyman.dev/info/Cpp.html)
   - `NvChad` based Neovim config with C++ formatting, debugging, and diagnostics
   - Dreams of Code [video tutorial](https://youtu.be/lsFoZIg-oDs)
   - Install and initialize with `lazyman -L Cpp`
-- [Go](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Go.md)
+- [Go](https://lazyman.dev/info/Go.html)
   - `NvChad` based Neovim config with Go formatting, debugging, and diagnostics
   - Dreams of Code [video tutorial](https://youtu.be/i04sSQjd-qo)
   - Install and initialize with `lazyman -L Go`
-- [Go2one](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Go2one.md)
+- [Go2one](https://lazyman.dev/info/Go2one.html)
   - Neovim Go development environment that does not touch standard Neovim configuration folders
   - The `lazyman` install does not use the `go2one` script
   - Install and initialize with `lazyman -L Go2one`
-- [Insis](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Insis.md)
+- [Insis](https://lazyman.dev/info/Insis.html)
   - Out-of-the-box Neovim IDE solution with simple development environment setup
   - Install and initialize with `lazyman -L Insis`
-- [Knvim](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Knvim.md)
+- [Knvim](https://lazyman.dev/info/Knvim.html)
   - Targets Python, Bash, LaTeX, Markdown, and C/C++
   - See the [Knvim Config Cheat Sheet](https://github.com/knmac/knvim/blob/main/res/cheatsheet.md)
   - Install and initialize with `lazyman -L Knvim`
-- [LaTeX](https://github.com/doctorfree/nvim-lazyman/blob/main/info/LaTeX.md)
+- [LaTeX](https://lazyman.dev/info/LaTeX.html)
   - Neovim configuration optimized for writing in LaTeX
   - Personal Neovim configuration of [Benjamin Brast-McKie](http://www.benbrastmckie.com)
   - Keymaps and more described in the configuration [Cheatsheet](https://github.com/benbrastmckie/.config/blob/master/CheatSheet.md)
   - Blog article by the author detailing [tools used by his configuration](http://www.benbrastmckie.com/tools#access)
   - [Video playlist](https://www.youtube.com/watch?v=_Ct2S65kpjQ&list=PLBYZ1xfnKeDRhCoaM4bTFrjCl3NKDBvqk) of tutorials on using this config for writing LaTeX in Neovim
   - Install and initialize with `lazyman -L LaTeX`
-- [LazyIde](https://github.com/doctorfree/nvim-lazyman/blob/main/info/LazyIde.md)
+- [LazyIde](https://lazyman.dev/info/LazyIde.html)
   - LazyVim IDE config for Neovim
   - Install and initialize with `lazyman -L LazyIde`
-- [LunarIde](https://github.com/doctorfree/nvim-lazyman/blob/main/info/LunarIde.md)
+- [LunarIde](https://lazyman.dev/info/LunarIde.html)
   - LunarVim config based on [Christian Chiarulli's](https://github.com/ChristianChiarulli/lvim)
   - Java, Python, Lua, Go, JavaScript, Typescript, React, and Rust IDE
   - Install and initialize with `lazyman -L LunarIde`
-- [LvimIde](https://github.com/doctorfree/nvim-lazyman/blob/main/info/LvimIde.md)
+- [LvimIde](https://lazyman.dev/info/LvimIde.html)
   - Not to be confused with `LunarVim`, this is a standalone Neovim configuration
   - Modular configuration with LSP support for 60+ languages
   - Debug support for c, cpp, dart, elixir, go, haskell, java, javascript/typescript, lua, php, python, ruby, rust
   - Install and initialize with `lazyman -L LvimIde`
-- [Magidc](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Magidc.md)
+- [Magidc](https://lazyman.dev/info/Magidc.html)
   - Java, Python, Lua, and Rust IDE
   - Install and initialize with `lazyman -L Magidc`
-- [Nv](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Nv.md)
+- [Nv](https://lazyman.dev/info/Nv.html)
   - `LazyVim` based Neovim configuration
   - Andreas Gerlach develops smart farming tech and maintains the `Sway` edition of `Manjaro-arm`
   - Install and initialize with `lazyman -L Nv`
-- [NV-IDE](https://github.com/doctorfree/nvim-lazyman/blob/main/info/NV-IDE.md)
+- [NV-IDE](https://lazyman.dev/info/NV-IDE.html)
   - Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, javascript)
   - Install and initialize with `lazyman -L NV-IDE`
-- [Orange](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Orange.md)
+- [Orange](https://lazyman.dev/info/Orange.html)
   - Modern Neovim configuration for coding React and TypeScript
   - Install and initialize with `lazyman -L Orange`
-- [Python](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Python.md)
+- [Python](https://lazyman.dev/info/Python.html)
   - `NvChad` based Neovim config with Python formatting, debugging, and diagnostics
   - Dreams of Code [video tutorial](https://youtu.be/4BnVeOUeZxc)
   - These features are included in the Base `NvChad` custom add-on (`lazyman -c`)
   - Install and initialize `lazyman -L Python`
-- [Rust](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Rust.md)
+- [Rust](https://lazyman.dev/info/Rust.html)
   - `NvChad` based Neovim config with Rust formatting, debugging, and diagnostics
   - Dreams of Code [video tutorial](https://youtu.be/mh_EJhH49Ms)
   - Install and initialize with `lazyman -L Rust`
-- [SaleVim](https://github.com/doctorfree/nvim-lazyman/blob/main/info/SaleVim.md)
+- [SaleVim](https://lazyman.dev/info/SaleVim.html)
   - `Salesforce` optimized IDE with custom features for editing `Apex`, `Visualforce`, and `Lightning` code
   - Install and initialize with `lazyman -L SaleVim`
-- [Shuvro](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Shuvro.md)
+- [Shuvro](https://lazyman.dev/info/Shuvro.html)
   - Significantly improved fork of [Abouzar Parvan's](https://github.com/abzcoding/lvim) advanced `LunarVim` config
   - Install and initialize with `lazyman -L Shuvro`
-- [Webdev](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Webdev.md)
+- [Webdev](https://lazyman.dev/info/Webdev.html)
   - LazyVim based config for web developers
   - JavaScript, Typescript, React, and Tailwind CSS support
   - Install and initialize with `lazyman -L Webdev`
@@ -201,60 +198,60 @@ installed with the `-w conf` option.
 
 #### Lazyman "Personal" Neovim configurations
 
-- [3rd](https://github.com/doctorfree/nvim-lazyman/blob/main/info/3rd.md)
+- [3rd](https://lazyman.dev/info/3rd.html)
   - `lazyman -w 3rd`
   - Patch in `~/.config/nvim-Lazyman/scripts/patches/nvim-3rd.patch` applied
   - Example [custom tree-sitter grammar](https://github.com/3rd/syslang)
-- [Adib](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Adib.md)
+- [Adib](https://lazyman.dev/info/Adib.html)
   - Personal Neovim configuration of Adib Hanna
   - Tips, distros, and configuration [demo video](https://youtu.be/8SVPOKZVaMU)
   - Install and initialize with `lazyman -w Adib`
-- [Artur](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Artur.md)
+- [Artur](https://lazyman.dev/info/Artur.html)
   - Personal Neovim configuration of Artur Gomes
   - Install and initialize with `lazyman -w Artur`
-- [Beethoven](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Beethoven.md)
+- [Beethoven](https://lazyman.dev/info/Beethoven.html)
   - Personal Neovim configuration of mechanical engineering student Alexander Vazquez
   - `lazyman -w Beethoven`
-- [Brain](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Brain.md)
+- [Brain](https://lazyman.dev/info/Brain.html)
   - Well structured personal config based on the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle
   - `lazyman -w Brain`
-- [Charles](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Charles.md)
+- [Charles](https://lazyman.dev/info/Charles.html)
   - Well structured lazy config with several setup scripts and a Wiki
   - Install and initialize with `lazyman -w Charles`
-- [Craftzdog](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Craftzdog.md)
+- [Craftzdog](https://lazyman.dev/info/Craftzdog.html)
   - Takuya Matsuyama's Neovim configuration
   - Install and initialize with `lazyman -w Craftzdog`
-- [Daniel](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Daniel.md)
+- [Daniel](https://lazyman.dev/info/Daniel.html)
   - `LunarVim` based config of Daniel Vera Gilliard
   - Install and initialize with `lazyman -w Daniel`
-- [Dillon](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Dillon.md)
+- [Dillon](https://lazyman.dev/info/Dillon.html)
   - Author of [tsc.nvim](https://github.com/dmmulroy/tsc.nvim), asynchronous TypeScript type-checking
   - Install and initialize with `lazyman -w Dillon`
-- [Elianiva](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Elianiva.md)
+- [Elianiva](https://lazyman.dev/info/Elianiva.html)
   - Personal Neovim configuration of Dicha Zelianivan Arkana
   - `lazyman -w Elianiva`
-- [Elijah](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Elijah.md)
+- [Elijah](https://lazyman.dev/info/Elijah.html)
   - Personal Neovim configuration of Elijah Manor
   - `lazyman -w Elijah`
-- [Enrique](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Enrique.md)
+- [Enrique](https://lazyman.dev/info/Enrique.html)
   - Personal Neovim configuration of Enrique Mejidas
   - `lazyman -w Enrique`
-- [Kristijan](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Kristijan.md)
+- [Kristijan](https://lazyman.dev/info/Kristijan.html)
   - Personal Neovim configuration of Kristijan Husak, author of several Neovim plugins including `orgmode` and `vim-dadbod-ui`
   - `lazyman -w Kristijan`
-- [Heiker](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Heiker.md)
+- [Heiker](https://lazyman.dev/info/Heiker.html)
   - Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
   - Install and initialize with `lazyman -w Heiker`
-- [J4de](https://github.com/doctorfree/nvim-lazyman/blob/main/info/J4de.md)
+- [J4de](https://lazyman.dev/info/J4de.html)
   - Personal Neovim configuration of Jade Fox
   - `lazyman -w J4de`
-- [Josean](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Josean.md)
+- [Josean](https://lazyman.dev/info/Josean.html)
   - Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8)
   - `lazyman -w Josean`
-- [JustinLvim](https://github.com/doctorfree/nvim-lazyman/blob/main/info/JustinLvim.md)
+- [JustinLvim](https://lazyman.dev/info/JustinLvim.html)
   - LunarVim based Neovim configuration by Justin Angeles
   - Install and initialize with `lazyman -w JustinLvim`
-- [JustinNvim](https://github.com/doctorfree/nvim-lazyman/blob/main/info/JustinNvim.md)
+- [JustinNvim](https://lazyman.dev/info/JustinNvim.html)
   - LazyVim based Neovim configuration by Justin Angeles
   - Justin has created a series of YouTube videos on configuring LazyVim
     - [Part 1 - Colorschemne](https://youtu.be/LznwxUSZz_8)
@@ -262,69 +259,69 @@ installed with the `-w conf` option.
     - [Part 3 - Keymaps](https://youtu.be/Vc_5feJ9F5k)
     - [Part 4 - Final Thoughts](https://youtu.be/eRQHWeJ3D7I)
   - Install and initialize with `lazyman -w JustinNvim`
-- [Kodo](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Kodo.md)
+- [Kodo](https://lazyman.dev/info/Kodo.html)
   - Personal Neovim configuration of chadcat, a high school student with no life
   - `Kodo` is a Neovim configuration that looks good and is fast (startuptime < 0.035s)
   - Install and initialize with `lazyman -w Kodo`
-- [Lukas](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Lukas.md)
+- [Lukas](https://lazyman.dev/info/Lukas.html)
   - Packer based personal Neovim configuration of Lukas Reineke, author of many excellent Neovim plugins
   - Requires an externally installed `lua-language-server` and `efm-langserver`
   - Install and initialize with `lazyman -w Lukas`
-- [Maddison](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Maddison.md)
+- [Maddison](https://lazyman.dev/info/Maddison.html)
   - Personal Neovim configuration of Maddison Hellstrom
   - Author of `incline.nvim` floating statuslines, `SchemaStore.nvim` JSON schemas, `mapx.nvim` better keymaps
   - Install and initialize with `lazyman -w Maddison`
-- [Metis](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Metis.md)
+- [Metis](https://lazyman.dev/info/Metis.html)
   - Neovim config by the creator of `MetisLinux` and `Ewm`
   - Install and initialize with `lazyman -w Metis`
-- [Mini](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Mini.md)
+- [Mini](https://lazyman.dev/info/Mini.html)
   - Uses the [mini.nvim](https://github.com/echasnovski/mini.nvim) library
   - Personal configuration of the `mini.nvim` author
   - Install and initialize with `lazyman -M`
-- [ONNO](https://github.com/doctorfree/nvim-lazyman/blob/main/info/ONNO.md)
+- [ONNO](https://lazyman.dev/info/ONNO.html)
   - One of the primary inspirations for Lazyman
   - Install and initialize with `lazyman -w ONNO`
-- [OnMyWay](https://github.com/doctorfree/nvim-lazyman/blob/main/info/OnMyWay.md)
+- [OnMyWay](https://lazyman.dev/info/OnMyWay.html)
   - The personal Neovim configuration of Richard Ariza
   - Install and initialize with `lazyman -w OnMyWay`
-- [Optixal](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Optixal.md)
+- [Optixal](https://lazyman.dev/info/Optixal.html)
   - Hybrid Neovim config for developers with a functional yet aesthetic experience
   - Uses a combination of vimscript and lua with the `vim-plug` plugin manager
   - Install and initialize with `lazyman -w Optixal`
-- [Orhun](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Orhun.md)
+- [Orhun](https://lazyman.dev/info/Orhun.html)
   - Personal AstroNvim based Neovim configuration of open source developer Orhun Parmaksiz
   - Install and initialize with `lazyman -w Orhun`
-- [Primeagen](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Primeagen.md)
+- [Primeagen](https://lazyman.dev/info/Primeagen.html)
   - Packer based [config from scratch](https://youtu.be/w7i4amO_zaE) by ThePrimeagen"
   - Install and initialize with `lazyman -w Primeagen`
-- [Rafi](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Rafi.md)
+- [Rafi](https://lazyman.dev/info/Rafi.html)
   - [Extensible](https://github.com/rafi/vim-config#extending) Neovim configuration
   - Install and initialize with `lazyman -w Rafi`
-- [Roiz](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Roiz.md)
+- [Roiz](https://lazyman.dev/info/Roiz.html)
   - Just a random Neovim config found on Github, works well
   - Install and initialize with `lazyman -w Roiz`
-- [Simple](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Simple.md)
+- [Simple](https://lazyman.dev/info/Simple.html)
   - A remarkably effective Neovim configuration in only one small file
   - The author's [video description of this config](https://youtu.be/AzhSnM0uHvM)
   - Install and initialize with `lazyman -w Simple`
-- [Slydragonn](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Slydragonn.md)
+- [Slydragonn](https://lazyman.dev/info/Slydragonn.html)
   - [Introductory video](https://youtu.be/vkCnPdaRBE0)
   - `lazyman -w Slydragonn`
-- [Spider](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Spider.md)
+- [Spider](https://lazyman.dev/info/Spider.html)
   - AstroNvim based configuration with animated status bar and smooth scroll
   - [Introductory video](https://youtu.be/Lj6MZsKl9MU)
   - Install and initialize with `lazyman -w Spider`
-- [Traap](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Traap.md)
+- [Traap](https://lazyman.dev/info/Traap.html)
   - [Introductory video](https://youtu.be/aD9j6d9pgtc)
   - Install and initialize with `lazyman -w Traap`
-- [Wuelner](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Wuelner.md)
+- [Wuelner](https://lazyman.dev/info/Wuelner.html)
   - Wuelner's Neovim setup follows a well-defined philosophy governed by coherence and minimalism
   - Install and initialize with `lazyman -w Wuelner`
-- [xero](https://github.com/doctorfree/nvim-lazyman/blob/main/info/xero.md)
+- [xero](https://lazyman.dev/info/xero.html)
   - personal neovim configuration of [xero harrison](https://x-e.ro/)
   - xero is a fine example, as are many here, of the unix greybeard
   - install and initialize with `lazyman -w xero`
-- [Xiao](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Xiao.md)
+- [Xiao](https://lazyman.dev/info/Xiao.html)
   - Personal Neovim configuration of XiaoZhang
   - Install and initialize with `lazyman -w Xiao`
 
@@ -340,102 +337,102 @@ installed with the `-x conf` option.
 
 #### Lazyman "Starter" Neovim configurations
 
-- [AstroNvimStart](https://github.com/doctorfree/nvim-lazyman/blob/main/info/AstroNvimStart.md)
+- [AstroNvimStart](https://lazyman.dev/info/AstroNvimStart.html)
   - Default AstroNvim example configuration
   - Install and initialize with `lazyman -x AstroNvimStart`
-- [Barebones](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Barebones.md)
+- [Barebones](https://lazyman.dev/info/Barebones.html)
   - Starter bare bones LazyVim config by Traap with [video introduction](https://youtu.be/xpBoiTIiepc)
   - Install and initialize with `lazyman -x Barebones`
-- [Basic](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Basic.md)
+- [Basic](https://lazyman.dev/info/Basic.html)
   - Starter config by the author of NvChad with [video tutorial](https://youtube.com/playlist?list=PLYVQrj2EVSUL1NqYn3jsIVXG3U9eWaMcq)
   - Install and initialize with `lazyman -x Basic`
-- [CodeArt](https://github.com/doctorfree/nvim-lazyman/blob/main/info/CodeArt.md)
+- [CodeArt](https://lazyman.dev/info/CodeArt.html)
   - Use Neovim as general purpose IDE
   - Install and initialize with `lazyman -x CodeArt`
-- [CosmicNvim](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Cosmic.md)
+- [CosmicNvim](https://lazyman.dev/info/Cosmic.html)
   - Install `Node.js`, `prettierd`, and `eslint_d`
   - Install and initialize with `lazyman -x Cosmic`
-- [Ember](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Ember.md)
+- [Ember](https://lazyman.dev/info/Ember.html)
   - Dan is a computer science student at Arizona State University
   - Install and initialize with `lazyman -x Ember`
-- [Fennel](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Fennel.md)
+- [Fennel](https://lazyman.dev/info/Fennel.html)
   - An opinionated configuration reminiscent of Doom-Emacs, written in Fennel
   - Install and initialize with `lazyman -x Fennel`
-- [Kickstart](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Kickstart.md)
+- [Kickstart](https://lazyman.dev/info/Kickstart.html)
   - Popular starting point, small, single file, well documented, modular
   - Install and initialize with `lazyman -k`
-- [nvim2k](https://github.com/doctorfree/nvim-lazyman/blob/main/info/2k.md)
+- [nvim2k](https://lazyman.dev/info/2k.html)
   - [Video walkthrough](https://youtu.be/WfhylGI_F-o)
   - Install and initialize with `lazyman -x 2k`
-- [NvPak](https://github.com/doctorfree/nvim-lazyman/blob/main/info/NvPak.md)
+- [NvPak](https://lazyman.dev/info/NvPak.html)
   - PaK in Farsi means pure, something that is in its purest form
   - Install and initialize with `lazyman -x NvPak`
-- [HardHacker](https://github.com/doctorfree/nvim-lazyman/blob/main/info/HardHacker.md)
+- [HardHacker](https://lazyman.dev/info/HardHacker.html)
   - A theme-driven modern Neovim configuration
   - Install and initialize with `lazyman -x HardHacker`
-- [JustinOhMy](https://github.com/doctorfree/nvim-lazyman/blob/main/info/JustinOhMy.md)
+- [JustinOhMy](https://lazyman.dev/info/JustinOhMy.html)
   - Full featured starter LazyVim based Neovim configuration by Justin Angeles
   - Justin has created a [YouTube video](https://youtu.be/mpSuIfBKP-s) describing this config
   - Install and initialize with `lazyman -x JustinOhMy`
-- [Modern](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Modern.md)
+- [Modern](https://lazyman.dev/info/Modern.html)
   - Configure Neovim as a modernized development environment
   - Details described in [an excellent Medium article](https://alpha2phi.medium.com/modern-neovim-configuration-recipes-d68b16537698)
   - Install and initialize with `lazyman -x Modern`
-- [PDE](https://github.com/doctorfree/nvim-lazyman/blob/main/info/pde.md)
+- [PDE](https://lazyman.dev/info/pde.html)
   - Configure Neovim as a Personalized Development Environment (PDE)
   - Install and initialize with `lazyman -x pde`
-- [Kabin](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Kabin.md)
+- [Kabin](https://lazyman.dev/info/Kabin.html)
   - One of the AstroNvim "Black Belt" example advanced configurations
   - `lazyman -x Kabin`
-- [Lamia](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Lamia.md)
+- [Lamia](https://lazyman.dev/info/Lamia.html)
   - One of the AstroNvim "Black Belt" example advanced configurations
   - `lazyman -x Lamia`
-- [Micah](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Micah.md)
+- [Micah](https://lazyman.dev/info/Micah.html)
   - One of the AstroNvim "Black Belt" example advanced configurations
   - `lazyman -x Micah`
-- [Normal](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Normal.md)
+- [Normal](https://lazyman.dev/info/Normal.html)
   - Based on AstroNvim with additional features
   - Install and initialize with `lazyman -x Normal`
-- [Rohit](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Rohit.md)
+- [Rohit](https://lazyman.dev/info/Rohit.html)
   - Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim)
   - Install and initialize with `lazyman -x Rohit`
-- [Scratch](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Scratch.md)
+- [Scratch](https://lazyman.dev/info/Scratch.html)
   - Jumping-off point for new Neovim users or those who have declared config bankruptcy
   - Install and initialize with `lazyman -x Scratch`
-- [SingleFile](https://github.com/doctorfree/nvim-lazyman/blob/main/info/SingleFile.md)
+- [SingleFile](https://lazyman.dev/info/SingleFile.html)
   - A clean, organized pre-configured Neovim configuration guide in a single `init.lua`
   - Install and initialize with `lazyman -x SingleFile`
 
 #### VonHeikemen Starter configurations
 
-- [BasicLsp](https://github.com/doctorfree/nvim-lazyman/blob/main/info/BasicLsp.md)
+- [BasicLsp](https://lazyman.dev/info/BasicLsp.html)
   - Example lua configuration showing one way to setup LSP servers without plugins
   - Install and initialize with `lazyman -x BasicLsp`
-- [BasicMason](https://github.com/doctorfree/nvim-lazyman/blob/main/info/BasicMason.md)
+- [BasicMason](https://lazyman.dev/info/BasicMason.html)
   - Minimal setup with `mason.nvim`
   - Install and initialize with `lazyman -x BasicMason`
-- [LspCmp](https://github.com/doctorfree/nvim-lazyman/blob/main/info/LspCmp.md)
+- [LspCmp](https://lazyman.dev/info/LspCmp.html)
   - Minimal setup with `nvim-lspconfig` and `nvim-cmp`
   - Install and initialize with `lazyman -x LspCmp`
-- [Extralight](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Extralight.md)
+- [Extralight](https://lazyman.dev/info/Extralight.html)
   - Single file lightweight configuration focused on providing basic features
   - Install and initialize with `lazyman -x Extralight`
-- [Minimal](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Minimal.md)
+- [Minimal](https://lazyman.dev/info/Minimal.html)
   - Small configuration without third party plugins
   - Install and initialize with `lazyman -x Minimal`
-- [Modular](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Modular.md)
+- [Modular](https://lazyman.dev/info/Modular.html)
   - Same as `StartMason` but everything is split in modules
   - Install and initialize with `lazyman -x Modular`
-- [StartBase](https://github.com/doctorfree/nvim-lazyman/blob/main/info/StartBase.md)
+- [StartBase](https://lazyman.dev/info/StartBase.html)
   - Small configuration that includes a plugin manager
   - Install and initialize with `lazyman -x StartBase`
-- [Opinionated](https://github.com/doctorfree/nvim-lazyman/blob/main/info/Opinion.md)
+- [Opinionated](https://lazyman.dev/info/Opinion.html)
   - Includes a combination of popular plugins
   - Install and initialize with `lazyman -x Opinion`
-- [StartLsp](https://github.com/doctorfree/nvim-lazyman/blob/main/info/StartLsp.md)
+- [StartLsp](https://lazyman.dev/info/StartLsp.html)
   - Configures the built-in LSP client with autocompletion, based on `Opinionated`
   - Install and initialize with `lazyman -x StartLsp`
-- [StartMason](https://github.com/doctorfree/nvim-lazyman/blob/main/info/StartMason.md)
+- [StartMason](https://lazyman.dev/info/StartMason.html)
   - Same as `StartLsp` but uses [mason.nvim](https://github.com/williamboman/mason.nvim) to install language servers
   - Install and initialize with `lazyman -x StartMason`
 
