@@ -27,7 +27,7 @@ following configuration categories:
 
 | Configuration |        |        |        | Categories |
 | :------------ | :----: | :----: | :----: | ---------: |
-| [Base configurations](#base-configurations) | [Language configurations](#language-configurations) | [Personal configurations](#personal-configurations) | [Starter configurations](#starter-configurations) | [Custom configurations](#custom-configurations) |
+| [Base](#base-configurations) | [Language](#language-configurations) | [Personal](#personal-configurations) | [Starter](#starter-configurations) | [Custom](#custom-configurations) |
 
 ### Base configurations
 
