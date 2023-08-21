@@ -15,7 +15,6 @@ Example [custom tree-sitter grammar](https://github.com/3rd/syslang)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-3rd`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

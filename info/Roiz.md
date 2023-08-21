@@ -15,7 +15,6 @@ Just a random Neovim config found on Github, works well
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Roiz`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

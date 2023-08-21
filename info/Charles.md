@@ -15,7 +15,6 @@ Well structured lazy config with several setup scripts and a Wiki
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Charles`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

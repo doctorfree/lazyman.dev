@@ -15,7 +15,6 @@ Personal Neovim configuration of Lukas Reineke, author of many excellent Neovim 
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Lukas`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

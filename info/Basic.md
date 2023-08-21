@@ -15,7 +15,6 @@ Starter config by the author of NvChad with [video tutorial](https://youtube.com
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Basic`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

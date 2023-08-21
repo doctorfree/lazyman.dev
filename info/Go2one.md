@@ -15,7 +15,6 @@ Neovim Go development environment that does not touch standard Neovim configurat
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Go2one`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

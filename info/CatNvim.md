@@ -15,7 +15,6 @@ Neovim configuration written in the [C programming language](https://en.wikipedi
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-CatNvim`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

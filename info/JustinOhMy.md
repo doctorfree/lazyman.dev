@@ -15,7 +15,6 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-JustinOhMy`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

@@ -15,7 +15,6 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Scratch`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

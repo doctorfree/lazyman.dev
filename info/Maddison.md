@@ -15,7 +15,6 @@ Personal Neovim configuration of Maddison Hellstrom, author of 'incline.nvim' fl
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Maddison`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

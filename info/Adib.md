@@ -15,7 +15,6 @@ Personal Neovim configuration of Adib Hanna. Tips, distros, and configuration [d
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Adib`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

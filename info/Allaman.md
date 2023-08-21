@@ -15,7 +15,6 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Allaman`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

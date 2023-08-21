@@ -15,7 +15,6 @@ NvChad based Neovim config with Go formatting, debugging, and diagnostics. Dream
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Go`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

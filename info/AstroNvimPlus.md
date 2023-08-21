@@ -15,7 +15,6 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-AstroNvimPlus`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

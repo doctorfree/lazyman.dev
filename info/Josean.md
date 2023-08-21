@@ -15,7 +15,6 @@ Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8)
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Josean`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

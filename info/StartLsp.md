@@ -15,7 +15,6 @@ Configures the built-in LSP client with autocompletion, based on 'Opinionated'
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-StartLsp`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

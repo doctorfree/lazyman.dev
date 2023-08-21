@@ -15,7 +15,6 @@ Minimal setup with 'nvim-lspconfig' and 'nvim-cmp'
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-LspCmp`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

@@ -15,7 +15,6 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Kristijan`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

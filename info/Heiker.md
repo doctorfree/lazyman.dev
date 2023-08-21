@@ -15,7 +15,6 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Heiker`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

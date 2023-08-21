@@ -15,7 +15,6 @@ Bare bones LazyVim configuration by Traap with a [video introduction](https://yo
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Barebones`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

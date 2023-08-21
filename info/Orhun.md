@@ -15,7 +15,6 @@ AstroNvim based configuration of open source developer Orhun Parmaksiz
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Orhun`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

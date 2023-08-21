@@ -15,7 +15,6 @@ Personal Neovim configuration of chadcat, a high school student with no life. Ko
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Kodo`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

@@ -15,7 +15,6 @@ Same as 'StartLsp' but uses [mason.nvim](https://github.com/williamboman/mason.n
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-StartMason`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

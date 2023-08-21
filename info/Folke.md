@@ -15,7 +15,6 @@ Personal Neovim configuration of the great Folke Lemaitre, author of `lazy.nvim`
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Folke`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

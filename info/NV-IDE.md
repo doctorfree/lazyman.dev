@@ -15,7 +15,6 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-NV-IDE`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

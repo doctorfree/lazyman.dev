@@ -15,7 +15,6 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Webdev`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 

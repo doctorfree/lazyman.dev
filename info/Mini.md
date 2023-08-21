@@ -15,7 +15,6 @@ Uses the [mini.nvim](https://github.com/echasnovski/mini.nvim) library. Personal
 - Plugin manager:         [Mini](https://github.com/echasnovski/mini.nvim)
 - Installation location:  **`~/.config/nvim-Mini`**
 
-[Links to all Lazyman supported configuration documents](https://lazyman.dev/info/)
 
 ### Git repository
 
