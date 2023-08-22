@@ -21,12 +21,12 @@ also be managed with `lazyman` command line operations.
 Currently over 100 popular Neovim configurations are supported in the
 following configuration categories:
 
-| Configuration |        |        | Frameworks |
-| :------------ | :----: | :----: | ---------: |
+| **Lazyman** | **Supported** | **Configuration** | **Frameworks** |
+| :---------- | :-----------: | :---------------: | -------------: |
 | [AstroNvim configurations](https://astronvim.lazyman.dev) | [LazyVim configurations](https://lazyvim.lazyman.dev) | [LunarVim configurations](https://lunarvim.lazyman.dev) | [NvChad configurations](https://nvchad.lazyman.dev) |
 
-| Configuration |        |        | Categories |
-| :------------ | :----: | :----: | ---------: |
+| **Lazyman** | **Supported** | **Configuration** | **Categories** |
+| :---------- | :-----------: | :---------------: | -------------: |
 | [Base configurations](#base-configurations) | [Language configurations](#language-configurations) | [Personal configurations](#personal-configurations) | [Starter configurations](#starter-configurations) |
 
 In addition to the supported configuration categories,
