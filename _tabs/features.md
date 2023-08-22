@@ -58,6 +58,42 @@ nvims /tmp/foo.lua
 See [Neovim Configuration Fuzzy Selector](https://lazyman.dev/posts/Nvims) for
 additional details on use of the `nvims` and `neovides` shell functions.
 
+## Lazyman Menu Configuration Management
+
+Lazyman provides a character-based menu system which includes menu management
+of several Neovim configurations. Menu configuration management is supported
+for the following Lazyman Neovim configurations:
+
+- [Lazyman Neovim configuration](https://lazyman.dev/info/Lazyman.html)
+- [LazyIde Neovim configuration](https://lazyman.dev/info/LazyIde.html)
+- [Webdev  Neovim configuration](https://lazyman.dev/info/Webdev.html)
+
+To view the Lazyman Configuration Menu, select the `Lazyman Config` option
+from the main menu or execute the command:
+
+```shell
+lazyman -F
+```
+
+If the `LazyIde` or `Webdev` Neovim configurations have been installed
+then menu entries will be presented for `LazyIde Config` and `Webdev Config`.
+
+Command line arguments can be used to open Lazyman menus directly. For example,
+to open the Lazyman plugins configuration menu directly from the command line,
+execute the command `lazyman -F plugins`.
+
+The following command line menu entry points are supported:
+
+- `lazyman -F config` : Lazyman Neovim configuration menu
+- `lazyman -F plugins` : Lazyman plugins configuration menu
+- `lazyman -F lsp` : Lazyman language server configuration menu
+- `lazyman -F format` : Lazyman formatters and linters configuration menu
+- `lazyman -F lazyide` : LazyIde Neovim configuration menu
+- `lazyman -F webdev` : Webdev Neovim configuration menu
+
+Neovim configuration options, settings, formatters, linters, language servers,
+and plugins can be managed via these menus.
+
 ## Get configuration script
 
 Neovim 0.9 introduced a new feature which allows execution of Lua scripts
@@ -473,22 +509,3 @@ are supported:
 - Outlining symbols with [symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim)
 - Snippets provided by [Luasnip](https://github.com/L3MON4D3/LuaSnip) and [friendly snippets](https://github.com/rafamadriz/friendly-snippets) with autocompletion
 - Auto-install and setup of dozens of language servers including: `ansiblels`, `astro`, `awk_ls`, `bashls`, `clangd`, `ccls`, `cmake`, `cssmodules_ls`, `denols`, `dockerls`, `eslint`, `gopls`, `graphql`, `html`, `jdtls`, `jsonls`, `julials`, `lua_ls`, `ltex`, `marksman`, `pylsp`, `pyright`, `rust_analyzer`, `sqlls`, `svelte`, `tailwindcss`, `taplo`, `texlab`, `tflint`, `tsserver`, `vimls`, `yamlls`
-
-## Lazyman Menu Configuration Management
-
-Lazyman provides a character-based menu system which includes menu management
-of several Neovim configurations. Menu configuration management is supported
-for the following Lazyman Neovim configurations:
-
-- [Lazyman Neovim configuration](https://lazyman.dev/info/Lazyman.html)
-- [LazyIde Neovim configuration](https://lazyman.dev/info/LazyIde.html)
-- [Webdev  Neovim configuration](https://lazyman.dev/info/Webdev.html)
-
-To view the Lazyman Configuration Menu, execute the command `lazyman -F`.
-If the `LazyIde` or `Webdev` Neovim configurations have been installed
-then menu entries will be presented for `LazyIde Config` and `Webdev Config`.
-
-To open the Lazyman plugins configuration menu directly from the command line,
-execute the command `lazyman -F plugins`.
-
-Configuration options, settings, and plugins can be managed via these menus.
