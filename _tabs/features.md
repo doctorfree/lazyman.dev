@@ -58,7 +58,7 @@ nvims /tmp/foo.lua
 See [Neovim Configuration Fuzzy Selector](https://lazyman.dev/posts/Nvims) for
 additional details on use of the `nvims` and `neovides` shell functions.
 
-## Lazyman Menu Configuration Management
+## Menu Configuration Management
 
 Lazyman provides a character-based menu system which includes menu management
 of several Neovim configurations. Menu configuration management is supported
@@ -84,12 +84,18 @@ execute the command `lazyman -F plugins`.
 
 The following command line menu entry points are supported:
 
-- `lazyman -F config` : Lazyman Neovim configuration menu
-- `lazyman -F plugins` : Lazyman plugins configuration menu
-- `lazyman -F lsp` : Lazyman language server configuration menu
-- `lazyman -F format` : Lazyman formatters and linters configuration menu
-- `lazyman -F lazyide` : LazyIde Neovim configuration menu
-- `lazyman -F webdev` : Webdev Neovim configuration menu
+- `lazyman -F config`
+  - Lazyman Neovim configuration menu
+- `lazyman -F plugins`
+  - Lazyman plugins configuration menu
+- `lazyman -F lsp`
+  - Lazyman language server configuration menu
+- `lazyman -F format`
+  - Lazyman formatters and linters configuration menu
+- `lazyman -F lazyide`
+  - LazyIde Neovim configuration menu
+- `lazyman -F webdev`
+  - Webdev Neovim configuration menu
 
 Neovim configuration options, settings, formatters, linters, language servers,
 and plugins can be managed via these menus.
