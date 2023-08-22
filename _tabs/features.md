@@ -6,19 +6,7 @@ toc: true
 post_style: page
 ---
 
-- [Lazyman Command Features](#lazyman-command-features)
-- [Get configuration script](#get-configuration-script)
-- [Lazyman source code](#lazyman-source-code)
-- [Install neovim and tools](#install-neovim-and-tools)
-- [Lazyman Neovim Configuration Features](#lazyman-neovim-configuration-features)
-  - [General](#general)
-  - [Lazyman configuration plugins list](#lazyman-configuration-plugins-list)
-  - [Plugins used in the Lazyman Neovim configuration](#plugins-used-in-the-lazyman-neovim-configuration)
-  - [Lazyman configuration language server support](#lazyman-configuration-language-server-support)
-  - [Language Servers supported in the Lazyman Neovim configuration](#language-servers-supported-in-the-lazyman-neovim-configuration)
-  - [Navigation](#navigation)
-  - [Coding](#coding)
-- [What's New](https://lazyman.dev/news)
+# Lazyman Features
 
 ## Lazyman Command Features
 
@@ -43,6 +31,32 @@ post_style: page
 - 101 supported Neovim configurations out of the box, additional custom configs
 
 See the [Usage](https://lazyman.dev/usage) section for details on `lazyman` command usage.
+
+## The nvims fuzzy selector
+
+The `lazyman` installation and configuration automatically configures
+convenience aliases and shell functions for Lazyman installed Neovim
+configurations. One of these is the `nvims` shell function which dynamically
+creates a fuzzy searchable menu of installed Neovim configurations and launches
+Neovim with the selected Lazyman Neovim configuration.
+
+See `~/.config/nvim-Lazyman/.lazymanrc`.
+
+Similarly, a `neovides` shell function can be used to select a Neovim
+configuration for use with the Neovim GUI `neovide`.
+
+The fuzzy searchable/selectable menu of Neovim configurations can also
+be shown with the command `lazyman -S`. Note also that both the `nvims`
+shell function and the `lazyman -S` command can accept additional filename
+arguments which are then passed to Neovim. For example, to edit
+`/tmp/foo.lua` with a Neovim configuration selected from the `nvims` menu:
+
+```bash
+nvims /tmp/foo.lua
+```
+
+See [Neovim Configuration Fuzzy Selector](https://lazyman.dev/posts/Nvims) for
+additional details on use of the `nvims` and `neovides` shell functions.
 
 ## Get configuration script
 
@@ -459,3 +473,22 @@ are supported:
 - Outlining symbols with [symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim)
 - Snippets provided by [Luasnip](https://github.com/L3MON4D3/LuaSnip) and [friendly snippets](https://github.com/rafamadriz/friendly-snippets) with autocompletion
 - Auto-install and setup of dozens of language servers including: `ansiblels`, `astro`, `awk_ls`, `bashls`, `clangd`, `ccls`, `cmake`, `cssmodules_ls`, `denols`, `dockerls`, `eslint`, `gopls`, `graphql`, `html`, `jdtls`, `jsonls`, `julials`, `lua_ls`, `ltex`, `marksman`, `pylsp`, `pyright`, `rust_analyzer`, `sqlls`, `svelte`, `tailwindcss`, `taplo`, `texlab`, `tflint`, `tsserver`, `vimls`, `yamlls`
+
+## Lazyman Menu Configuration Management
+
+Lazyman provides a character-based menu system which includes menu management
+of several Neovim configurations. Menu configuration management is supported
+for the following Lazyman Neovim configurations:
+
+- [Lazyman Neovim configuration](https://lazyman.dev/info/Lazyman.html)
+- [LazyIde Neovim configuration](https://lazyman.dev/info/LazyIde.html)
+- [Webdev  Neovim configuration](https://lazyman.dev/info/Webdev.html)
+
+To view the Lazyman Configuration Menu, execute the command `lazyman -F`.
+If the `LazyIde` or `Webdev` Neovim configurations have been installed
+then menu entries will be presented for `LazyIde Config` and `Webdev Config`.
+
+To open the Lazyman plugins configuration menu directly from the command line,
+execute the command `lazyman -F plugins`.
+
+Configuration options, settings, and plugins can be managed via these menus.
