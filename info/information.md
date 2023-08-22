@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Neovim Configuration Information Retrieval
-toc: true
+toc: false
 post_style: page
 ---
 

@@ -124,7 +124,7 @@ NVIM_APPNAME="nvim-Webdev" nvim -l ${GET_CONF} mouse
 ## Lazyman source code
 
 The convenience script to install and initialize `nvim-Lazyman` is provided by
-[lazyman.sh](https://lazyman.dev/info/lazyman.html).
+[lazyman.sh](https://lazyman.dev/info/lazyman_command.html).
 
 ## Install neovim and tools
 
@@ -138,9 +138,7 @@ installation. For example, to provide support for `composer`, `php`, `julia`,
 and `luarocks` run `lazyman -I`.
 
 The automated install and initialization is performed by `lazyman` and
-[install_neovim.sh](https://github.com/doctorfree/nvim-lazyman/wiki/install_neovim).
-View the `install_neovim.sh` script in the
-[Lazyman Wiki](https://github.com/doctorfree/nvim-lazyman/wiki/install_neovim).
+[install_neovim.sh](https://lazyman.dev/info/install_neovim).
 
 ## Lazyman Neovim Configuration Features
 

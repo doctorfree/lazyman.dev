@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Lazyman Neovim Configuration Manager
-toc: true
+toc: false
 post_style: page
 ---
 
 ## Lazyman Neovim Configuration Manager
 
-The [lazyman](https://lazyman.dev/info/lazyman.html) command
+The [lazyman](https://lazyman.dev/info/lazyman_command.html) command
 can be used to manage the Lazyman Neovim configuration.
 The `lazyman` command calls `scripts/lazyman_config.sh` to
 manage the Neovim configuration in `~/.config/nvim-Lazyman`.

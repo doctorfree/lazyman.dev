@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lazyman Command Source Code
-toc: true
+toc: false
 post_style: page
 ---
 
