@@ -25,9 +25,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 # Simplify creation and management of posts
 gem 'jekyll-compose', group: [:jekyll_plugins]
 
-# Open external links in a new tab
-gem 'jekyll-target-blank'
-
 # Lock jekyll-sass-converter to 2.x on Linux-musl
 if RUBY_PLATFORM =~ /linux-musl/
   gem "jekyll-sass-converter", "~> 2.0"
