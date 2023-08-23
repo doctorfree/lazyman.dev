@@ -1,13 +1,23 @@
 ---
-title: Lazyman Configuration Plugins and Language Servers
+title: Lazyman Neovim Configuration Plugins and Language Servers
 author: doctorfree
 date: 2023-07-01 15:25:00 +0800
-tags: [neovim, config, features, lazyman, plugins, servers, language]
+tags: [neovim, config, configuration, features, lazyman, plugins, servers, language]
 pin: false
 img_path: "/posts/20230701"
 ---
 
-# Lazyman configuration plugins list
+## Language Servers supported in the Lazyman Neovim configuration
+
+| **Lazyman** | **Neovim** | **Configuration** | **Language** | **Servers** |
+| :---------- | :--------: | :---------------: | :----------: | ----------: |
+| `ansiblels` | `astro` | `awk_ls` | `bashls` | `ccls` |
+| `clangd` | `cmake` | `cssmodules_ls` | `denols` | `dockerls` |
+| `eslint` | `gopls` | `graphql` | `html` | `jdtls` |
+| `jsonls` | `julials` | `ltex` | `lua_ls` | `marksman` |
+| `pylsp` | `pyright` | `rust_analyzer` | `sqlls` | `svelte` |
+| `tailwindcss` | `taplo` | `texlab` | `tflint` | `tsserver` |
+| `vimls` | `yamlls` | `zk` | | |
 
 ## Plugins used in the Lazyman Neovim configuration
 
@@ -261,41 +271,3 @@ img_path: "/posts/20230701"
 - [crusj/bookmarks.nvim](https://dotfyle.com/plugins/crusj/bookmarks.nvim)
 - [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
 - [kevinhwang91/nvim-ufo](https://dotfyle.com/plugins/kevinhwang91/nvim-ufo)
-
-# Lazyman configuration language server support
-
-## Language Servers supported in the Lazyman Neovim configuration
-
-- `ansiblels`
-- `astro`
-- `awk_ls`
-- `bashls`
-- `ccls`
-- `clangd`
-- `cmake`
-- `cssmodules_ls`
-- `denols`
-- `dockerls`
-- `eslint`
-- `gopls`
-- `graphql`
-- `html`
-- `jdtls`
-- `jsonls`
-- `julials`
-- `ltex`
-- `lua_ls`
-- `marksman`
-- `pylsp`
-- `pyright`
-- `rust_analyzer`
-- `sqlls`
-- `svelte`
-- `tailwindcss`
-- `taplo`
-- `texlab`
-- `tflint`
-- `tsserver`
-- `vimls`
-- `yamlls`
-- `zk`
