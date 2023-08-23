@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Go Configuration Info
+tags: [go, formatting, diagnostics, language]
 toc: true
 post_style: page
 ---
