@@ -147,7 +147,7 @@ The automated install and initialization is performed by `lazyman` and
     <a href="https://dotfyle.com/doctorfree/nvim-lazyman"><img src="https://dotfyle.com/doctorfree/nvim-lazyman/badges/leaderkey?style=flat" alt="Leader"/></a>
     <a href="https://dotfyle.com/doctorfree/nvim-lazyman"><img src="https://dotfyle.com/doctorfree/nvim-lazyman/badges/plugin-manager?style=flat" alt="Manager"/></a>
 </p><p>
-  <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/lazyman-plugins.png" alt="Plugins" style="width:870px;height:510px;">
+  <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/lazyman-plugins.png" alt="Plugins" style="width:850px;height:531px;">
 </p></div>
 
 ### General
@@ -487,7 +487,10 @@ are supported:
 ### Navigation
 
 <div align="center"><p>
-  <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/alpha.png" style="width:800px;height:800px;">
+  <img
+  src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/alpha.png"
+  alt="alpha"
+  style="width:680px;height:610px;">
 </p></div>
 
 - [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) for all your search needs
