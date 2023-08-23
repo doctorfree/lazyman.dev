@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Josean Configuration Info
+tags: Josean
 toc: true
 post_style: page
 ---

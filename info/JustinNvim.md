@@ -1,6 +1,7 @@
 ---
 layout: post
 title: JustinNvim Configuration Info
+tags: JustinNvim
 toc: true
 post_style: page
 ---

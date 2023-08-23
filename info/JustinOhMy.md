@@ -1,6 +1,7 @@
 ---
 layout: post
 title: JustinOhMy Configuration Info
+tags: JustinOhMy
 toc: true
 post_style: page
 ---
