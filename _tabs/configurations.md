@@ -267,6 +267,9 @@ installed with the `-w conf` option.
   - Personal Neovim configuration of chadcat, a high school student with no life
   - `Kodo` is a Neovim configuration that looks good and is fast (startuptime < 0.035s)
   - Install and initialize with `lazyman -w Kodo`
+- [LamarVim](https://lazyman.dev/info/LamarVim.html)
+  - Personal Neovim configuration of Cassio Lamarck
+  - Install and initialize with `lazyman -w LamarVim`
 - [Lukas](https://lazyman.dev/info/Lukas.html)
   - Packer based personal Neovim configuration of Lukas Reineke, author of many excellent Neovim plugins
   - Requires an externally installed `lua-language-server` and `efm-langserver`
