@@ -486,7 +486,7 @@ are supported:
 
 ### Navigation
 
-<div align="center"><p>
+<div><p>
   <img
   src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/alpha.png"
   alt="alpha"
@@ -501,7 +501,7 @@ are supported:
 
 ### Coding
 
-<div align="center"><p>
+<div><p>
   <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/diagnostics.png" style="width:800px;height:600px;">
 </p></div>
 
