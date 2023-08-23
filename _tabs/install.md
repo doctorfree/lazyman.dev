@@ -18,12 +18,24 @@ The [lazyman](https://lazyman.dev/usage) Neovim configuration manager requires
 Neovim 0.9. The `lazyman` installation and initialization process checks for
 Neovim 0.9 and, if not found, installs it and required dependencies and tools.
 
-Lazyman requires Linux or macOS, git, and the Bash shell.
+Lazyman requires Linux or macOS, git, and the Bash shell version 4 or later.
 
 - Neovim 0.9 (automatically installed if not found)
 - Unix/Linux/macOS
-- Bash
+- Bash version 4 or later
 - Git
+
+### macOS users
+
+Even the latest versions of macOS ship with Bash 3.2 which dates from 2007.
+Update your system to use a modern Bash with Homebrew:
+
+```bash
+brew install bash
+```
+
+After installing Bash with Homebrew, make sure it is found first in your PATH.
+For example, `export PATH="/usr/local/bin:${PATH}"` or `export PATH="/opt/homebrew/bin:${PATH}"`.
 
 ## Installation
 
