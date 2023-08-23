@@ -17,7 +17,7 @@ order: 10
 </div>
 
 The Lazyman project can be used to install, initialize, and manage multiple
-Neovim configurations. 101 popular Neovim configurations are supported.
+Neovim configurations. Over 100 popular Neovim configurations are supported.
 
 The two primary features of the Lazyman project are the `lazyman` command
 and the `nvims` shell function. The `lazyman` command provides a menu
