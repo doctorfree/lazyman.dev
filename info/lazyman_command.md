@@ -762,9 +762,11 @@ remove_config() {
 
 apply_patch() {
   patchdir="$1"
-  [ -f "${LMANDIR}"/scripts/patches/${patchdir}.patch ] && {
-    [ -x "${LMANDIR}"/scripts/patch_config.sh ] && {
-      "${LMANDIR}"/scripts/patch_config.sh "${patchdir}"
+  [ "${nopatch}" ] || {
+    [ -f "${LMANDIR}"/scripts/patches/${patchdir}.patch ] && {
+      [ -x "${LMANDIR}"/scripts/patch_config.sh ] && {
+        "${LMANDIR}"/scripts/patch_config.sh "${patchdir}"
+      }
     }
   }
 }
@@ -2772,10 +2774,10 @@ show_main_menu() {
                 nvims
               fi
               ;;
-   esac
- fi
- break
- ;;
+	  esac
+	fi
+	break
+	;;
       "Open Lazyman"*,* | *,"Open Lazyman"*)
         if [ "${USEGUI}" ]; then
           NVIM_APPNAME="nvim-Lazyman" neovide
@@ -3290,6 +3292,7 @@ latexvimdir="nvim-LaTeX"
 fix_latex="lua/user/treesitter.lua"
 menu="main"
 setconf=
+nopatch=
 nvchaddir="nvim-NvChad"
 spacevimdir="nvim-SpaceVim"
 magicvimdir="nvim-MagicVim"
@@ -3299,8 +3302,11 @@ neovimdir=()
   [ "$1" == "-F" ] && set -- "$@" 'config'
   [ "$1" == "-U" ] && neovimdir=("${LAZYMAN}")
 }
-while getopts "aAb:BcC:dD:eE:f:F:gGhHi:IjJkK:lL:mMnN:oO:pPqQrRsStTUvV:w:Wx:XyYzZu" flag; do
+while getopts "9aAb:BcC:dD:eE:f:F:gGhHi:IjJkK:lL:mMnN:oO:pPqQrRsStTUvV:w:Wx:XyYzZu" flag; do
   case $flag in
+  9)
+    nopatch=1
+    ;;
   a)
     astronvim=1
     neovimdir=("$astronvimdir")
@@ -3335,7 +3341,6 @@ while getopts "aAb:BcC:dD:eE:f:F:gGhHi:IjJkK:lL:mMnN:oO:pPqQrRsStTUvV:w:Wx:XyYzZ
     ;;
   d)
     debug=1
-    darg="-d"
     ;;
   e)
     ecovim=1
@@ -3551,6 +3556,23 @@ while getopts "aAb:BcC:dD:eE:f:F:gGhHi:IjJkK:lL:mMnN:oO:pPqQrRsStTUvV:w:Wx:XyYzZ
   esac
 done
 shift $((OPTIND - 1))
+
+if [ "${debug}" ]
+then
+  if [ "${nopatch}" ]
+  then
+    darg="-9 -d"
+  else
+    darg="-d"
+  fi
+else
+  if [ "${nopatch}" ]
+  then
+    darg="-9"
+  else
+    darg=
+  fi
+fi
 
 [ "${setconf}" ] && {
   ${SUBMENUS} -s "$1" "$2"
