@@ -1,7 +1,6 @@
 ---
 layout: post
 title: J4de Configuration Info
-tags: J4de
 toc: true
 post_style: page
 ---
