@@ -133,9 +133,9 @@ or, if initialized, an interactive menu system is displayed.
 
 Lazyman currently supports the following Neovim plugin managers:
 
-- [Lazy](https://github.com/folke/lazy.nvim) (lazy.nvim)
-- [Packer](https://github.com/wbthomason/packer.nvim) (packer.nvim)
-- [Plug](https://github.com/junegunn/vim-plug) (vim-plug)
+- [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"} (lazy.nvim)
+- [Packer](https://github.com/wbthomason/packer.nvim){:target="_blank"}{:rel="noopener noreferrer"} (packer.nvim)
+- [Plug](https://github.com/junegunn/vim-plug){:target="_blank"}{:rel="noopener noreferrer"} (vim-plug)
 
 The SpaceVim bundled plugin manager, **dein**, is supported only for the
 SpaceVim install and initialization but Neovim configurations preconfigured
@@ -196,7 +196,7 @@ configurations. The setting `conf.namespace` in `lua/configuration.lua`
 controls which configuration is active. The supported values for
 `conf.namespace` are `free` and `onno`. The `free` namespace is the same
 configuration used in previous releases of `Lazyman`. The `onno` namespace
-is based on the [ONNO](https://github.com/doctorfree/nvim-lazyman/blob/main/info/ONNO.md)
+is based on the [ONNO](https://lazyman.dev/info/ONNO.html)
 configuration with modifications and enhancements to integrate this config with `lazyman`.
 
 To use the `free` namespace, set:
@@ -232,15 +232,15 @@ conf.enable_transparent = false
 
 ###### Supported themes
 
-- [catppuccin](https://github.com/catppuccin/nvim.git)
-- [dracula](https://github.com/Mofiqul/dracula.nvim)
-- [everforest](https://github.com/neanias/everforest-nvim.git)
-- [kanagawa](https://github.com/rebelot/kanagawa.nvim.git)
-- [nightfox](https://github.com/EdenEast/nightfox.nvim.git)
-- [monokai-pro](https://github.com/loctvl842/monokai-pro.nvim)
-- [onedarkpro](https://github.com/olimorris/onedarkpro.nvim.git)
-- [tokyonight](https://github.com/folke/tokyonight.nvim.git)
-- [tundra](https://github.com/sam4llis/nvim-tundra.git)
+- [catppuccin](https://github.com/catppuccin/nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [dracula](https://github.com/Mofiqul/dracula.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [everforest](https://github.com/neanias/everforest-nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [kanagawa](https://github.com/rebelot/kanagawa.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [nightfox](https://github.com/EdenEast/nightfox.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [monokai-pro](https://github.com/loctvl842/monokai-pro.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [onedarkpro](https://github.com/olimorris/onedarkpro.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [tokyonight](https://github.com/folke/tokyonight.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [tundra](https://github.com/sam4llis/nvim-tundra.git){:target="_blank"}{:rel="noopener noreferrer"}
 
 A configuration file for each theme is in `lua/themes/` and lualine theme
 configuration for each theme and its styles in `lua/themes/lualine`.
@@ -345,9 +345,9 @@ below along with their default settings:
   - `conf.enable_games = true`
 - Enable the Alpha dashboard
   - `conf.dashboard = "alpha"`
-- Enable the Neovim bookmarks plugin (<https://github.com/ldelossa/nvim-ide>)
+- Enable the [Neovim bookmarks plugin](https://github.com/ldelossa/nvim-ide){:target="_blank"}{:rel="noopener noreferrer"}
   - `conf.enable_bookmarks = false`
-- Enable the Neovim IDE plugin (<https://github.com/ldelossa/nvim-ide>)
+- Enable the [Neovim IDE plugin](https://github.com/ldelossa/nvim-ide){:target="_blank"}{:rel="noopener noreferrer"}
   - `conf.enable_ide = false`
 - Enable Navigator
   - `conf.enable_navigator = true`
@@ -369,7 +369,7 @@ Additional plugin configuration and options are available in `configuration.lua`
 ### Lazyman Neovim Terminal
 
 The `Lazyman` Neovim configuration includes Neovim Terminal management via
-[terminal.nvim](https://github.com/rebelot/terminal.nvim). This Neovim terminal
+[terminal.nvim](https://github.com/rebelot/terminal.nvim){:target="_blank"}{:rel="noopener noreferrer"}. This Neovim terminal
 is preconfigured for execution of the `lazyman` command. Shortcut key
 bindings to execute `lazyman` in a Neovim terminal have been provided:
 `<leader>lm` to bring up the main Lazyman menu, and `<leader>lc` to bring up
@@ -387,7 +387,7 @@ the normal Neovim mode, motion, and command key bindings are in effect.
 For example, to leave insert mode press `<ESC>`, to re-enter insert
 mode press `i` or `a`.
 
-If [Asciiville](https://asciiville.dev) is installed,
+If [Asciiville](https://asciiville.dev){:target="_blank"}{:rel="noopener noreferrer"} is installed,
 pressing `,A` or executing the `:Asciiville` Neovim command will execute
 the `asciiville` command in a Neovim floating terminal window.
 

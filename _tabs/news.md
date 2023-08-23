@@ -42,7 +42,7 @@ Recent releases of `lazyman` include several new features, fixes, and improvemen
     - `lazyman info` to fuzzy select a config to display info
   - Menu interface also supports keywords to fuzzy select a config for an action
   - Additional keywords supported: `health`, `init`, `remove`, `search`, `status`
-- Auto-install of [Bob](https://github.com/MordechaiHadad/bob) Neovim version manager (optional)
+- Auto-install of [Bob](https://github.com/MordechaiHadad/bob){:target="_blank"}{:rel="noopener noreferrer"} Neovim version manager (optional)
 - Multiple namespace support in `nvim-Lazyman` default `lazyman` Neovim configuration
   - Select which namespace to use in `lua/configuration.lua` or via the menu interface
   - Both namespaces can be configured vi the Lazyman configuration menus (`lazyman -F`)
@@ -90,7 +90,7 @@ Examples:
 ```
 
 More info and source code listing for `nvims` can be found in the
-[Lazyman Wiki](https://github.com/doctorfree/nvim-lazyman/wiki/Nvims).
+[Lazyman Wiki](https://github.com/doctorfree/nvim-lazyman/wiki/Nvims){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ## Get configuration script
 

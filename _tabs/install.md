@@ -75,9 +75,10 @@ dependencies and tools. Supported native package managers include:
 - `zypper` on SUSE Linux
 
 Alternately, command line options exist to direct `lazyman` to install Neovim,
-dependencies and tools using [Homebrew](https://brew.sh) or to skip the Neovim
-installation altogether. If no supported native package manager is found then
-Homebrew is used. Homebrew is always used on macOS.
+dependencies and tools using
+[Homebrew](https://brew.sh){:target="_blank"}{:rel="noopener noreferrer"}
+or to skip the Neovim installation altogether. If no supported native package
+manager is found then Homebrew is used. Homebrew is always used on macOS.
 
 To install Neovim, dependencies, and tools using Homebrew rather than the
 native package manger, invoke `lazyman` with the `-h` option when initializing:
@@ -154,7 +155,7 @@ to control where Neovim looks for its configuration.
 If you do not wish to use the automated installation and initialization
 provided by the `lazyman.sh` script, manual installation and initialization
 can be performed. See the Lazyman Wiki article on
-[Manual Installation](https://github.com/doctorfree/nvim-lazyman/wiki/Manual_Installation)
+[Manual Installation](https://github.com/doctorfree/nvim-lazyman/wiki/Manual_Installation){:target="_blank"}{:rel="noopener noreferrer"}
 to manually install rather than use the automated installation feature of
 the `lazyman` command.
 
