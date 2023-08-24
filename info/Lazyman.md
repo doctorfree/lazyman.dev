@@ -18,7 +18,7 @@ The Lazyman Neovim configuration serves as a reference implementation of a confi
 
 ### Git repository
 
-[https://github.com/doctorfree/nvim-lazyman](https://github.com/doctorfree/nvim-lazyman)
+[https://github.com/doctorfree/nvim-lazyman](https://github.com/doctorfree/nvim-lazyman){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Neovimcraft entry
 
@@ -30,7 +30,7 @@ The Lazyman Neovim configuration serves as a reference implementation of a confi
 
 ### Website
 
-[https://ronrecord.com](https://ronrecord.com){:target="_blank"}{:rel="noopener noreferrer"}
+[https://lazyman.dev](https://lazyman.dev)
 
 ### YouTube channel
 
