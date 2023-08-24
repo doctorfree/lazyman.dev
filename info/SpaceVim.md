@@ -11,109 +11,109 @@ SpaceVim started in December 2016, it is a mature and well supported Neovim conf
 
 - Install and initialize: **`lazyman -s`**
 - Configuration category: [Base](https://lazyman.dev/configurations/#base-configurations)
-- Base configuration:     [SpaceVim](https://spacevim.org)
-- Plugin manager:         [SP (dein)](https://github.com/Shougo/dein.vim)
+- Base configuration:     [SpaceVim](https://spacevim.org){:target="_blank"}{:rel="noopener noreferrer"}
+- Plugin manager:         [SP (dein)](https://github.com/Shougo/dein.vim){:target="_blank"}{:rel="noopener noreferrer"}
 - Installation location:  **`~/.config/nvim-SpaceVim`**
 
 
 ### Git repository
 
-[https://github.com/doctorfree/spacevim](https://github.com/doctorfree/spacevim)
+[https://github.com/doctorfree/spacevim](https://github.com/doctorfree/spacevim){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Website
 
-[https://spacevim.org](https://spacevim.org)
+[https://spacevim.org](https://spacevim.org){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### SP (dein) managed plugins
 
-- [2072/PHP-Indenting-for-VIm](https://github.com/2072/PHP-Indenting-for-VIm)
-- [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-- [andrewradev/splitjoin.vim](https://github.com/andrewradev/splitjoin.vim)
-- [ap/vim-css-color](https://github.com/ap/vim-css-color)
-- [arcticicestudio/nord-vim](https://github.com/arcticicestudio/nord-vim)
-- [buoto/gotests-vim](https://github.com/buoto/gotests-vim)
-- [c9s/perlomni.vim](https://github.com/c9s/perlomni.vim)
-- [cakebaker/scss-syntax.vim](https://github.com/cakebaker/scss-syntax.vim)
-- [chazy/dirsettings](https://github.com/chazy/dirsettings)
-- [chrisbra/vim-zsh](https://github.com/chrisbra/vim-zsh)
-- [ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
-- [dag/vim-fish](https://github.com/dag/vim-fish)
-- [DeaR/ctrlp-jumps](https://github.com/DeaR/ctrlp-jumps)
-- [digitaltoad/vim-pug](https://github.com/digitaltoad/vim-pug)
-- [drewtempelmeyer/palenight.vim](https://github.com/drewtempelmeyer/palenight.vim)
-- [edkolev/tmuxline.vim](https://github.com/edkolev/tmuxline.vim)
-- [fedorenchik/VimCalc3](https://github.com/fedorenchik/VimCalc3)
-- [FelikZ/ctrlp-py-matcher](https://github.com/FelikZ/ctrlp-py-matcher)
-- [Gabirel/molokai](https://github.com/Gabirel/molokai)
-- [groenewege/vim-less](https://github.com/groenewege/vim-less)
-- [hail2u/vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)
-- [hara/ctrlp-colorscheme](https://github.com/hara/ctrlp-colorscheme)
-- [heavenshell/vim-jsdoc](https://github.com/heavenshell/vim-jsdoc)
-- [heavenshell/vim-pydocstring](https://github.com/heavenshell/vim-pydocstring)
-- [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
-- [iamcco/mathjax-support-for-mkdp](https://github.com/iamcco/mathjax-support-for-mkdp)
-- [icymind/NeoSolarized](https://github.com/icymind/NeoSolarized)
-- [isundil/vim-irssi-syntax](https://github.com/isundil/vim-irssi-syntax)
-- [joker1007/vim-markdown-quote-syntax](https://github.com/joker1007/vim-markdown-quote-syntax)
-- [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)
-- [junegunn/fzf](https://github.com/junegunn/fzf)
-- [junegunn/goyo.vim](https://github.com/junegunn/goyo.vim)
-- [junegunn/limelight.vim](https://github.com/junegunn/limelight.vim)
-- [juvenn/mustache.vim](https://github.com/juvenn/mustache.vim)
-- [lambdalisue/suda.vim](https://github.com/lambdalisue/suda.vim)
-- [leafgarland/typescript-vim](https://github.com/leafgarland/typescript-vim)
-- [lvht/tagbar-markdown](https://github.com/lvht/tagbar-markdown)
-- [lymslive/vimloo](https://github.com/lymslive/vimloo)
-- [lymslive/vnote](https://github.com/lymslive/vnote)
-- [mattn/ctrlp-register](https://github.com/mattn/ctrlp-register)
-- [mattn/emmet-vim](https://github.com/mattn/emmet-vim)
-- [mbbill/fencview](https://github.com/mbbill/fencview)
-- [mhartington/nvim-typescript](https://github.com/mhartington/nvim-typescript)
-- [nanotech/jellybeans.vim](https://github.com/nanotech/jellybeans.vim)
-- [neoclide/vim-node-rpc](https://github.com/neoclide/vim-node-rpc)
-- [octol/vim-cpp-enhanced-highlight](https://github.com/octol/vim-cpp-enhanced-highlight)
-- [othree/html5.vim](https://github.com/othree/html5.vim)
-- [peterhoeg/vim-qml](https://github.com/peterhoeg/vim-qml)
-- [PotatoesMaster/i3-vim-syntax](https://github.com/PotatoesMaster/i3-vim-syntax)
-- [prabirshrestha/async.vim](https://github.com/prabirshrestha/async.vim)
-- [prabirshrestha/vim-lsp](https://github.com/prabirshrestha/vim-lsp)
-- [Quramy/tsuquyomi](https://github.com/Quramy/tsuquyomi)
-- [racer-rust/vim-racer](https://github.com/racer-rust/vim-racer)
-- [rakr/vim-one](https://github.com/rakr/vim-one)
-- [rhysd/vim-wasm](https://github.com/rhysd/vim-wasm)
-- [sebdah/vim-delve](https://github.com/sebdah/vim-delve)
-- [Shougo/deol.nvim](https://github.com/Shougo/deol.nvim)
-- [Shougo/deoplete-clangx](https://github.com/Shougo/deoplete-clangx)
-- [Shougo/echodoc.vim](https://github.com/Shougo/echodoc.vim)
-- [Shougo/neco-vim](https://github.com/Shougo/neco-vim)
-- [Shougo/vimproc.vim](https://github.com/Shougo/vimproc.vim)
-- [Shougo/vimshell.vim](https://github.com/Shougo/vimshell.vim)
-- [SpaceVim/fzf-neoyank](https://github.com/SpaceVim/fzf-neoyank)
-- [SpaceVim/vim-ctrlp-help](https://github.com/SpaceVim/vim-ctrlp-help)
-- [SpaceVim/vim-material](https://github.com/SpaceVim/vim-material)
-- [srcery-colors/srcery-vim](https://github.com/srcery-colors/srcery-vim)
-- [StanAngeloff/php.vim](https://github.com/StanAngeloff/php.vim)
-- [syngan/vim-vimlint](https://github.com/syngan/vim-vimlint)
-- [tmux-plugins/vim-tmux](https://github.com/tmux-plugins/vim-tmux)
-- [todesking/vint-syntastic](https://github.com/todesking/vint-syntastic)
-- [tpope/vim-markdown](https://github.com/tpope/vim-markdown)
-- [tpope/vim-scriptease](https://github.com/tpope/vim-scriptease)
-- [tweekmonster/exception.vim](https://github.com/tweekmonster/exception.vim)
-- [vimperator/vimperator.vim](https://github.com/vimperator/vimperator.vim)
-- [vim-perl/vim-perl](https://github.com/vim-perl/vim-perl)
-- [vimwiki/vimwiki](https://github.com/vimwiki/vimwiki)
-- [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid)
-- [wavded/vim-stylus](https://github.com/wavded/vim-stylus)
-- [wsdjeg/ctrlp-menu](https://github.com/wsdjeg/ctrlp-menu)
-- [wsdjeg/ctrlp-yank](https://github.com/wsdjeg/ctrlp-yank)
-- [wsdjeg/Mysql.vim](https://github.com/wsdjeg/Mysql.vim)
-- [wsdjeg/perldoc-vim](https://github.com/wsdjeg/perldoc-vim)
-- [wsdjeg/SourceCounter.vim](https://github.com/wsdjeg/SourceCounter.vim)
-- [wsdjeg/vim-ctrlp-message](https://github.com/wsdjeg/vim-ctrlp-message)
-- [wsdjeg/vim-debug](https://github.com/wsdjeg/vim-debug)
-- [wsdjeg/vim-dockerfile](https://github.com/wsdjeg/vim-dockerfile)
-- [ynkdir/vim-vimlparser](https://github.com/ynkdir/vim-vimlparser)
-- [zchee/deoplete-zsh](https://github.com/zchee/deoplete-zsh)
+- [2072/PHP-Indenting-for-VIm](https://github.com/2072/PHP-Indenting-for-VIm){:target="_blank"}{:rel="noopener noreferrer"}
+- [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter){:target="_blank"}{:rel="noopener noreferrer"}
+- [andrewradev/splitjoin.vim](https://github.com/andrewradev/splitjoin.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [ap/vim-css-color](https://github.com/ap/vim-css-color){:target="_blank"}{:rel="noopener noreferrer"}
+- [arcticicestudio/nord-vim](https://github.com/arcticicestudio/nord-vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [buoto/gotests-vim](https://github.com/buoto/gotests-vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [c9s/perlomni.vim](https://github.com/c9s/perlomni.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [cakebaker/scss-syntax.vim](https://github.com/cakebaker/scss-syntax.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [chazy/dirsettings](https://github.com/chazy/dirsettings){:target="_blank"}{:rel="noopener noreferrer"}
+- [chrisbra/vim-zsh](https://github.com/chrisbra/vim-zsh){:target="_blank"}{:rel="noopener noreferrer"}
+- [ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [dag/vim-fish](https://github.com/dag/vim-fish){:target="_blank"}{:rel="noopener noreferrer"}
+- [DeaR/ctrlp-jumps](https://github.com/DeaR/ctrlp-jumps){:target="_blank"}{:rel="noopener noreferrer"}
+- [digitaltoad/vim-pug](https://github.com/digitaltoad/vim-pug){:target="_blank"}{:rel="noopener noreferrer"}
+- [drewtempelmeyer/palenight.vim](https://github.com/drewtempelmeyer/palenight.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [edkolev/tmuxline.vim](https://github.com/edkolev/tmuxline.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [fedorenchik/VimCalc3](https://github.com/fedorenchik/VimCalc3){:target="_blank"}{:rel="noopener noreferrer"}
+- [FelikZ/ctrlp-py-matcher](https://github.com/FelikZ/ctrlp-py-matcher){:target="_blank"}{:rel="noopener noreferrer"}
+- [Gabirel/molokai](https://github.com/Gabirel/molokai){:target="_blank"}{:rel="noopener noreferrer"}
+- [groenewege/vim-less](https://github.com/groenewege/vim-less){:target="_blank"}{:rel="noopener noreferrer"}
+- [hail2u/vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax){:target="_blank"}{:rel="noopener noreferrer"}
+- [hara/ctrlp-colorscheme](https://github.com/hara/ctrlp-colorscheme){:target="_blank"}{:rel="noopener noreferrer"}
+- [heavenshell/vim-jsdoc](https://github.com/heavenshell/vim-jsdoc){:target="_blank"}{:rel="noopener noreferrer"}
+- [heavenshell/vim-pydocstring](https://github.com/heavenshell/vim-pydocstring){:target="_blank"}{:rel="noopener noreferrer"}
+- [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [iamcco/mathjax-support-for-mkdp](https://github.com/iamcco/mathjax-support-for-mkdp){:target="_blank"}{:rel="noopener noreferrer"}
+- [icymind/NeoSolarized](https://github.com/icymind/NeoSolarized){:target="_blank"}{:rel="noopener noreferrer"}
+- [isundil/vim-irssi-syntax](https://github.com/isundil/vim-irssi-syntax){:target="_blank"}{:rel="noopener noreferrer"}
+- [joker1007/vim-markdown-quote-syntax](https://github.com/joker1007/vim-markdown-quote-syntax){:target="_blank"}{:rel="noopener noreferrer"}
+- [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [junegunn/fzf](https://github.com/junegunn/fzf){:target="_blank"}{:rel="noopener noreferrer"}
+- [junegunn/goyo.vim](https://github.com/junegunn/goyo.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [junegunn/limelight.vim](https://github.com/junegunn/limelight.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [juvenn/mustache.vim](https://github.com/juvenn/mustache.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [lambdalisue/suda.vim](https://github.com/lambdalisue/suda.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [leafgarland/typescript-vim](https://github.com/leafgarland/typescript-vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [lvht/tagbar-markdown](https://github.com/lvht/tagbar-markdown){:target="_blank"}{:rel="noopener noreferrer"}
+- [lymslive/vimloo](https://github.com/lymslive/vimloo){:target="_blank"}{:rel="noopener noreferrer"}
+- [lymslive/vnote](https://github.com/lymslive/vnote){:target="_blank"}{:rel="noopener noreferrer"}
+- [mattn/ctrlp-register](https://github.com/mattn/ctrlp-register){:target="_blank"}{:rel="noopener noreferrer"}
+- [mattn/emmet-vim](https://github.com/mattn/emmet-vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [mbbill/fencview](https://github.com/mbbill/fencview){:target="_blank"}{:rel="noopener noreferrer"}
+- [mhartington/nvim-typescript](https://github.com/mhartington/nvim-typescript){:target="_blank"}{:rel="noopener noreferrer"}
+- [nanotech/jellybeans.vim](https://github.com/nanotech/jellybeans.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [neoclide/vim-node-rpc](https://github.com/neoclide/vim-node-rpc){:target="_blank"}{:rel="noopener noreferrer"}
+- [octol/vim-cpp-enhanced-highlight](https://github.com/octol/vim-cpp-enhanced-highlight){:target="_blank"}{:rel="noopener noreferrer"}
+- [othree/html5.vim](https://github.com/othree/html5.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [peterhoeg/vim-qml](https://github.com/peterhoeg/vim-qml){:target="_blank"}{:rel="noopener noreferrer"}
+- [PotatoesMaster/i3-vim-syntax](https://github.com/PotatoesMaster/i3-vim-syntax){:target="_blank"}{:rel="noopener noreferrer"}
+- [prabirshrestha/async.vim](https://github.com/prabirshrestha/async.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [prabirshrestha/vim-lsp](https://github.com/prabirshrestha/vim-lsp){:target="_blank"}{:rel="noopener noreferrer"}
+- [Quramy/tsuquyomi](https://github.com/Quramy/tsuquyomi){:target="_blank"}{:rel="noopener noreferrer"}
+- [racer-rust/vim-racer](https://github.com/racer-rust/vim-racer){:target="_blank"}{:rel="noopener noreferrer"}
+- [rakr/vim-one](https://github.com/rakr/vim-one){:target="_blank"}{:rel="noopener noreferrer"}
+- [rhysd/vim-wasm](https://github.com/rhysd/vim-wasm){:target="_blank"}{:rel="noopener noreferrer"}
+- [sebdah/vim-delve](https://github.com/sebdah/vim-delve){:target="_blank"}{:rel="noopener noreferrer"}
+- [Shougo/deol.nvim](https://github.com/Shougo/deol.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [Shougo/deoplete-clangx](https://github.com/Shougo/deoplete-clangx){:target="_blank"}{:rel="noopener noreferrer"}
+- [Shougo/echodoc.vim](https://github.com/Shougo/echodoc.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [Shougo/neco-vim](https://github.com/Shougo/neco-vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [Shougo/vimproc.vim](https://github.com/Shougo/vimproc.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [Shougo/vimshell.vim](https://github.com/Shougo/vimshell.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [SpaceVim/fzf-neoyank](https://github.com/SpaceVim/fzf-neoyank){:target="_blank"}{:rel="noopener noreferrer"}
+- [SpaceVim/vim-ctrlp-help](https://github.com/SpaceVim/vim-ctrlp-help){:target="_blank"}{:rel="noopener noreferrer"}
+- [SpaceVim/vim-material](https://github.com/SpaceVim/vim-material){:target="_blank"}{:rel="noopener noreferrer"}
+- [srcery-colors/srcery-vim](https://github.com/srcery-colors/srcery-vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [StanAngeloff/php.vim](https://github.com/StanAngeloff/php.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [syngan/vim-vimlint](https://github.com/syngan/vim-vimlint){:target="_blank"}{:rel="noopener noreferrer"}
+- [tmux-plugins/vim-tmux](https://github.com/tmux-plugins/vim-tmux){:target="_blank"}{:rel="noopener noreferrer"}
+- [todesking/vint-syntastic](https://github.com/todesking/vint-syntastic){:target="_blank"}{:rel="noopener noreferrer"}
+- [tpope/vim-markdown](https://github.com/tpope/vim-markdown){:target="_blank"}{:rel="noopener noreferrer"}
+- [tpope/vim-scriptease](https://github.com/tpope/vim-scriptease){:target="_blank"}{:rel="noopener noreferrer"}
+- [tweekmonster/exception.vim](https://github.com/tweekmonster/exception.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [vimperator/vimperator.vim](https://github.com/vimperator/vimperator.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [vim-perl/vim-perl](https://github.com/vim-perl/vim-perl){:target="_blank"}{:rel="noopener noreferrer"}
+- [vimwiki/vimwiki](https://github.com/vimwiki/vimwiki){:target="_blank"}{:rel="noopener noreferrer"}
+- [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid){:target="_blank"}{:rel="noopener noreferrer"}
+- [wavded/vim-stylus](https://github.com/wavded/vim-stylus){:target="_blank"}{:rel="noopener noreferrer"}
+- [wsdjeg/ctrlp-menu](https://github.com/wsdjeg/ctrlp-menu){:target="_blank"}{:rel="noopener noreferrer"}
+- [wsdjeg/ctrlp-yank](https://github.com/wsdjeg/ctrlp-yank){:target="_blank"}{:rel="noopener noreferrer"}
+- [wsdjeg/Mysql.vim](https://github.com/wsdjeg/Mysql.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [wsdjeg/perldoc-vim](https://github.com/wsdjeg/perldoc-vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [wsdjeg/SourceCounter.vim](https://github.com/wsdjeg/SourceCounter.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [wsdjeg/vim-ctrlp-message](https://github.com/wsdjeg/vim-ctrlp-message){:target="_blank"}{:rel="noopener noreferrer"}
+- [wsdjeg/vim-debug](https://github.com/wsdjeg/vim-debug){:target="_blank"}{:rel="noopener noreferrer"}
+- [wsdjeg/vim-dockerfile](https://github.com/wsdjeg/vim-dockerfile){:target="_blank"}{:rel="noopener noreferrer"}
+- [ynkdir/vim-vimlparser](https://github.com/ynkdir/vim-vimlparser){:target="_blank"}{:rel="noopener noreferrer"}
+- [zchee/deoplete-zsh](https://github.com/zchee/deoplete-zsh){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### SpaceVim Keymaps
 

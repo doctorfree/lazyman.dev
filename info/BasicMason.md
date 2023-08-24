@@ -12,23 +12,23 @@ Minimal setup with 'mason.nvim'
 - Install and initialize: **`lazyman -x BasicMason`**
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
-- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
+- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 - Installation location:  **`~/.config/nvim-BasicMason`**
 
 
 ### Git repository
 
-[https://github.com/VonHeikemen/nvim-starter/tree/xx-mason](https://github.com/VonHeikemen/nvim-starter/tree/xx-mason)
+[https://github.com/VonHeikemen/nvim-starter/tree/xx-mason](https://github.com/VonHeikemen/nvim-starter/tree/xx-mason){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Lazy managed plugins
 
-- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
-- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
-- [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
-- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
-- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim)
-- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/lazy.nvim](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp){:target="_blank"}{:rel="noopener noreferrer"}
+- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### BasicMason Keymaps
 

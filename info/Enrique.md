@@ -12,13 +12,13 @@ Personal Neovim configuration of Enrique Mejidas
 - Install and initialize: **`lazyman -w Enrique`**
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
-- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
+- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 - Installation location:  **`~/.config/nvim-Enrique`**
 
 
 ### Git repository
 
-[https://github.com/kiyov09/dotfiles](https://github.com/kiyov09/dotfiles)
+[https://github.com/kiyov09/dotfiles](https://github.com/kiyov09/dotfiles){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Lazy managed plugins
 

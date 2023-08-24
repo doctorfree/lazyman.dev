@@ -12,71 +12,71 @@ PaK in Farsi means pure, something that is in its purest form
 - Install and initialize: **`lazyman -x NvPak`**
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
-- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
+- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 - Installation location:  **`~/.config/nvim-NvPak`**
 
 
 ### Git repository
 
-[https://github.com/Pakrohk-DotFiles/NvPak.git](https://github.com/Pakrohk-DotFiles/NvPak.git)
+[https://github.com/Pakrohk-DotFiles/NvPak.git](https://github.com/Pakrohk-DotFiles/NvPak.git){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Neovimcraft entry
 
-[http://neovimcraft.com/plugin/Pakrohk-DotFiles/NvPak](http://neovimcraft.com/plugin/Pakrohk-DotFiles/NvPak)
+[http://neovimcraft.com/plugin/Pakrohk-DotFiles/NvPak](http://neovimcraft.com/plugin/Pakrohk-DotFiles/NvPak){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Lazy managed plugins
 
-- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
-- [m4xshen/autoclose.nvim](https://github.com/m4xshen/autoclose.nvim.git)
-- [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim.git)
-- [jayden-chan/base46.nvim](https://github.com/jayden-chan/base46.nvim.git)
-- [catppuccin/nvim](https://github.com/catppuccin/nvim)
-- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
-- [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
-- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
-- [hrsh7th/cmp-nvim-lsp-document-symbol](https://github.com/hrsh7th/cmp-nvim-lsp-document-symbol.git)
-- [hrsh7th/cmp-nvim-lsp-signature-help](https://github.com/hrsh7th/cmp-nvim-lsp-signature-help.git)
-- [hrsh7th/cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua)
-- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path)
-- [f3fora/cmp-spell](https://github.com/f3fora/cmp-spell)
-- [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
-- [glepnir/dashboard-nvim](https://github.com/glepnir/dashboard-nvim)
-- [Mofiqul/dracula.nvim](https://github.com/Mofiqul/dracula.nvim)
-- [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
-- [cocopon/iceberg.vim](https://github.com/cocopon/iceberg.vim.git)
-- [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
-- [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
-- [linrongbin16/lsp-progress.nvim](https://github.com/linrongbin16/lsp-progress.nvim.git)
-- [~whynothugo/lsp_lines.nvim](https://git.sr.ht/~whynothugo/lsp_lines.nvim)
-- [onsails/lspkind-nvim](https://github.com/onsails/lspkind-nvim)
-- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
-- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
-- [jayp0521/mason-null-ls.nvim](https://github.com/jayp0521/mason-null-ls.nvim)
-- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim)
-- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim)
-- [tanvirtin/monokai.nvim](https://github.com/tanvirtin/monokai.nvim.git)
-- [folke/neodev.nvim](https://github.com/folke/neodev.nvim)
-- [shaunsingh/nord.nvim](https://github.com/shaunsingh/nord.nvim)
-- [jayp0521/mason-null-ls.nvim](https://github.com/jayp0521/mason-null-ls.nvim)
-- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)
-- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim)
-- [rcarriga/nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
-- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-- [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify)
-- [s1n7ax/nvim-terminal](https://github.com/s1n7ax/nvim-terminal.git)
-- [kyazdani42/nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
-- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
-- [navarasu/onedark.nvim](https://github.com/navarasu/onedark.nvim)
-- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
-- [ahmedkhalf/project.nvim](https://github.com/ahmedkhalf/project.nvim)
-- [rose-pine/neovim](https://github.com/rose-pine/neovim.git)
-- [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
-- [nvim-telescope/telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim)
-- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-- [folke/trouble.nvim](https://github.com/folke/trouble.nvim)
+- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip){:target="_blank"}{:rel="noopener noreferrer"}
+- [m4xshen/autoclose.nvim](https://github.com/m4xshen/autoclose.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [jayden-chan/base46.nvim](https://github.com/jayden-chan/base46.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [catppuccin/nvim](https://github.com/catppuccin/nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-nvim-lsp-document-symbol](https://github.com/hrsh7th/cmp-nvim-lsp-document-symbol.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-nvim-lsp-signature-help](https://github.com/hrsh7th/cmp-nvim-lsp-signature-help.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path){:target="_blank"}{:rel="noopener noreferrer"}
+- [f3fora/cmp-spell](https://github.com/f3fora/cmp-spell){:target="_blank"}{:rel="noopener noreferrer"}
+- [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip){:target="_blank"}{:rel="noopener noreferrer"}
+- [glepnir/dashboard-nvim](https://github.com/glepnir/dashboard-nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [Mofiqul/dracula.nvim](https://github.com/Mofiqul/dracula.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets){:target="_blank"}{:rel="noopener noreferrer"}
+- [cocopon/iceberg.vim](https://github.com/cocopon/iceberg.vim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/lazy.nvim](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [linrongbin16/lsp-progress.nvim](https://github.com/linrongbin16/lsp-progress.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [~whynothugo/lsp_lines.nvim](https://git.sr.ht/~whynothugo/lsp_lines.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [onsails/lspkind-nvim](https://github.com/onsails/lspkind-nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [jayp0521/mason-null-ls.nvim](https://github.com/jayp0521/mason-null-ls.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [tanvirtin/monokai.nvim](https://github.com/tanvirtin/monokai.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/neodev.nvim](https://github.com/folke/neodev.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [shaunsingh/nord.nvim](https://github.com/shaunsingh/nord.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [jayp0521/mason-null-ls.nvim](https://github.com/jayp0521/mason-null-ls.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp){:target="_blank"}{:rel="noopener noreferrer"}
+- [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua){:target="_blank"}{:rel="noopener noreferrer"}
+- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [rcarriga/nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui){:target="_blank"}{:rel="noopener noreferrer"}
+- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig){:target="_blank"}{:rel="noopener noreferrer"}
+- [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify){:target="_blank"}{:rel="noopener noreferrer"}
+- [s1n7ax/nvim-terminal](https://github.com/s1n7ax/nvim-terminal.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [kyazdani42/nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter){:target="_blank"}{:rel="noopener noreferrer"}
+- [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons){:target="_blank"}{:rel="noopener noreferrer"}
+- [navarasu/onedark.nvim](https://github.com/navarasu/onedark.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [ahmedkhalf/project.nvim](https://github.com/ahmedkhalf/project.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [rose-pine/neovim](https://github.com/rose-pine/neovim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-telescope/telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/trouble.nvim](https://github.com/folke/trouble.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### NvPak Keymaps
 

@@ -12,48 +12,48 @@ post_style: page
 - Install and initialize: **`lazyman -w Primeagen`**
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
-- Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
+- Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 - Installation location:  **`~/.config/nvim-Primeagen`**
 
 
 ### Git repository
 
-[https://github.com/ThePrimeagen/init.lua](https://github.com/ThePrimeagen/init.lua)
+[https://github.com/ThePrimeagen/init.lua](https://github.com/ThePrimeagen/init.lua){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### YouTube channel
 
-[https://www.youtube.com/@ThePrimeagen](https://www.youtube.com/@ThePrimeagen)
+[https://www.youtube.com/@ThePrimeagen](https://www.youtube.com/@ThePrimeagen){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Packer managed plugins
 
-- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
-- [eandrju/cellular-automaton.nvim](https://github.com/eandrju/cellular-automaton.nvim)
-- [laytan/cloak.nvim](https://github.com/laytan/cloak.nvim)
-- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
-- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
-- [hrsh7th/cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua)
-- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path)
-- [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
-- [github/copilot.vim](https://github.com/github/copilot.vim)
-- [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
-- [theprimeagen/harpoon](https://github.com/theprimeagen/harpoon)
-- [VonHeikemen/lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim)
-- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
-- [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
-- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [nvim-treesitter/nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context)
-- [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)
-- [nvim-treesitter/playground](https://github.com/nvim-treesitter/playground)
-- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
-- [theprimeagen/refactoring.nvim](https://github.com/theprimeagen/refactoring.nvim)
-- [rose-pine/neovim](https://github.com/rose-pine/neovim)
-- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-- [folke/trouble.nvim](https://github.com/folke/trouble.nvim)
-- [mbbill/undotree](https://github.com/mbbill/undotree)
-- [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
-- [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
+- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip){:target="_blank"}{:rel="noopener noreferrer"}
+- [eandrju/cellular-automaton.nvim](https://github.com/eandrju/cellular-automaton.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [laytan/cloak.nvim](https://github.com/laytan/cloak.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path){:target="_blank"}{:rel="noopener noreferrer"}
+- [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip){:target="_blank"}{:rel="noopener noreferrer"}
+- [github/copilot.vim](https://github.com/github/copilot.vim){:target="_blank"}{:rel="noopener noreferrer"}
+- [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets){:target="_blank"}{:rel="noopener noreferrer"}
+- [theprimeagen/harpoon](https://github.com/theprimeagen/harpoon){:target="_blank"}{:rel="noopener noreferrer"}
+- [VonHeikemen/lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp){:target="_blank"}{:rel="noopener noreferrer"}
+- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-treesitter/nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context){:target="_blank"}{:rel="noopener noreferrer"}
+- [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-treesitter/playground](https://github.com/nvim-treesitter/playground){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [theprimeagen/refactoring.nvim](https://github.com/theprimeagen/refactoring.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [rose-pine/neovim](https://github.com/rose-pine/neovim){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/trouble.nvim](https://github.com/folke/trouble.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [mbbill/undotree](https://github.com/mbbill/undotree){:target="_blank"}{:rel="noopener noreferrer"}
+- [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Primeagen Keymaps
 

@@ -11,50 +11,50 @@ Personal Neovim configuration of Elijah Manor
 
 - Install and initialize: **`lazyman -w Elijah`**
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
-- Base configuration:     [LazyVim](https://lazyvim.github.io)
-- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
+- Base configuration:     [LazyVim](https://lazyvim.github.io){:target="_blank"}{:rel="noopener noreferrer"}
+- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 - Installation location:  **`~/.config/nvim-Elijah`**
 
 
 ### Git repository
 
-[https://github.com/elijahmanor/dotfiles](https://github.com/elijahmanor/dotfiles)
+[https://github.com/elijahmanor/dotfiles](https://github.com/elijahmanor/dotfiles){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Website
 
-[https://elijahmanor.com](https://elijahmanor.com)
+[https://elijahmanor.com](https://elijahmanor.com){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### YouTube channel
 
-[https://www.youtube.com/@ElijahManor](https://www.youtube.com/@ElijahManor)
+[https://www.youtube.com/@ElijahManor](https://www.youtube.com/@ElijahManor){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Lazy managed plugins
 
-- [LazyVim/LazyVim](https://github.com/LazyVim/LazyVim.git)
-- [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim)
-- [catppuccin/nvim](https://github.com/catppuccin/nvim)
-- [sindrets/diffview.nvim](https://github.com/sindrets/diffview.nvim.git)
-- [Rawnly/gist.nvim](https://github.com/Rawnly/gist.nvim.git)
-- [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
-- [VidocqH/lsp-lens.nvim](https://github.com/VidocqH/lsp-lens.nvim.git)
-- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim)
-- [TimUntersberger/neogit](https://github.com/TimUntersberger/neogit)
-- [folke/noice.nvim](https://github.com/folke/noice.nvim)
-- [jayp0521/mason-null-ls.nvim](https://github.com/jayp0521/mason-null-ls.nvim)
-- [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify)
-- [samjwill/nvim-unception](https://github.com/samjwill/nvim-unception.git)
-- [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
-- [pwntester/octo.nvim](https://github.com/pwntester/octo.nvim)
-- [stevearc/oil.nvim](https://github.com/stevearc/oil.nvim.git)
-- [mhanberg/output-panel.nvim](https://github.com/mhanberg/output-panel.nvim.git)
-- [nvim-treesitter/playground](https://github.com/nvim-treesitter/playground)
-- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
-- [luukvbaal/statuscol.nvim](https://github.com/luukvbaal/statuscol.nvim)
-- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-- [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
-- [dmmulroy/tsc.nvim](https://github.com/dmmulroy/tsc.nvim)
-- [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
+- [LazyVim/LazyVim](https://github.com/LazyVim/LazyVim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [catppuccin/nvim](https://github.com/catppuccin/nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [sindrets/diffview.nvim](https://github.com/sindrets/diffview.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [Rawnly/gist.nvim](https://github.com/Rawnly/gist.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/lazy.nvim](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [VidocqH/lsp-lens.nvim](https://github.com/VidocqH/lsp-lens.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [TimUntersberger/neogit](https://github.com/TimUntersberger/neogit){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/noice.nvim](https://github.com/folke/noice.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [jayp0521/mason-null-ls.nvim](https://github.com/jayp0521/mason-null-ls.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify){:target="_blank"}{:rel="noopener noreferrer"}
+- [samjwill/nvim-unception](https://github.com/samjwill/nvim-unception.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons){:target="_blank"}{:rel="noopener noreferrer"}
+- [pwntester/octo.nvim](https://github.com/pwntester/octo.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [stevearc/oil.nvim](https://github.com/stevearc/oil.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [mhanberg/output-panel.nvim](https://github.com/mhanberg/output-panel.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-treesitter/playground](https://github.com/nvim-treesitter/playground){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [luukvbaal/statuscol.nvim](https://github.com/luukvbaal/statuscol.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [dmmulroy/tsc.nvim](https://github.com/dmmulroy/tsc.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Elijah Keymaps
 

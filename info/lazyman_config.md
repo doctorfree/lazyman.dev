@@ -32,43 +32,43 @@ WEBDEV="${LMANDIR}/scripts/webdev_config.sh"
 LZYIDE="${LMANDIR}/scripts/lzyide_config.sh"
 FONTDIR="${LMANDIR}/scripts/figlet-fonts"
 LOLCAT="lolcat"
-BOLD=$(tput bold 2>/dev/null)
-NORM=$(tput sgr0 2>/dev/null)
+BOLD=$(tput bold 2>/dev/null){:target="_blank"}{:rel="noopener noreferrer"}
+NORM=$(tput sgr0 2>/dev/null){:target="_blank"}{:rel="noopener noreferrer"}
 
 PLEASE="Please enter your choice"
 USEGUI=
 # Array with font names
-fonts=("Slant" "Shadow" "Small" "Script" "Standard")
+fonts=("Slant" "Shadow" "Small" "Script" "Standard"){:target="_blank"}{:rel="noopener noreferrer"}
 # Supported themes
 themes=("nightfox" "tokyonight" "dracula" "kanagawa" "catppuccin" "tundra"
-        "onedarkpro" "everforest" "monokai-pro")
+        "onedarkpro" "everforest" "monokai-pro"){:target="_blank"}{:rel="noopener noreferrer"}
 # Themes with styles
 styled_themes=("nightfox" "tokyonight" "dracula" "kanagawa" "catppuccin"
-               "onedarkpro" "monokai-pro")
+               "onedarkpro" "monokai-pro"){:target="_blank"}{:rel="noopener noreferrer"}
 
 all_lsp_servers=("bashls" "cssmodules_ls" "denols" "dockerls" "eslint" "gopls"
                  "graphql" "html" "jdtls" "jsonls" "julials" "ltex" "lua_ls"
                  "marksman" "pylsp" "pyright" "sqlls" "tailwindcss" "texlab"
-                 "tsserver" "vimls" "yamlls")
-have_ccls=$(type -p ccls)
-[ "${have_ccls}" ] && all_lsp_servers+=("ccls")
-have_clangd=$(type -p clangd)
-[ "${have_clangd}" ] && all_lsp_servers+=("clangd")
+                 "tsserver" "vimls" "yamlls"){:target="_blank"}{:rel="noopener noreferrer"}
+have_ccls=$(type -p ccls){:target="_blank"}{:rel="noopener noreferrer"}
+[ "${have_ccls}" ] && all_lsp_servers+=("ccls"){:target="_blank"}{:rel="noopener noreferrer"}
+have_clangd=$(type -p clangd){:target="_blank"}{:rel="noopener noreferrer"}
+[ "${have_clangd}" ] && all_lsp_servers+=("clangd"){:target="_blank"}{:rel="noopener noreferrer"}
 
 all_formatters=("actionlint" "goimports" "golangci-lint" "gofumpt"
                 "google-java-format" "latexindent" "markdownlint"
                 "prettier" "sql-formatter" "shellcheck" "shfmt"
-                "stylua" "tflint" "yamllint")
-have_beautysh=$(type -p beautysh)
-[ "${have_beautysh}" ] && all_formatters+=("beautysh")
-have_black=$(type -p black)
-[ "${have_black}" ] && all_formatters+=("black")
-have_ruff=$(type -p ruff)
-[ "${have_ruff}" ] && all_formatters+=("ruff")
+                "stylua" "tflint" "yamllint"){:target="_blank"}{:rel="noopener noreferrer"}
+have_beautysh=$(type -p beautysh){:target="_blank"}{:rel="noopener noreferrer"}
+[ "${have_beautysh}" ] && all_formatters+=("beautysh"){:target="_blank"}{:rel="noopener noreferrer"}
+have_black=$(type -p black){:target="_blank"}{:rel="noopener noreferrer"}
+[ "${have_black}" ] && all_formatters+=("black"){:target="_blank"}{:rel="noopener noreferrer"}
+have_ruff=$(type -p ruff){:target="_blank"}{:rel="noopener noreferrer"}
+[ "${have_ruff}" ] && all_formatters+=("ruff"){:target="_blank"}{:rel="noopener noreferrer"}
 
-lsp_enabled_table=()
-for_enabled_table=()
-neorg_notes_table=()
+lsp_enabled_table=(){:target="_blank"}{:rel="noopener noreferrer"}
+for_enabled_table=(){:target="_blank"}{:rel="noopener noreferrer"}
+neorg_notes_table=(){:target="_blank"}{:rel="noopener noreferrer"}
 
 usage() {
   printf "\nUsage: lazyman_config [-d] [-i] [-m menu] [-s name value] [-u]"
@@ -87,10 +87,10 @@ prompt_continue() {
 }
 
 set_haves() {
-  have_fzf=$(type -p fzf)
-  have_figlet=$(type -p figlet)
-  have_lolcat=$(type -p lolcat)
-  have_rich=$(type -p rich)
+  have_fzf=$(type -p fzf){:target="_blank"}{:rel="noopener noreferrer"}
+  have_figlet=$(type -p figlet){:target="_blank"}{:rel="noopener noreferrer"}
+  have_lolcat=$(type -p lolcat){:target="_blank"}{:rel="noopener noreferrer"}
+  have_rich=$(type -p rich){:target="_blank"}{:rel="noopener noreferrer"}
 }
 
 show_figlet() {
@@ -100,7 +100,7 @@ show_figlet() {
     FIG_TEXT="Lazyman"
   fi
   # Seed random generator
-  RANDOM=$$$(date +%s)
+  RANDOM=$$$(date +%s){:target="_blank"}{:rel="noopener noreferrer"}
   USE_FONT=${fonts[$RANDOM % ${#fonts[@]}]}
   [ "${USE_FONT}" ] || USE_FONT="standard"
   if [ "${have_lolcat}" ]; then
@@ -111,15 +111,15 @@ show_figlet() {
 }
 
 check_python_version() {
-  have_python3=$(type -p python3)
+  have_python3=$(type -p python3){:target="_blank"}{:rel="noopener noreferrer"}
   [ "${have_python3}" ] || {
     echo "NO"
     return 3
   }
-  major=$(python3 -c 'import sys; print(sys.version_info.major)')
+  major=$(python3 -c 'import sys; print(sys.version_info.major)'){:target="_blank"}{:rel="noopener noreferrer"}
   if [ ${major} -eq 3 ]
   then
-    minor=$(python3 -c 'import sys; print(sys.version_info.minor)')
+    minor=$(python3 -c 'import sys; print(sys.version_info.minor)'){:target="_blank"}{:rel="noopener noreferrer"}
     if [ ${minor} -ge 9 ]
     then
       echo "OK"
@@ -137,33 +137,33 @@ check_python_version() {
 get_conf_table() {
   confname="$1"
   if [ "${confname}" == "lsp_servers" ]; then
-    lsp_enabled_table=()
+    lsp_enabled_table=(){:target="_blank"}{:rel="noopener noreferrer"}
     while read -r val; do
-      lsp_enabled_table+=("$val")
-    done < <(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
-    enable_ccls=$(get_conf_value enable_ccls)
+      lsp_enabled_table+=("$val"){:target="_blank"}{:rel="noopener noreferrer"}
+    done < <(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1){:target="_blank"}{:rel="noopener noreferrer"}
+    enable_ccls=$(get_conf_value enable_ccls){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_ccls}" == "true" ]; then
-      lsp_enabled_table+=("ccls")
+      lsp_enabled_table+=("ccls"){:target="_blank"}{:rel="noopener noreferrer"}
     fi
-    enable_clangd=$(get_conf_value enable_clangd)
+    enable_clangd=$(get_conf_value enable_clangd){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_clangd}" == "true" ]; then
-      lsp_enabled_table+=("clangd")
+      lsp_enabled_table+=("clangd"){:target="_blank"}{:rel="noopener noreferrer"}
     fi
   else
     if [ "${confname}" == "formatters_linters" ]; then
-      for_enabled_table=()
+      for_enabled_table=(){:target="_blank"}{:rel="noopener noreferrer"}
       while read -r val; do
-        for_enabled_table+=("$val")
-      done < <(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
+        for_enabled_table+=("$val"){:target="_blank"}{:rel="noopener noreferrer"}
+      done < <(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1){:target="_blank"}{:rel="noopener noreferrer"}
       while read -r val; do
-        for_enabled_table+=("$val")
-      done < <(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} "external_formatters" 2>&1)
+        for_enabled_table+=("$val"){:target="_blank"}{:rel="noopener noreferrer"}
+      done < <(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} "external_formatters" 2>&1){:target="_blank"}{:rel="noopener noreferrer"}
     else
       if [ "${confname}" == "neorg_notes" ]; then
-        neorg_notes_table=()
+        neorg_notes_table=(){:target="_blank"}{:rel="noopener noreferrer"}
         while read -r val; do
-          neorg_notes_table+=("$val")
-        done < <(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
+          neorg_notes_table+=("$val"){:target="_blank"}{:rel="noopener noreferrer"}
+        done < <(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1){:target="_blank"}{:rel="noopener noreferrer"}
       fi
     fi
   fi
@@ -171,7 +171,7 @@ get_conf_table() {
 
 get_conf_value() {
   confname="$1"
-  confval=$(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
+  confval=$(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1){:target="_blank"}{:rel="noopener noreferrer"}
   echo "${confval}"
 }
 
@@ -180,11 +180,11 @@ set_conf_value() {
   confval="$2"
   grep "conf.${confname} =" "${NVIMCONF}" >/dev/null && {
     case ${confval} in
-      true | false | [0-9])
+      true | false | [0-9]){:target="_blank"}{:rel="noopener noreferrer"}
         cat "${NVIMCONF}" \
           | sed -e "s/conf.${confname} =.*/conf.${confname} = ${confval}/" >/tmp/nvim$$
         ;;
-      *)
+      *){:target="_blank"}{:rel="noopener noreferrer"}
         cat "${NVIMCONF}" \
           | sed -e "s/conf.${confname} =.*/conf.${confname} = \"${confval}\"/" >/tmp/nvim$$
         ;;
@@ -199,34 +199,34 @@ set_conf_table() {
   confval="$2"
   action="$3"
   case ${confval} in
-    ccls)
+    ccls){:target="_blank"}{:rel="noopener noreferrer"}
       case ${action} in
-        disable)
+        disable){:target="_blank"}{:rel="noopener noreferrer"}
           set_conf_value "enable_ccls" "false"
           ;;
-        enable)
+        enable){:target="_blank"}{:rel="noopener noreferrer"}
           set_conf_value "enable_ccls" "true"
           ;;
       esac
       ;;
-    clangd)
+    clangd){:target="_blank"}{:rel="noopener noreferrer"}
       case ${action} in
-        disable)
+        disable){:target="_blank"}{:rel="noopener noreferrer"}
           set_conf_value "enable_clangd" "false"
           ;;
-        enable)
+        enable){:target="_blank"}{:rel="noopener noreferrer"}
           set_conf_value "enable_clangd" "true"
           ;;
       esac
       ;;
-    *)
+    *){:target="_blank"}{:rel="noopener noreferrer"}
       grep "${marker}" "${NVIMCONF}" | grep "${confval}" >/dev/null && {
         case ${action} in
-          disable)
+          disable){:target="_blank"}{:rel="noopener noreferrer"}
             cat "${NVIMCONF}" \
               | sed -E "s/  \"${confval}\",[[:space:]]+--[[:space:]]+${marker}/  -- \"${confval}\", -- ${marker}/" >/tmp/nvim$$
             ;;
-          enable)
+          enable){:target="_blank"}{:rel="noopener noreferrer"}
             cat "${NVIMCONF}" \
               | sed -E "s/-- \"${confval}\",[[:space:]]+--[[:space:]]+${marker}/\"${confval}\", -- ${marker}/" >/tmp/nvim$$
             ;;
@@ -239,9 +239,9 @@ set_conf_table() {
 }
 
 set_ranger_float() {
-  have_ranger=$(type -p ranger)
+  have_ranger=$(type -p ranger){:target="_blank"}{:rel="noopener noreferrer"}
   [ "${have_ranger}" ] || {
-    ranger_float=$(get_conf_value enable_ranger_float)
+    ranger_float=$(get_conf_value enable_ranger_float){:target="_blank"}{:rel="noopener noreferrer"}
     [ "${ranger_float}" == "true" ] && {
       set_conf_value "enable_ranger_float" "false"
     }
@@ -258,7 +258,7 @@ set_waka_opt() {
 
 set_code_explain() {
   if [ -f "${HOME}/.codeexplain/model.bin" ]; then
-    pyver=$(check_python_version)
+    pyver=$(check_python_version){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${pyver}" == "OK" ]
     then
       set_conf_value "enable_codeexplain" "true"
@@ -273,33 +273,33 @@ set_code_explain() {
 select_theme_style() {
   selected_style="${theme_style}"
   case "$1" in
-    kanagawa)
-      styles=("wave" "dragon" "lotus")
+    kanagawa){:target="_blank"}{:rel="noopener noreferrer"}
+      styles=("wave" "dragon" "lotus"){:target="_blank"}{:rel="noopener noreferrer"}
       ;;
-    tokyonight)
-      styles=("night" "storm" "day" "moon")
+    tokyonight){:target="_blank"}{:rel="noopener noreferrer"}
+      styles=("night" "storm" "day" "moon"){:target="_blank"}{:rel="noopener noreferrer"}
       ;;
-    onedarkpro)
-      styles=("onedark" "onelight" "onedark_vivid" "onedark_dark")
+    onedarkpro){:target="_blank"}{:rel="noopener noreferrer"}
+      styles=("onedark" "onelight" "onedark_vivid" "onedark_dark"){:target="_blank"}{:rel="noopener noreferrer"}
       ;;
-    catppuccin)
-      styles=("latte" "frappe" "macchiato" "mocha" "custom")
+    catppuccin){:target="_blank"}{:rel="noopener noreferrer"}
+      styles=("latte" "frappe" "macchiato" "mocha" "custom"){:target="_blank"}{:rel="noopener noreferrer"}
       ;;
-    dracula)
-      styles=("blood" "magic" "soft" "default")
+    dracula){:target="_blank"}{:rel="noopener noreferrer"}
+      styles=("blood" "magic" "soft" "default"){:target="_blank"}{:rel="noopener noreferrer"}
       ;;
-    nightfox)
-      styles=("carbonfox" "dawnfox" "dayfox" "duskfox" "nightfox" "nordfox" "terafox")
+    nightfox){:target="_blank"}{:rel="noopener noreferrer"}
+      styles=("carbonfox" "dawnfox" "dayfox" "duskfox" "nightfox" "nordfox" "terafox"){:target="_blank"}{:rel="noopener noreferrer"}
       ;;
-    monokai-pro)
-      styles=("classic" "octagon" "pro" "machine" "ristretto" "spectrum")
+    monokai-pro){:target="_blank"}{:rel="noopener noreferrer"}
+      styles=("classic" "octagon" "pro" "machine" "ristretto" "spectrum"){:target="_blank"}{:rel="noopener noreferrer"}
       ;;
-    *)
-      styles=()
+    *){:target="_blank"}{:rel="noopener noreferrer"}
+      styles=(){:target="_blank"}{:rel="noopener noreferrer"}
       ;;
   esac
   if [ "${have_fzf}" ]; then
-    choice=$(printf "%s\n" "${styles[@]}" | fzf --prompt=" Neovim Theme Style  " --layout=reverse --border --exit-0)
+    choice=$(printf "%s\n" "${styles[@]}" | fzf --prompt=" Neovim Theme Style  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
     [ "${choice}" == "${theme_style}" ] || {
       if [[ " ${styles[*]} " =~ " ${choice} " ]]; then
         set_conf_value "theme_style" "${choice}"
@@ -319,168 +319,168 @@ select_theme_style() {
       fi
       printf "\n"
       PS3="${BOLD}${PLEASE} (numeric or text, 'h' for help): ${NORM}"
-      options=()
+      options=(){:target="_blank"}{:rel="noopener noreferrer"}
       for sty in "${styles[@]}"; do
         if [ "${theme_style}" == "$sty" ]; then
-          options+=("$sty   ")
+          options+=("$sty   "){:target="_blank"}{:rel="noopener noreferrer"}
         else
-          options+=("$sty")
+          options+=("$sty"){:target="_blank"}{:rel="noopener noreferrer"}
         fi
       done
       [ "${theme_style}" == "${selected_style}" ] || {
-        options+=("Set style to ${theme_style}")
+        options+=("Set style to ${theme_style}"){:target="_blank"}{:rel="noopener noreferrer"}
       }
-      options+=("Configuration Menu" "Main Menu" "Quit")
+      options+=("Configuration Menu" "Main Menu" "Quit"){:target="_blank"}{:rel="noopener noreferrer"}
       select opt in "${options[@]}"; do
         case "$opt,$REPLY" in
-          "h",* | *,"h" | "H",* | *,"H" | "help",* | *,"help" | "Help",* | *,"Help")
+          "h",* | *,"h" | "H",* | *,"H" | "help",* | *,"help" | "Help",* | *,"Help"){:target="_blank"}{:rel="noopener noreferrer"}
             [ "$debug" ] || tput reset
             printf "\n"
             man lazyman
             break
             ;;
-          "wave",* | *,"wave")
+          "wave",* | *,"wave"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="wave"
             break
             ;;
-          "dragon",* | *,"dragon")
+          "dragon",* | *,"dragon"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="dragon"
             break
             ;;
-          "lotus",* | *,"lotus")
+          "lotus",* | *,"lotus"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="lotus"
             break
             ;;
-          "night",* | *,"night")
+          "night",* | *,"night"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="night"
             break
             ;;
-          "storm",* | *,"storm")
+          "storm",* | *,"storm"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="storm"
             break
             ;;
-          "dayfox",* | *,"dayfox")
+          "dayfox",* | *,"dayfox"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="dayfox"
             break
             ;;
-          "day",* | *,"day")
+          "day",* | *,"day"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="day"
             break
             ;;
-          "moon",* | *,"moon")
+          "moon",* | *,"moon"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="moon"
             break
             ;;
-          "onedark",* | *,"onedark")
+          "onedark",* | *,"onedark"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="onedark"
             break
             ;;
-          "onelight",* | *,"onelight")
+          "onelight",* | *,"onelight"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="onelight"
             break
             ;;
-          "onedark_vivid",* | *,"onedark_vivid")
+          "onedark_vivid",* | *,"onedark_vivid"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="onedark_vivid"
             break
             ;;
-          "onedark_dark",* | *,"onedark_dark")
+          "onedark_dark",* | *,"onedark_dark"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="onedark_dark"
             break
             ;;
-          "latte",* | *,"latte")
+          "latte",* | *,"latte"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="latte"
             break
             ;;
-          "frappe",* | *,"frappe")
+          "frappe",* | *,"frappe"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="frappe"
             break
             ;;
-          "macchiato",* | *,"macchiato")
+          "macchiato",* | *,"macchiato"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="macchiato"
             break
             ;;
-          "mocha",* | *,"mocha")
+          "mocha",* | *,"mocha"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="mocha"
             break
             ;;
-          "custom",* | *,"custom")
+          "custom",* | *,"custom"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="custom"
             break
             ;;
-          "blood",* | *,"blood")
+          "blood",* | *,"blood"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="blood"
             break
             ;;
-          "magic",* | *,"magic")
+          "magic",* | *,"magic"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="magic"
             break
             ;;
-          "soft",* | *,"soft")
+          "soft",* | *,"soft"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="soft"
             break
             ;;
-          "default",* | *,"default")
+          "default",* | *,"default"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="default"
             break
             ;;
-          "carbonfox",* | *,"carbonfox")
+          "carbonfox",* | *,"carbonfox"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="carbonfox"
             break
             ;;
-          "dawnfox",* | *,"dawnfox")
+          "dawnfox",* | *,"dawnfox"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="dawnfox"
             break
             ;;
-          "duskfox",* | *,"duskfox")
+          "duskfox",* | *,"duskfox"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="duskfox"
             break
             ;;
-          "nightfox",* | *,"nightfox")
+          "nightfox",* | *,"nightfox"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="nightfox"
             break
             ;;
-          "nordfox",* | *,"nordfox")
+          "nordfox",* | *,"nordfox"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="nordfox"
             break
             ;;
-          "terafox",* | *,"terafox")
+          "terafox",* | *,"terafox"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="terafox"
             break
             ;;
-          "classic",* | *,"classic")
+          "classic",* | *,"classic"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="classic"
             break
             ;;
-          "octagon",* | *,"octagon")
+          "octagon",* | *,"octagon"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="octagon"
             break
             ;;
-          "pro",* | *,"pro")
+          "pro",* | *,"pro"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="pro"
             break
             ;;
-          "machine",* | *,"machine")
+          "machine",* | *,"machine"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="machine"
             break
             ;;
-          "ristretto",* | *,"ristretto")
+          "ristretto",* | *,"ristretto"){:target="_blank"}{:rel="noopener noreferrer"}
             theme_style="ristretto"
             break
             ;;
-          "Set style to"*,* | *,"Set style to"*)
+          "Set style to"*,* | *,"Set style to"*){:target="_blank"}{:rel="noopener noreferrer"}
             set_conf_value "theme_style" "${theme_style}"
             break 2
             ;;
-          "Configuration Menu"*,* | *,"Configuration Menu"*)
+          "Configuration Menu"*,* | *,"Configuration Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
             confmenu=1
             break 2
             ;;
-          "Main Menu"*,* | *,"Main Menu"*)
+          "Main Menu"*,* | *,"Main Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
             [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
             mainmenu=1
             break 2
             ;;
-          "Quit"*,* | *,"Quit"* | "quit"*,* | *,"quit"*)
+          "Quit"*,* | *,"Quit"* | "quit"*,* | *,"quit"*){:target="_blank"}{:rel="noopener noreferrer"}
             [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
             printf "\nExiting Lazyman Configuration Menu System\n\n"
             exit 3
@@ -496,28 +496,28 @@ select_theme_style() {
 
 set_default_style() {
   case "$1" in
-    kanagawa)
+    kanagawa){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "theme_style" "dragon"
       ;;
-    tokyonight)
+    tokyonight){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "theme_style" "moon"
       ;;
-    onedarkpro)
+    onedarkpro){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "theme_style" "onedark_dark"
       ;;
-    catppuccin)
+    catppuccin){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "theme_style" "mocha"
       ;;
-    dracula)
+    dracula){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "theme_style" "soft"
       ;;
-    nightfox)
+    nightfox){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "theme_style" "carbonfox"
       ;;
-    monokai-pro)
+    monokai-pro){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "theme_style" "pro"
       ;;
-    *)
+    *){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "theme_style" "none"
       ;;
   esac
@@ -526,7 +526,7 @@ set_default_style() {
 select_theme() {
   selected_theme="$1"
   if [ "${have_fzf}" ]; then
-    theme=$(printf "%s\n" "${themes[@]}" | fzf --prompt=" Neovim Theme  " --layout=reverse --border --exit-0)
+    theme=$(printf "%s\n" "${themes[@]}" | fzf --prompt=" Neovim Theme  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
     [ "${theme}" == "${selected_theme}" ] || {
       if [[ " ${themes[*]} " =~ " ${theme} " ]]; then
         set_conf_value "theme" "${theme}"
@@ -547,77 +547,77 @@ select_theme() {
       fi
       printf "\n"
       PS3="${BOLD}${PLEASE} (numeric or text, 'h' for help): ${NORM}"
-      options=()
+      options=(){:target="_blank"}{:rel="noopener noreferrer"}
       for thm in "${themes[@]}"; do
         if [ "${theme}" == "$thm" ]; then
-          options+=("$thm   ")
+          options+=("$thm   "){:target="_blank"}{:rel="noopener noreferrer"}
         else
-          options+=("$thm")
+          options+=("$thm"){:target="_blank"}{:rel="noopener noreferrer"}
         fi
       done
       [ "${theme}" == "${selected_theme}" ] || {
-        options+=("Set theme to ${theme}")
+        options+=("Set theme to ${theme}"){:target="_blank"}{:rel="noopener noreferrer"}
       }
-      options+=("Configuration Menu" "Main Menu" "Quit")
+      options+=("Configuration Menu" "Main Menu" "Quit"){:target="_blank"}{:rel="noopener noreferrer"}
       select opt in "${options[@]}"; do
         case "$opt,$REPLY" in
-          "h",* | *,"h" | "H",* | *,"H" | "help",* | *,"help" | "Help",* | *,"Help")
+          "h",* | *,"h" | "H",* | *,"H" | "help",* | *,"help" | "Help",* | *,"Help"){:target="_blank"}{:rel="noopener noreferrer"}
             [ "$debug" ] || tput reset
             printf "\n"
             man lazyman
             break
             ;;
-          "nightfox"*,* | *,"nightfox"*)
+          "nightfox"*,* | *,"nightfox"*){:target="_blank"}{:rel="noopener noreferrer"}
             theme="nightfox"
             break
             ;;
-          "tokyonight"*,* | *,"tokyonight"*)
+          "tokyonight"*,* | *,"tokyonight"*){:target="_blank"}{:rel="noopener noreferrer"}
             theme="tokyonight"
             break
             ;;
-          "dracula"*,* | *,"dracula"*)
+          "dracula"*,* | *,"dracula"*){:target="_blank"}{:rel="noopener noreferrer"}
             theme="dracula"
             break
             ;;
-          "kanagawa"*,* | *,"kanagawa"*)
+          "kanagawa"*,* | *,"kanagawa"*){:target="_blank"}{:rel="noopener noreferrer"}
             theme="kanagawa"
             break
             ;;
-          "catppuccin"*,* | *,"catppuccin"*)
+          "catppuccin"*,* | *,"catppuccin"*){:target="_blank"}{:rel="noopener noreferrer"}
             theme="catppuccin"
             break
             ;;
-          "tundra"*,* | *,"tundra"*)
+          "tundra"*,* | *,"tundra"*){:target="_blank"}{:rel="noopener noreferrer"}
             theme="tundra"
             break
             ;;
-          "onedarkpro"*,* | *,"onedarkpro"*)
+          "onedarkpro"*,* | *,"onedarkpro"*){:target="_blank"}{:rel="noopener noreferrer"}
             theme="onedarkpro"
             break
             ;;
-          "everforest"*,* | *,"everforest"*)
+          "everforest"*,* | *,"everforest"*){:target="_blank"}{:rel="noopener noreferrer"}
             theme="everforest"
             break
             ;;
-          "monokai-pro"*,* | *,"monokai-pro"*)
+          "monokai-pro"*,* | *,"monokai-pro"*){:target="_blank"}{:rel="noopener noreferrer"}
             theme="monokai-pro"
             break
             ;;
-          "Set theme to"*,* | *,"Set theme to"*)
+          "Set theme to"*,* | *,"Set theme to"*){:target="_blank"}{:rel="noopener noreferrer"}
             set_conf_value "theme" "${theme}"
             set_default_style "${theme}"
             break 2
             ;;
-          "Configuration Menu"*,* | *,"Configuration Menu"*)
+          "Configuration Menu"*,* | *,"Configuration Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
             confmenu=1
             break 2
             ;;
-          "Main Menu"*,* | *,"Main Menu"*)
+          "Main Menu"*,* | *,"Main Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
             [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
             mainmenu=1
             break 2
             ;;
-          "Quit",* | *,"Quit" | "quit",* | *,"quit")
+          "Quit",* | *,"Quit" | "quit",* | *,"quit"){:target="_blank"}{:rel="noopener noreferrer"}
             [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
             printf "\nExiting Lazyman Configuration Menu System\n\n"
             exit 3
@@ -668,353 +668,353 @@ show_plugin_menu() {
       [ "${have_figlet}" ] && show_figlet "Plugins"
     fi
     printf '\n'
-    namespace=$(get_conf_value namespace)
+    namespace=$(get_conf_value namespace){:target="_blank"}{:rel="noopener noreferrer"}
     use_namespace="${namespace}"
-    media_backend=$(get_conf_value media_backend)
+    media_backend=$(get_conf_value media_backend){:target="_blank"}{:rel="noopener noreferrer"}
     use_media_backend="${media_backend}"
-    session_manager=$(get_conf_value session_manager)
+    session_manager=$(get_conf_value session_manager){:target="_blank"}{:rel="noopener noreferrer"}
     use_session_manager="${session_manager}"
-    file_tree=$(get_conf_value file_tree)
+    file_tree=$(get_conf_value file_tree){:target="_blank"}{:rel="noopener noreferrer"}
     use_neotree="${file_tree}"
-    enable_noice=$(get_conf_value enable_noice)
+    enable_noice=$(get_conf_value enable_noice){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_noice}" == "true" ]; then
       use_noice=""
     else
       use_noice="✗"
     fi
-    enable_chatgpt=$(get_conf_value enable_chatgpt)
+    enable_chatgpt=$(get_conf_value enable_chatgpt){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_chatgpt}" == "true" ]; then
       use_chatgpt=""
     else
       use_chatgpt="✗"
     fi
-    enable_codeexplain=$(get_conf_value enable_codeexplain)
+    enable_codeexplain=$(get_conf_value enable_codeexplain){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_codeexplain}" == "true" ]; then
       use_codeexplain=""
     else
       use_codeexplain="✗"
     fi
-    enable_codeium=$(get_conf_value enable_codeium)
+    enable_codeium=$(get_conf_value enable_codeium){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_codeium}" == "true" ]; then
       use_codeium=""
     else
       use_codeium="✗"
     fi
-    enable_copilot=$(get_conf_value enable_copilot)
+    enable_copilot=$(get_conf_value enable_copilot){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_copilot}" == "true" ]; then
       use_copilot=""
     else
       use_copilot="✗"
     fi
-    enable_neoai=$(get_conf_value enable_neoai)
+    enable_neoai=$(get_conf_value enable_neoai){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_neoai}" == "true" ]; then
       use_neoai=""
     else
       use_neoai="✗"
     fi
-    enable_surround=$(get_conf_value enable_surround)
+    enable_surround=$(get_conf_value enable_surround){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_surround}" == "true" ]; then
       use_surround=""
     else
       use_surround="✗"
     fi
-    lualine_style=$(get_conf_value lualine_style)
+    lualine_style=$(get_conf_value lualine_style){:target="_blank"}{:rel="noopener noreferrer"}
     use_lualine_style="${lualine_style}"
-    lualine_separator=$(get_conf_value lualine_separator)
+    lualine_separator=$(get_conf_value lualine_separator){:target="_blank"}{:rel="noopener noreferrer"}
     use_lualine_separator="${lualine_separator}"
-    enable_fancy=$(get_conf_value enable_fancy)
+    enable_fancy=$(get_conf_value enable_fancy){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_fancy}" == "true" ]; then
       use_fancy=""
     else
       use_fancy="✗"
     fi
-    enable_wilder=$(get_conf_value enable_wilder)
+    enable_wilder=$(get_conf_value enable_wilder){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_wilder}" == "true" ]; then
       use_wilder=""
     else
       use_wilder="✗"
     fi
-    enable_lualine_lsp_progress=$(get_conf_value enable_lualine_lsp_progress)
+    enable_lualine_lsp_progress=$(get_conf_value enable_lualine_lsp_progress){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_lualine_lsp_progress}" == "true" ]; then
       use_lualine_lsp_progress=""
     else
       use_lualine_lsp_progress="✗"
     fi
-    enable_terminal=$(get_conf_value enable_terminal)
+    enable_terminal=$(get_conf_value enable_terminal){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_terminal}" == "true" ]; then
       use_terminal=""
     else
       use_terminal="✗"
     fi
-    enable_toggleterm=$(get_conf_value enable_toggleterm)
+    enable_toggleterm=$(get_conf_value enable_toggleterm){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_toggleterm}" == "true" ]; then
       use_toggleterm=""
     else
       use_toggleterm="✗"
     fi
-    enable_neotest=$(get_conf_value enable_neotest)
+    enable_neotest=$(get_conf_value enable_neotest){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_neotest}" == "true" ]; then
       use_neotest=""
     else
       use_neotest="✗"
     fi
-    enable_wakatime=$(get_conf_value enable_wakatime)
+    enable_wakatime=$(get_conf_value enable_wakatime){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_wakatime}" == "true" ]; then
       use_wakatime=""
     else
       use_wakatime="✗"
     fi
-    enable_asciiart=$(get_conf_value enable_asciiart)
+    enable_asciiart=$(get_conf_value enable_asciiart){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_asciiart}" == "true" ]; then
       use_asciiart=""
     else
       use_asciiart="✗"
     fi
-    enable_cheatsheet=$(get_conf_value enable_cheatsheet)
+    enable_cheatsheet=$(get_conf_value enable_cheatsheet){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_cheatsheet}" == "true" ]; then
       use_cheatsheet=""
     else
       use_cheatsheet="✗"
     fi
-    enable_motion=$(get_conf_value enable_motion)
+    enable_motion=$(get_conf_value enable_motion){:target="_blank"}{:rel="noopener noreferrer"}
     use_motion="${enable_motion}"
-    enable_notes=$(get_conf_value enable_notes)
+    enable_notes=$(get_conf_value enable_notes){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_notes}" == "true" ]; then
       use_notes=""
     else
       use_notes="✗"
     fi
-    markdown_preview=$(get_conf_value markdown_preview)
+    markdown_preview=$(get_conf_value markdown_preview){:target="_blank"}{:rel="noopener noreferrer"}
     use_markdown_preview="${markdown_preview}"
-    enable_obsidian=$(get_conf_value enable_obsidian)
+    enable_obsidian=$(get_conf_value enable_obsidian){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_obsidian}" == "true" ]; then
       use_obsidian=""
     else
       use_obsidian="✗"
     fi
-    obsidian_vault=$(get_conf_value obsidian_vault)
-    use_obsidian_vault=$(basename "${obsidian_vault}")
+    obsidian_vault=$(get_conf_value obsidian_vault){:target="_blank"}{:rel="noopener noreferrer"}
+    use_obsidian_vault=$(basename "${obsidian_vault}"){:target="_blank"}{:rel="noopener noreferrer"}
     get_conf_table neorg_notes
     num_neorg_notes=${#neorg_notes_table[@]}
-    enable_ranger=$(get_conf_value enable_ranger_float)
+    enable_ranger=$(get_conf_value enable_ranger_float){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_ranger}" == "true" ]; then
       use_ranger=""
     else
       use_ranger="✗"
     fi
-    enable_coding=$(get_conf_value enable_coding)
+    enable_coding=$(get_conf_value enable_coding){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_coding}" == "true" ]; then
       use_coding=""
     else
       use_coding="✗"
     fi
-    enable_compile=$(get_conf_value enable_compile)
+    enable_compile=$(get_conf_value enable_compile){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_compile}" == "true" ]; then
       use_compile=""
     else
       use_compile="✗"
     fi
-    enable_bbye=$(get_conf_value enable_bbye)
+    enable_bbye=$(get_conf_value enable_bbye){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_bbye}" == "true" ]; then
       use_bbye=""
     else
       use_bbye="✗"
     fi
-    enable_startuptime=$(get_conf_value enable_startuptime)
+    enable_startuptime=$(get_conf_value enable_startuptime){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_startuptime}" == "true" ]; then
       use_startuptime=""
     else
       use_startuptime="✗"
     fi
-    enable_dressing=$(get_conf_value enable_dressing)
+    enable_dressing=$(get_conf_value enable_dressing){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_dressing}" == "true" ]; then
       use_dressing=""
     else
       use_dressing="✗"
     fi
-    enable_games=$(get_conf_value enable_games)
+    enable_games=$(get_conf_value enable_games){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_games}" == "true" ]; then
       use_games=""
     else
       use_games="✗"
     fi
-    enable_multi_cursor=$(get_conf_value enable_multi_cursor)
+    enable_multi_cursor=$(get_conf_value enable_multi_cursor){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_multi_cursor}" == "true" ]; then
       use_multi_cursor=""
     else
       use_multi_cursor="✗"
     fi
-    enable_renamer=$(get_conf_value enable_renamer)
+    enable_renamer=$(get_conf_value enable_renamer){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_renamer}" == "true" ]; then
       use_renamer=""
     else
       use_renamer="✗"
     fi
-    use_dash=$(get_conf_value dashboard)
-    enable_bookmarks=$(get_conf_value enable_bookmarks)
+    use_dash=$(get_conf_value dashboard){:target="_blank"}{:rel="noopener noreferrer"}
+    enable_bookmarks=$(get_conf_value enable_bookmarks){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_bookmarks}" == "true" ]; then
       use_bookmarks=""
     else
       use_bookmarks="✗"
     fi
-    enable_ide=$(get_conf_value enable_ide)
+    enable_ide=$(get_conf_value enable_ide){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_ide}" == "true" ]; then
       use_ide=""
     else
       use_ide="✗"
     fi
-    enable_navigator=$(get_conf_value enable_navigator)
+    enable_navigator=$(get_conf_value enable_navigator){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_navigator}" == "true" ]; then
       use_navigator=""
     else
       use_navigator="✗"
     fi
-    enable_project=$(get_conf_value enable_project)
+    enable_project=$(get_conf_value enable_project){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_project}" == "true" ]; then
       use_project=""
     else
       use_project="✗"
     fi
-    enable_picker=$(get_conf_value enable_picker)
+    enable_picker=$(get_conf_value enable_picker){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_picker}" == "true" ]; then
       use_picker=""
     else
       use_picker="✗"
     fi
-    enable_smooth_scrolling=$(get_conf_value enable_smooth_scrolling)
+    enable_smooth_scrolling=$(get_conf_value enable_smooth_scrolling){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_smooth_scrolling}" == "true" ]; then
       use_smooth_scrolling=""
     else
       use_smooth_scrolling="✗"
     fi
-    enable_securitree=$(get_conf_value enable_securitree)
+    enable_securitree=$(get_conf_value enable_securitree){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_securitree}" == "true" ]; then
       use_securitree=""
     else
       use_securitree="✗"
     fi
-    dashboard_recent_files=$(get_conf_value dashboard_recent_files)
+    dashboard_recent_files=$(get_conf_value dashboard_recent_files){:target="_blank"}{:rel="noopener noreferrer"}
     use_dashboard_recent_files="${dashboard_recent_files}"
-    enable_dashboard_header=$(get_conf_value enable_dashboard_header)
+    enable_dashboard_header=$(get_conf_value enable_dashboard_header){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_dashboard_header}" == "true" ]; then
       use_dashboard_header=""
     else
       use_dashboard_header="✗"
     fi
-    enable_dashboard_quick_links=$(get_conf_value enable_dashboard_quick_links)
+    enable_dashboard_quick_links=$(get_conf_value enable_dashboard_quick_links){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_dashboard_quick_links}" == "true" ]; then
       use_dashboard_quick_links=""
     else
       use_dashboard_quick_links="✗"
     fi
-    enable_screensaver=$(get_conf_value enable_screensaver)
+    enable_screensaver=$(get_conf_value enable_screensaver){:target="_blank"}{:rel="noopener noreferrer"}
     use_screensaver="${enable_screensaver}"
-    screensaver_timeout=$(get_conf_value screensaver_timeout)
+    screensaver_timeout=$(get_conf_value screensaver_timeout){:target="_blank"}{:rel="noopener noreferrer"}
     use_timeout="${screensaver_timeout}"
-    indentline_style=$(get_conf_value indentline_style)
+    indentline_style=$(get_conf_value indentline_style){:target="_blank"}{:rel="noopener noreferrer"}
     use_indentline="${indentline_style}"
     PS3="${BOLD}${PLEASE} (numeric or text, 'h' for help): ${NORM}"
-    options=()
-    options+=("Ascii Art     [${use_asciiart}]")
-    options+=("Bdelete cmd   [${use_bbye}]")
-    options+=("Bookmarks     [${use_bookmarks}]")
-    options+=("ChatGPT (AI)  [${use_chatgpt}]")
-    options+=("Codeium (AI)  [${use_codeium}]")
-    options+=("Copilot (AI)  [${use_copilot}]")
-    pyver=$(check_python_version)
+    options=(){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Ascii Art     [${use_asciiart}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Bdelete cmd   [${use_bbye}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Bookmarks     [${use_bookmarks}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("ChatGPT (AI)  [${use_chatgpt}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Codeium (AI)  [${use_codeium}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Copilot (AI)  [${use_copilot}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    pyver=$(check_python_version){:target="_blank"}{:rel="noopener noreferrer"}
     [ "${pyver}" == "OK" ] && {
-      options+=("GPT4ALL (AI)  [${use_codeexplain}]")
+      options+=("GPT4ALL (AI)  [${use_codeexplain}]"){:target="_blank"}{:rel="noopener noreferrer"}
     }
     [ -f "${HOME}/.codeexplain/model.bin" ] && {
-      options+=(" Remove GPT model")
+      options+=(" Remove GPT model"){:target="_blank"}{:rel="noopener noreferrer"}
     }
-    options+=("NeoAI   (AI)  [${use_neoai}]")
-    options+=("Cheatsheets   [${use_cheatsheet}]")
-    options+=("Enable coding [${use_coding}]")
-    options+=("Compile & Run [${use_compile}]")
+    options+=("NeoAI   (AI)  [${use_neoai}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Cheatsheets   [${use_cheatsheet}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Enable coding [${use_coding}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Compile & Run [${use_compile}]"){:target="_blank"}{:rel="noopener noreferrer"}
     [ "${use_namespace}" == "free" ] && {
-      options+=("Dashboard [${use_dash}]")
+      options+=("Dashboard [${use_dash}]"){:target="_blank"}{:rel="noopener noreferrer"}
       if [ "${use_dash}" == "alpha" ]; then
-        options+=(" Alpha Header [${use_dashboard_header}]")
-        options+=(" Recent Files [${use_dashboard_recent_files}]")
-        options+=(" Quick Links  [${use_dashboard_quick_links}]")
+        options+=(" Alpha Header [${use_dashboard_header}]"){:target="_blank"}{:rel="noopener noreferrer"}
+        options+=(" Recent Files [${use_dashboard_recent_files}]"){:target="_blank"}{:rel="noopener noreferrer"}
+        options+=(" Quick Links  [${use_dashboard_quick_links}]"){:target="_blank"}{:rel="noopener noreferrer"}
       fi
     }
-    options+=("Dressing UI   [${use_dressing}]")
-    options+=("File Tree [${use_neotree}]")
-    options+=("Enable Games  [${use_games}]")
-    options+=("Enable IDE    [${use_ide}]")
-    options+=("Indentline [${use_indentline}]")
-    options+=("Lualine Style [${use_lualine_style}]")
+    options+=("Dressing UI   [${use_dressing}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("File Tree [${use_neotree}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Enable Games  [${use_games}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Enable IDE    [${use_ide}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Indentline [${use_indentline}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Lualine Style [${use_lualine_style}]"){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${use_lualine_style}" == "onno" ]; then
-      options+=(" Separator    [${use_lualine_separator}]")
+      options+=(" Separator    [${use_lualine_separator}]"){:target="_blank"}{:rel="noopener noreferrer"}
     fi
-    options+=(" Fancy Icons  [${use_fancy}]")
-    options+=("Enable Motion [${use_motion}]")
-    options+=("Enable Notes  [${use_notes}]")
+    options+=(" Fancy Icons  [${use_fancy}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Enable Motion [${use_motion}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Enable Notes  [${use_notes}]"){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_notes}" == "true" ]; then
-      options+=("Enable Obsidian [${use_obsidian}]")
-      options+=(" Preview  [${use_markdown_preview}]")
+      options+=("Enable Obsidian [${use_obsidian}]"){:target="_blank"}{:rel="noopener noreferrer"}
+      options+=(" Preview  [${use_markdown_preview}]"){:target="_blank"}{:rel="noopener noreferrer"}
       [ "${enable_obsidian}" == "true" ] && {
-        options+=(" Obsidian [${use_obsidian_vault}]")
+        options+=(" Obsidian [${use_obsidian_vault}]"){:target="_blank"}{:rel="noopener noreferrer"}
       }
       [ ${num_neorg_notes} -lt 4 ] && {
-        options+=(" Neorg Notes  [add]")
+        options+=(" Neorg Notes  [add]"){:target="_blank"}{:rel="noopener noreferrer"}
       }
     fi
-    options+=("Media Backend [${use_media_backend}]")
-    options+=("Multi Cursor  [${use_multi_cursor}]")
-    options+=("Navigator     [${use_navigator}]")
-    options+=("Noice UI      [${use_noice}]")
-    options+=("Picker        [${use_picker}]")
-    options+=("Project       [${use_project}]")
-    options+=("Enable Ranger [${use_ranger}]")
-    options+=("Enable Rename [${use_renamer}]")
-    options+=("Screensaver [${use_screensaver}]")
+    options+=("Media Backend [${use_media_backend}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Multi Cursor  [${use_multi_cursor}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Navigator     [${use_navigator}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Noice UI      [${use_noice}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Picker        [${use_picker}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Project       [${use_project}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Enable Ranger [${use_ranger}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Enable Rename [${use_renamer}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Screensaver [${use_screensaver}]"){:target="_blank"}{:rel="noopener noreferrer"}
     [ "${use_screensaver}" == "none" ] || {
-      options+=(" Timeout    [${use_timeout}]")
+      options+=(" Timeout    [${use_timeout}]"){:target="_blank"}{:rel="noopener noreferrer"}
     }
-    options+=("Securitree    [${use_securitree}]")
-    options+=("Session [${use_session_manager}]")
-    options+=("Smooth Scroll [${use_smooth_scrolling}]")
-    options+=("StartupTime   [${use_startuptime}]")
-    options+=("Surround      [${use_surround}]")
-    options+=("Terminal      [${use_terminal}]")
-    options+=("Toggle Term   [${use_toggleterm}]")
-    options+=("Enable Tests  [${use_neotest}]")
-    options+=("WakaTime      [${use_wakatime}]")
+    options+=("Securitree    [${use_securitree}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Session [${use_session_manager}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Smooth Scroll [${use_smooth_scrolling}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("StartupTime   [${use_startuptime}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Surround      [${use_surround}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Terminal      [${use_terminal}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Toggle Term   [${use_toggleterm}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Enable Tests  [${use_neotest}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("WakaTime      [${use_wakatime}]"){:target="_blank"}{:rel="noopener noreferrer"}
     [ "${use_namespace}" == "free" ] && {
-      options+=("Wilder Menus  [${use_wilder}]")
+      options+=("Wilder Menus  [${use_wilder}]"){:target="_blank"}{:rel="noopener noreferrer"}
     }
-    options+=("Winbar LSP    [${use_lualine_lsp_progress}]")
-    options+=("Disable All")
-    options+=("Enable All")
+    options+=("Winbar LSP    [${use_lualine_lsp_progress}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Disable All"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Enable All"){:target="_blank"}{:rel="noopener noreferrer"}
     [ -f ${CONFBACK} ] && {
-      diff ${CONFBACK} ${NVIMCONF} >/dev/null || options+=("Reset to Defaults")
+      diff ${CONFBACK} ${NVIMCONF} >/dev/null || options+=("Reset to Defaults"){:target="_blank"}{:rel="noopener noreferrer"}
     }
-    [ -d "${LMANDIR}" ] && options+=("Open Lazyman")
-    options+=("Formatters")
-    options+=("LSP Servers")
-    options+=("Config Menu")
-    options+=("Main Menu")
-    options+=("Quit")
+    [ -d "${LMANDIR}" ] && options+=("Open Lazyman"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Formatters"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("LSP Servers"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Config Menu"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Main Menu"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Quit"){:target="_blank"}{:rel="noopener noreferrer"}
     select opt in "${options[@]}"; do
       case "$opt,$REPLY" in
-        "h",* | *,"h" | "H",* | *,"H" | "help",* | *,"help" | "Help",* | *,"Help")
+        "h",* | *,"h" | "H",* | *,"H" | "help",* | *,"help" | "Help",* | *,"Help"){:target="_blank"}{:rel="noopener noreferrer"}
           [ "$debug" ] || tput reset
           show_plug_help
           break
           ;;
-        "Media"*,* | *,"Media"*)
-          choices=("none" "catimg" "chafa" "jp2a" "ueberzug" "viu")
-          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Telescope Media Backend  " --layout=reverse --border --exit-0)
+        "Media"*,* | *,"Media"*){:target="_blank"}{:rel="noopener noreferrer"}
+          choices=("none" "catimg" "chafa" "jp2a" "ueberzug" "viu"){:target="_blank"}{:rel="noopener noreferrer"}
+          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Telescope Media Backend  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
           if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
             set_conf_value "media_backend" "${choice}"
             pluginit=1
           fi
           break
           ;;
-        " Neorg Note"*,* | *," Neorg Note"*)
+        " Neorg Note"*,* | *," Neorg Note"*){:target="_blank"}{:rel="noopener noreferrer"}
           printf "\n\nCurrent Neorg notes location(s):"
           for notedir in "${neorg_notes_table[@]}"; do
             printf "\n\t$notedir"
@@ -1024,23 +1024,23 @@ show_plugin_menu() {
           while true; do
             read -r -p "Neorg notes location: " notes
             case $notes in
-              "")
+              ""){:target="_blank"}{:rel="noopener noreferrer"}
                 break
                 ;;
-              *)
+              *){:target="_blank"}{:rel="noopener noreferrer"}
                 if [ -d "${notes}" ]
                 then
                   case ${num_neorg_notes} in
-                    0|1)
+                    0|1){:target="_blank"}{:rel="noopener noreferrer"}
                       neorg_temp="XXXXX"
                       ;;
-                    2)
+                    2){:target="_blank"}{:rel="noopener noreferrer"}
                       neorg_temp="YYYYY"
                       ;;
-                    3)
+                    3){:target="_blank"}{:rel="noopener noreferrer"}
                       neorg_temp="ZZZZZ"
                       ;;
-                    *)
+                    *){:target="_blank"}{:rel="noopener noreferrer"}
                       neorg_temp=
                       ;;
                   esac
@@ -1062,17 +1062,17 @@ show_plugin_menu() {
           done
           break
           ;;
-        " Obsidian"*,* | *," Obsidian"*)
+        " Obsidian"*,* | *," Obsidian"*){:target="_blank"}{:rel="noopener noreferrer"}
           printf "\n\nCurrent Obsidian Vault location: ${obsidian_vault}"
           printf "\nEnter the full pathname to the Obsidian vault."
           printf "\nPress <Enter> to continue using existing vault.\n"
           while true; do
             read -r -p "Obsidian vault location: " vault
             case $vault in
-              "")
+              ""){:target="_blank"}{:rel="noopener noreferrer"}
                 break
                 ;;
-              *)
+              *){:target="_blank"}{:rel="noopener noreferrer"}
                 if [ -d "${vault}" ]
                 then
                   set_conf_value "obsidian_vault" "${vault}"
@@ -1087,9 +1087,9 @@ show_plugin_menu() {
           done
           break
           ;;
-        " Preview"*,* | *," Preview"*)
-          choices=("Preview" "Peek" "None")
-          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Select Markdown Preview  " --layout=reverse --border --exit-0)
+        " Preview"*,* | *," Preview"*){:target="_blank"}{:rel="noopener noreferrer"}
+          choices=("Preview" "Peek" "None"){:target="_blank"}{:rel="noopener noreferrer"}
+          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Select Markdown Preview  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
           if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
             if [ "${choice}" == "Preview" ]; then
               set_conf_value "markdown_preview" "preview"
@@ -1106,9 +1106,9 @@ show_plugin_menu() {
           fi
           break
           ;;
-        "Session"*,* | *,"Session"*)
-          choices=("Persistence" "Possession" "None")
-          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Neovim Session Manager  " --layout=reverse --border --exit-0)
+        "Session"*,* | *,"Session"*){:target="_blank"}{:rel="noopener noreferrer"}
+          choices=("Persistence" "Possession" "None"){:target="_blank"}{:rel="noopener noreferrer"}
+          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Neovim Session Manager  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
           if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
             if [ "${choice}" == "Possession" ]; then
               set_conf_value "session_manager" "possession"
@@ -1125,9 +1125,9 @@ show_plugin_menu() {
           fi
           break
           ;;
-        "File"*,* | *,"File"*)
-          choices=("Neotree" "Nvimtree" "None")
-          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Neovim File Tree  " --layout=reverse --border --exit-0)
+        "File"*,* | *,"File"*){:target="_blank"}{:rel="noopener noreferrer"}
+          choices=("Neotree" "Nvimtree" "None"){:target="_blank"}{:rel="noopener noreferrer"}
+          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Neovim File Tree  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
           if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
             if [ "${choice}" == "Neotree" ]; then
               set_conf_value "file_tree" "neo-tree"
@@ -1144,7 +1144,7 @@ show_plugin_menu() {
           fi
           break
           ;;
-        "Noice"*,* | *,"Noice"*)
+        "Noice"*,* | *,"Noice"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_noice}" == "true" ]; then
             set_conf_value "enable_noice" "false"
           else
@@ -1153,7 +1153,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "ChatGPT"*,* | *,"ChatGPT"*)
+        "ChatGPT"*,* | *,"ChatGPT"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_chatgpt}" == "true" ]; then
             set_conf_value "enable_chatgpt" "false"
             pluginit=1
@@ -1169,7 +1169,7 @@ show_plugin_menu() {
           fi
           break
           ;;
-        "Codeium"*,* | *,"Codeium"*)
+        "Codeium"*,* | *,"Codeium"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_codeium}" == "true" ]; then
             set_conf_value "enable_codeium" "false"
           else
@@ -1178,7 +1178,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Copilot"*,* | *,"Copilot"*)
+        "Copilot"*,* | *,"Copilot"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_copilot}" == "true" ]; then
             set_conf_value "enable_copilot" "false"
           else
@@ -1187,7 +1187,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        " Remove GPT"*,* | *," Remove GPT"*)
+        " Remove GPT"*,* | *," Remove GPT"*){:target="_blank"}{:rel="noopener noreferrer"}
           rm -f "${HOME}/.codeexplain/model.bin"
           for models in "${HOME}"/.codeexplain/*
           do
@@ -1199,7 +1199,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "GPT4ALL"*,* | *,"GPT4ALL"*)
+        "GPT4ALL"*,* | *,"GPT4ALL"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_codeexplain}" == "true" ]; then
             set_conf_value "enable_codeexplain" "false"
           else
@@ -1219,7 +1219,7 @@ show_plugin_menu() {
               while true; do
                 read -r -p "Download GPT4ALL model (no API key required) ? (y/n) " yn
                 case $yn in
-                  [Yy]*)
+                  [Yy]*){:target="_blank"}{:rel="noopener noreferrer"}
                     printf "\nDownloading large file, please be patient ..."
                     ${LMANDIR}/scripts/gpt4all.sh
                     if [ -f "${HOME}/.codeexplain/model.bin" ]; then
@@ -1231,10 +1231,10 @@ show_plugin_menu() {
                     fi
                     break
                     ;;
-                  [Nn]*)
+                  [Nn]*){:target="_blank"}{:rel="noopener noreferrer"}
                     break
                     ;;
-                  *)
+                  *){:target="_blank"}{:rel="noopener noreferrer"}
                     printf "\nPlease answer yes or no.\n"
                     ;;
                 esac
@@ -1244,7 +1244,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "NeoAI"*,* | *,"NeoAI"*)
+        "NeoAI"*,* | *,"NeoAI"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_neoai}" == "true" ]; then
             set_conf_value "enable_neoai" "false"
             pluginit=1
@@ -1260,7 +1260,7 @@ show_plugin_menu() {
           fi
           break
           ;;
-        "Surround"*,* | *,"Surround"*)
+        "Surround"*,* | *,"Surround"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_surround}" == "true" ]; then
             set_conf_value "enable_surround" "false"
           else
@@ -1269,7 +1269,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Lualine Style"*,* | *,"Lualine Style"*)
+        "Lualine Style"*,* | *,"Lualine Style"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${use_lualine_style}" == "free" ]; then
             set_conf_value "lualine_style" "onno"
           else
@@ -1278,7 +1278,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        " Separator"*,* | *," Separator"*)
+        " Separator"*,* | *," Separator"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${use_lualine_separator}" == "bubble" ]; then
             set_conf_value "lualine_separator" "arrow"
           else
@@ -1287,7 +1287,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        " Fancy"*,* | *," Fancy"*)
+        " Fancy"*,* | *," Fancy"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_fancy}" == "true" ]; then
             set_conf_value "enable_fancy" "false"
           else
@@ -1296,7 +1296,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Wilder"*,* | *,"Wilder"*)
+        "Wilder"*,* | *,"Wilder"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_wilder}" == "true" ]; then
             set_conf_value "enable_wilder" "false"
           else
@@ -1305,7 +1305,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Winbar LSP"*,* | *,"Winbar LSP"*)
+        "Winbar LSP"*,* | *,"Winbar LSP"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_lualine_lsp_progress}" == "true" ]; then
             set_conf_value "enable_lualine_lsp_progress" "false"
           else
@@ -1314,7 +1314,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Terminal"*,* | *,"Terminal"*)
+        "Terminal"*,* | *,"Terminal"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_terminal}" == "true" ]; then
             set_conf_value "enable_terminal" "false"
           else
@@ -1323,7 +1323,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Toggle Term"*,* | *,"Toggle Term"*)
+        "Toggle Term"*,* | *,"Toggle Term"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_toggleterm}" == "true" ]; then
             set_conf_value "enable_toggleterm" "false"
           else
@@ -1332,7 +1332,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Enable Test"*,* | *,"Enable Test"*)
+        "Enable Test"*,* | *,"Enable Test"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_neotest}" == "true" ]; then
             set_conf_value "enable_neotest" "false"
           else
@@ -1341,7 +1341,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "WakaTime"*,* | *,"WakaTime"*)
+        "WakaTime"*,* | *,"WakaTime"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_wakatime}" == "true" ]; then
             set_conf_value "enable_wakatime" "false"
           else
@@ -1353,14 +1353,14 @@ show_plugin_menu() {
               while true; do
                 read -r -p "Enable WakaTime (API key required) ? (y/n) " yn
                 case $yn in
-                  [Yy]*)
+                  [Yy]*){:target="_blank"}{:rel="noopener noreferrer"}
                     set_conf_value "enable_wakatime" "true"
                     break
                     ;;
-                  [Nn]*)
+                  [Nn]*){:target="_blank"}{:rel="noopener noreferrer"}
                     break
                     ;;
-                  *)
+                  *){:target="_blank"}{:rel="noopener noreferrer"}
                     printf "\nPlease answer yes or no.\n"
                     ;;
                 esac
@@ -1370,7 +1370,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Ascii Art"*,* | *,"Ascii Art"*)
+        "Ascii Art"*,* | *,"Ascii Art"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_asciiart}" == "true" ]; then
             set_conf_value "enable_asciiart" "false"
           else
@@ -1379,7 +1379,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Cheatsheets"*,* | *,"Cheatsheets"*)
+        "Cheatsheets"*,* | *,"Cheatsheets"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_cheatsheet}" == "true" ]; then
             set_conf_value "enable_cheatsheet" "false"
           else
@@ -1388,9 +1388,9 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Enable Motion"*,* | *,"Enable Motion"*)
-          choices=("Hop" "Leap" "None")
-          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Neovim Motion Plugin  " --layout=reverse --border --exit-0)
+        "Enable Motion"*,* | *,"Enable Motion"*){:target="_blank"}{:rel="noopener noreferrer"}
+          choices=("Hop" "Leap" "None"){:target="_blank"}{:rel="noopener noreferrer"}
+          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Neovim Motion Plugin  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
           if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
             if [ "${choice}" == "Hop" ]; then
               set_conf_value "enable_motion" "hop"
@@ -1407,7 +1407,7 @@ show_plugin_menu() {
           fi
           break
           ;;
-        "Enable Notes"*,* | *,"Enable Notes"*)
+        "Enable Notes"*,* | *,"Enable Notes"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_notes}" == "true" ]; then
             set_conf_value "enable_notes" "false"
           else
@@ -1416,7 +1416,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Enable Obsidian"*,* | *,"Enable Obsidian"*)
+        "Enable Obsidian"*,* | *,"Enable Obsidian"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_obsidian}" == "true" ]; then
             set_conf_value "enable_obsidian" "false"
           else
@@ -1425,7 +1425,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Enable Ranger"*,* | *,"Enable Ranger"*)
+        "Enable Ranger"*,* | *,"Enable Ranger"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_ranger}" == "true" ]; then
             set_conf_value "enable_ranger_float" "false"
           else
@@ -1434,7 +1434,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Securitree"*,* | *,"Securitree"*)
+        "Securitree"*,* | *,"Securitree"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_securitree}" == "true" ]; then
             set_conf_value "enable_securitree" "false"
           else
@@ -1443,7 +1443,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Enable coding"*,* | *,"Enable coding"*)
+        "Enable coding"*,* | *,"Enable coding"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_coding}" == "true" ]; then
             printf "\n\nDisabling coding will disable LSP servers and several"
             printf "\nplugins providing coding and diagnostics features."
@@ -1452,18 +1452,18 @@ show_plugin_menu() {
             while true; do
               read -r -p "Proceed with disabling coding features? (y/n) " yn
               case $yn in
-                [Yy]*)
+                [Yy]*){:target="_blank"}{:rel="noopener noreferrer"}
                   set_conf_value "enable_coding" "false"
                   for lsp in "${all_lsp_servers[@]}"; do
                     set_conf_table "LSP_SERVERS" "${lsp}" "disable"
                   done
                   break
                   ;;
-                [Nn]*)
+                [Nn]*){:target="_blank"}{:rel="noopener noreferrer"}
                   printf "\nSkipping disabling coding features\n"
                   break
                   ;;
-                *)
+                *){:target="_blank"}{:rel="noopener noreferrer"}
                   printf "\nPlease answer yes or no.\n"
                   ;;
               esac
@@ -1477,7 +1477,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Compile"*,* | *,"Compile"*)
+        "Compile"*,* | *,"Compile"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_compile}" == "true" ]; then
             set_conf_value "enable_compile" "false"
           else
@@ -1486,7 +1486,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Multi Cursor"*,* | *,"Multi Cursor"*)
+        "Multi Cursor"*,* | *,"Multi Cursor"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_multi_cursor}" == "true" ]; then
             set_conf_value "enable_multi_cursor" "false"
           else
@@ -1495,7 +1495,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Enable Rename"*,* | *,"Enable Rename"*)
+        "Enable Rename"*,* | *,"Enable Rename"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_renamer}" == "true" ]; then
             set_conf_value "enable_renamer" "false"
           else
@@ -1504,7 +1504,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Bdelete"*,* | *,"Bdelete"*)
+        "Bdelete"*,* | *,"Bdelete"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_bbye}" == "true" ]; then
             set_conf_value "enable_bbye" "false"
           else
@@ -1513,7 +1513,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "StartupTime"*,* | *,"StartupTime"*)
+        "StartupTime"*,* | *,"StartupTime"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_startuptime}" == "true" ]; then
             set_conf_value "enable_startuptime" "false"
           else
@@ -1522,7 +1522,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Dressing"*,* | *,"Dressing"*)
+        "Dressing"*,* | *,"Dressing"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_dressing}" == "true" ]; then
             set_conf_value "enable_dressing" "false"
           else
@@ -1531,7 +1531,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Enable Games"*,* | *,"Enable Games"*)
+        "Enable Games"*,* | *,"Enable Games"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_games}" == "true" ]; then
             set_conf_value "enable_games" "false"
           else
@@ -1540,9 +1540,9 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Dashboard"*,* | *,"Dashboard"*)
-          choices=("alpha" "dash" "mini" "none")
-          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Neovim Dashboard  " --layout=reverse --border --exit-0)
+        "Dashboard"*,* | *,"Dashboard"*){:target="_blank"}{:rel="noopener noreferrer"}
+          choices=("alpha" "dash" "mini" "none"){:target="_blank"}{:rel="noopener noreferrer"}
+          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Neovim Dashboard  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
           if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
             [ "${choice}" == "${use_dash}" ] || {
               set_conf_value "dashboard" "${choice}"
@@ -1551,7 +1551,7 @@ show_plugin_menu() {
           fi
           break
           ;;
-        "Bookmarks"*,* | *,"Bookmarks"*)
+        "Bookmarks"*,* | *,"Bookmarks"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_bookmarks}" == "true" ]; then
             set_conf_value "enable_bookmarks" "false"
           else
@@ -1560,7 +1560,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Enable IDE"*,* | *,"Enable IDE"*)
+        "Enable IDE"*,* | *,"Enable IDE"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_ide}" == "true" ]; then
             set_conf_value "enable_ide" "false"
           else
@@ -1569,7 +1569,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Navigator"*,* | *,"Navigator"*)
+        "Navigator"*,* | *,"Navigator"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_navigator}" == "true" ]; then
             set_conf_value "enable_navigator" "false"
           else
@@ -1578,7 +1578,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Project"*,* | *,"Project"*)
+        "Project"*,* | *,"Project"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_project}" == "true" ]; then
             set_conf_value "enable_project" "false"
           else
@@ -1587,7 +1587,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Picker"*,* | *,"Picker"*)
+        "Picker"*,* | *,"Picker"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_picker}" == "true" ]; then
             set_conf_value "enable_picker" "false"
           else
@@ -1596,7 +1596,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Smooth Scroll"*,* | *,"Smooth Scroll"*)
+        "Smooth Scroll"*,* | *,"Smooth Scroll"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_smooth_scrolling}" == "true" ]; then
             set_conf_value "enable_smooth_scrolling" "false"
           else
@@ -1605,9 +1605,9 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        " Recent Files"*,* | *," Recent Files"*)
-          choices=("0" "1" "2" "3" "4" "5" "6" "7" "8" "9")
-          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Number of Recent Files  " --layout=reverse --border --exit-0)
+        " Recent Files"*,* | *," Recent Files"*){:target="_blank"}{:rel="noopener noreferrer"}
+          choices=("0" "1" "2" "3" "4" "5" "6" "7" "8" "9"){:target="_blank"}{:rel="noopener noreferrer"}
+          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Number of Recent Files  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
           [ "${choice}" == "${dashboard_recent_files}" ] || {
             if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
               set_conf_value "dashboard_recent_files" "${choice}"
@@ -1616,7 +1616,7 @@ show_plugin_menu() {
           }
           break
           ;;
-        " Alpha Header"*,* | *," Alpha Header"*)
+        " Alpha Header"*,* | *," Alpha Header"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_dashboard_header}" == "true" ]; then
             set_conf_value "enable_dashboard_header" "false"
           else
@@ -1625,7 +1625,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        " Quick Links"*,* | *," Quick Links"*)
+        " Quick Links"*,* | *," Quick Links"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_dashboard_quick_links}" == "true" ]; then
             set_conf_value "enable_dashboard_quick_links" "false"
           else
@@ -1634,18 +1634,18 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Screensaver"*,* | *,"Screensaver"*)
-          choices=("epilepsy" "leaves" "snow" "spring" "stars" "summer" "treadmill" "vanish" "xmas" "drop" "zone" "random" "none")
-          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Select Screensaver  " --layout=reverse --border --exit-0)
+        "Screensaver"*,* | *,"Screensaver"*){:target="_blank"}{:rel="noopener noreferrer"}
+          choices=("epilepsy" "leaves" "snow" "spring" "stars" "summer" "treadmill" "vanish" "xmas" "drop" "zone" "random" "none"){:target="_blank"}{:rel="noopener noreferrer"}
+          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Select Screensaver  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
           if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
             set_conf_value "enable_screensaver" "${choice}"
             pluginit=1
           fi
           break
           ;;
-        " Timeout"*,* | *," Timeout"*)
-          choices=("1" "2" "3" "4" "5" "10" "15" "30" "45")
-          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Screensaver Timeout in Minutes  " --layout=reverse --border --exit-0)
+        " Timeout"*,* | *," Timeout"*){:target="_blank"}{:rel="noopener noreferrer"}
+          choices=("1" "2" "3" "4" "5" "10" "15" "30" "45"){:target="_blank"}{:rel="noopener noreferrer"}
+          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Screensaver Timeout in Minutes  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
           [ "${choice}" == "${screensaver_timeout}" ] || {
             if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
               set_conf_value "screensaver_timeout" "${choice}"
@@ -1654,9 +1654,9 @@ show_plugin_menu() {
           }
           break
           ;;
-        "Indentline"*,* | *,"Indentline"*)
-          choices=("background" "colored" "context" "listchars" "mini" "simple" "none")
-          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Select Indentline Style  " --layout=reverse --border --exit-0)
+        "Indentline"*,* | *,"Indentline"*){:target="_blank"}{:rel="noopener noreferrer"}
+          choices=("background" "colored" "context" "listchars" "mini" "simple" "none"){:target="_blank"}{:rel="noopener noreferrer"}
+          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Select Indentline Style  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
           [ "${choice}" == "${use_indentline}" ] || {
             if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
               set_conf_value "indentline_style" "${choice}"
@@ -1665,7 +1665,7 @@ show_plugin_menu() {
           }
           break
           ;;
-        "Disable All"*,* | *,"Disable All"*)
+        "Disable All"*,* | *,"Disable All"*){:target="_blank"}{:rel="noopener noreferrer"}
           set_conf_value "dashboard" "none"
           set_conf_value "file_tree" "none"
           set_conf_value "media_backend" "none"
@@ -1713,7 +1713,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Enable All"*,* | *,"Enable All"*)
+        "Enable All"*,* | *,"Enable All"*){:target="_blank"}{:rel="noopener noreferrer"}
           set_conf_value "dashboard" "dash"
           set_conf_value "file_tree" "neo-tree"
           set_conf_value "media_backend" "jp2a"
@@ -1724,7 +1724,7 @@ show_plugin_menu() {
           set_conf_value "enable_copilot" "true"
           set_conf_value "enable_neoai" "true"
           [ -f "${HOME}/.codeexplain/model.bin" ] && {
-            pyver=$(check_python_version)
+            pyver=$(check_python_version){:target="_blank"}{:rel="noopener noreferrer"}
             [ "${pyver}" == "OK" ] && {
               set_conf_value "enable_codeexplain" "true"
             }
@@ -1767,7 +1767,7 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
-        "Reset"*,* | *,"Reset"*)
+        "Reset"*,* | *,"Reset"*){:target="_blank"}{:rel="noopener noreferrer"}
           [ -f ${CONFBACK} ] && {
             cp ${CONFBACK} ${NVIMCONF}
             set_code_explain
@@ -1777,7 +1777,7 @@ show_plugin_menu() {
           }
           break
           ;;
-        "Open Lazyman",* | *,"Open Lazyman")
+        "Open Lazyman",* | *,"Open Lazyman"){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${USEGUI}" ]; then
             NVIM_APPNAME="nvim-Lazyman" neovide
           else
@@ -1785,29 +1785,29 @@ show_plugin_menu() {
           fi
           break
           ;;
-        "Config Menu"*,* | *,"Config Menu"*)
+        "Config Menu"*,* | *,"Config Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
           confmenu=1
           break 2
           ;;
-        "Formatters"*,* | *,"Formatters"*)
+        "Formatters"*,* | *,"Formatters"*){:target="_blank"}{:rel="noopener noreferrer"}
           formenu=1
           break 2
           ;;
-        "LSP Servers"*,* | *,"LSP Servers"*)
+        "LSP Servers"*,* | *,"LSP Servers"*){:target="_blank"}{:rel="noopener noreferrer"}
           lspmenu=1
           break 2
           ;;
-        "Main Menu"*,* | *,"Main Menu"*)
+        "Main Menu"*,* | *,"Main Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
           [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           mainmenu=1
           break 2
           ;;
-        "Quit",* | *,"Quit" | "quit",* | *,"quit")
+        "Quit",* | *,"Quit" | "quit",* | *,"quit"){:target="_blank"}{:rel="noopener noreferrer"}
           [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           printf "\nExiting Lazyman Configuration Menu System\n\n"
           exit 3
           ;;
-        *,*)
+        *,*){:target="_blank"}{:rel="noopener noreferrer"}
           printf "\nNo matching menu item located."
           printf "\nSelection out of range or malformed."
           prompt_continue
@@ -1868,79 +1868,79 @@ show_lsp_menu() {
     printf '\n'
     get_conf_table lsp_servers
     PS3="${BOLD}${PLEASE} (numeric or text, 'h' for help): ${NORM}"
-    options=()
-    readarray -t lsp_sorted < <(printf '%s\0' "${all_lsp_servers[@]}" | sort -z | xargs -0n1)
+    options=(){:target="_blank"}{:rel="noopener noreferrer"}
+    readarray -t lsp_sorted < <(printf '%s\0' "${all_lsp_servers[@]}" | sort -z | xargs -0n1){:target="_blank"}{:rel="noopener noreferrer"}
     for lsp in "${lsp_sorted[@]}"; do
       len=${#lsp}
-      numsp=$((14 - len))
+      numsp=$((14 - len)){:target="_blank"}{:rel="noopener noreferrer"}
       [ ${numsp} -lt 0 ] && numsp=0
       longlsp="${lsp}"
       while [ ${numsp} -gt 0 ]; do
         longlsp="${longlsp} "
-        ((numsp -= 1))
+        ((numsp -= 1)){:target="_blank"}{:rel="noopener noreferrer"}
       done
       if echo "${lsp_enabled_table[@]}" | grep -qw "$lsp" >/dev/null; then
-        options+=("${longlsp} []")
+        options+=("${longlsp} []"){:target="_blank"}{:rel="noopener noreferrer"}
       else
-        options+=("${longlsp} [✗]")
+        options+=("${longlsp} [✗]"){:target="_blank"}{:rel="noopener noreferrer"}
       fi
     done
-    options+=("Disable All")
-    options+=("Enable All")
-    options+=("Formatters Menu")
-    options+=("Plugins Menu")
-    options+=("Config Menu")
-    options+=("Main Menu")
-    options+=("Quit")
+    options+=("Disable All"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Enable All"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Formatters Menu"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Plugins Menu"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Config Menu"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Main Menu"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Quit"){:target="_blank"}{:rel="noopener noreferrer"}
     select opt in "${options[@]}"; do
       case "$opt,$REPLY" in
-        "h",* | *,"h" | "H",* | *,"H" | "help",* | *,"help" | "Help",* | *,"Help")
+        "h",* | *,"h" | "H",* | *,"H" | "help",* | *,"help" | "Help",* | *,"Help"){:target="_blank"}{:rel="noopener noreferrer"}
           [ "$debug" ] || tput reset
           show_lsp_help
           break
           ;;
-        "Disable All"*,* | *,"Disable All"*)
+        "Disable All"*,* | *,"Disable All"*){:target="_blank"}{:rel="noopener noreferrer"}
           for lsp in "${all_lsp_servers[@]}"; do
             set_conf_table "LSP_SERVERS" "${lsp}" "disable"
           done
           pluginit=1
           break
           ;;
-        "Enable All"*,* | *,"Enable All"*)
+        "Enable All"*,* | *,"Enable All"*){:target="_blank"}{:rel="noopener noreferrer"}
           for lsp in "${all_lsp_servers[@]}"; do
             set_conf_table "LSP_SERVERS" "${lsp}" "enable"
           done
           pluginit=1
           break
           ;;
-        "Formatters Menu"*,* | *,"Formatters Menu"*)
+        "Formatters Menu"*,* | *,"Formatters Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
           formmenu=1
           break 2
           ;;
-        "Config Menu"*,* | *,"Config Menu"*)
+        "Config Menu"*,* | *,"Config Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
           confmenu=1
           break 2
           ;;
-        "Plugins Menu"*,* | *,"Plugins Menu"*)
+        "Plugins Menu"*,* | *,"Plugins Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
           plugmenu=1
           break 2
           ;;
-        "Main Menu"*,* | *,"Main Menu"*)
+        "Main Menu"*,* | *,"Main Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
           [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           mainmenu=1
           break 2
           ;;
-        "Quit",* | *,"Quit" | "quit",* | *,"quit")
+        "Quit",* | *,"Quit" | "quit",* | *,"quit"){:target="_blank"}{:rel="noopener noreferrer"}
           [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           printf "\nExiting Lazyman Configuration Menu System\n\n"
           exit 3
           ;;
-        *,*)
+        *,*){:target="_blank"}{:rel="noopener noreferrer"}
           enable=
           if [ "${opt}" ]; then
-            lspname=$(echo "${opt}" | awk ' { print $1 } ')
+            lspname=$(echo "${opt}" | awk ' { print $1 } '){:target="_blank"}{:rel="noopener noreferrer"}
           else
-            lspname=$(echo "${REPLY}" | awk ' { print $1 } ')
+            lspname=$(echo "${REPLY}" | awk ' { print $1 } '){:target="_blank"}{:rel="noopener noreferrer"}
           fi
           grep "LSP_SERVERS" "${NVIMCONF}" | grep "\-\- \"${lspname}" >/dev/null && enable=1
           if [ "${enable}" ]; then
@@ -2003,79 +2003,79 @@ show_formlint_menu() {
     printf '\n'
     get_conf_table formatters_linters
     PS3="${BOLD}${PLEASE} (numeric or text, 'h' for help): ${NORM}"
-    options=()
-    readarray -t form_sorted < <(printf '%s\0' "${all_formatters[@]}" | sort -z | xargs -0n1)
+    options=(){:target="_blank"}{:rel="noopener noreferrer"}
+    readarray -t form_sorted < <(printf '%s\0' "${all_formatters[@]}" | sort -z | xargs -0n1){:target="_blank"}{:rel="noopener noreferrer"}
     for form in "${form_sorted[@]}"; do
       len=${#form}
-      numsp=$((19 - len))
+      numsp=$((19 - len)){:target="_blank"}{:rel="noopener noreferrer"}
       [ ${numsp} -lt 0 ] && numsp=0
       longform="${form}"
       while [ ${numsp} -gt 0 ]; do
         longform="${longform} "
-        ((numsp -= 1))
+        ((numsp -= 1)){:target="_blank"}{:rel="noopener noreferrer"}
       done
       if echo "${for_enabled_table[@]}" | grep -qw "$form" >/dev/null; then
-        options+=("${longform} []")
+        options+=("${longform} []"){:target="_blank"}{:rel="noopener noreferrer"}
       else
-        options+=("${longform} [✗]")
+        options+=("${longform} [✗]"){:target="_blank"}{:rel="noopener noreferrer"}
       fi
     done
-    options+=("Disable All")
-    options+=("Enable All")
-    options+=("LSP Servers Menu")
-    options+=("Plugins Menu")
-    options+=("Config Menu")
-    options+=("Main Menu")
-    options+=("Quit")
+    options+=("Disable All"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Enable All"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("LSP Servers Menu"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Plugins Menu"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Config Menu"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Main Menu"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Quit"){:target="_blank"}{:rel="noopener noreferrer"}
     select opt in "${options[@]}"; do
       case "$opt,$REPLY" in
-        "h",* | *,"h" | "H",* | *,"H" | "help",* | *,"help" | "Help",* | *,"Help")
+        "h",* | *,"h" | "H",* | *,"H" | "help",* | *,"help" | "Help",* | *,"Help"){:target="_blank"}{:rel="noopener noreferrer"}
           [ "$debug" ] || tput reset
           show_form_help
           break
           ;;
-        "Disable All"*,* | *,"Disable All"*)
+        "Disable All"*,* | *,"Disable All"*){:target="_blank"}{:rel="noopener noreferrer"}
           for form in "${all_formatters[@]}"; do
             set_conf_table "FORMATTERS_LINTERS" "${form}" "disable"
           done
           pluginit=1
           break
           ;;
-        "Enable All"*,* | *,"Enable All"*)
+        "Enable All"*,* | *,"Enable All"*){:target="_blank"}{:rel="noopener noreferrer"}
           for form in "${all_formatters[@]}"; do
             set_conf_table "FORMATTERS_LINTERS" "${form}" "enable"
           done
           pluginit=1
           break
           ;;
-        "LSP Servers"*,* | *,"LSP Servers"*)
+        "LSP Servers"*,* | *,"LSP Servers"*){:target="_blank"}{:rel="noopener noreferrer"}
           lspsmenu=1
           break 2
           ;;
-        "Plugins Menu"*,* | *,"Plugins Menu"*)
+        "Plugins Menu"*,* | *,"Plugins Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
           plugmenu=1
           break 2
           ;;
-        "Config Menu"*,* | *,"Config Menu"*)
+        "Config Menu"*,* | *,"Config Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
           confmenu=1
           break 2
           ;;
-        "Main Menu"*,* | *,"Main Menu"*)
+        "Main Menu"*,* | *,"Main Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
           [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           mainmenu=1
           break 2
           ;;
-        "Quit",* | *,"Quit" | "quit",* | *,"quit")
+        "Quit",* | *,"Quit" | "quit",* | *,"quit"){:target="_blank"}{:rel="noopener noreferrer"}
           [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           printf "\nExiting Lazyman Configuration Menu System\n\n"
           exit 3
           ;;
-        *,*)
+        *,*){:target="_blank"}{:rel="noopener noreferrer"}
           enable=
           if [ "${opt}" ]; then
-            forname=$(echo "${opt}" | awk ' { print $1 } ')
+            forname=$(echo "${opt}" | awk ' { print $1 } '){:target="_blank"}{:rel="noopener noreferrer"}
           else
-            forname=$(echo "${REPLY}" | awk ' { print $1 } ')
+            forname=$(echo "${REPLY}" | awk ' { print $1 } '){:target="_blank"}{:rel="noopener noreferrer"}
           fi
           grep "FORMATTERS_LINTERS" "${NVIMCONF}" | grep "\-\- \"${forname}" >/dev/null && enable=1
           if [ "${enable}" ]; then
@@ -2121,147 +2121,147 @@ show_conf_menu() {
       [ "${have_figlet}" ] && show_figlet "Config"
     fi
     printf '\n'
-    namespace=$(get_conf_value namespace)
+    namespace=$(get_conf_value namespace){:target="_blank"}{:rel="noopener noreferrer"}
     use_namespace="${namespace}"
-    theme=$(get_conf_value theme)
+    theme=$(get_conf_value theme){:target="_blank"}{:rel="noopener noreferrer"}
     use_theme="${theme}"
-    theme_style=$(get_conf_value theme_style)
+    theme_style=$(get_conf_value theme_style){:target="_blank"}{:rel="noopener noreferrer"}
     use_theme_style="${theme_style}"
-    enable_transparent=$(get_conf_value enable_transparent)
+    enable_transparent=$(get_conf_value enable_transparent){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_transparent}" == "true" ]; then
       use_transparent=""
     else
       use_transparent="✗"
     fi
-    mapleader=$(get_conf_value mapleader)
+    mapleader=$(get_conf_value mapleader){:target="_blank"}{:rel="noopener noreferrer"}
     use_mapleader="${mapleader}"
-    maplocalleader=$(get_conf_value maplocalleader)
+    maplocalleader=$(get_conf_value maplocalleader){:target="_blank"}{:rel="noopener noreferrer"}
     use_maplocalleader="${maplocalleader}"
-    enable_number=$(get_conf_value number)
+    enable_number=$(get_conf_value number){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_number}" == "true" ]; then
       use_number=""
     else
       use_number="✗"
     fi
-    enable_relative_number=$(get_conf_value relative_number)
+    enable_relative_number=$(get_conf_value relative_number){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_relative_number}" == "true" ]; then
       use_relative_number=""
     else
       use_relative_number="✗"
     fi
-    enable_smartcolumn=$(get_conf_value enable_smartcolumn)
+    enable_smartcolumn=$(get_conf_value enable_smartcolumn){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_smartcolumn}" == "true" ]; then
       use_smartcolumn=""
     else
       use_smartcolumn="✗"
     fi
-    enable_global_statusline=$(get_conf_value global_statusline)
+    enable_global_statusline=$(get_conf_value global_statusline){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_global_statusline}" == "true" ]; then
       use_global_statusline=""
     else
       use_global_statusline="✗"
     fi
-    showtabline=$(get_conf_value showtabline)
+    showtabline=$(get_conf_value showtabline){:target="_blank"}{:rel="noopener noreferrer"}
     use_showtabline="${showtabline}"
-    enable_list=$(get_conf_value list)
+    enable_list=$(get_conf_value list){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_list}" == "true" ]; then
       use_list=""
     else
       use_list="✗"
     fi
-    enable_statusline=$(get_conf_value enable_statusline)
+    enable_statusline=$(get_conf_value enable_statusline){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_statusline}" == "true" ]; then
       use_statusline=""
     else
       use_statusline="✗"
     fi
-    enable_tabline=$(get_conf_value enable_status_in_tab)
+    enable_tabline=$(get_conf_value enable_status_in_tab){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_tabline}" == "true" ]; then
       use_tabline=""
     else
       use_tabline="✗"
     fi
-    enable_winbar=$(get_conf_value enable_winbar)
+    enable_winbar=$(get_conf_value enable_winbar){:target="_blank"}{:rel="noopener noreferrer"}
     use_winbar="${enable_winbar}"
-    show_diagnostics=$(get_conf_value show_diagnostics)
+    show_diagnostics=$(get_conf_value show_diagnostics){:target="_blank"}{:rel="noopener noreferrer"}
     use_show_diagnostics="${show_diagnostics}"
-    enable_semantic_highlighting=$(get_conf_value enable_semantic_highlighting)
+    enable_semantic_highlighting=$(get_conf_value enable_semantic_highlighting){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_semantic_highlighting}" == "true" ]; then
       use_semantic_highlighting=""
     else
       use_semantic_highlighting="✗"
     fi
-    convert_semantic_highlighting=$(get_conf_value convert_semantic_highlighting)
+    convert_semantic_highlighting=$(get_conf_value convert_semantic_highlighting){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${convert_semantic_highlighting}" == "true" ]; then
       convert_semantic_highlighting=""
     else
       convert_semantic_highlighting="✗"
     fi
-    enable_zenmode=$(get_conf_value enable_zenmode)
+    enable_zenmode=$(get_conf_value enable_zenmode){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${enable_zenmode}" == "true" ]; then
       use_zenmode=""
     else
       use_zenmode="✗"
     fi
     PS3="${BOLD}${PLEASE} (numeric or text, 'h' for help): ${NORM}"
-    options=()
-    options+=("Namespace   [${use_namespace}]")
+    options=(){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Namespace   [${use_namespace}]"){:target="_blank"}{:rel="noopener noreferrer"}
     [ "${use_namespace}" == "free" ] && {
-      options+=("Diagnostics [${use_show_diagnostics}]")
+      options+=("Diagnostics [${use_show_diagnostics}]"){:target="_blank"}{:rel="noopener noreferrer"}
     }
-    options+=("Theme [${use_theme}]")
+    options+=("Theme [${use_theme}]"){:target="_blank"}{:rel="noopener noreferrer"}
     if [[ " ${styled_themes[*]} " =~ " ${use_theme} " ]]; then
-      options+=(" Style [${use_theme_style}]")
+      options+=(" Style [${use_theme_style}]"){:target="_blank"}{:rel="noopener noreferrer"}
     fi
-    options+=(" Transparency [${use_transparent}]")
-    options+=("Leader        [${use_mapleader}]")
-    options+=("Local Leader  [${use_maplocalleader}]")
-    options+=("Number Lines  [${use_number}]")
-    options+=("Relative Nums [${use_relative_number}]")
-    options+=("List Chars    [${use_list}]")
-    options+=("Smart Column  [${use_smartcolumn}]")
-    options+=("Global Status [${use_global_statusline}]")
-    options+=("Status Line   [${use_statusline}]")
-    options+=("Status in Tab [${use_tabline}]")
-    options+=("Show Tabline  [${use_showtabline}]")
+    options+=(" Transparency [${use_transparent}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Leader        [${use_mapleader}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Local Leader  [${use_maplocalleader}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Number Lines  [${use_number}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Relative Nums [${use_relative_number}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("List Chars    [${use_list}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Smart Column  [${use_smartcolumn}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Global Status [${use_global_statusline}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Status Line   [${use_statusline}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Status in Tab [${use_tabline}]"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Show Tabline  [${use_showtabline}]"){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${use_winbar}" == "none" ]
     then
-      options+=("Winbar     [${use_winbar}]")
+      options+=("Winbar     [${use_winbar}]"){:target="_blank"}{:rel="noopener noreferrer"}
     else
-      options+=("Winbar [${use_winbar}]")
+      options+=("Winbar [${use_winbar}]"){:target="_blank"}{:rel="noopener noreferrer"}
     fi
     [ "${use_namespace}" == "free" ] && {
-      options+=("Semantic HL   [${use_semantic_highlighting}]")
-      options+=("Convert SemHL [${convert_semantic_highlighting}]")
-      options+=("Zen Mode      [${use_zenmode}]")
+      options+=("Semantic HL   [${use_semantic_highlighting}]"){:target="_blank"}{:rel="noopener noreferrer"}
+      options+=("Convert SemHL [${convert_semantic_highlighting}]"){:target="_blank"}{:rel="noopener noreferrer"}
+      options+=("Zen Mode      [${use_zenmode}]"){:target="_blank"}{:rel="noopener noreferrer"}
     }
-    options+=("Disable All")
-    options+=("Enable All")
-    options+=("Minimal Config")
+    options+=("Disable All"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Enable All"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Minimal Config"){:target="_blank"}{:rel="noopener noreferrer"}
     [ -f ${CONFBACK} ] && {
-      diff ${CONFBACK} ${NVIMCONF} >/dev/null || options+=("Reset to Defaults")
+      diff ${CONFBACK} ${NVIMCONF} >/dev/null || options+=("Reset to Defaults"){:target="_blank"}{:rel="noopener noreferrer"}
     }
-    [ -d "${LMANDIR}" ] && options+=("Open Lazyman")
-    options+=("Formatters")
-    options+=("LSP Servers")
-    options+=("Plugins Menu")
+    [ -d "${LMANDIR}" ] && options+=("Open Lazyman"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Formatters"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("LSP Servers"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Plugins Menu"){:target="_blank"}{:rel="noopener noreferrer"}
     [ -f ${HOME}/.config/nvim-LazyIde/lua/configuration.lua ] && {
-      options+=("LazyIde Config")
+      options+=("LazyIde Config"){:target="_blank"}{:rel="noopener noreferrer"}
     }
     [ -f ${HOME}/.config/nvim-Webdev/lua/configuration.lua ] && {
-      options+=("Webdev Config")
+      options+=("Webdev Config"){:target="_blank"}{:rel="noopener noreferrer"}
     }
-    options+=("Main Menu")
-    options+=("Quit")
+    options+=("Main Menu"){:target="_blank"}{:rel="noopener noreferrer"}
+    options+=("Quit"){:target="_blank"}{:rel="noopener noreferrer"}
     select opt in "${options[@]}"; do
       case "$opt,$REPLY" in
-        "h",* | *,"h" | "H",* | *,"H" | "help",* | *,"help" | "Help",* | *,"Help")
+        "h",* | *,"h" | "H",* | *,"H" | "help",* | *,"help" | "Help",* | *,"Help"){:target="_blank"}{:rel="noopener noreferrer"}
           [ "$debug" ] || tput reset
           printf "\n"
           man lazyman
           break
           ;;
-        "Smart Column"*,* | *,"Smart Column"*)
+        "Smart Column"*,* | *,"Smart Column"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_smartcolumn}" == "true" ]; then
             set_conf_value "enable_smartcolumn" "false"
           else
@@ -2270,7 +2270,7 @@ show_conf_menu() {
           pluginit=1
           break
           ;;
-        "Status Line"*,* | *,"Status Line"*)
+        "Status Line"*,* | *,"Status Line"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_statusline}" == "true" ]; then
             set_conf_value "enable_statusline" "false"
           else
@@ -2279,7 +2279,7 @@ show_conf_menu() {
           pluginit=1
           break
           ;;
-        "Status in Tab"*,* | *,"Status in Tab"*)
+        "Status in Tab"*,* | *,"Status in Tab"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_tabline}" == "true" ]; then
             set_conf_value "enable_status_in_tab" "false"
           else
@@ -2288,9 +2288,9 @@ show_conf_menu() {
           pluginit=1
           break
           ;;
-        "Winbar"*,* | *,"Winbar"*)
-          choices=("Barbecue" "Standard" "None")
-          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Select winbar style  " --layout=reverse --border --exit-0)
+        "Winbar"*,* | *,"Winbar"*){:target="_blank"}{:rel="noopener noreferrer"}
+          choices=("Barbecue" "Standard" "None"){:target="_blank"}{:rel="noopener noreferrer"}
+          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Select winbar style  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
           if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
             if [ "${choice}" == "Barbecue" ]; then
               set_conf_value "enable_winbar" "barbecue"
@@ -2307,16 +2307,16 @@ show_conf_menu() {
           fi
           break
           ;;
-        " Style"*,* | *," Style"*)
+        " Style"*,* | *," Style"*){:target="_blank"}{:rel="noopener noreferrer"}
           select_theme_style ${theme}
           break
           ;;
-        "Theme"*,* | *,"Theme"*)
+        "Theme"*,* | *,"Theme"*){:target="_blank"}{:rel="noopener noreferrer"}
           select_theme ${theme}
           pluginit=1
           break
           ;;
-        " Transparency"*,* | *," Transparency"*)
+        " Transparency"*,* | *," Transparency"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_transparent}" == "true" ]; then
             set_conf_value "enable_transparent" "false"
           else
@@ -2324,7 +2324,7 @@ show_conf_menu() {
           fi
           break
           ;;
-        "Namespace"*,* | *,"Namespace"*)
+        "Namespace"*,* | *,"Namespace"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${use_namespace}" == "onno" ]; then
             set_conf_value "namespace" "free"
           else
@@ -2333,7 +2333,7 @@ show_conf_menu() {
           pluginit=1
           break
           ;;
-        "Leader"*,* | *,"Leader"*)
+        "Leader"*,* | *,"Leader"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${use_mapleader}" == "," ]; then
             set_conf_value "mapleader" " "
           else
@@ -2341,7 +2341,7 @@ show_conf_menu() {
           fi
           break
           ;;
-        "Local Leader"*,* | *,"Local Leader"*)
+        "Local Leader"*,* | *,"Local Leader"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${use_maplocalleader}" == "," ]; then
             set_conf_value "maplocalleader" " "
           else
@@ -2349,7 +2349,7 @@ show_conf_menu() {
           fi
           break
           ;;
-        "Number Lines"*,* | *,"Number Lines"*)
+        "Number Lines"*,* | *,"Number Lines"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_number}" == "true" ]; then
             set_conf_value "number" "false"
           else
@@ -2357,7 +2357,7 @@ show_conf_menu() {
           fi
           break
           ;;
-        "Relative Num"*,* | *,"Relative Num"*)
+        "Relative Num"*,* | *,"Relative Num"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_relative_number}" == "true" ]; then
             set_conf_value "relative_number" "false"
           else
@@ -2365,7 +2365,7 @@ show_conf_menu() {
           fi
           break
           ;;
-        "List"*,* | *,"List"*)
+        "List"*,* | *,"List"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_list}" == "true" ]; then
             set_conf_value "list" "false"
           else
@@ -2373,7 +2373,7 @@ show_conf_menu() {
           fi
           break
           ;;
-        "Global Status"*,* | *,"Global Status"*)
+        "Global Status"*,* | *,"Global Status"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_global_statusline}" == "true" ]; then
             set_conf_value "global_statusline" "false"
           else
@@ -2381,9 +2381,9 @@ show_conf_menu() {
           fi
           break
           ;;
-        "Show Tabline"*,* | *,"Show Tabline"*)
-          choices=("0" "1" "2")
-          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Show tabline (0=never, 1=multiple tabs, 2=always)  " --layout=reverse --border --exit-0)
+        "Show Tabline"*,* | *,"Show Tabline"*){:target="_blank"}{:rel="noopener noreferrer"}
+          choices=("0" "1" "2"){:target="_blank"}{:rel="noopener noreferrer"}
+          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Show tabline (0=never, 1=multiple tabs, 2=always)  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
           [ "${choice}" == "${showtabline}" ] || {
             if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
               set_conf_value "showtabline" "${choice}"
@@ -2391,9 +2391,9 @@ show_conf_menu() {
           }
           break
           ;;
-        "Diagnostic"*,* | *,"Diagnostic"*)
-          choices=("none" "icons" "popup")
-          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Neovim Diagnostics  " --layout=reverse --border --exit-0)
+        "Diagnostic"*,* | *,"Diagnostic"*){:target="_blank"}{:rel="noopener noreferrer"}
+          choices=("none" "icons" "popup"){:target="_blank"}{:rel="noopener noreferrer"}
+          choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Neovim Diagnostics  " --layout=reverse --border --exit-0){:target="_blank"}{:rel="noopener noreferrer"}
           [ "${choice}" == "${show_diagnostics}" ] || {
             if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
               set_conf_value "show_diagnostics" "${choice}"
@@ -2401,7 +2401,7 @@ show_conf_menu() {
           }
           break
           ;;
-        "Semantic HL"*,* | *,"Semantic HL"*)
+        "Semantic HL"*,* | *,"Semantic HL"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_semantic_highlighting}" == "true" ]; then
             set_conf_value "enable_semantic_highlighting" "false"
           else
@@ -2409,7 +2409,7 @@ show_conf_menu() {
           fi
           break
           ;;
-        "Convert SemHL"*,* | *,"Convert SemHL"*)
+        "Convert SemHL"*,* | *,"Convert SemHL"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${convert_semantic_highlighting}" == "true" ]; then
             set_conf_value "convert_semantic_highlighting" "false"
           else
@@ -2417,7 +2417,7 @@ show_conf_menu() {
           fi
           break
           ;;
-        "Zen Mode"*,* | *,"Zen Mode"*)
+        "Zen Mode"*,* | *,"Zen Mode"*){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${enable_zenmode}" == "true" ]; then
             set_conf_value "enable_zenmode" "false"
           else
@@ -2426,7 +2426,7 @@ show_conf_menu() {
           pluginit=1
           break
           ;;
-        "Minimal Config"*,* | *,"Minimal Config"*)
+        "Minimal Config"*,* | *,"Minimal Config"*){:target="_blank"}{:rel="noopener noreferrer"}
           set_conf_value "global_statusline" "false"
           set_conf_value "enable_smartcolumn" "false"
           set_conf_value "enable_statusline" "false"
@@ -2477,7 +2477,7 @@ show_conf_menu() {
           pluginit=1
           break
           ;;
-        "Disable All"*,* | *,"Disable All"*)
+        "Disable All"*,* | *,"Disable All"*){:target="_blank"}{:rel="noopener noreferrer"}
           set_conf_value "number" "false"
           set_conf_value "relative_number" "false"
           set_conf_value "enable_smartcolumn" "false"
@@ -2495,7 +2495,7 @@ show_conf_menu() {
           pluginit=1
           break
           ;;
-        "Enable All"*,* | *,"Enable All"*)
+        "Enable All"*,* | *,"Enable All"*){:target="_blank"}{:rel="noopener noreferrer"}
           set_conf_value "number" "true"
           set_conf_value "relative_number" "true"
           set_conf_value "enable_smartcolumn" "true"
@@ -2511,7 +2511,7 @@ show_conf_menu() {
           pluginit=1
           break
           ;;
-        "Reset"*,* | *,"Reset"*)
+        "Reset"*,* | *,"Reset"*){:target="_blank"}{:rel="noopener noreferrer"}
           [ -f ${CONFBACK} ] && {
             cp ${CONFBACK} ${NVIMCONF}
             set_code_explain
@@ -2521,7 +2521,7 @@ show_conf_menu() {
           }
           break
           ;;
-        "Open Lazyman",* | *,"Open Lazyman")
+        "Open Lazyman",* | *,"Open Lazyman"){:target="_blank"}{:rel="noopener noreferrer"}
           if [ "${USEGUI}" ]; then
             NVIM_APPNAME="nvim-Lazyman" neovide
           else
@@ -2529,37 +2529,37 @@ show_conf_menu() {
           fi
           break
           ;;
-        "Formatters"*,* | *,"Formatters"*)
+        "Formatters"*,* | *,"Formatters"*){:target="_blank"}{:rel="noopener noreferrer"}
           formenu=1
           break 2
           ;;
-        "LSP Servers"*,* | *,"LSP Servers"*)
+        "LSP Servers"*,* | *,"LSP Servers"*){:target="_blank"}{:rel="noopener noreferrer"}
           lspmenu=1
           break 2
           ;;
-        "Plugins Menu"*,* | *,"Plugins Menu"*)
+        "Plugins Menu"*,* | *,"Plugins Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
           plugmenu=1
           break 2
           ;;
-        "LazyIde Config",* | *,"LazyIde Config")
+        "LazyIde Config",* | *,"LazyIde Config"){:target="_blank"}{:rel="noopener noreferrer"}
           lidemenu=1
           break 2
           ;;
-        "Webdev Config",* | *,"Webdev Config")
+        "Webdev Config",* | *,"Webdev Config"){:target="_blank"}{:rel="noopener noreferrer"}
           wdevmenu=1
           break 2
           ;;
-        "Main Menu"*,* | *,"Main Menu"*)
+        "Main Menu"*,* | *,"Main Menu"*){:target="_blank"}{:rel="noopener noreferrer"}
           [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           mainmenu=1
           break 2
           ;;
-        "Quit",* | *,"Quit" | "quit",* | *,"quit")
+        "Quit",* | *,"Quit" | "quit",* | *,"quit"){:target="_blank"}{:rel="noopener noreferrer"}
           [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           printf "\nExiting Lazyman Configuration Menu System\n\n"
           exit 3
           ;;
-        *,*)
+        *,*){:target="_blank"}{:rel="noopener noreferrer"}
           printf "\nNo matching menu item located."
           printf "\nSelection out of range or malformed."
           prompt_continue
@@ -2592,30 +2592,30 @@ setconf=
 toggle=
 while getopts "dim:stu" flag; do
   case $flag in
-    d)
+    d){:target="_blank"}{:rel="noopener noreferrer"}
       debug=1
       ;;
-    i)
+    i){:target="_blank"}{:rel="noopener noreferrer"}
       initplugs=1
       ;;
-    m)
+    m){:target="_blank"}{:rel="noopener noreferrer"}
       menu="${OPTARG}"
       if [ "${menu}" ]
       then
         case "${menu}" in
-          conf*|Conf*)
+          conf*|Conf*){:target="_blank"}{:rel="noopener noreferrer"}
             menu="confmenu"
             ;;
-          plug*|Plug*)
+          plug*|Plug*){:target="_blank"}{:rel="noopener noreferrer"}
             menu="plugmenu"
             ;;
-          lsp*|Lsp*|LSP*)
+          lsp*|Lsp*|LSP*){:target="_blank"}{:rel="noopener noreferrer"}
             menu="lspmenu"
             ;;
-          for*|For*|lint*|Lint*)
+          for*|For*|lint*|Lint*){:target="_blank"}{:rel="noopener noreferrer"}
             menu="formenu"
             ;;
-          *)
+          *){:target="_blank"}{:rel="noopener noreferrer"}
             menu="main"
             ;;
         esac
@@ -2623,22 +2623,22 @@ while getopts "dim:stu" flag; do
         menu="confmenu"
       fi
       ;;
-    s)
+    s){:target="_blank"}{:rel="noopener noreferrer"}
       setconf=1
       ;;
-    t)
+    t){:target="_blank"}{:rel="noopener noreferrer"}
       toggle=1
       ;;
-    u)
+    u){:target="_blank"}{:rel="noopener noreferrer"}
       usage
       ;;
-    *)
+    *){:target="_blank"}{:rel="noopener noreferrer"}
       printf "\nUnrecognized option. Exiting.\n"
       usage
       ;;
   esac
 done
-shift $((OPTIND - 1))
+shift $((OPTIND - 1)){:target="_blank"}{:rel="noopener noreferrer"}
 
 set_haves
 
@@ -2647,51 +2647,51 @@ set_haves
     printf "\nThe -t option requires a configuration name argument."
     usage
   }
-  curval=$(get_conf_value "$1")
+  curval=$(get_conf_value "$1"){:target="_blank"}{:rel="noopener noreferrer"}
   case ${curval} in
-    true)
+    true){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "false"
       ;;
-    false)
+    false){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "true"
       ;;
-    onno)
+    onno){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "free"
       ;;
-    free)
+    free){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "onno"
       ;;
-    neo-tree)
+    neo-tree){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "nvim-tree"
       ;;
-    nvim-tree)
+    nvim-tree){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "neo-tree"
       ;;
-    hop)
+    hop){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "leap"
       ;;
-    leap)
+    leap){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "hop"
       ;;
-    persistence)
+    persistence){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "possession"
       ;;
-    possession)
+    possession){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "persistence"
       ;;
-    preview)
+    preview){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "peek"
       ;;
-    peek)
+    peek){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "preview"
       ;;
-    bubble)
+    bubble){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "arrow"
       ;;
-    arrow)
+    arrow){:target="_blank"}{:rel="noopener noreferrer"}
       set_conf_value "$1" "bubble"
       ;;
-    *)
+    *){:target="_blank"}{:rel="noopener noreferrer"}
       printf "\nUnrecognized configuration toggle: $1\n"
       usage
       ;;

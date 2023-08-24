@@ -12,41 +12,41 @@ Uses the [mini.nvim](https://github.com/echasnovski/mini.nvim) library. Personal
 - Install and initialize: **`lazyman -M`**
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
-- Plugin manager:         [Mini](https://github.com/echasnovski/mini.nvim)
+- Plugin manager:         [Mini](https://github.com/echasnovski/mini.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 - Installation location:  **`~/.config/nvim-Mini`**
 
 
 ### Git repository
 
-[https://github.com/echasnovski/nvim](https://github.com/echasnovski/nvim)
+[https://github.com/echasnovski/nvim](https://github.com/echasnovski/nvim){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Neovimcraft entry
 
-[http://neovimcraft.com/plugin/echasnovski/nvim](http://neovimcraft.com/plugin/echasnovski/nvim)
+[http://neovimcraft.com/plugin/echasnovski/nvim](http://neovimcraft.com/plugin/echasnovski/nvim){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Mini.nvim managed plugins
 
-- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
-- [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
-- [echasnovski/mini.nvim](https://github.com/echasnovski/mini.nvim)
-- [danymat/neogen](https://github.com/danymat/neogen.git)
-- [kassio/neoterm](https://github.com/kassio/neoterm)
-- [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
-- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects)
-- [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
-- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
-- [mechatroner/rainbow_csv](https://github.com/mechatroner/rainbow_csv)
-- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim.git)
-- [tpope/vim-dispatch](https://github.com/tpope/vim-dispatch)
-- [tommcdo/vim-exchange](https://github.com/tommcdo/vim-exchange)
-- [vim-pandoc/vim-pandoc](https://github.com/vim-pandoc/vim-pandoc)
-- [vim-pandoc/vim-pandoc-syntax](https://github.com/vim-pandoc/vim-pandoc-syntax)
-- [vim-pandoc/vim-rmarkdown](https://github.com/vim-pandoc/vim-rmarkdown)
-- [vim-test/vim-test](https://github.com/vim-test/vim-test)
-- [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
+- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip){:target="_blank"}{:rel="noopener noreferrer"}
+- [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [echasnovski/mini.nvim](https://github.com/echasnovski/mini.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [danymat/neogen](https://github.com/danymat/neogen.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [kassio/neoterm](https://github.com/kassio/neoterm){:target="_blank"}{:rel="noopener noreferrer"}
+- [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [mechatroner/rainbow_csv](https://github.com/mechatroner/rainbow_csv){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [tpope/vim-dispatch](https://github.com/tpope/vim-dispatch){:target="_blank"}{:rel="noopener noreferrer"}
+- [tommcdo/vim-exchange](https://github.com/tommcdo/vim-exchange){:target="_blank"}{:rel="noopener noreferrer"}
+- [vim-pandoc/vim-pandoc](https://github.com/vim-pandoc/vim-pandoc){:target="_blank"}{:rel="noopener noreferrer"}
+- [vim-pandoc/vim-pandoc-syntax](https://github.com/vim-pandoc/vim-pandoc-syntax){:target="_blank"}{:rel="noopener noreferrer"}
+- [vim-pandoc/vim-rmarkdown](https://github.com/vim-pandoc/vim-rmarkdown){:target="_blank"}{:rel="noopener noreferrer"}
+- [vim-test/vim-test](https://github.com/vim-test/vim-test){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/which-key.nvim](https://github.com/folke/which-key.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Mini Keymaps
 

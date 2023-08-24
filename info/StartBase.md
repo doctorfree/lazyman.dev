@@ -12,20 +12,20 @@ Small configuration that includes a plugin manager
 - Install and initialize: **`lazyman -x StartBase`**
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
-- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
+- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 - Installation location:  **`~/.config/nvim-StartBase`**
 
 
 ### Git repository
 
-[https://github.com/VonHeikemen/nvim-starter/tree/01-base](https://github.com/VonHeikemen/nvim-starter/tree/01-base)
+[https://github.com/VonHeikemen/nvim-starter/tree/01-base](https://github.com/VonHeikemen/nvim-starter/tree/01-base){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Lazy managed plugins
 
-- [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
-- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
-- [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
+- [folke/lazy.nvim](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### StartBase Keymaps
 

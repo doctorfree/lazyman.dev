@@ -11,117 +11,117 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 
 - Install and initialize: **`lazyman -a`**
 - Configuration category: [Base](https://lazyman.dev/configurations/#base-configurations)
-- Base configuration:     [AstroNvim](https://astronvim.com)
-- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
+- Base configuration:     [AstroNvim](https://astronvim.com){:target="_blank"}{:rel="noopener noreferrer"}
+- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 - Installation location:  **`~/.config/nvim-AstroNvimPlus`**
 
 
 ### Git repository
 
-[https://github.com/doctorfree/astronvim](https://github.com/doctorfree/astronvim)
+[https://github.com/doctorfree/astronvim](https://github.com/doctorfree/astronvim){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Website
 
-[https://astronvim.com](https://astronvim.com)
+[https://astronvim.com](https://astronvim.com){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Lazy managed plugins
 
-- [stevearc/aerial.nvim](https://github.com/stevearc/aerial.nvim.git)
-- [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim.git)
-- [AstroNvim/astrocommunity](https://github.com/AstroNvim/astrocommunity.git)
-- [AstroNvim/astrotheme](https://github.com/AstroNvim/astrotheme.git)
-- [pocco81/auto-save.nvim](https://github.com/pocco81/auto-save.nvim.git)
-- [max397574/better-escape.nvim](https://github.com/max397574/better-escape.nvim.git)
-- [bkad/CamelCaseMotion](https://github.com/bkad/CamelCaseMotion.git)
-- [catppuccin/nvim](https://github.com/catppuccin/nvim.git)
-- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer.git)
-- [rcarriga/cmp-dap](https://github.com/rcarriga/cmp-dap.git)
-- [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip.git)
-- [David-Kunz/cmp-npm](https://github.com/David-Kunz/cmp-npm.git)
-- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp.git)
-- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path.git)
-- [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim.git)
-- [zbirenbaum/copilot.lua](https://github.com/zbirenbaum/copilot.lua.git)
-- [Saecki/crates.nvim](https://github.com/Saecki/crates.nvim.git)
-- [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim.git)
-- [sainnhe/edge](https://github.com/sainnhe/edge.git)
-- [j-hui/fidget.nvim](https://github.com/j-hui/fidget.nvim.git)
-- [anuvyklack/fold-preview.nvim](https://github.com/anuvyklack/fold-preview.nvim.git)
-- [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets.git)
-- [projekt0n/github-nvim-theme](https://github.com/projekt0n/github-nvim-theme.git)
-- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim.git)
-- [NMAC427/guess-indent.nvim](https://github.com/NMAC427/guess-indent.nvim.git)
-- [ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon.git)
-- [rebelot/heirline.nvim](https://github.com/rebelot/heirline.nvim.git)
-- [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim.git)
-- [rebelot/kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim.git)
-- [anuvyklack/keymap-amend.nvim](https://github.com/anuvyklack/keymap-amend.nvim.git)
-- [folke/lazy.nvim](https://github.com/folke/lazy.nvim.git)
-- [onsails/lspkind.nvim](https://github.com/onsails/lspkind.nvim.git)
-- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip.git)
-- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim.git)
-- [jay-babu/mason-null-ls.nvim](https://github.com/jay-babu/mason-null-ls.nvim.git)
-- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim.git)
-- [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim.git)
-- [kvrohit/mellow.nvim](https://github.com/kvrohit/mellow.nvim.git)
-- [echasnovski/mini.bufremove](https://github.com/echasnovski/mini.bufremove.git)
-- [folke/neoconf.nvim](https://github.com/folke/neoconf.nvim.git)
-- [folke/neodev.nvim](https://github.com/folke/neodev.nvim.git)
-- [nvim-neorg/neorg](https://github.com/nvim-neorg/neorg.git)
-- [karb94/neoscroll.nvim](https://github.com/karb94/neoscroll.nvim.git)
-- [mrbjarksen/neo-tree-diagnostics.nvim](https://github.com/mrbjarksen/neo-tree-diagnostics.nvim.git)
-- [nvim-neo-tree/neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim.git)
-- [Shatur/neovim-session-manager](https://github.com/Shatur/neovim-session-manager.git)
-- [folke/noice.nvim](https://github.com/folke/noice.nvim.git)
-- [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim.git)
-- [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim.git)
-- [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs.git)
-- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp.git)
-- [NvChad/nvim-colorizer.lua](https://github.com/NvChad/nvim-colorizer.lua.git)
-- [mfussenegger/nvim-dap](https://github.com/mfussenegger/nvim-dap.git)
-- [rcarriga/nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui.git)
-- [catppuccin/nvim](https://github.com/catppuccin/nvim.git)
-- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig.git)
-- [SmiteshP/nvim-navbuddy](https://github.com/SmiteshP/nvim-navbuddy.git)
-- [SmiteshP/nvim-navic](https://github.com/SmiteshP/nvim-navic.git)
-- [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify.git)
-- [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround.git)
-- [nvim-treesitter/nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context.git)
-- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter.git)
-- [nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git)
-- [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag.git)
-- [JoosepAlviste/nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring.git)
-- [kevinhwang91/nvim-ufo](https://github.com/kevinhwang91/nvim-ufo.git)
-- [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons.git)
-- [s1n7ax/nvim-window-picker](https://github.com/s1n7ax/nvim-window-picker.git)
-- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim.git)
-- [anuvyklack/pretty-fold.nvim](https://github.com/anuvyklack/pretty-fold.nvim.git)
-- [kevinhwang91/promise-async](https://github.com/kevinhwang91/promise-async.git)
-- [rose-pine/neovim](https://github.com/rose-pine/neovim.git)
-- [simrat39/rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim.git)
-- [b0o/SchemaStore.nvim](https://github.com/b0o/SchemaStore.nvim.git)
-- [m4xshen/smartcolumn.nvim](https://github.com/m4xshen/smartcolumn.nvim.git)
-- [mrjones2014/smart-splits.nvim](https://github.com/mrjones2014/smart-splits.nvim.git)
-- [sainnhe/sonokai](https://github.com/sainnhe/sonokai.git)
-- [cshuaimin/ssr.nvim](https://github.com/cshuaimin/ssr.nvim.git)
-- [wellle/targets.vim](https://github.com/wellle/targets.vim.git)
-- [LinArcX/telescope-command-palette.nvim](https://github.com/LinArcX/telescope-command-palette.nvim.git)
-- [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim.git)
-- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim.git)
-- [axelvc/template-string.nvim](https://github.com/axelvc/template-string.nvim.git)
-- [folke/todo-comments.nvim](https://github.com/folke/todo-comments.nvim.git)
-- [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim.git)
-- [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim.git)
-- [Wansmer/treesj](https://github.com/Wansmer/treesj.git)
-- [folke/trouble.nvim](https://github.com/folke/trouble.nvim.git)
-- [marilari88/twoslash-queries.nvim](https://github.com/marilari88/twoslash-queries.nvim.git)
-- [jose-elias-alvarez/typescript.nvim](https://github.com/jose-elias-alvarez/typescript.nvim.git)
-- [mbbill/undotree](https://github.com/mbbill/undotree.git)
-- [rakr/vim-one](https://github.com/rakr/vim-one.git)
-- [styled-components/vim-styled-components](https://github.com/styled-components/vim-styled-components.git)
-- [mg979/vim-visual-multi](https://github.com/mg979/vim-visual-multi.git)
-- [folke/which-key.nvim](https://github.com/folke/which-key.nvim.git)
-- [s1n7ax/nvim-window-picker](https://github.com/s1n7ax/nvim-window-picker.git)
+- [stevearc/aerial.nvim](https://github.com/stevearc/aerial.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [AstroNvim/astrocommunity](https://github.com/AstroNvim/astrocommunity.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [AstroNvim/astrotheme](https://github.com/AstroNvim/astrotheme.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [pocco81/auto-save.nvim](https://github.com/pocco81/auto-save.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [max397574/better-escape.nvim](https://github.com/max397574/better-escape.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [bkad/CamelCaseMotion](https://github.com/bkad/CamelCaseMotion.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [catppuccin/nvim](https://github.com/catppuccin/nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [rcarriga/cmp-dap](https://github.com/rcarriga/cmp-dap.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [David-Kunz/cmp-npm](https://github.com/David-Kunz/cmp-npm.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [zbirenbaum/copilot.lua](https://github.com/zbirenbaum/copilot.lua.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [Saecki/crates.nvim](https://github.com/Saecki/crates.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [sainnhe/edge](https://github.com/sainnhe/edge.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [j-hui/fidget.nvim](https://github.com/j-hui/fidget.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [anuvyklack/fold-preview.nvim](https://github.com/anuvyklack/fold-preview.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [projekt0n/github-nvim-theme](https://github.com/projekt0n/github-nvim-theme.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [NMAC427/guess-indent.nvim](https://github.com/NMAC427/guess-indent.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [rebelot/heirline.nvim](https://github.com/rebelot/heirline.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [rebelot/kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [anuvyklack/keymap-amend.nvim](https://github.com/anuvyklack/keymap-amend.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/lazy.nvim](https://github.com/folke/lazy.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [onsails/lspkind.nvim](https://github.com/onsails/lspkind.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [jay-babu/mason-null-ls.nvim](https://github.com/jay-babu/mason-null-ls.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [kvrohit/mellow.nvim](https://github.com/kvrohit/mellow.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [echasnovski/mini.bufremove](https://github.com/echasnovski/mini.bufremove.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/neoconf.nvim](https://github.com/folke/neoconf.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/neodev.nvim](https://github.com/folke/neodev.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-neorg/neorg](https://github.com/nvim-neorg/neorg.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [karb94/neoscroll.nvim](https://github.com/karb94/neoscroll.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [mrbjarksen/neo-tree-diagnostics.nvim](https://github.com/mrbjarksen/neo-tree-diagnostics.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-neo-tree/neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [Shatur/neovim-session-manager](https://github.com/Shatur/neovim-session-manager.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/noice.nvim](https://github.com/folke/noice.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [NvChad/nvim-colorizer.lua](https://github.com/NvChad/nvim-colorizer.lua.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [mfussenegger/nvim-dap](https://github.com/mfussenegger/nvim-dap.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [rcarriga/nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [catppuccin/nvim](https://github.com/catppuccin/nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [SmiteshP/nvim-navbuddy](https://github.com/SmiteshP/nvim-navbuddy.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [SmiteshP/nvim-navic](https://github.com/SmiteshP/nvim-navic.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-treesitter/nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [JoosepAlviste/nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [kevinhwang91/nvim-ufo](https://github.com/kevinhwang91/nvim-ufo.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [s1n7ax/nvim-window-picker](https://github.com/s1n7ax/nvim-window-picker.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [anuvyklack/pretty-fold.nvim](https://github.com/anuvyklack/pretty-fold.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [kevinhwang91/promise-async](https://github.com/kevinhwang91/promise-async.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [rose-pine/neovim](https://github.com/rose-pine/neovim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [simrat39/rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [b0o/SchemaStore.nvim](https://github.com/b0o/SchemaStore.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [m4xshen/smartcolumn.nvim](https://github.com/m4xshen/smartcolumn.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [mrjones2014/smart-splits.nvim](https://github.com/mrjones2014/smart-splits.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [sainnhe/sonokai](https://github.com/sainnhe/sonokai.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [cshuaimin/ssr.nvim](https://github.com/cshuaimin/ssr.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [wellle/targets.vim](https://github.com/wellle/targets.vim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [LinArcX/telescope-command-palette.nvim](https://github.com/LinArcX/telescope-command-palette.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [axelvc/template-string.nvim](https://github.com/axelvc/template-string.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/todo-comments.nvim](https://github.com/folke/todo-comments.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [Wansmer/treesj](https://github.com/Wansmer/treesj.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/trouble.nvim](https://github.com/folke/trouble.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [marilari88/twoslash-queries.nvim](https://github.com/marilari88/twoslash-queries.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [jose-elias-alvarez/typescript.nvim](https://github.com/jose-elias-alvarez/typescript.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [mbbill/undotree](https://github.com/mbbill/undotree.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [rakr/vim-one](https://github.com/rakr/vim-one.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [styled-components/vim-styled-components](https://github.com/styled-components/vim-styled-components.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [mg979/vim-visual-multi](https://github.com/mg979/vim-visual-multi.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [folke/which-key.nvim](https://github.com/folke/which-key.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [s1n7ax/nvim-window-picker](https://github.com/s1n7ax/nvim-window-picker.git){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### AstroNvimPlus Keymaps
 

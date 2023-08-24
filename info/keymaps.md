@@ -49,7 +49,7 @@ else
   fi
 fi
 KEYTMP="${HOME}/.config/nvim-Lazyman/tmp"
-OUTDIR=$(dirname "${OUT}")
+OUTDIR=$(dirname "${OUT}"){:target="_blank"}{:rel="noopener noreferrer"}
 
 [ -d "${KEYTMP}" ] || mkdir -p "${KEYTMP}"
 [ -d "${OUTDIR}" ] || mkdir -p "${OUTDIR}"
@@ -64,12 +64,12 @@ printf "\n\nlocal operator_mode = " >> "${KEYTMP}"/${CFNAME}.lua
 echo "" >> "${KEYTMP}"/${CFNAME}.lua
 nvim --headless '+lua vim.print(vim.api.nvim_get_keymap("o"))' +qa >> "${KEYTMP}"/${CFNAME}.lua 2>&1
 
-have_dtox=$(type -p dtox)
+have_dtox=$(type -p dtox){:target="_blank"}{:rel="noopener noreferrer"}
 if [ "${have_dtox}" ]
 then
   dtox "${KEYTMP}"/${CFNAME}.lua
 else
-  have_dos=$(type -p dos2unix)
+  have_dos=$(type -p dos2unix){:target="_blank"}{:rel="noopener noreferrer"}
   if [ "${have_dos}" ]
   then
     dos2unix "${KEYTMP}"/${CFNAME}.lua

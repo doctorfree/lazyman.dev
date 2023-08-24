@@ -41,9 +41,9 @@ log() {
 }
 
 calc_elapsed() {
-  FINISH_SECONDS=$(date +%s)
-  ELAPSECS=$((FINISH_SECONDS - START_SECONDS))
-  ELAPSED=$(eval "echo $(date -ud "@$ELAPSECS" +'$((%s/3600/24)) days %H hr %M min %S sec')")
+  FINISH_SECONDS=$(date +%s){:target="_blank"}{:rel="noopener noreferrer"}
+  ELAPSECS=$((FINISH_SECONDS - START_SECONDS)){:target="_blank"}{:rel="noopener noreferrer"}
+  ELAPSED=$(eval "echo $(date -ud "@$ELAPSECS" +'$((%s/3600/24)) days %H hr %M min %S sec')"){:target="_blank"}{:rel="noopener noreferrer"}
 }
 
 check_prerequisites() {
@@ -58,7 +58,7 @@ check_prerequisites() {
 }
 
 get_platform() {
-  platform=$(uname -s)
+  platform=$(uname -s){:target="_blank"}{:rel="noopener noreferrer"}
   if [ "$platform" == "Darwin" ]; then
     darwin=1
   else
@@ -199,16 +199,16 @@ compare_versions() {
 
   # Split version strings into arrays, extract trailing revisions
   if [[ "$1" =~ ${regex} ]]; then
-    va1=("${BASH_REMATCH[1]}")
+    va1=("${BASH_REMATCH[1]}"){:target="_blank"}{:rel="noopener noreferrer"}
     [[ -n "${BASH_REMATCH[2]}" ]] && vr1=${BASH_REMATCH[2]}
   else
-    va1=("$1")
+    va1=("$1"){:target="_blank"}{:rel="noopener noreferrer"}
   fi
   if [[ "$2" =~ ${regex} ]]; then
-    va2=("${BASH_REMATCH[1]}")
+    va2=("${BASH_REMATCH[1]}"){:target="_blank"}{:rel="noopener noreferrer"}
     [[ -n "${BASH_REMATCH[2]}" ]] && vr2=${BASH_REMATCH[2]}
   else
-    va2=("$2")
+    va2=("$2"){:target="_blank"}{:rel="noopener noreferrer"}
   fi
 
   # Bring va1 and va2 to same length by filling empty fields with zeros
@@ -219,9 +219,9 @@ compare_versions() {
   done
 
   # Append revisions, increment length
-  va1+=("$vr1")
-  va2+=("$vr2")
-  len=$((len + 1))
+  va1+=("$vr1"){:target="_blank"}{:rel="noopener noreferrer"}
+  va2+=("$vr2"){:target="_blank"}{:rel="noopener noreferrer"}
+  len=$((len + 1)){:target="_blank"}{:rel="noopener noreferrer"}
 
   # Compare version elements, check if v1 > v2 or v1 < v2
   for ((i = 0; i < len; ++i)); do
@@ -238,7 +238,7 @@ compare_versions() {
 
 install_homebrew() {
   if ! command -v brew >/dev/null 2>&1; then
-    [ "$debug" ] && START_SECONDS=$(date +%s)
+    [ "$debug" ] && START_SECONDS=$(date +%s){:target="_blank"}{:rel="noopener noreferrer"}
     log "Installing Homebrew ..."
     BREW_URL="https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"
     curl -fsSL "$BREW_URL" >/tmp/brew-$$.sh
@@ -297,12 +297,12 @@ install_homebrew() {
     log "See ${DOC_HOMEBREW}"
   fi
   eval "$("$BREW_EXE" shellenv)"
-  have_brew=$(type -p brew)
+  have_brew=$(type -p brew){:target="_blank"}{:rel="noopener noreferrer"}
   [ "$have_brew" ] && BREW_EXE="brew"
   [ "$HOMEBREW_HOME" ] || {
-    brewpath=$(command -v brew)
+    brewpath=$(command -v brew){:target="_blank"}{:rel="noopener noreferrer"}
     if [ $? -eq 0 ]; then
-      HOMEBREW_HOME=$(dirname "$brewpath" | sed -e "s%/bin$%%")
+      HOMEBREW_HOME=$(dirname "$brewpath" | sed -e "s%/bin$%%"){:target="_blank"}{:rel="noopener noreferrer"}
     else
       HOMEBREW_HOME="Unknown"
     fi
@@ -315,7 +315,7 @@ brew_install() {
     log "Using previously installed ${brewpkg}"
   else
     log "Installing ${brewpkg} ..."
-    [ "$debug" ] && START_SECONDS=$(date +%s)
+    [ "$debug" ] && START_SECONDS=$(date +%s){:target="_blank"}{:rel="noopener noreferrer"}
     "$BREW_EXE" install --quiet "$brewpkg" >/dev/null 2>&1
     [ $? -eq 0 ] || "$BREW_EXE" link --overwrite --quiet "$brewpkg" >/dev/null 2>&1
     [ "$quiet" ] || printf " done"
@@ -337,7 +337,7 @@ platform_install() {
     log "Using previously installed ${platpkg}"
   else
     log "Installing ${platpkg} ..."
-    [ "$debug" ] && START_SECONDS=$(date +%s)
+    [ "$debug" ] && START_SECONDS=$(date +%s){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${debian}" ]; then
       if [ "${APT}" ]; then
         sudo ${APT} install ${platpkg} >/dev/null 2>&1
@@ -412,7 +412,7 @@ install_neovim_dependencies() {
   [ "$quiet" ] || printf "\nInstalling dependencies"
   [ "$install_bash" ] && {
     log "Installing a modern version of bash ..."
-    [ "$debug" ] && START_SECONDS=$(date +%s)
+    [ "$debug" ] && START_SECONDS=$(date +%s){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${use_homebrew}" ]; then
       "$BREW_EXE" install --quiet bash >/dev/null 2>&1
       [ $? -eq 0 ] || "$BREW_EXE" link --overwrite --quiet bash >/dev/null 2>&1
@@ -436,10 +436,10 @@ install_neovim_dependencies() {
     platform_install "wl-clipboard" wl-copy
   fi
 
-  have_curl=$(type -p curl)
+  have_curl=$(type -p curl){:target="_blank"}{:rel="noopener noreferrer"}
   [ "$have_curl" ] || abort "The curl command could not be located."
-  have_jq=$(type -p jq)
-  have_wget=$(type -p wget)
+  have_jq=$(type -p jq){:target="_blank"}{:rel="noopener noreferrer"}
+  have_wget=$(type -p wget){:target="_blank"}{:rel="noopener noreferrer"}
 
   if command -v gh >/dev/null 2>&1; then
     log "Using previously installed gh"
@@ -455,7 +455,7 @@ install_neovim_dependencies() {
       [ "${have_curl}" ] && [ "${have_jq}" ] && {
         DL_URL=$(curl --silent "${API_URL}" \
             | jq --raw-output '.assets | .[]?.browser_download_url' \
-          | grep "linux_amd64\.tar\.gz$")
+          | grep "linux_amd64\.tar\.gz$"){:target="_blank"}{:rel="noopener noreferrer"}
       }
       [ "${DL_URL}" ] && {
         [ "${have_wget}" ] && {
@@ -469,8 +469,8 @@ install_neovim_dependencies() {
           do
             [ "${ghimbin}" == "/tmp/ghit$$/*/bin/gh" ] && continue
             [ -f "${ghimbin}" ] && {
-              ghimdir=$(dirname ${ghimbin})
-              ghimdir=$(dirname ${ghimdir})
+              ghimdir=$(dirname ${ghimbin}){:target="_blank"}{:rel="noopener noreferrer"}
+              ghimdir=$(dirname ${ghimdir}){:target="_blank"}{:rel="noopener noreferrer"}
               tar -C ${ghimdir} -cf /tmp/ghim-$$.tar bin share
               tar -C ${HOME}/.local -xf /tmp/ghim-$$.tar
               [ -f ${HOME}/.local/bin/gh ] && chmod 755 ${HOME}/.local/bin/gh
@@ -505,7 +505,7 @@ install_neovim_dependencies() {
       [ "${have_curl}" ] && [ "${have_jq}" ] && {
         DL_URL=$(curl --silent "${API_URL}" \
             | jq --raw-output '.assets | .[]?.browser_download_url' \
-          | grep "Linux_${larch}\.tar\.gz$")
+          | grep "Linux_${larch}\.tar\.gz$"){:target="_blank"}{:rel="noopener noreferrer"}
       }
       [ "${DL_URL}" ] && {
         [ "${have_wget}" ] && {
@@ -576,7 +576,7 @@ install_neovim() {
   API_URL="https://api.github.com/repos/${OWNER}/${PROJECT}/releases/latest"
   DL_URL=
   if [ "$debug" ]; then
-    START_SECONDS=$(date +%s)
+    START_SECONDS=$(date +%s){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${use_homebrew}" ]; then
       "$BREW_EXE" link -q libuv
       "$BREW_EXE" install neovim
@@ -585,7 +585,7 @@ install_neovim() {
       [ "${have_curl}" ] && [ "${have_jq}" ] && {
         DL_URL=$(curl --silent "${API_URL}" \
             | jq --raw-output '.assets | .[]?.browser_download_url' \
-          | grep "linux64\.tar\.gz$")
+          | grep "linux64\.tar\.gz$"){:target="_blank"}{:rel="noopener noreferrer"}
       }
       [ "${DL_URL}" ] && {
         [ "${have_wget}" ] && {
@@ -603,8 +603,8 @@ install_neovim() {
             do
               [ "${nvimbin}" == "/tmp/nvim$$/*/bin/nvim" ] && continue
               [ -f "${nvimbin}" ] && {
-                nvimdir=$(dirname ${nvimbin})
-                nvimdir=$(dirname ${nvimdir})
+                nvimdir=$(dirname ${nvimbin}){:target="_blank"}{:rel="noopener noreferrer"}
+                nvimdir=$(dirname ${nvimdir}){:target="_blank"}{:rel="noopener noreferrer"}
                 tar -C ${nvimdir} -cf /tmp/nvim-$$.tar .
                 tar -C ${HOME}/.local -xf /tmp/nvim-$$.tar
                 chmod 755 ${HOME}/.local/bin/nvim
@@ -627,7 +627,7 @@ install_neovim() {
       [ "${have_curl}" ] && [ "${have_jq}" ] && {
         DL_URL=$(curl --silent "${API_URL}" \
             | jq --raw-output '.assets | .[]?.browser_download_url' \
-          | grep "linux64\.tar\.gz$")
+          | grep "linux64\.tar\.gz$"){:target="_blank"}{:rel="noopener noreferrer"}
       }
       [ "${DL_URL}" ] && {
         [ "${have_wget}" ] && {
@@ -644,8 +644,8 @@ install_neovim() {
             for nvimbin in /tmp/"nvim$$"/*/bin/nvim /tmp/"nvim$$"/bin/nvim; do
               [ "${nvimbin}" == "/tmp/nvim$$/*/bin/nvim" ] && continue
               [ -f "${nvimbin}" ] && {
-                nvimdir=$(dirname ${nvimbin})
-                nvimdir=$(dirname ${nvimdir})
+                nvimdir=$(dirname ${nvimbin}){:target="_blank"}{:rel="noopener noreferrer"}
+                nvimdir=$(dirname ${nvimdir}){:target="_blank"}{:rel="noopener noreferrer"}
                 tar -C ${nvimdir} -cf /tmp/nvim-$$.tar .
                 tar -C ${HOME}/.local -xf /tmp/nvim-$$.tar
                 chmod 755 ${HOME}/.local/bin/nvim
@@ -671,7 +671,7 @@ install_neovim_head() {
   [ "${use_homebrew}" ] && "$BREW_EXE" link -q libuv >/dev/null 2>&1
   log "Building and installing nightly Neovim ..."
   if [ "$debug" ]; then
-    START_SECONDS=$(date +%s)
+    START_SECONDS=$(date +%s){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${use_homebrew}" ]; then
       "$BREW_EXE" install --HEAD neovim
     else
@@ -710,7 +710,7 @@ install_neovim_head() {
 }
 
 check_python() {
-  brew_path=$(command -v brew)
+  brew_path=$(command -v brew){:target="_blank"}{:rel="noopener noreferrer"}
   [ "${brew_path}" ] || {
     [ "${BREW_EXE}" == "brew" ] || {
       [ "${BREW_EXE}" ] && brew_path="${BREW_EXE}"
@@ -737,34 +737,34 @@ check_python() {
       fi
     }
   }
-  brew_dir=$(dirname "$brew_path")
+  brew_dir=$(dirname "$brew_path"){:target="_blank"}{:rel="noopener noreferrer"}
   if [ -x ${brew_dir}/python3 ]; then
     PYTHON="${brew_dir}/python3"
   else
-    PYTHON=$(command -v python3)
+    PYTHON=$(command -v python3){:target="_blank"}{:rel="noopener noreferrer"}
   fi
 }
 
 check_ruby() {
-  brew_path=$(command -v brew)
-  brew_dir=$(dirname "$brew_path")
+  brew_path=$(command -v brew){:target="_blank"}{:rel="noopener noreferrer"}
+  brew_dir=$(dirname "$brew_path"){:target="_blank"}{:rel="noopener noreferrer"}
   if [ -x "$brew_dir"/ruby ]; then
     RUBY="${brew_dir}/ruby"
   else
-    RUBY=$(command -v ruby)
+    RUBY=$(command -v ruby){:target="_blank"}{:rel="noopener noreferrer"}
   fi
   if [ -x "$brew_dir"/gem ]; then
     GEM="${brew_dir}/gem"
   else
-    GEM=$(command -v gem)
+    GEM=$(command -v gem){:target="_blank"}{:rel="noopener noreferrer"}
   fi
 }
 
 # Brew doesn't create a python symlink so we do so here
 link_python() {
-  python3_path=$(command -v python3)
+  python3_path=$(command -v python3){:target="_blank"}{:rel="noopener noreferrer"}
   [ "$python3_path" ] && {
-    python_dir=$(dirname "$python3_path")
+    python_dir=$(dirname "$python3_path"){:target="_blank"}{:rel="noopener noreferrer"}
     if [ -w "$python_dir" ]; then
       rm -f "$python_dir"/python
       ln -s "$python_dir"/python3 "$python_dir"/python
@@ -778,9 +778,9 @@ install_extra() {
   do
     plat_install ${pkg}
   done
-  have_check=$(type -p luacheck)
+  have_check=$(type -p luacheck){:target="_blank"}{:rel="noopener noreferrer"}
   [ "${have_check}" ] || {
-    have_rocks=$(type -p luarocks)
+    have_rocks=$(type -p luarocks){:target="_blank"}{:rel="noopener noreferrer"}
     [ "${have_rocks}" ] && {
       luarocks --local install luacheck > /dev/null 2>&1
     }
@@ -820,7 +820,7 @@ install_tools() {
     log "Using previously installed cargo"
   else
     log "Installing cargo ..."
-    [ "$debug" ] && START_SECONDS=$(date +%s)
+    [ "$debug" ] && START_SECONDS=$(date +%s){:target="_blank"}{:rel="noopener noreferrer"}
     if [ "${use_homebrew}" ]; then
       "$BREW_EXE" install --quiet "rust" >/dev/null 2>&1
       [ $? -eq 0 ] || "$BREW_EXE" link --overwrite --quiet "rust" >/dev/null 2>&1
@@ -878,7 +878,7 @@ install_tools() {
       [ "${have_curl}" ] && [ "${have_jq}" ] && {
         DL_URL=$(curl --silent "${API_URL}" \
             | jq --raw-output '.assets | .[]?.browser_download_url' \
-          | grep "linux-${larch}$")
+          | grep "linux-${larch}$"){:target="_blank"}{:rel="noopener noreferrer"}
       }
       [ "${DL_URL}" ] && {
         [ "${have_wget}" ] && {
@@ -913,7 +913,7 @@ install_tools() {
       [ "${have_curl}" ] && [ "${have_jq}" ] && {
         DL_URL=$(curl --silent "${API_URL}" \
             | jq --raw-output '.assets | .[]?.browser_download_url' \
-          | grep "Linux_amd64")
+          | grep "Linux_amd64"){:target="_blank"}{:rel="noopener noreferrer"}
       }
       [ "${DL_URL}" ] && {
         [ "${have_wget}" ] && {
@@ -942,7 +942,7 @@ install_tools() {
       }
     fi
   fi
-  have_npm=$(type -p npm)
+  have_npm=$(type -p npm){:target="_blank"}{:rel="noopener noreferrer"}
   [ "$have_npm" ] && {
     if ! command -v tree-sitter >/dev/null 2>&1; then
       log "Installing tree-sitter command line npm package ..."
@@ -1174,7 +1174,7 @@ main() {
       if [ "${native}" ]; then
         printf "\n\n${PKGMGR} will be used to install dependencies and tools."
         printf "\nThis requires 'sudo' (root) privilege.\n"
-        have_brew=$(type -p brew)
+        have_brew=$(type -p brew){:target="_blank"}{:rel="noopener noreferrer"}
         [ "${have_brew}" ] && {
           prompt=1
           printf "\nAn existing Homebrew installation has been detected.\n"
@@ -1190,21 +1190,21 @@ main() {
         while true; do
           read -r -p "Do you wish to use ${PKGMGR} or Homebrew ? (h/n/q) " yn
           case $yn in
-            [Nn]*)
+            [Nn]*){:target="_blank"}{:rel="noopener noreferrer"}
               printf "\nUsing ${PKGMGR} to install dependencies and tools\n"
               native=1
               break
               ;;
-            [Hh]*)
+            [Hh]*){:target="_blank"}{:rel="noopener noreferrer"}
               printf "\nUsing Homebrew to install dependencies and tools\n"
               native=
               break
               ;;
-            [Qq]*)
+            [Qq]*){:target="_blank"}{:rel="noopener noreferrer"}
               printf "\nExiting Neovim installer without installing dependencies or tools\n"
               exit 1
               ;;
-            '')
+            ''){:target="_blank"}{:rel="noopener noreferrer"}
               if [ "${native}" ]; then
                 printf "\nUsing ${PKGMGR} to install dependencies and tools\n"
               else
@@ -1212,7 +1212,7 @@ main() {
               fi
               break
               ;;
-            *)
+            *){:target="_blank"}{:rel="noopener noreferrer"}
               printf "\nPlease answer 'h' or 'n'.\n"
               ;;
           esac
@@ -1235,8 +1235,8 @@ main() {
       install_neovim_head
     else
       # Check if installed nvim is v0.9.0 or greater
-      ver_head=$(nvim --version | head -1 | awk '{ print $2 }')
-      nvim_ver=$(echo ${ver_head} | awk -F '-' '{ print $1 }' | sed -e "s/^v//")
+      ver_head=$(nvim --version | head -1 | awk '{ print $2 }'){:target="_blank"}{:rel="noopener noreferrer"}
+      nvim_ver=$(echo ${ver_head} | awk -F '-' '{ print $1 }' | sed -e "s/^v//"){:target="_blank"}{:rel="noopener noreferrer"}
       if [ "${nvim_ver}" ]; then
         compare_versions "${nvim_ver}" "0.9.0" >/dev/null 2>&1
         [ $? -eq 2 ] && {
@@ -1273,46 +1273,46 @@ debian=
 redhat=
 suse=
 void=
-have_apk=$(type -p apk)
-have_apt=$(type -p apt)
-have_aptget=$(type -p apt-get)
-have_dnf=$(type -p dnf)
-have_pac=$(type -p pacman)
-have_xbps=$(type -p xbps-install)
-have_yum=$(type -p yum)
-have_zyp=$(type -p zypper)
+have_apk=$(type -p apk){:target="_blank"}{:rel="noopener noreferrer"}
+have_apt=$(type -p apt){:target="_blank"}{:rel="noopener noreferrer"}
+have_aptget=$(type -p apt-get){:target="_blank"}{:rel="noopener noreferrer"}
+have_dnf=$(type -p dnf){:target="_blank"}{:rel="noopener noreferrer"}
+have_pac=$(type -p pacman){:target="_blank"}{:rel="noopener noreferrer"}
+have_xbps=$(type -p xbps-install){:target="_blank"}{:rel="noopener noreferrer"}
+have_yum=$(type -p yum){:target="_blank"}{:rel="noopener noreferrer"}
+have_zyp=$(type -p zypper){:target="_blank"}{:rel="noopener noreferrer"}
 alltools=
 native=1
 proceed=
-architecture=$(uname -m)
+architecture=$(uname -m){:target="_blank"}{:rel="noopener noreferrer"}
 
 while getopts "adhnqy" flag; do
   case $flag in
-    a)
+    a){:target="_blank"}{:rel="noopener noreferrer"}
       alltools=1
       ;;
-    d)
+    d){:target="_blank"}{:rel="noopener noreferrer"}
       debug=1
       ;;
-    n)
+    n){:target="_blank"}{:rel="noopener noreferrer"}
       nvim_head=1
       ;;
-    h)
+    h){:target="_blank"}{:rel="noopener noreferrer"}
       native=
       PKGMGR="Homebrew"
       ;;
-    q)
+    q){:target="_blank"}{:rel="noopener noreferrer"}
       quiet=1
       ;;
-    y)
+    y){:target="_blank"}{:rel="noopener noreferrer"}
       proceed=1
       ;;
     *) ;;
   esac
 done
 
-currlimit=$(ulimit -n)
-hardlimit=$(ulimit -Hn)
+currlimit=$(ulimit -n){:target="_blank"}{:rel="noopener noreferrer"}
+hardlimit=$(ulimit -Hn){:target="_blank"}{:rel="noopener noreferrer"}
 [ "$hardlimit" == "unlimited" ] && hardlimit=9999
 if [ "$hardlimit" -gt 4096 ]; then
   ulimit -n 4096
@@ -1321,14 +1321,14 @@ else
 fi
 
 install_bash=
-[ "$debug" ] && MAIN_START_SECONDS=$(date +%s)
+[ "$debug" ] && MAIN_START_SECONDS=$(date +%s){:target="_blank"}{:rel="noopener noreferrer"}
 
 main
 
 [ "$debug" ] && {
-  MAIN_FINISH_SECONDS=$(date +%s)
-  MAIN_ELAPSECS=$((MAIN_FINISH_SECONDS - MAIN_START_SECONDS))
-  MAIN_ELAPSED=$(eval "echo $(date -ud "@$MAIN_ELAPSECS" +'$((%s/3600/24)) days %H hr %M min %S sec')")
+  MAIN_FINISH_SECONDS=$(date +%s){:target="_blank"}{:rel="noopener noreferrer"}
+  MAIN_ELAPSECS=$((MAIN_FINISH_SECONDS - MAIN_START_SECONDS)){:target="_blank"}{:rel="noopener noreferrer"}
+  MAIN_ELAPSED=$(eval "echo $(date -ud "@$MAIN_ELAPSECS" +'$((%s/3600/24)) days %H hr %M min %S sec')"){:target="_blank"}{:rel="noopener noreferrer"}
   printf "\nTotal elapsed time = %s${MAIN_ELAPSED}\n"
 }
 

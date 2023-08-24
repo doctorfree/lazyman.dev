@@ -12,17 +12,17 @@ Takuya Matsuyama's Neovim configuration
 - Install and initialize: **`lazyman -w Craftzdog`**
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
-- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
+- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 - Installation location:  **`~/.config/nvim-Craftzdog`**
 
 
 ### Git repository
 
-[https://github.com/craftzdog/dotfiles-public](https://github.com/craftzdog/dotfiles-public)
+[https://github.com/craftzdog/dotfiles-public](https://github.com/craftzdog/dotfiles-public){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Dotfyle entry
 
-[https://dotfyle.com/craftzdog/dotfiles-public-config-nvim](https://dotfyle.com/craftzdog/dotfiles-public-config-nvim)
+[https://dotfyle.com/craftzdog/dotfiles-public-config-nvim](https://dotfyle.com/craftzdog/dotfiles-public-config-nvim){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Lazy managed plugins
 
