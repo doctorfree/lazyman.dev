@@ -33,6 +33,41 @@ To remove the configuration and all its backups, `lazyman -R -N <nvimdir>`.
 To remove all installed Lazyman Neovim configurations and their backups
 without being prompted to proceed, execute `lazyman -A -R -y`.
 
+### Lazyman menu system
+
+The `lazyman` command, when invoked without arguments or with the `-F menu`
+argument, presents an interactive menu. The Lazyman menu system can be used
+to perform almost all of the functions available from the command line.
+Submenus are available to configure the Lazyman Neovim configuration as well
+as the `Webdev` and `LazyIde` Neovim configurations.
+
+Use the Lazyman menu system to select and install/open/remove Neovim configurations
+managed by Lazyman. Enter a menu option number or keywords to select an option.
+
+Keywords include: help, info, install, open, remove, search, update, quit
+
+All shortcuts have single key support:
+
+```
+  'h' = help, 'I' = info, 'i' = install, 'o' = open, 'q' = quit
+  'r' = remove, 's' = search, 'u' = update, 'c' = Lazyman Config menu
+```
+
+In the fuzzy selection dialogs, enter a few letters to fuzzy select from the options
+or use the `<Up-Arrow>` and `<Down-Arrow>` keys to move through the options.
+Press `<Enter>` to select the highlighted option.
+
+Lazyman Neovim configurations are organized into categories. Configurations can be
+individually installed/removed or all configurations in a category can be acted on.
+
+The main menu also provides options to install additional tools, enable debug mode,
+install the `Bob` Neovim version manager, select the Neovim version to use, toggle
+the user interface between `Neovim` and `Neovide`, perform a Neovim health check,
+bring up the Lazyman Neovim Configuration menu, or generate a status report.
+In addition, an option exists to view the Lazyman manual.
+
+The Lazyman Neovim configuration manager can also be used from the command line.
+
 ### Lazyman usage message
 
 ```
@@ -100,11 +135,11 @@ Where:
     -V 'url' specifies an NvChad user configuration git repository
     -w 'conf' indicates install and initialize Personal 'conf' config
        'conf' can be one of:
-           All Adib Artur Beethoven Brain Charles Craftzdog Daniel Dillon Elianiva Elijah Enrique Kristijan Heiker J4de Josean JustinLvim JustinNvim Kodo Lukas LvimAdib Maddison Metis Mini ONNO OnMyWay Optixal Orhun Primeagen Rafi Roiz Simple Slydragonn Spider Traap Wuelner xero Xiao
+           All Adib Artur Beethoven Brain Charles Craftzdog Daniel Dillon Elianiva Elijah Enrique Kristijan Heiker J4de Josean JustinLvim JustinNvim Kodo LamarVim Lukas LvimAdib Maddison Metis Mini ONNO OnMyWay Optixal Orhun Primeagen Rafi Roiz Simple Slydragonn Spider Traap Wuelner xero Xiao
     -W indicates install and initialize all 'Personal' Neovim configurations
     -x 'conf' indicates install and initialize nvim-starter 'conf' config
        'conf' can be one of:
-           All 2k AstroNvimStart Basic CodeArt Cosmic Ember Fennel HardHacker JustinOhMy Kabin Kickstart Lamia Micah Normal NvPak Modern pde Rohit Scratch SingleFile BasicLsp BasicMason Extralight LspCmp Minimal StartBase Opinion StartLsp StartMason Modular
+           All 2k AstroNvimStart Barebones Basic CodeArt Cosmic Ember Fennel HardHacker JustinOhMy Kabin Kickstart Lamia Micah Normal NvPak Modern pde Rohit Scratch SingleFile BasicLsp BasicMason Extralight LspCmp Minimal StartBase Opinion StartLsp StartMason Modular
     -X indicates install and initialize all 'Starter' configs
     -y indicates do not prompt, answer 'yes' to any prompt
     -Y indicates use the following arguments as 'name'/'value' to set Lazyman config
