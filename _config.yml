@@ -24,6 +24,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "https://lazyman.dev"
 
+plugins:
+  - jekyll-sitemap
+
 github:
   username: doctorfree/nvim-lazyman # change to your github username
 
