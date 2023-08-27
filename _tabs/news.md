@@ -8,6 +8,27 @@ post_style: page
 
 # Lazyman Neovim Configuration Manager News
 
+## Installation location
+
+Beginning with Lazyman version 4 the Lazyman installation location has moved
+from `~/.config/nvim-Lazyman` to `~/.config/lazyman/Lazyman`. In addition,
+all Neovim configurations installed with `lazyman` are located in
+`~/.config/lazyman/`. This change was motivated by the clutter of over 100
+Neovim configurations all located in `~/.config/`.
+
+Note that the `NVIM_APPNAME` environment variable must now contain the
+`lazyman/...` prefix. For example, to reference the Neovim configuration
+located in `~/.config/lazyman/Abstract` set `NVIM_APPNAME="lazyman/Abstract"`.
+
+### Migration support
+
+Users updating Lazyman from version 3 or earlier to version 4 via `lazyman -U`
+can perform a migration of any previously installed Neovim configurations.
+The first time `lazyman` is run after updating it will prompt for migration
+if any previously installed Neovim configurations are found.
+
+If migration is initially skipped it can be performed later with `lazyman migrate`.
+
 ## Supported configurations information documents
 
 Each Lazyman supported Neovim configuration now has an

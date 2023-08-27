@@ -76,12 +76,12 @@ Usage: lazyman [-A] [-a] [-B] [-b branch] [-c] [-d] [-E config] [-e]
    [-S] [-v] [-n] [-o] [-O name] [-p] [-P] [-q] [-Q] [-h] [-H] [-I] [-J]
    [-L lang] [-rR] [-C url] [-D subdir] [-N nvimdir] [-G] [-tT] [-U]
    [-V url] [-w conf] [-W] [-x conf] [-X] [-y] [-Y] [-z] [-Z] [-K conf] [-u]
-   [health] [info] [init] [install [bob]] [open] [remove] [search] [status] [usage]
+   [health] [info] [init] [install [bob]] [migrate] [open] [remove] [search] [status] [usage]
 Where:
     -A indicates install all supported Neovim configurations
     -a indicates install and initialize AstroNvimPlus Neovim configuration
     -B indicates install and initialize all 'Base' Neovim configurations
-    -b 'branch' specifies an nvim-Lazyman git branch to checkout
+    -b 'branch' specifies an lazyman/Lazyman git branch to checkout
     -c indicates install and initialize NvChad Neovim configuration
     -d indicates debug mode
     -D 'subdir' specifies the subdirectory of the repository to retrieve
@@ -154,13 +154,14 @@ Where:
     'init' initialize specified Neovim configuration and exit
     'install' fuzzy search and select configuration to install
     'install bob' install the Bob Neovim version manager
+    'migrate' move v3 or earlier installed configurations to v4 location
     'open' fuzzy search and select configuration to open
     'remove' fuzzy search and select configuration to remove
     'search' fuzzy search and select configurations for a plugin
     'status' displays a brief status report and exits
     'usage' displays this usage message and exits
 Commands act on NVIM_APPNAME, override with '-N nvimdir' or '-A'
-Without arguments lazyman installs and initializes Lazyman
+Without arguments lazyman installs and initializes lazyman/Lazyman
 or, if initialized, an interactive menu system is displayed.
 ```
 
