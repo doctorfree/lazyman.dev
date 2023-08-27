@@ -25,7 +25,7 @@ If the initialization process takes more than a few minutes it can be terminated
 with `Ctrl-c`. After termination the configuration can be manually initialized:
 
 ```bash
-NVIM_APPNAME="<nvim dir>" nvim
+NVIM_APPNAME="lazyman/<nvim dir>" nvim
 ```
 
 ### External Configuration Dependencies
@@ -34,9 +34,9 @@ Neovim configurations often rely on external commands, utilities, language
 servers, formatters, linters, and tools. The `Lazyman` initialization process
 installs much of what might be required but not all. Some configurations
 may initialize cleanly but subsequent use might provoke an error when an
-external dependency is not available. For example, the `nvim-Shuvro` Neovim
+external dependency is not available. For example, the `Shuvro` Neovim
 configuration relies upon an externally installed `luacheck` facility. If this
-is not available then `nvim-Shuvro` will emit an error message when opening
+is not available then `Shuvro` will emit an error message when opening
 `lua` files. Most commonly used external dependencies are installed by
 `lazyman` but missing dependencies sometimes occur.
 
@@ -65,7 +65,7 @@ of the `lazyman` menu system will not take effect until a restart of Neovim.
 
 An update of the Lazyman configuration and `lazyman` command can be performed
 with the command `lazyman -U`. However, early releases of Lazyman always
-preserve any existing `~/.config/nvim-Lazyman/lua/configuration.lua`. Later
+preserve any existing `~/.config/lazyman/Lazyman/lua/configuration.lua`. Later
 releases of Lazyman include a different format for this file. When updating
 from an older Lazyman release it may be necessary to run the update twice.
 
@@ -124,7 +124,7 @@ display errors.
 
 ### LaTeX configuration hangs on macOS
 
-The `nvim-LaTeX` configuration is hanging on my Mac. It appears to work fine
+The `LaTeX` configuration is hanging on my Mac. It appears to work fine
 on Linux platforms. This is currently under investigation.
 
 ## Troubleshooting
@@ -174,5 +174,5 @@ lazyman -d
 
 The `lazyman -d` command should run the `install_neovim` script in debug mode
 and any errors will be displayed. Alternatively, execute the Neovim install
-script directly with `$HOME/.config/nvim-Lazyman/scripts/install_neovim.sh -d`
+script directly with `$HOME/.config/lazyman/Lazyman/scripts/install_neovim.sh -d`
 and view the output for errors.

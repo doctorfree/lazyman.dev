@@ -13,7 +13,7 @@ LunarVim based Neovim configuration by Justin Angeles
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     [LunarVim](https://www.lunarvim.org){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-JustinLvim`**
+- Installation location:  **`~/.config/lazyman/JustinLvim`**
 
 
 ### Git repository

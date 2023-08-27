@@ -13,7 +13,7 @@ Neovim configuration written in the [C programming language](https://en.wikipedi
 - Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     [LazyVim](https://lazyvim.github.io){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-CatNvim`**
+- Installation location:  **`~/.config/lazyman/CatNvim`**
 
 
 ### Git repository

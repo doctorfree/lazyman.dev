@@ -43,7 +43,7 @@ Recent releases of `lazyman` include several new features, fixes, and improvemen
   - Menu interface also supports keywords to fuzzy select a config for an action
   - Additional keywords supported: `health`, `init`, `remove`, `search`, `status`
 - Auto-install of [Bob](https://github.com/MordechaiHadad/bob){:target="_blank"}{:rel="noopener noreferrer"} Neovim version manager (optional)
-- Multiple namespace support in `nvim-Lazyman` default `lazyman` Neovim configuration
+- Multiple namespace support in `Lazyman` default `lazyman` Neovim configuration
   - Select which namespace to use in `lua/configuration.lua` or via the menu interface
   - Both namespaces can be configured vi the Lazyman configuration menus (`lazyman -F`)
 - `LazyIde` and `Webdev` configurations now configurable via a menu interface
@@ -72,7 +72,7 @@ Usage: nvims [-c cmd] [-C fltr] [-I] [-R] [-S file] [-U] [file1 [file2] ...]
  '-I' : display the selected configuration information document
  '-R' : indicates removal of the selected Neovim configuration
  '-S file' : Executes 'Vimscript' or 'Lua' in 'file' after file read
-  '~/.config/nvim-Lazyman/overrides.lua' is used if not empty
+  '~/.config/lazyman/Lazyman/overrides.lua' is used if not empty
  '-U' : displays a usage message and exits
 
 Examples:
@@ -100,17 +100,17 @@ interface uses this new feature to get the current Lazyman Neovim
 configuration with shell commands like:
 
 ```bash
-GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
-confval=$(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
+GET_CONF="${HOME}/.config/lazyman/Lazyman/scripts/get_conf.lua"
+confval=$(NVIM_APPNAME="lazyman/Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
 ```
 
 The `get_conf.lua` script can also be used to retrieve option or variable
 settings in any Neovim configuration. For example, to retrieve the value of
-the 'mouse' option in the `nvim-Webdev` Neovim configuration:
+the 'mouse' option in the `Webdev` Neovim configuration:
 
 ```bash
-GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
-NVIM_APPNAME="nvim-Webdev" nvim -l ${GET_CONF} mouse
+GET_CONF="${HOME}/.config/lazyman/Lazyman/scripts/get_conf.lua"
+NVIM_APPNAME="lazyman/Webdev" nvim -l ${GET_CONF} mouse
 ```
 
 The Lazyman `get_conf.lua` script:
@@ -125,14 +125,14 @@ The Lazyman `get_conf.lua` script:
 -- For example, to retrieve the Lazyman configuration 'namespace' setting:
 --
 -- #!/bin/bash
--- NVIM_APPNAME="nvim-Lazyman" \
---   nvim -l ~/.config/nvim-Lazyman/scripts/get_conf.lua namespace
+-- NVIM_APPNAME="lazyman/Lazyman" \
+--   nvim -l ~/.config/lazyman/Lazyman/scripts/get_conf.lua namespace
 --
 -- or, to retrieve the value of the 'mouse' option in the Webdev config:
 --
 -- #!/bin/bash
--- NVIM_APPNAME="nvim-Webdev" \
---   nvim -l ~/.config/nvim-Lazyman/scripts/get_conf.lua mouse
+-- NVIM_APPNAME="lazyman/Webdev" \
+--   nvim -l ~/.config/lazyman/Lazyman/scripts/get_conf.lua mouse
 
 local config = vim.inspect(_G.arg[1])
 local arg = string.gsub(config, '"', "")
@@ -175,7 +175,7 @@ if arg == "config_home" then
   io.write("NVIM_APPNAME = " .. app_name .. "\n")
 else
   local var_val = ""
-  if app_name == "nvim-Lazyman" then
+  if app_name == "lazyman/Lazyman" then
     local settings = require("configuration")
     local entry = settings[arg]
     if entry ~= nil then

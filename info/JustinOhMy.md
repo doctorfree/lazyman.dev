@@ -13,7 +13,7 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     [LazyVim](https://lazyvim.github.io){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-JustinOhMy`**
+- Installation location:  **`~/.config/lazyman/JustinOhMy`**
 
 
 ### Git repository

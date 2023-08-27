@@ -13,7 +13,7 @@ Personal Neovim configuration of chadcat, a high school student with no life. Ko
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Kodo`**
+- Installation location:  **`~/.config/lazyman/Kodo`**
 
 
 ### Git repository

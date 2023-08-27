@@ -13,7 +13,7 @@ Includes a combination of popular plugins
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Opinion`**
+- Installation location:  **`~/.config/lazyman/Opinion`**
 
 
 ### Git repository

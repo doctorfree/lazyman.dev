@@ -13,7 +13,7 @@ PaK in Farsi means pure, something that is in its purest form
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-NvPak`**
+- Installation location:  **`~/.config/lazyman/NvPak`**
 
 
 ### Git repository

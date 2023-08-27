@@ -13,7 +13,7 @@ LazyVim IDE config for Neovim
 - Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     [LazyVim](https://lazyvim.github.io){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-LazyIde`**
+- Installation location:  **`~/.config/lazyman/LazyIde`**
 
 
 ### Git repository

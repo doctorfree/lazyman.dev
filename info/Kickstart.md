@@ -13,7 +13,7 @@ Popular starting point, small, single file, well documented, modular
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     [Kickstart](https://github.com/nvim-lua/kickstart.nvim){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Kickstart`**
+- Installation location:  **`~/.config/lazyman/Kickstart`**
 
 
 ### Git repository

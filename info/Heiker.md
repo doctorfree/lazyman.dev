@@ -13,7 +13,7 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Heiker`**
+- Installation location:  **`~/.config/lazyman/Heiker`**
 
 
 ### Git repository

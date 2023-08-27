@@ -13,7 +13,7 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Rohit`**
+- Installation location:  **`~/.config/lazyman/Rohit`**
 
 
 ### Git repository

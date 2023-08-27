@@ -10,7 +10,7 @@ post_style: page
 The [lazyman](https://lazyman.dev/info/lazyman_command.html) command
 can be used to manage the Lazyman Neovim configuration.
 The `lazyman` command calls `scripts/lazyman_config.sh` to
-manage the Neovim configuration in `~/.config/nvim-Lazyman`.
+manage the Neovim configuration in `~/.config/lazyman/Lazyman`.
 
 ## Source for scripts/lazyman_config.sh
 
@@ -641,7 +641,7 @@ show_plug_help() {
   printf "\nEnabled plugins and plugin configurations are indicated with a []"
   printf "\nDisabled plugins and plugin configurations are indicated with a [✗]\n"
   printf "\nSettings in this menu only effect the Lazyman Neovim configuration in:"
-  printf "\n\t${HOME}/.config/nvim-Lazyman\n"
+  printf "\n\t${HOME}/.config/lazyman/Lazyman\n"
   prompt_continue
 }
 
@@ -663,7 +663,7 @@ show_plugin_menu() {
     [ "$debug" ] || tput reset
     if [ "${have_rich}" ]; then
       rich "[b cyan]Lazyman Plugins Configuration Menu[/]" -p -a rounded -c -C
-      rich "[b green]Manage the Neovim plugins enabled in[/] [b yellow]~/.config/nvim-Lazyman[/]" -p -c
+      rich "[b green]Manage the Neovim plugins enabled in[/] [b yellow]~/.config/lazyman/Lazyman[/]" -p -c
     else
       [ "${have_figlet}" ] && show_figlet "Plugins"
     fi
@@ -1838,7 +1838,7 @@ show_lsp_help() {
   printf "\ncompletion, syntax highlighting and marking of warnings and errors,"
   printf "\nas well as refactoring routines.\n"
   printf "\nSettings in this menu only effect the Lazyman Neovim configuration in:"
-  printf "\n\t${HOME}/.config/nvim-Lazyman\n"
+  printf "\n\t${HOME}/.config/lazyman/Lazyman\n"
   prompt_continue
 }
 
@@ -1861,7 +1861,7 @@ show_lsp_menu() {
     [ "$debug" ] || tput reset
     if [ "${have_rich}" ]; then
       rich "[cyan]Lazyman LSP Servers Menu[/cyan]" -p -a rounded -c -C
-      rich "[b green]Enable/Disable LSP servers used by[/] [b yellow]~/.config/nvim-Lazyman[/]" -p -c
+      rich "[b green]Enable/Disable LSP servers used by[/] [b yellow]~/.config/lazyman/Lazyman[/]" -p -c
     else
       [ "${have_figlet}" ] && show_figlet "LSP Menu"
     fi
@@ -1973,7 +1973,7 @@ show_form_help() {
   printf "\nThese tools perform code formatting, static code analysis, and flag"
   printf "\nprogramming errors, bugs, stylistic errors and suspicious constructs.\n"
   printf "\nSettings in this menu only effect the Lazyman Neovim configuration in:"
-  printf "\n\t${HOME}/.config/nvim-Lazyman\n"
+  printf "\n\t${HOME}/.config/lazyman/Lazyman\n"
   prompt_continue
 }
 
@@ -1996,7 +1996,7 @@ show_formlint_menu() {
     [ "$debug" ] || tput reset
     if [ "${have_rich}" ]; then
       rich "[cyan]Lazyman Formatters and Linters Menu[/cyan]" -p -a rounded -c -C
-      rich "[b green]Enable/Disable formatters and linters used by[/] [b yellow]~/.config/nvim-Lazyman[/]" -p -c
+      rich "[b green]Enable/Disable formatters and linters used by[/] [b yellow]~/.config/lazyman/Lazyman[/]" -p -c
     else
       [ "${have_figlet}" ] && show_figlet "Formatters"
     fi
@@ -2116,7 +2116,7 @@ show_conf_menu() {
     [ "$debug" ] || tput reset
     if [ "${have_rich}" ]; then
       rich "[b cyan]Lazyman Configuration Menu[/]" -p -a rounded -c -C
-      rich "[b green]Manage the Neovim configuration in[/] [b yellow]~/.config/nvim-Lazyman[/]" -p -c
+      rich "[b green]Manage the Neovim configuration in[/] [b yellow]~/.config/lazyman/Lazyman[/]" -p -c
     else
       [ "${have_figlet}" ] && show_figlet "Config"
     fi
@@ -2245,10 +2245,10 @@ show_conf_menu() {
     options+=("Formatters"){:target="_blank"}{:rel="noopener noreferrer"}
     options+=("LSP Servers"){:target="_blank"}{:rel="noopener noreferrer"}
     options+=("Plugins Menu"){:target="_blank"}{:rel="noopener noreferrer"}
-    [ -f ${HOME}/.config/nvim-LazyIde/lua/configuration.lua ] && {
+    [ -f ${HOME}/.config/lazyman/LazyIde/lua/configuration.lua ] && {
       options+=("LazyIde Config"){:target="_blank"}{:rel="noopener noreferrer"}
     }
-    [ -f ${HOME}/.config/nvim-Webdev/lua/configuration.lua ] && {
+    [ -f ${HOME}/.config/lazyman/Webdev/lua/configuration.lua ] && {
       options+=("Webdev Config"){:target="_blank"}{:rel="noopener noreferrer"}
     }
     options+=("Main Menu"){:target="_blank"}{:rel="noopener noreferrer"}
@@ -2726,8 +2726,8 @@ set_haves
 }
 
 # Source the Lazyman shell initialization for aliases and nvims selector
-# shellcheck source=~/.config/nvim-Lazyman/.lazymanrc
-[ -f ~/.config/nvim-Lazyman/.lazymanrc ] && source ~/.config/nvim-Lazyman/.lazymanrc
+# shellcheck source=~/.config/lazyman/Lazyman/.lazymanrc
+[ -f ~/.config/lazyman/Lazyman/.lazymanrc ] && source ~/.config/nvim-Lazyman/.lazymanrc
 
 if [ "$menu" ]; then
   if [ "$menu" == "confmenu" ]; then

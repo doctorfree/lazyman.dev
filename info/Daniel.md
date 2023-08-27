@@ -13,7 +13,7 @@ post_style: page
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     [LunarVim](https://www.lunarvim.org){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Daniel`**
+- Installation location:  **`~/.config/lazyman/Daniel`**
 
 
 ### Git repository
@@ -162,8 +162,8 @@ post_style: page
 |  | <D-v> | +p<CR> |
 |  | <F5> | :lua require('persistence').load()<CR> |
 |  | <F4> | :ASToggle<CR> |
-|  | <F8> | :set spelllang=en spellfile=~/.config/nvim-Daniel/spell/en.utf-8.add spell<CR> |
-|  | <F7> | :set spelllang=de spellfile=~/.config/nvim-Daniel/spell/de.utf-8.add spell<CR> |
+|  | <F8> | :set spelllang=en spellfile=~/.config/lazyman/Daniel/spell/en.utf-8.add spell<CR> |
+|  | <F7> | :set spelllang=de spellfile=~/.config/lazyman/Daniel/spell/de.utf-8.add spell<CR> |
 |  | <F6> | :set nospell<CR> |
 |  | <M-j> | :m .+1<CR>== |
 |  | <C-Right> | :vertical resize +2<CR> |

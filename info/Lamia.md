@@ -13,7 +13,7 @@ One of the AstroNvim 'Black Belt' example advanced configurations
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     [AstroNvim](https://astronvim.com){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Lamia`**
+- Installation location:  **`~/.config/lazyman/Lamia`**
 
 
 ### Git repository

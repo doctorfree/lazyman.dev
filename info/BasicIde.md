@@ -13,7 +13,7 @@ Maintained by LunarVim, this is a descendent of 'Neovim from Scratch'.All plugin
 - Configuration category: [Base](https://lazyman.dev/configurations/#base-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-BasicIde`**
+- Installation location:  **`~/.config/lazyman/BasicIde`**
 
 
 ### Git repository

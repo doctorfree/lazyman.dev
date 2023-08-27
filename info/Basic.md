@@ -13,7 +13,7 @@ Starter config by the author of NvChad with [video tutorial](https://youtube.com
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Basic`**
+- Installation location:  **`~/.config/lazyman/Basic`**
 
 
 ### Git repository

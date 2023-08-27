@@ -13,7 +13,7 @@ A clean, organized pre-configured Neovim configuration guide in a single 'init.l
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-SingleFile`**
+- Installation location:  **`~/.config/lazyman/SingleFile`**
 
 
 ### Git repository

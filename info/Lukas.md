@@ -13,7 +13,7 @@ Personal Neovim configuration of Lukas Reineke, author of many excellent Neovim 
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Lukas`**
+- Installation location:  **`~/.config/lazyman/Lukas`**
 
 
 ### Git repository
