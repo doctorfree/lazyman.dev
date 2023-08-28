@@ -39,7 +39,7 @@ OUT="$2"
 
 if [ -d "${HOME}/.config/lazyman/${CFNAME}" ]
 then
-  export NVIM_APPNAME="nvim-${CFNAME}"
+  export NVIM_APPNAME="lazyman/${CFNAME}"
 else
   if [ -d "${HOME}/.config/${CFNAME}" ]
   then
@@ -49,7 +49,7 @@ else
   fi
 fi
 KEYTMP="${HOME}/.config/lazyman/Lazyman/tmp"
-OUTDIR=$(dirname "${OUT}"){:target="_blank"}{:rel="noopener noreferrer"}
+OUTDIR=$(dirname "${OUT}")
 
 [ -d "${KEYTMP}" ] || mkdir -p "${KEYTMP}"
 [ -d "${OUTDIR}" ] || mkdir -p "${OUTDIR}"
@@ -64,12 +64,12 @@ printf "\n\nlocal operator_mode = " >> "${KEYTMP}"/${CFNAME}.lua
 echo "" >> "${KEYTMP}"/${CFNAME}.lua
 nvim --headless '+lua vim.print(vim.api.nvim_get_keymap("o"))' +qa >> "${KEYTMP}"/${CFNAME}.lua 2>&1
 
-have_dtox=$(type -p dtox){:target="_blank"}{:rel="noopener noreferrer"}
+have_dtox=$(type -p dtox)
 if [ "${have_dtox}" ]
 then
   dtox "${KEYTMP}"/${CFNAME}.lua
 else
-  have_dos=$(type -p dos2unix){:target="_blank"}{:rel="noopener noreferrer"}
+  have_dos=$(type -p dos2unix)
   if [ "${have_dos}" ]
   then
     dos2unix "${KEYTMP}"/${CFNAME}.lua
@@ -82,7 +82,7 @@ echo "" >> "${OUT}"
 echo "### ${CFNAME} Keymaps" >> "${OUT}"
 
 cat "${KEYTMP}"/${CFNAME}.lua | sed -e "s/{ {$/\n{ {/" | \
-  grep -v callback | grep -v "^\[" | grep -v ^Error | \
+  grep -v callback | grep -v "^\[" | grep -v ^Dep | grep -v ^Error | \
   grep -v ^Fail | grep -v ^Some | grep -v ^\& | grep -v ^sh | \
   grep -v ^Tele | grep -v ^Lua | grep -v ^Two | grep -i -v ^vim | \
   grep -v ^stack | grep -v "[[:space:]]/home/" | grep -v ^mkdir | \
