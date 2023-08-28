@@ -134,16 +134,6 @@ git clone https://github.com/doctorfree/nvim-lazyman $HOME/.config/lazyman/Lazym
 $HOME/.config/lazyman/Lazyman/lazyman.sh
 ```
 
-Alternatively, download the `lazyman.sh` script and execute it.
-For example, with `curl`:
-
-```bash
-curl -fsS https://raw.githubusercontent.com/doctorfree/nvim-lazyman/main/lazyman.sh > /tmp/lazyman.sh
-chmod 755 /tmp/lazyman.sh
-/tmp/lazyman.sh
-rm -f /tmp/lazyman.sh
-```
-
 Once the `lazyman.sh` script has been downloaded and executed, subsequent
 Lazyman operations can be performed with the `lazyman` command found in
 `~/.local/bin/lazyman`. The manual page can be viewed with `man lazyman`.
