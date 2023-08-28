@@ -95,88 +95,88 @@ Distinguishing features of the top Neovim configuration distributions:
 - [Abstract](https://github.com/Abstract-IDE/Abstract)
   - [Neovimcraft description](https://neovimcraft.com/plugin/Abstract-IDE/Abstract/index.html)
   - Lazyman Abstract configuration
-    - `~/.config/nvim-Abstract` install with `lazyman -g`
+    - `~/.config/lazyman/Abstract` install with `lazyman -g`
 - [AstroNvim](https://github.com/AstroNvim/AstroNvim)
   - [Neovimcraft description](https://neovimcraft.com/plugin/AstroNvim/AstroNvim/index.html)
   - Install all Lazyman AstroNvim configurations with `lazyman -i astronvim -y`
   - Lazyman AstroNvim configurations
-    - `~/.config/nvim-AstroNvimPlus` install with `lazyman -a`
-    - `~/.config/nvim-AstroNvimStart` install with `lazyman -x AstroNvimStart`
-    - `~/.config/nvim-Kabin` install with `lazyman -x Kabin`
-    - `~/.config/nvim-Lamia` install with `lazyman -x Lamia`
-    - `~/.config/nvim-Micah` install with `lazyman -x Micah`
-    - `~/.config/nvim-Normal` install with `lazyman -x Normal`
-    - `~/.config/nvim-Orhun` install with `lazyman -w Orhun`
-    - `~/.config/nvim-Spider` install with `lazyman -w Spider`
+    - `~/.config/lazyman/AstroNvimPlus` install with `lazyman -a`
+    - `~/.config/lazyman/AstroNvimStart` install with `lazyman -x AstroNvimStart`
+    - `~/.config/lazyman/Kabin` install with `lazyman -x Kabin`
+    - `~/.config/lazyman/Lamia` install with `lazyman -x Lamia`
+    - `~/.config/lazyman/Micah` install with `lazyman -x Micah`
+    - `~/.config/lazyman/Normal` install with `lazyman -x Normal`
+    - `~/.config/lazyman/Orhun` install with `lazyman -w Orhun`
+    - `~/.config/lazyman/Spider` install with `lazyman -w Spider`
 - [CodeArt](https://github.com/artart222/CodeArt)
   - [Neovimcraft description](https://neovimcraft.com/plugin/artart222/CodeArt/index.html)
   - Lazyman CodeArt configuration
-    - `~/.config/nvim-CodeArt` install with `lazyman -x CodeArt`
+    - `~/.config/lazyman/CodeArt` install with `lazyman -x CodeArt`
 - [CosmicNvim](https://github.com/CosmicNvim/CosmicNvim)
   - [Neovimcraft description](https://neovimcraft.com/plugin/CosmicNvim/CosmicNvim/index.html)
   - Lazyman CosmicNvim configuration
-    - `~/.config/nvim-Cosmic` install with `lazyman -x Cosmic`
+    - `~/.config/lazyman/Cosmic` install with `lazyman -x Cosmic`
 - [Ecovim](https://github.com/ecosse3/nvim)
   - [Neovimcraft description](https://neovimcraft.com/plugin/ecosse3/nvim/index.html)
   - Lazyman Ecovim configuration
-    - `~/.config/nvim-Ecovim` install with `lazyman -e`
+    - `~/.config/lazyman/Ecovim` install with `lazyman -e`
 - [kickstart](https://github.com/nvim-lua/kickstart.nvim)
   - [Neovimcraft description](https://neovimcraft.com/plugin/nvim-lua/kickstart.nvim/index.html)
   - Lazyman kickstart configuration
-    - `~/.config/nvim-Kickstart` install with `lazyman -k`
+    - `~/.config/lazyman/Kickstart` install with `lazyman -k`
 - [LazyVim](https://github.com/LazyVim/LazyVim)
   - [Neovimcraft description](https://neovimcraft.com/plugin/LazyVim/LazyVim/index.html)
   - Install all Lazyman LazyVim configurations with `lazyman -i lazyvim -y`
   - Lazyman LazyVim configurations
-    - `~/.config/nvim-LazyVim` install with `lazyman -l`
-    - `~/.config/nvim-Penguin` install with `lazyman -o`
-    - `~/.config/nvim-CatNvim` install with `lazyman -L CatNvim`
-    - `~/.config/nvim-Elijah` install with `lazyman -w Elijah`
-    - `~/.config/nvim-JustinNvim` install with `lazyman -w JustinNvim`
-    - `~/.config/nvim-JustinOhMy` install with `lazyman -x JustinOhMy`
-    - `~/.config/nvim-LazyIde` install with `lazyman -L LazyIde`
-    - `~/.config/nvim-Nv` install with `lazyman -L Nv`
-    - `~/.config/nvim-Traap` install with `lazyman -w Traap`
-    - `~/.config/nvim-Webdev` install with `lazyman -L Webdev`
+    - `~/.config/lazyman/LazyVim` install with `lazyman -l`
+    - `~/.config/lazyman/Penguin` install with `lazyman -o`
+    - `~/.config/lazyman/CatNvim` install with `lazyman -L CatNvim`
+    - `~/.config/lazyman/Elijah` install with `lazyman -w Elijah`
+    - `~/.config/lazyman/JustinNvim` install with `lazyman -w JustinNvim`
+    - `~/.config/lazyman/JustinOhMy` install with `lazyman -x JustinOhMy`
+    - `~/.config/lazyman/LazyIde` install with `lazyman -L LazyIde`
+    - `~/.config/lazyman/Nv` install with `lazyman -L Nv`
+    - `~/.config/lazyman/Traap` install with `lazyman -w Traap`
+    - `~/.config/lazyman/Webdev` install with `lazyman -L Webdev`
 - [LunarVim](https://github.com/LunarVim/LunarVim)
   - [Neovimcraft description](https://neovimcraft.com/plugin/LunarVim/LunarVim/index.html)
   - Install all Lazyman LunarVim configurations with `lazyman -i lunarvim -y`
   - Lazyman LunarVim configurations
-    - `~/.config/nvim-LunarVim` install with `lazyman -v`
-    - `~/.config/nvim-Daniel` install with `lazyman -w Daniel`
-    - `~/.config/nvim-JustinLvim` install with `lazyman -w JustinLvim`
-    - `~/.config/nvim-LunarIde` install with `lazyman -L LunarIde`
-    - `~/.config/nvim-LvimAdib` install with `lazyman -w LvimAdib`
-    - `~/.config/nvim-Shuvro` install with `lazyman -L Shuvro`
+    - `~/.config/lazyman/LunarVim` install with `lazyman -v`
+    - `~/.config/lazyman/Daniel` install with `lazyman -w Daniel`
+    - `~/.config/lazyman/JustinLvim` install with `lazyman -w JustinLvim`
+    - `~/.config/lazyman/LunarIde` install with `lazyman -L LunarIde`
+    - `~/.config/lazyman/LvimAdib` install with `lazyman -w LvimAdib`
+    - `~/.config/lazyman/Shuvro` install with `lazyman -L Shuvro`
 - [LvimIde](https://github.com/lvim-tech/lvim)
   - [Neovimcraft description](https://neovimcraft.com/plugin/lvim-tech/lvim/index.html) (needs help)
   - Lazyman LvimIde configuration
-    - `~/.config/nvim-LvimIde` install with `lazyman -L LvimIde`
+    - `~/.config/lazyman/LvimIde` install with `lazyman -L LvimIde`
 - [mini.nvim](https://github.com/echasnovski/mini.nvim)
   - [Neovimcraft description](https://neovimcraft.com/plugin/echasnovski/mini.nvim/index.html)
   - Lazyman mini.nvim configuration
-    - `~/.config/nvim-Mini` install with `lazyman -M`
+    - `~/.config/lazyman/Mini` install with `lazyman -M`
 - [NormalNvim](https://github.com/NormalNvim/NormalNvim)
   - [Neovimcraft description](https://neovimcraft.com/plugin/NormalNvim/NormalNvim/index.html)
   - NormalNvim is an enhanced fork of AstroNvim and serves as a sort of meta-distribution
   - Lazyman NormalNvim configuration
-    - `~/.config/nvim-Normal` install with `lazyman -x Normal`
+    - `~/.config/lazyman/Normal` install with `lazyman -x Normal`
 - [NvChad](https://github.com/NvChad/NvChad)
   - [Neovimcraft description](https://neovimcraft.com/plugin/siduck76/NvChad/index.html)
   - Install all Lazyman NvChad configurations with `lazyman -i nvchad -y`
   - Lazyman NvChad configurations
-    - `~/.config/nvim-NvChad` install with `lazyman -c`
-    - `~/.config/nvim-Cpp` install with `lazyman -L Cpp`
-    - `~/.config/nvim-Go` install with `lazyman -L Go`
-    - `~/.config/nvim-Python` install with `lazyman -L Python`
-    - `~/.config/nvim-Rust` install with `lazyman -L Rust`
+    - `~/.config/lazyman/NvChad` install with `lazyman -c`
+    - `~/.config/lazyman/Cpp` install with `lazyman -L Cpp`
+    - `~/.config/lazyman/Go` install with `lazyman -L Go`
+    - `~/.config/lazyman/Python` install with `lazyman -L Python`
+    - `~/.config/lazyman/Rust` install with `lazyman -L Rust`
 - [NvPak](https://github.com/EvolveBeyond/NvPak)
   - [Neovimcraft description](https://neovimcraft.com/plugin/Pakrohk-DotFiles/NvPak/index.html)
   - Lazyman NvPak configuration
-    - `~/.config/nvim-NvPak` install with `lazyman -x NvPak`
+    - `~/.config/lazyman/NvPak` install with `lazyman -x NvPak`
 - [SpaceVim](https://spacevim.org)
   - Lazyman SpaceVim configuration
-    - `~/.config/nvim-SpaceVim` install with `lazyman -s`
+    - `~/.config/lazyman/SpaceVim` install with `lazyman -s`
 
 ## See also
 

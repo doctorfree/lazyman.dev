@@ -13,7 +13,7 @@ Uses the [mini.nvim](https://github.com/echasnovski/mini.nvim) library. Personal
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Mini](https://github.com/echasnovski/mini.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Mini`**
+- Installation location:  **`~/.config/lazyman/Mini`**
 
 
 ### Git repository
@@ -80,7 +80,7 @@ Uses the [mini.nvim](https://github.com/echasnovski/mini.nvim) library. Personal
 |  |  Lx | <Cmd>lua EC.execute_lua_line()<CR> |
 |  |  Lf | <Cmd>luafile %<CR> |
 |  |  s | <Cmd>TREPLSendLine<CR>j |
-|  |  em | <Cmd>lua MiniFiles.open('~/.config/nvim-Mini/pack/plugins/opt/mini')<CR> |
+|  |  em | <Cmd>lua MiniFiles.open('~/.config/lazyman/Mini/pack/plugins/opt/mini')<CR> |
 |  |  ef | <Cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0))<CR> |
 |  |  eq | <Cmd>lua EC.toggle_quickfix()<CR> |
 |  |  ed | <Cmd>lua MiniFiles.open()<CR> |

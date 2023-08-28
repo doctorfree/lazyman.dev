@@ -15,9 +15,9 @@ post_style: page
 - open, install, remove, get info, search plugins, all from the command line or main menu
 - automated installation of dependencies, tools, language servers, and Neovim 0.9+
 - install and manage the `Bob` neovim version manager via a menu interface
-- richly configured `nvim-Lazyman` Neovim configuration
+- richly configured `Lazyman` Neovim configuration
 - interactive menu interface for ease of management
-  - manage the `nvim-Lazyman`, `nvim-LazyIde`, and `nvim-Webdev` configs via menus
+  - manage the `Lazyman`, `LazyIde`, and `Webdev` configs via menus
   - perform health checks and generate a status report via menus
 - convenience shell functions and aliases with fuzzy search and selection
   - `nvims` and `neovides` shell functions to fuzzy search, select, and open Neovim configs
@@ -40,7 +40,7 @@ configurations. One of these is the `nvims` shell function which dynamically
 creates a fuzzy searchable menu of installed Neovim configurations and launches
 Neovim with the selected Lazyman Neovim configuration.
 
-See `~/.config/nvim-Lazyman/.lazymanrc`.
+See `~/.config/lazyman/Lazyman/.lazymanrc`.
 
 Similarly, a `neovides` shell function can be used to select a Neovim
 configuration for use with the Neovim GUI `neovide`.
@@ -108,22 +108,22 @@ interface uses this new feature to get the current Lazyman Neovim
 configuration with shell commands like:
 
 ```bash
-GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
-confval=$(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
+GET_CONF="${HOME}/.config/lazyman/Lazyman/scripts/get_conf.lua"
+confval=$(NVIM_APPNAME="lazyman/Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
 ```
 
 The `get_conf.lua` script can also be used to retrieve option or variable
 settings in any Neovim configuration. For example, to retrieve the value of
-the 'mouse' option in the `nvim-Webdev` Neovim configuration:
+the 'mouse' option in the `Webdev` Neovim configuration:
 
 ```bash
-GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
-NVIM_APPNAME="nvim-Webdev" nvim -l ${GET_CONF} mouse
+GET_CONF="${HOME}/.config/lazyman/Lazyman/scripts/get_conf.lua"
+NVIM_APPNAME="lazyman/Webdev" nvim -l ${GET_CONF} mouse
 ```
 
 ## Lazyman source code
 
-The convenience script to install and initialize `nvim-Lazyman` is provided by
+The convenience script to install and initialize `Lazyman` is provided by
 [lazyman.sh](https://lazyman.dev/info/lazyman_command.html).
 
 ## Install neovim and tools

@@ -13,7 +13,7 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 - Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Allaman`**
+- Installation location:  **`~/.config/lazyman/Allaman`**
 
 
 ### Git repository

@@ -9,7 +9,7 @@ post_style: page
 ## Lazyman Neovim Configuration Manager Usage
 
 The [lazyman.sh](https://lazyman.dev/info/lazyman_command.html) script is located in
-`~/.config/nvim-Lazyman`. It installs itself as `$HOME/.local/bin/lazyman`.
+`~/.config/lazyman/Lazyman`. It installs itself as `$HOME/.local/bin/lazyman`.
 If `$HOME/.local/bin` is in your execution `PATH` then `lazyman` can be executed
 from the command line as simply `lazyman`. The manual page can be viewed with
 `man lazyman`. Within Neovim the `Lazyman` help doc can be viewed with `:h Lazyman`.
@@ -76,12 +76,12 @@ Usage: lazyman [-A] [-a] [-B] [-b branch] [-c] [-d] [-E config] [-e]
    [-S] [-v] [-n] [-o] [-O name] [-p] [-P] [-q] [-Q] [-h] [-H] [-I] [-J]
    [-L lang] [-rR] [-C url] [-D subdir] [-N nvimdir] [-G] [-tT] [-U]
    [-V url] [-w conf] [-W] [-x conf] [-X] [-y] [-Y] [-z] [-Z] [-K conf] [-u]
-   [health] [info] [init] [install [bob]] [open] [remove] [search] [status] [usage]
+   [health] [info] [init] [install [bob]] [migrate] [open] [remove] [search] [status] [usage]
 Where:
     -A indicates install all supported Neovim configurations
     -a indicates install and initialize AstroNvimPlus Neovim configuration
     -B indicates install and initialize all 'Base' Neovim configurations
-    -b 'branch' specifies an nvim-Lazyman git branch to checkout
+    -b 'branch' specifies an lazyman/Lazyman git branch to checkout
     -c indicates install and initialize NvChad Neovim configuration
     -d indicates debug mode
     -D 'subdir' specifies the subdirectory of the repository to retrieve
@@ -154,13 +154,14 @@ Where:
     'init' initialize specified Neovim configuration and exit
     'install' fuzzy search and select configuration to install
     'install bob' install the Bob Neovim version manager
+    'migrate' move v3 or earlier installed configurations to v4 location
     'open' fuzzy search and select configuration to open
     'remove' fuzzy search and select configuration to remove
     'search' fuzzy search and select configurations for a plugin
     'status' displays a brief status report and exits
     'usage' displays this usage message and exits
 Commands act on NVIM_APPNAME, override with '-N nvimdir' or '-A'
-Without arguments lazyman installs and initializes nvim-Lazyman
+Without arguments lazyman installs and initializes lazyman/Lazyman
 or, if initialized, an interactive menu system is displayed.
 ```
 
@@ -191,7 +192,7 @@ manager invoke `lazyman` with the `-p` flag.
 To update a previously installed Lazyman Neovim configuration execute
 `lazyman -U -N <nvimdir>` to update the Neovim configuration in
 `~/.config/<nvimdir>`, `lazyman -U -A` to update all configurations,
-or `lazyman -U` to update the `nvim-Lazyman` configuration. Updates
+or `lazyman -U` to update the `Lazyman` configuration. Updates
 retrieve any newly modified files from the respective Github repository
 while preserving local modifications. Note, if a file has been modified
 both locally and in the repository then it will not be updated and retain
@@ -210,13 +211,13 @@ Lazyman Neovim help can be viewed inside Neovim with `:h Lazyman`.
 
 ### Lazyman configuration
 
-The `nvim-Lazyman` Neovim configuration includes a top-level configuration file,
-`~/.config/nvim-Lazyman/lua/configuration.lua`. This file can be use to enable,
-disable, and configure `nvim-Lazyman` components. For example, here is where you
+The `Lazyman` Neovim configuration includes a top-level configuration file,
+`~/.config/lazyman/Lazyman/lua/configuration.lua`. This file can be use to enable,
+disable, and configure `Lazyman` components. For example, here is where you
 would configure whether `neo-tree` or `nvim-tree` is enabled as a file explorer.
 Or, disable the tabline, disable the statusline, set the colorscheme, theme, and
 theme style. The `configuration.lua` file is intended to serve as a quick and
-easy way to re-configure the `nvim-Lazyman` Neovim configuration but you can still
+easy way to re-configure the `Lazyman` Neovim configuration but you can still
 dig down into the `options.lua`, `keymaps.lua`, `autocmds.lua` and more.
 
 #### Configuration sections
@@ -251,7 +252,7 @@ of the `Lazyman` configuration settings.
 
 ##### Theme configuration
 
-The `nvim-Lazyman` Neovim configuration includes pre-configured support for several
+The `Lazyman` Neovim configuration includes pre-configured support for several
 themes including support for statusline and tabline theme coordination. The active
 theme and colorscheme is selected in `configuration.lua` by setting `conf.theme`.
 For themes that support different styles, the theme style is selected by setting
@@ -327,7 +328,7 @@ Available styles are:
 
 ##### Plugin configuration
 
-Several Neovim plugins in the `nvim-Lazyman` configuration can be optionally
+Several Neovim plugins in the `Lazyman` configuration can be optionally
 installed or replaced by another plugin with similar functionality. The plugins
 that are configurable in this way in `configuration.lua` are briefly described
 below along with their default settings:
@@ -409,7 +410,7 @@ is preconfigured for execution of the `lazyman` command. Shortcut key
 bindings to execute `lazyman` in a Neovim terminal have been provided:
 `<leader>lm` to bring up the main Lazyman menu, and `<leader>lc` to bring up
 the Lazyman configuration menu. While in Neovim with the default
-`nvim-Lazyman` configuration, pressing `,lm` will execute the `lazyman`
+`Lazyman` configuration, pressing `,lm` will execute the `lazyman`
 command in a Neovim floating terminal window and pressing `,lc` will
 execute `lazyman -F` in a terminal window. Alternately, executing the
 Neovim command `:Lazyman` will also bring up the `lazyman` command

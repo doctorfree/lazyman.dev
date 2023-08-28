@@ -13,7 +13,7 @@ Personal Neovim configuration of Adib Hanna. Tips, distros, and configuration [d
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Adib`**
+- Installation location:  **`~/.config/lazyman/Adib`**
 
 
 ### Git repository

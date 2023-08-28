@@ -13,7 +13,7 @@ Preconfigured Neovim as an IDE
 - Configuration category: [Base](https://lazyman.dev/configurations/#base-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Abstract`**
+- Installation location:  **`~/.config/lazyman/Abstract`**
 
 
 ### Git repository

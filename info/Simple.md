@@ -13,7 +13,7 @@ A remarkably effective Neovim configuration in only one small file. The author's
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Simple`**
+- Installation location:  **`~/.config/lazyman/Simple`**
 
 
 ### Git repository

@@ -13,7 +13,7 @@ NvChad based Neovim config with Go formatting, debugging, and diagnostics. Dream
 - Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     [NvChad](https://nvchad.com){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Go`**
+- Installation location:  **`~/.config/lazyman/Go`**
 
 
 ### Git repository

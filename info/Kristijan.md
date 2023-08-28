@@ -13,7 +13,7 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Kristijan`**
+- Installation location:  **`~/.config/lazyman/Kristijan`**
 
 
 ### Git repository

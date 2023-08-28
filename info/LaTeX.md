@@ -13,7 +13,7 @@ Neovim configuration optimized for writing in LaTeX. Personal Neovim configurati
 - Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-LaTeX`**
+- Installation location:  **`~/.config/lazyman/LaTeX`**
 
 
 ### Git repository

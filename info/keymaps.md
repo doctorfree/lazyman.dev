@@ -37,7 +37,7 @@ debug=
 CFNAME="$1"
 OUT="$2"
 
-if [ -d "${HOME}/.config/nvim-${CFNAME}" ]
+if [ -d "${HOME}/.config/lazyman/${CFNAME}" ]
 then
   export NVIM_APPNAME="nvim-${CFNAME}"
 else
@@ -48,7 +48,7 @@ else
     exit 1
   fi
 fi
-KEYTMP="${HOME}/.config/nvim-Lazyman/tmp"
+KEYTMP="${HOME}/.config/lazyman/Lazyman/tmp"
 OUTDIR=$(dirname "${OUT}"){:target="_blank"}{:rel="noopener noreferrer"}
 
 [ -d "${KEYTMP}" ] || mkdir -p "${KEYTMP}"

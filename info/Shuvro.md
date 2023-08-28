@@ -13,7 +13,7 @@ Significantly improved fork of [Abouzar Parvan's](https://github.com/abzcoding/l
 - Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     [LunarVim](https://www.lunarvim.org){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/nvim-Shuvro`**
+- Installation location:  **`~/.config/lazyman/Shuvro`**
 
 
 ### Git repository
