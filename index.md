@@ -6,6 +6,9 @@ post_style: page
 
 <h1 align="center">Lazyman Neovim Configuration Manager</h1>
 
+> See [Lazyman Migration](https://lazyman.dev/posts/Migration) for info on the new Lazyman install location.
+{: .prompt-tip }
+
 The Lazyman project can be used to install, initialize, and manage multiple
 Neovim configurations. Over 100 popular Neovim configurations are supported.
 Lazyman provides a character-based menu interface as well as a weath of
@@ -19,7 +22,8 @@ command line options. The Lazyman main menu looks like this:
   />
 </div>
 
-[See what's new](https://lazyman.dev/news/)
+> [See what's new](https://lazyman.dev/news/)
+{: .prompt-tip }
 
 ## Overview
 
