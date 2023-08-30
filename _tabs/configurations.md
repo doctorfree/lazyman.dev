@@ -113,7 +113,7 @@ installed with the `-L lang` option.
   - Install and initialize with `lazyman -L Allaman`
 - [CatNvim](https://lazyman.dev/info/CatNvim.html)
   - Included in the `Language` category as the configuration is written in `C`
-  - Yes, this is a Neovim configuration written in the [C programming language](<https://en.wikipedia.org/wiki/C_(programming_language)>){:target="\_blank"}{:rel="noopener noreferrer"}
+  - Yes, this is a Neovim configuration written in the [C programming language](https://en.wikipedia.org/wiki/C_(programming_language)){:target="\_blank"}{:rel="noopener noreferrer"}
   - `CatNvim` is a `LazyVim` based configuration
   - Install and initialize with `lazyman -L CatNvim`
 - [Cpp](https://lazyman.dev/info/Cpp.html)
@@ -202,9 +202,6 @@ installed with the `-w conf` option.
 
 #### Lazyman "Personal" Neovim configurations
 
-- [3rd](https://lazyman.dev/info/3rd.html)
-  - `lazyman -w 3rd`
-  - Example [custom tree-sitter grammar](https://github.com/3rd/syslang){:target="\_blank"}{:rel="noopener noreferrer"}
 - [Adib](https://lazyman.dev/info/Adib.html)
   - Personal Neovim configuration of Adib Hanna
   - Tips, distros, and configuration [demo video](https://youtu.be/8SVPOKZVaMU){:target="\_blank"}{:rel="noopener noreferrer"}
@@ -456,7 +453,9 @@ export NVIM_APPNAME="<nvimdir>"
 Where `<nvimdir>` is the argument provided to `-N` above.
 
 For example, to install and initialize the Packer based Neovim configuration
-hosted at <https://github.com/VapourNvim/VapourNvim> and place it in
+hosted at
+[https://github.com/VapourNvim/VapourNvim](https://github.com/VapourNvim/VapourNvim){:target="\_blank"}{:rel="noopener noreferrer"}
+and place it in
 `~/.config/nvim-VapourNvim`, execute the command:
 
 ```bash
@@ -471,7 +470,9 @@ Neovim configuration subdirectory in such a repository, use the `-b branch`
 and `-D subdir` arguments to `lazyman` along with `-C url` and `-N nvimdir`.
 If no `-b branch` is provided then the default git branch is assumed to be
 `master`. For example, to install and initialize the Neovim configuration
-hosted at <https://github.com/alanRizzo/dot-files> in the subdirectory `nvim`
+hosted at
+[https://github.com/alanRizzo/dot-files](https://github.com/alanRizzo/dot-files){:target="\_blank"}{:rel="noopener noreferrer"}
+in the subdirectory `nvim`
 with default branch `main`, place it in `~/.config/nvim-AlanVim`, and
 initialize it with Packer:
 
@@ -502,7 +503,8 @@ An excellent list of preconfigured Neovim configurations is available at the
 `lazyman -b <branch> -C <url> -N <nvimdir> ...`.
 
 Feel free to open an issue at
-<https://github.com/doctorfree/nvim-lazyman/issues> to help tackle any problems
+[https://github.com/doctorfree/nvim-lazyman/issues](https://github.com/doctorfree/nvim-lazyman/issues){:target="\_blank"}{:rel="noopener noreferrer"}
+to help tackle any problems
 installing or initializing Neovim configurations with Lazyman.
 
 #### Custom configuration patches
@@ -534,7 +536,7 @@ created for this config with:
 ```bash
 diff -Naur lua/modules/language-support/tree-sitter.lua.orig \
            lua/modules/language-support/tree-sitter.lua \
-           > ~/.config/nvim-Lazyman/scripts/patches/3rd.patch
+           > ~/.config/nvim-Lazyman/scripts/patches/nvim-3rd.patch
 ```
 
 Subsequently, running:
@@ -543,4 +545,4 @@ Subsequently, running:
 lazyman -C https://github.com/3rd/config -D home/dotfiles/nvim -N nvim-3rd
 ```
 
-will produce a cleanly initialized Neovim configuration.
+will produce a patched `nvim-3rd` initialized Neovim configuration.

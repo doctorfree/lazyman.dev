@@ -20,7 +20,7 @@ command line options. The Lazyman main menu looks like this:
 </div>
 
 > [See what's new](https://lazyman.dev/news/)
-> {: .prompt-tip }
+{: .prompt-tip }
 
 ## Overview
 

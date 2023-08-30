@@ -347,7 +347,7 @@ below along with their default settings:
   - `conf.enable_compile = false`
 - If coding is enabled, enable Github Copilot
   - `conf.enable_copilot = false`
-- If coding is enabled, enable Neoai, <https://github.com/Bryley/neoai.nvim>
+- If coding is enabled, enable Neoai, [https://github.com/Bryley/neoai.nvim](https://github.com/Bryley/neoai.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
   - `conf.enable_neoai = false`
 - Enable dressing plugin for improved default vim.ui interfaces
   - `conf.enable_dressing = true`

@@ -29,11 +29,7 @@ Lazyman requires Linux or macOS, git, and the Bash shell version 4 or later.
 
 Even the latest versions of macOS ship with Bash 3.2 which dates from 2007.
 The Lazyman initialization process will update your system to use a modern
-Bash with Homebrew:
-
-```bash
-brew install bash
-```
+Bash with Homebrew: `brew install bash`.
 
 The initialization process also makes sure it is found first in your PATH.
 For example, `export PATH="/usr/local/bin:${PATH}"` or `export PATH="/opt/homebrew/bin:${PATH}"`.
@@ -161,22 +157,24 @@ its initialized plugins, state, and cache, execute the following command:
 lazyman -l -r
 ```
 
-A Neovim configuration managed by `lazyman` can be removed by name:
+A Neovim configuration managed by `lazyman` can be removed by name.
+For example, to remove the `MagicVim` Neovim configuration:
 
 ```bash
 lazyman -R -N MagicVim
 ```
 
-To remove the `Lazyman` configuration and associated plugins, state,
-backups, and cache:
+To completely remove Lazyman including the `lazyman` command, all
+Neovim configurations managed by `lazyman`, the `Lazyman` configuration,
+associated plugins, state, backups, and cache:
 
 ```bash
 lazyman -R -N Lazyman
 ```
 
-**WARNING:** removing the `Lazyman` configuration disables `lazyman`
-features. Remove `Lazyman` only if you no longer wish to use the Lazyman
-Neovim configuration manager.
+**WARNING:** removing the `Lazyman` configuration completely removes `lazyman`
+and all Neovim configurations installed with `lazyman`. Remove `Lazyman` only
+if you no longer wish to use the Lazyman Neovim configuration manager.
 
 All `lazyman.sh` operations can be performed as a dry run with `-n`. For
 example, to see which `LazyVim` folders would be removed without removing any:
