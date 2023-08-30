@@ -13,7 +13,7 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 - Configuration category: [Base](https://lazyman.dev/configurations/#base-configurations)
 - Base configuration:     [AstroNvim](https://astronvim.com){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/AstroNvimPlus`**
+- Installation location:  **`~/.config/nvim-AstroNvimPlus`**
 
 
 ### Git repository

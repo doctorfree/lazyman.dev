@@ -13,7 +13,7 @@ post_style: page
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/Slydragonn`**
+- Installation location:  **`~/.config/nvim-Slydragonn`**
 
 
 ### Git repository

@@ -13,7 +13,7 @@ Java, Python, Lua, and Rust IDE
 - Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/Magidc`**
+- Installation location:  **`~/.config/nvim-Magidc`**
 
 
 ### Git repository

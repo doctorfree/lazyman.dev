@@ -13,7 +13,7 @@ The Lazyman Neovim configuration serves as a reference implementation of a confi
 - Configuration category: [Default](https://lazyman.dev/configurations/#lazyman-neovim-configuration-features)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/Lazyman`**
+- Installation location:  **`~/.config/nvim-Lazyman`**
 
 
 ### Git repository

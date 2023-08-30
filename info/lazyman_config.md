@@ -10,7 +10,7 @@ post_style: page
 The [lazyman](https://lazyman.dev/info/lazyman_command.html) command
 can be used to manage the Lazyman Neovim configuration.
 The `lazyman` command calls `scripts/lazyman_config.sh` to
-manage the Neovim configuration in `~/.config/lazyman/Lazyman`.
+manage the Neovim configuration in `~/.config/nvim-Lazyman`.
 
 ## Source for scripts/lazyman_config.sh
 
@@ -23,7 +23,7 @@ manage the Neovim configuration in `~/.config/lazyman/Lazyman`.
 #
 # shellcheck disable=SC1090,SC2001,SC2002,SC2016,SC2006,SC2086,SC2181,SC2129,SC2059,SC2076
 
-LAZYMAN="lazyman/Lazyman"
+LAZYMAN="nvim-Lazyman"
 LMANDIR="${HOME}/.config/${LAZYMAN}"
 NVIMCONF="${LMANDIR}/lua/configuration.lua"
 CONFBACK="${LMANDIR}/lua/configuration-orig.lua"
@@ -140,7 +140,7 @@ get_conf_table() {
     lsp_enabled_table=()
     while read -r val; do
       lsp_enabled_table+=("$val")
-    done < <(NVIM_APPNAME="lazyman/Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
+    done < <(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
     enable_ccls=$(get_conf_value enable_ccls)
     if [ "${enable_ccls}" == "true" ]; then
       lsp_enabled_table+=("ccls")
@@ -154,16 +154,16 @@ get_conf_table() {
       for_enabled_table=()
       while read -r val; do
         for_enabled_table+=("$val")
-      done < <(NVIM_APPNAME="lazyman/Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
+      done < <(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
       while read -r val; do
         for_enabled_table+=("$val")
-      done < <(NVIM_APPNAME="lazyman/Lazyman" nvim -l ${GET_CONF} "external_formatters" 2>&1)
+      done < <(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} "external_formatters" 2>&1)
     else
       if [ "${confname}" == "neorg_notes" ]; then
         neorg_notes_table=()
         while read -r val; do
           neorg_notes_table+=("$val")
-        done < <(NVIM_APPNAME="lazyman/Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
+        done < <(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
       fi
     fi
   fi
@@ -171,7 +171,7 @@ get_conf_table() {
 
 get_conf_value() {
   confname="$1"
-  confval=$(NVIM_APPNAME="lazyman/Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
+  confval=$(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
   echo "${confval}"
 }
 
@@ -476,12 +476,12 @@ select_theme_style() {
             break 2
             ;;
           "Main Menu"*,* | *,"Main Menu"* | "m",* | *,"m")
-            [ "${pluginit}" ] && lazyman -N Lazyman init
+            [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
             mainmenu=1
             break 2
             ;;
           "Quit"*,* | *,"Quit"* | "quit"*,* | *,"quit"* | "q",* | *,"q")
-            [ "${pluginit}" ] && lazyman -N Lazyman init
+            [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
             printf "\nExiting Lazyman Configuration Menu System\n\n"
             exit 3
             ;;
@@ -613,12 +613,12 @@ select_theme() {
             break 2
             ;;
           "Main Menu"*,* | *,"Main Menu"* | "m",* | *,"m")
-            [ "${pluginit}" ] && lazyman -N Lazyman init
+            [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
             mainmenu=1
             break 2
             ;;
           "Quit"*,* | *,"Quit"* | "quit"*,* | *,"quit"* | "q",* | *,"q")
-            [ "${pluginit}" ] && lazyman -N Lazyman init
+            [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
             printf "\nExiting Lazyman Configuration Menu System\n\n"
             exit 3
             ;;
@@ -641,7 +641,7 @@ show_plug_help() {
   printf "\nEnabled plugins and plugin configurations are indicated with a []"
   printf "\nDisabled plugins and plugin configurations are indicated with a [✗]\n"
   printf "\nSettings in this menu only effect the Lazyman Neovim configuration in:"
-  printf "\n\t${HOME}/.config/lazyman/Lazyman\n"
+  printf "\n\t${HOME}/.config/nvim-Lazyman\n"
   prompt_continue
 }
 
@@ -663,7 +663,7 @@ show_plugin_menu() {
     [ "$debug" ] || tput reset
     if [ "${have_rich}" ]; then
       rich "[b cyan]Lazyman Plugins Configuration Menu[/]" -p -a rounded -c -C
-      rich "[b green]Manage the Neovim plugins enabled in[/] [b yellow]~/.config/lazyman/Lazyman[/]" -p -c
+      rich "[b green]Manage the Neovim plugins enabled in[/] [b yellow]~/.config/nvim-Lazyman[/]" -p -c
     else
       [ "${have_figlet}" ] && show_figlet "Plugins"
     fi
@@ -1779,9 +1779,9 @@ show_plugin_menu() {
           ;;
         "Open Lazyman",* | *,"Open Lazyman" | "o",* | *,"o")
           if [ "${USEGUI}" ]; then
-            NVIM_APPNAME="lazyman/Lazyman" neovide
+            NVIM_APPNAME="nvim-Lazyman" neovide
           else
-            NVIM_APPNAME="lazyman/Lazyman" nvim
+            NVIM_APPNAME="nvim-Lazyman" nvim
           fi
           break
           ;;
@@ -1798,12 +1798,12 @@ show_plugin_menu() {
           break 2
           ;;
         "Main Menu"*,* | *,"Main Menu"* | "m",* | *,"m")
-          [ "${pluginit}" ] && lazyman -N Lazyman init
+          [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           mainmenu=1
           break 2
           ;;
         "Quit"*,* | *,"Quit"* | "quit"*,* | *,"quit"* | "q",* | *,"q")
-          [ "${pluginit}" ] && lazyman -N Lazyman init
+          [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           printf "\nExiting Lazyman Configuration Menu System\n\n"
           exit 3
           ;;
@@ -1838,7 +1838,7 @@ show_lsp_help() {
   printf "\ncompletion, syntax highlighting and marking of warnings and errors,"
   printf "\nas well as refactoring routines.\n"
   printf "\nSettings in this menu only effect the Lazyman Neovim configuration in:"
-  printf "\n\t${HOME}/.config/lazyman/Lazyman\n"
+  printf "\n\t${HOME}/.config/nvim-Lazyman\n"
   prompt_continue
 }
 
@@ -1861,7 +1861,7 @@ show_lsp_menu() {
     [ "$debug" ] || tput reset
     if [ "${have_rich}" ]; then
       rich "[cyan]Lazyman LSP Servers Menu[/cyan]" -p -a rounded -c -C
-      rich "[b green]Enable/Disable LSP servers used by[/] [b yellow]~/.config/lazyman/Lazyman[/]" -p -c
+      rich "[b green]Enable/Disable LSP servers used by[/] [b yellow]~/.config/nvim-Lazyman[/]" -p -c
     else
       [ "${have_figlet}" ] && show_figlet "LSP Menu"
     fi
@@ -1926,12 +1926,12 @@ show_lsp_menu() {
           break 2
           ;;
         "Main Menu"*,* | *,"Main Menu"* | "m",* | *,"m")
-          [ "${pluginit}" ] && lazyman -N Lazyman init
+          [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           mainmenu=1
           break 2
           ;;
         "Quit"*,* | *,"Quit"* | "quit"*,* | *,"quit"* | "q",* | *,"q")
-          [ "${pluginit}" ] && lazyman -N Lazyman init
+          [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           printf "\nExiting Lazyman Configuration Menu System\n\n"
           exit 3
           ;;
@@ -1973,7 +1973,7 @@ show_form_help() {
   printf "\nThese tools perform code formatting, static code analysis, and flag"
   printf "\nprogramming errors, bugs, stylistic errors and suspicious constructs.\n"
   printf "\nSettings in this menu only effect the Lazyman Neovim configuration in:"
-  printf "\n\t${HOME}/.config/lazyman/Lazyman\n"
+  printf "\n\t${HOME}/.config/nvim-Lazyman\n"
   prompt_continue
 }
 
@@ -1996,7 +1996,7 @@ show_formlint_menu() {
     [ "$debug" ] || tput reset
     if [ "${have_rich}" ]; then
       rich "[cyan]Lazyman Formatters and Linters Menu[/cyan]" -p -a rounded -c -C
-      rich "[b green]Enable/Disable formatters and linters used by[/] [b yellow]~/.config/lazyman/Lazyman[/]" -p -c
+      rich "[b green]Enable/Disable formatters and linters used by[/] [b yellow]~/.config/nvim-Lazyman[/]" -p -c
     else
       [ "${have_figlet}" ] && show_figlet "Formatters"
     fi
@@ -2061,12 +2061,12 @@ show_formlint_menu() {
           break 2
           ;;
         "Main Menu"*,* | *,"Main Menu"* | "m",* | *,"m")
-          [ "${pluginit}" ] && lazyman -N Lazyman init
+          [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           mainmenu=1
           break 2
           ;;
         "Quit"*,* | *,"Quit"* | "quit"*,* | *,"quit"* | "q",* | *,"q")
-          [ "${pluginit}" ] && lazyman -N Lazyman init
+          [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           printf "\nExiting Lazyman Configuration Menu System\n\n"
           exit 3
           ;;
@@ -2116,7 +2116,7 @@ show_conf_menu() {
     [ "$debug" ] || tput reset
     if [ "${have_rich}" ]; then
       rich "[b cyan]Lazyman Configuration Menu[/]" -p -a rounded -c -C
-      rich "[b green]Manage the Neovim configuration in[/] [b yellow]~/.config/lazyman/Lazyman[/]" -p -c
+      rich "[b green]Manage the Neovim configuration in[/] [b yellow]~/.config/nvim-Lazyman[/]" -p -c
     else
       [ "${have_figlet}" ] && show_figlet "Config"
     fi
@@ -2245,10 +2245,10 @@ show_conf_menu() {
     options+=("Formatters")
     options+=("LSP Servers")
     options+=("Plugins Menu")
-    [ -f ${HOME}/.config/lazyman/LazyIde/lua/configuration.lua ] && {
+    [ -f ${HOME}/.config/nvim-LazyIde/lua/configuration.lua ] && {
       options+=("LazyIde Config")
     }
-    [ -f ${HOME}/.config/lazyman/Webdev/lua/configuration.lua ] && {
+    [ -f ${HOME}/.config/nvim-Webdev/lua/configuration.lua ] && {
       options+=("Webdev Config")
     }
     options+=("Main Menu")
@@ -2523,9 +2523,9 @@ show_conf_menu() {
           ;;
         "Open Lazyman",* | *,"Open Lazyman" | "o",* | *,"o")
           if [ "${USEGUI}" ]; then
-            NVIM_APPNAME="lazyman/Lazyman" neovide
+            NVIM_APPNAME="nvim-Lazyman" neovide
           else
-            NVIM_APPNAME="lazyman/Lazyman" nvim
+            NVIM_APPNAME="nvim-Lazyman" nvim
           fi
           break
           ;;
@@ -2542,7 +2542,7 @@ show_conf_menu() {
           break 2
           ;;
         "LazyIde Config",* | *,"LazyIde Config" | "L",* | *,"L")
-          if [ -f ${HOME}/.config/lazyman/LazyIde/lua/configuration.lua ]
+          if [ -f ${HOME}/.config/nvim-LazyIde/lua/configuration.lua ]
           then
             lidemenu=1
             break 2
@@ -2551,7 +2551,7 @@ show_conf_menu() {
           fi
           ;;
         "Webdev Config",* | *,"Webdev Config" | "W",* | *,"W")
-          if [ -f ${HOME}/.config/lazyman/Webdev/lua/configuration.lua ]
+          if [ -f ${HOME}/.config/nvim-Webdev/lua/configuration.lua ]
           then
             wdevmenu=1
             break 2
@@ -2560,12 +2560,12 @@ show_conf_menu() {
           fi
           ;;
         "Main Menu"*,* | *,"Main Menu"* | "m",* | *,"m")
-          [ "${pluginit}" ] && lazyman -N Lazyman init
+          [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           mainmenu=1
           break 2
           ;;
         "Quit"*,* | *,"Quit"* | "quit"*,* | *,"quit"* | "q",* | *,"q")
-          [ "${pluginit}" ] && lazyman -N Lazyman init
+          [ "${pluginit}" ] && lazyman -N nvim-Lazyman init
           printf "\nExiting Lazyman Configuration Menu System\n\n"
           exit 3
           ;;
@@ -2736,8 +2736,8 @@ set_haves
 }
 
 # Source the Lazyman shell initialization for aliases and nvims selector
-# shellcheck source=~/.config/lazyman/Lazyman/.lazymanrc
-[ -f ~/.config/lazyman/Lazyman/.lazymanrc ] && source ~/.config/lazyman/Lazyman/.lazymanrc
+# shellcheck source=~/.config/nvim-Lazyman/.lazymanrc
+[ -f ~/.config/nvim-Lazyman/.lazymanrc ] && source ~/.config/nvim-Lazyman/.lazymanrc
 
 if [ "$menu" ]; then
   if [ "$menu" == "confmenu" ]; then

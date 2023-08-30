@@ -13,7 +13,7 @@ Single file lightweight configuration focused on providing basic features
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/Extralight`**
+- Installation location:  **`~/.config/nvim-Extralight`**
 
 
 ### Git repository

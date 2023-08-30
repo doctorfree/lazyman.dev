@@ -13,7 +13,7 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 - Configuration category: [Base](https://lazyman.dev/configurations/#base-configurations)
 - Base configuration:     [LazyVim](https://lazyvim.github.io){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/LazyVim`**
+- Installation location:  **`~/.config/nvim-LazyVim`**
 
 
 ### Git repository

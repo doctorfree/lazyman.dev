@@ -13,7 +13,7 @@ LunarVim config based on [Christian Chiarulli's](https://github.com/ChristianChi
 - Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     [LunarVim](https://www.lunarvim.org){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/LunarIde`**
+- Installation location:  **`~/.config/nvim-LunarIde`**
 
 
 ### Git repository

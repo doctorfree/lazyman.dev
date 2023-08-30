@@ -19,15 +19,15 @@ tables of keymaps defined by each configuration.
 #!/usr/bin/env bash
 #
 # Mapping modes:
-# n	Normal
-# v	Visual and Select
-# s	Select
-# x	Visual
-# o	Operator-pending
-# i	Insert
-# l	":lmap" mappings for Insert, Command-line and Lang-Arg
-# c	Command-line
-# t	Terminal-Job
+# n Normal
+# v Visual and Select
+# s Select
+# x Visual
+# o Operator-pending
+# i Insert
+# l ":lmap" mappings for Insert, Command-line and Lang-Arg
+# c Command-line
+# t Terminal-Job
 
 debug=
 [ "$1" == "-d" ] && {
@@ -37,9 +37,9 @@ debug=
 CFNAME="$1"
 OUT="$2"
 
-if [ -d "${HOME}/.config/lazyman/${CFNAME}" ]
+if [ -d "${HOME}/.config/nvim-${CFNAME}" ]
 then
-  export NVIM_APPNAME="lazyman/${CFNAME}"
+  export NVIM_APPNAME="nvim-${CFNAME}"
 else
   if [ -d "${HOME}/.config/${CFNAME}" ]
   then
@@ -48,7 +48,7 @@ else
     exit 1
   fi
 fi
-KEYTMP="${HOME}/.config/lazyman/Lazyman/tmp"
+KEYTMP="${HOME}/.config/nvim-Lazyman/tmp"
 OUTDIR=$(dirname "${OUT}")
 
 [ -d "${KEYTMP}" ] || mkdir -p "${KEYTMP}"

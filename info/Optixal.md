@@ -13,7 +13,7 @@ Hybrid Neovim config for developers with a functional yet aesthetic experience. 
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Plug](https://github.com/junegunn/vim-plug){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/Optixal`**
+- Installation location:  **`~/.config/nvim-Optixal`**
 
 
 ### Git repository
@@ -106,7 +106,7 @@ Hybrid Neovim config for developers with a functional yet aesthetic experience. 
 |  | ,h | :RainbowParentheses!!<CR> |
 |  | ,a | gaip* |
 |  | ,t | :call TrimWhitespace()<CR> |
-|  | ,r | :so ~/.config/lazyman/Optixal/init.vim<CR> |
+|  | ,r | :so ~/.config/nvim-Optixal/init.vim<CR> |
 |  | ,q | :NvimTreeFindFileToggle<CR> |
 |  | H | context#util#map_H() |
 | Nvim builtin | Y | y$ |

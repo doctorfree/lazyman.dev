@@ -13,7 +13,7 @@ Neovim Go development environment that does not touch standard Neovim configurat
 - Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/Go2one`**
+- Installation location:  **`~/.config/nvim-Go2one`**
 
 
 ### Git repository

@@ -13,7 +13,7 @@ Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8){:target="_blank"}
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/Josean`**
+- Installation location:  **`~/.config/nvim-Josean`**
 
 
 ### Git repository

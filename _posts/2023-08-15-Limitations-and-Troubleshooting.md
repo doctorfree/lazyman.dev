@@ -25,7 +25,7 @@ If the initialization process takes more than a few minutes it can be terminated
 with `Ctrl-c`. After termination the configuration can be manually initialized:
 
 ```bash
-NVIM_APPNAME="lazyman/<nvim dir>" nvim
+NVIM_APPNAME="<nvim dir>" nvim
 ```
 
 ### External Configuration Dependencies
@@ -65,7 +65,7 @@ of the `lazyman` menu system will not take effect until a restart of Neovim.
 
 An update of the Lazyman configuration and `lazyman` command can be performed
 with the command `lazyman -U`. However, early releases of Lazyman always
-preserve any existing `~/.config/lazyman/Lazyman/lua/configuration.lua`. Later
+preserve any existing `~/.config/nvim-Lazyman/lua/configuration.lua`. Later
 releases of Lazyman include a different format for this file. When updating
 from an older Lazyman release it may be necessary to run the update twice.
 
@@ -174,5 +174,5 @@ lazyman -d
 
 The `lazyman -d` command should run the `install_neovim` script in debug mode
 and any errors will be displayed. Alternatively, execute the Neovim install
-script directly with `$HOME/.config/lazyman/Lazyman/scripts/install_neovim.sh -d`
+script directly with `$HOME/.config/nvim-Lazyman/scripts/install_neovim.sh -d`
 and view the output for errors.

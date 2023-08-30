@@ -13,7 +13,7 @@ Bare bones LazyVim configuration by Traap with a [video introduction](https://yo
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     [LazyVim](https://lazyvim.github.io){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/Barebones`**
+- Installation location:  **`~/.config/nvim-Barebones`**
 
 
 ### Git repository

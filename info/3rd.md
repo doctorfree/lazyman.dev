@@ -13,7 +13,7 @@ Example [custom tree-sitter grammar](https://github.com/3rd/syslang){:target="_b
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/3rd`**
+- Installation location:  **`~/.config/nvim-3rd`**
 
 
 ### Git repository

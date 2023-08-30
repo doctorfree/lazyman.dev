@@ -9,7 +9,7 @@ post_style: page
 ## Lazyman Neovim Configuration Manager Usage
 
 The [lazyman.sh](https://lazyman.dev/info/lazyman_command.html) script is located in
-`~/.config/lazyman/Lazyman`. It installs itself as `$HOME/.local/bin/lazyman`.
+`~/.config/nvim-Lazyman`. It installs itself as `$HOME/.local/bin/lazyman`.
 If `$HOME/.local/bin` is in your execution `PATH` then `lazyman` can be executed
 from the command line as simply `lazyman`. The manual page can be viewed with
 `man lazyman`. Within Neovim the `Lazyman` help doc can be viewed with `:h Lazyman`.
@@ -81,7 +81,7 @@ Where:
     -A indicates install all supported Neovim configurations
     -a indicates install and initialize AstroNvimPlus Neovim configuration
     -B indicates install and initialize all 'Base' Neovim configurations
-    -b 'branch' specifies an lazyman/Lazyman git branch to checkout
+    -b 'branch' specifies an nvim-Lazyman git branch to checkout
     -c indicates install and initialize NvChad Neovim configuration
     -d indicates debug mode
     -D 'subdir' specifies the subdirectory of the repository to retrieve
@@ -161,7 +161,7 @@ Where:
     'status' displays a brief status report and exits
     'usage' displays this usage message and exits
 Commands act on NVIM_APPNAME, override with '-N nvimdir' or '-A'
-Without arguments lazyman installs and initializes lazyman/Lazyman
+Without arguments lazyman installs and initializes nvim-Lazyman
 or, if initialized, an interactive menu system is displayed.
 ```
 
@@ -212,7 +212,7 @@ Lazyman Neovim help can be viewed inside Neovim with `:h Lazyman`.
 ### Lazyman configuration
 
 The `Lazyman` Neovim configuration includes a top-level configuration file,
-`~/.config/lazyman/Lazyman/lua/configuration.lua`. This file can be use to enable,
+`~/.config/nvim-Lazyman/lua/configuration.lua`. This file can be use to enable,
 disable, and configure `Lazyman` components. For example, here is where you
 would configure whether `neo-tree` or `nvim-tree` is enabled as a file explorer.
 Or, disable the tabline, disable the statusline, set the colorscheme, theme, and

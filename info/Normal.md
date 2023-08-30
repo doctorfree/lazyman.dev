@@ -13,7 +13,7 @@ Based on AstroNvim with additional features
 - Configuration category: [Starter](https://lazyman.dev/configurations/#starter-configurations)
 - Base configuration:     [AstroNvim](https://astronvim.com){:target="_blank"}{:rel="noopener noreferrer"}
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/Normal`**
+- Installation location:  **`~/.config/nvim-Normal`**
 
 
 ### Git repository

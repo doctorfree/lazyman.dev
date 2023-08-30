@@ -40,7 +40,7 @@ configurations. One of these is the `nvims` shell function which dynamically
 creates a fuzzy searchable menu of installed Neovim configurations and launches
 Neovim with the selected Lazyman Neovim configuration.
 
-See `~/.config/lazyman/Lazyman/.lazymanrc`.
+See `~/.config/nvim-Lazyman/.lazymanrc`.
 
 Similarly, a `neovides` shell function can be used to select a Neovim
 configuration for use with the Neovim GUI `neovide`.
@@ -66,7 +66,7 @@ for the following Lazyman Neovim configurations:
 
 - [Lazyman Neovim configuration](https://lazyman.dev/info/Lazyman.html)
 - [LazyIde Neovim configuration](https://lazyman.dev/info/LazyIde.html)
-- [Webdev  Neovim configuration](https://lazyman.dev/info/Webdev.html)
+- [Webdev Neovim configuration](https://lazyman.dev/info/Webdev.html)
 
 To view the Lazyman Configuration Menu, select the `Lazyman Config` option
 from the main menu or execute the command:
@@ -108,8 +108,8 @@ interface uses this new feature to get the current Lazyman Neovim
 configuration with shell commands like:
 
 ```bash
-GET_CONF="${HOME}/.config/lazyman/Lazyman/scripts/get_conf.lua"
-confval=$(NVIM_APPNAME="lazyman/Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
+GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
+confval=$(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
 ```
 
 The `get_conf.lua` script can also be used to retrieve option or variable
@@ -117,8 +117,8 @@ settings in any Neovim configuration. For example, to retrieve the value of
 the 'mouse' option in the `Webdev` Neovim configuration:
 
 ```bash
-GET_CONF="${HOME}/.config/lazyman/Lazyman/scripts/get_conf.lua"
-NVIM_APPNAME="lazyman/Webdev" nvim -l ${GET_CONF} mouse
+GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
+NVIM_APPNAME="nvim-Webdev" nvim -l ${GET_CONF} mouse
 ```
 
 ## Lazyman source code
@@ -160,33 +160,33 @@ command invokes
 In addition to the menu configuration management, the following features
 are supported:
 
-- Package management and plugin configuration via [lazy.nvim](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- Package management and plugin configuration via [lazy.nvim](https://github.com/folke/lazy.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
 - Easily configure namespace, theme, active plugins, and their configuration via `configuration.lua`
 - Two supported namespaces, `free` and `onno`, to easily switch between two completely different configurations
-- Preconfigured themes: [catppuccin](https://github.com/catppuccin/nvim){:target="_blank"}{:rel="noopener noreferrer"}, [tokyonight](https://github.com/folke/tokyonight.nvim){:target="_blank"}{:rel="noopener noreferrer"}, [nightfox](https://github.com/EdenEast/nightfox.nvim){:target="_blank"}{:rel="noopener noreferrer"}, [tundra](https://github.com/sam4llis/nvim-tundra){:target="_blank"}{:rel="noopener noreferrer"}, [dracula](https://github.com/Mofiqul/dracula.nvim){:target="_blank"}{:rel="noopener noreferrer"}, [kanagawa](https://github.com/rebelot/kanagawa.nvim){:target="_blank"}{:rel="noopener noreferrer"}, [onedarkpro](https://github.com/olimorris/onedarkpro.nvim){:target="_blank"}{:rel="noopener noreferrer"}, [everforest](https://github.com/neanias/everforest-nvim){:target="_blank"}{:rel="noopener noreferrer"}, [monokai-pro](https://github.com/loctvl842/monokai-pro.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- Preconfigured themes: [catppuccin](https://github.com/catppuccin/nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [tokyonight](https://github.com/folke/tokyonight.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [nightfox](https://github.com/EdenEast/nightfox.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [tundra](https://github.com/sam4llis/nvim-tundra){:target="\_blank"}{:rel="noopener noreferrer"}, [dracula](https://github.com/Mofiqul/dracula.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [kanagawa](https://github.com/rebelot/kanagawa.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [onedarkpro](https://github.com/olimorris/onedarkpro.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [everforest](https://github.com/neanias/everforest-nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [monokai-pro](https://github.com/loctvl842/monokai-pro.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
   - Keymap to toggle transparency for several color schemes (`,ut`)
 - AI developer assistants:
-  - Support for [Github Copilot](https://github.com/features/copilot){:target="_blank"}{:rel="noopener noreferrer"} with completions
-  - Support for ChatGPT using [ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-    - Uses ChatGPT prompts from [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts){:target="_blank"}{:rel="noopener noreferrer"}
-  - Support for [Neoai](https://github.com/Bryley/neoai.nvim){:target="_blank"}{:rel="noopener noreferrer"} plugin for OpenAI's GPT-4
-- Auto-configure [codeexplain.nvim](https://github.com/mthbernardes/codeexplain.nvim){:target="_blank"}{:rel="noopener noreferrer"} (GPT4ALL) if the GPT model is found
+  - Support for [Github Copilot](https://github.com/features/copilot){:target="\_blank"}{:rel="noopener noreferrer"} with completions
+  - Support for ChatGPT using [ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
+    - Uses ChatGPT prompts from [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts){:target="\_blank"}{:rel="noopener noreferrer"}
+  - Support for [Neoai](https://github.com/Bryley/neoai.nvim){:target="\_blank"}{:rel="noopener noreferrer"} plugin for OpenAI's GPT-4
+- Auto-configure [codeexplain.nvim](https://github.com/mthbernardes/codeexplain.nvim){:target="\_blank"}{:rel="noopener noreferrer"} (GPT4ALL) if the GPT model is found
   - Lazyman menu provides auto-download and setup (requires Python 3.9 or greater)
   - This plugin is new and experimental. Unlike ChatGPT, it uses a self-hosted model and requires no API key or money
-- Custom Lazyman Cheat Sheets using [cheatsheet.nvim](https://github.com/sudormrfbin/cheatsheet.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- Custom Lazyman Cheat Sheets using [cheatsheet.nvim](https://github.com/sudormrfbin/cheatsheet.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
   - `:Cheatsheet` command, fuzzy search `lazyman` for custom Lazyman keymaps
-- Mnemonic keyboard mappings inspired by [Spacemacs](https://www.spacemacs.org/){:target="_blank"}{:rel="noopener noreferrer"} via [which-key.nvim](https://github.com/folke/which-key.nvim){:target="_blank"}{:rel="noopener noreferrer"}; no more than three keystrokes for each keybinding
-- Replace the UI for messages, cmdline and popup menu via [noice.nvim](https://github.com/folke/noice.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Fully featured status line via [lualine](https://github.com/nvim-lualine/lualine.nvim){:target="_blank"}{:rel="noopener noreferrer"} and [tabline](https://github.com/kdheepak/tabline.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Terminal integration via [nvim-toggleterm.lua](https://github.com/akinsho/nvim-toggleterm.lua){:target="_blank"}{:rel="noopener noreferrer"}
-- Terminal management via [terminal.nvim](https://github.com/rebelot/terminal.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- Mnemonic keyboard mappings inspired by [Spacemacs](https://www.spacemacs.org/){:target="\_blank"}{:rel="noopener noreferrer"} via [which-key.nvim](https://github.com/folke/which-key.nvim){:target="\_blank"}{:rel="noopener noreferrer"}; no more than three keystrokes for each keybinding
+- Replace the UI for messages, cmdline and popup menu via [noice.nvim](https://github.com/folke/noice.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
+- Fully featured status line via [lualine](https://github.com/nvim-lualine/lualine.nvim){:target="\_blank"}{:rel="noopener noreferrer"} and [tabline](https://github.com/kdheepak/tabline.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
+- Terminal integration via [nvim-toggleterm.lua](https://github.com/akinsho/nvim-toggleterm.lua){:target="\_blank"}{:rel="noopener noreferrer"}
+- Terminal management via [terminal.nvim](https://github.com/rebelot/terminal.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
   - Preconfigured Neovim terminal execution of `lazyman` command (`<leader>lm`)
   - Preconfigured Neovim terminal execution of `asciiville` command (`<leader>A`)
   - Preconfigured Neovim terminal execution of `htop` command (`<leader>H`)
-- Fancy notifications via [nvim-notify](https://github.com/rcarriga/nvim-notify){:target="_blank"}{:rel="noopener noreferrer"}
-- Code diagnostics via [LSP](https://github.com/neovim/nvim-lspconfig){:target="_blank"}{:rel="noopener noreferrer"}
-- Choice of preconfigured dashboard: [alpha](https://github.com/goolord/alpha-nvim){:target="_blank"}{:rel="noopener noreferrer"} (default), [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim){:target="_blank"}{:rel="noopener noreferrer"}, or [mini.starter](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-starter.md){:target="_blank"}{:rel="noopener noreferrer"}
-- Neovim games for fun and learning ([Sudoku](https://github.com/jim-fx/sudoku.nvim){:target="_blank"}{:rel="noopener noreferrer"}, [Blackjack](https://github.com/alanfortlink/blackjack.nvim){:target="_blank"}{:rel="noopener noreferrer"}, [vim-be-good](https://github.com/ThePrimeagen/vim-be-good){:target="_blank"}{:rel="noopener noreferrer"} practice basic movements, and more).
+- Fancy notifications via [nvim-notify](https://github.com/rcarriga/nvim-notify){:target="\_blank"}{:rel="noopener noreferrer"}
+- Code diagnostics via [LSP](https://github.com/neovim/nvim-lspconfig){:target="\_blank"}{:rel="noopener noreferrer"}
+- Choice of preconfigured dashboard: [alpha](https://github.com/goolord/alpha-nvim){:target="\_blank"}{:rel="noopener noreferrer"} (default), [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim){:target="\_blank"}{:rel="noopener noreferrer"}, or [mini.starter](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-starter.md){:target="\_blank"}{:rel="noopener noreferrer"}
+- Neovim games for fun and learning ([Sudoku](https://github.com/jim-fx/sudoku.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [Blackjack](https://github.com/alanfortlink/blackjack.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [vim-be-good](https://github.com/ThePrimeagen/vim-be-good){:target="\_blank"}{:rel="noopener noreferrer"} practice basic movements, and more).
   - Key map `<leader>G` (e.g. `,G`) displays the available games and amusements.
 - Github actions to publish docker image on Docker Hub, check spelling/syntax, and auto-generate vim help doc (see `.github/workflows/*.yml`)
 - Over 100 plugins with custom configuration and management via menu system
@@ -206,11 +206,11 @@ Neovim configuration.
   style="width:680px;height:610px;">
 </p></div>
 
-- [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim){:target="_blank"}{:rel="noopener noreferrer"} for all your search needs
-- Project management with [Project.nvim](https://github.com/ahmedkhalf/project.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- File tree navigation/manipulation via [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Better Tmux navigation with your home row via [Navigator.nvim](https://github.com/numToStr/Navigator.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Convenient jumping through windows with [nvim-window-picker](https://gitlab.com/s1n7ax/nvim-window-picker){:target="_blank"}{:rel="noopener noreferrer"}
+- [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim){:target="\_blank"}{:rel="noopener noreferrer"} for all your search needs
+- Project management with [Project.nvim](https://github.com/ahmedkhalf/project.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
+- File tree navigation/manipulation via [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
+- Better Tmux navigation with your home row via [Navigator.nvim](https://github.com/numToStr/Navigator.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
+- Convenient jumping through windows with [nvim-window-picker](https://gitlab.com/s1n7ax/nvim-window-picker){:target="\_blank"}{:rel="noopener noreferrer"}
 
 ### Coding
 
@@ -218,14 +218,14 @@ Neovim configuration.
   <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/diagnostics.png" style="width:800px;height:600px;">
 </p></div>
 
-- Auto completion powered by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp){:target="_blank"}{:rel="noopener noreferrer"}
-- Built-in LSP configured via [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig){:target="_blank"}{:rel="noopener noreferrer"}, [mason](https://github.com/williamboman/mason.nvim){:target="_blank"}{:rel="noopener noreferrer"}, and [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Debugging for Go and Python via [nvim-dap](https://github.com/mfussenegger/nvim-dap){:target="_blank"}{:rel="noopener noreferrer"} and friends
-- [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter){:target="_blank"}{:rel="noopener noreferrer"} and [Tresitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects){:target="_blank"}{:rel="noopener noreferrer"} for your syntax needs
-- Auto formatting via [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Excellent Go support via LSP and [go.nvim](https://github.com/ray-x/go.nvim){:target="_blank"}{:rel="noopener noreferrer"} including sensible keybindings
-- Always know where you are in your code via [nvim-navic](https://github.com/SmiteshP/nvim-navic){:target="_blank"}{:rel="noopener noreferrer"}
-- Git integration via [Neogit](https://github.com/TimUntersberger/neogit){:target="_blank"}{:rel="noopener noreferrer"} and [gitsigns](https://github.com/lewis6991/gitsigns.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Outlining symbols with [symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Snippets provided by [Luasnip](https://github.com/L3MON4D3/LuaSnip){:target="_blank"}{:rel="noopener noreferrer"} and [friendly snippets](https://github.com/rafamadriz/friendly-snippets){:target="_blank"}{:rel="noopener noreferrer"} with autocompletion
+- Auto completion powered by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp){:target="\_blank"}{:rel="noopener noreferrer"}
+- Built-in LSP configured via [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig){:target="\_blank"}{:rel="noopener noreferrer"}, [mason](https://github.com/williamboman/mason.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, and [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
+- Debugging for Go and Python via [nvim-dap](https://github.com/mfussenegger/nvim-dap){:target="\_blank"}{:rel="noopener noreferrer"} and friends
+- [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter){:target="\_blank"}{:rel="noopener noreferrer"} and [Tresitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects){:target="\_blank"}{:rel="noopener noreferrer"} for your syntax needs
+- Auto formatting via [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
+- Excellent Go support via LSP and [go.nvim](https://github.com/ray-x/go.nvim){:target="\_blank"}{:rel="noopener noreferrer"} including sensible keybindings
+- Always know where you are in your code via [nvim-navic](https://github.com/SmiteshP/nvim-navic){:target="\_blank"}{:rel="noopener noreferrer"}
+- Git integration via [Neogit](https://github.com/TimUntersberger/neogit){:target="\_blank"}{:rel="noopener noreferrer"} and [gitsigns](https://github.com/lewis6991/gitsigns.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
+- Outlining symbols with [symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
+- Snippets provided by [Luasnip](https://github.com/L3MON4D3/LuaSnip){:target="\_blank"}{:rel="noopener noreferrer"} and [friendly snippets](https://github.com/rafamadriz/friendly-snippets){:target="\_blank"}{:rel="noopener noreferrer"} with autocompletion
 - Auto-install and setup of dozens of language servers including: `ansiblels`, `astro`, `awk_ls`, `bashls`, `clangd`, `ccls`, `cmake`, `cssmodules_ls`, `denols`, `dockerls`, `eslint`, `gopls`, `graphql`, `html`, `jdtls`, `jsonls`, `julials`, `lua_ls`, `ltex`, `marksman`, `pylsp`, `pyright`, `rust_analyzer`, `sqlls`, `svelte`, `tailwindcss`, `taplo`, `texlab`, `tflint`, `tsserver`, `vimls`, `yamlls`

@@ -13,7 +13,7 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 - Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     Custom
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- Installation location:  **`~/.config/lazyman/LvimIde`**
+- Installation location:  **`~/.config/nvim-LvimIde`**
 
 
 ### Git repository
