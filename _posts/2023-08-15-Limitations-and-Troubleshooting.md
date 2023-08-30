@@ -15,7 +15,7 @@ Lazyman does not support automatic initialization of interactive configurations.
 If the initialization process is interactive, the auto initialization will hang.
 Some effort is made to detect an interactive initialization and avoid a hung
 process. For example, if the configuration includes the
-[WakaTime metrics plugin](https://github.com/wakatime/vim-wakatime) and no
+[WakaTime metrics plugin](https://github.com/wakatime/vim-wakatime){:target="\_blank"}{:rel="noopener noreferrer"} and no
 WakaTime configuration is detected then the user is prompted before continuing.
 Other configurations that prompt for an example config are handled by Lazyman
 but some custom configurations not yet supported by Lazyman may hang during
@@ -49,7 +49,7 @@ up as warnings when performing a `:checkhealth` and can be installed
 manually if needed. Some additional tools can be installed with `lazyman -I`.
 
 SSH users may need to install
-[lemonade](https://github.com/lemonade-command/lemonade)
+[lemonade](https://github.com/lemonade-command/lemonade){:target="\_blank"}{:rel="noopener noreferrer"}
 to support the clipboard over SSH.
 
 If `go` is not installed or incorrectly configured then the Mason installs
@@ -99,7 +99,7 @@ native package manager to install dependencies and tools. This is the default.
 The version of `luarocks` in the Ubuntu 20.04 default repositories is
 no longer supported. If `luarocks` is required then it can be installed
 manually by following the instructions in the
-[Luarocks documentation](https://luarocks.org/#quick-start). This is not
+[Luarocks documentation](https://luarocks.org/#quick-start){:target="\_blank"}{:rel="noopener noreferrer"}. This is not
 an issue when using Homebrew to install dependencies.
 
 The binary distribution of the `tree-sitter-cli` npm package depends on GLIBC
@@ -112,7 +112,7 @@ Due to limited resources, very little testing has been performed on Alpine
 Linux, SUSE Linux, or Void Linux. Support for these platforms
 was recently introduced and issues are expected. If you encounter a problem
 on these platforms please
-[open an issue](https://github.com/doctorfree/nvim-lazyman/issues).
+[open an issue](https://github.com/doctorfree/nvim-lazyman/issues){:target="\_blank"}{:rel="noopener noreferrer"}.
 
 ### Semantic token highlighting for types containing hyphens
 
@@ -151,9 +151,9 @@ initialization error, locate where in the configuration the Treesitter
 `help` parser is set (usually in the `ensure_installed` section of the
 Treesitter plugin configuration) and change `help` to `vimdoc`.
 
-See the [Neovim 0.9 release notes](https://github.com/neovim/neovim/releases/tag/v0.9.0)
+See the [Neovim 0.9 release notes](https://github.com/neovim/neovim/releases/tag/v0.9.0){:target="\_blank"}{:rel="noopener noreferrer"}
 for an overview of changes. In particular, many of these types of issues
-are detailed in the [news.txt for Neovim 0.9](https://github.com/neovim/neovim/blob/040f1459849ab05b04f6bb1e77b3def16b4c2f2b/runtime/doc/news.txt) (`:help news` within nvim).
+are detailed in the [news.txt for Neovim 0.9](https://github.com/neovim/neovim/blob/040f1459849ab05b04f6bb1e77b3def16b4c2f2b/runtime/doc/news.txt){:target="\_blank"}{:rel="noopener noreferrer"} (`:help news` within nvim).
 
 This is life on the bleeding edge. However, all of the supported Lazyman
 Neovim configurations and most of the Personal Neovim configurations supported
