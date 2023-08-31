@@ -73,10 +73,10 @@ The Lazyman Neovim configuration manager can also be used from the command line.
 ```
 Usage: lazyman [-A] [-a] [-B] [-b branch] [-c] [-d] [-E config] [-e]
    [-f path] [-F menu] [-g] [-i group] [-j] [-k] [-l] [-m] [-M] [-s]
-   [-S] [-v] [-n] [-o] [-O name] [-p] [-P] [-q] [-Q] [-h] [-H] [-I] [-J]
+   [-S] [-v] [-n] [-O name] [-p] [-P] [-q] [-Q] [-h] [-H] [-I] [-J]
    [-L lang] [-rR] [-C url] [-D subdir] [-N nvimdir] [-G] [-tT] [-U]
    [-V url] [-w conf] [-W] [-x conf] [-X] [-y] [-Y] [-z] [-Z] [-K conf] [-u]
-   [health] [info] [init] [install [bob]] [migrate] [open] [remove] [search] [status] [usage]
+   [health] [info] [init] [install [bob]] [open] [remove] [search] [status] [usage]
 Where:
     -A indicates install all supported Neovim configurations
     -a indicates install and initialize AstroNvimPlus Neovim configuration
@@ -103,7 +103,6 @@ Where:
     -l indicates install and initialize LazyVim Neovim configuration
     -m indicates install and initialize MagicVim Neovim configuration
     -M indicates install and initialize Mini Neovim configuration
-    -o indicates install and initialize penguinVim Neovim configuration
     -O 'name' indicates set Lazyman configuration to namespace 'name'
        'name' can be one of: free onno toggle
     -s indicates install and initialize SpaceVim Neovim configuration
@@ -154,7 +153,6 @@ Where:
     'init' initialize specified Neovim configuration and exit
     'install' fuzzy search and select configuration to install
     'install bob' install the Bob Neovim version manager
-    'migrate' move v3 or earlier installed configurations to v4 location
     'open' fuzzy search and select configuration to open
     'remove' fuzzy search and select configuration to remove
     'search' fuzzy search and select configurations for a plugin

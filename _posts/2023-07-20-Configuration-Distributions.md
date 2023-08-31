@@ -130,7 +130,6 @@ Distinguishing features of the top Neovim configuration distributions:
   - Install all Lazyman LazyVim configurations with `lazyman -i lazyvim -y`
   - Lazyman LazyVim configurations
     - `~/.config/nvim-LazyVim` install with `lazyman -l`
-    - `~/.config/nvim-Penguin` install with `lazyman -o`
     - `~/.config/nvim-CatNvim` install with `lazyman -L CatNvim`
     - `~/.config/nvim-Elijah` install with `lazyman -w Elijah`
     - `~/.config/nvim-JustinNvim` install with `lazyman -w JustinNvim`

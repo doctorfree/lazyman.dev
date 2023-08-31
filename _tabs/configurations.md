@@ -75,9 +75,6 @@ All "Base" Neovim configurations can be installed and initialized with `lazyman 
   - Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom){:target="\_blank"}{:rel="noopener noreferrer"}
   - Good [introductory video](https://youtu.be/Mtgo-nP_r8Y){:target="\_blank"}{:rel="noopener noreferrer"} to NvChad
   - Install and initialize with `lazyman -c`
-- [penguinVim](https://lazyman.dev/info/Penguin.html)
-  - Aims to provide a base configuration with beautiful UI and fast startup time
-  - Install and initialize with `lazyman -o`
 - [SpaceVim](https://lazyman.dev/info/SpaceVim.html)
   - SpaceVim started in December 2016, mature and well supported
   - Standard SpaceVim install uses `curl`:

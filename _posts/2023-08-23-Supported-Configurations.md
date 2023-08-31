@@ -31,7 +31,7 @@ additional Lazyman supported Neovim configurations' details.
 | [Minimal](https://lazyman.dev/info/Minimal.html)       |     [Modern](https://lazyman.dev/info/Modern.html)     |       [Modular](https://lazyman.dev/info/Modular.html)       |         [Normal](https://lazyman.dev/info/Normal.html)         |         [NV-IDE](https://lazyman.dev/info/NV-IDE.html) |
 | [Nv](https://lazyman.dev/info/Nv.html)                 |     [NvChad](https://lazyman.dev/info/NvChad.html)     |         [NvPak](https://lazyman.dev/info/NvPak.html)         |        [OnMyWay](https://lazyman.dev/info/OnMyWay.html)        |             [ONNO](https://lazyman.dev/info/ONNO.html) |
 | [Opinion](https://lazyman.dev/info/Opinion.html)       |    [Optixal](https://lazyman.dev/info/Optixal.html)    |        [Orange](https://lazyman.dev/info/Orange.html)        |          [Orhun](https://lazyman.dev/info/Orhun.html)          |               [pde](https://lazyman.dev/info/pde.html) |
-| [Penguin](https://lazyman.dev/info/Penguin.html)       |  [Primeagen](https://lazyman.dev/info/Primeagen.html)  |        [Python](https://lazyman.dev/info/Python.html)        |           [Rafi](https://lazyman.dev/info/Rafi.html)           |           [Rohit](https://lazyman.dev/info/Rohit.html) |
+| |  [Primeagen](https://lazyman.dev/info/Primeagen.html)  |        [Python](https://lazyman.dev/info/Python.html)        |           [Rafi](https://lazyman.dev/info/Rafi.html)           |           [Rohit](https://lazyman.dev/info/Rohit.html) |
 | [Roiz](https://lazyman.dev/info/Roiz.html)             |       [Rust](https://lazyman.dev/info/Rust.html)       |       [SaleVim](https://lazyman.dev/info/SaleVim.html)       |        [Scratch](https://lazyman.dev/info/Scratch.html)        |         [Shuvro](https://lazyman.dev/info/Shuvro.html) |
 | [Simple](https://lazyman.dev/info/Simple.html)         | [SingleFile](https://lazyman.dev/info/SingleFile.html) |    [Slydragonn](https://lazyman.dev/info/Slydragonn.html)    |       [SpaceVim](https://lazyman.dev/info/SpaceVim.html)       |         [Spider](https://lazyman.dev/info/Spider.html) |
 | [StartBase](https://lazyman.dev/info/StartBase.html)   |   [StartLsp](https://lazyman.dev/info/StartLsp.html)   |    [StartMason](https://lazyman.dev/info/StartMason.html)    |          [Traap](https://lazyman.dev/info/Traap.html)          |         [Webdev](https://lazyman.dev/info/Webdev.html) |
@@ -106,9 +106,6 @@ All "Base" Neovim configurations can be installed and initialized with `lazyman 
   - Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom){:target="\_blank"}{:rel="noopener noreferrer"}
   - Good [introductory video](https://youtu.be/Mtgo-nP_r8Y){:target="\_blank"}{:rel="noopener noreferrer"} to NvChad
   - Install and initialize with `lazyman -c`
-- [penguinVim](https://lazyman.dev/info/Penguin.html)
-  - Aims to provide a base configuration with beautiful UI and fast startup time
-  - Install and initialize with `lazyman -o`
 - [SpaceVim](https://lazyman.dev/info/SpaceVim.html)
   - SpaceVim started in December 2016, mature and well supported
   - Standard SpaceVim install uses `curl`:
