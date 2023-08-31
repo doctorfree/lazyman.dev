@@ -457,18 +457,18 @@ init_neovim() {
       if [ "${packer}" ]; then
         xtimeout ${timeout} nvim --headless \
           -c 'autocmd User PackerComplete quitall' \
-          -c 'PackerSync' >${LOG} 2>&1
+          -c 'PackerSync' >>${LOG} 2>&1
       else
         if [ "${plug}" ]; then
           xtimeout ${timeout} nvim --headless -c \
-            'set nomore' -c 'PlugInstall!' -c 'qa' >${LOG} 2>&1
+            'set nomore' -c 'PlugInstall!' -c 'qa' >>${LOG} 2>&1
           xtimeout ${timeout} nvim --headless -c \
             'set nomore' -c 'UpdateRemotePlugins' -c 'qa' >>${LOG} 2>&1
           xtimeout ${timeout} nvim --headless -c \
             'set nomore' -c 'GoInstallBinaries' -c 'qa' >>${LOG} 2>&1
         else
           if [ "${neodir}" == "${spacevimdir}" ]; then
-            xtimeout ${timeout} nvim --headless "+SPInstall" +qa >${LOG} 2>&1
+            xtimeout ${timeout} nvim --headless "+SPInstall" +qa >>${LOG} 2>&1
             xtimeout ${timeout} nvim --headless "+UpdateRemotePlugins" +qa >>${LOG} 2>&1
           else
             [ "${neodir}" == "${lunarvimdir}" ] ||
@@ -484,7 +484,7 @@ init_neovim() {
               export LUNARVIM_BASE_DIR="${HOME}/.config/${NVIM_APPNAME}"
             }
             if [ "${treesitter}" ]; then
-              xtimeout ${timeout} nvim --headless '+TSUpdate' +qa >${LOG} 2>&1
+              xtimeout ${timeout} nvim --headless '+TSUpdate' +qa >>${LOG} 2>&1
             else
               [ "${neodir}" == "${minivimdir}" ] || {
                 [ "${neodir}" == "nvim-Nyoom" ] || {
@@ -688,7 +688,7 @@ remove_config() {
   }
 
   [ "$remove_lazyman" ] && {
-    [ "$tellme" ] || lazyman -R -A -y -q
+    [ "$tellme" ] || lazyman -R -A -y -q > /dev/null 2>&1
   }
 
   if [ "${ndir}" == "${spacevimdir}" ]; then
