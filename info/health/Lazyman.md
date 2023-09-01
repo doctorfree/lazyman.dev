@@ -7,29 +7,35 @@ post_style: page
 
 # nvim-Lazyman Neovim health check
 
-==============================================================================
+---
+
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
+
 - OK Git installed
 - OK no existing packages found by other package managers
 - OK packer_compiled.lua not found
 
-==============================================================================
+---
+
 mason: require("mason.health").check()
 
 mason.nvim ~
+
 - OK mason.nvim version v1.7.0
 - OK PATH: prepend
-- OK Providers: 
+- OK Providers:
   mason.providers.registry-api
   mason.providers.client
 - OK neovim version >= 0.7.0
 
 mason.nvim [Registries] ~
+
 - OK Registry `github.com/mason-org/mason-registry version: 2023-09-01-roman-brace` is installed.
 
 mason.nvim [Core utils] ~
+
 - OK unzip: `UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.`
 - OK wget: `GNU Wget 1.21.2 built on linux-gnu.`
 - OK curl: `curl 7.81.0 (x86_64-pc-linux-gnu) libcurl/7.81.0 OpenSSL/3.0.2 zlib/1.2.11 brotli/1.0.9 zstd/1.4.8 libidn2/2.3.2 libpsl/0.21.0 (+libidn2/2.3.2) libssh/0.9.6/openssl/zlib nghttp2/1.43.0 librtmp/2.3 OpenLDAP/2.5.16`
@@ -39,6 +45,7 @@ mason.nvim [Core utils] ~
 - OK sh: `Ok`
 
 mason.nvim [Languages] ~
+
 - OK Go: `go version go1.20.3 linux/amd64`
 - OK Ruby: `ruby 3.0.2p107 (2021-07-07 revision 0db68f0233) [x86_64-linux-gnu]`
 - OK PHP: `PHP 8.1.2-1ubuntu2.14 (cli) (built: Aug 18 2023 11:41:11) (NTS)`
@@ -60,9 +67,11 @@ mason.nvim [Languages] ~
 - OK python venv: `Ok`
 
 mason.nvim [GitHub] ~
+
 - OK GitHub API rate limit. Used: 20. Remaining: 4980. Limit: 5000. Reset: Fri 01 Sep 2023 12:37:11 PM PDT.
 
-==============================================================================
+---
+
 null-ls: require("null-ls.health").check()
 
 - OK gitsigns: the source "gitsigns" can be ran.
@@ -77,30 +86,38 @@ null-ls: require("null-ls.health").check()
 - OK gofumpt: the command "gofumpt" is executable.
 - OK golines: the command "golines" is executable.
 
-==============================================================================
+---
+
 nvim: require("nvim.health").check()
 
 Configuration ~
+
 - OK no issues found
 
 Runtime ~
+
 - OK $VIMRUNTIME: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/share/nvim/runtime
 
 Performance ~
+
 - OK Build type: Release
 
 Remote Plugins ~
+
 - OK Up to date
 
 terminal ~
+
 - key_backspace (kbs) terminfo entry: `key_backspace=\177`
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+---
+
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
+
 - OK `tree-sitter` found 0.20.8 (d4c1bf7ce78051b7f4a381d1508d68928512ed5f) (parser generator, only needed for :TSInstallFromGrammar)
 - OK `node` found v18.16.0 (only needed for :TSInstallFromGrammar)
 - OK `git` executable found.
@@ -110,34 +127,38 @@ Installation ~
 
 OS Info:
 {
-  machine = "x86_64",
-  release = "6.2.0-26-generic",
-  sysname = "Linux",
-  version = "#26~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Jul 13 16:27:29 UTC 2"
+machine = "x86_64",
+release = "6.2.0-26-generic",
+sysname = "Linux",
+version = "#26~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Jul 13 16:27:29 UTC 2"
 } ~
 
-Parser/Features         H L F I J
-  - bash                ✓ ✓ ✓ . ✓
-  - c                   ✓ ✓ ✓ ✓ ✓
-  - lua                 ✓ ✓ ✓ ✓ ✓
-  - markdown            ✓ . ✓ ✓ ✓
-  - markdown_inline     ✓ . . . ✓
-  - query               ✓ ✓ ✓ ✓ ✓
-  - regex               ✓ . . . .
-  - vim                 ✓ ✓ ✓ . ✓
-  - vimdoc              ✓ . . . ✓
+Parser/Features H L F I J
 
-  Legend: H[ighlight], L[ocals], F[olds], I[ndents], In[j]ections
-         +) multiple parsers found, only one will be used
-         x) errors found in the query, try to run :TSUpdate {lang} ~
+- bash ✓ ✓ ✓ . ✓
+- c ✓ ✓ ✓ ✓ ✓
+- lua ✓ ✓ ✓ ✓ ✓
+- markdown ✓ . ✓ ✓ ✓
+- markdown_inline ✓ . . . ✓
+- query ✓ ✓ ✓ ✓ ✓
+- regex ✓ . . . .
+- vim ✓ ✓ ✓ . ✓
+- vimdoc ✓ . . . ✓
 
-==============================================================================
+Legend: H[ighlight], L[ocals], F[olds], I[ndents], In[j]ections
++) multiple parsers found, only one will be used
+x) errors found in the query, try to run :TSUpdate {lang} ~
+
+---
+
 provider: health#provider#check
 
 Clipboard (optional) ~
+
 - OK Clipboard tool found: lemonade
 
 Python 3 provider (optional) ~
+
 - Using: g:python3_host_prog = "/usr/bin/python3"
 - Executable: /usr/bin/python3
 - Python version: 3.10.12
@@ -145,22 +166,27 @@ Python 3 provider (optional) ~
 - OK Latest pynvim is installed.
 
 Python virtualenv ~
+
 - OK no $VIRTUAL_ENV
 
 Ruby provider (optional) ~
+
 - Ruby: ruby 3.0.2p107 (2021-07-07 revision 0db68f0233) [x86_64-linux-gnu]
 - Host: /home/ronnie/.local/share/gem/ruby/3.0.0/bin/neovim-ruby-host
 - OK Latest "neovim" gem is installed: 0.9.1
 
 Node.js provider (optional) ~
+
 - Node.js: v18.16.0
 - Nvim node.js host: /home/ronnie/.local/lib/node_modules/neovim/bin/cli.js
 - OK Latest "neovim" npm/yarn/pnpm package is installed: 4.10.1
 
 Perl provider (optional) ~
+
 - Disabled (g:loaded_perl_provider=0).
 
-==============================================================================
+---
+
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -168,24 +194,25 @@ vim.lsp: require("vim.lsp.health").check()
 - Log size: 8 KB
 
 vim.lsp: Active Clients ~
+
 - null-ls (id=2, root_dir=/home/ronnie/.config/nvim-Lazyman)
 
-==============================================================================
+---
+
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14
-- OK Parser: bash       ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/bash.so
-- OK Parser: c          ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/c.so
-- OK Parser: lua        ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/lua.so
-- OK Parser: markdown   ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/markdown.so
+- OK Parser: bash ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/bash.so
+- OK Parser: c ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/c.so
+- OK Parser: lua ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/lua.so
+- OK Parser: markdown ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/markdown.so
 - OK Parser: markdown_inline ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/markdown_inline.so
-- OK Parser: query      ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/query.so
-- OK Parser: regex      ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/regex.so
-- OK Parser: vim        ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/vim.so
-- OK Parser: vimdoc     ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/vimdoc.so
-- OK Parser: c          ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/c.so
-- OK Parser: lua        ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/lua.so
-- OK Parser: query      ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/query.so
-- OK Parser: vim        ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vim.so
-- OK Parser: vimdoc     ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vimdoc.so
-
+- OK Parser: query ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/query.so
+- OK Parser: regex ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/regex.so
+- OK Parser: vim ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/vim.so
+- OK Parser: vimdoc ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/vimdoc.so
+- OK Parser: c ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/c.so
+- OK Parser: lua ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/lua.so
+- OK Parser: query ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/query.so
+- OK Parser: vim ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vim.so
+- OK Parser: vimdoc ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vimdoc.so
