@@ -134,11 +134,11 @@ Where:
     -V 'url' specifies an NvChad user configuration git repository
     -w 'conf' indicates install and initialize Personal 'conf' config
        'conf' can be one of:
-           All Adib Artur Beethoven Brain Charles Craftzdog Daniel Dillon Elianiva Elijah Enrique Kristijan Heiker J4de Josean JustinLvim JustinNvim Kodo LamarVim Lukas LvimAdib Maddison Metis Mini ONNO OnMyWay Optixal Orhun Primeagen Rafi Roiz Simple Slydragonn Spider Traap Wuelner xero Xiao
+           All Adib Artur Beethoven Brain CandyVim Charles Craftzdog Daniel Dillon Elianiva Elijah Enrique Kristijan Heiker J4de Josean JustinLvim JustinNvim Kodo LamarVim Lukas LvimAdib Maddison Metis Mini ONNO OnMyWay Optixal Orhun Primeagen Rafi Roiz Simple Slydragonn Spider Traap Wuelner xero Xiao
     -W indicates install and initialize all 'Personal' Neovim configurations
     -x 'conf' indicates install and initialize nvim-starter 'conf' config
        'conf' can be one of:
-           All 2k AstroNvimStart Barebones Basic CodeArt Cosmic Ember Fennel HardHacker JustinOhMy Kabin Kickstart Lamia Micah Normal NvPak Modern pde Rohit Scratch SingleFile BasicLsp BasicMason Extralight LspCmp Minimal StartBase Opinion StartLsp StartMason Modular
+           All 2k AstroNvimStart Barebones Basic CodeArt Cosmic Ember Fennel HardHacker JustinOhMy Kabin Kickstart Micah Normal NvPak Modern pde Rohit Scratch SingleFile BasicLsp BasicMason Extralight LspCmp Minimal StartBase Opinion StartLsp StartMason Modular
     -X indicates install and initialize all 'Starter' configs
     -y indicates do not prompt, answer 'yes' to any prompt
     -Y indicates use the following arguments as 'name'/'value' to set Lazyman config

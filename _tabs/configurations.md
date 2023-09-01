@@ -212,6 +212,9 @@ installed with the `-w conf` option.
 - [Brain](https://lazyman.dev/info/Brain.html)
   - Well structured personal config based on the [KISS](https://en.wikipedia.org/wiki/KISS_principle){:target="\_blank"}{:rel="noopener noreferrer"} principle
   - `lazyman -w Brain`
+- [CandyVim](https://lazyman.dev/info/CandyVim.html)
+  - Eye candy frontend development with React and Vue.js
+  - Install and initialize with `lazyman -w CandyVim`
 - [Charles](https://lazyman.dev/info/Charles.html)
   - Well structured lazy config with several setup scripts and a Wiki
   - Install and initialize with `lazyman -w Charles`
