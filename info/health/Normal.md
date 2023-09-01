@@ -1,3 +1,10 @@
+---
+layout: post
+title: Lazyman Configuration Health Check
+toc: true
+post_style: page
+---
+
 # nvim-Normal Neovim health check
 
 ==============================================================================
