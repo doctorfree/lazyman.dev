@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-AlanVim Neovim health check
 
-==============================================================================
+--------
 mason: require("mason.health").check()
 
 mason.nvim ~
@@ -60,7 +60,7 @@ mason.nvim [Languages] ~
 mason.nvim [GitHub] ~
 - OK GitHub API rate limit. Used: 20. Remaining: 4980. Limit: 5000. Reset: Fri 01 Sep 2023 12:37:11 PM PDT.
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -80,7 +80,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -121,7 +121,7 @@ The following errors have been detected: ~
   c(indents) is concatenated from the following files:
   | [ERROR]:"/home/ronnie/.local/share/nvim-AlanVim/site/pack/packer/start/nvim-treesitter/queries/c/indents.scm", failed to load: ...-linux64/share/nvim/runtime/lua/vim/treesitter/query.lua:259: query: invalid node type at position 1109 for language c
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -151,7 +151,7 @@ Node.js provider (optional) ~
 Perl provider (optional) ~
 - Disabled (g:loaded_perl_provider=0).
 
-==============================================================================
+--------
 telescope: require("telescope.health").check()
 
 Checking for required plugins ~
@@ -162,12 +162,12 @@ Checking external dependencies ~
 - OK rg: found ripgrep 13.0.0
 - OK fd: found fd 8.7.0
 
-===== Installed extensions ===== ~
+--------
 
 Telescope Extension: `fzy_native` ~
 - No healthcheck provided
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -177,7 +177,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - No active clients
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14

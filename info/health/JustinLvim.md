@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-JustinLvim Neovim health check
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -15,7 +15,7 @@ lazy.nvim ~
 - WARNING found existing packages at `/home/ronnie/.local/share/nvim-JustinLvim/site/pack/lazy`
 - OK packer_compiled.lua not found
 
-==============================================================================
+--------
 mason: require("mason.health").check()
 
 mason.nvim ~
@@ -63,7 +63,7 @@ mason.nvim [Languages] ~
 mason.nvim [GitHub] ~
 - OK GitHub API rate limit. Used: 20. Remaining: 4980. Limit: 5000. Reset: Fri 01 Sep 2023 12:37:11 PM PDT.
 
-==============================================================================
+--------
 mkdp: health#mkdp#check
 
 - Platform: linux
@@ -74,7 +74,7 @@ mkdp: health#mkdp#check
 - Script exists: 1
 - OK Using node
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -94,7 +94,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -135,7 +135,7 @@ The following errors have been detected: ~
   c(indents) is concatenated from the following files:
   | [ERROR]:"/home/ronnie/.local/share/nvim-JustinLvim/site/pack/lazy/opt/nvim-treesitter/queries/c/indents.scm", failed to load: ...-linux64/share/nvim/runtime/lua/vim/treesitter/query.lua:259: query: invalid node type at position 1109 for language c
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -174,7 +174,7 @@ Perl provider (optional) ~
     - See :help |provider-perl| for more information.
     - You may disable this provider (and warning) by adding `let g:loaded_perl_provider = 0` to your init.vim
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -184,7 +184,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - No active clients
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14

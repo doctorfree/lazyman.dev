@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-Knvim Neovim health check
 
-==============================================================================
+--------
 diffview: require("diffview.health").check()
 
 Checking plugin dependencies ~
@@ -19,7 +19,7 @@ Checking VCS tools ~
 - OK Git is up-to-date. (2.34.1)
 - WARNING Configured `hg_cmd` is not executable: 'hg'
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -27,7 +27,7 @@ lazy.nvim ~
 - OK no existing packages found by other package managers
 - OK packer_compiled.lua not found
 
-==============================================================================
+--------
 mason: require("mason.health").check()
 
 mason.nvim ~
@@ -74,7 +74,7 @@ mason.nvim [Languages] ~
 mason.nvim [GitHub] ~
 - OK GitHub API rate limit. Used: 20. Remaining: 4980. Limit: 5000. Reset: Fri 01 Sep 2023 12:37:11 PM PDT.
 
-==============================================================================
+--------
 noice: require("noice.health").check()
 
 noice.nvim ~
@@ -88,7 +88,7 @@ noice.nvim ~
 - OK **TreeSitter markdown** parser is installed
 - OK **TreeSitter markdown_inline** parser is installed
 
-==============================================================================
+--------
 null-ls: require("null-ls.health").check()
 
 - OK black: the command "black" is executable.
@@ -97,7 +97,7 @@ null-ls: require("null-ls.health").check()
 - ERROR cpplint: the command "cpplint" is not executable.
 - OK shellcheck: the command "shellcheck" is executable.
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -117,12 +117,12 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-dap-repl-highlights: require("nvim-dap-repl-highlights.health").check()
 
 - OK 
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -170,7 +170,7 @@ Parser/Features         H L F I J
          +) multiple parsers found, only one will be used
          x) errors found in the query, try to run :TSUpdate {lang} ~
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -197,7 +197,7 @@ Node.js provider (optional) ~
 Perl provider (optional) ~
 - Disabled (g:loaded_perl_provider=0).
 
-==============================================================================
+--------
 rainbow-delimiters: require("rainbow-delimiters.health").check()
 
 Custom strategies ~
@@ -215,7 +215,7 @@ Custom highlight groups ~
 - OK Highlight group 'RainbowDelimiterViolet' defined.
 - OK Highlight group 'RainbowDelimiterCyan' defined.
 
-==============================================================================
+--------
 telescope: require("telescope.health").check()
 
 Checking for required plugins ~
@@ -226,7 +226,7 @@ Checking external dependencies ~
 - OK rg: found ripgrep 13.0.0
 - OK fd: found fd 8.7.0
 
-===== Installed extensions ===== ~
+--------
 
 Telescope Extension: `bibtex` ~
 - No healthcheck provided
@@ -242,7 +242,7 @@ Telescope Extension: `fzf` ~
 Telescope Extension: `notify` ~
 - No healthcheck provided
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -252,7 +252,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - null-ls (id=1, root_dir=/home/ronnie/.config/nvim-Lazyman)
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14

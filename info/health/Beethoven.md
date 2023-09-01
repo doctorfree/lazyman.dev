@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-Beethoven Neovim health check
 
-==============================================================================
+--------
 hop: require("hop.health").check()
 
 Ensuring keys are unique ~
@@ -16,7 +16,7 @@ Ensuring keys are unique ~
 Checking for deprecated features ~
 - OK All good
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -26,7 +26,7 @@ lazy.nvim ~
 - WARNING {nvim-navbuddy}: unknown key <requires>
 - WARNING {bufferline.nvim}: unknown key <requires>
 
-==============================================================================
+--------
 mason: require("mason.health").check()
 
 mason.nvim ~
@@ -73,12 +73,12 @@ mason.nvim [Languages] ~
 mason.nvim [GitHub] ~
 - OK GitHub API rate limit. Used: 20. Remaining: 4980. Limit: 5000. Reset: Fri 01 Sep 2023 12:37:11 PM PDT.
 
-==============================================================================
+--------
 null-ls: require("null-ls.health").check()
 
 - ERROR prettier: the command "prettier" is not executable.
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -98,7 +98,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -140,7 +140,7 @@ The following errors have been detected: ~
   c(indents) is concatenated from the following files:
   | [ERROR]:"/home/ronnie/.local/share/nvim-Beethoven/lazy/nvim-treesitter/queries/c/indents.scm", failed to load: ...-linux64/share/nvim/runtime/lua/vim/treesitter/query.lua:259: query: invalid node type at position 1109 for language c
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -179,7 +179,7 @@ Perl provider (optional) ~
     - See :help |provider-perl| for more information.
     - You may disable this provider (and warning) by adding `let g:loaded_perl_provider = 0` to your init.vim
 
-==============================================================================
+--------
 rainbow-delimiters: require("rainbow-delimiters.health").check()
 
 Custom strategies ~
@@ -197,7 +197,7 @@ Custom highlight groups ~
 - OK Highlight group 'RainbowDelimiterViolet' defined.
 - OK Highlight group 'RainbowDelimiterCyan' defined.
 
-==============================================================================
+--------
 telescope: require("telescope.health").check()
 
 Checking for required plugins ~
@@ -208,7 +208,7 @@ Checking external dependencies ~
 - OK rg: found ripgrep 13.0.0
 - OK fd: found fd 8.7.0
 
-===== Installed extensions ===== ~
+--------
 
 Telescope Extension: `fzf` ~
 - OK lib working as expected
@@ -218,7 +218,7 @@ Telescope Extension: `fzf` ~
 Telescope Extension: `lazygit` ~
 - No healthcheck provided
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -228,7 +228,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - No active clients
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14
@@ -239,7 +239,7 @@ vim.treesitter: require("vim.treesitter.health").check()
 - OK Parser: vim        ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vim.so
 - OK Parser: vimdoc     ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vimdoc.so
 
-==============================================================================
+--------
 which-key: require("which-key.health").check()
 
 WhichKey: checking conflicting keymaps ~

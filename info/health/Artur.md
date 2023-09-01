@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-Artur Neovim health check
 
-==============================================================================
+--------
 crates: require("crates.health").check()
 
 - ERROR Failed to run healthcheck for "crates" plugin. Exception:
@@ -18,7 +18,7 @@ crates: require("crates.health").check()
   .../share/nvim-Artur/lazy/crates.nvim/lua/crates/health.lua:33: in function 'check'
   [string "luaeval()"]:1: in main chunk
 
-==============================================================================
+--------
 go: require("go.health").check()
 
 Binaries ~
@@ -66,7 +66,7 @@ Go Plugin Check ~
 - GOBIN is not set
 - Not all environment variables set
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -74,7 +74,7 @@ lazy.nvim ~
 - OK no existing packages found by other package managers
 - OK packer_compiled.lua not found
 
-==============================================================================
+--------
 mason: require("mason.health").check()
 
 mason.nvim ~
@@ -119,7 +119,7 @@ mason.nvim [Languages] ~
 mason.nvim [GitHub] ~
 - OK GitHub API rate limit. Used: 20. Remaining: 4980. Limit: 5000. Reset: Fri 01 Sep 2023 12:37:11 PM PDT.
 
-==============================================================================
+--------
 null-ls: require("null-ls.health").check()
 
 - OK prettier: the command "prettier" is executable.
@@ -128,7 +128,7 @@ null-ls: require("null-ls.health").check()
 - ERROR isort: the command "isort" is not executable.
 - OK flake8: the command "flake8" is executable.
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -148,7 +148,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -207,7 +207,7 @@ The following errors have been detected: ~
   lua(injections) is concatenated from the following files:
   | [ERROR]:"/home/ronnie/.local/share/nvim-Artur/lazy/nvim-treesitter/queries/lua/injections.scm", failed to load: ...-linux64/share/nvim/runtime/lua/vim/treesitter/query.lua:259: query: invalid node type at position 1682 for language lua
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -246,7 +246,7 @@ Perl provider (optional) ~
     - See :help |provider-perl| for more information.
     - You may disable this provider (and warning) by adding `let g:loaded_perl_provider = 0` to your init.vim
 
-==============================================================================
+--------
 telescope: require("telescope.health").check()
 
 Checking for required plugins ~
@@ -257,7 +257,7 @@ Checking external dependencies ~
 - OK rg: found ripgrep 13.0.0
 - OK fd: found fd 8.7.0
 
-===== Installed extensions ===== ~
+--------
 
 Telescope Extension: `harpoon` ~
 - No healthcheck provided
@@ -271,7 +271,7 @@ Telescope Extension: `notify` ~
 Telescope Extension: `projects` ~
 - No healthcheck provided
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -281,7 +281,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - No active clients
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14
@@ -304,7 +304,7 @@ vim.treesitter: require("vim.treesitter.health").check()
 - OK Parser: vim        ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vim.so
 - OK Parser: vimdoc     ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vimdoc.so
 
-==============================================================================
+--------
 which-key: require("which-key.health").check()
 
 WhichKey: checking conflicting keymaps ~

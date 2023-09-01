@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-Cpp Neovim health check
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -16,7 +16,7 @@ lazy.nvim ~
 - OK packer_compiled.lua not found
 - WARNING {nvim-lspconfig}: overriding <config>
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -36,7 +36,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -77,7 +77,7 @@ The following errors have been detected: ~
   c(indents) is concatenated from the following files:
   | [ERROR]:"/home/ronnie/.local/share/nvim-Cpp/lazy/nvim-treesitter/queries/c/indents.scm", failed to load: ...-linux64/share/nvim/runtime/lua/vim/treesitter/query.lua:259: query: invalid node type at position 1109 for language c
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -98,7 +98,7 @@ Node.js provider (optional) ~
 Perl provider (optional) ~
 - Disabled (g:loaded_perl_provider=0).
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -108,7 +108,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - No active clients
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14

@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-xero Neovim health check
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -15,7 +15,7 @@ lazy.nvim ~
 - OK no existing packages found by other package managers
 - OK packer_compiled.lua not found
 
-==============================================================================
+--------
 mason: require("mason.health").check()
 
 mason.nvim ~
@@ -60,7 +60,7 @@ mason.nvim [Languages] ~
 mason.nvim [GitHub] ~
 - OK GitHub API rate limit. Used: 21. Remaining: 4979. Limit: 5000. Reset: Fri 01 Sep 2023 12:37:11 PM PDT.
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -80,7 +80,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -151,7 +151,7 @@ The following errors have been detected: ~
   python(highlights) is concatenated from the following files:
   | [ERROR]:"/home/ronnie/.local/share/nvim-xero/lazy/nvim-treesitter/queries/python/highlights.scm", failed to load: ...-linux64/share/nvim/runtime/lua/vim/treesitter/query.lua:259: query: invalid node type at position 727 for language python
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -190,7 +190,7 @@ Perl provider (optional) ~
     - See :help |provider-perl| for more information.
     - You may disable this provider (and warning) by adding `let g:loaded_perl_provider = 0` to your init.vim
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : ERROR
@@ -200,7 +200,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - No active clients
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14
@@ -233,7 +233,7 @@ vim.treesitter: require("vim.treesitter.health").check()
 - OK Parser: vim        ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vim.so
 - OK Parser: vimdoc     ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vimdoc.so
 
-==============================================================================
+--------
 which-key: require("which-key.health").check()
 
 WhichKey: checking conflicting keymaps ~

@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-CatNvim Neovim health check
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -17,7 +17,7 @@ lazy.nvim ~
 - WARNING {lazy.nvim}: overriding <dir>
 - WARNING {flash.nvim}: unknown key <vscode>
 
-==============================================================================
+--------
 lazyvim: require("lazyvim.health").check()
 
 LazyVim ~
@@ -27,7 +27,7 @@ LazyVim ~
 - OK `fd` is installed
 - OK `lazygit` is installed
 
-==============================================================================
+--------
 mason: require("mason.health").check()
 
 mason.nvim ~
@@ -72,7 +72,7 @@ mason.nvim [Languages] ~
 mason.nvim [GitHub] ~
 - OK GitHub API rate limit. Used: 20. Remaining: 4980. Limit: 5000. Reset: Fri 01 Sep 2023 12:37:11 PM PDT.
 
-==============================================================================
+--------
 neoconf: require("neoconf.health").check()
 
 neoconf.nvim ~
@@ -83,7 +83,7 @@ neoconf.nvim ~
 - WARNING **lspconfig jsonls** is not installed? You won't get any auto completion in your settings files
 - WARNING **lspconfig lua_ls** is not installed? You won't get any auto completion in your lua settings files
 
-==============================================================================
+--------
 null-ls: require("null-ls.health").check()
 
 - ERROR fish_indent: the command "fish_indent" is not executable.
@@ -91,7 +91,7 @@ null-ls: require("null-ls.health").check()
 - OK stylua: the command "stylua" is executable.
 - OK shfmt: the command "shfmt" is executable.
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -111,7 +111,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -155,7 +155,7 @@ Parser/Features         H L F I J
          +) multiple parsers found, only one will be used
          x) errors found in the query, try to run :TSUpdate {lang} ~
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -194,7 +194,7 @@ Perl provider (optional) ~
     - See :help |provider-perl| for more information.
     - You may disable this provider (and warning) by adding `let g:loaded_perl_provider = 0` to your init.vim
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -204,7 +204,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - No active clients
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14

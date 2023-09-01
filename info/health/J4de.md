@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-J4de Neovim health check
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -15,7 +15,7 @@ lazy.nvim ~
 - OK no existing packages found by other package managers
 - OK packer_compiled.lua not found
 
-==============================================================================
+--------
 mason: require("mason.health").check()
 
 mason.nvim ~
@@ -60,7 +60,7 @@ mason.nvim [Languages] ~
 mason.nvim [GitHub] ~
 - OK GitHub API rate limit. Used: 20. Remaining: 4980. Limit: 5000. Reset: Fri 01 Sep 2023 12:37:11 PM PDT.
 
-==============================================================================
+--------
 null-ls: require("null-ls.health").check()
 
 - OK stylua: the command "stylua" is executable.
@@ -70,7 +70,7 @@ null-ls: require("null-ls.health").check()
 - ERROR cpplint: the command "cpplint" is not executable.
 - OK beautysh: the command "beautysh" is executable.
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -90,7 +90,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -143,7 +143,7 @@ The following errors have been detected: ~
   c(indents) is concatenated from the following files:
   | [ERROR]:"/home/ronnie/.local/share/nvim-J4de/lazy/nvim-treesitter/queries/c/indents.scm", failed to load: ...-linux64/share/nvim/runtime/lua/vim/treesitter/query.lua:259: query: invalid node type at position 1109 for language c
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -171,12 +171,12 @@ Node.js provider (optional) ~
 Perl provider (optional) ~
 - Disabled (g:loaded_perl_provider=0).
 
-==============================================================================
+--------
 rainbow-delimiters: require("rainbow-delimiters.health").check()
 
 - No custom configuration; see :help |rb-delimiters-setup| for information.
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -186,7 +186,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - null-ls (id=1, root_dir=/home/ronnie/.config/nvim-Lazyman)
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14

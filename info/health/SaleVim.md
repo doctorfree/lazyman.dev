@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-SaleVim Neovim health check
 
-==============================================================================
+--------
 mason: require("mason.health").check()
 
 mason.nvim ~
@@ -54,14 +54,14 @@ mason.nvim [Languages] ~
 mason.nvim [GitHub] ~
 - OK GitHub API rate limit. Used: 20. Remaining: 4980. Limit: 5000. Reset: Fri 01 Sep 2023 12:37:11 PM PDT.
 
-==============================================================================
+--------
 null-ls: require("null-ls.health").check()
 
 - ERROR prettier: the command "prettier" is not executable.
 - OK black: the command "black" is executable.
 - OK stylua: the command "stylua" is executable.
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -81,7 +81,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -318,7 +318,7 @@ Parser/Features         H L F I J
          +) multiple parsers found, only one will be used
          x) errors found in the query, try to run :TSUpdate {lang} ~
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -357,7 +357,7 @@ Perl provider (optional) ~
     - See :help |provider-perl| for more information.
     - You may disable this provider (and warning) by adding `let g:loaded_perl_provider = 0` to your init.vim
 
-==============================================================================
+--------
 telescope: require("telescope.health").check()
 
 Checking for required plugins ~
@@ -368,12 +368,12 @@ Checking external dependencies ~
 - OK rg: found ripgrep 13.0.0
 - OK fd: found fd 8.7.0
 
-===== Installed extensions ===== ~
+--------
 
 Telescope Extension: `projects` ~
 - No healthcheck provided
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -383,7 +383,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - null-ls (id=1, root_dir=/home/ronnie/.config/nvim-Lazyman)
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14
@@ -605,7 +605,7 @@ vim.treesitter: require("vim.treesitter.health").check()
 - OK Parser: vim        ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vim.so
 - OK Parser: vimdoc     ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vimdoc.so
 
-==============================================================================
+--------
 which-key: require("which-key.health").check()
 
 WhichKey: checking conflicting keymaps ~

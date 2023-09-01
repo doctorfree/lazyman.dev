@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-Maddison Neovim health check
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -17,12 +17,12 @@ lazy.nvim ~
 - WARNING {nvim-window-picker}: unknown key <lazymod>
 - WARNING {vCoolor.vim}: unknown key <conf>
 
-==============================================================================
+--------
 null-ls: require("null-ls.health").check()
 
 - no sources registered
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -42,7 +42,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -101,20 +101,20 @@ The following errors have been detected: ~
   bash(highlights) is concatenated from the following files:
   | [ERROR]:"/home/ronnie/.local/share/nvim-Maddison/lazy/nvim-treesitter/queries/bash/highlights.scm", failed to load: ...-linux64/share/nvim/runtime/lua/vim/treesitter/query.lua:259: query: invalid node type at position 242 for language bash
 
-==============================================================================
+--------
 ouroboros: require("ouroboros.health").check()
 
 Required Dependencies ~
 - OK plenary installed.
 
-==============================================================================
+--------
 provider: health#provider#check
 
 - ERROR Failed to run healthcheck for "provider" plugin. Exception:
   command line..function health#check[25]..health#provider#check[4]..<SNR>116_check_ruby[38]..<SNR>116_system, line 11
   Vim(let):E475: Invalid value for argument cmd: '1' is not executable
 
-==============================================================================
+--------
 telescope: require("telescope.health").check()
 
 Checking for required plugins ~
@@ -125,9 +125,9 @@ Checking external dependencies ~
 - OK rg: found ripgrep 13.0.0
 - OK fd: found fd 8.7.0
 
-===== Installed extensions ===== ~
+--------
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -137,7 +137,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - No active clients
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14
@@ -174,13 +174,13 @@ vim.treesitter: require("vim.treesitter.health").check()
 - OK Parser: vim        ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vim.so
 - OK Parser: vimdoc     ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vimdoc.so
 
-==============================================================================
+--------
 which-key: require("which-key.health").check()
 
 WhichKey: checking conflicting keymaps ~
 - OK No conflicting keymaps found
 
-==============================================================================
+--------
 zf-native: require("zf-native.health").check()
 
 Installation ~

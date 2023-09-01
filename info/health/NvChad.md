@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-NvChad Neovim health check
 
-==============================================================================
+--------
 hop: require("hop.health").check()
 
 Ensuring keys are unique ~
@@ -16,7 +16,7 @@ Ensuring keys are unique ~
 Checking for deprecated features ~
 - OK All good
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -24,7 +24,7 @@ lazy.nvim ~
 - OK no existing packages found by other package managers
 - OK packer_compiled.lua not found
 
-==============================================================================
+--------
 mason: require("mason.health").check()
 
 mason.nvim ~
@@ -69,7 +69,7 @@ mason.nvim [Languages] ~
 mason.nvim [GitHub] ~
 - OK GitHub API rate limit. Used: 20. Remaining: 4980. Limit: 5000. Reset: Fri 01 Sep 2023 12:37:11 PM PDT.
 
-==============================================================================
+--------
 null-ls: require("null-ls.health").check()
 
 - OK prettier: the command "prettier" is executable.
@@ -78,7 +78,7 @@ null-ls: require("null-ls.health").check()
 - OK trim_whitespace: the command "awk" is executable.
 - OK actionlint: the command "actionlint" is executable.
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -98,7 +98,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -167,7 +167,7 @@ Parser/Features         H L F I J
          +) multiple parsers found, only one will be used
          x) errors found in the query, try to run :TSUpdate {lang} ~
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -188,7 +188,7 @@ Node.js provider (optional) ~
 Perl provider (optional) ~
 - Disabled (g:loaded_perl_provider=0).
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -199,7 +199,7 @@ vim.lsp: Active Clients ~
 - tailwindcss (id=3, root_dir=/home/ronnie/.config/nvim-Lazyman)
 - null-ls (id=4, root_dir=/home/ronnie/.config/nvim-Lazyman)
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14

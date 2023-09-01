@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-LvimIde Neovim health check
 
-==============================================================================
+--------
 diffview: require("diffview.health").check()
 
 Checking plugin dependencies ~
@@ -19,14 +19,14 @@ Checking VCS tools ~
 - OK Git is up-to-date. (2.34.1)
 - WARNING Configured `hg_cmd` is not executable: 'hg'
 
-==============================================================================
+--------
 hydra: require("hydra.health").check()
 
 Hydra: Checking settings ~
 - OK             `timeoutlen` (value: 1000) is set to a good value.
   
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -34,7 +34,7 @@ lazy.nvim ~
 - OK no existing packages found by other package managers
 - OK packer_compiled.lua not found
 
-==============================================================================
+--------
 mason: require("mason.health").check()
 
 mason.nvim ~
@@ -81,7 +81,7 @@ mason.nvim [Languages] ~
 mason.nvim [GitHub] ~
 - OK GitHub API rate limit. Used: 20. Remaining: 4980. Limit: 5000. Reset: Fri 01 Sep 2023 12:37:11 PM PDT.
 
-==============================================================================
+--------
 mkdp: health#mkdp#check
 
 - Platform: linux
@@ -92,7 +92,7 @@ mkdp: health#mkdp#check
 - Script exists: 1
 - OK Using node
 
-==============================================================================
+--------
 neoconf: require("neoconf.health").check()
 
 neoconf.nvim ~
@@ -103,7 +103,7 @@ neoconf.nvim ~
 - WARNING **lspconfig jsonls** is not installed? You won't get any auto completion in your settings files
 - WARNING **lspconfig lua_ls** is not installed? You won't get any auto completion in your lua settings files
 
-==============================================================================
+--------
 neotest-haskell: require("neotest-haskell.health").check()
 
 Checking for Lua dependencies ~
@@ -124,7 +124,7 @@ Checking external dependencies ~
 Checking tree-sitter parsers ~
 - OK The tree-sitter parser for Haskell is installed.
 
-==============================================================================
+--------
 noice: require("noice.health").check()
 
 noice.nvim ~
@@ -138,7 +138,7 @@ noice.nvim ~
 - OK **TreeSitter markdown** parser is installed
 - OK **TreeSitter markdown_inline** parser is installed
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -158,7 +158,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -207,7 +207,7 @@ The following errors have been detected: ~
   c(indents) is concatenated from the following files:
   | [ERROR]:"/home/ronnie/.local/share/nvim-LvimIde/lazy/nvim-treesitter/queries/c/indents.scm", failed to load: ...-linux64/share/nvim/runtime/lua/vim/treesitter/query.lua:259: query: invalid node type at position 1109 for language c
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -246,7 +246,7 @@ Perl provider (optional) ~
     - See :help |provider-perl| for more information.
     - You may disable this provider (and warning) by adding `let g:loaded_perl_provider = 0` to your init.vim
 
-==============================================================================
+--------
 sniprun: health#sniprun#check
 
 Installation ~
@@ -255,7 +255,7 @@ Installation ~
 - OK Sent a ping to the sniprun binary
 - OK sniprun binary runs correctly
 
-==============================================================================
+--------
 telescope: require("telescope.health").check()
 
 Checking for required plugins ~
@@ -266,7 +266,7 @@ Checking external dependencies ~
 - OK rg: found ripgrep 13.0.0
 - OK fd: found fd 8.7.0
 
-===== Installed extensions ===== ~
+--------
 
 Telescope Extension: `file_browser` ~
 - No healthcheck provided
@@ -282,7 +282,7 @@ Telescope Extension: `macros` ~
 Telescope Extension: `tmux` ~
 - No healthcheck provided
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -292,7 +292,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - efm (id=1, root_dir=/home/ronnie/.config/nvim-Lazyman)
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14
@@ -314,7 +314,7 @@ vim.treesitter: require("vim.treesitter.health").check()
 - OK Parser: vim        ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vim.so
 - OK Parser: vimdoc     ABI: 14, path: /home/ronnie/.local/share/bob/v0.9.1/nvim-linux64/lib/nvim/parser/vimdoc.so
 
-==============================================================================
+--------
 vimtex: health#vimtex#check
 
 VimTeX ~

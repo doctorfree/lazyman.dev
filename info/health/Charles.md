@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-Charles Neovim health check
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -15,7 +15,7 @@ lazy.nvim ~
 - OK no existing packages found by other package managers
 - OK packer_compiled.lua not found
 
-==============================================================================
+--------
 mkdp: health#mkdp#check
 
 - Platform: linux
@@ -24,7 +24,7 @@ mkdp: health#mkdp#check
 - Pre build version: 0.0.10
 - OK Using pre build
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -44,7 +44,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -110,14 +110,14 @@ The following errors have been detected: ~
   python(highlights) is concatenated from the following files:
   | [ERROR]:"/home/ronnie/.local/share/nvim-Charles/site/lazy/nvim-treesitter/queries/python/highlights.scm", failed to load: ...-linux64/share/nvim/runtime/lua/vim/treesitter/query.lua:259: query: invalid node type at position 727 for language python
 
-==============================================================================
+--------
 provider: health#provider#check
 
 - ERROR Failed to run healthcheck for "provider" plugin. Exception:
   command line..function health#check[25]..health#provider#check[4]..<SNR>75_check_ruby[38]..<SNR>75_system, line 11
   Vim(let):E475: Invalid value for argument cmd: '/home/ronnie/tools/ruby/bin/neovim-ruby-host' is not executable
 
-==============================================================================
+--------
 rainbow-delimiters: require("rainbow-delimiters.health").check()
 
 Custom strategies ~
@@ -139,7 +139,7 @@ Custom highlight groups ~
 - OK Highlight group 'RainbowDelimiterCyan' defined.
 - OK Highlight group 'RainbowDelimiterViolet' defined.
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -149,7 +149,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - No active clients
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14

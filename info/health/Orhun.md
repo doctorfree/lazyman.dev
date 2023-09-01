@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-Orhun Neovim health check
 
-==============================================================================
+--------
 astronvim: require("astronvim.health").check()
 
 AstroNvim ~
@@ -22,7 +22,7 @@ AstroNvim ~
 - WARNING `btm` is not installed: Used for mappings to pull up system monitor (Optional)
 - OK `python3` is installed: Used for mappings to pull up python REPL (Optional)
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -31,7 +31,7 @@ lazy.nvim ~
 - OK packer_compiled.lua not found
 - WARNING {telescope.nvim}: overriding <config>
 
-==============================================================================
+--------
 mkdp: health#mkdp#check
 
 - Platform: linux
@@ -42,7 +42,7 @@ mkdp: health#mkdp#check
 - Script exists: 1
 - OK Using node
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -62,7 +62,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -103,7 +103,7 @@ The following errors have been detected: ~
   c(indents) is concatenated from the following files:
   | [ERROR]:"/home/ronnie/.local/share/nvim-Orhun/lazy/nvim-treesitter/queries/c/indents.scm", failed to load: ...-linux64/share/nvim/runtime/lua/vim/treesitter/query.lua:259: query: invalid node type at position 1109 for language c
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -142,7 +142,7 @@ Perl provider (optional) ~
     - See :help |provider-perl| for more information.
     - You may disable this provider (and warning) by adding `let g:loaded_perl_provider = 0` to your init.vim
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -152,7 +152,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - No active clients
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14

@@ -7,7 +7,7 @@ post_style: page
 
 # nvim-JustinOhMy Neovim health check
 
-==============================================================================
+--------
 lazy: require("lazy.health").check()
 
 lazy.nvim ~
@@ -16,7 +16,7 @@ lazy.nvim ~
 - OK packer_compiled.lua not found
 - WARNING {neoconf.nvim}: unknown key <endabled>
 
-==============================================================================
+--------
 lazyvim: require("lazyvim.health").check()
 
 LazyVim ~
@@ -26,7 +26,7 @@ LazyVim ~
 - OK `fd` is installed
 - OK `lazygit` is installed
 
-==============================================================================
+--------
 mason: require("mason.health").check()
 
 mason.nvim ~
@@ -71,7 +71,7 @@ mason.nvim [Languages] ~
 mason.nvim [GitHub] ~
 - OK GitHub API rate limit. Used: 21. Remaining: 4979. Limit: 5000. Reset: Fri 01 Sep 2023 12:37:11 PM PDT.
 
-==============================================================================
+--------
 mkdp: health#mkdp#check
 
 - Platform: linux
@@ -80,7 +80,7 @@ mkdp: health#mkdp#check
 - Pre build version: 0.0.10
 - OK Using pre build
 
-==============================================================================
+--------
 neoconf: require("neoconf.health").check()
 
 neoconf.nvim ~
@@ -91,7 +91,7 @@ neoconf.nvim ~
 - WARNING **lspconfig jsonls** is not installed? You won't get any auto completion in your settings files
 - WARNING **lspconfig lua_ls** is not installed? You won't get any auto completion in your lua settings files
 
-==============================================================================
+--------
 null-ls: require("null-ls.health").check()
 
 - ERROR fish_indent: the command "fish_indent" is not executable.
@@ -101,7 +101,7 @@ null-ls: require("null-ls.health").check()
 - OK prettierd: the command "prettierd" is executable.
 - typescript: cannot verify if the command is an executable.
 
-==============================================================================
+--------
 nvim: require("nvim.health").check()
 
 Configuration ~
@@ -121,7 +121,7 @@ terminal ~
 - key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
 - $SSH_TTY="/dev/pts/4"
 
-==============================================================================
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -183,7 +183,7 @@ The following errors have been detected: ~
   python(highlights) is concatenated from the following files:
   | [ERROR]:"/home/ronnie/.local/share/nvim-JustinOhMy/lazy/nvim-treesitter/queries/python/highlights.scm", failed to load: ...-linux64/share/nvim/runtime/lua/vim/treesitter/query.lua:259: query: invalid node type at position 727 for language python
 
-==============================================================================
+--------
 provider: health#provider#check
 
 Clipboard (optional) ~
@@ -222,7 +222,7 @@ Perl provider (optional) ~
     - See :help |provider-perl| for more information.
     - You may disable this provider (and warning) by adding `let g:loaded_perl_provider = 0` to your init.vim
 
-==============================================================================
+--------
 telescope: require("telescope.health").check()
 
 Checking for required plugins ~
@@ -233,7 +233,7 @@ Checking external dependencies ~
 - OK rg: found ripgrep 13.0.0
 - OK fd: found fd 8.7.0
 
-===== Installed extensions ===== ~
+--------
 
 Telescope Extension: `harpoon` ~
 - No healthcheck provided
@@ -241,7 +241,7 @@ Telescope Extension: `harpoon` ~
 Telescope Extension: `projects` ~
 - No healthcheck provided
 
-==============================================================================
+--------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
@@ -251,7 +251,7 @@ vim.lsp: require("vim.lsp.health").check()
 vim.lsp: Active Clients ~
 - No active clients
 
-==============================================================================
+--------
 vim.treesitter: require("vim.treesitter.health").check()
 
 - Nvim runtime ABI version: 14
