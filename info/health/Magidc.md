@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lazyman Configuration Health Check
+title: Magidc Configuration Health Check
 toc: true
 post_style: page
 ---

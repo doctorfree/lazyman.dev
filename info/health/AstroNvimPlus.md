@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lazyman Configuration Health Check
+title: AstroNvimPlus Configuration Health Check
 toc: true
 post_style: page
 ---

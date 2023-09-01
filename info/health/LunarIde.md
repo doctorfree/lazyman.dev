@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lazyman Configuration Health Check
+title: LunarIde Configuration Health Check
 toc: true
 post_style: page
 ---

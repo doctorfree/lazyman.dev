@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lazyman Configuration Health Check
+title: BasicIde Configuration Health Check
 toc: true
 post_style: page
 ---

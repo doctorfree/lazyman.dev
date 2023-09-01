@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lazyman Configuration Health Check
+title: Brain Configuration Health Check
 toc: true
 post_style: page
 ---

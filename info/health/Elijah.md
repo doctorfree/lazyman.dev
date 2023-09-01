@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lazyman Configuration Health Check
+title: Elijah Configuration Health Check
 toc: true
 post_style: page
 ---
