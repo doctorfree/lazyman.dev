@@ -15,27 +15,27 @@ additional Lazyman supported Neovim configurations' details.
 
 | **Lazyman** | **Supported** |        | **Neovim** | **Configurations** |
 | :---------- | :-----------: | :----: | :--------: | -----------------: |
-| [2k](https://lazyman.dev/info/2k.html) | [3rd](https://lazyman.dev/info/3rd.html) | [Abstract](https://lazyman.dev/info/Abstract.html) | [Adib](https://lazyman.dev/info/Adib.html) | [AlanVim](https://lazyman.dev/info/AlanVim.html) |
-| [Allaman](https://lazyman.dev/info/Allaman.html) | [Artur](https://lazyman.dev/info/Artur.html) | [AstroNvimPlus](https://lazyman.dev/info/AstroNvimPlus.html) | [AstroNvimStart](https://lazyman.dev/info/AstroNvimStart.html) | [Barebones](https://lazyman.dev/info/Barebones.html) |
-| [Basic](https://lazyman.dev/info/Basic.html) | [BasicIde](https://lazyman.dev/info/BasicIde.html) | [BasicLsp](https://lazyman.dev/info/BasicLsp.html) | [BasicMason](https://lazyman.dev/info/BasicMason.html) | [Beethoven](https://lazyman.dev/info/Beethoven.html) |
-| [Brain](https://lazyman.dev/info/Brain.html) | [CandyVim](https://lazyman.dev/info/CandyVim.html) | [CatNvim](https://lazyman.dev/info/CatNvim.html) | [Charles](https://lazyman.dev/info/Charles.html) | [CodeArt](https://lazyman.dev/info/CodeArt.html) |
-| [Cosmic](https://lazyman.dev/info/Cosmic.html) | [Cpp](https://lazyman.dev/info/Cpp.html) | [Craftzdog](https://lazyman.dev/info/Craftzdog.html) | [Daniel](https://lazyman.dev/info/Daniel.html) | [Dillon](https://lazyman.dev/info/Dillon.html) |
-| [Ecovim](https://lazyman.dev/info/Ecovim.html) | [Elianiva](https://lazyman.dev/info/Elianiva.html) | [Elijah](https://lazyman.dev/info/Elijah.html) | [Ember](https://lazyman.dev/info/Ember.html) | [Enrique](https://lazyman.dev/info/Enrique.html) |
-| [Extralight](https://lazyman.dev/info/Extralight.html) | [Fennel](https://lazyman.dev/info/Fennel.html) | [Folke](https://lazyman.dev/info/Folke.html) | [Go](https://lazyman.dev/info/Go.html) | [Go2one](https://lazyman.dev/info/Go2one.html) |
-| [HardHacker](https://lazyman.dev/info/HardHacker.html) | [Heiker](https://lazyman.dev/info/Heiker.html) | [Insis](https://lazyman.dev/info/Insis.html) | [J4de](https://lazyman.dev/info/J4de.html) | [Josean](https://lazyman.dev/info/Josean.html) |
-| [JustinLvim](https://lazyman.dev/info/JustinLvim.html) | [JustinNvim](https://lazyman.dev/info/JustinNvim.html) | [JustinOhMy](https://lazyman.dev/info/JustinOhMy.html) | [Kabin](https://lazyman.dev/info/Kabin.html) | [Kickstart](https://lazyman.dev/info/Kickstart.html) |
-| [Knvim](https://lazyman.dev/info/Knvim.html) | [Kodo](https://lazyman.dev/info/Kodo.html) | [Kristijan](https://lazyman.dev/info/Kristijan.html) | [LamarVim](https://lazyman.dev/info/LamarVim.html) | [LaTeX](https://lazyman.dev/info/LaTeX.html) |
-| [LazyIde](https://lazyman.dev/info/LazyIde.html) | [Lazyman](https://lazyman.dev/info/Lazyman.html) | [LazyVim](https://lazyman.dev/info/LazyVim.html) | [LspCmp](https://lazyman.dev/info/LspCmp.html) | [Lukas](https://lazyman.dev/info/Lukas.html) |
-| [LunarIde](https://lazyman.dev/info/LunarIde.html) | [LunarVim](https://lazyman.dev/info/LunarVim.html) | [LvimAdib](https://lazyman.dev/info/LvimAdib.html) | [LvimIde](https://lazyman.dev/info/LvimIde.html) | [Maddison](https://lazyman.dev/info/Maddison.html) |
-| [MagicVim](https://lazyman.dev/info/MagicVim.html) | [Magidc](https://lazyman.dev/info/Magidc.html) | [Metis](https://lazyman.dev/info/Metis.html) | [Micah](https://lazyman.dev/info/Micah.html) | [Mini](https://lazyman.dev/info/Mini.html) |
-| [Minimal](https://lazyman.dev/info/Minimal.html) | [Modern](https://lazyman.dev/info/Modern.html) | [Modular](https://lazyman.dev/info/Modular.html) | [Normal](https://lazyman.dev/info/Normal.html) | [NV-IDE](https://lazyman.dev/info/NV-IDE.html) |
-| [Nv](https://lazyman.dev/info/Nv.html) | [NvChad](https://lazyman.dev/info/NvChad.html) | [NvPak](https://lazyman.dev/info/NvPak.html) | [OnMyWay](https://lazyman.dev/info/OnMyWay.html) | [ONNO](https://lazyman.dev/info/ONNO.html) |
-| [Opinion](https://lazyman.dev/info/Opinion.html) | [Optixal](https://lazyman.dev/info/Optixal.html) | [Orange](https://lazyman.dev/info/Orange.html) | [Orhun](https://lazyman.dev/info/Orhun.html) | [pde](https://lazyman.dev/info/pde.html) |
-| [Primeagen](https://lazyman.dev/info/Primeagen.html) | [Python](https://lazyman.dev/info/Python.html) | [Rafi](https://lazyman.dev/info/Rafi.html) | [Rohit](https://lazyman.dev/info/Rohit.html) | [Roiz](https://lazyman.dev/info/Roiz.html) |
-| [Rust](https://lazyman.dev/info/Rust.html) | [SaleVim](https://lazyman.dev/info/SaleVim.html) | [Scratch](https://lazyman.dev/info/Scratch.html) | [Shuvro](https://lazyman.dev/info/Shuvro.html) | [Simple](https://lazyman.dev/info/Simple.html) |
-| [SingleFile](https://lazyman.dev/info/SingleFile.html) | [Slydragonn](https://lazyman.dev/info/Slydragonn.html) | [SpaceVim](https://lazyman.dev/info/SpaceVim.html) | [Spider](https://lazyman.dev/info/Spider.html) | [StartBase](https://lazyman.dev/info/StartBase.html) |
-| [StartLsp](https://lazyman.dev/info/StartLsp.html) | [StartMason](https://lazyman.dev/info/StartMason.html) | [Traap](https://lazyman.dev/info/Traap.html) | [Webdev](https://lazyman.dev/info/Webdev.html) | [Wuelner](https://lazyman.dev/info/Wuelner.html) |
-| [xero](https://lazyman.dev/info/xero.html) | [Xiao](https://lazyman.dev/info/Xiao.html) | | | |
+| [2k](https://lazyman.dev/info/2k.html) | [Abstract](https://lazyman.dev/info/Abstract.html) | [Adib](https://lazyman.dev/info/Adib.html) | [AlanVim](https://lazyman.dev/info/AlanVim.html) | [Allaman](https://lazyman.dev/info/Allaman.html) |
+| [Artur](https://lazyman.dev/info/Artur.html) | [AstroNvimPlus](https://lazyman.dev/info/AstroNvimPlus.html) | [AstroNvimStart](https://lazyman.dev/info/AstroNvimStart.html) | [Barebones](https://lazyman.dev/info/Barebones.html) | [Basic](https://lazyman.dev/info/Basic.html) |
+| [BasicIde](https://lazyman.dev/info/BasicIde.html) | [BasicLsp](https://lazyman.dev/info/BasicLsp.html) | [BasicMason](https://lazyman.dev/info/BasicMason.html) | [Beethoven](https://lazyman.dev/info/Beethoven.html) | [Brain](https://lazyman.dev/info/Brain.html) |
+| [CandyVim](https://lazyman.dev/info/CandyVim.html) | [CatNvim](https://lazyman.dev/info/CatNvim.html) | [Charles](https://lazyman.dev/info/Charles.html) | [CodeArt](https://lazyman.dev/info/CodeArt.html) | [Cosmic](https://lazyman.dev/info/Cosmic.html) |
+| [Cpp](https://lazyman.dev/info/Cpp.html) | [Craftzdog](https://lazyman.dev/info/Craftzdog.html) | [Daniel](https://lazyman.dev/info/Daniel.html) | [Dillon](https://lazyman.dev/info/Dillon.html) | [Ecovim](https://lazyman.dev/info/Ecovim.html) |
+| [Elianiva](https://lazyman.dev/info/Elianiva.html) | [Elijah](https://lazyman.dev/info/Elijah.html) | [Ember](https://lazyman.dev/info/Ember.html) | [Enrique](https://lazyman.dev/info/Enrique.html) | [Extralight](https://lazyman.dev/info/Extralight.html) |
+| [Fennel](https://lazyman.dev/info/Fennel.html) | [Folke](https://lazyman.dev/info/Folke.html) | [Go](https://lazyman.dev/info/Go.html) | [Go2one](https://lazyman.dev/info/Go2one.html) | [HardHacker](https://lazyman.dev/info/HardHacker.html) |
+| [Heiker](https://lazyman.dev/info/Heiker.html) | [Insis](https://lazyman.dev/info/Insis.html) | [J4de](https://lazyman.dev/info/J4de.html) | [Josean](https://lazyman.dev/info/Josean.html) | [JustinLvim](https://lazyman.dev/info/JustinLvim.html) |
+| [JustinNvim](https://lazyman.dev/info/JustinNvim.html) | [JustinOhMy](https://lazyman.dev/info/JustinOhMy.html) | [Kabin](https://lazyman.dev/info/Kabin.html) | [Kickstart](https://lazyman.dev/info/Kickstart.html) | [Knvim](https://lazyman.dev/info/Knvim.html) |
+| [Kodo](https://lazyman.dev/info/Kodo.html) | [Kristijan](https://lazyman.dev/info/Kristijan.html) | [LamarVim](https://lazyman.dev/info/LamarVim.html) | [LaTeX](https://lazyman.dev/info/LaTeX.html) | [LazyIde](https://lazyman.dev/info/LazyIde.html) |
+| [Lazyman](https://lazyman.dev/info/Lazyman.html) | [LazyVim](https://lazyman.dev/info/LazyVim.html) | [LspCmp](https://lazyman.dev/info/LspCmp.html) | [Lukas](https://lazyman.dev/info/Lukas.html) | [LunarIde](https://lazyman.dev/info/LunarIde.html) |
+| [LunarVim](https://lazyman.dev/info/LunarVim.html) | [LvimAdib](https://lazyman.dev/info/LvimAdib.html) | [LvimIde](https://lazyman.dev/info/LvimIde.html) | [Maddison](https://lazyman.dev/info/Maddison.html) | [MagicVim](https://lazyman.dev/info/MagicVim.html) |
+| [Magidc](https://lazyman.dev/info/Magidc.html) | [Metis](https://lazyman.dev/info/Metis.html) | [Micah](https://lazyman.dev/info/Micah.html) | [Mini](https://lazyman.dev/info/Mini.html) | [Minimal](https://lazyman.dev/info/Minimal.html) |
+| [Modern](https://lazyman.dev/info/Modern.html) | [Modular](https://lazyman.dev/info/Modular.html) | [Normal](https://lazyman.dev/info/Normal.html) | [NV-IDE](https://lazyman.dev/info/NV-IDE.html) | [Nv](https://lazyman.dev/info/Nv.html) |
+| [NvChad](https://lazyman.dev/info/NvChad.html) | [NvPak](https://lazyman.dev/info/NvPak.html) | [OnMyWay](https://lazyman.dev/info/OnMyWay.html) | [ONNO](https://lazyman.dev/info/ONNO.html) | [Opinion](https://lazyman.dev/info/Opinion.html) |
+| [Optixal](https://lazyman.dev/info/Optixal.html) | [Orange](https://lazyman.dev/info/Orange.html) | [Orhun](https://lazyman.dev/info/Orhun.html) | [pde](https://lazyman.dev/info/pde.html) | [Primeagen](https://lazyman.dev/info/Primeagen.html) |
+| [Python](https://lazyman.dev/info/Python.html) | [Rafi](https://lazyman.dev/info/Rafi.html) | [Rohit](https://lazyman.dev/info/Rohit.html) | [Roiz](https://lazyman.dev/info/Roiz.html) | [Rust](https://lazyman.dev/info/Rust.html) |
+| [SaleVim](https://lazyman.dev/info/SaleVim.html) | [Scratch](https://lazyman.dev/info/Scratch.html) | [Shuvro](https://lazyman.dev/info/Shuvro.html) | [Simple](https://lazyman.dev/info/Simple.html) | [SingleFile](https://lazyman.dev/info/SingleFile.html) |
+| [Slydragonn](https://lazyman.dev/info/Slydragonn.html) | [SpaceVim](https://lazyman.dev/info/SpaceVim.html) | [Spider](https://lazyman.dev/info/Spider.html) | [StartBase](https://lazyman.dev/info/StartBase.html) | [StartLsp](https://lazyman.dev/info/StartLsp.html) |
+| [StartMason](https://lazyman.dev/info/StartMason.html) | [Traap](https://lazyman.dev/info/Traap.html) | [Webdev](https://lazyman.dev/info/Webdev.html) | [Wuelner](https://lazyman.dev/info/Wuelner.html) | [xero](https://lazyman.dev/info/xero.html) |
+| | | [Xiao](https://lazyman.dev/info/Xiao.html) | | |
 
 ## Lazyman Configuration Categories
 
@@ -230,10 +230,6 @@ installed with the `-w conf` option.
 
 #### Lazyman "Personal" Neovim configurations
 
-- [3rd](https://lazyman.dev/info/3rd.html)
-  - `lazyman -w 3rd`
-  - Patch in `~/.config/nvim-Lazyman/scripts/patches/3rd.patch` applied
-  - Example [custom tree-sitter grammar](https://github.com/3rd/syslang){:target="\_blank"}{:rel="noopener noreferrer"}
 - [Adib](https://lazyman.dev/info/Adib.html)
   - Personal Neovim configuration of Adib Hanna
   - Tips, distros, and configuration [demo video](https://youtu.be/8SVPOKZVaMU){:target="\_blank"}{:rel="noopener noreferrer"}

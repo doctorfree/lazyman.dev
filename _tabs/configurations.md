@@ -387,9 +387,6 @@ installed with the `-x conf` option.
 - [Kabin](https://lazyman.dev/info/Kabin.html)
   - One of the AstroNvim "Black Belt" example advanced configurations
   - `lazyman -x Kabin`
-- [Lamia](https://lazyman.dev/info/Lamia.html)
-  - One of the AstroNvim "Black Belt" example advanced configurations
-  - `lazyman -x Lamia`
 - [Micah](https://lazyman.dev/info/Micah.html)
   - One of the AstroNvim "Black Belt" example advanced configurations
   - `lazyman -x Micah`

@@ -104,7 +104,6 @@ Distinguishing features of the top Neovim configuration distributions:
     - `~/.config/nvim-AstroNvimPlus` install with `lazyman -a`
     - `~/.config/nvim-AstroNvimStart` install with `lazyman -x AstroNvimStart`
     - `~/.config/nvim-Kabin` install with `lazyman -x Kabin`
-    - `~/.config/nvim-Lamia` install with `lazyman -x Lamia`
     - `~/.config/nvim-Micah` install with `lazyman -x Micah`
     - `~/.config/nvim-Normal` install with `lazyman -x Normal`
     - `~/.config/nvim-Orhun` install with `lazyman -w Orhun`
