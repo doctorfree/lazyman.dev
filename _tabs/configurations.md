@@ -203,6 +203,9 @@ installed with the `-w conf` option.
   - Personal Neovim configuration of Adib Hanna
   - Tips, distros, and configuration [demo video](https://youtu.be/8SVPOKZVaMU){:target="\_blank"}{:rel="noopener noreferrer"}
   - Install and initialize with `lazyman -w Adib`
+- [Ahsan](https://lazyman.dev/info/Ahsan.html)
+  - Personal Neovim configuration of Ahsan Habib
+  - Install and initialize with `lazyman -w Ahsan`
 - [Artur](https://lazyman.dev/info/Artur.html)
   - Personal Neovim configuration of Artur Gomes
   - Install and initialize with `lazyman -w Artur`
@@ -218,6 +221,9 @@ installed with the `-w conf` option.
 - [Charles](https://lazyman.dev/info/Charles.html)
   - Well structured lazy config with several setup scripts and a Wiki
   - Install and initialize with `lazyman -w Charles`
+- [Chokerman](https://lazyman.dev/info/Chokerman.html)
+  - Personal Neovim configuration of Github user `justchokingaround`
+  - Install and initialize with `lazyman -w Chokerman`
 - [Craftzdog](https://lazyman.dev/info/Craftzdog.html)
   - Takuya Matsuyama's Neovim configuration
   - Install and initialize with `lazyman -w Craftzdog`
