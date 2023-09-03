@@ -100,7 +100,7 @@ The following command line menu entry points are supported:
 Neovim configuration options, settings, formatters, linters, language servers,
 and plugins can be managed via these menus.
 
-## Get configuration script
+## [Get configuration script](https://lazyman.dev/info/get_conf.html)
 
 Neovim 0.9 introduced a new feature which allows execution of Lua scripts
 in Neovim from the shell command line. The `lazyman` configuration menu
@@ -112,9 +112,10 @@ GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"
 confval=$(NVIM_APPNAME="nvim-Lazyman" nvim -l ${GET_CONF} ${confname} 2>&1)
 ```
 
-The `get_conf.lua` script can also be used to retrieve option or variable
-settings in any Neovim configuration. For example, to retrieve the value of
-the 'mouse' option in the `Webdev` Neovim configuration:
+The [get_conf.lua](https://lazyman.dev/info/get_conf.html) script can also
+be used to retrieve option or variable settings in any Neovim configuration.
+For example, to retrieve the value of the 'mouse' option in the `Webdev`
+Neovim configuration:
 
 ```bash
 GET_CONF="${HOME}/.config/nvim-Lazyman/scripts/get_conf.lua"

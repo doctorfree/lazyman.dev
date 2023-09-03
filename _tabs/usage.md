@@ -39,7 +39,36 @@ The `lazyman` command, when invoked without arguments or with the `-F menu`
 argument, presents an interactive menu. The Lazyman menu system can be used
 to perform almost all of the functions available from the command line.
 Submenus are available to configure the Lazyman Neovim configuration as well
-as the `Webdev` and `LazyIde` Neovim configurations.
+as the `Webdev` and `LazyIde` Neovim configurations. These submenus use the
+[get_conf.lua](https://lazyman.dev/info/get_conf.html) script to get and set
+Neovim configuration values from the command line.
+
+The [lazyman_config.sh](https://lazyman.dev/info/lazyman_config.html) script
+displays the Neovim configuration management menus. Usage of this script
+is as follows:
+
+```
+Usage: lazyman_config [-a] [-d] [-i] [-m menu] [-s name value] [-u]
+Where:
+    -a lists all configuration names and exits
+    -d specifies debug mode
+    -i indicates initialize conditional plugin configurations and exit
+    -m 'menu' specifies the menu to display (conf, form, lsp, plugins)
+    -s 'name value' indicates set the value of configuration 'name' to 'value'
+      if 'name' is 'get' then 'value' is the configuration name to get
+      if 'name' is a table then 'value' is the table entry to set
+      follow 'value' with 'enable' or 'disable'
+    -u displays this usage message and exits
+Examples:
+  Display the 'Formatters' menu
+    lazyman_config -m form
+  Set the theme to 'kanagawa'
+    lazyman_config -s theme kanagawa
+  Get the theme setting
+    lazyman_config -s get theme
+  Disable 'gopls' language server
+    lazyman_config -s lsp_servers gopls disable
+```
 
 Use the Lazyman menu system to select and install/open/remove Neovim configurations
 managed by Lazyman. Enter a menu option number or keywords to select an option.
