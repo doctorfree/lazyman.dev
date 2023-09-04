@@ -14,15 +14,18 @@ Each Lazyman supported Neovim configuration now has an
 information document providing configuration details at
 [https://lazyman.dev/info](https://lazyman.dev/info).
 
-## Lazyman configuration category websites
+## Lazyman websites
 
-Lazyman supported configurations using popular Neovim configuration
-frameworks are now detailed in newly available websites. These include:
+Lazyman has a shiny new website. Also, Lazyman supported configurations
+using popular Neovim configuration frameworks are now detailed in newly
+available websites. In addition, Lazyman supported Neovim configurations
+maintained by the author have new websites detailing their configuration
+and usage.
 
-- [AstroNvim configurations](https://astronvim.lazyman.dev)
-- [LazyVim configurations](https://lazyvim.lazyman.dev)
-- [LunarVim configurations](https://lunarvim.lazyman.dev)
-- [NvChad configurations](https://nvchad.lazyman.dev)
+| **Shiny** | **New** | **Lazyman** | **Websites** |
+| :-------: | :-----: | :---------: | :----------: |
+| [Lazyman<br />lazyman.dev](https://lazyman.dev) | [AstroNvim<br />astronvim.lazyman.dev](https://astronvim.lazyman.dev) | [LazyVim<br />lazyvim.lazyman.dev](https://lazyvim.lazyman.dev) | [LunarVim<br />lunarvim.lazyman.dev](https://lunarvim.lazyman.dev) |
+| [NvChad<br />nvchad.lazyman.dev](https://nvchad.lazyman.dev) | [CandyVim<br />candyvim.lazyman.dev](https://candyvim.lazyman.dev) | [LazyIde<br />ide.lazyman.dev](https://ide.lazyman.dev) | [Webdev<br />webdev.lazyman.dev](https://webdev.lazyman.dev) |
 
 ## New features, fixes, and improvements
 
