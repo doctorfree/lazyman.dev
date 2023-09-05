@@ -202,7 +202,7 @@ make_info() {
       WS_URL="https://lazyman.dev"
       YT_URL="https://www.youtube.com/@doctorfree"
       CF_CAT="Default"
-      C_DESC="The Lazyman Neovim configuration serves as a reference implementation of a configuration with multiple namespaces and managed via a command line menu interface. Currently the Lazyman Neovim configuration provides two separate and distinct namespaces ('free' and 'onno'). To switch between namespaces, set the 'namespace' value in 'lua/configuration.lua'."
+      C_DESC="The Lazyman Neovim configuration serves as a reference implementation of a configuration with multiple namespaces and managed via a command line menu interface. Currently the Lazyman Neovim configuration provides three separate and distinct namespaces ('candy', 'free' and 'onno'). To switch between namespaces, set the 'namespace' value in 'lua/configuration.lua'."
       C_INST="Installed and initialized by default"
       ;;
     Abstract)
@@ -500,6 +500,12 @@ make_info() {
       C_DESC="Personal Neovim configuration of Adib Hanna. Tips, distros, and configuration [demo video](https://youtu.be/8SVPOKZVaMU)"
       C_INST="lazyman -w Adib"
       ;;
+    Ahsan)
+      GH_URL="https://github.com/bibjaw99/workstation"
+      CF_CAT="Personal"
+      C_DESC="Personal Neovim configuration of Ahsan Habib"
+      C_INST="lazyman -w Ahsan"
+      ;;
     Beethoven)
       GH_URL="https://github.com/Elteoremadebeethoven/nvim-config"
       YT_URL="https://www.youtube.com/@TheoremofBeethoven"
@@ -519,6 +525,13 @@ make_info() {
       CF_CAT="Personal"
       C_DESC="Well structured lazy config with several setup scripts and a Wiki"
       C_INST="lazyman -w Charles"
+      ;;
+    Chokerman)
+      GH_URL="https://github.com/justchokingaround/dotfiles"
+      DF_URL="https://dotfyle.com/justchokingaround/dotfiles-coding-neovim-nvim"
+      CF_CAT="Personal"
+      C_DESC="Personal Neovim configuration of Github user justchokingaround"
+      C_INST="lazyman -w Chokerman"
       ;;
     Craftzdog)
       GH_URL="https://github.com/craftzdog/dotfiles-public"

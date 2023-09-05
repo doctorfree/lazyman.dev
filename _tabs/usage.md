@@ -133,7 +133,7 @@ Where:
     -m indicates install and initialize MagicVim Neovim configuration
     -M indicates install and initialize Mini Neovim configuration
     -O 'name' indicates set Lazyman configuration to namespace 'name'
-       'name' can be one of: free onno toggle
+       'name' can be one of: free onno candy
     -s indicates install and initialize SpaceVim Neovim configuration
     -v indicates install and initialize LunarVim Neovim configuration
     -S indicates show Neovim configuration fuzzy selector menu
@@ -163,7 +163,7 @@ Where:
     -V 'url' specifies an NvChad user configuration git repository
     -w 'conf' indicates install and initialize Personal 'conf' config
        'conf' can be one of:
-           All Adib Artur Beethoven Brain CandyVim Charles Craftzdog Daniel Dillon Elianiva Elijah Enrique Kristijan Heiker J4de Josean JustinLvim JustinNvim Kodo LamarVim Lukas LvimAdib Maddison Metis Mini ONNO OnMyWay Optixal Orhun Primeagen Rafi Roiz Simple Slydragonn Spider Traap Wuelner xero Xiao
+           All Adib Ahsan Artur Beethoven Brain CandyVim Charles Chokerman Craftzdog Daniel Dillon Elianiva Elijah Enrique Kristijan Heiker J4de Josean JustinLvim JustinNvim Kodo LamarVim Lukas LvimAdib Maddison Metis Mini ONNO OnMyWay Optixal Orhun Primeagen Rafi Roiz Simple Slydragonn Spider Traap Wuelner xero Xiao
     -W indicates install and initialize all 'Personal' Neovim configurations
     -x 'conf' indicates install and initialize nvim-starter 'conf' config
        'conf' can be one of:
@@ -254,13 +254,23 @@ with settings briefly described here:
 
 ##### Namespace selection
 
-The `Lazyman` Neovim configuration contains two separate and distinct
+The `Lazyman` Neovim configuration contains three separate and distinct
 configurations. The setting `conf.namespace` in `lua/configuration.lua`
 controls which configuration is active. The supported values for
-`conf.namespace` are `free` and `onno`. The `free` namespace is the same
-configuration used in previous releases of `Lazyman`. The `onno` namespace
-is based on the [ONNO](https://lazyman.dev/info/ONNO.html)
-configuration with modifications and enhancements to integrate this config with `lazyman`.
+`conf.namespace` are `candy` `free` and `onno`. The `free` namespace is the same
+configuration used in previous releases of `Lazyman`.
+The `onno` namespace is based on the [ONNO](https://lazyman.dev/info/ONNO.html)
+configuration with modifications and enhancements to integrate this config with
+`lazyman`. The `candy` namespace is based on the
+[Ecovim](https://lazyman.dev/info/Ecovim.html) configuration with modifications
+and enhancements to integrate this config with `lazyman` along with some fun eye
+candy and games.
+
+To use the `candy` namespace, set:
+
+```
+conf.namespace = "candy"
+```
 
 To use the `free` namespace, set:
 

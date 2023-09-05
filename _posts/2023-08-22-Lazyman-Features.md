@@ -162,7 +162,7 @@ are supported:
 
 - Package management and plugin configuration via [lazy.nvim](https://github.com/folke/lazy.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
 - Easily configure namespace, theme, active plugins, and their configuration via `configuration.lua`
-- Two supported namespaces, `free` and `onno`, to easily switch between two completely different configurations
+- Three supported namespaces, `candy` `free` and `onno`, to easily switch between 3 completely different configurations
 - Preconfigured themes: [catppuccin](https://github.com/catppuccin/nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [tokyonight](https://github.com/folke/tokyonight.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [nightfox](https://github.com/EdenEast/nightfox.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [tundra](https://github.com/sam4llis/nvim-tundra){:target="\_blank"}{:rel="noopener noreferrer"}, [dracula](https://github.com/Mofiqul/dracula.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [kanagawa](https://github.com/rebelot/kanagawa.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [onedarkpro](https://github.com/olimorris/onedarkpro.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [everforest](https://github.com/neanias/everforest-nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [monokai-pro](https://github.com/loctvl842/monokai-pro.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
   - Keymap to toggle transparency for several color schemes (`,ut`)
 - AI developer assistants:

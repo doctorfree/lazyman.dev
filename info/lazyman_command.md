@@ -113,7 +113,7 @@ usage() {
   printf "\n    -m indicates install and initialize MagicVim Neovim configuration"
   printf "\n    -M indicates install and initialize Mini Neovim configuration"
   printf "\n    -O 'name' indicates set Lazyman configuration to namespace 'name'"
-  printf "\n       'name' can be one of: free onno toggle"
+  printf "\n       'name' can be one of: free onno candy"
   printf "\n    -s indicates install and initialize SpaceVim Neovim configuration"
   printf "\n    -v indicates install and initialize LunarVim Neovim configuration"
   printf "\n    -S indicates show Neovim configuration fuzzy selector menu"
@@ -1820,7 +1820,7 @@ install_config() {
   2k | AstroNvimStart | Barebones | Basic | Modern | pde | CodeArt | Cosmic | Ember | Fennel | JustinOhMy | Kabin | Lamia | Micah | Normal | NvPak | HardHacker | Rohit | Scratch | SingleFile | StartBase | Opinion | StartLsp | StartMason | Modular | BasicLsp | BasicMason | Extralight | LspCmp | Minimal)
     lazyman ${darg} -x ${confname} -z -y -Q -q
     ;;
-  Adib | Artur | ONNO | CandyVim | Charles | Craftzdog | Dillon | Daniel | JustinNvim | JustinLvim | Kodo | LamarVim | Lukas | LvimAdib | Maddison | Metis | Roiz | OnMyWay | Optixal | Plug | Kristijan | Heiker | Simple | Beethoven | Brain | Elianiva | Elijah | Enrique | J4de | Josean | Orhun | Primeagen | Rafi | Slydragonn | Spider | Traap | Wuelner | xero | Xiao)
+  Adib | Ahsan | Artur | ONNO | CandyVim | Charles | Chokerman | Craftzdog | Dillon | Daniel | JustinNvim | JustinLvim | Kodo | LamarVim | Lukas | LvimAdib | Maddison | Metis | Roiz | OnMyWay | Optixal | Plug | Kristijan | Heiker | Simple | Beethoven | Brain | Elianiva | Elijah | Enrique | J4de | Josean | Orhun | Primeagen | Rafi | Slydragonn | Spider | Traap | Wuelner | xero | Xiao)
     lazyman ${darg} -w ${confname} -z -y -Q -q
     ;;
   *)
@@ -2158,6 +2158,20 @@ show_main_menu() {
     options=()
     get_config_str "${BASECFGS} ${LANGUCFGS} ${PRSNLCFGS} ${STARTCFGS}"
     totalitems=${totalcfg}
+    # Get count of installed custom configurations
+    custom_configs=("${sorted[@]}")
+    for nvim_name in Lazyman ${BASECFGS} ${LANGUCFGS} ${PRSNLCFGS} ${STARTCFGS}; do
+      # remove all the supported configs from the custom configs array
+      for i in "${!custom_configs[@]}"; do
+        if [[ ${custom_configs[i]} = $nvim_name ]]; then
+          unset 'custom_configs[i]'
+        fi
+      done
+    done
+    numcustom=${#custom_configs[@]}
+    # Add installed custom configurations to total
+    totalitems=$((${totalitems} + ${numcustom}))
+    # Add Lazyman config
     ((totalitems++))
     if [ "${cfginst}" ]; then
       iushort="update"
@@ -2375,16 +2389,6 @@ show_main_menu() {
     else
       instcats="${instcats}${start_num_installed}/${total_start_cfg} Starters ${mark}"
     fi
-    custom_configs=("${sorted[@]}")
-    for nvim_name in Lazyman ${BASECFGS} ${LANGUCFGS} ${PRSNLCFGS} ${STARTCFGS}; do
-      # remove all the supported configs from the installed configs array
-      for i in "${!custom_configs[@]}"; do
-        if [[ ${custom_configs[i]} = $nvim_name ]]; then
-          unset 'custom_configs[i]'
-        fi
-      done
-    done
-    numcustom=${#custom_configs[@]}
     [ ${numcustom} -gt 0 ] && {
       mark=""
       if [ "${have_rich}" ]; then
@@ -3523,12 +3527,12 @@ while getopts "9aAb:BcC:dD:eE:f:F:gGhHi:IjJkK:lL:mMnN:O:pPqQrRsStTUvV:w:Wx:XyYzZ
       onno|Onno|ONNO)
         ${SUBMENUS} -s namespace onno
         ;;
-      toggle|Toggle)
-        ${SUBMENUS} -t namespace
+      candy|Candy|CANDY)
+        ${SUBMENUS} -s namespace candy
         ;;
       *)
         printf "\nUnsupported namespace: ${namespace}"
-        printf "\nSupported namespaces: free onno\n"
+        printf "\nSupported namespaces: candy free onno\n"
         brief_usage
         ;;
     esac
@@ -4174,6 +4178,11 @@ install_remove() {
         lazyman ${darg} -C https://github.com/CharlesChiuGit/nvimdots.lua \
           -N nvim-Charles ${quietflag} -z ${yesflag}
       }
+      [ "$(getok nvim-Chokerman)" == "ok" ] && {
+        printf "\n${action} Chokerman Neovim configuration"
+        lazyman ${darg} -C https://github.com/justchokingaround/dotfiles \
+          -b main -D coding/neovim/nvim -N nvim-Chokerman ${quietflag} -z ${yesflag}
+      }
       [ "$(getok nvim-Craftzdog)" == "ok" ] && {
         printf "\n${action} Craftzdog Neovim configuration"
         lazyman ${darg} -C https://github.com/craftzdog/dotfiles-public \
@@ -4279,6 +4288,11 @@ install_remove() {
         lazyman ${darg} -C https://github.com/anthdm/.nvim \
           -N nvim-Simple -P ${quietflag} -z ${yesflag}
       }
+      [ "$(getok nvim-Ahsan)" == "ok" ] && {
+        printf "\n${action} Ahsan Neovim configuration"
+        lazyman ${darg} -C https://github.com/bibjaw99/workstation \
+          -D .config/nvim -N nvim-Ahsan ${quietflag} -z ${yesflag}
+      }
       [ "$(getok nvim-Artur)" == "ok" ] && {
         printf "\n${action} Artur Neovim configuration"
         lazyman ${darg} -C https://github.com/arturgoms/nvim \
@@ -4365,6 +4379,10 @@ install_remove() {
       Adib)
         prsnl_url="https://github.com/adibhanna/nvim"
         ;;
+      Ahsan)
+        prsnl_url="https://github.com/bibjaw99/workstation"
+        prsnl_dir="-D .config/nvim"
+        ;;
       Artur)
         prsnl_url="https://github.com/arturgoms/nvim"
         ;;
@@ -4427,6 +4445,11 @@ install_remove() {
         ;;
       Charles)
         prsnl_url="https://github.com/CharlesChiuGit/nvimdots.lua"
+        ;;
+      Chokerman)
+        prsnl_url="https://github.com/justchokingaround/dotfiles"
+        prsnl_opt="-b main"
+        prsnl_dir="-D coding/neovim/nvim"
         ;;
       Craftzdog)
         prsnl_url="https://github.com/craftzdog/dotfiles-public"
