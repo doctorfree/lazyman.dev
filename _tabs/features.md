@@ -163,7 +163,7 @@ are supported:
 
 - Package management and plugin configuration via [lazy.nvim](https://github.com/folke/lazy.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
 - Easily configure namespace, theme, active plugins, and their configuration via `configuration.lua`
-- Three supported namespaces, `candy` `free` and `onno`, to easily switch between 3 completely different configurations
+- [Multiple namespaces](#multiple-namespace-support), it is really 3 configurations in one. Switch between namespaces with the `conf.namespace` setting in `lua/configuration.lua` or via the Lazyman menu system (`lazyman -F`).
 - Preconfigured themes: [catppuccin](https://github.com/catppuccin/nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [tokyonight](https://github.com/folke/tokyonight.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [nightfox](https://github.com/EdenEast/nightfox.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [tundra](https://github.com/sam4llis/nvim-tundra){:target="\_blank"}{:rel="noopener noreferrer"}, [dracula](https://github.com/Mofiqul/dracula.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [kanagawa](https://github.com/rebelot/kanagawa.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [onedarkpro](https://github.com/olimorris/onedarkpro.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [everforest](https://github.com/neanias/everforest-nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [monokai-pro](https://github.com/loctvl842/monokai-pro.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
   - Keymap to toggle transparency for several color schemes (`,ut`)
 - AI developer assistants:
@@ -180,7 +180,7 @@ are supported:
 - Replace the UI for messages, cmdline and popup menu via [noice.nvim](https://github.com/folke/noice.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
 - Fully featured status line via [lualine](https://github.com/nvim-lualine/lualine.nvim){:target="\_blank"}{:rel="noopener noreferrer"} and [tabline](https://github.com/kdheepak/tabline.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
 - Terminal integration via [nvim-toggleterm.lua](https://github.com/akinsho/nvim-toggleterm.lua){:target="\_blank"}{:rel="noopener noreferrer"}
-- Terminal management via [terminal.nvim](https://github.com/rebelot/terminal.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
+- [Terminal management](#lazyman-neovim-terminal) via [terminal.nvim](https://github.com/rebelot/terminal.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
   - Preconfigured Neovim terminal execution of `lazyman` command (`<leader>lm`)
   - Preconfigured Neovim terminal execution of `asciiville` command (`<leader>A`)
   - Preconfigured Neovim terminal execution of `htop` command (`<leader>H`)
@@ -230,3 +230,67 @@ Neovim configuration.
 - Outlining symbols with [symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim){:target="\_blank"}{:rel="noopener noreferrer"}
 - Snippets provided by [Luasnip](https://github.com/L3MON4D3/LuaSnip){:target="\_blank"}{:rel="noopener noreferrer"} and [friendly snippets](https://github.com/rafamadriz/friendly-snippets){:target="\_blank"}{:rel="noopener noreferrer"} with autocompletion
 - Auto-install and setup of dozens of language servers including: `ansiblels`, `astro`, `awk_ls`, `bashls`, `clangd`, `ccls`, `cmake`, `cssmodules_ls`, `denols`, `dockerls`, `eslint`, `gopls`, `graphql`, `html`, `jdtls`, `jsonls`, `julials`, `lua_ls`, `ltex`, `marksman`, `pylsp`, `pyright`, `rust_analyzer`, `sqlls`, `svelte`, `tailwindcss`, `taplo`, `texlab`, `tflint`, `tsserver`, `vimls`, `yamlls`
+
+#### Go development
+
+<div align="center"><p>
+<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/go-dev.png" style="width:1152px;height:635px;">
+</p>
+</div>
+
+#### Debugging via DAP
+
+<div align="center"><p>
+<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/dap.png" style="width:1152px;height:635px;">
+</p>
+</div>
+
+### Lazyman Neovim Terminal
+
+The `Lazyman` Neovim configuration includes Neovim Terminal management via
+[terminal.nvim](https://github.com/rebelot/terminal.nvim){:target="\_blank"}{:rel="noopener noreferrer"}. This Neovim terminal
+is preconfigured for execution of the `lazyman` command. A shortcut key
+binding to execute `lazyman` in a Neovim terminal has also been provided:
+(`<leader>lm`). While in Neovim with the default `nvim-Lazyman` configuration,
+pressing `,lm` will execute the `lazyman` command in a Neovim floating terminal
+window. Alternately, executing the Neovim command `:Lazyman` will also
+bring up the `lazyman` command in a Neovim terminal.
+
+If [Asciiville](https://github.com/doctorfree/Asciiville){:target="\_blank"}{:rel="noopener noreferrer"} is installed,
+pressing `,A` or executing the `:Asciiville` Neovim command will execute
+the `asciiville` command in a Neovim floating terminal window.
+
+If the `htop` command is available, `:Htop` will execute the `htop` system
+monitor in a floating Neovim terminal window.
+
+This preconfigured Neovim terminal capability is only available in the
+`Lazyman` Neovim configuration and not in the other configs.
+
+### Multiple namespace support
+
+The Lazyman Neovim configuration supports multiple namespaces, each of which
+has its own separate and distinct configuration, options, plugins, and style.
+
+Use the Lazyman configuration menu to select a namespace (`lazyman -F`).
+
+The default namespace is `free`. This was the traditional namespace used by
+all previous versions of Lazyman:
+
+<div align="center"><p>
+<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/free.png" style="width:1040px;height:643px;">
+</p>
+</div>
+
+The `onno` namespace is based on the `ONNO` Lazyman Neovim configuration:
+
+<div align="center"><p>
+<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/onno.png" style="width:1040px;height:643px;">
+</p>
+</div>
+
+The `candy` namespace is based on the `Ecovim` Lazyman Neovim configuration:
+
+<div align="center"><p>
+<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/candy.png" style="width:1040px;height:643px;">
+</p>
+</div>
