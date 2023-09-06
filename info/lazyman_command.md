@@ -460,11 +460,11 @@ init_neovim() {
       else
         if [ "${plug}" ]; then
           xtimeout ${timeout} nvim --headless -c \
-            'set nomore' -c 'PlugInstall!' -c 'qa' >>${LOG} 2>&1
+            'PlugInstall!' -c 'qa' >>${LOG} 2>&1
           xtimeout ${timeout} nvim --headless -c \
-            'set nomore' -c 'UpdateRemotePlugins' -c 'qa' >>${LOG} 2>&1
+            'UpdateRemotePlugins' -c 'qa' >>${LOG} 2>&1
           xtimeout ${timeout} nvim --headless -c \
-            'set nomore' -c 'GoInstallBinaries' -c 'qa' >>${LOG} 2>&1
+            'GoInstallBinaries' -c 'qa' >>${LOG} 2>&1
         else
           if [ "${neodir}" == "${spacevimdir}" ]; then
             xtimeout ${timeout} nvim --headless "+SPInstall" +qa >>${LOG} 2>&1
@@ -487,7 +487,7 @@ init_neovim() {
             else
               [ "${neodir}" == "${minivimdir}" ] || {
                 [ "${neodir}" == "nvim-Nyoom" ] || {
-                  xtimeout ${timeout} nvim --headless -c 'set nomore' "+Lazy! sync" +qa >>${LOG} 2>&1
+                  xtimeout ${timeout} nvim --headless "+Lazy! sync" +qa >>${LOG} 2>&1
                   [ "${neodir}" == "${nvchaddir}" ] ||
                     [ "${neodir}" == "nvim-Cpp" ] ||
                     [ "${neodir}" == "nvim-Go" ] ||
@@ -521,11 +521,11 @@ init_neovim() {
       else
         if [ "${plug}" ]; then
           xtimeout ${timeout} nvim --headless \
-            -c 'set nomore' -c 'PlugInstall!' -c 'qa' >/dev/null 2>&1
+            -c 'PlugInstall!' -c 'qa' >/dev/null 2>&1
           xtimeout ${timeout} nvim --headless \
-            -c 'set nomore' -c 'UpdateRemotePlugins' -c 'qa' >/dev/null 2>&1
+            -c 'UpdateRemotePlugins' -c 'qa' >/dev/null 2>&1
           xtimeout ${timeout} nvim --headless \
-            -c 'set nomore' -c 'GoInstallBinaries' -c 'qa' >/dev/null 2>&1
+            -c 'GoInstallBinaries' -c 'qa' >/dev/null 2>&1
         else
           if [ "${neodir}" == "${spacevimdir}" ]; then
             xtimeout ${timeout} nvim --headless \
@@ -550,7 +550,7 @@ init_neovim() {
             else
               [ "${neodir}" == "${minivimdir}" ] || {
                 [ "${neodir}" == "nvim-Nyoom" ] || {
-                  xtimeout ${timeout} nvim --headless -c 'set nomore' \
+                  xtimeout ${timeout} nvim --headless \
                     "+Lazy! sync" +qa >/dev/null 2>&1
                   [ "${neodir}" == "${nvchaddir}" ] ||
                     [ "${neodir}" == "nvim-Cpp" ] ||
@@ -687,7 +687,9 @@ remove_config() {
   }
 
   [ "$remove_lazyman" ] && {
+    printf "\nRemoving all Lazyman installed Neovim configurations ..."
     [ "$tellme" ] || lazyman -R -A -y -q > /dev/null 2>&1
+    printf " done"
   }
 
   if [ "${ndir}" == "${spacevimdir}" ]; then

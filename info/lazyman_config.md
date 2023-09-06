@@ -996,10 +996,11 @@ show_plugin_menu() {
     [ "${use_namespace}" == "ecovim" ] && {
       options+=("Alpha Header  [${use_dashboard_header}]")
     }
+    options+=("Dressing UI   [${use_dressing}]")
+    options+=("Noice UI      [${use_noice}]")
     options+=("Enable Games  [${use_games}]")
     options+=("Terminal      [${use_terminal}]")
     [ "${use_namespace}" == "ecovim" ] || {
-      options+=("Dressing UI   [${use_dressing}]")
       options+=("File Tree [${use_neotree}]")
       options+=("Enable IDE    [${use_ide}]")
       options+=("Indentline [${use_indentline}]")
@@ -1023,7 +1024,6 @@ show_plugin_menu() {
       options+=("Media Backend [${use_media_backend}]")
       options+=("Multi Cursor  [${use_multi_cursor}]")
       options+=("Navigator     [${use_navigator}]")
-      options+=("Noice UI      [${use_noice}]")
       options+=("Picker        [${use_picker}]")
       options+=("Project       [${use_project}]")
       options+=("Enable Ranger [${use_ranger}]")
@@ -2298,7 +2298,7 @@ show_conf_menu() {
     fi
     PS3="${BOLD}${PLEASE} (numeric or text, 'h' for help): ${NORM}"
     options=()
-    options+=("Namespace   [${use_namespace}]")
+    options+=("Namespace [${use_namespace}]")
     [ "${use_namespace}" == "free" ] && {
       options+=("Diagnostics [${use_show_diagnostics}]")
     }
@@ -2318,17 +2318,17 @@ show_conf_menu() {
       options+=("Global Status [${use_global_statusline}]")
       options+=("Status Line   [${use_statusline}]")
       options+=("Status in Tab [${use_tabline}]")
-      if [ "${use_winbar}" == "none" ]
-      then
-        options+=("Winbar     [${use_winbar}]")
-      else
-        options+=("Winbar [${use_winbar}]")
-      fi
       [ "${use_namespace}" == "free" ] && {
         options+=("Semantic HL   [${use_semantic_highlighting}]")
         options+=("Convert SemHL [${convert_semantic_highlighting}]")
       }
     }
+    if [ "${use_winbar}" == "none" ]
+    then
+      options+=("Winbar     [${use_winbar}]")
+    else
+      options+=("Winbar [${use_winbar}]")
+    fi
     [ "${use_namespace}" == "onno" ] || {
       options+=("Zen Mode      [${use_zenmode}]")
       [ "${enable_zenmode}" == "true" ] && {
@@ -2434,6 +2434,18 @@ show_conf_menu() {
           [ "${choice}" == "${namespace}" ] || {
             if [[ " ${choices[*]} " =~ " ${choice} " ]]; then
               set_conf_value "namespace" "${choice}"
+              # Namespaces have different defaults
+              if [ "${choice}" == "onno" ]; then
+                set_conf_value "enable_winbar" "barbecue"
+                set_conf_value "lualine_style" "onno"
+              else
+                set_conf_value "lualine_style" "free"
+                if [ "${choice}" == "free" ]; then
+                  set_conf_value "enable_winbar" "standard"
+                else
+                  set_conf_value "enable_winbar" "barbecue"
+                fi
+              fi
               pluginit=1
             fi
           }
