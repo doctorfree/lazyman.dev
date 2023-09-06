@@ -187,10 +187,26 @@ are supported:
 - Fancy notifications via [nvim-notify](https://github.com/rcarriga/nvim-notify){:target="\_blank"}{:rel="noopener noreferrer"}
 - Code diagnostics via [LSP](https://github.com/neovim/nvim-lspconfig){:target="\_blank"}{:rel="noopener noreferrer"}
 - Choice of preconfigured dashboard: [alpha](https://github.com/goolord/alpha-nvim){:target="\_blank"}{:rel="noopener noreferrer"} (default), [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim){:target="\_blank"}{:rel="noopener noreferrer"}, or [mini.starter](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-starter.md){:target="\_blank"}{:rel="noopener noreferrer"}
+- Git management with [Lazygit](https://github.com/jesseduffield/lazygit){:target="_blank"}{:rel="noopener noreferrer"}, custom telescope commits view with [git-delta](https://github.com/dandavison/delta){:target="_blank"}{:rel="noopener noreferrer"}, [gitsigns](https://github.com/lewis6991/gitsigns.nvim){:target="_blank"}{:rel="noopener noreferrer"} & [diffview](https://github.com/sindrets/diffview.nvim){:target="_blank"}{:rel="noopener noreferrer"}, custom git blame
 - Neovim games for fun and learning ([Sudoku](https://github.com/jim-fx/sudoku.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [Blackjack](https://github.com/alanfortlink/blackjack.nvim){:target="\_blank"}{:rel="noopener noreferrer"}, [vim-be-good](https://github.com/ThePrimeagen/vim-be-good){:target="\_blank"}{:rel="noopener noreferrer"} practice basic movements, and more).
   - Key map `<leader>G` (e.g. `,G`) displays the available games and amusements.
 - Github actions to publish docker image on Docker Hub, check spelling/syntax, and auto-generate vim help doc (see `.github/workflows/*.yml`)
 - Over 100 plugins with custom configuration and management via menu system
+
+### Namespace `candy` features
+
+In addition to the above general features, the `candy` namespace of the Lazyman
+Neovim configuration includes the following features:
+
+- Beautiful and functional custom statusline built with [galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- Configured for TypeScript Development (React.js, Next.js, Vue.js, Angular, Node.js etc.)
+- Support for [TailwindCSS](https://tailwindcss.com/){:target="_blank"}{:rel="noopener noreferrer"} with highlighted colors
+- JSON autocompletion for most popular Frontend configs
+- NPM packages autocompletion in _package.json_
+- Internal [Jest](https://github.com/facebook/jest){:target="_blank"}{:rel="noopener noreferrer"} testing and [Coverage](https://github.com/andythigpen/nvim-coverage){:target="_blank"}{:rel="noopener noreferrer"} support
+- Debugging with [nvim-dap](https://github.com/mfussenegger/nvim-dap){:target="_blank"}{:rel="noopener noreferrer"} (works with React.js & React Native)
+- Automatic Treesitter-based folding with imports folded by default
+- Current code context via [nvim-navic](https://github.com/SmiteshP/nvim-navic){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Lazyman configuration plugins list and language server support
 
