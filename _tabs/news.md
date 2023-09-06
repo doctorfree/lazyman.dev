@@ -10,12 +10,12 @@ post_style: page
 
 ## New namespace based on Ecovim
 
-Lazyman version 3.1 introduced the `candy` namespace of the `Lazyman`
+Lazyman version 3.1 introduced the `ecovim` namespace of the `Lazyman`
 Neovim configuration. Previous versions of Lazyman included two namespaces,
 `free` and `onno`. The `free` namespace is the same configuration that
 was included in early versions of Lazyman. The `onno` namespace is based on
 the [ONNO](https://lazyman.dev/info/ONNO.html) configuration with modifications
-and enhancements to integrate this config with `lazyman`. The `candy` namespace
+and enhancements to integrate this config with `lazyman`. The `ecovim` namespace
 is based on the [Ecovim](https://lazyman.dev/info/Ecovim.html) configuration
 with modifications and enhancements to integrate this config with `lazyman`
 along with some fun eye candy and games.
@@ -23,10 +23,10 @@ along with some fun eye candy and games.
 To use one of the supported Lazyman Neovim configuration namespaces, set the
 `namespace` property in `~/.config/nvim-Lazyman/lua/configuration.lua`.
 
-For example, to use the `candy` namespace, set:
+For example, to use the `ecovim` namespace, set:
 
 ```
-conf.namespace = "candy"
+conf.namespace = "ecovim"
 ```
 
 ## Supported configurations information documents

@@ -193,9 +193,9 @@ are supported:
 - Github actions to publish docker image on Docker Hub, check spelling/syntax, and auto-generate vim help doc (see `.github/workflows/*.yml`)
 - Over 100 plugins with custom configuration and management via menu system
 
-### Namespace `candy` features
+### Namespace `ecovim` features
 
-In addition to the above general features, the `candy` namespace of the Lazyman
+In addition to the above general features, the `ecovim` namespace of the Lazyman
 Neovim configuration includes the following features:
 
 - Beautiful and functional custom statusline built with [galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim){:target="_blank"}{:rel="noopener noreferrer"}
@@ -304,9 +304,9 @@ The `onno` namespace is based on the `ONNO` Lazyman Neovim configuration:
 </p>
 </div>
 
-The `candy` namespace is based on the `Ecovim` Lazyman Neovim configuration:
+The `ecovim` namespace is based on the `Ecovim` Lazyman Neovim configuration:
 
 <div align="center"><p>
-<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/candy.png" style="width:1040px;height:643px;">
+<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/ecovim.png" style="width:1040px;height:643px;">
 </p>
 </div>
