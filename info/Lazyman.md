@@ -155,6 +155,8 @@ The Lazyman Neovim configuration serves as a reference implementation of a confi
 
 #### normal mode keymaps
 
+<div align="center">
+
 | Description |  LHS  |  RHS  |
 | :---------- | :---- | :---- |
 |  | <code>&lt;Tab&gt;</code> | <code>:BufferLineCycleNext&lt;CR&gt;</code> |
@@ -406,7 +408,11 @@ The Lazyman Neovim configuration serves as a reference implementation of a confi
 | Go to buffer 7 | <code>&lt;M-7&gt;</code> |  |
 |  | <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |
 
+</div>
+
 #### visual mode keymaps
+
+<div align="center">
 
 | Description | LHS | RHS |
 | ----------- | --- | --- |
@@ -462,7 +468,11 @@ The Lazyman Neovim configuration serves as a reference implementation of a confi
 |  | <code>&lt;Plug&gt;SpeedDatingDown</code> | <code>:&lt;C-U&gt;call speeddating#incrementvisual(-v:count1)&lt;CR&gt;</code> |
 |  | <code>&lt;Plug&gt;SpeedDatingUp</code> | <code>:&lt;C-U&gt;call speeddating#incrementvisual(v:count1)&lt;CR&gt;</code> |
 
+</div>
+
 #### operator mode keymaps
+
+<div align="center">
 
 | Description | LHS | RHS |
 | ----------- | --- | --- |
@@ -484,3 +494,5 @@ The Lazyman Neovim configuration serves as a reference implementation of a confi
 |  | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
 |  | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
 |  | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+
+</div>
