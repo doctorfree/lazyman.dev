@@ -63,36 +63,37 @@ post_style: page
 
 #### normal mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-|  | <code> </code> |  |
-|  | <code>"</code> |  |
-| Nvim builtin | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
-|  | <code>'</code> |  |
-| Nvim builtin | <code>Y</code> | <code>y$</code> |
-|  | <code>`</code> |  |
-|  | <code>c</code> |  |
-| Comment toggle blockwise | <code>gb</code> |  |
-| Comment toggle current line | <code>gcc</code> |  |
-| Comment toggle linewise | <code>gc</code> |  |
-| Comment toggle current block | <code>gbc</code> |  |
-|  | <code>g</code> |  |
-|  | <code>v</code> |  |
-|  | <code>&lt;C-R&gt;</code> |  |
-| Nvim builtin | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code> </code> |  |
+ | | <code>"</code> |  |
+ | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
+ | Nvim builtin| <code>'</code> |  |
+ | | <code>Y</code> | <code>y$</code> |
+ | Nvim builtin| <code>`</code> |  |
+ | | <code>c</code> |  |
+ | | <code>g</code> |  |
+ | | <code>gb</code> |  |
+ | Comment toggle blockwise| <code>gbc</code> |  |
+ | Comment toggle current block| <code>gc</code> |  |
+ | Comment toggle linewise| <code>gcc</code> |  |
+ | Comment toggle current line| <code>v</code> |  |
+ | | <code>&lt;C-R&gt;</code> |  |
+ | | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+ | Nvim builtin
 #### visual mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-| Nvim builtin | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Nvim builtin | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Comment toggle linewise (visual) | <code>gc</code> |  |
-| Comment toggle blockwise (visual) | <code>gb</code> |  |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>gb</code> |  |
+ | Comment toggle blockwise (visual)| <code>gc</code> |  |
+ | Comment toggle linewise (visual)
 #### operator mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-| Comment toggle blockwise | <code>gb</code> |  |
-| Comment toggle linewise | <code>gc</code> |  |
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code>gb</code> |  |
+ | Comment toggle blockwise| <code>gc</code> |  |
+ | Comment toggle linewise

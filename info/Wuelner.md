@@ -98,24 +98,24 @@ Wuelner's Neovim setup follows a well-defined philosophy governed by coherence a
 
 #### normal mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-| Nvim builtin | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
-| Nvim builtin | <code>Y</code> | <code>y$</code> |
-|  | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
-|  | <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
-| Nvim builtin | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code>&</code> | <code>:&&&lt;CR&gt;</code> |
+ | Nvim builtin| <code>Y</code> | <code>y$</code> |
+ | Nvim builtin| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
+ | | <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
+ | | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+ | Nvim builtin
 #### visual mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-| Nvim builtin | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Nvim builtin | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-|  | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
-|  | <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+ | | <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
+ | 
 #### operator mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |

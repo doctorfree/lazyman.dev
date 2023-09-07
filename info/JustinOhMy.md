@@ -129,226 +129,227 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 
 #### normal mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-| Projects | <code> fp</code> | <code>&lt;Cmd&gt;Telescope projects&lt;CR&gt;</code> |
-| Word (root dir) | <code> fw</code> |  |
-| All Buffers | <code> fB</code> | <code>&lt;Cmd&gt;Telescope buffers show_all_buffers=true&lt;CR&gt;</code> |
-| Text | <code> ft</code> |  |
-| Find LazyVim Config | <code> fC</code> |  |
-| Find Plugin File | <code> fP</code> |  |
-| Command History | <code> fc</code> | <code>&lt;Cmd&gt;Telescope command_history&lt;CR&gt;</code> |
-| Goto Symbol (Workspace) | <code> sS</code> |  |
-| Goto Symbol | <code> ss</code> |  |
-| Colorscheme with preview | <code> uC</code> |  |
-| Word (cwd) | <code> sW</code> |  |
-| Word (root dir) | <code> sw</code> |  |
-| Resume | <code> sR</code> | <code>&lt;Cmd&gt;Telescope resume&lt;CR&gt;</code> |
-| Options | <code> so</code> | <code>&lt;Cmd&gt;Telescope vim_options&lt;CR&gt;</code> |
-| Jump to Mark | <code> sm</code> | <code>&lt;Cmd&gt;Telescope marks&lt;CR&gt;</code> |
-| Man Pages | <code> sM</code> | <code>&lt;Cmd&gt;Telescope man_pages&lt;CR&gt;</code> |
-| Key Maps | <code> sk</code> | <code>&lt;Cmd&gt;Telescope keymaps&lt;CR&gt;</code> |
-| Search Highlight Groups | <code> sH</code> | <code>&lt;Cmd&gt;Telescope highlights&lt;CR&gt;</code> |
-| Help Pages | <code> sh</code> | <code>&lt;Cmd&gt;Telescope help_tags&lt;CR&gt;</code> |
-| Grep (cwd) | <code> sG</code> |  |
-| Grep (root dir) | <code> sg</code> |  |
-| Workspace diagnostics | <code> sD</code> | <code>&lt;Cmd&gt;Telescope diagnostics&lt;CR&gt;</code> |
-| Document diagnostics | <code> sd</code> | <code>&lt;Cmd&gt;Telescope diagnostics bufnr=0&lt;CR&gt;</code> |
-| Commands | <code> sC</code> | <code>&lt;Cmd&gt;Telescope commands&lt;CR&gt;</code> |
-| Command History | <code> sc</code> | <code>&lt;Cmd&gt;Telescope command_history&lt;CR&gt;</code> |
-| Buffer | <code> sb</code> | <code>&lt;Cmd&gt;Telescope current_buffer_fuzzy_find&lt;CR&gt;</code> |
-| Auto Commands | <code> sa</code> | <code>&lt;Cmd&gt;Telescope autocommands&lt;CR&gt;</code> |
-| Registers | <code> s"</code> | <code>&lt;Cmd&gt;Telescope registers&lt;CR&gt;</code> |
-| status | <code> gs</code> | <code>&lt;Cmd&gt;Telescope git_status&lt;CR&gt;</code> |
-| commits | <code> gc</code> | <code>&lt;Cmd&gt;Telescope git_commits&lt;CR&gt;</code> |
-| Recent (cwd) | <code> fR</code> |  |
-| Recent | <code> fr</code> | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
-| Find Files (cwd) | <code> fF</code> |  |
-| Find Files (root dir) | <code> ff</code> |  |
-| Buffers | <code> fb</code> | <code>&lt;Cmd&gt;Telescope buffers&lt;CR&gt;</code> |
-| Word (cwd) | <code> fW</code> |  |
-| convenience func PythonHelp | <code> jh</code> | <code>&lt;Cmd&gt;:call PythonHelp()&lt;CR&gt;</code> |
-| convenience func DFColumns | <code> jc</code> | <code>&lt;Cmd&gt;:call DFColumns()&lt;CR&gt;</code> |
-| Opens a new output window and executes the command specified in `g:jukit_shell_cmd` | <code> jos</code> | <code>&lt;Cmd&gt;:call jukit#splits#output()&lt;CR&gt;</code> |
-| Opens a new output window without executing any command | <code> jts</code> | <code>&lt;Cmd&gt;:call jukit#splits#term()&lt;CR&gt;</code> |
-| Opens a new output-history window, where saved ipython outputs are displayed | <code> jhs</code> | <code>&lt;Cmd&gt;:call jukit#splits#history()&lt;CR&gt;</code> |
-| Shortcut for opening output terminal and output-history | <code> johs</code> | <code>&lt;Cmd&gt;:call jukit#splits#output_and_history()&lt;CR&gt;</code> |
-| Close output-history window | <code> jhd</code> | <code>&lt;Cmd&gt;:call jukit#splits#close_history()&lt;CR&gt;</code> |
-| Close output window | <code> jod</code> | <code>&lt;Cmd&gt;:call jukit#splits#close_output_split()&lt;CR&gt;</code> |
-| Close both windows. Argument: Whether or not to ask you to confirm before closing. | <code> johd</code> | <code>&lt;Cmd&gt;:call jukit#splits#close_output_and_history(1)&lt;CR&gt;</code> |
-| Show output of current cell (determined by current cursor position) in output-history window. Argument: Whether or not to reload outputs if cell id of outputs to display is the same as the last cell id for which outputs were displayed | <code> jso</code> | <code>&lt;Cmd&gt;:call jukit#splits#show_last_cell_output(1)&lt;CR&gt;</code> |
-| Scroll down in output-history window. Argument: whether to scroll down (1) or up (0) | <code> jj</code> | <code>&lt;Cmd&gt;:call jukit#splits#out_hist_scroll(1)&lt;CR&gt;</code> |
-| Scroll up in output-history window. Argument: whether to scroll down (1) or up (0) | <code> jk</code> | <code>&lt;Cmd&gt;:call jukit#splits#out_hist_scroll(0)&lt;CR&gt;</code> |
-| Create/delete autocmd for displaying saved output on CursorHold. Also, see explanation for `g:jukit_auto_output_hist` | <code> jah</code> | <code>&lt;Cmd&gt;:call jukit#splits#toggle_auto_hist()&lt;CR&gt;</code> |
-| Send code within the current cell to output split (also saves the output if ipython is used and `g:jukit_save_output==1`). Argument: if 1, will move the cursor to the next cell below after sending the code to the split, otherwise cursor position stays the same. | <code> j </code> | <code>&lt;Cmd&gt;:call jukit#send#section(0)&lt;CR&gt;</code> |
-|  | <code> jsl</code> | <code>&lt;Cmd&gt;:call jukit#layouts#set_layout()&lt;CR&gt;</code> |
-| Send visually selected code to output split | <code> jss</code> | <code>&lt;Cmd&gt;:&lt;C-U&gt;call jukit#send#selection()&lt;CR&gt;</code> |
-| Execute all cells until the current cell | <code> jcc</code> | <code>&lt;Cmd&gt;:call jukit#send#until_current_section()&lt;CR&gt;</code> |
-| Execute all cells | <code> jall</code> | <code>&lt;Cmd&gt;:call jukit#send#all()&lt;CR&gt;</code> |
-| Create new code cell below. Argument: Whether to create code cell (0) or markdown cell (1) | <code> jco</code> | <code>&lt;Cmd&gt;:call jukit#cells#create_below(0)&lt;CR&gt;</code> |
-| Create new code cell above. Argument: Whether to create code cell (0) or markdown cell (1) | <code> jcO</code> | <code>&lt;Cmd&gt;:call jukit#cells#create_above(0)&lt;CR&gt;</code> |
-| Create new textcell below. Argument: Whether to create code cell (0) or markdown cell (1) | <code> jct</code> | <code>&lt;Cmd&gt;:call jukit#cells#create_below(1)&lt;CR&gt;</code> |
-| Create new textcell above. Argument: Whether to create code cell (0) or markdown cell (1) | <code> jcT</code> | <code>&lt;Cmd&gt;:call jukit#cells#create_above(1)&lt;CR&gt;</code> |
-| Delete current cell | <code> jcd</code> | <code>&lt;Cmd&gt;:call jukit#cells#delete()&lt;CR&gt;</code> |
-| Split current cell (saved output will then be assigned to the resulting cell above) | <code> jcs</code> | <code>&lt;Cmd&gt;:call jukit#cells#split()&lt;CR&gt;</code> |
-| Merge current cell with the cell above | <code> jcM</code> | <code>&lt;Cmd&gt;:call jukit#cells#merge_above()&lt;CR&gt;</code> |
-| Merge current cell with the cell below | <code> jcm</code> | <code>&lt;Cmd&gt;:call jukit#cells#merge_below()&lt;CR&gt;</code> |
-| Move current cell up | <code> jck</code> | <code>&lt;Cmd&gt;:call jukit#cells#move_up()&lt;CR&gt;</code> |
-| Move current cell down | <code> jcj</code> | <code>&lt;Cmd&gt;:call jukit#cells#move_down()&lt;CR&gt;</code> |
-| Jump to the next cell below | <code> jJ</code> | <code>&lt;Cmd&gt;:call jukit#cells#jump_to_next_cell()&lt;CR&gt;</code> |
-| Jump to the previous cell above | <code> jK</code> | <code>&lt;Cmd&gt;:call jukit#cells#jump_to_previous_cell()&lt;CR&gt;</code> |
-| Delete saved output of current cell. Argument: Whether to delete all saved outputs (1) or only saved output of current cell (0) | <code> jddo</code> | <code>&lt;Cmd&gt;:call jukit#cells#delete_outputs(0)&lt;CR&gt;</code> |
-| Delete saved outputs of all cells. Argument: Whether to delete all saved outputs (1) or only saved output of current cell (0) | <code> jdda</code> | <code>&lt;Cmd&gt;:call jukit#cells#delete_outputs(1)&lt;CR&gt;</code> |
-| Convert from ipynb to py or vice versa. Argument: Optional. If an argument is specified, then its value is used to open the resulting ipynb file after converting script. | <code> jnp</code> | <code>&lt;Cmd&gt;:call jukit#convert#notebook_convert('jupyter-notebook')&lt;CR&gt;</code> |
-| Convert file to html (including all saved outputs) and open it using the command specified in `g:jukit_html_viewer'. If `g:jukit_html_viewer` is not defined, then will default to `g:jukit_html_viewer='xdg-open'`. Arguments: 1.: Whether to rerun all cells when converting 2.: Whether to open it after converting 3.: filetype to convert to  | <code> jht</code> | <code>&lt;Cmd&gt;:call jukit#convert#save_nb_to_file(0,1,'html')&lt;CR&gt;</code> |
-| same as above, but will (re-)run all cells when converting to html | <code> jrht</code> | <code>&lt;Cmd&gt;:call jukit#convert#save_nb_to_file(1,1,'html')&lt;CR&gt;</code> |
-|  | <code> jpd</code> | <code>&lt;Cmd&gt;:call jukit#convert#save_nb_to_file(0,1,'pdf')&lt;CR&gt;</code> |
-|  | <code> jrpd</code> | <code>&lt;Cmd&gt;:call jukit#convert#save_nb_to_file(1,1,'pdf')&lt;CR&gt;</code> |
-| set position and dimension of überzug window | <code> pos</code> | <code>&lt;Cmd&gt;:call jukit#ueberzug#set_default_pos()&lt;CR&gt;</code> |
-| Don't Save Current Session | <code> Sd</code> |  |
-| Restore Last Session | <code> Sl</code> |  |
-| Restore Session | <code> Ss</code> |  |
-| Toggle pin | <code> bp</code> |  |
-| Delete non-pinned buffers | <code> bP</code> |  |
-| Dismiss all Notifications | <code> un</code> |  |
-| Symbols Outline | <code> cs</code> |  |
-| Dap UI | <code> Du</code> |  |
-| Eval | <code> De</code> |  |
-| Toggle Breakpoint | <code> Db</code> |  |
-| Continue | <code> Dc</code> |  |
-| Down | <code> Dj</code> |  |
-| Debug Nearest | <code> Td</code> |  |
-| Widgets | <code> Dw</code> |  |
-| Terminate | <code> Dt</code> |  |
-| Session | <code> Ds</code> |  |
-| Toggle REPL | <code> Dr</code> |  |
-| Pause | <code> Dp</code> |  |
-| Step Over | <code> DO</code> |  |
-| Step Out | <code> Do</code> |  |
-| Run Last | <code> Dl</code> |  |
-| Up | <code> Dk</code> |  |
-| Run to Cursor | <code> DC</code> |  |
-| Step Into | <code> Di</code> |  |
-| Go to line (no execute) | <code> Dg</code> |  |
-| Breakpoint Condition | <code> DB</code> |  |
-| Replace in files (Spectre) | <code> sr</code> |  |
-| Mason | <code> cm</code> |  |
-| Explorer | <code> e</code> |  |
-| Todo/Fix/Fixme | <code> sT</code> |  |
-| Todo | <code> st</code> |  |
-| Todo (Trouble) | <code> dt</code> |  |
-| Todo/Fix/Fixme (Trouble) | <code> dT</code> |  |
-| Stop | <code> TS</code> |  |
-| Toggle Output Panel | <code> TO</code> |  |
-| Show Output | <code> To</code> |  |
-| Toggle Summary | <code> Ts</code> |  |
-| Run Nearest | <code> Tr</code> |  |
-| Run All Test Files | <code> TT</code> |  |
-| Run File | <code> Tt</code> |  |
-| Quickfix List (Trouble) | <code> dQ</code> |  |
-| Location List (Trouble) | <code> dL</code> |  |
-| Workspace Diagnostics (Trouble) | <code> dX</code> |  |
-| Document Diagnostics (Trouble) | <code> dx</code> |  |
-| Dismiss All | <code> snd</code> |  |
-| Noice All | <code> sna</code> |  |
-| Noice History | <code> snh</code> |  |
-| Noice Last Message | <code> snl</code> |  |
-| Close Buffer (Force) | <code> bC</code> |  |
-| Close Buffer | <code> bc</code> |  |
-| Open Code Outline Window | <code> a</code> |  |
-| Bookmarks | <code> &lt;Tab&gt;b</code> |  |
-| Adapter Lua | <code> Dal</code> |  |
-| Adapter Lua Server | <code> DaL</code> |  |
-|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
-| Nvim builtin | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
-| Flash Treesitter | <code>S</code> |  |
-| Nvim builtin | <code>Y</code> | <code>y$</code> |
-|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
-| Previous todo comment | <code>[t</code> |  |
-| Previous trouble/quickfix item | <code>[q</code> |  |
-| Prev Reference | <code>[[</code> |  |
-| Add surrounding | <code>\sa</code> |  |
-| Update `MiniSurround.config.n_lines` | <code>\sn</code> |  |
-| Replace surrounding | <code>\sr</code> |  |
-| Highlight surrounding | <code>\sh</code> |  |
-| Find left surrounding | <code>\sF</code> |  |
-| Find right surrounding | <code>\sf</code> |  |
-| Delete surrounding | <code>\sd</code> |  |
-| Close Buffer | <code>\c</code> |  |
-| Toggle TreeSJ | <code>\j</code> |  |
-|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-| Next todo comment | <code>]t</code> |  |
-| Next trouble/quickfix item | <code>]q</code> |  |
-| Next Reference | <code>]]</code> |  |
-|  | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
-|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
-|  | <code>g&lt;C-X&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gnormal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gnormal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
-|  | <code>g&lt;C-A&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gnormal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gnormal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
-|  | <code>g&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gnormal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gnormal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
-|  | <code>g&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gnormal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gnormal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
-| Flash | <code>s</code> |  |
-|  | <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
-| Toggle Terminal | <code>&lt;C-Bslash&gt;</code> | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-|  | <code>&lt;C-X&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
-|  | <code>&lt;C-A&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
-| Scroll backward | <code>&lt;C-B&gt;</code> |  |
-| Scroll forward | <code>&lt;C-F&gt;</code> |  |
-| Nvim builtin | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code> jh</code> | <code>&lt;Cmd&gt;:call PythonHelp()&lt;CR&gt;</code> |
+ | convenience func PythonHelp| <code> jc</code> | <code>&lt;Cmd&gt;:call DFColumns()&lt;CR&gt;</code> |
+ | convenience func DFColumns| <code> jos</code> | <code>&lt;Cmd&gt;:call jukit#splits#output()&lt;CR&gt;</code> |
+ | Opens a new output window and executes the command specified in `g:jukit_shell_cmd`| <code> jts</code> | <code>&lt;Cmd&gt;:call jukit#splits#term()&lt;CR&gt;</code> |
+ | Opens a new output window without executing any command| <code> jhs</code> | <code>&lt;Cmd&gt;:call jukit#splits#history()&lt;CR&gt;</code> |
+ | Opens a new output-history window, where saved ipython outputs are displayed| <code> johs</code> | <code>&lt;Cmd&gt;:call jukit#splits#output_and_history()&lt;CR&gt;</code> |
+ | Shortcut for opening output terminal and output-history| <code> jhd</code> | <code>&lt;Cmd&gt;:call jukit#splits#close_history()&lt;CR&gt;</code> |
+ | Close output-history window| <code> jod</code> | <code>&lt;Cmd&gt;:call jukit#splits#close_output_split()&lt;CR&gt;</code> |
+ | Close output window| <code> johd</code> | <code>&lt;Cmd&gt;:call jukit#splits#close_output_and_history(1)&lt;CR&gt;</code> |
+ | Close both windows. Argument: Whether or not to ask you to confirm before closing.| <code> jso</code> | <code>&lt;Cmd&gt;:call jukit#splits#show_last_cell_output(1)&lt;CR&gt;</code> |
+ | Show output of current cell (determined by current cursor position) in output-history window. Argument: Whether or not to reload outputs if cell id of outputs to display is the same as the last cell id for which outputs were displayed| <code> jj</code> | <code>&lt;Cmd&gt;:call jukit#splits#out_hist_scroll(1)&lt;CR&gt;</code> |
+ | Scroll down in output-history window. Argument: whether to scroll down (1) or up (0)| <code> jk</code> | <code>&lt;Cmd&gt;:call jukit#splits#out_hist_scroll(0)&lt;CR&gt;</code> |
+ | Scroll up in output-history window. Argument: whether to scroll down (1) or up (0)| <code> jah</code> | <code>&lt;Cmd&gt;:call jukit#splits#toggle_auto_hist()&lt;CR&gt;</code> |
+ | Create/delete autocmd for displaying saved output on CursorHold. Also, see explanation for `g:jukit_auto_output_hist`| <code> j </code> | <code>&lt;Cmd&gt;:call jukit#send#section(0)&lt;CR&gt;</code> |
+ | Send code within the current cell to output split (also saves the output if ipython is used and `g:jukit_save_output==1`). Argument: if 1, will move the cursor to the next cell below after sending the code to the split, otherwise cursor position stays the same.| <code> jsl</code> | <code>&lt;Cmd&gt;:call jukit#layouts#set_layout()&lt;CR&gt;</code> |
+ | | <code> jss</code> | <code>&lt;Cmd&gt;:&lt;C-U&gt;call jukit#send#selection()&lt;CR&gt;</code> |
+ | Send visually selected code to output split| <code> jcc</code> | <code>&lt;Cmd&gt;:call jukit#send#until_current_section()&lt;CR&gt;</code> |
+ | Execute all cells until the current cell| <code> jall</code> | <code>&lt;Cmd&gt;:call jukit#send#all()&lt;CR&gt;</code> |
+ | Execute all cells| <code> jco</code> | <code>&lt;Cmd&gt;:call jukit#cells#create_below(0)&lt;CR&gt;</code> |
+ | Create new code cell below. Argument: Whether to create code cell (0) or markdown cell (1)| <code> jcO</code> | <code>&lt;Cmd&gt;:call jukit#cells#create_above(0)&lt;CR&gt;</code> |
+ | Create new code cell above. Argument: Whether to create code cell (0) or markdown cell (1)| <code> jct</code> | <code>&lt;Cmd&gt;:call jukit#cells#create_below(1)&lt;CR&gt;</code> |
+ | Create new textcell below. Argument: Whether to create code cell (0) or markdown cell (1)| <code> jcT</code> | <code>&lt;Cmd&gt;:call jukit#cells#create_above(1)&lt;CR&gt;</code> |
+ | Create new textcell above. Argument: Whether to create code cell (0) or markdown cell (1)| <code> jcd</code> | <code>&lt;Cmd&gt;:call jukit#cells#delete()&lt;CR&gt;</code> |
+ | Delete current cell| <code> jcs</code> | <code>&lt;Cmd&gt;:call jukit#cells#split()&lt;CR&gt;</code> |
+ | Split current cell (saved output will then be assigned to the resulting cell above)| <code> jcM</code> | <code>&lt;Cmd&gt;:call jukit#cells#merge_above()&lt;CR&gt;</code> |
+ | Merge current cell with the cell above| <code> jcm</code> | <code>&lt;Cmd&gt;:call jukit#cells#merge_below()&lt;CR&gt;</code> |
+ | Merge current cell with the cell below| <code> jck</code> | <code>&lt;Cmd&gt;:call jukit#cells#move_up()&lt;CR&gt;</code> |
+ | Move current cell up| <code> jcj</code> | <code>&lt;Cmd&gt;:call jukit#cells#move_down()&lt;CR&gt;</code> |
+ | Move current cell down| <code> jJ</code> | <code>&lt;Cmd&gt;:call jukit#cells#jump_to_next_cell()&lt;CR&gt;</code> |
+ | Jump to the next cell below| <code> jK</code> | <code>&lt;Cmd&gt;:call jukit#cells#jump_to_previous_cell()&lt;CR&gt;</code> |
+ | Jump to the previous cell above| <code> jddo</code> | <code>&lt;Cmd&gt;:call jukit#cells#delete_outputs(0)&lt;CR&gt;</code> |
+ | Delete saved output of current cell. Argument: Whether to delete all saved outputs (1) or only saved output of current cell (0)| <code> jdda</code> | <code>&lt;Cmd&gt;:call jukit#cells#delete_outputs(1)&lt;CR&gt;</code> |
+ | Delete saved outputs of all cells. Argument: Whether to delete all saved outputs (1) or only saved output of current cell (0)| <code> jnp</code> | <code>&lt;Cmd&gt;:call jukit#convert#notebook_convert('jupyter-notebook')&lt;CR&gt;</code> |
+ | Convert from ipynb to py or vice versa. Argument: Optional. If an argument is specified, then its value is used to open the resulting ipynb file after converting script.| <code> jht</code> | <code>&lt;Cmd&gt;:call jukit#convert#save_nb_to_file(0,1,'html')&lt;CR&gt;</code> |
+ | Convert file to html (including all saved outputs) and open it using the command specified in `g:jukit_html_viewer'. If `g:jukit_html_viewer` is not defined, then will default to `g:jukit_html_viewer='xdg-open'`. Arguments: 1.: Whether to rerun all cells when converting 2.: Whether to open it after converting 3.: filetype to convert to | <code> jrht</code> | <code>&lt;Cmd&gt;:call jukit#convert#save_nb_to_file(1,1,'html')&lt;CR&gt;</code> |
+ | same as above, but will (re-)run all cells when converting to html| <code> jpd</code> | <code>&lt;Cmd&gt;:call jukit#convert#save_nb_to_file(0,1,'pdf')&lt;CR&gt;</code> |
+ | | <code> jrpd</code> | <code>&lt;Cmd&gt;:call jukit#convert#save_nb_to_file(1,1,'pdf')&lt;CR&gt;</code> |
+ | | <code> pos</code> | <code>&lt;Cmd&gt;:call jukit#ueberzug#set_default_pos()&lt;CR&gt;</code> |
+ | set position and dimension of überzug window| <code> fp</code> | <code>&lt;Cmd&gt;Telescope projects&lt;CR&gt;</code> |
+ | Projects| <code> fw</code> |  |
+ | Word (root dir)| <code> fB</code> | <code>&lt;Cmd&gt;Telescope buffers show_all_buffers=true&lt;CR&gt;</code> |
+ | All Buffers| <code> ft</code> |  |
+ | Text| <code> fC</code> |  |
+ | Find LazyVim Config| <code> fP</code> |  |
+ | Find Plugin File| <code> fc</code> | <code>&lt;Cmd&gt;Telescope command_history&lt;CR&gt;</code> |
+ | Command History| <code> sS</code> |  |
+ | Goto Symbol (Workspace)| <code> ss</code> |  |
+ | Goto Symbol| <code> sW</code> |  |
+ | Word (cwd)| <code> sw</code> |  |
+ | Word (root dir)| <code> sR</code> | <code>&lt;Cmd&gt;Telescope resume&lt;CR&gt;</code> |
+ | Resume| <code> so</code> | <code>&lt;Cmd&gt;Telescope vim_options&lt;CR&gt;</code> |
+ | Options| <code> sm</code> | <code>&lt;Cmd&gt;Telescope marks&lt;CR&gt;</code> |
+ | Jump to Mark| <code> sM</code> | <code>&lt;Cmd&gt;Telescope man_pages&lt;CR&gt;</code> |
+ | Man Pages| <code> sk</code> | <code>&lt;Cmd&gt;Telescope keymaps&lt;CR&gt;</code> |
+ | Key Maps| <code> sH</code> | <code>&lt;Cmd&gt;Telescope highlights&lt;CR&gt;</code> |
+ | Search Highlight Groups| <code> sh</code> | <code>&lt;Cmd&gt;Telescope help_tags&lt;CR&gt;</code> |
+ | Help Pages| <code> sG</code> |  |
+ | Grep (cwd)| <code> sg</code> |  |
+ | Grep (root dir)| <code> sD</code> | <code>&lt;Cmd&gt;Telescope diagnostics&lt;CR&gt;</code> |
+ | Workspace diagnostics| <code> sd</code> | <code>&lt;Cmd&gt;Telescope diagnostics bufnr=0&lt;CR&gt;</code> |
+ | Document diagnostics| <code> sC</code> | <code>&lt;Cmd&gt;Telescope commands&lt;CR&gt;</code> |
+ | Commands| <code> sc</code> | <code>&lt;Cmd&gt;Telescope command_history&lt;CR&gt;</code> |
+ | Command History| <code> sb</code> | <code>&lt;Cmd&gt;Telescope current_buffer_fuzzy_find&lt;CR&gt;</code> |
+ | Buffer| <code> sa</code> | <code>&lt;Cmd&gt;Telescope autocommands&lt;CR&gt;</code> |
+ | Auto Commands| <code> s"</code> | <code>&lt;Cmd&gt;Telescope registers&lt;CR&gt;</code> |
+ | Registers| <code> gs</code> | <code>&lt;Cmd&gt;Telescope git_status&lt;CR&gt;</code> |
+ | status| <code> gc</code> | <code>&lt;Cmd&gt;Telescope git_commits&lt;CR&gt;</code> |
+ | commits| <code> fR</code> |  |
+ | Recent (cwd)| <code> fr</code> | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
+ | Recent| <code> fF</code> |  |
+ | Find Files (cwd)| <code> ff</code> |  |
+ | Find Files (root dir)| <code> fb</code> | <code>&lt;Cmd&gt;Telescope buffers&lt;CR&gt;</code> |
+ | Buffers| <code> uC</code> |  |
+ | Colorscheme with preview| <code> fW</code> |  |
+ | Word (cwd)| <code> Du</code> |  |
+ | Dap UI| <code> De</code> |  |
+ | Eval| <code> snd</code> |  |
+ | Dismiss All| <code> sna</code> |  |
+ | Noice All| <code> snh</code> |  |
+ | Noice History| <code> snl</code> |  |
+ | Noice Last Message| <code> dT</code> |  |
+ | Todo/Fix/Fixme (Trouble)| <code> dt</code> |  |
+ | Todo (Trouble)| <code> sT</code> |  |
+ | Todo/Fix/Fixme| <code> st</code> |  |
+ | Todo| <code> dx</code> |  |
+ | Document Diagnostics (Trouble)| <code> dL</code> |  |
+ | Location List (Trouble)| <code> dQ</code> |  |
+ | Quickfix List (Trouble)| <code> dX</code> |  |
+ | Workspace Diagnostics (Trouble)| <code> cs</code> |  |
+ | Symbols Outline| <code> bc</code> |  |
+ | Close Buffer| <code> bC</code> |  |
+ | Close Buffer (Force)| <code> a</code> |  |
+ | Open Code Outline Window| <code> e</code> |  |
+ | Explorer| <code> &lt;Tab&gt;b</code> |  |
+ | Bookmarks| <code> Td</code> |  |
+ | Debug Nearest| <code> Dw</code> |  |
+ | Widgets| <code> Dt</code> |  |
+ | Terminate| <code> Ds</code> |  |
+ | Session| <code> Dr</code> |  |
+ | Toggle REPL| <code> Dp</code> |  |
+ | Pause| <code> DO</code> |  |
+ | Step Over| <code> Do</code> |  |
+ | Step Out| <code> Dl</code> |  |
+ | Run Last| <code> Dk</code> |  |
+ | Up| <code> Dj</code> |  |
+ | Down| <code> Di</code> |  |
+ | Step Into| <code> Dg</code> |  |
+ | Go to line (no execute)| <code> DC</code> |  |
+ | Run to Cursor| <code> Dc</code> |  |
+ | Continue| <code> Db</code> |  |
+ | Toggle Breakpoint| <code> DB</code> |  |
+ | Breakpoint Condition| <code> TS</code> |  |
+ | Stop| <code> TO</code> |  |
+ | Toggle Output Panel| <code> To</code> |  |
+ | Show Output| <code> Ts</code> |  |
+ | Toggle Summary| <code> Tr</code> |  |
+ | Run Nearest| <code> TT</code> |  |
+ | Run All Test Files| <code> Tt</code> |  |
+ | Run File| <code> sr</code> |  |
+ | Replace in files (Spectre)| <code> bp</code> |  |
+ | Toggle pin| <code> bP</code> |  |
+ | Delete non-pinned buffers| <code> cm</code> |  |
+ | Mason| <code> Sd</code> |  |
+ | Don't Save Current Session| <code> Sl</code> |  |
+ | Restore Last Session| <code> Ss</code> |  |
+ | Restore Session| <code> un</code> |  |
+ | Dismiss all Notifications| <code> Dal</code> |  |
+ | Adapter Lua| <code> DaL</code> |  |
+ | Adapter Lua Server| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+ | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
+ | Nvim builtin| <code>S</code> |  |
+ | Flash Treesitter| <code>Y</code> | <code>y$</code> |
+ | Nvim builtin| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+ | | <code>[t</code> |  |
+ | Previous todo comment| <code>[q</code> |  |
+ | Previous trouble/quickfix item| <code>[[</code> |  |
+ | Prev Reference| <code>\sr</code> |  |
+ | Replace surrounding| <code>\sh</code> |  |
+ | Highlight surrounding| <code>\sF</code> |  |
+ | Find left surrounding| <code>\sf</code> |  |
+ | Find right surrounding| <code>\sd</code> |  |
+ | Delete surrounding| <code>\sa</code> |  |
+ | Add surrounding| <code>\sn</code> |  |
+ | Update `MiniSurround.config.n_lines`| <code>\c</code> |  |
+ | Close Buffer| <code>\j</code> |  |
+ | Toggle TreeSJ| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+ | | <code>]t</code> |  |
+ | Next todo comment| <code>]q</code> |  |
+ | Next trouble/quickfix item| <code>]]</code> |  |
+ | Next Reference| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
+ | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+ | | <code>g&lt;C-X&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gnormal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gnormal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+ | | <code>g&lt;C-A&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gnormal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gnormal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+ | | <code>g&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gnormal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gnormal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+ | | <code>g&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gnormal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gnormal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+ | | <code>s</code> |  |
+ | Flash| <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+ | | <code>&lt;C-Bslash&gt;</code> | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
+ | Toggle Terminal| <code>&lt;C-X&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+ | | <code>&lt;C-A&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+ | | <code>&lt;C-B&gt;</code> |  |
+ | Scroll backward| <code>&lt;C-F&gt;</code> |  |
+ | Scroll forward| <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+ | Nvim builtin
 #### visual mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-| Selection (cwd) | <code> sW</code> |  |
-| Selection (root dir) | <code> sw</code> |  |
-| Eval | <code> De</code> |  |
-| Nvim builtin | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
-| Nvim builtin | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Treesitter Search | <code>R</code> |  |
-| Flash Treesitter | <code>S</code> |  |
-|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
-| Add surrounding | <code>\sa</code> |  |
-|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-|  | <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
-|  | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
-|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
-|  | <code>g&lt;C-X&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gvisual"&lt;CR&gt;g@</code> |
-|  | <code>g&lt;C-A&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gvisual"&lt;CR&gt;g@</code> |
-|  | <code>g&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gvisual"&lt;CR&gt;g@gv</code> |
-|  | <code>g&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gvisual"&lt;CR&gt;g@gv</code> |
-| Flash | <code>s</code> |  |
-|  | <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
-|  | <code>&lt;C-X&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_visual"&lt;CR&gt;g@</code> |
-|  | <code>&lt;C-A&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_visual"&lt;CR&gt;g@</code> |
-|  | <code>&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_visual"&lt;CR&gt;g@gv</code> |
-|  | <code>&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_visual"&lt;CR&gt;g@gv</code> |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code> sW</code> |  |
+ | Selection (cwd)| <code> sw</code> |  |
+ | Selection (root dir)| <code> De</code> |  |
+ | Eval| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+ | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>R</code> |  |
+ | Treesitter Search| <code>S</code> |  |
+ | Flash Treesitter| <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+ | | <code>\sa</code> |  |
+ | Add surrounding| <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+ | | <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+ | | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+ | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+ | | <code>g&lt;C-X&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gvisual"&lt;CR&gt;g@</code> |
+ | | <code>g&lt;C-A&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gvisual"&lt;CR&gt;g@</code> |
+ | | <code>g&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gvisual"&lt;CR&gt;g@gv</code> |
+ | | <code>g&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gvisual"&lt;CR&gt;g@gv</code> |
+ | | <code>s</code> |  |
+ | Flash| <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
+ | | <code>&lt;C-X&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_visual"&lt;CR&gt;g@</code> |
+ | | <code>&lt;C-A&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_visual"&lt;CR&gt;g@</code> |
+ | | <code>&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_visual"&lt;CR&gt;g@gv</code> |
+ | | <code>&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_visual"&lt;CR&gt;g@gv</code> |
+ | 
 #### operator mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
-| Treesitter Search | <code>R</code> |  |
-| Flash Treesitter | <code>S</code> |  |
-|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
-|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
-|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
-| Remote Flash | <code>r</code> |  |
-| Flash | <code>s</code> |  |
-|  | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+ | | <code>R</code> |  |
+ | Treesitter Search| <code>S</code> |  |
+ | Flash Treesitter| <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+ | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+ | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+ | | <code>r</code> |  |
+ | Remote Flash| <code>s</code> |  |
+ | Flash| <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+ | 

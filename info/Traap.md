@@ -137,206 +137,207 @@ post_style: page
 
 #### normal mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-|  | <code> tn</code> |  |
-| Select VirtualEnv | <code> cv</code> |  |
-| Replace in files (Spectre) | <code> sr</code> |  |
-| Debug Method | <code> dPt</code> |  |
-| Debug Class | <code> dPc</code> |  |
-| Dap UI | <code> du</code> |  |
-| Eval | <code> de</code> |  |
-| Step Over | <code> dO</code> |  |
-| Up | <code> dk</code> |  |
-| Down | <code> dj</code> |  |
-| Breakpoint Condition | <code> dB</code> |  |
-| Delete Buffer | <code> bd</code> |  |
-| Delete Buffer (Force) | <code> bD</code> |  |
-| Oil buffer | <code> no</code> |  |
-|  | <code> Tr</code> |  |
-|  | <code> Tm</code> |  |
-|  | <code> Tl</code> |  |
-|  | <code> Tb</code> |  |
-| Don't Save Current Session | <code> qd</code> |  |
-| Restore Last Session | <code> ql</code> |  |
-| Restore Session | <code> qs</code> |  |
-|  | <code> cm</code> |  |
-| Dismiss all Notifications | <code> un</code> |  |
-| Todo/Fix/Fixme (Trouble) | <code> xT</code> |  |
-| Todo (Trouble) | <code> xt</code> |  |
-| Todo | <code> st</code> |  |
-| Todo/Fix/Fixme | <code> sT</code> |  |
-| Workspace Diagnostics (Trouble) | <code> xX</code> |  |
-| Document Diagnostics (Trouble) | <code> xx</code> |  |
-| Quickfix List (Trouble) | <code> xQ</code> |  |
-| Location List (Trouble) | <code> xL</code> |  |
-|  | <code> oz</code> | <code>&lt;Cmd&gt;lua require("zen-mode").toggle()&lt;CR&gt;</code> |
-|  | <code> lx</code> | <code>&lt;Plug&gt;(vimtex-reload)</code> |
-|  | <code> lv</code> | <code>&lt;Plug&gt;(vimtex-view)</code> |
-|  | <code> lt</code> | <code>&lt;Plug&gt;(vimtex-toc_open)</code> |
-|  | <code> ls</code> | <code>&lt;Plug&gt;(vimtex-toggle-main)</code> |
-|  | <code> lq</code> | <code>&lt;Plug&gt;(vimtex-log)</code> |
-|  | <code> lo</code> | <code>&lt;Plug&gt;(vimtex-compile-output)</code> |
-|  | <code> lm</code> | <code>&lt;Plug&gt;(vimtex-impas-list)</code> |
-|  | <code> ll</code> | <code>&lt;Plug&gt;(vimtex-compile)</code> |
-|  | <code> lk</code> | <code>&lt;Plug&gt;(vimtex-stop)</code> |
-|  | <code> li</code> | <code>&lt;Plug&gt;(vimtex-info)</code> |
-|  | <code> lg</code> | <code>&lt;Plug&gt;(vimtex-status)</code> |
-|  | <code> le</code> | <code>&lt;Plug&gt;(vimtex-error)</code> |
-|  | <code> lc</code> | <code>&lt;Plug&gt;(vimtex-clean-full)</code> |
-|  | <code> la</code> | <code>&lt;Plug&gt;(vimtex-context-menu)</code> |
-|  | <code> lX</code> | <code>&lt;Plug&gt;(vimtex-reload-state)</code> |
-|  | <code> lT</code> | <code>&lt;Plug&gt;(vimtex-toc-toggle)</code> |
-|  | <code> lL</code> | <code>&lt;Plug&gt;(vimtex-compile-selected)</code> |
-|  | <code> lK</code> | <code>&lt;Plug&gt;(vimtex-stop-all)</code> |
-|  | <code> lI</code> | <code>&lt;Plug&gt;(vimtex-info-full)</code> |
-|  | <code> lG</code> | <code>&lt;Plug&gt;(vimtex-status-all)</code> |
-|  | <code> lC</code> | <code>&lt;Plug&gt;(vimtex-clean-full)</code> |
-|  | <code> gs</code> | <code>&lt;Cmd&gt;G&lt;CR&gt;</code> |
-|  | <code> gp</code> | <code>&lt;Cmd&gt;G push&lt;CR&gt;</code> |
-|  | <code> gh</code> | <code>&lt;Cmd&gt;vert bo help fugitive&lt;CR&gt;</code> |
-|  | <code> gl</code> | <code>&lt;Cmd&gt;G log&lt;CR&gt;</code> |
-|  | <code> gd</code> | <code>&lt;Cmd&gt;G diff&lt;CR&gt;</code> |
-|  | <code> gc</code> | <code>&lt;Cmd&gt;G commmit&lt;CR&gt;</code> |
-|  | <code> gP</code> | <code>&lt;Cmd&gt;G pull&lt;CR&gt;</code> |
-|  | <code> 2</code> | <code>gaip= </code> |
-|  | <code> 1</code> | <code>gaip=,</code> |
-|  | <code> 0</code> | <code>gaip*,</code> |
-|  | <code> kwiki</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t wiki&lt;CR&gt;</code> |
-|  | <code> kvim</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t vim&lt;CR&gt;</code> |
-|  | <code> ksoup</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t soup&lt;CR&gt;</code> |
-|  | <code> kssh</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t ssh&lt;CR&gt;</code> |
-|  | <code> kkjv</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t kjv&lt;CR&gt;</code> |
-|  | <code> kbash</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t bash&lt;CR&gt;</code> |
-|  | <code> kao</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t ao&lt;CR&gt;</code> |
-|  | <code> twiki</code> | <code>&lt;Cmd&gt;Dispatch!ao wiki&lt;CR&gt;</code> |
-|  | <code> tvim</code> | <code>&lt;Cmd&gt;Dispatch!ao vim&lt;CR&gt;</code> |
-|  | <code> tsoup</code> | <code>&lt;Cmd&gt;Dispatch!ao soup&lt;CR&gt;</code> |
-|  | <code> tssh</code> | <code>&lt;Cmd&gt;Dispatch!ao ssh&lt;CR&gt;</code> |
-|  | <code> tkjv</code> | <code>&lt;Cmd&gt;Dispatch!ao kjv&lt;CR&gt;</code> |
-|  | <code> tbash</code> | <code>&lt;Cmd&gt;Dispatch!ao bash&lt;CR&gt;</code> |
-|  | <code> tao</code> | <code>&lt;Cmd&gt;Dispatch!ao ao&lt;CR&gt;</code> |
-|  | <code> gu</code> | <code>&lt;Cmd&gt;call GenerateUmlDiagram&lt;CR&gt;</code> |
-|  | <code> fy</code> | <code>&lt;Cmd&gt;TodoTelescope keywords=YouTube,Youtube,URL,Url&lt;CR&gt;</code> |
-|  | <code> Ls</code> | <code>&lt;Cmd&gt;Telescope lsp_document_symbols&lt;CR&gt;</code> |
-|  | <code> LS</code> | <code>&lt;Cmd&gt;Telescope lsp_dynamic_workspace_symbols&lt;CR&gt;</code> |
-|  | <code> go</code> | <code>&lt;Cmd&gt;Telescope git_status&lt;CR&gt;</code> |
-|  | <code> gb</code> | <code>&lt;Cmd&gt;Telescope git_branches&lt;CR&gt;</code> |
-|  | <code> gC</code> | <code>&lt;Cmd&gt;Telescope git_commits&lt;CR&gt;</code> |
-|  | <code> fw</code> | <code>&lt;Cmd&gt;Telescope grep_string&lt;CR&gt;</code> |
-|  | <code> fp</code> | <code>&lt;Cmd&gt;Telescope planets&lt;CR&gt;</code> |
-|  | <code> fo</code> | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
-|  | <code> fm</code> | <code>&lt;Cmd&gt;Telescope marks&lt;CR&gt;</code> |
-|  | <code> fl</code> | <code>&lt;Cmd&gt;Telescope resume&lt;CR&gt;</code> |
-|  | <code> fk</code> | <code>&lt;Cmd&gt;Telescope keymaps&lt;CR&gt;</code> |
-|  | <code> fi</code> | <code>&lt;Cmd&gt;lua require('telescope').extensions.media_files.media_files()&lt;CR&gt;</code> |
-|  | <code> fh</code> | <code>&lt;Cmd&gt;Telescope help_tags&lt;CR&gt;</code> |
-|  | <code> fg</code> | <code>&lt;Cmd&gt;Telescope live_grep&lt;CR&gt;</code> |
-|  | <code> ff</code> | <code>&lt;Cmd&gt;Telescope find_files&lt;CR&gt;</code> |
-|  | <code> fd</code> | <code>&lt;Cmd&gt;Telescope diagnostics&lt;CR&gt;</code> |
-|  | <code> fb</code> | <code>&lt;Cmd&gt;Telescope buffers&lt;CR&gt;</code> |
-|  | <code> fS</code> | <code>&lt;Cmd&gt;Telescope colorscheme&lt;CR&gt;</code> |
-|  | <code> fR</code> | <code>&lt;Cmd&gt;Telescope registers&lt;CR&gt;</code> |
-|  | <code> fO</code> | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
-|  | <code> fM</code> | <code>&lt;Cmd&gt;Telescope man_pages&lt;CR&gt;</code> |
-|  | <code> fF</code> | <code>&lt;Cmd&gt;Telescope media_files&lt;CR&gt;</code> |
-|  | <code> fC</code> | <code>&lt;Cmd&gt;Telescope commands&lt;CR&gt;</code> |
-|  | <code> nr</code> | <code>&lt;Cmd&gt;Neotree show&lt;CR&gt;</code> |
-|  | <code> nf</code> | <code>&lt;Cmd&gt;Neotree focus&lt;CR&gt;</code> |
-|  | <code> dU</code> | <code>&lt;Cmd&gt;lua require("dapui").toggle()&lt;CR&gt;</code> |
-|  | <code> Ds</code> | <code>&lt;Cmd&gt;lua require("osv").launch({ port = 8686})&lt;CR&gt;</code> |
-|  | <code> Dd</code> | <code>&lt;Cmd&gt;lua require("osv").run_this()&lt;CR&gt;</code> |
-| Widgets | <code> dw</code> |  |
-| Terminate | <code> dt</code> |  |
-| Toggle REPL | <code> dr</code> |  |
-| Session | <code> ds</code> |  |
-|  | <code> dq</code> | <code>&lt;Cmd&gt;lua require("dap").close()&lt;CR&gt;</code> |
-| Pause | <code> dp</code> |  |
-| Step Out | <code> do</code> |  |
-| Run Last | <code> dl</code> |  |
-| Step Into | <code> di</code> |  |
-| Go to line (no execute) | <code> dg</code> |  |
-|  | <code> dd</code> | <code>&lt;Cmd&gt;lua require("dap").disconnect()&lt;CR&gt;</code> |
-| Continue | <code> dc</code> |  |
-| Toggle Breakpoint | <code> db</code> |  |
-| Run to Cursor | <code> dC</code> |  |
-|  | <code> nh</code> | <code>&lt;Cmd&gt;NoiceHistory&lt;CR&gt;</code> |
-|  | <code> ne</code> | <code>&lt;Cmd&gt;NoiceErrors&lt;CR&gt;</code> |
-|  | <code> aa</code> | <code>&lt;Cmd&gt;Alpha&lt;CR&gt;</code> |
-|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
-| Nvim builtin | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
-| Flash Treesitter | <code>S</code> |  |
-| Nvim builtin | <code>Y</code> | <code>y$</code> |
-|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
-| Previous todo comment | <code>[t</code> |  |
-| Previous trouble/quickfix item | <code>[q</code> |  |
-|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-| Next todo comment | <code>]t</code> |  |
-| Next trouble/quickfix item | <code>]q</code> |  |
-|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
-|  | <code>ga</code> | <code>&lt;Plug&gt;(EasyAlign)</code> |
-| Flash | <code>s</code> |  |
-|  | <code>y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
-|  | <code>&#124;</code> | <code>gaip*&#124;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;fugitive:</code> | <code></code> |
-|  | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
-|  | <code>&lt;M-2&gt;</code> |  |
-|  | <code>&lt;M-1&gt;</code> |  |
-|  | <code>&lt;M-8&gt;</code> |  |
-|  | <code>&lt;M-7&gt;</code> |  |
-|  | <code>&lt;M-6&gt;</code> |  |
-|  | <code>&lt;M-5&gt;</code> |  |
-|  | <code>&lt;M-4&gt;</code> |  |
-|  | <code>&lt;M-3&gt;</code> |  |
-| Increment selection | <code>&lt;C-Space&gt;</code> |  |
-|  | <code>&lt;C-N&gt;</code> | <code>&lt;Cmd&gt;Neotree toggle&lt;CR&gt;</code> |
-|  | <code>&lt;F12&gt;</code> | <code>&lt;Cmd&gt;lua require("dap").step_out()&lt;CR&gt;</code> |
-|  | <code>&lt;F11&gt;</code> | <code>&lt;Cmd&gt;lua require("dap").step_into()&lt;CR&gt;</code> |
-|  | <code>&lt;F10&gt;</code> | <code>&lt;Cmd&gt;lua require("dap").step_over()&lt;CR&gt;</code> |
-|  | <code>&lt;F5&gt;</code> | <code>&lt;Cmd&gt;lua  require("dap").continue()&lt;CR&gt;</code> |
-| Nvim builtin | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code> tn</code> |  |
+ | | <code> dO</code> |  |
+ | Step Over| <code> dk</code> |  |
+ | Up| <code> dj</code> |  |
+ | Down| <code> dB</code> |  |
+ | Breakpoint Condition| <code> un</code> |  |
+ | Dismiss all Notifications| <code> cv</code> |  |
+ | Select VirtualEnv| <code> qs</code> |  |
+ | Restore Session| <code> qd</code> |  |
+ | Don't Save Current Session| <code> ql</code> |  |
+ | Restore Last Session| <code> dPc</code> |  |
+ | Debug Class| <code> dPt</code> |  |
+ | Debug Method| <code> cm</code> |  |
+ | | <code> no</code> |  |
+ | Oil buffer| <code> Tl</code> |  |
+ | | <code> Tb</code> |  |
+ | | <code> Tr</code> |  |
+ | | <code> Tm</code> |  |
+ | | <code> du</code> |  |
+ | Dap UI| <code> de</code> |  |
+ | Eval| <code> bD</code> |  |
+ | Delete Buffer (Force)| <code> bd</code> |  |
+ | Delete Buffer| <code> sr</code> |  |
+ | Replace in files (Spectre)| <code> st</code> |  |
+ | Todo| <code> xT</code> |  |
+ | Todo/Fix/Fixme (Trouble)| <code> xt</code> |  |
+ | Todo (Trouble)| <code> sT</code> |  |
+ | Todo/Fix/Fixme| <code> xQ</code> |  |
+ | Quickfix List (Trouble)| <code> xL</code> |  |
+ | Location List (Trouble)| <code> xX</code> |  |
+ | Workspace Diagnostics (Trouble)| <code> xx</code> |  |
+ | Document Diagnostics (Trouble)| <code> oz</code> | <code>&lt;Cmd&gt;lua require("zen-mode").toggle()&lt;CR&gt;</code> |
+ | | <code> lx</code> | <code>&lt;Plug&gt;(vimtex-reload)</code> |
+ | | <code> lv</code> | <code>&lt;Plug&gt;(vimtex-view)</code> |
+ | | <code> lt</code> | <code>&lt;Plug&gt;(vimtex-toc_open)</code> |
+ | | <code> ls</code> | <code>&lt;Plug&gt;(vimtex-toggle-main)</code> |
+ | | <code> lq</code> | <code>&lt;Plug&gt;(vimtex-log)</code> |
+ | | <code> lo</code> | <code>&lt;Plug&gt;(vimtex-compile-output)</code> |
+ | | <code> lm</code> | <code>&lt;Plug&gt;(vimtex-impas-list)</code> |
+ | | <code> ll</code> | <code>&lt;Plug&gt;(vimtex-compile)</code> |
+ | | <code> lk</code> | <code>&lt;Plug&gt;(vimtex-stop)</code> |
+ | | <code> li</code> | <code>&lt;Plug&gt;(vimtex-info)</code> |
+ | | <code> lg</code> | <code>&lt;Plug&gt;(vimtex-status)</code> |
+ | | <code> le</code> | <code>&lt;Plug&gt;(vimtex-error)</code> |
+ | | <code> lc</code> | <code>&lt;Plug&gt;(vimtex-clean-full)</code> |
+ | | <code> la</code> | <code>&lt;Plug&gt;(vimtex-context-menu)</code> |
+ | | <code> lX</code> | <code>&lt;Plug&gt;(vimtex-reload-state)</code> |
+ | | <code> lT</code> | <code>&lt;Plug&gt;(vimtex-toc-toggle)</code> |
+ | | <code> lL</code> | <code>&lt;Plug&gt;(vimtex-compile-selected)</code> |
+ | | <code> lK</code> | <code>&lt;Plug&gt;(vimtex-stop-all)</code> |
+ | | <code> lI</code> | <code>&lt;Plug&gt;(vimtex-info-full)</code> |
+ | | <code> lG</code> | <code>&lt;Plug&gt;(vimtex-status-all)</code> |
+ | | <code> lC</code> | <code>&lt;Plug&gt;(vimtex-clean-full)</code> |
+ | | <code> gs</code> | <code>&lt;Cmd&gt;G&lt;CR&gt;</code> |
+ | | <code> gp</code> | <code>&lt;Cmd&gt;G push&lt;CR&gt;</code> |
+ | | <code> gh</code> | <code>&lt;Cmd&gt;vert bo help fugitive&lt;CR&gt;</code> |
+ | | <code> gl</code> | <code>&lt;Cmd&gt;G log&lt;CR&gt;</code> |
+ | | <code> gd</code> | <code>&lt;Cmd&gt;G diff&lt;CR&gt;</code> |
+ | | <code> gc</code> | <code>&lt;Cmd&gt;G commmit&lt;CR&gt;</code> |
+ | | <code> gP</code> | <code>&lt;Cmd&gt;G pull&lt;CR&gt;</code> |
+ | | <code> 2</code> | <code>gaip= </code> |
+ | | <code> 1</code> | <code>gaip=,</code> |
+ | | <code> 0</code> | <code>gaip*,</code> |
+ | | <code> kwiki</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t wiki&lt;CR&gt;</code> |
+ | | <code> kvim</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t vim&lt;CR&gt;</code> |
+ | | <code> ksoup</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t soup&lt;CR&gt;</code> |
+ | | <code> kssh</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t ssh&lt;CR&gt;</code> |
+ | | <code> kkjv</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t kjv&lt;CR&gt;</code> |
+ | | <code> kbash</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t bash&lt;CR&gt;</code> |
+ | | <code> kao</code> | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t ao&lt;CR&gt;</code> |
+ | | <code> twiki</code> | <code>&lt;Cmd&gt;Dispatch!ao wiki&lt;CR&gt;</code> |
+ | | <code> tvim</code> | <code>&lt;Cmd&gt;Dispatch!ao vim&lt;CR&gt;</code> |
+ | | <code> tsoup</code> | <code>&lt;Cmd&gt;Dispatch!ao soup&lt;CR&gt;</code> |
+ | | <code> tssh</code> | <code>&lt;Cmd&gt;Dispatch!ao ssh&lt;CR&gt;</code> |
+ | | <code> tkjv</code> | <code>&lt;Cmd&gt;Dispatch!ao kjv&lt;CR&gt;</code> |
+ | | <code> tbash</code> | <code>&lt;Cmd&gt;Dispatch!ao bash&lt;CR&gt;</code> |
+ | | <code> tao</code> | <code>&lt;Cmd&gt;Dispatch!ao ao&lt;CR&gt;</code> |
+ | | <code> gu</code> | <code>&lt;Cmd&gt;call GenerateUmlDiagram&lt;CR&gt;</code> |
+ | | <code> fy</code> | <code>&lt;Cmd&gt;TodoTelescope keywords=YouTube,Youtube,URL,Url&lt;CR&gt;</code> |
+ | | <code> Ls</code> | <code>&lt;Cmd&gt;Telescope lsp_document_symbols&lt;CR&gt;</code> |
+ | | <code> LS</code> | <code>&lt;Cmd&gt;Telescope lsp_dynamic_workspace_symbols&lt;CR&gt;</code> |
+ | | <code> go</code> | <code>&lt;Cmd&gt;Telescope git_status&lt;CR&gt;</code> |
+ | | <code> gb</code> | <code>&lt;Cmd&gt;Telescope git_branches&lt;CR&gt;</code> |
+ | | <code> gC</code> | <code>&lt;Cmd&gt;Telescope git_commits&lt;CR&gt;</code> |
+ | | <code> fw</code> | <code>&lt;Cmd&gt;Telescope grep_string&lt;CR&gt;</code> |
+ | | <code> fp</code> | <code>&lt;Cmd&gt;Telescope planets&lt;CR&gt;</code> |
+ | | <code> fo</code> | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
+ | | <code> fm</code> | <code>&lt;Cmd&gt;Telescope marks&lt;CR&gt;</code> |
+ | | <code> fl</code> | <code>&lt;Cmd&gt;Telescope resume&lt;CR&gt;</code> |
+ | | <code> fk</code> | <code>&lt;Cmd&gt;Telescope keymaps&lt;CR&gt;</code> |
+ | | <code> fi</code> | <code>&lt;Cmd&gt;lua require('telescope').extensions.media_files.media_files()&lt;CR&gt;</code> |
+ | | <code> fh</code> | <code>&lt;Cmd&gt;Telescope help_tags&lt;CR&gt;</code> |
+ | | <code> fg</code> | <code>&lt;Cmd&gt;Telescope live_grep&lt;CR&gt;</code> |
+ | | <code> ff</code> | <code>&lt;Cmd&gt;Telescope find_files&lt;CR&gt;</code> |
+ | | <code> fd</code> | <code>&lt;Cmd&gt;Telescope diagnostics&lt;CR&gt;</code> |
+ | | <code> fb</code> | <code>&lt;Cmd&gt;Telescope buffers&lt;CR&gt;</code> |
+ | | <code> fS</code> | <code>&lt;Cmd&gt;Telescope colorscheme&lt;CR&gt;</code> |
+ | | <code> fR</code> | <code>&lt;Cmd&gt;Telescope registers&lt;CR&gt;</code> |
+ | | <code> fO</code> | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
+ | | <code> fM</code> | <code>&lt;Cmd&gt;Telescope man_pages&lt;CR&gt;</code> |
+ | | <code> fF</code> | <code>&lt;Cmd&gt;Telescope media_files&lt;CR&gt;</code> |
+ | | <code> fC</code> | <code>&lt;Cmd&gt;Telescope commands&lt;CR&gt;</code> |
+ | | <code> nr</code> | <code>&lt;Cmd&gt;Neotree show&lt;CR&gt;</code> |
+ | | <code> nf</code> | <code>&lt;Cmd&gt;Neotree focus&lt;CR&gt;</code> |
+ | | <code> dU</code> | <code>&lt;Cmd&gt;lua require("dapui").toggle()&lt;CR&gt;</code> |
+ | | <code> Ds</code> | <code>&lt;Cmd&gt;lua require("osv").launch({ port = 8686})&lt;CR&gt;</code> |
+ | | <code> Dd</code> | <code>&lt;Cmd&gt;lua require("osv").run_this()&lt;CR&gt;</code> |
+ | | <code> dw</code> |  |
+ | Widgets| <code> dt</code> |  |
+ | Terminate| <code> dr</code> |  |
+ | Toggle REPL| <code> ds</code> |  |
+ | Session| <code> dq</code> | <code>&lt;Cmd&gt;lua require("dap").close()&lt;CR&gt;</code> |
+ | | <code> dp</code> |  |
+ | Pause| <code> do</code> |  |
+ | Step Out| <code> dl</code> |  |
+ | Run Last| <code> di</code> |  |
+ | Step Into| <code> dg</code> |  |
+ | Go to line (no execute)| <code> dd</code> | <code>&lt;Cmd&gt;lua require("dap").disconnect()&lt;CR&gt;</code> |
+ | | <code> dc</code> |  |
+ | Continue| <code> db</code> |  |
+ | Toggle Breakpoint| <code> dC</code> |  |
+ | Run to Cursor| <code> nh</code> | <code>&lt;Cmd&gt;NoiceHistory&lt;CR&gt;</code> |
+ | | <code> ne</code> | <code>&lt;Cmd&gt;NoiceErrors&lt;CR&gt;</code> |
+ | | <code> aa</code> | <code>&lt;Cmd&gt;Alpha&lt;CR&gt;</code> |
+ | | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+ | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
+ | Nvim builtin| <code>S</code> |  |
+ | Flash Treesitter| <code>Y</code> | <code>y$</code> |
+ | Nvim builtin| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+ | | <code>[t</code> |  |
+ | Previous todo comment| <code>[q</code> |  |
+ | Previous trouble/quickfix item| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+ | | <code>]t</code> |  |
+ | Next todo comment| <code>]q</code> |  |
+ | Next trouble/quickfix item| <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+ | | <code>ga</code> | <code>&lt;Plug&gt;(EasyAlign)</code> |
+ | | <code>s</code> |  |
+ | Flash| <code>y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+ | | <code>&#124;</code> | <code>gaip*&#124;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;fugitive:</code> | <code></code> |
+ | | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+ | | <code>&lt;M-7&gt;</code> |  |
+ | | <code>&lt;M-6&gt;</code> |  |
+ | | <code>&lt;M-5&gt;</code> |  |
+ | | <code>&lt;M-4&gt;</code> |  |
+ | | <code>&lt;M-3&gt;</code> |  |
+ | | <code>&lt;M-2&gt;</code> |  |
+ | | <code>&lt;M-1&gt;</code> |  |
+ | | <code>&lt;M-8&gt;</code> |  |
+ | | <code>&lt;C-Space&gt;</code> |  |
+ | Increment selection| <code>&lt;C-N&gt;</code> | <code>&lt;Cmd&gt;Neotree toggle&lt;CR&gt;</code> |
+ | | <code>&lt;F12&gt;</code> | <code>&lt;Cmd&gt;lua require("dap").step_out()&lt;CR&gt;</code> |
+ | | <code>&lt;F11&gt;</code> | <code>&lt;Cmd&gt;lua require("dap").step_into()&lt;CR&gt;</code> |
+ | | <code>&lt;F10&gt;</code> | <code>&lt;Cmd&gt;lua require("dap").step_over()&lt;CR&gt;</code> |
+ | | <code>&lt;F5&gt;</code> | <code>&lt;Cmd&gt;lua  require("dap").continue()&lt;CR&gt;</code> |
+ | | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+ | Nvim builtin
 #### visual mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-|  | <code> tn</code> |  |
-| Eval | <code> de</code> |  |
-| Nvim builtin | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
-| Nvim builtin | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Treesitter Search | <code>R</code> |  |
-| Flash Treesitter | <code>S</code> |  |
-|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
-|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-|  | <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
-|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
-|  | <code>ga</code> | <code>&lt;Plug&gt;(EasyAlign)</code> |
-| Flash | <code>s</code> |  |
-|  | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
-| Decrement selection | <code>&lt;BS&gt;</code> |  |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code> tn</code> |  |
+ | | <code> de</code> |  |
+ | Eval| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+ | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>R</code> |  |
+ | Treesitter Search| <code>S</code> |  |
+ | Flash Treesitter| <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+ | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+ | | <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+ | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+ | | <code>ga</code> | <code>&lt;Plug&gt;(EasyAlign)</code> |
+ | | <code>s</code> |  |
+ | Flash| <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
+ | | <code>&lt;BS&gt;</code> |  |
+ | Decrement selection
 #### operator mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
-| Treesitter Search | <code>R</code> |  |
-| Flash Treesitter | <code>S</code> |  |
-|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
-|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
-|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
-| Remote Flash | <code>r</code> |  |
-| Flash | <code>s</code> |  |
-|  | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+ | | <code>R</code> |  |
+ | Treesitter Search| <code>S</code> |  |
+ | Flash Treesitter| <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+ | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+ | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+ | | <code>r</code> |  |
+ | Remote Flash| <code>s</code> |  |
+ | Flash| <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+ | 

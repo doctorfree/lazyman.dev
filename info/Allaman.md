@@ -115,143 +115,144 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 
 #### normal mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-| Next buffer | <code>&lt;Tab&gt;</code> | <code>&lt;Cmd&gt;bnext&lt;CR&gt;</code> |
-| Clear hlsearch and ESC | <code>&lt;Esc&gt;</code> | <code>&lt;Cmd&gt;noh&lt;CR&gt;&lt;Esc&gt;</code> |
-| List TODOs | <code> qt</code> |  |
-| Toggle Quickfix | <code> qq</code> | <code>&lt;Cmd&gt;lua require('core.utils.functions').toggle_qf()&lt;CR&gt;</code> |
-| Previous entry | <code> qk</code> | <code>&lt;Cmd&gt;cprevious&lt;CR&gt;</code> |
-| Next entry | <code> qj</code> | <code>&lt;Cmd&gt;cnext&lt;CR&gt;</code> |
-| Reload snippets | <code> ms</code> | <code>&lt;Cmd&gt;source ~/.config/nvim-Allaman/snippets/*&lt;CR&gt;</code> |
-| Toggle Scrollbind | <code> tS</code> | <code>&lt;Cmd&gt;windo set scb!&lt;CR&gt;</code> |
-| Toggle Virtualtext | <code> tt</code> | <code>&lt;Cmd&gt;lua require('core.plugins.lsp.utils').toggle_virtual_text()&lt;CR&gt;</code> |
-| Toggle colorcolumn | <code> to</code> | <code>&lt;Cmd&gt;lua require('core.utils.functions').toggle_colorcolumn()&lt;CR&gt;</code> |
-| Toggle cursorline | <code> tc</code> |  |
-| Toggle wrap | <code> tw</code> |  |
-| Toggle spell | <code> ts</code> |  |
-| Toggle virtualedit | <code> tv</code> |  |
-| Toggle signcolumn | <code> tl</code> |  |
-| Toggle hidden chars | <code> th</code> |  |
-| Buffer search and replace | <code> sr</code> | <code>:%s/</code> |
-| Save file | <code> fs</code> | <code>&lt;Cmd&gt;w&lt;CR&gt;</code> |
-| New file | <code> fn</code> | <code>&lt;Cmd&gt;enew&lt;CR&gt;</code> |
-| Previous Buffer | <code> &lt;Tab&gt;</code> | <code>&lt;Cmd&gt;e#&lt;CR&gt;</code> |
-| Close buffer | <code> bd</code> | <code>&lt;Cmd&gt;Bdelete&lt;CR&gt;</code> |
-| Close all but the current buffer | <code> bD</code> | <code>&lt;Cmd&gt;%bd&#124;e#|bd#&lt;CR&gt;</code> |
-| Toggle SymbolsOutline | <code> tO</code> |  |
-| Bufferlist | <code> bb</code> |  |
-| Telescope | <code> mt</code> |  |
-| Run make | <code> mm</code> |  |
-| Recent files | <code> fr</code> |  |
-| Open file (ignore git) | <code> fF</code> |  |
-| Open file | <code> ff</code> |  |
-| Zoxide | <code> fz</code> |  |
-| Filebrowser | <code> fb</code> |  |
-| Commits | <code> gm</code> |  |
-| Status | <code> gg</code> |  |
-| Branches | <code> gh</code> |  |
-| Word search | <code> sf</code> |  |
-| Command history | <code> s;</code> |  |
-| Search History | <code> s:</code> |  |
-| Emoji | <code> sS</code> |  |
-| Word under cursor | <code> ss</code> |  |
-| Registers | <code> sR</code> |  |
-| Projects | <code> sp</code> |  |
-| Vim Options | <code> sO</code> |  |
-| Keymaps | <code> sk</code> |  |
-| Headings | <code> sh</code> |  |
-| Help | <code> s?</code> |  |
-| Strings | <code> st</code> |  |
-| Commands | <code> sc</code> |  |
-| Advanced Git Search | <code> ga</code> |  |
-| Toggle Filetree | <code> fp</code> |  |
-| Search on current file | <code> Rf</code> |  |
-| Search current word | <code> Rw</code> |  |
-| Toggle search and replace | <code> Rr</code> |  |
-|  | <code> ml</code> | <code>&lt;Cmd&gt;Lazy&lt;CR&gt;</code> |
-|  | <code> </code> | <code></code> |
-|  | <code>#</code> | <code>:lua require'starlite'.hash()&lt;CR&gt;</code> |
-|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
-| Nvim builtin | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
-|  | <code>*</code> | <code>:lua require'starlite'.star()&lt;CR&gt;</code> |
-| Open Mini Files | <code>-</code> |  |
-| Flash Treesitter | <code>S</code> |  |
-| Nvim builtin | <code>Y</code> | <code>y$</code> |
-|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
-|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-|  | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
-|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
-|  | <code>g#</code> | <code>:lua require'starlite'.g_hash()&lt;CR&gt;</code> |
-|  | <code>g*</code> | <code>:lua require'starlite'.g_star()&lt;CR&gt;</code> |
-|  | <code>j</code> | <code>v:count == 0 ? 'gj' : 'j'</code> |
-|  | <code>k</code> | <code>v:count == 0 ? 'gk' : 'k'</code> |
-| Flash | <code>ss</code> |  |
-|  | <code>y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
-| Save file | <code>&lt;C-S&gt;</code> | <code>&lt;Cmd&gt;w&lt;CR&gt;&lt;Esc&gt;</code> |
-| Prev buffer | <code>&lt;S-Tab&gt;</code> | <code>&lt;Cmd&gt;bprevious&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;fugitive:</code> | <code></code> |
-|  | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
-| Toggle Terminal | <code>&lt;C-N&gt;</code> | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
-| Git Conflict: Previous Conflict | <code>&lt;Plug&gt;(git-conflict-prev-conflict)</code> | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
-| Git Conflict: Next Conflict | <code>&lt;Plug&gt;(git-conflict-next-conflict)</code> | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
-| Git Conflict: Choose Theirs | <code>&lt;Plug&gt;(git-conflict-theirs)</code> | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> |
-| Git Conflict: Choose None | <code>&lt;Plug&gt;(git-conflict-none)</code> | <code>&lt;Cmd&gt;GitConflictChooseNone&lt;CR&gt;</code> |
-| Git Conflict: Choose Both | <code>&lt;Plug&gt;(git-conflict-both)</code> | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
-| Git Conflict: Choose Ours | <code>&lt;Plug&gt;(git-conflict-ours)</code> | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
-|  | <code>&lt;C-J&gt;</code> | <code>&lt;Cmd&gt;lua require('Navigator').down()&lt;CR&gt;</code> |
-|  | <code>&lt;C-K&gt;</code> | <code>&lt;Cmd&gt;lua require('Navigator').up()&lt;CR&gt;</code> |
-|  | <code>&lt;C-H&gt;</code> | <code>&lt;Cmd&gt;lua require('Navigator').left()&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-| Search in buffer | <code>&lt;C-F&gt;</code> |  |
-|  | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;lua require('Navigator').right()&lt;CR&gt;</code> |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code>&lt;Tab&gt;</code> | <code>&lt;Cmd&gt;bnext&lt;CR&gt;</code> |
+ | Next buffer| <code>&lt;Esc&gt;</code> | <code>&lt;Cmd&gt;noh&lt;CR&gt;&lt;Esc&gt;</code> |
+ | Clear hlsearch and ESC| <code> qt</code> |  |
+ | List TODOs| <code> qq</code> | <code>&lt;Cmd&gt;lua require('core.utils.functions').toggle_qf()&lt;CR&gt;</code> |
+ | Toggle Quickfix| <code> qk</code> | <code>&lt;Cmd&gt;cprevious&lt;CR&gt;</code> |
+ | Previous entry| <code> qj</code> | <code>&lt;Cmd&gt;cnext&lt;CR&gt;</code> |
+ | Next entry| <code> ms</code> | <code>&lt;Cmd&gt;source ~/.config/nvim-Allaman/snippets/*&lt;CR&gt;</code> |
+ | Reload snippets| <code> tS</code> | <code>&lt;Cmd&gt;windo set scb!&lt;CR&gt;</code> |
+ | Toggle Scrollbind| <code> tt</code> | <code>&lt;Cmd&gt;lua require('core.plugins.lsp.utils').toggle_virtual_text()&lt;CR&gt;</code> |
+ | Toggle Virtualtext| <code> to</code> | <code>&lt;Cmd&gt;lua require('core.utils.functions').toggle_colorcolumn()&lt;CR&gt;</code> |
+ | Toggle colorcolumn| <code> tc</code> |  |
+ | Toggle cursorline| <code> tw</code> |  |
+ | Toggle wrap| <code> ts</code> |  |
+ | Toggle spell| <code> tv</code> |  |
+ | Toggle virtualedit| <code> tl</code> |  |
+ | Toggle signcolumn| <code> th</code> |  |
+ | Toggle hidden chars| <code> sr</code> | <code>:%s/</code> |
+ | Buffer search and replace| <code> fs</code> | <code>&lt;Cmd&gt;w&lt;CR&gt;</code> |
+ | Save file| <code> fn</code> | <code>&lt;Cmd&gt;enew&lt;CR&gt;</code> |
+ | New file| <code> &lt;Tab&gt;</code> | <code>&lt;Cmd&gt;e#&lt;CR&gt;</code> |
+ | Previous Buffer| <code> bd</code> | <code>&lt;Cmd&gt;Bdelete&lt;CR&gt;</code> |
+ | Close buffer| <code> bD</code> | <code>&lt;Cmd&gt;%bd&#124;e#|bd#&lt;CR&gt;</code> |
+ | Close all but the current buffer| <code> fp</code> |  |
+ | Toggle Filetree| <code> tO</code> |  |
+ | Toggle SymbolsOutline| <code> mt</code> |  |
+ | Telescope| <code> bb</code> |  |
+ | Bufferlist| <code> sf</code> |  |
+ | Word search| <code> s;</code> |  |
+ | Command history| <code> s:</code> |  |
+ | Search History| <code> sS</code> |  |
+ | Emoji| <code> ss</code> |  |
+ | Word under cursor| <code> sR</code> |  |
+ | Registers| <code> sp</code> |  |
+ | Projects| <code> sO</code> |  |
+ | Vim Options| <code> sk</code> |  |
+ | Keymaps| <code> sh</code> |  |
+ | Headings| <code> s?</code> |  |
+ | Help| <code> st</code> |  |
+ | Strings| <code> sc</code> |  |
+ | Commands| <code> mm</code> |  |
+ | Run make| <code> fr</code> |  |
+ | Recent files| <code> fF</code> |  |
+ | Open file (ignore git)| <code> ff</code> |  |
+ | Open file| <code> fz</code> |  |
+ | Zoxide| <code> fb</code> |  |
+ | Filebrowser| <code> gm</code> |  |
+ | Commits| <code> gg</code> |  |
+ | Status| <code> gh</code> |  |
+ | Branches| <code> ga</code> |  |
+ | Advanced Git Search| <code> Rw</code> |  |
+ | Search current word| <code> Rr</code> |  |
+ | Toggle search and replace| <code> Rf</code> |  |
+ | Search on current file| <code> ml</code> | <code>&lt;Cmd&gt;Lazy&lt;CR&gt;</code> |
+ | | <code> </code> | <code></code> |
+ | | <code>#</code> | <code>:lua require'starlite'.hash()&lt;CR&gt;</code> |
+ | | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+ | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
+ | Nvim builtin| <code>*</code> | <code>:lua require'starlite'.star()&lt;CR&gt;</code> |
+ | | <code>-</code> |  |
+ | Open Mini Files| <code>S</code> |  |
+ | Flash Treesitter| <code>Y</code> | <code>y$</code> |
+ | Nvim builtin| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+ | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+ | | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
+ | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+ | | <code>g#</code> | <code>:lua require'starlite'.g_hash()&lt;CR&gt;</code> |
+ | | <code>g*</code> | <code>:lua require'starlite'.g_star()&lt;CR&gt;</code> |
+ | | <code>j</code> | <code>v:count == 0 ? 'gj' : 'j'</code> |
+ | | <code>k</code> | <code>v:count == 0 ? 'gk' : 'k'</code> |
+ | | <code>ss</code> |  |
+ | Flash| <code>y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+ | | <code>&lt;C-S&gt;</code> | <code>&lt;Cmd&gt;w&lt;CR&gt;&lt;Esc&gt;</code> |
+ | Save file| <code>&lt;S-Tab&gt;</code> | <code>&lt;Cmd&gt;bprevious&lt;CR&gt;</code> |
+ | Prev buffer| <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(git-conflict-prev-conflict)</code> | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
+ | Git Conflict: Previous Conflict| <code>&lt;Plug&gt;(git-conflict-next-conflict)</code> | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
+ | Git Conflict: Next Conflict| <code>&lt;Plug&gt;(git-conflict-theirs)</code> | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> |
+ | Git Conflict: Choose Theirs| <code>&lt;Plug&gt;(git-conflict-none)</code> | <code>&lt;Cmd&gt;GitConflictChooseNone&lt;CR&gt;</code> |
+ | Git Conflict: Choose None| <code>&lt;Plug&gt;(git-conflict-both)</code> | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
+ | Git Conflict: Choose Both| <code>&lt;Plug&gt;(git-conflict-ours)</code> | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
+ | Git Conflict: Choose Ours| <code>&lt;C-J&gt;</code> | <code>&lt;Cmd&gt;lua require('Navigator').down()&lt;CR&gt;</code> |
+ | | <code>&lt;C-K&gt;</code> | <code>&lt;Cmd&gt;lua require('Navigator').up()&lt;CR&gt;</code> |
+ | | <code>&lt;C-H&gt;</code> | <code>&lt;Cmd&gt;lua require('Navigator').left()&lt;CR&gt;</code> |
+ | | <code>&lt;C-N&gt;</code> | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
+ | Toggle Terminal| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;fugitive:</code> | <code></code> |
+ | | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+ | | <code>&lt;C-F&gt;</code> |  |
+ | Search in buffer| <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;lua require('Navigator').right()&lt;CR&gt;</code> |
+ | 
 #### visual mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-| Buffer search and replace | <code> sr</code> | <code>:%s/</code> |
-| Search current word | <code> Rw</code> |  |
-|  | <code> </code> | <code></code> |
-| Nvim builtin | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
-| Nvim builtin | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-|  | <code>&lt;lt&gt;</code> | <code>&lt;lt&gt;gv</code> |
-|  | <code>&gt;</code> | <code>&gt;gv</code> |
-|  | <code>P</code> | <code>"_dP</code> |
-| Flash Treesitter | <code>S</code> |  |
-|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
-|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-|  | <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
-|  | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
-|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
-|  | <code>p</code> | <code>"_dp</code> |
-| Flash | <code>ss</code> |  |
-| Save file | <code>&lt;C-S&gt;</code> | <code>&lt;Cmd&gt;w&lt;CR&gt;&lt;Esc&gt;</code> |
-|  | <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code> sr</code> | <code>:%s/</code> |
+ | Buffer search and replace| <code> Rw</code> |  |
+ | Search current word| <code> </code> | <code></code> |
+ | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+ | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>&lt;lt&gt;</code> | <code>&lt;lt&gt;gv</code> |
+ | | <code>&gt;</code> | <code>&gt;gv</code> |
+ | | <code>P</code> | <code>"_dP</code> |
+ | | <code>S</code> |  |
+ | Flash Treesitter| <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+ | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+ | | <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+ | | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+ | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+ | | <code>p</code> | <code>"_dp</code> |
+ | | <code>ss</code> |  |
+ | Flash| <code>&lt;C-S&gt;</code> | <code>&lt;Cmd&gt;w&lt;CR&gt;&lt;Esc&gt;</code> |
+ | Save file| <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
+ | 
 #### operator mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
-| Flash Treesitter | <code>S</code> |  |
-|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
-|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
-|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
-| Remote Flash | <code>r</code> |  |
-| Flash | <code>ss</code> |  |
-|  | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+ | | <code>S</code> |  |
+ | Flash Treesitter| <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+ | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+ | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+ | | <code>r</code> |  |
+ | Remote Flash| <code>ss</code> |  |
+ | Flash| <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+ | 

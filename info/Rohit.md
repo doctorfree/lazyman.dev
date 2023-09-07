@@ -132,85 +132,85 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 
 #### normal mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-| Help | <code> P?</code> | <code>&lt;Cmd&gt;Lazy help&lt;CR&gt;</code> |
-| Debug | <code> PD</code> | <code>&lt;Cmd&gt;Lazy debug&lt;CR&gt;</code> |
-| Profile | <code> PP</code> | <code>&lt;Cmd&gt;Lazy profile&lt;CR&gt;</code> |
-| Restore | <code> PR</code> | <code>&lt;Cmd&gt;Lazy restore&lt;CR&gt;</code> |
-| Log | <code> PL</code> | <code>&lt;Cmd&gt;Lazy log&lt;CR&gt;</code> |
-| Check | <code> PC</code> | <code>&lt;Cmd&gt;Lazy check&lt;CR&gt;</code> |
-| Clean | <code> PX</code> | <code>&lt;Cmd&gt;Lazy clean&lt;CR&gt;</code> |
-| Sync | <code> PS</code> | <code>&lt;Cmd&gt;Lazy sync&lt;CR&gt;</code> |
-| Update | <code> PU</code> | <code>&lt;Cmd&gt;Lazy update&lt;CR&gt;</code> |
-| Install | <code> PI</code> | <code>&lt;Cmd&gt;Lazy install&lt;CR&gt;</code> |
-| Home | <code> PH</code> | <code>&lt;Cmd&gt;Lazy home&lt;CR&gt;</code> |
-| Generate Doc String | <code> N</code> | <code>:lua require('neogen').generate()&lt;CR&gt;</code> |
-| Hex Dump | <code> Hd</code> |  |
-| Hex Toggle View | <code> Ht</code> |  |
-| Hex Assemble | <code> Ha</code> |  |
-| DapUI Toggle | <code> du</code> |  |
-| Toggle BreakPoint | <code> dt</code> |  |
-| UndotreeToggle | <code> U</code> |  |
-| Zen Mode | <code> zz</code> |  |
-| GodBolt Compiler | <code> GC</code> |  |
-| GodBolt | <code> GG</code> |  |
-| Help Tags | <code> th</code> |  |
-| Todo List | <code> tt</code> |  |
-| Toggle CheckBox | <code>  t</code> |  |
-| Add CheckBox | <code>  a</code> |  |
-| Toggle Branch Workbench | <code>  b</code> |  |
-| Toggle Project Workbench | <code>  p</code> |  |
-| Twilight | <code> zt</code> |  |
-| Toggle Harpoon Menu | <code> hs</code> |  |
-| Add file to Harpoon | <code> ha</code> |  |
-| TrueZen Minimalist | <code> zm</code> |  |
-| TrueZen Focus | <code> zf</code> |  |
-| TrueZen Narrow Visual | <code> zn</code> |  |
-| TrueZen Ataraxis | <code> za</code> |  |
-| Lazy Git | <code> gg</code> |  |
-| Toggle Format on Save | <code> F</code> | <code>:lua toggleAutoformat()&lt;CR&gt;</code> |
-| Close Tab | <code> td</code> | <code>&lt;Cmd&gt;tabclose&lt;CR&gt;</code> |
-| New Tab | <code> ta</code> | <code>&lt;Cmd&gt;tabnew&lt;CR&gt;</code> |
-| Save without formatting (noautocmd) | <code> bW</code> | <code>&lt;Cmd&gt;noautocmd w&lt;CR&gt;</code> |
-| Buffer WipeOut without saving | <code> bw</code> | <code>&lt;Cmd&gt;bwipeout!&lt;CR&gt;</code> |
-| Delete Current Buffer | <code> bd</code> | <code>&lt;Cmd&gt;bdelete&lt;CR&gt;</code> |
-| Close | <code> x</code> | <code>&lt;Cmd&gt;close&lt;CR&gt;</code> |
-| Write All & Quit | <code> Q</code> | <code>&lt;Cmd&gt;wall &#124; :qa&lt;CR&gt;</code> |
-| Quit | <code> q</code> | <code>&lt;Cmd&gt;quit&lt;CR&gt;</code> |
-| Save | <code> w</code> | <code>&lt;Cmd&gt;write&lt;CR&gt;</code> |
-| Nvim builtin | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
-| Fold Close | <code>,f</code> | <code>:%foldclose&lt;CR&gt;</code> |
-| Source Current File | <code>;X</code> | <code>:source&lt;CR&gt;</code> |
-| Source VIMRC | <code>;x</code> | <code>:source $MYVIMRC&lt;CR&gt;</code> |
-| Nvim builtin | <code>Y</code> | <code>y$</code> |
-|  | <code>x</code> | <code>"_x</code> |
-| Toggle Term | <code>&lt;C-Bslash&gt;</code> |  |
-|  | <code>&lt;M-C-H&gt;</code> | <code>&lt;Cmd&gt;vertical resize -2&lt;CR&gt;</code> |
-|  | <code>&lt;M-C-L&gt;</code> | <code>&lt;Cmd&gt;vertical resize +2&lt;CR&gt;</code> |
-|  | <code>&lt;M-C-J&gt;</code> | <code>&lt;Cmd&gt;resize -2&lt;CR&gt;</code> |
-|  | <code>&lt;M-C-K&gt;</code> | <code>&lt;Cmd&gt;resize +2&lt;CR&gt;</code> |
-|  | <code>&lt;C-S-Right&gt;</code> | <code>&lt;Cmd&gt;vertical resize -2&lt;CR&gt;</code> |
-|  | <code>&lt;C-S-Left&gt;</code> | <code>&lt;Cmd&gt;vertical resize +2&lt;CR&gt;</code> |
-|  | <code>&lt;S-Down&gt;</code> | <code>&lt;Cmd&gt;resize -2&lt;CR&gt;</code> |
-|  | <code>&lt;S-Up&gt;</code> | <code>&lt;Cmd&gt;resize +2&lt;CR&gt;</code> |
-|  | <code>&lt;C-K&gt;</code> | <code>&lt;C-W&gt;k</code> |
-|  | <code>&lt;C-J&gt;</code> | <code>&lt;C-W&gt;j</code> |
-|  | <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> |
-|  | <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code> P?</code> | <code>&lt;Cmd&gt;Lazy help&lt;CR&gt;</code> |
+ | Help| <code> PD</code> | <code>&lt;Cmd&gt;Lazy debug&lt;CR&gt;</code> |
+ | Debug| <code> PP</code> | <code>&lt;Cmd&gt;Lazy profile&lt;CR&gt;</code> |
+ | Profile| <code> PR</code> | <code>&lt;Cmd&gt;Lazy restore&lt;CR&gt;</code> |
+ | Restore| <code> PL</code> | <code>&lt;Cmd&gt;Lazy log&lt;CR&gt;</code> |
+ | Log| <code> PC</code> | <code>&lt;Cmd&gt;Lazy check&lt;CR&gt;</code> |
+ | Check| <code> PX</code> | <code>&lt;Cmd&gt;Lazy clean&lt;CR&gt;</code> |
+ | Clean| <code> PS</code> | <code>&lt;Cmd&gt;Lazy sync&lt;CR&gt;</code> |
+ | Sync| <code> PU</code> | <code>&lt;Cmd&gt;Lazy update&lt;CR&gt;</code> |
+ | Update| <code> PI</code> | <code>&lt;Cmd&gt;Lazy install&lt;CR&gt;</code> |
+ | Install| <code> PH</code> | <code>&lt;Cmd&gt;Lazy home&lt;CR&gt;</code> |
+ | Home| <code> N</code> | <code>:lua require('neogen').generate()&lt;CR&gt;</code> |
+ | Generate Doc String| <code> du</code> |  |
+ | DapUI Toggle| <code> gg</code> |  |
+ | Lazy Git| <code> U</code> |  |
+ | UndotreeToggle| <code> GC</code> |  |
+ | GodBolt Compiler| <code> GG</code> |  |
+ | GodBolt| <code> Ht</code> |  |
+ | Hex Toggle View| <code> Ha</code> |  |
+ | Hex Assemble| <code> Hd</code> |  |
+ | Hex Dump| <code> th</code> |  |
+ | Help Tags| <code> tt</code> |  |
+ | Todo List| <code> zt</code> |  |
+ | Twilight| <code>  t</code> |  |
+ | Toggle CheckBox| <code>  a</code> |  |
+ | Add CheckBox| <code>  b</code> |  |
+ | Toggle Branch Workbench| <code>  p</code> |  |
+ | Toggle Project Workbench| <code> zz</code> |  |
+ | Zen Mode| <code> zm</code> |  |
+ | TrueZen Minimalist| <code> zf</code> |  |
+ | TrueZen Focus| <code> zn</code> |  |
+ | TrueZen Narrow Visual| <code> za</code> |  |
+ | TrueZen Ataraxis| <code> dt</code> |  |
+ | Toggle BreakPoint| <code> hs</code> |  |
+ | Toggle Harpoon Menu| <code> ha</code> |  |
+ | Add file to Harpoon| <code> F</code> | <code>:lua toggleAutoformat()&lt;CR&gt;</code> |
+ | Toggle Format on Save| <code> td</code> | <code>&lt;Cmd&gt;tabclose&lt;CR&gt;</code> |
+ | Close Tab| <code> ta</code> | <code>&lt;Cmd&gt;tabnew&lt;CR&gt;</code> |
+ | New Tab| <code> bW</code> | <code>&lt;Cmd&gt;noautocmd w&lt;CR&gt;</code> |
+ | Save without formatting (noautocmd)| <code> bw</code> | <code>&lt;Cmd&gt;bwipeout!&lt;CR&gt;</code> |
+ | Buffer WipeOut without saving| <code> bd</code> | <code>&lt;Cmd&gt;bdelete&lt;CR&gt;</code> |
+ | Delete Current Buffer| <code> x</code> | <code>&lt;Cmd&gt;close&lt;CR&gt;</code> |
+ | Close| <code> Q</code> | <code>&lt;Cmd&gt;wall &#124; :qa&lt;CR&gt;</code> |
+ | Write All & Quit| <code> q</code> | <code>&lt;Cmd&gt;quit&lt;CR&gt;</code> |
+ | Quit| <code> w</code> | <code>&lt;Cmd&gt;write&lt;CR&gt;</code> |
+ | Save| <code>&</code> | <code>:&&&lt;CR&gt;</code> |
+ | Nvim builtin| <code>,f</code> | <code>:%foldclose&lt;CR&gt;</code> |
+ | Fold Close| <code>;X</code> | <code>:source&lt;CR&gt;</code> |
+ | Source Current File| <code>;x</code> | <code>:source $MYVIMRC&lt;CR&gt;</code> |
+ | Source VIMRC| <code>Y</code> | <code>y$</code> |
+ | Nvim builtin| <code>x</code> | <code>"_x</code> |
+ | | <code>&lt;C-Bslash&gt;</code> |  |
+ | Toggle Term| <code>&lt;M-C-H&gt;</code> | <code>&lt;Cmd&gt;vertical resize -2&lt;CR&gt;</code> |
+ | | <code>&lt;M-C-L&gt;</code> | <code>&lt;Cmd&gt;vertical resize +2&lt;CR&gt;</code> |
+ | | <code>&lt;M-C-J&gt;</code> | <code>&lt;Cmd&gt;resize -2&lt;CR&gt;</code> |
+ | | <code>&lt;M-C-K&gt;</code> | <code>&lt;Cmd&gt;resize +2&lt;CR&gt;</code> |
+ | | <code>&lt;C-S-Right&gt;</code> | <code>&lt;Cmd&gt;vertical resize -2&lt;CR&gt;</code> |
+ | | <code>&lt;C-S-Left&gt;</code> | <code>&lt;Cmd&gt;vertical resize +2&lt;CR&gt;</code> |
+ | | <code>&lt;S-Down&gt;</code> | <code>&lt;Cmd&gt;resize -2&lt;CR&gt;</code> |
+ | | <code>&lt;S-Up&gt;</code> | <code>&lt;Cmd&gt;resize +2&lt;CR&gt;</code> |
+ | | <code>&lt;C-K&gt;</code> | <code>&lt;C-W&gt;k</code> |
+ | | <code>&lt;C-J&gt;</code> | <code>&lt;C-W&gt;j</code> |
+ | | <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> |
+ | | <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |
+ | 
 #### visual mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-|  | <code> p</code> | <code>"_dP</code> |
-| Nvim builtin | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Nvim builtin | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-|  | <code>J</code> | <code>:m '&gt;+1&lt;CR&gt;gv=gv</code> |
-|  | <code>K</code> | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv=gv</code> |
-|  | <code>x</code> | <code>"_x</code> |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code> p</code> | <code>"_dP</code> |
+ | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>J</code> | <code>:m '&gt;+1&lt;CR&gt;gv=gv</code> |
+ | | <code>K</code> | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv=gv</code> |
+ | | <code>x</code> | <code>"_x</code> |
+ | 
 #### operator mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |

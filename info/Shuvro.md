@@ -103,70 +103,70 @@ Significantly improved fork of [Abouzar Parvan's](https://github.com/abzcoding/l
 
 #### normal mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-|  | <code>&lt;CR&gt;</code> | <code>&lt;Cmd&gt;lua require('user.neovim').maximize_current_split()&lt;CR&gt;</code> |
-|  | <code>&lt;Esc&gt;&lt;Esc&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&lt;CR&gt;</code> |
-|  | <code> y</code> |  |
-| Nvim builtin | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
-|  | <code>H</code> | <code>&lt;Cmd&gt;BufferLineCyclePrev&lt;CR&gt;</code> |
-|  | <code>L</code> | <code>&lt;Cmd&gt;BufferLineCycleNext&lt;CR&gt;</code> |
-|  | <code>X</code> | <code>&lt;Cmd&gt;lua require('user.bufferline').delete_buffer()&lt;CR&gt;</code> |
-|  | <code>Y</code> | <code>y$</code> |
-|  | <code>[d</code> | <code>&lt;Cmd&gt;lua vim.diagnostic.goto_prev()&lt;CR&gt;</code> |
-|  | <code>[b</code> | <code>&lt;Cmd&gt;BufferLineMoveNext&lt;CR&gt;</code> |
-|  | <code>[q</code> | <code>:cprev&lt;CR&gt;</code> |
-|  | <code>]d</code> | <code>&lt;Cmd&gt;lua vim.diagnostic.goto_next()&lt;CR&gt;</code> |
-|  | <code>]b</code> | <code>&lt;Cmd&gt;BufferLineMovePrev&lt;CR&gt;</code> |
-|  | <code>]q</code> | <code>:cnext&lt;CR&gt;</code> |
-|  | <code>cu</code> | <code>&lt;Cmd&gt;lua require('harpoon.term').sendCommand(1, 1)&lt;CR&gt;</code> |
-|  | <code>ce</code> | <code>&lt;Cmd&gt;lua require('harpoon.term').sendCommand(1, 2)&lt;CR&gt;</code> |
-|  | <code>gb</code> |  |
-|  | <code>gc</code> |  |
-|  | <code>gv</code> | <code>&lt;Cmd&gt;vsplit &#124; lua vim.lsp.buf.definition({on_list = function(items) vim.fn.setqflist({}, 'r', items) vim.cmd('cfirst') end})&lt;CR&gt;</code> |
-|  | <code>gx</code> | <code>&lt;Cmd&gt;lua os.execute("xdg-open " .. vim.fn.shellescape(vim.fn.expand "&lt;lt&gt;cWORD&gt;")); vim.cmd "redraw!"&lt;CR&gt;</code> |
-|  | <code>tu</code> | <code>&lt;Cmd&gt;lua require('harpoon.term').gotoTerminal(1)&lt;CR&gt;</code> |
-|  | <code>te</code> | <code>&lt;Cmd&gt;lua require('harpoon.term').gotoTerminal(2)&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-|  | <code>&lt;C-Bslash&gt;</code> |  |
-|  | <code>&lt;M-x&gt;</code> | <code>&lt;C-X&gt;</code> |
-|  | <code>&lt;C-,&gt;</code> | <code>&lt;Cmd&gt;lua require('neogen').jump_next()&lt;CR&gt;</code> |
-|  | <code>&lt;C-Space&gt;</code> | <code>&lt;Cmd&gt;lua require('harpoon.cmd-ui').toggle_quick_menu()&lt;CR&gt;</code> |
-|  | <code>&lt;M-a&gt;</code> | <code>&lt;C-A&gt;</code> |
-|  | <code>&lt;C-N&gt;i</code> | <code>&lt;Tab&gt;</code> |
-|  | <code>&lt;M-j&gt;</code> | <code>:m .+1&lt;CR&gt;==</code> |
-|  | <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> |
-|  | <code>&lt;M-k&gt;</code> | <code>:m .-2&lt;CR&gt;==</code> |
-|  | <code>&lt;C-Right&gt;</code> | <code>:vertical resize +2&lt;CR&gt;</code> |
-|  | <code>&lt;C-Left&gt;</code> | <code>:vertical resize -2&lt;CR&gt;</code> |
-|  | <code>&lt;C-Down&gt;</code> | <code>:resize +2&lt;CR&gt;</code> |
-|  | <code>&lt;C-Q&gt;</code> | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
-|  | <code>&lt;C-Up&gt;</code> | <code>:resize -2&lt;CR&gt;</code> |
-|  | <code>&lt;C-K&gt;</code> | <code>&lt;C-W&gt;k</code> |
-|  | <code>&lt;C-J&gt;</code> | <code>&lt;C-W&gt;j</code> |
-|  | <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code>&lt;CR&gt;</code> | <code>&lt;Cmd&gt;lua require('user.neovim').maximize_current_split()&lt;CR&gt;</code> |
+ | | <code>&lt;Esc&gt;&lt;Esc&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&lt;CR&gt;</code> |
+ | | <code> y</code> |  |
+ | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
+ | Nvim builtin| <code>H</code> | <code>&lt;Cmd&gt;BufferLineCyclePrev&lt;CR&gt;</code> |
+ | | <code>L</code> | <code>&lt;Cmd&gt;BufferLineCycleNext&lt;CR&gt;</code> |
+ | | <code>X</code> | <code>&lt;Cmd&gt;lua require('user.bufferline').delete_buffer()&lt;CR&gt;</code> |
+ | | <code>Y</code> | <code>y$</code> |
+ | | <code>[d</code> | <code>&lt;Cmd&gt;lua vim.diagnostic.goto_prev()&lt;CR&gt;</code> |
+ | | <code>[b</code> | <code>&lt;Cmd&gt;BufferLineMoveNext&lt;CR&gt;</code> |
+ | | <code>[q</code> | <code>:cprev&lt;CR&gt;</code> |
+ | | <code>]d</code> | <code>&lt;Cmd&gt;lua vim.diagnostic.goto_next()&lt;CR&gt;</code> |
+ | | <code>]b</code> | <code>&lt;Cmd&gt;BufferLineMovePrev&lt;CR&gt;</code> |
+ | | <code>]q</code> | <code>:cnext&lt;CR&gt;</code> |
+ | | <code>cu</code> | <code>&lt;Cmd&gt;lua require('harpoon.term').sendCommand(1, 1)&lt;CR&gt;</code> |
+ | | <code>ce</code> | <code>&lt;Cmd&gt;lua require('harpoon.term').sendCommand(1, 2)&lt;CR&gt;</code> |
+ | | <code>gb</code> |  |
+ | | <code>gc</code> |  |
+ | | <code>gx</code> | <code>&lt;Cmd&gt;lua os.execute("xdg-open " .. vim.fn.shellescape(vim.fn.expand "&lt;lt&gt;cWORD&gt;")); vim.cmd "redraw!"&lt;CR&gt;</code> |
+ | | <code>gv</code> | <code>&lt;Cmd&gt;vsplit &#124; lua vim.lsp.buf.definition({on_list = function(items) vim.fn.setqflist({}, 'r', items) vim.cmd('cfirst') end})&lt;CR&gt;</code> |
+ | | <code>te</code> | <code>&lt;Cmd&gt;lua require('harpoon.term').gotoTerminal(2)&lt;CR&gt;</code> |
+ | | <code>tu</code> | <code>&lt;Cmd&gt;lua require('harpoon.term').gotoTerminal(1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+ | | <code>&lt;C-Bslash&gt;</code> |  |
+ | | <code>&lt;C-Space&gt;</code> | <code>&lt;Cmd&gt;lua require('harpoon.cmd-ui').toggle_quick_menu()&lt;CR&gt;</code> |
+ | | <code>&lt;M-x&gt;</code> | <code>&lt;C-X&gt;</code> |
+ | | <code>&lt;C-N&gt;i</code> | <code>&lt;Tab&gt;</code> |
+ | | <code>&lt;M-a&gt;</code> | <code>&lt;C-A&gt;</code> |
+ | | <code>&lt;C-,&gt;</code> | <code>&lt;Cmd&gt;lua require('neogen').jump_next()&lt;CR&gt;</code> |
+ | | <code>&lt;M-j&gt;</code> | <code>:m .+1&lt;CR&gt;==</code> |
+ | | <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> |
+ | | <code>&lt;M-k&gt;</code> | <code>:m .-2&lt;CR&gt;==</code> |
+ | | <code>&lt;C-Right&gt;</code> | <code>:vertical resize +2&lt;CR&gt;</code> |
+ | | <code>&lt;C-Left&gt;</code> | <code>:vertical resize -2&lt;CR&gt;</code> |
+ | | <code>&lt;C-Down&gt;</code> | <code>:resize +2&lt;CR&gt;</code> |
+ | | <code>&lt;C-Q&gt;</code> | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
+ | | <code>&lt;C-Up&gt;</code> | <code>:resize -2&lt;CR&gt;</code> |
+ | | <code>&lt;C-K&gt;</code> | <code>&lt;C-W&gt;k</code> |
+ | | <code>&lt;C-J&gt;</code> | <code>&lt;C-W&gt;j</code> |
+ | | <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |
+ | 
 #### visual mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-|  | <code> st</code> | <code>&lt;Cmd&gt;lua require('user.telescope').grep_string_visual()&lt;CR&gt;</code> |
-| Nvim builtin | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Nvim builtin | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-|  | <code>&lt;lt&gt;</code> | <code>&lt;lt&gt;gv</code> |
-|  | <code>&gt;</code> | <code>&gt;gv</code> |
-|  | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
-|  | <code>gc</code> |  |
-|  | <code>gb</code> |  |
-|  | <code>ga</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua vim.lsp.buf.range_code_action()&lt;CR&gt;</code> |
-|  | <code>p</code> | <code>"_dP</code> |
-|  | <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
-|  | <code>&lt;M-x&gt;</code> | <code>&lt;C-X&gt;</code> |
-|  | <code>&lt;M-a&gt;</code> | <code>&lt;C-A&gt;</code> |
-|  | <code>&lt;M-j&gt;</code> | <code>:m '&gt;+1&lt;CR&gt;gv-gv</code> |
-|  | <code>&lt;M-k&gt;</code> | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv-gv</code> |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code> st</code> | <code>&lt;Cmd&gt;lua require('user.telescope').grep_string_visual()&lt;CR&gt;</code> |
+ | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>&lt;lt&gt;</code> | <code>&lt;lt&gt;gv</code> |
+ | | <code>&gt;</code> | <code>&gt;gv</code> |
+ | | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+ | | <code>gb</code> |  |
+ | | <code>gc</code> |  |
+ | | <code>ga</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua vim.lsp.buf.range_code_action()&lt;CR&gt;</code> |
+ | | <code>p</code> | <code>"_dP</code> |
+ | | <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
+ | | <code>&lt;M-x&gt;</code> | <code>&lt;C-X&gt;</code> |
+ | | <code>&lt;M-a&gt;</code> | <code>&lt;C-A&gt;</code> |
+ | | <code>&lt;M-j&gt;</code> | <code>:m '&gt;+1&lt;CR&gt;gv-gv</code> |
+ | | <code>&lt;M-k&gt;</code> | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv-gv</code> |
+ | 
 #### operator mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |

@@ -94,115 +94,116 @@ One of the primary inspirations for Lazyman
 
 #### normal mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-| Select Moonokai pro filter | <code> c</code> | <code>&lt;Cmd&gt;MonokaiProSelect&lt;CR&gt;</code> |
-| Open file manager | <code> r</code> |  |
-| Diff | <code> gd</code> |  |
-| Undo Stage Hunk | <code> gu</code> |  |
-| Stage Hunk | <code> gs</code> |  |
-| Reset Buffer | <code> gR</code> |  |
-| Reset Hunk | <code> gr</code> |  |
-| Preview Hunk | <code> gp</code> |  |
-| Blame | <code> gl</code> |  |
-| Prev Hunk | <code> gk</code> |  |
-| Next Hunk | <code> gj</code> |  |
-| Lazygit | <code> gg</code> |  |
-| Delete all Notifications | <code> n</code> |  |
-| Find buffer | <code> b</code> |  |
-| Find Text | <code> F</code> |  |
-| Find files | <code> f</code> |  |
-| Checkout commit | <code> gc</code> |  |
-| Checkout branch | <code> gb</code> |  |
-| Open changed file | <code> go</code> |  |
-| Dashboard | <code> 0</code> |  |
-| Zoom window | <code> m</code> |  |
-| Explorer Float (root dir) | <code> E</code> |  |
-| Explorer (root dir) | <code> e</code> |  |
-| Don't Save Current Session | <code> sd</code> |  |
-| Restore Last Session | <code> sl</code> |  |
-| Restore Session | <code> ss</code> |  |
-| Close Buffer | <code> d</code> |  |
-| Peek (Markdown Preview) | <code> p</code> |  |
-|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
-| Nvim builtin | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
-| Nvim builtin | <code>Y</code> | <code>y$</code> |
-|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
-| Prev Reference | <code>[[</code> |  |
-|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-| Next Reference | <code>]]</code> |  |
-| Open fold under cursor | <code>fo</code> |  |
-| Update folds | <code>fx</code> |  |
-| Open all folds | <code>fR</code> |  |
-| Delete fold under cursor | <code>fd</code> |  |
-| Center this line | <code>fz</code> |  |
-| Left this line | <code>fs</code> |  |
-| Half screen to the right | <code>fL</code> |  |
-| Add word to spell list | <code>fg</code> |  |
-| Bottom this line | <code>fb</code> |  |
-| Open all folds under cursor | <code>fO</code> |  |
-| Close all folds under cursor | <code>fc</code> |  |
-| Mark word as bad/misspelling | <code>fw</code> |  |
-| Toggle fold under cursor | <code>fa</code> |  |
-| Right this line | <code>fe</code> |  |
-| Toggle all folds under cursor | <code>fA</code> |  |
-| Delete all folds in current buffer | <code>fE</code> |  |
-| Show cursor line | <code>fv</code> |  |
-| Close all folds | <code>fM</code> |  |
-| Half screen to the left | <code>fH</code> |  |
-| Top this line | <code>ft</code> |  |
-| Fold more | <code>fm</code> |  |
-| Fold less | <code>fr</code> |  |
-|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
-| Go to definition | <code>gd</code> |  |
-| Go to references | <code>gr</code> |  |
-| Go to implementations | <code>gi</code> |  |
-| Commands | <code>sC</code> |  |
-| Find Help | <code>sh</code> |  |
-| Man Pages | <code>sM</code> |  |
-| Open Recent File | <code>sr</code> |  |
-| Registers | <code>sR</code> |  |
-| Keymaps | <code>sk</code> |  |
-| Highlight Groups | <code>sH</code> |  |
-| Checkout branch | <code>sb</code> |  |
-| Colorscheme | <code>sc</code> |  |
-|  | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
-|  | <code>&lt;Plug&gt;luasnip-delete-check</code> |  |
-| Nvim builtin | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code> c</code> | <code>&lt;Cmd&gt;MonokaiProSelect&lt;CR&gt;</code> |
+ | Select Moonokai pro filter| <code> e</code> |  |
+ | Explorer (root dir)| <code> E</code> |  |
+ | Explorer Float (root dir)| <code> p</code> |  |
+ | Peek (Markdown Preview)| <code> d</code> |  |
+ | Close Buffer| <code> r</code> |  |
+ | Open file manager| <code> n</code> |  |
+ | Delete all Notifications| <code> 0</code> |  |
+ | Dashboard| <code> m</code> |  |
+ | Zoom window| <code> gd</code> |  |
+ | Diff| <code> gu</code> |  |
+ | Undo Stage Hunk| <code> gs</code> |  |
+ | Stage Hunk| <code> gR</code> |  |
+ | Reset Buffer| <code> gr</code> |  |
+ | Reset Hunk| <code> gp</code> |  |
+ | Preview Hunk| <code> gl</code> |  |
+ | Blame| <code> gk</code> |  |
+ | Prev Hunk| <code> gj</code> |  |
+ | Next Hunk| <code> gg</code> |  |
+ | Lazygit| <code> sd</code> |  |
+ | Don't Save Current Session| <code> sl</code> |  |
+ | Restore Last Session| <code> ss</code> |  |
+ | Restore Session| <code> b</code> |  |
+ | Find buffer| <code> F</code> |  |
+ | Find Text| <code> f</code> |  |
+ | Find files| <code> gc</code> |  |
+ | Checkout commit| <code> gb</code> |  |
+ | Checkout branch| <code> go</code> |  |
+ | Open changed file| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+ | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
+ | Nvim builtin| <code>Y</code> | <code>y$</code> |
+ | Nvim builtin| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+ | | <code>[[</code> |  |
+ | Prev Reference| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+ | | <code>]]</code> |  |
+ | Next Reference| <code>fz</code> |  |
+ | Center this line| <code>fv</code> |  |
+ | Show cursor line| <code>fs</code> |  |
+ | Left this line| <code>fM</code> |  |
+ | Close all folds| <code>fH</code> |  |
+ | Half screen to the left| <code>fR</code> |  |
+ | Open all folds| <code>fo</code> |  |
+ | Open fold under cursor| <code>fm</code> |  |
+ | Fold more| <code>ft</code> |  |
+ | Top this line| <code>fr</code> |  |
+ | Fold less| <code>fL</code> |  |
+ | Half screen to the right| <code>fx</code> |  |
+ | Update folds| <code>fd</code> |  |
+ | Delete fold under cursor| <code>fg</code> |  |
+ | Add word to spell list| <code>fb</code> |  |
+ | Bottom this line| <code>fO</code> |  |
+ | Open all folds under cursor| <code>fc</code> |  |
+ | Close all folds under cursor| <code>fw</code> |  |
+ | Mark word as bad/misspelling| <code>fa</code> |  |
+ | Toggle fold under cursor| <code>fe</code> |  |
+ | Right this line| <code>fA</code> |  |
+ | Toggle all folds under cursor| <code>fE</code> |  |
+ | Delete all folds in current buffer| <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+ | | <code>gd</code> |  |
+ | Go to definition| <code>gr</code> |  |
+ | Go to references| <code>gi</code> |  |
+ | Go to implementations| <code>sc</code> |  |
+ | Colorscheme| <code>sM</code> |  |
+ | Man Pages| <code>sh</code> |  |
+ | Find Help| <code>sr</code> |  |
+ | Open Recent File| <code>sR</code> |  |
+ | Registers| <code>sk</code> |  |
+ | Keymaps| <code>sC</code> |  |
+ | Commands| <code>sH</code> |  |
+ | Highlight Groups| <code>sb</code> |  |
+ | Checkout branch| <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
+ | | <code>&lt;Plug&gt;luasnip-delete-check</code> |  |
+ | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+ | | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+ | Nvim builtin
 #### visual mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-| Nvim builtin | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
-| Nvim builtin | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
-|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-|  | <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
-|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
-|  | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
-|  | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
-
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+ | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Nvim builtin| <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+ | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+ | | <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+ | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
+ | | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
+ | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
+ | 
 #### operator mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
-|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
-|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
-|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
-|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
-|  | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
-|  | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
+|  LHS  |  RHS  | Description |
+| :---- | ----: | :---------- |
+| <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+ | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+ | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+ | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+ | | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
+ | 
