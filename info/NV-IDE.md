@@ -125,486 +125,794 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 
 #### normal mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code> e</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>#</code> |
-| Right hand side | <code>#&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>&</code> |
-| Right hand side | <code>:&&&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>*</code> |
-| Right hand side | <code>*&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>N</code> |
-| Right hand side | <code>&lt;Cmd&gt;execute('normal! ' . v:count1 . 'N')&lt;CR&gt;&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
-| Description | Treesitter Search |
-| Left hand side | <code>R</code> |
-| Right hand side | |
-| Description | Flash Treesitter |
-| Left hand side | <code>S</code> |
-| Right hand side | |
-| Description | Nvim builtin |
-| Left hand side | <code>Y</code> |
-| Right hand side | <code>y$</code> |
-| Description | |
-| Left hand side | <code>[d</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>[%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
-| Description | |
-| Left hand side | <code>\n</code> |
-| Right hand side | <code>:lua require('config.plugins.telescope').my_note()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\nt</code> |
-| Right hand side | <code>:lua require('util.scratches').open_scratch_file_floating()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\tv</code> |
-| Right hand side | <code>:lua require('util.scratches').open_scratch_file()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\df</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'telescope'.extensions.dap.frames{}&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\dv</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'telescope'.extensions.dap.variables{}&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\dlb</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'telescope'.extensions.dap.list_breakpoints{}&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\dcc</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'telescope'.extensions.dap.commands{}&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\dro</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'dap'.repl.open()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\dui</code> |
-| Right hand side | <code>:lua require('dapui').toggle()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\db</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'dap'.toggle_breakpoint()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\dso</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'dap'.step_out()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\dsi</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'dap'.step_into()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\ds</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'dap'.step_over()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\dc</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'dap'.continue()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\tl</code> |
-| Right hand side | <code>&lt;Cmd&gt;Trouble lsp_references&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\tq</code> |
-| Right hand side | <code>&lt;Cmd&gt;Trouble quickfix&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\tll</code> |
-| Right hand side | <code>&lt;Cmd&gt;Trouble loclist&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\td</code> |
-| Right hand side | <code>&lt;Cmd&gt;Trouble document_diagnostics&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\tw</code> |
-| Right hand side | <code>&lt;Cmd&gt;Trouble workspace_diagnostics&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\tr</code> |
-| Right hand side | <code>&lt;Cmd&gt;TroubleToggle&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\tn</code> |
-| Right hand side | <code>:TodoTrouble keywords=NOTE&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\tf</code> |
-| Right hand side | <code>:TodoTrouble keywords=FIX,FIXME&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\tt</code> |
-| Right hand side | <code>:TodoTrouble keywords=TODO&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\ll</code> |
-| Right hand side | <code>:lua require('telescope.builtin').grep_string({ search = vim.fn.input('GREP -&gt; ') })&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\y</code> |
-| Right hand side | <code>:Telescope neoclip&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\nn</code> |
-| Right hand side | <code>:lua NewNote()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\ns</code> |
-| Right hand side | <code>:lua require('config.plugins.telescope').my_note()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\bb</code> |
-| Right hand side | <code>:lua require('config.plugins.telescope').my_git_bcommits()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\g</code> |
-| Right hand side | <code>:lua require('config.plugins.telescope').my_git_status()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\c</code> |
-| Right hand side | <code>:lua require('config.plugins.telescope').my_git_commits()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\p</code> |
-| Right hand side | <code>:lua require'telescope'.extensions.repo.list{file_ignore_patterns={'/%.cache/', '/%.cargo/', '/%.local/', '/%.asdf/', '/%.zinit/', '/%.tmux/'}}&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\fp</code> |
-| Right hand side | <code>:lua require('config.plugins.telescope').project_files()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\f</code> |
-| Right hand side | <code>:lua require('telescope.builtin').find_files()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\l</code> |
-| Right hand side | <code>:lua require('telescope.builtin').current_buffer_fuzzy_find()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\ts</code> |
-| Right hand side | <code>:lua require('telescope.builtin').treesitter()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\b</code> |
-| Right hand side | <code>:lua require('config.plugins.telescope').my_buffers()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\m</code> |
-| Right hand side | <code>:lua require('telescope.builtin').marks()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\#</code> |
-| Right hand side | <code>:lua require('telescope.builtin').grep_string()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\r</code> |
-| Right hand side | <code>:lua require'telescope'.extensions.live_grep_args.live_grep_args()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\sl</code> |
-| Right hand side | <code>viw:lua require('spectre').open_file_search()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\sp</code> |
-| Right hand side | <code>:lua require('spectre').open()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\gf</code> |
-| Right hand side | <code>:20G&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\bp</code> |
-| Right hand side | <code>:BufferLineCyclePrev&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\bn</code> |
-| Right hand side | <code>:BufferLineCycleNext&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\bdh</code> |
-| Right hand side | <code>:BDelete! hidden&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\bda</code> |
-| Right hand side | <code>:BDelete! all&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\bd</code> |
-| Right hand side | <code>:BDelete this&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\nm</code> |
-| Right hand side | <code>:Dispatch npm start&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>\x</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>\ld</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>\gg</code> |
-| Right hand side | |
-| Description | Create a selection for selcted text or word under the cursor |
-| Left hand side | <code>\mc</code> |
-| Right hand side | |
-| Description | Symbols Outline |
-| Left hand side | <code>\cs</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>]d</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>]%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-| Description | |
-| Left hand side | <code>g#</code> |
-| Right hand side | <code>g#&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>g*</code> |
-| Right hand side | <code>g*&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>g%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
-| Description | |
-| Left hand side | <code>gC</code> |
-| Right hand side | <code>&lt;Plug&gt;CapsLockToggle</code> |
-| Description | Comment insert end of line |
-| Left hand side | <code>gcA</code> |
-| Right hand side | |
-| Description | Comment insert above |
-| Left hand side | <code>gcO</code> |
-| Right hand side | |
-| Description | Comment insert below |
-| Left hand side | <code>gco</code> |
-| Right hand side | |
-| Description | Comment toggle current block |
-| Left hand side | <code>gbc</code> |
-| Right hand side | |
-| Description | Comment toggle current line |
-| Left hand side | <code>gcc</code> |
-| Right hand side | |
-| Description | Comment toggle blockwise |
-| Left hand side | <code>gb</code> |
-| Right hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
-| Description | Comment toggle linewise |
-| Left hand side | <code>gc</code> |
-| Right hand side | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
-| Description | |
-| Left hand side | <code>h</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>j</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>k</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>l</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>n</code> |
-| Right hand side | <code>&lt;Cmd&gt;execute('normal! ' . v:count1 . 'n')&lt;CR&gt;&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
-| Description | Flash |
-| Left hand side | <code>s</code> |
-| Right hand side | |
-| Description | Close all folds |
-| Left hand side | <code>zM</code> |
-| Right hand side | |
-| Description | Peek folded lines under cursor |
-| Left hand side | <code>zZ</code> |
-| Right hand side | |
-| Description | Open all folds |
-| Left hand side | <code>zR</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;F8&gt;</code> |
-| Right hand side | <code>:ZenMode&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;F7&gt;</code> |
-| Right hand side | <code>:Neotree filesystem reveal left toggle&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;F4&gt;</code> |
-| Right hand side | <code>:set list! list?&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;F3&gt;</code> |
-| Right hand side | <code>:set nu! rnu!&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
-| Right hand side | <code>:set operatorfunc=&lt;SNR&gt;27_vsnip_cut_text_normal&lt;CR&gt;g@</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
-| Right hand side | <code>:set operatorfunc=&lt;SNR&gt;27_vsnip_select_text_normal&lt;CR&gt;g@</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;CapsLockDisable</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_disable('i')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;CapsLockEnable</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_enable('i',1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;CapsLockToggle</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_toggle('i',1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| Right hand side | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-| Description | Comment toggle blockwise with count |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
-| Right hand side | |
-| Description | Comment toggle linewise with count |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |
-| Right hand side | |
-| Description | Comment toggle current block |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |
-| Right hand side | |
-| Description | Comment toggle current line |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
-| Right hand side | |
-| Description | Comment toggle blockwise |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
-| Right hand side | |
-| Description | Comment toggle linewise |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;C-Bslash&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-K&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-J&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-H&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;F5&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;C-L&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+| **Left hand side** | <code> e</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>#</code> |
+| **Right hand side** | <code>#&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>&</code> |
+| **Right hand side** | <code>:&&&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>*</code> |
+| **Right hand side** | <code>*&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>N</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;execute('normal! ' . v:count1 . 'N')&lt;CR&gt;&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
+
+| **Description** | Treesitter Search |
+| :---- | :---- |
+| **Left hand side** | <code>R</code> |
+| **Right hand side** | |
+
+| **Description** | Flash Treesitter |
+| :---- | :---- |
+| **Left hand side** | <code>S</code> |
+| **Right hand side** | |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>Y</code> |
+| **Right hand side** | <code>y$</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[d</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\n</code> |
+| **Right hand side** | <code>:lua require('config.plugins.telescope').my_note()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\nt</code> |
+| **Right hand side** | <code>:lua require('util.scratches').open_scratch_file_floating()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\tv</code> |
+| **Right hand side** | <code>:lua require('util.scratches').open_scratch_file()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\df</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'telescope'.extensions.dap.frames{}&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\dv</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'telescope'.extensions.dap.variables{}&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\dlb</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'telescope'.extensions.dap.list_breakpoints{}&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\dcc</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'telescope'.extensions.dap.commands{}&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\dro</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'dap'.repl.open()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\dui</code> |
+| **Right hand side** | <code>:lua require('dapui').toggle()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\db</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'dap'.toggle_breakpoint()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\dso</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'dap'.step_out()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\dsi</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'dap'.step_into()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\ds</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'dap'.step_over()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\dc</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'dap'.continue()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\tl</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Trouble lsp_references&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\tq</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Trouble quickfix&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\tll</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Trouble loclist&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\td</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Trouble document_diagnostics&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\tw</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Trouble workspace_diagnostics&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\tr</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;TroubleToggle&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\tn</code> |
+| **Right hand side** | <code>:TodoTrouble keywords=NOTE&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\tf</code> |
+| **Right hand side** | <code>:TodoTrouble keywords=FIX,FIXME&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\tt</code> |
+| **Right hand side** | <code>:TodoTrouble keywords=TODO&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\ll</code> |
+| **Right hand side** | <code>:lua require('telescope.builtin').grep_string({ search = vim.fn.input('GREP -&gt; ') })&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\y</code> |
+| **Right hand side** | <code>:Telescope neoclip&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\nn</code> |
+| **Right hand side** | <code>:lua NewNote()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\ns</code> |
+| **Right hand side** | <code>:lua require('config.plugins.telescope').my_note()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\bb</code> |
+| **Right hand side** | <code>:lua require('config.plugins.telescope').my_git_bcommits()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\g</code> |
+| **Right hand side** | <code>:lua require('config.plugins.telescope').my_git_status()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\c</code> |
+| **Right hand side** | <code>:lua require('config.plugins.telescope').my_git_commits()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\p</code> |
+| **Right hand side** | <code>:lua require'telescope'.extensions.repo.list{file_ignore_patterns={'/%.cache/', '/%.cargo/', '/%.local/', '/%.asdf/', '/%.zinit/', '/%.tmux/'}}&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\fp</code> |
+| **Right hand side** | <code>:lua require('config.plugins.telescope').project_files()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\f</code> |
+| **Right hand side** | <code>:lua require('telescope.builtin').find_files()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\l</code> |
+| **Right hand side** | <code>:lua require('telescope.builtin').current_buffer_fuzzy_find()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\ts</code> |
+| **Right hand side** | <code>:lua require('telescope.builtin').treesitter()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\b</code> |
+| **Right hand side** | <code>:lua require('config.plugins.telescope').my_buffers()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\m</code> |
+| **Right hand side** | <code>:lua require('telescope.builtin').marks()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\#</code> |
+| **Right hand side** | <code>:lua require('telescope.builtin').grep_string()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\r</code> |
+| **Right hand side** | <code>:lua require'telescope'.extensions.live_grep_args.live_grep_args()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\sl</code> |
+| **Right hand side** | <code>viw:lua require('spectre').open_file_search()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\sp</code> |
+| **Right hand side** | <code>:lua require('spectre').open()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\gf</code> |
+| **Right hand side** | <code>:20G&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\bp</code> |
+| **Right hand side** | <code>:BufferLineCyclePrev&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\bn</code> |
+| **Right hand side** | <code>:BufferLineCycleNext&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\bdh</code> |
+| **Right hand side** | <code>:BDelete! hidden&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\bda</code> |
+| **Right hand side** | <code>:BDelete! all&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\bd</code> |
+| **Right hand side** | <code>:BDelete this&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\nm</code> |
+| **Right hand side** | <code>:Dispatch npm start&lt;CR&gt;</code> |
+
+| **Description** | Create a selection for selcted text or word under the cursor |
+| :---- | :---- |
+| **Left hand side** | <code>\mc</code> |
+| **Right hand side** | |
+
+| **Description** | Symbols Outline |
+| :---- | :---- |
+| **Left hand side** | <code>\cs</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\gg</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\x</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\ld</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]d</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g#</code> |
+| **Right hand side** | <code>g#&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g*</code> |
+| **Right hand side** | <code>g*&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+
+| **Description** | Comment insert end of line |
+| :---- | :---- |
+| **Left hand side** | <code>gcA</code> |
+| **Right hand side** | |
+
+| **Description** | Comment insert above |
+| :---- | :---- |
+| **Left hand side** | <code>gcO</code> |
+| **Right hand side** | |
+
+| **Description** | Comment insert below |
+| :---- | :---- |
+| **Left hand side** | <code>gco</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current block |
+| :---- | :---- |
+| **Left hand side** | <code>gbc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current line |
+| :---- | :---- |
+| **Left hand side** | <code>gcc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
+
+| **Description** | Comment toggle linewise |
+| :---- | :---- |
+| **Left hand side** | <code>gc</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gC</code> |
+| **Right hand side** | <code>&lt;Plug&gt;CapsLockToggle</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>h</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>j</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>k</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>l</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>n</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;execute('normal! ' . v:count1 . 'n')&lt;CR&gt;&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
+
+| **Description** | Flash |
+| :---- | :---- |
+| **Left hand side** | <code>s</code> |
+| **Right hand side** | |
+
+| **Description** | Close all folds |
+| :---- | :---- |
+| **Left hand side** | <code>zM</code> |
+| **Right hand side** | |
+
+| **Description** | Peek folded lines under cursor |
+| :---- | :---- |
+| **Left hand side** | <code>zZ</code> |
+| **Right hand side** | |
+
+| **Description** | Open all folds |
+| :---- | :---- |
+| **Left hand side** | <code>zR</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F8&gt;</code> |
+| **Right hand side** | <code>:ZenMode&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F7&gt;</code> |
+| **Right hand side** | <code>:Neotree filesystem reveal left toggle&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F4&gt;</code> |
+| **Right hand side** | <code>:set list! list?&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F3&gt;</code> |
+| **Right hand side** | <code>:set nu! rnu!&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle blockwise with count |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise with count |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current block |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current line |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
+| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;19_vsnip_cut_text_normal&lt;CR&gt;g@</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
+| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;19_vsnip_select_text_normal&lt;CR&gt;g@</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CapsLockDisable</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_disable('i')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CapsLockEnable</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_enable('i',1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CapsLockToggle</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_toggle('i',1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F5&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+
 
 #### visual mode keymaps
 
-|  Key  | Value |
+| **Description** | Nvim builtin |
 | :---- | :---- |
-| Description | Nvim builtin |
-| Left hand side | <code>#</code> |
-| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>*</code> |
-| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Description | Treesitter Search |
-| Left hand side | <code>R</code> |
-| Right hand side | |
-| Description | Flash Treesitter |
-| Left hand side | <code>S</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>[%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
-| Description | |
-| Left hand side | <code>\sp</code> |
-| Right hand side | <code>:lua require('spectre').open_visual()&lt;CR&gt;</code> |
-| Description | Create a selection for selcted text or word under the cursor |
-| Left hand side | <code>\mc</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>]%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-| Description | |
-| Left hand side | <code>a%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
-| Description | |
-| Left hand side | <code>g%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
-| Description | Comment toggle blockwise (visual) |
-| Left hand side | <code>gb</code> |
-| Right hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
-| Description | Comment toggle linewise (visual) |
-| Left hand side | <code>gc</code> |
-| Right hand side | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
-| Description | Flash |
-| Left hand side | <code>s</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
-| Description | Comment toggle blockwise (visual) |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
-| Right hand side | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-| Description | Comment toggle linewise (visual) |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
-| Right hand side | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-Bslash&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-K&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-J&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-H&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_vsnip_visual_text(visualmode())&lt;CR&gt;gv"_c</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_vsnip_visual_text(visualmode())&lt;CR&gt;gv</code> |
-| Description | |
-| Left hand side | <code>&lt;C-L&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+| **Left hand side** | <code>#</code> |
+| **Right hand side** | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>*</code> |
+| **Right hand side** | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| **Description** | Treesitter Search |
+| :---- | :---- |
+| **Left hand side** | <code>R</code> |
+| **Right hand side** | |
+
+| **Description** | Flash Treesitter |
+| :---- | :---- |
+| **Left hand side** | <code>S</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>\sp</code> |
+| **Right hand side** | <code>:lua require('spectre').open_visual()&lt;CR&gt;</code> |
+
+| **Description** | Create a selection for selcted text or word under the cursor |
+| :---- | :---- |
+| **Left hand side** | <code>\mc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>a%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+
+| **Description** | Comment toggle blockwise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
+
+| **Description** | Comment toggle linewise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>gc</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
+
+| **Description** | Flash |
+| :---- | :---- |
+| **Left hand side** | <code>s</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_vsnip_visual_text(visualmode())&lt;CR&gt;gv"_c</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_vsnip_visual_text(visualmode())&lt;CR&gt;gv</code> |
+
+| **Description** | Comment toggle blockwise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle linewise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+
 
 #### operator mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code>%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
-| Description | Treesitter Search |
-| Left hand side | <code>R</code> |
-| Right hand side | |
-| Description | Flash Treesitter |
-| Left hand side | <code>S</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>[%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
-| Description | |
-| Left hand side | <code>]%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
-| Description | |
-| Left hand side | <code>g%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
-| Description | Remote Flash |
-| Left hand side | <code>r</code> |
-| Right hand side | |
-| Description | Flash |
-| Left hand side | <code>s</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-Bslash&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-K&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-J&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-H&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-L&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+
+| **Description** | Treesitter Search |
+| :---- | :---- |
+| **Left hand side** | <code>R</code> |
+| **Right hand side** | |
+
+| **Description** | Flash Treesitter |
+| :---- | :---- |
+| **Left hand side** | <code>S</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+
+| **Description** | Remote Flash |
+| :---- | :---- |
+| **Left hand side** | <code>r</code> |
+| **Right hand side** | |
+
+| **Description** | Flash |
+| :---- | :---- |
+| **Left hand side** | <code>s</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+

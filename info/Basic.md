@@ -54,66 +54,94 @@ Starter config by the author of NvChad with [video tutorial](https://youtube.com
 
 #### normal mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code>&lt;Tab&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt; BufferLineCycleNext &lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> /</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> gt</code> |
-| Right hand side | <code>&lt;Cmd&gt; Telescope git_status &lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fw</code> |
-| Right hand side | <code>&lt;Cmd&gt; Telescope live_grep &lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fo</code> |
-| Right hand side | <code>&lt;Cmd&gt; Telescope oldfiles &lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> ff</code> |
-| Right hand side | <code>&lt;Cmd&gt; Telescope find_files &lt;CR&gt;</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>&</code> |
-| Right hand side | <code>:&&&lt;CR&gt;</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>Y</code> |
-| Right hand side | <code>y$</code> |
-| Description | |
-| Left hand side | <code>&lt;C-Q&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt; bd &lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;S-Tab&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt; BufferLineCyclePrev &lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-H&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt; NvimTreeFocus &lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-N&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt; NvimTreeToggle &lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-S&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt; w &lt;CR&gt;</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>&lt;C-L&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Tab&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt; BufferLineCycleNext &lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> /</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> gt</code> |
+| **Right hand side** | <code>&lt;Cmd&gt; Telescope git_status &lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fw</code> |
+| **Right hand side** | <code>&lt;Cmd&gt; Telescope live_grep &lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fo</code> |
+| **Right hand side** | <code>&lt;Cmd&gt; Telescope oldfiles &lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> ff</code> |
+| **Right hand side** | <code>&lt;Cmd&gt; Telescope find_files &lt;CR&gt;</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>&</code> |
+| **Right hand side** | <code>:&&&lt;CR&gt;</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>Y</code> |
+| **Right hand side** | <code>y$</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt; bd &lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;S-Tab&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt; BufferLineCyclePrev &lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt; NvimTreeFocus &lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-N&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt; NvimTreeToggle &lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-S&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt; w &lt;CR&gt;</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+
 
 #### visual mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code> /</code> |
-| Right hand side | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require('Comment.api').toggle.linewise(vim.fn.visualmode())&lt;CR&gt;</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>#</code> |
-| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>*</code> |
-| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| **Left hand side** | <code> /</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require('Comment.api').toggle.linewise(vim.fn.visualmode())&lt;CR&gt;</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>#</code> |
+| **Right hand side** | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>*</code> |
+| **Right hand side** | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
 
 #### operator mode keymaps
 
-|  Key  | Value |
-| :---- | :---- |

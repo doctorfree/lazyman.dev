@@ -49,147 +49,229 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
 
 #### normal mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code>&lt;Tab&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> ls</code> |
-| Right hand side | <code>:LspStart&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> lr</code> |
-| Right hand side | <code>:LspRestart&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> lp</code> |
-| Right hand side | <code>:LspInfo&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> x</code> |
-| Right hand side | <code>&lt;C-W&gt;c</code> |
-| Description | |
-| Left hand side | <code> h</code> |
-| Right hand side | <code>:nohlsearch&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> pd</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> pp</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> pr</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> pl</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> pc</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> px</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> ps</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> pu</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> pi</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> ph</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> d</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> b</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> e</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> ft</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> fr</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> fw</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> ff</code> |
-| Right hand side | |
-| Description | Nvim builtin |
-| Left hand side | <code>&</code> |
-| Right hand side | <code>:&&&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>J</code> |
-| Right hand side | <code>jzz</code> |
-| Description | |
-| Left hand side | <code>K</code> |
-| Right hand side | <code>kzz</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>Y</code> |
-| Right hand side | <code>y$</code> |
-| Description | |
-| Left hand side | <code>[d</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>]d</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;C-Q&gt;</code> |
-| Right hand side | <code>:bd!&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-S&gt;</code> |
-| Right hand side | <code>:w &lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-K&gt;</code> |
-| Right hand side | <code>&lt;C-W&gt;k</code> |
-| Description | |
-| Left hand side | <code>&lt;C-J&gt;</code> |
-| Right hand side | <code>&lt;C-W&gt;j</code> |
-| Description | |
-| Left hand side | <code>&lt;C-H&gt;</code> |
-| Right hand side | <code>&lt;C-W&gt;h</code> |
-| Description | |
-| Left hand side | <code>&lt;S-Tab&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;M-H&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;M-h&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;M-t&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;C-L&gt;</code> |
-| Right hand side | <code>&lt;C-W&gt;l</code> |
+| **Left hand side** | <code>&lt;Tab&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> ls</code> |
+| **Right hand side** | <code>:LspStart&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lr</code> |
+| **Right hand side** | <code>:LspRestart&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lp</code> |
+| **Right hand side** | <code>:LspInfo&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> x</code> |
+| **Right hand side** | <code>&lt;C-W&gt;c</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> h</code> |
+| **Right hand side** | <code>:nohlsearch&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> pd</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> pp</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> pr</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> pl</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> pc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> px</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> ps</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> pu</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> pi</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> ph</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> d</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> b</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> e</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> ft</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fr</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fw</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> ff</code> |
+| **Right hand side** | |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>&</code> |
+| **Right hand side** | <code>:&&&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>J</code> |
+| **Right hand side** | <code>jzz</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>K</code> |
+| **Right hand side** | <code>kzz</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>Y</code> |
+| **Right hand side** | <code>y$</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[d</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]d</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Right hand side** | <code>:bd!&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-S&gt;</code> |
+| **Right hand side** | <code>:w &lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;k</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;j</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;h</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;S-Tab&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-H&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-h&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-t&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;l</code> |
+
 
 #### visual mode keymaps
 
-|  Key  | Value |
+| **Description** | Nvim builtin |
 | :---- | :---- |
-| Description | Nvim builtin |
-| Left hand side | <code>#</code> |
-| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>*</code> |
-| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>J</code> |
-| Right hand side | <code>:m '&gt;+1&lt;CR&gt;gv=gv</code> |
-| Description | |
-| Left hand side | <code>K</code> |
-| Right hand side | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv=gv</code> |
-| Description | |
-| Left hand side | <code>p</code> |
-| Right hand side | <code>_dP</code> |
+| **Left hand side** | <code>#</code> |
+| **Right hand side** | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>*</code> |
+| **Right hand side** | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>J</code> |
+| **Right hand side** | <code>:m '&gt;+1&lt;CR&gt;gv=gv</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>K</code> |
+| **Right hand side** | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv=gv</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>p</code> |
+| **Right hand side** | <code>_dP</code> |
+
 
 #### operator mode keymaps
 
-|  Key  | Value |
-| :---- | :---- |

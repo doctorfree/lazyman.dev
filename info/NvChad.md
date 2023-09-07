@@ -77,222 +77,354 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 
 #### normal mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code>"</code> |
-| Right hand side | |
-| Description | Nvim builtin |
-| Left hand side | <code>&</code> |
-| Right hand side | <code>:&&&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>'</code> |
-| Right hand side | |
-| Description | Open new line above HopLineStart target |
-| Left hand side | <code>,vO</code> |
-| Right hand side | |
-| Description | Open new line below HopLineStart target |
-| Left hand side | <code>,vo</code> |
-| Right hand side | |
-| Description | Paste above target using HopLineStart |
-| Left hand side | <code>,vP</code> |
-| Right hand side | |
-| Description | Paste below target using HopLineStart |
-| Left hand side | <code>,vp</code> |
-| Right hand side | |
-| Description | Jump to definition |
-| Left hand side | <code>,hd</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>,hq]</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[}]])&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>,hq[</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[{]])&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>,hqk</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[)]])&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>,hqj</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[(]])&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>,hf/</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[/\&#124;?]])&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>,hf;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[;\&#124;:]])&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>,hf-</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[-\&#124;+]])&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>,hf'</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [["\&#124;']])&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>,hH</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[\d\+]])&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>,hW</code> |
-| Right hand side | <code>&lt;Cmd&gt;HopWordMW&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>,hl</code> |
-| Right hand side | <code>&lt;Cmd&gt;HopLineStart&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>,hw</code> |
-| Right hand side | <code>&lt;Cmd&gt;HopWord&lt;CR&gt;</code> |
-| Description | Move to end of Treehopper node |
-| Left hand side | <code>,h]</code> |
-| Right hand side | |
-| Description | Move to start of Treehopper node |
-| Left hand side | <code>,h[</code> |
-| Right hand side | |
-| Description | Treehopper nodes |
-| Left hand side | <code>,hm</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>,</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>?</code> |
-| Right hand side | <code>/</code> |
-| Description | |
-| Left hand side | <code>F</code> |
-| Right hand side | |
-| Description | Trigger LuaSnip snippet |
-| Left hand side | <code>Ls</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>T</code> |
-| Right hand side | |
-| Description | Nvim builtin |
-| Left hand side | <code>Y</code> |
-| Right hand side | <code>y$</code> |
-| Description | |
-| Left hand side | <code>`</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>c</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>f</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>g</code> |
-| Right hand side | |
-| Description | Comment toggle blockwise |
-| Left hand side | <code>gb</code> |
-| Right hand side | |
-| Description | Comment toggle current block |
-| Left hand side | <code>gbc</code> |
-| Right hand side | |
-| Description | Comment toggle linewise |
-| Left hand side | <code>gc</code> |
-| Right hand side | |
-| Description | Comment toggle current line |
-| Left hand side | <code>gcc</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>t</code> |
-| Right hand side | |
-| Description | Treehopper node target insert |
-| Left hand side | <code>vy</code> |
-| Right hand side | |
-| Description | HopLineStart target in normal mode |
-| Left hand side | <code>vY</code> |
-| Right hand side | |
-| Description | Open new line above HopLineStart target |
-| Left hand side | <code>vO</code> |
-| Right hand side | |
-| Description | Open new line below HopLineStart target |
-| Left hand side | <code>vo</code> |
-| Right hand side | |
-| Description | Paste above target using HopLineStart |
-| Left hand side | <code>vP</code> |
-| Right hand side | |
-| Description | Paste below target using HopLineStart |
-| Left hand side | <code>vp</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>v</code> |
-| Right hand side | |
-| Description | Yank using Treehopper |
-| Left hand side | <code>ym</code> |
-| Right hand side | |
-| Description | Yank a Treesitter code block |
-| Left hand side | <code>yc</code> |
-| Right hand side | |
-| Description | Yank a line with HopLineStart |
-| Left hand side | <code>yl</code> |
-| Right hand side | |
-| Description | Yank user syntax-tree-surfer |
-| Left hand side | <code>yx</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;M-q&gt;</code> |
-| Right hand side | <code>q</code> |
-| Description | |
-| Left hand side | <code>&lt;C-R&gt;</code> |
-| Right hand side | |
-| Description | Nvim builtin |
-| Left hand side | <code>&lt;C-L&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+| **Left hand side** | <code>"</code> |
+| **Right hand side** | |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>&</code> |
+| **Right hand side** | <code>:&&&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>'</code> |
+| **Right hand side** | |
+
+| **Description** | Open new line above HopLineStart target |
+| :---- | :---- |
+| **Left hand side** | <code>,vO</code> |
+| **Right hand side** | |
+
+| **Description** | Open new line below HopLineStart target |
+| :---- | :---- |
+| **Left hand side** | <code>,vo</code> |
+| **Right hand side** | |
+
+| **Description** | Paste above target using HopLineStart |
+| :---- | :---- |
+| **Left hand side** | <code>,vP</code> |
+| **Right hand side** | |
+
+| **Description** | Paste below target using HopLineStart |
+| :---- | :---- |
+| **Left hand side** | <code>,vp</code> |
+| **Right hand side** | |
+
+| **Description** | Jump to definition |
+| :---- | :---- |
+| **Left hand side** | <code>,hd</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hq]</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[}]])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hq[</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[{]])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hqk</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[)]])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hqj</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[(]])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hf/</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[/\&#124;?]])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hf;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[;\&#124;:]])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hf-</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[-\&#124;+]])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hf'</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [["\&#124;']])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hH</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[\d\+]])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hW</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;HopWordMW&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hl</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;HopLineStart&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hw</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;HopWord&lt;CR&gt;</code> |
+
+| **Description** | Move to end of Treehopper node |
+| :---- | :---- |
+| **Left hand side** | <code>,h]</code> |
+| **Right hand side** | |
+
+| **Description** | Move to start of Treehopper node |
+| :---- | :---- |
+| **Left hand side** | <code>,h[</code> |
+| **Right hand side** | |
+
+| **Description** | Treehopper nodes |
+| :---- | :---- |
+| **Left hand side** | <code>,hm</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>?</code> |
+| **Right hand side** | <code>/</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>F</code> |
+| **Right hand side** | |
+
+| **Description** | Trigger LuaSnip snippet |
+| :---- | :---- |
+| **Left hand side** | <code>Ls</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>T</code> |
+| **Right hand side** | |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>Y</code> |
+| **Right hand side** | <code>y$</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>`</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>c</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>f</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise |
+| :---- | :---- |
+| **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current line |
+| :---- | :---- |
+| **Left hand side** | <code>gcc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current block |
+| :---- | :---- |
+| **Left hand side** | <code>gbc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>t</code> |
+| **Right hand side** | |
+
+| **Description** | Treehopper node target insert |
+| :---- | :---- |
+| **Left hand side** | <code>vy</code> |
+| **Right hand side** | |
+
+| **Description** | HopLineStart target in normal mode |
+| :---- | :---- |
+| **Left hand side** | <code>vY</code> |
+| **Right hand side** | |
+
+| **Description** | Open new line above HopLineStart target |
+| :---- | :---- |
+| **Left hand side** | <code>vO</code> |
+| **Right hand side** | |
+
+| **Description** | Open new line below HopLineStart target |
+| :---- | :---- |
+| **Left hand side** | <code>vo</code> |
+| **Right hand side** | |
+
+| **Description** | Paste above target using HopLineStart |
+| :---- | :---- |
+| **Left hand side** | <code>vP</code> |
+| **Right hand side** | |
+
+| **Description** | Paste below target using HopLineStart |
+| :---- | :---- |
+| **Left hand side** | <code>vp</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>v</code> |
+| **Right hand side** | |
+
+| **Description** | Yank using Treehopper |
+| :---- | :---- |
+| **Left hand side** | <code>ym</code> |
+| **Right hand side** | |
+
+| **Description** | Yank a Treesitter code block |
+| :---- | :---- |
+| **Left hand side** | <code>yc</code> |
+| **Right hand side** | |
+
+| **Description** | Yank a line with HopLineStart |
+| :---- | :---- |
+| **Left hand side** | <code>yl</code> |
+| **Right hand side** | |
+
+| **Description** | Yank user syntax-tree-surfer |
+| :---- | :---- |
+| **Left hand side** | <code>yx</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-q&gt;</code> |
+| **Right hand side** | <code>q</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-R&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+
 
 #### visual mode keymaps
 
-|  Key  | Value |
+| **Description** | Nvim builtin |
 | :---- | :---- |
-| Description | Nvim builtin |
-| Left hand side | <code>#</code> |
-| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>*</code> |
-| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>,hl</code> |
-| Right hand side | <code>&lt;Cmd&gt;HopLineStart&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>,hw</code> |
-| Right hand side | <code>&lt;Cmd&gt;HopWord&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>F</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>T</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>f</code> |
-| Right hand side | |
-| Description | Comment toggle linewise (visual) |
-| Left hand side | <code>gc</code> |
-| Right hand side | |
-| Description | Comment toggle blockwise (visual) |
-| Left hand side | <code>gb</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>t</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;M-q&gt;</code> |
-| Right hand side | <code>q</code> |
+| **Left hand side** | <code>#</code> |
+| **Right hand side** | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>*</code> |
+| **Right hand side** | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hl</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;HopLineStart&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hw</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;HopWord&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>F</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>T</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>f</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>t</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-q&gt;</code> |
+| **Right hand side** | <code>q</code> |
+
 
 #### operator mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code>F</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>T</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>f</code> |
-| Right hand side | |
-| Description | Comment toggle blockwise |
-| Left hand side | <code>gb</code> |
-| Right hand side | |
-| Description | Comment toggle linewise |
-| Left hand side | <code>gc</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>t</code> |
-| Right hand side | |
+| **Left hand side** | <code>F</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>T</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>f</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise |
+| :---- | :---- |
+| **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>t</code> |
+| **Right hand side** | |
+

@@ -137,588 +137,964 @@ post_style: page
 
 #### normal mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code> tn</code> |
-| Right hand side | |
-| Description | Oil buffer |
-| Left hand side | <code> no</code> |
-| Right hand side | |
-| Description | Replace in files (Spectre) |
-| Left hand side | <code> sr</code> |
-| Right hand side | |
-| Description | Select VirtualEnv |
-| Left hand side | <code> cv</code> |
-| Right hand side | |
-| Description | Debug Class |
-| Left hand side | <code> dPc</code> |
-| Right hand side | |
-| Description | Debug Method |
-| Left hand side | <code> dPt</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> Tr</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> Tm</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> Tl</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> Tb</code> |
-| Right hand side | |
-| Description | Todo/Fix/Fixme (Trouble) |
-| Left hand side | <code> xT</code> |
-| Right hand side | |
-| Description | Todo (Trouble) |
-| Left hand side | <code> xt</code> |
-| Right hand side | |
-| Description | Todo/Fix/Fixme |
-| Left hand side | <code> sT</code> |
-| Right hand side | |
-| Description | Todo |
-| Left hand side | <code> st</code> |
-| Right hand side | |
-| Description | Dismiss all Notifications |
-| Left hand side | <code> un</code> |
-| Right hand side | |
-| Description | Restore Last Session |
-| Left hand side | <code> ql</code> |
-| Right hand side | |
-| Description | Restore Session |
-| Left hand side | <code> qs</code> |
-| Right hand side | |
-| Description | Don't Save Current Session |
-| Left hand side | <code> qd</code> |
-| Right hand side | |
-| Description | Delete Buffer (Force) |
-| Left hand side | <code> bD</code> |
-| Right hand side | |
-| Description | Delete Buffer |
-| Left hand side | <code> bd</code> |
-| Right hand side | |
-| Description | Quickfix List (Trouble) |
-| Left hand side | <code> xQ</code> |
-| Right hand side | |
-| Description | Location List (Trouble) |
-| Left hand side | <code> xL</code> |
-| Right hand side | |
-| Description | Workspace Diagnostics (Trouble) |
-| Left hand side | <code> xX</code> |
-| Right hand side | |
-| Description | Document Diagnostics (Trouble) |
-| Left hand side | <code> xx</code> |
-| Right hand side | |
-| Description | Up |
-| Left hand side | <code> dk</code> |
-| Right hand side | |
-| Description | Down |
-| Left hand side | <code> dj</code> |
-| Right hand side | |
-| Description | Breakpoint Condition |
-| Left hand side | <code> dB</code> |
-| Right hand side | |
-| Description | Step Over |
-| Left hand side | <code> dO</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> cm</code> |
-| Right hand side | |
-| Description | Dap UI |
-| Left hand side | <code> du</code> |
-| Right hand side | |
-| Description | Eval |
-| Left hand side | <code> de</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> oz</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require("zen-mode").toggle()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> lx</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-reload)</code> |
-| Description | |
-| Left hand side | <code> lv</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-view)</code> |
-| Description | |
-| Left hand side | <code> lt</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-toc_open)</code> |
-| Description | |
-| Left hand side | <code> ls</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-toggle-main)</code> |
-| Description | |
-| Left hand side | <code> lq</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-log)</code> |
-| Description | |
-| Left hand side | <code> lo</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-compile-output)</code> |
-| Description | |
-| Left hand side | <code> lm</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-impas-list)</code> |
-| Description | |
-| Left hand side | <code> ll</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-compile)</code> |
-| Description | |
-| Left hand side | <code> lk</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-stop)</code> |
-| Description | |
-| Left hand side | <code> li</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-info)</code> |
-| Description | |
-| Left hand side | <code> lg</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-status)</code> |
-| Description | |
-| Left hand side | <code> le</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-error)</code> |
-| Description | |
-| Left hand side | <code> lc</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-clean-full)</code> |
-| Description | |
-| Left hand side | <code> la</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-context-menu)</code> |
-| Description | |
-| Left hand side | <code> lX</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-reload-state)</code> |
-| Description | |
-| Left hand side | <code> lT</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-toc-toggle)</code> |
-| Description | |
-| Left hand side | <code> lL</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-compile-selected)</code> |
-| Description | |
-| Left hand side | <code> lK</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-stop-all)</code> |
-| Description | |
-| Left hand side | <code> lI</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-info-full)</code> |
-| Description | |
-| Left hand side | <code> lG</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-status-all)</code> |
-| Description | |
-| Left hand side | <code> lC</code> |
-| Right hand side | <code>&lt;Plug&gt;(vimtex-clean-full)</code> |
-| Description | |
-| Left hand side | <code> gs</code> |
-| Right hand side | <code>&lt;Cmd&gt;G&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> gp</code> |
-| Right hand side | <code>&lt;Cmd&gt;G push&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> gh</code> |
-| Right hand side | <code>&lt;Cmd&gt;vert bo help fugitive&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> gl</code> |
-| Right hand side | <code>&lt;Cmd&gt;G log&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> gd</code> |
-| Right hand side | <code>&lt;Cmd&gt;G diff&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> gc</code> |
-| Right hand side | <code>&lt;Cmd&gt;G commmit&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> gP</code> |
-| Right hand side | <code>&lt;Cmd&gt;G pull&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> 2</code> |
-| Right hand side | <code>gaip= </code> |
-| Description | |
-| Left hand side | <code> 1</code> |
-| Right hand side | <code>gaip=,</code> |
-| Description | |
-| Left hand side | <code> 0</code> |
-| Right hand side | <code>gaip*,</code> |
-| Description | |
-| Left hand side | <code> kwiki</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t wiki&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> kvim</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t vim&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> ksoup</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t soup&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> kssh</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t ssh&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> kkjv</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t kjv&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> kbash</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t bash&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> kao</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t ao&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> twiki</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch!ao wiki&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> tvim</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch!ao vim&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> tsoup</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch!ao soup&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> tssh</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch!ao ssh&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> tkjv</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch!ao kjv&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> tbash</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch!ao bash&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> tao</code> |
-| Right hand side | <code>&lt;Cmd&gt;Dispatch!ao ao&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> gu</code> |
-| Right hand side | <code>&lt;Cmd&gt;call GenerateUmlDiagram&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fy</code> |
-| Right hand side | <code>&lt;Cmd&gt;TodoTelescope keywords=YouTube,Youtube,URL,Url&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> Ls</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope lsp_document_symbols&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> LS</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope lsp_dynamic_workspace_symbols&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> go</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope git_status&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> gb</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope git_branches&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> gC</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope git_commits&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fw</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope grep_string&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fp</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope planets&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fo</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fm</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope marks&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fl</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope resume&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fk</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope keymaps&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fi</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require('telescope').extensions.media_files.media_files()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fh</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope help_tags&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fg</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope live_grep&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> ff</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope find_files&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fd</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope diagnostics&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fb</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope buffers&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fS</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope colorscheme&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fR</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope registers&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fO</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fM</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope man_pages&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fF</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope media_files&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> fC</code> |
-| Right hand side | <code>&lt;Cmd&gt;Telescope commands&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> nr</code> |
-| Right hand side | <code>&lt;Cmd&gt;Neotree show&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> nf</code> |
-| Right hand side | <code>&lt;Cmd&gt;Neotree focus&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> dU</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require("dapui").toggle()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> Ds</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require("osv").launch({ port = 8686})&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> Dd</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require("osv").run_this()&lt;CR&gt;</code> |
-| Description | Widgets |
-| Left hand side | <code> dw</code> |
-| Right hand side | |
-| Description | Terminate |
-| Left hand side | <code> dt</code> |
-| Right hand side | |
-| Description | Toggle REPL |
-| Left hand side | <code> dr</code> |
-| Right hand side | |
-| Description | Session |
-| Left hand side | <code> ds</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> dq</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require("dap").close()&lt;CR&gt;</code> |
-| Description | Pause |
-| Left hand side | <code> dp</code> |
-| Right hand side | |
-| Description | Step Out |
-| Left hand side | <code> do</code> |
-| Right hand side | |
-| Description | Run Last |
-| Left hand side | <code> dl</code> |
-| Right hand side | |
-| Description | Step Into |
-| Left hand side | <code> di</code> |
-| Right hand side | |
-| Description | Go to line (no execute) |
-| Left hand side | <code> dg</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> dd</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require("dap").disconnect()&lt;CR&gt;</code> |
-| Description | Continue |
-| Left hand side | <code> dc</code> |
-| Right hand side | |
-| Description | Toggle Breakpoint |
-| Left hand side | <code> db</code> |
-| Right hand side | |
-| Description | Run to Cursor |
-| Left hand side | <code> dC</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code> nh</code> |
-| Right hand side | <code>&lt;Cmd&gt;NoiceHistory&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> ne</code> |
-| Right hand side | <code>&lt;Cmd&gt;NoiceErrors&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code> aa</code> |
-| Right hand side | <code>&lt;Cmd&gt;Alpha&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>&</code> |
-| Right hand side | <code>:&&&lt;CR&gt;</code> |
-| Description | Flash Treesitter |
-| Left hand side | <code>S</code> |
-| Right hand side | |
-| Description | Nvim builtin |
-| Left hand side | <code>Y</code> |
-| Right hand side | <code>y$</code> |
-| Description | |
-| Left hand side | <code>[%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
-| Description | Previous todo comment |
-| Left hand side | <code>[t</code> |
-| Right hand side | |
-| Description | Previous trouble/quickfix item |
-| Left hand side | <code>[q</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>]%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-| Description | Next todo comment |
-| Left hand side | <code>]t</code> |
-| Right hand side | |
-| Description | Next trouble/quickfix item |
-| Left hand side | <code>]q</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>g%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
-| Description | |
-| Left hand side | <code>ga</code> |
-| Right hand side | <code>&lt;Plug&gt;(EasyAlign)</code> |
-| Description | Flash |
-| Left hand side | <code>s</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>y&lt;C-G&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&#124;</code> |
-| Right hand side | <code>gaip*&#124;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;fugitive:</code> |
-| Right hand side | <code></code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
-| Description | Increment selection |
-| Left hand side | <code>&lt;C-Space&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;M-4&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;M-3&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;M-2&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;M-1&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;M-8&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;M-7&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;M-6&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;M-5&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;C-N&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;Neotree toggle&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;F12&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require("dap").step_out()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;F11&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require("dap").step_into()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;F10&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua require("dap").step_over()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;F5&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua  require("dap").continue()&lt;CR&gt;</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>&lt;C-L&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+| **Left hand side** | <code> tn</code> |
+| **Right hand side** | |
+
+| **Description** | Dismiss all Notifications |
+| :---- | :---- |
+| **Left hand side** | <code> un</code> |
+| **Right hand side** | |
+
+| **Description** | Select VirtualEnv |
+| :---- | :---- |
+| **Left hand side** | <code> cv</code> |
+| **Right hand side** | |
+
+| **Description** | Debug Class |
+| :---- | :---- |
+| **Left hand side** | <code> dPc</code> |
+| **Right hand side** | |
+
+| **Description** | Debug Method |
+| :---- | :---- |
+| **Left hand side** | <code> dPt</code> |
+| **Right hand side** | |
+
+| **Description** | Replace in files (Spectre) |
+| :---- | :---- |
+| **Left hand side** | <code> sr</code> |
+| **Right hand side** | |
+
+| **Description** | Don't Save Current Session |
+| :---- | :---- |
+| **Left hand side** | <code> qd</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Last Session |
+| :---- | :---- |
+| **Left hand side** | <code> ql</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Session |
+| :---- | :---- |
+| **Left hand side** | <code> qs</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> Tr</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> Tm</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> Tl</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> Tb</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer (Force) |
+| :---- | :---- |
+| **Left hand side** | <code> bD</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> bd</code> |
+| **Right hand side** | |
+
+| **Description** | Eval |
+| :---- | :---- |
+| **Left hand side** | <code> de</code> |
+| **Right hand side** | |
+
+| **Description** | Dap UI |
+| :---- | :---- |
+| **Left hand side** | <code> du</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> cm</code> |
+| **Right hand side** | |
+
+| **Description** | Up |
+| :---- | :---- |
+| **Left hand side** | <code> dk</code> |
+| **Right hand side** | |
+
+| **Description** | Down |
+| :---- | :---- |
+| **Left hand side** | <code> dj</code> |
+| **Right hand side** | |
+
+| **Description** | Breakpoint Condition |
+| :---- | :---- |
+| **Left hand side** | <code> dB</code> |
+| **Right hand side** | |
+
+| **Description** | Step Over |
+| :---- | :---- |
+| **Left hand side** | <code> dO</code> |
+| **Right hand side** | |
+
+| **Description** | Todo (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xt</code> |
+| **Right hand side** | |
+
+| **Description** | Todo |
+| :---- | :---- |
+| **Left hand side** | <code> st</code> |
+| **Right hand side** | |
+
+| **Description** | Todo/Fix/Fixme |
+| :---- | :---- |
+| **Left hand side** | <code> sT</code> |
+| **Right hand side** | |
+
+| **Description** | Todo/Fix/Fixme (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xT</code> |
+| **Right hand side** | |
+
+| **Description** | Quickfix List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xQ</code> |
+| **Right hand side** | |
+
+| **Description** | Location List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xL</code> |
+| **Right hand side** | |
+
+| **Description** | Workspace Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xX</code> |
+| **Right hand side** | |
+
+| **Description** | Document Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xx</code> |
+| **Right hand side** | |
+
+| **Description** | Oil buffer |
+| :---- | :---- |
+| **Left hand side** | <code> no</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> oz</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require("zen-mode").toggle()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lx</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-reload)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lv</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-view)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lt</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-toc_open)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> ls</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-toggle-main)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lq</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-log)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lo</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-compile-output)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lm</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-impas-list)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> ll</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-compile)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lk</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-stop)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> li</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-info)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lg</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-status)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> le</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-error)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lc</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-clean-full)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> la</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-context-menu)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lX</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-reload-state)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lT</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-toc-toggle)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lL</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-compile-selected)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lK</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-stop-all)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lI</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-info-full)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lG</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-status-all)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> lC</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(vimtex-clean-full)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> gs</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;G&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> gp</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;G push&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> gh</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;vert bo help fugitive&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> gl</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;G log&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> gd</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;G diff&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> gc</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;G commmit&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> gP</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;G pull&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> 2</code> |
+| **Right hand side** | <code>gaip= </code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> 1</code> |
+| **Right hand side** | <code>gaip=,</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> 0</code> |
+| **Right hand side** | <code>gaip*,</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> kwiki</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t wiki&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> kvim</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t vim&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> ksoup</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t soup&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> kssh</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t ssh&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> kkjv</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t kjv&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> kbash</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t bash&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> kao</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch! tmux kill-session -t ao&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> twiki</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch!ao wiki&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> tvim</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch!ao vim&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> tsoup</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch!ao soup&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> tssh</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch!ao ssh&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> tkjv</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch!ao kjv&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> tbash</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch!ao bash&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> tao</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Dispatch!ao ao&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> gu</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;call GenerateUmlDiagram&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fy</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;TodoTelescope keywords=YouTube,Youtube,URL,Url&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> Ls</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope lsp_document_symbols&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> LS</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope lsp_dynamic_workspace_symbols&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> go</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope git_status&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> gb</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope git_branches&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> gC</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope git_commits&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fw</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope grep_string&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fp</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope planets&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fo</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fm</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope marks&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fl</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope resume&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fk</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope keymaps&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fi</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.media_files.media_files()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fh</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope help_tags&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fg</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope live_grep&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> ff</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope find_files&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fd</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope diagnostics&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fb</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope buffers&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fS</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope colorscheme&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fR</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope registers&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fO</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fM</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope man_pages&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fF</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope media_files&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fC</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope commands&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> nr</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Neotree show&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> nf</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Neotree focus&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> dU</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require("dapui").toggle()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> Ds</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require("osv").launch({ port = 8686})&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> Dd</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require("osv").run_this()&lt;CR&gt;</code> |
+
+| **Description** | Widgets |
+| :---- | :---- |
+| **Left hand side** | <code> dw</code> |
+| **Right hand side** | |
+
+| **Description** | Terminate |
+| :---- | :---- |
+| **Left hand side** | <code> dt</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle REPL |
+| :---- | :---- |
+| **Left hand side** | <code> dr</code> |
+| **Right hand side** | |
+
+| **Description** | Session |
+| :---- | :---- |
+| **Left hand side** | <code> ds</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> dq</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require("dap").close()&lt;CR&gt;</code> |
+
+| **Description** | Pause |
+| :---- | :---- |
+| **Left hand side** | <code> dp</code> |
+| **Right hand side** | |
+
+| **Description** | Step Out |
+| :---- | :---- |
+| **Left hand side** | <code> do</code> |
+| **Right hand side** | |
+
+| **Description** | Run Last |
+| :---- | :---- |
+| **Left hand side** | <code> dl</code> |
+| **Right hand side** | |
+
+| **Description** | Step Into |
+| :---- | :---- |
+| **Left hand side** | <code> di</code> |
+| **Right hand side** | |
+
+| **Description** | Go to line (no execute) |
+| :---- | :---- |
+| **Left hand side** | <code> dg</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> dd</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require("dap").disconnect()&lt;CR&gt;</code> |
+
+| **Description** | Continue |
+| :---- | :---- |
+| **Left hand side** | <code> dc</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Breakpoint |
+| :---- | :---- |
+| **Left hand side** | <code> db</code> |
+| **Right hand side** | |
+
+| **Description** | Run to Cursor |
+| :---- | :---- |
+| **Left hand side** | <code> dC</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> nh</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;NoiceHistory&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> ne</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;NoiceErrors&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> aa</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Alpha&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>&</code> |
+| **Right hand side** | <code>:&&&lt;CR&gt;</code> |
+
+| **Description** | Flash Treesitter |
+| :---- | :---- |
+| **Left hand side** | <code>S</code> |
+| **Right hand side** | |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>Y</code> |
+| **Right hand side** | <code>y$</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+
+| **Description** | Previous todo comment |
+| :---- | :---- |
+| **Left hand side** | <code>[t</code> |
+| **Right hand side** | |
+
+| **Description** | Previous trouble/quickfix item |
+| :---- | :---- |
+| **Left hand side** | <code>[q</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+
+| **Description** | Next todo comment |
+| :---- | :---- |
+| **Left hand side** | <code>]t</code> |
+| **Right hand side** | |
+
+| **Description** | Next trouble/quickfix item |
+| :---- | :---- |
+| **Left hand side** | <code>]q</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ga</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(EasyAlign)</code> |
+
+| **Description** | Flash |
+| :---- | :---- |
+| **Left hand side** | <code>s</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>y&lt;C-G&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&#124;</code> |
+| **Right hand side** | <code>gaip*&#124;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;fugitive:</code> |
+| **Right hand side** | <code></code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+
+| **Description** | Increment selection |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Space&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-5&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-4&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-3&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-2&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-1&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-8&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-7&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-6&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-N&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Neotree toggle&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F12&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require("dap").step_out()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F11&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require("dap").step_into()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F10&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require("dap").step_over()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F5&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua  require("dap").continue()&lt;CR&gt;</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+
 
 #### visual mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code> tn</code> |
-| Right hand side | |
-| Description | Eval |
-| Left hand side | <code> de</code> |
-| Right hand side | |
-| Description | Nvim builtin |
-| Left hand side | <code>#</code> |
-| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>*</code> |
-| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Description | Treesitter Search |
-| Left hand side | <code>R</code> |
-| Right hand side | |
-| Description | Flash Treesitter |
-| Left hand side | <code>S</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>[%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
-| Description | |
-| Left hand side | <code>]%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-| Description | |
-| Left hand side | <code>a%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
-| Description | |
-| Left hand side | <code>g%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
-| Description | |
-| Left hand side | <code>ga</code> |
-| Right hand side | <code>&lt;Plug&gt;(EasyAlign)</code> |
-| Description | Flash |
-| Left hand side | <code>s</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
-| Description | Decrement selection |
-| Left hand side | <code>&lt;BS&gt;</code> |
-| Right hand side | |
+| **Left hand side** | <code> tn</code> |
+| **Right hand side** | |
+
+| **Description** | Eval |
+| :---- | :---- |
+| **Left hand side** | <code> de</code> |
+| **Right hand side** | |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>#</code> |
+| **Right hand side** | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>*</code> |
+| **Right hand side** | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| **Description** | Treesitter Search |
+| :---- | :---- |
+| **Left hand side** | <code>R</code> |
+| **Right hand side** | |
+
+| **Description** | Flash Treesitter |
+| :---- | :---- |
+| **Left hand side** | <code>S</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>a%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ga</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(EasyAlign)</code> |
+
+| **Description** | Flash |
+| :---- | :---- |
+| **Left hand side** | <code>s</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
+
+| **Description** | Decrement selection |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;BS&gt;</code> |
+| **Right hand side** | |
+
 
 #### operator mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code>%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
-| Description | Treesitter Search |
-| Left hand side | <code>R</code> |
-| Right hand side | |
-| Description | Flash Treesitter |
-| Left hand side | <code>S</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>[%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
-| Description | |
-| Left hand side | <code>]%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
-| Description | |
-| Left hand side | <code>g%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
-| Description | Remote Flash |
-| Left hand side | <code>r</code> |
-| Right hand side | |
-| Description | Flash |
-| Left hand side | <code>s</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+
+| **Description** | Treesitter Search |
+| :---- | :---- |
+| **Left hand side** | <code>R</code> |
+| **Right hand side** | |
+
+| **Description** | Flash Treesitter |
+| :---- | :---- |
+| **Left hand side** | <code>S</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+
+| **Description** | Remote Flash |
+| :---- | :---- |
+| **Left hand side** | <code>r</code> |
+| **Right hand side** | |
+
+| **Description** | Flash |
+| :---- | :---- |
+| **Left hand side** | <code>s</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+

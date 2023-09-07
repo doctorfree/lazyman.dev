@@ -95,333 +95,539 @@ Installs LunarVim plus the [IfCodingWereNatural custom user config](https://yout
 
 #### normal mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code> j</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>&</code> |
-| Right hand side | <code>:&&&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>F</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>H</code> |
-| Right hand side | <code>:BufferLineCyclePrev&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>L</code> |
-| Right hand side | <code>:BufferLineCycleNext&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>S</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>T</code> |
-| Right hand side | |
-| Description | Nvim builtin |
-| Left hand side | <code>Y</code> |
-| Right hand side | <code>y$</code> |
-| Description | |
-| Left hand side | <code>[%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
-| Description | |
-| Left hand side | <code>[q</code> |
-| Right hand side | <code>:cprev&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>]%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-| Description | |
-| Left hand side | <code>]q</code> |
-| Right hand side | <code>:cnext&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>cS</code> |
-| Right hand side | <code>&lt;Plug&gt;CSurround</code> |
-| Description | |
-| Left hand side | <code>cs</code> |
-| Right hand side | <code>&lt;Plug&gt;Csurround</code> |
-| Description | |
-| Left hand side | <code>ds</code> |
-| Right hand side | <code>&lt;Plug&gt;Dsurround</code> |
-| Description | |
-| Left hand side | <code>f</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>gx</code> |
-| Right hand side | <code>&lt;Plug&gt;NetrwBrowseX</code> |
-| Description | |
-| Left hand side | <code>g%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
-| Description | |
-| Left hand side | <code>gc</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>gb</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>gn</code> |
-| Right hand side | <code>:tabe %&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>s</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>t</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>ySS</code> |
-| Right hand side | <code>&lt;Plug&gt;YSsurround</code> |
-| Description | |
-| Left hand side | <code>ySs</code> |
-| Right hand side | <code>&lt;Plug&gt;YSsurround</code> |
-| Description | |
-| Left hand side | <code>yss</code> |
-| Right hand side | <code>&lt;Plug&gt;Yssurround</code> |
-| Description | |
-| Left hand side | <code>yS</code> |
-| Right hand side | <code>&lt;Plug&gt;YSurround</code> |
-| Description | |
-| Left hand side | <code>ys</code> |
-| Right hand side | <code>&lt;Plug&gt;Ysurround</code> |
-| Description | |
-| Left hand side | <code>zs</code> |
-| Right hand side | <code>:lua require'telescope.builtin'.spell_suggest()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;NetrwBrowseX</code> |
-| Right hand side | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;YSurround</code> |
-| Right hand side | <code>&lt;SNR&gt;10_opfunc2('setup')</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;Ysurround</code> |
-| Right hand side | <code>&lt;SNR&gt;10_opfunc('setup')</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;YSsurround</code> |
-| Right hand side | <code>&lt;SNR&gt;10_opfunc2('setup').'_'</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;Yssurround</code> |
-| Right hand side | <code>'^'.v:count1.&lt;SNR&gt;10_opfunc('setup').'g_'</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;CSurround</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_changesurround(1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;Csurround</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_changesurround()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;Dsurround</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_dosurround(&lt;SNR&gt;10_inputtarget())&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;SurroundRepeat</code> |
-| Right hand side | <code>.</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| Right hand side | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-| Description | Float Terminal |
-| Left hand side | <code>&lt;M-3&gt;</code> |
-| Right hand side | |
-| Description | Vertical Terminal |
-| Left hand side | <code>&lt;M-2&gt;</code> |
-| Right hand side | |
-| Description | Horizontal Terminal |
-| Left hand side | <code>&lt;M-1&gt;</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;C-Bslash&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-S&gt;</code> |
-| Right hand side | <code>:w&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-H&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;M-j&gt;</code> |
-| Right hand side | <code>:m .+1&lt;CR&gt;==</code> |
-| Description | |
-| Left hand side | <code>&lt;C-Right&gt;</code> |
-| Right hand side | <code>:vertical resize +2&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;M-k&gt;</code> |
-| Right hand side | <code>:m .-2&lt;CR&gt;==</code> |
-| Description | |
-| Left hand side | <code>&lt;C-Left&gt;</code> |
-| Right hand side | <code>:vertical resize -2&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-Down&gt;</code> |
-| Right hand side | <code>:resize +2&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-Up&gt;</code> |
-| Right hand side | <code>:resize -2&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-Q&gt;</code> |
-| Right hand side | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-K&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-J&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-L&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+| **Left hand side** | <code> j</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>&</code> |
+| **Right hand side** | <code>:&&&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>F</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>H</code> |
+| **Right hand side** | <code>:BufferLineCyclePrev&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>L</code> |
+| **Right hand side** | <code>:BufferLineCycleNext&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>S</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>T</code> |
+| **Right hand side** | |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>Y</code> |
+| **Right hand side** | <code>y$</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[q</code> |
+| **Right hand side** | <code>:cprev&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]q</code> |
+| **Right hand side** | <code>:cnext&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>cS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;CSurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>cs</code> |
+| **Right hand side** | <code>&lt;Plug&gt;Csurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ds</code> |
+| **Right hand side** | <code>&lt;Plug&gt;Dsurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>f</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gx</code> |
+| **Right hand side** | <code>&lt;Plug&gt;NetrwBrowseX</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gn</code> |
+| **Right hand side** | <code>:tabe %&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>s</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>t</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ySS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;YSsurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ySs</code> |
+| **Right hand side** | <code>&lt;Plug&gt;YSsurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>yss</code> |
+| **Right hand side** | <code>&lt;Plug&gt;Yssurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>yS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;YSurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ys</code> |
+| **Right hand side** | <code>&lt;Plug&gt;Ysurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zs</code> |
+| **Right hand side** | <code>:lua require'telescope.builtin'.spell_suggest()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;NetrwBrowseX</code> |
+| **Right hand side** | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;YSurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;12_opfunc2('setup')</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Ysurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;12_opfunc('setup')</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;YSsurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;12_opfunc2('setup').'_'</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Yssurround</code> |
+| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;12_opfunc('setup').'g_'</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_changesurround(1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Csurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_changesurround()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Dsurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_dosurround(&lt;SNR&gt;12_inputtarget())&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SurroundRepeat</code> |
+| **Right hand side** | <code>.</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | Float Terminal |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-3&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Vertical Terminal |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-2&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Horizontal Terminal |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-1&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-S&gt;</code> |
+| **Right hand side** | <code>:w&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Left&gt;</code> |
+| **Right hand side** | <code>:vertical resize -2&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-j&gt;</code> |
+| **Right hand side** | <code>:m .+1&lt;CR&gt;==</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Down&gt;</code> |
+| **Right hand side** | <code>:resize +2&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-k&gt;</code> |
+| **Right hand side** | <code>:m .-2&lt;CR&gt;==</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Up&gt;</code> |
+| **Right hand side** | <code>:resize -2&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Right hand side** | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Right&gt;</code> |
+| **Right hand side** | <code>:vertical resize +2&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+
 
 #### visual mode keymaps
 
-|  Key  | Value |
+| **Description** | Nvim builtin |
 | :---- | :---- |
-| Description | Nvim builtin |
-| Left hand side | <code>#</code> |
-| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>*</code> |
-| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;lt&gt;</code> |
-| Right hand side | <code>&lt;lt&gt;gv</code> |
-| Description | |
-| Left hand side | <code>&gt;</code> |
-| Right hand side | <code>&gt;gv</code> |
-| Description | |
-| Left hand side | <code>S</code> |
-| Right hand side | <code>&lt;Plug&gt;VSurround</code> |
-| Description | |
-| Left hand side | <code>[%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
-| Description | |
-| Left hand side | <code>]%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-| Description | |
-| Left hand side | <code>a%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
-| Description | |
-| Left hand side | <code>gx</code> |
-| Right hand side | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
-| Description | |
-| Left hand side | <code>g%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
-| Description | |
-| Left hand side | <code>gS</code> |
-| Right hand side | <code>&lt;Plug&gt;VgSurround</code> |
-| Description | |
-| Left hand side | <code>gb</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>gc</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
-| Right hand side | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;VgSurround</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;VSurround</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-Bslash&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;M-k&gt;</code> |
-| Right hand side | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv-gv</code> |
-| Description | |
-| Left hand side | <code>&lt;M-j&gt;</code> |
-| Right hand side | <code>:m '&gt;+1&lt;CR&gt;gv-gv</code> |
-| Description | |
-| Left hand side | <code>&lt;C-J&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-H&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-K&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-L&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+| **Left hand side** | <code>#</code> |
+| **Right hand side** | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>*</code> |
+| **Right hand side** | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;lt&gt;</code> |
+| **Right hand side** | <code>&lt;lt&gt;gv</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&gt;</code> |
+| **Right hand side** | <code>&gt;gv</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>S</code> |
+| **Right hand side** | <code>&lt;Plug&gt;VSurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>a%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gx</code> |
+| **Right hand side** | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;VgSurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;VgSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;11_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;VSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;11_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-j&gt;</code> |
+| **Right hand side** | <code>:m '&gt;+1&lt;CR&gt;gv-gv</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-k&gt;</code> |
+| **Right hand side** | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv-gv</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+
 
 #### operator mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code>%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
-| Description | |
-| Left hand side | <code>F</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>T</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>[%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
-| Description | |
-| Left hand side | <code>]%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
-| Description | |
-| Left hand side | <code>f</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>g%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
-| Description | |
-| Left hand side | <code>t</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-Bslash&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-K&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-J&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-H&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-L&gt;</code> |
-| Right hand side | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>F</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>T</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>f</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>t</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+

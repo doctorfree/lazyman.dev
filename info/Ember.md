@@ -86,420 +86,684 @@ Dan is a computer science student at Arizona State University
 
 #### normal mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code>#</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('#', 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>$</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('$', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>&</code> |
-| Right hand side | <code>:&&&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>*</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('*', 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>0</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('0')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>G</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('G', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>N</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('N', 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>Q</code> |
-| Right hand side | <code></code> |
-| Description | Nvim builtin |
-| Left hand side | <code>Y</code> |
-| Right hand side | <code>y$</code> |
-| Description | |
-| Left hand side | <code>[%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
-| Description | |
-| Left hand side | <code>]%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-| Description | |
-| Left hand side | <code>^</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('^')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>cS</code> |
-| Right hand side | <code>&lt;Plug&gt;CSurround</code> |
-| Description | |
-| Left hand side | <code>cs</code> |
-| Right hand side | <code>&lt;Plug&gt;Csurround</code> |
-| Description | |
-| Left hand side | <code>ds</code> |
-| Right hand side | <code>&lt;Plug&gt;Dsurround</code> |
-| Description | |
-| Left hand side | <code>g#</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('g#', 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>g*</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('g*', 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>gg</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('gg')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>gx</code> |
-| Right hand side | <code>&lt;Plug&gt;NetrwBrowseX</code> |
-| Description | |
-| Left hand side | <code>g%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
-| Description | |
-| Left hand side | <code>h</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('h', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>j</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('j', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>k</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('k', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>l</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('l', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>n</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('n', 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>ySS</code> |
-| Right hand side | <code>&lt;Plug&gt;YSsurround</code> |
-| Description | |
-| Left hand side | <code>ySs</code> |
-| Right hand side | <code>&lt;Plug&gt;YSsurround</code> |
-| Description | |
-| Left hand side | <code>yss</code> |
-| Right hand side | <code>&lt;Plug&gt;Yssurround</code> |
-| Description | |
-| Left hand side | <code>yS</code> |
-| Right hand side | <code>&lt;Plug&gt;YSurround</code> |
-| Description | |
-| Left hand side | <code>ys</code> |
-| Right hand side | <code>&lt;Plug&gt;Ysurround</code> |
-| Description | |
-| Left hand side | <code>ze</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('ze')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>zs</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('zs')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>zL</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('zL')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>zH</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('zH')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>zl</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('zl', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>zh</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('zh', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>z+</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('z+', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>z^</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('z^', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>z-</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('z-', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>z&lt;CR&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('zt^', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>z.</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('z.', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>zb</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('zb', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>zt</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('zt', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>zz</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('zz', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>{</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('{')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>}</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('}')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Right&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('l', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Left&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('h', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Down&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('j', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Up&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('k', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-E&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-E&gt;', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-Y&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-Y&gt;', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-I&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('1&lt;Tab&gt;', 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-O&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-O&gt;', 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;PageDown&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-F&gt;', 1, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;PageUp&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-B&gt;', 1, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-F&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-F&gt;', 1, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-B&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-B&gt;', 1, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-D&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-D&gt;', 1, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-U&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-U&gt;', 1, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;NetrwBrowseX</code> |
-| Right hand side | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
-| Description | Comment toggle blockwise with count |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
-| Right hand side | |
-| Description | Comment toggle linewise with count |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |
-| Right hand side | |
-| Description | Comment toggle current block |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |
-| Right hand side | |
-| Description | Comment toggle current line |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
-| Right hand side | |
-| Description | Comment toggle blockwise |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
-| Right hand side | |
-| Description | Comment toggle linewise |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;YSurround</code> |
-| Right hand side | <code>&lt;SNR&gt;26_opfunc2('setup')</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;Ysurround</code> |
-| Right hand side | <code>&lt;SNR&gt;26_opfunc('setup')</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;YSsurround</code> |
-| Right hand side | <code>&lt;SNR&gt;26_opfunc2('setup').'_'</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;Yssurround</code> |
-| Right hand side | <code>'^'.v:count1.&lt;SNR&gt;26_opfunc('setup').'g_'</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;CSurround</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;26_changesurround(1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;Csurround</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;26_changesurround()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;Dsurround</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;26_dosurround(&lt;SNR&gt;26_inputtarget())&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;SurroundRepeat</code> |
-| Right hand side | <code>.</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;luasnip-delete-check</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| Right hand side | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>&lt;C-L&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+| **Left hand side** | <code>#</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('#', 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>$</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('$', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>&</code> |
+| **Right hand side** | <code>:&&&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>*</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('*', 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>0</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('0')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>G</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('G', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>N</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('N', 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>Q</code> |
+| **Right hand side** | <code></code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>Y</code> |
+| **Right hand side** | <code>y$</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>^</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('^')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>cS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;CSurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>cs</code> |
+| **Right hand side** | <code>&lt;Plug&gt;Csurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ds</code> |
+| **Right hand side** | <code>&lt;Plug&gt;Dsurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g#</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('g#', 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g*</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('g*', 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gg</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('gg')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gx</code> |
+| **Right hand side** | <code>&lt;Plug&gt;NetrwBrowseX</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>h</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('h', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>j</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('j', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>k</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('k', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>l</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('l', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>n</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('n', 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ySS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;YSsurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ySs</code> |
+| **Right hand side** | <code>&lt;Plug&gt;YSsurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>yss</code> |
+| **Right hand side** | <code>&lt;Plug&gt;Yssurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>yS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;YSurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ys</code> |
+| **Right hand side** | <code>&lt;Plug&gt;Ysurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ze</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('ze')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zs</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('zs')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zL</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('zL')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zH</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('zH')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zl</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('zl', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zh</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('zh', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>z+</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('z+', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>z^</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('z^', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>z-</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('z-', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>z&lt;CR&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('zt^', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>z.</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('z.', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zb</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('zb', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zt</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('zt', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zz</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('zz', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>{</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('{')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>}</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('}')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Right&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('l', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Left&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('h', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Down&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('j', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Up&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('k', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-E&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-E&gt;', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Y&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-Y&gt;', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-I&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('1&lt;Tab&gt;', 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-O&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-O&gt;', 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;PageDown&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-F&gt;', 1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;PageUp&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-B&gt;', 1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-F&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-F&gt;', 1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-B&gt;', 1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-D&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-D&gt;', 1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-U&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-U&gt;', 1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;NetrwBrowseX</code> |
+| **Right hand side** | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle blockwise with count |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise with count |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current block |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current line |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;YSurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;8_opfunc2('setup')</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Ysurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;8_opfunc('setup')</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;YSsurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;8_opfunc2('setup').'_'</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Yssurround</code> |
+| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;8_opfunc('setup').'g_'</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_changesurround(1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Csurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_changesurround()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Dsurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_dosurround(&lt;SNR&gt;8_inputtarget())&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SurroundRepeat</code> |
+| **Right hand side** | <code>.</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+
 
 #### visual mode keymaps
 
-|  Key  | Value |
+| **Description** | Nvim builtin |
 | :---- | :---- |
-| Description | Nvim builtin |
-| Left hand side | <code>#</code> |
-| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>$</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('$', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
-| Description | Nvim builtin |
-| Left hand side | <code>*</code> |
-| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>0</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('0')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>G</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('G', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>S</code> |
-| Right hand side | <code>&lt;Plug&gt;VSurround</code> |
-| Description | |
-| Left hand side | <code>[%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
-| Description | |
-| Left hand side | <code>]%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-| Description | |
-| Left hand side | <code>^</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('^')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>a%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
-| Description | |
-| Left hand side | <code>gg</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('gg')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>gx</code> |
-| Right hand side | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
-| Description | |
-| Left hand side | <code>g%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
-| Description | |
-| Left hand side | <code>gS</code> |
-| Right hand side | <code>&lt;Plug&gt;VgSurround</code> |
-| Description | |
-| Left hand side | <code>h</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('h', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>j</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('j', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>k</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('k', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>l</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('l', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>{</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('{')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>}</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('}')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Right&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('l', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Left&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('h', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Down&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('j', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Up&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('k', 0, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;PageDown&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-F&gt;', 1, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;PageUp&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-B&gt;', 1, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-F&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-F&gt;', 1, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-B&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-B&gt;', 1, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-D&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-D&gt;', 1, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;C-U&gt;</code> |
-| Right hand side | <code>&lt;Cmd&gt;lua Scroll('&lt;C-U&gt;', 1, 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
-| Right hand side | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
-| Description | Comment toggle blockwise (visual) |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
-| Right hand side | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-| Description | Comment toggle linewise (visual) |
-| Left hand side | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
-| Right hand side | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| Right hand side | |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;VgSurround</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;VSurround</code> |
-| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
+| **Left hand side** | <code>#</code> |
+| **Right hand side** | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>$</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('$', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+
+| **Description** | Nvim builtin |
+| :---- | :---- |
+| **Left hand side** | <code>*</code> |
+| **Right hand side** | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>0</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('0')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>G</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('G', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>S</code> |
+| **Right hand side** | <code>&lt;Plug&gt;VSurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>^</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('^')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>a%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gg</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('gg')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gx</code> |
+| **Right hand side** | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;VgSurround</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>h</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('h', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>j</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('j', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>k</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('k', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>l</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('l', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>{</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('{')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>}</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('}')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Right&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('l', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Left&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('h', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Down&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('j', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Up&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('k', 0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;PageDown&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-F&gt;', 1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;PageUp&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-B&gt;', 1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-F&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-F&gt;', 1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-B&gt;', 1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-D&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-D&gt;', 1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-U&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua Scroll('&lt;C-U&gt;', 1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;VgSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;VSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle blockwise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle linewise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
+
 
 #### operator mode keymaps
 
-|  Key  | Value |
+| **Description** | |
 | :---- | :---- |
-| Description | |
-| Left hand side | <code>%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
-| Description | |
-| Left hand side | <code>[%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
-| Description | |
-| Left hand side | <code>]%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
-| Description | |
-| Left hand side | <code>g%</code> |
-| Right hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
-| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
-| Description | |
-| Left hand side | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| Right hand side | |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
+
