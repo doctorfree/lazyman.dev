@@ -102,202 +102,576 @@ Personal Neovim configuration of Jade Fox
 
 #### normal mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code>&lt;Tab&gt;</code>|  | Go to next buffer | 
-| <code> b1</code>|  | Jump to first buffer | 
-| <code> b5</code>|  | Jump to fifth buffer | 
-| <code> b$</code>|  | Jump to last buffer | 
-| <code> b9</code>|  | Jump to ninth buffer | 
-| <code> b7</code>|  | Jump to seventh buffer | 
-| <code> b4</code>|  | Jump to fourth buffer | 
-| <code> b3</code>|  | Jump to third buffer | 
-| <code> b2</code>|  | Jump to second buffer | 
-| <code> b8</code>|  | Jump to eighth buffer | 
-| <code> b6</code>|  | Jump to sixth buffer | 
-| <code> bk</code>|  | Delete the current buffer | 
-| <code> bK</code>|  | Delete the current buffer forcefully | 
-| <code> fw</code>|  | Words | 
-| <code> ff</code>|  | Files | 
-| <code> gc</code>|  | Search and checkout git commits | 
-| <code> gb</code>|  | Search through git branches | 
-| <code> go</code>|  | Seach through changed files | 
-| <code> fD</code>|  | Workspace diagnostics | 
-| <code> fd</code>|  | Document diagnostics | 
-| <code> fl</code>|  | Resume | 
-| <code> ft</code>|  | Todo comments | 
-| <code> fc</code>|  | Commands | 
-| <code> fk</code>|  | Keymaps | 
-| <code> fR</code>|  | Registers | 
-| <code> fr</code>|  | Recently opened | 
-| <code> fm</code>|  | Man pages | 
-| <code> fh</code>|  | Help | 
-| <code> fb</code>|  | Buffers | 
-| <code> xr</code>|  | Open lsp references | 
-| <code> xl</code>|  | Open location list | 
-| <code> xq</code>|  | Open quickfix | 
-| <code> xd</code>|  | Open document diagnostics | 
-| <code> xw</code>|  | Open workspace diagnostics | 
-| <code> xx</code>|  | Toggle trouble.nvim | 
-| <code> u</code>|  | Open undo tree | 
-| <code> j</code>|  | Join node under cursor | 
-| <code> m</code>|  | Toggle node under cursor | 
-| <code> s</code>|  | Split node under cursor | 
-| <code> bo</code>|  | Delete all other buffers except current | 
-| <code> du</code>|  | Dap UI | 
-| <code> de</code>|  | Eval | 
-| <code> gp</code>|  | Preview the hunk | 
-| <code> gl</code>|  | Open git blame | 
-| <code> gk</code>|  | Previous hunk | 
-| <code> gj</code>|  | Next hunk | 
-| <code> gd</code>|  | Open a diff | 
-| <code> gu</code>|  | Unstage the hunk | 
-| <code> gS</code>|  | Stage the buffer | 
-| <code> gs</code>|  | Stage the hunk | 
-| <code> gR</code>|  | Reset the buffer | 
-| <code> gr</code>|  | Reset the hunk | 
-| <code> gg</code>|  | Open neogit | 
-| <code> </code>|  |  |
-| <code> dp</code>|  | Pause | 
-| <code> dO</code>|  | Step Over | 
-| <code> do</code>|  | Step Out | 
-| <code> dl</code>|  | Run Last | 
-| <code> dk</code>|  | Up | 
-| <code> dj</code>|  | Down | 
-| <code> di</code>|  | Step Into | 
-| <code> dg</code>|  | Go to line (no execute) | 
-| <code> dC</code>|  | Run to Cursor | 
-| <code> dc</code>|  | Continue | 
-| <code> db</code>|  | Toggle Breakpoint | 
-| <code> dB</code>|  | Breakpoint Condition | 
-| <code> dw</code>|  | Widgets | 
-| <code> dt</code>|  | Terminate | 
-| <code> ds</code>|  | Session | 
-| <code> dr</code>|  | Toggle REPL | 
-| <code> t</code>|  | Toggle twilight.nvim | 
-| <code> z</code>|  | Toggle zen-mode.nvim | 
-| <code> e</code>|  | Open neo-tree.nvim | 
-| <code> qd</code>|  | Stop persistence | 
-| <code> ql</code>|  | Restore the last session | 
-| <code> qs</code>|  | Restore the session for the current dir | 
-| <code> l</code>|  | Open lazy.nvim | 
-| <code> w</code> | <code>&lt;Cmd&gt;w&lt;CR&gt;</code> | Save the current file | 
-| <code> qq</code> | <code>&lt;Cmd&gt;q&lt;CR&gt;</code> | Quit the current file | 
-| <code>"</code>|  |  |
-| <code>#</code>|  |  |
-| <code>&</code> | <code>:&&&lt;CR&gt;</code> | Nvim builtin | 
-| <code>'</code>|  |  |
-| <code>*</code>|  |  |
-| <code>.</code>|  |  |
-| <code>/</code>|  |  |
-| <code>?</code>|  |  |
-| <code>F</code>|  | F | 
-| <code>H</code>|  | Go to next buffer | 
-| <code>K</code>|  | Hover | 
-| <code>L</code>|  | Go to previous buffer | 
-| <code>N</code>|  |  |
-| <code>S</code>|  | Leap backward to | 
-| <code>T</code>|  | T | 
-| <code>Y</code> | <code>y$</code> | Nvim builtin | 
-| <code>[[</code>|  | Prev Reference | 
-| <code>[b</code>|  | Go to next buffer | 
-| <code>[t</code>|  | Jump to previous todo comment | 
-| <code>[g</code>|  | Previous hunk | 
-| <code>]]</code>|  | Next Reference | 
-| <code>]b</code>|  | Go to previous buffer | 
-| <code>]t</code>|  | Jump to next todo comment | 
-| <code>]g</code>|  | Next hunk | 
-| <code>`</code>|  |  |
-| <code>cs</code>|  | Change surroundings | 
-| <code>c</code>|  |  |
-| <code>ds</code>|  | Delete surroundings | 
-| <code>d</code>|  |  |
-| <code>f</code>|  | f | 
-| <code>gr</code>|  | References | 
-| <code>gD</code>|  | Goto Declaration | 
-| <code>gK</code>|  | Signature Help | 
-| <code>gI</code>|  | Goto Implementation | 
-| <code>gd</code>|  | Goto Definition | 
-| <code>gy</code>|  | Goto T[y]pe Definition | 
-| <code>g#</code>|  |  |
-| <code>g*</code>|  |  |
-| <code>g&lt;C-A&gt;</code>|  | Multiline increment | 
-| <code>g&lt;C-X&gt;</code>|  | Multiline decrement | 
-| <code>gb</code>|  | Toggle block comments | 
-| <code>gc</code>|  | Toggle comments | 
-| <code>g</code>|  |  |
-| <code>gf</code>|  | Open actions-preview.nvim | 
-| <code>gs</code>|  | Leap from windows | 
-| <code>n</code>|  |  |
-| <code>s</code>|  | Leap forward to | 
-| <code>t</code>|  | t | 
-| <code>u</code>|  |  |
-| <code>ys</code>|  | Add surroundings | 
-| <code>y</code>|  |  |
-| <code>zM</code>|  | Close all folds | 
-| <code>zR</code>|  | Open all folds | 
-| <code>z</code>|  |  |
-| <code>&lt;S-Tab&gt;</code>|  | Go to previous buffer | 
-| <code>&lt;C-W&gt;&#124;</code>|  | Max out window width | 
-| <code>&lt;C-W&gt;_</code>|  | Max out window height | 
-| <code>&lt;C-W&gt;z</code>|  | Max out current window | 
-| <code>&lt;C-W&gt;=</code>|  | Equalize windows | 
-| <code>&lt;C-R&gt;</code>|  |  |
-| <code>&lt;C-X&gt;</code>|  | Decrement | 
-| <code>&lt;C-A&gt;</code>|  | Increment | 
-| <code>&lt;C-Bslash&gt;</code>|  |  |
-| <code>&lt;M-h&gt;</code>|  | Block left | 
-| <code>&lt;M-k&gt;</code>|  | Block up | 
-| <code>&lt;M-j&gt;</code>|  | Block down | 
-| <code>&lt;M-l&gt;</code>|  | Block right | 
-| <code>&lt;C-Right&gt;</code> | <code>&lt;Cmd&gt;vertical resize +2&lt;CR&gt;</code> | Increase window width | 
-| <code>&lt;C-Left&gt;</code> | <code>&lt;Cmd&gt;vertical resize -2&lt;CR&gt;</code> | Decrease window width | 
-| <code>&lt;C-Down&gt;</code> | <code>&lt;Cmd&gt;resize -2&lt;CR&gt;</code> | Decrease window height | 
-| <code>&lt;C-Up&gt;</code> | <code>&lt;Cmd&gt;resize +2&lt;CR&gt;</code> | Increase window height | 
-| <code>&lt;C-K&gt;</code> | <code>&lt;C-W&gt;k</code> | Go to upper window | 
-| <code>&lt;C-J&gt;</code> | <code>&lt;C-W&gt;j</code> | Go to lower window | 
-| <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> | Go to left window | 
-| <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> | Go to right window | 
+|  Key  | Value |
+| :---- | :---- |
+| Description | Go to next buffer |
+| Left hand side | <code>&lt;Tab&gt;</code> |
+| Right hand side | |
+| Description | Stop persistence |
+| Left hand side | <code> qd</code> |
+| Right hand side | |
+| Description | Restore the last session |
+| Left hand side | <code> ql</code> |
+| Right hand side | |
+| Description | Restore the session for the current dir |
+| Left hand side | <code> qs</code> |
+| Right hand side | |
+| Description | Todo comments |
+| Left hand side | <code> ft</code> |
+| Right hand side | |
+| Description | Commands |
+| Left hand side | <code> fc</code> |
+| Right hand side | |
+| Description | Keymaps |
+| Left hand side | <code> fk</code> |
+| Right hand side | |
+| Description | Registers |
+| Left hand side | <code> fR</code> |
+| Right hand side | |
+| Description | Recently opened |
+| Left hand side | <code> fr</code> |
+| Right hand side | |
+| Description | Man pages |
+| Left hand side | <code> fm</code> |
+| Right hand side | |
+| Description | Help |
+| Left hand side | <code> fh</code> |
+| Right hand side | |
+| Description | Buffers |
+| Left hand side | <code> fb</code> |
+| Right hand side | |
+| Description | Words |
+| Left hand side | <code> fw</code> |
+| Right hand side | |
+| Description | Files |
+| Left hand side | <code> ff</code> |
+| Right hand side | |
+| Description | Search and checkout git commits |
+| Left hand side | <code> gc</code> |
+| Right hand side | |
+| Description | Search through git branches |
+| Left hand side | <code> gb</code> |
+| Right hand side | |
+| Description | Seach through changed files |
+| Left hand side | <code> go</code> |
+| Right hand side | |
+| Description | Workspace diagnostics |
+| Left hand side | <code> fD</code> |
+| Right hand side | |
+| Description | Document diagnostics |
+| Left hand side | <code> fd</code> |
+| Right hand side | |
+| Description | Resume |
+| Left hand side | <code> fl</code> |
+| Right hand side | |
+| Description | Toggle zen-mode.nvim |
+| Left hand side | <code> z</code> |
+| Right hand side | |
+| Description | Eval |
+| Left hand side | <code> de</code> |
+| Right hand side | |
+| Description | Dap UI |
+| Left hand side | <code> du</code> |
+| Right hand side | |
+| Description | Jump to fifth buffer |
+| Left hand side | <code> b5</code> |
+| Right hand side | |
+| Description | Jump to sixth buffer |
+| Left hand side | <code> b6</code> |
+| Right hand side | |
+| Description | Jump to last buffer |
+| Left hand side | <code> b$</code> |
+| Right hand side | |
+| Description | Jump to ninth buffer |
+| Left hand side | <code> b9</code> |
+| Right hand side | |
+| Description | Jump to eighth buffer |
+| Left hand side | <code> b8</code> |
+| Right hand side | |
+| Description | Jump to fourth buffer |
+| Left hand side | <code> b4</code> |
+| Right hand side | |
+| Description | Jump to third buffer |
+| Left hand side | <code> b3</code> |
+| Right hand side | |
+| Description | Jump to second buffer |
+| Left hand side | <code> b2</code> |
+| Right hand side | |
+| Description | Jump to first buffer |
+| Left hand side | <code> b1</code> |
+| Right hand side | |
+| Description | Jump to seventh buffer |
+| Left hand side | <code> b7</code> |
+| Right hand side | |
+| Description | Open undo tree |
+| Left hand side | <code> u</code> |
+| Right hand side | |
+| Description | Open neo-tree.nvim |
+| Left hand side | <code> e</code> |
+| Right hand side | |
+| Description | Delete all other buffers except current |
+| Left hand side | <code> bo</code> |
+| Right hand side | |
+| Description | Delete the current buffer |
+| Left hand side | <code> bk</code> |
+| Right hand side | |
+| Description | Delete the current buffer forcefully |
+| Left hand side | <code> bK</code> |
+| Right hand side | |
+| Description | Reset the hunk |
+| Left hand side | <code> gr</code> |
+| Right hand side | |
+| Description | Preview the hunk |
+| Left hand side | <code> gp</code> |
+| Right hand side | |
+| Description | Open git blame |
+| Left hand side | <code> gl</code> |
+| Right hand side | |
+| Description | Previous hunk |
+| Left hand side | <code> gk</code> |
+| Right hand side | |
+| Description | Next hunk |
+| Left hand side | <code> gj</code> |
+| Right hand side | |
+| Description | Unstage the hunk |
+| Left hand side | <code> gu</code> |
+| Right hand side | |
+| Description | Open a diff |
+| Left hand side | <code> gd</code> |
+| Right hand side | |
+| Description | Stage the buffer |
+| Left hand side | <code> gS</code> |
+| Right hand side | |
+| Description | Stage the hunk |
+| Left hand side | <code> gs</code> |
+| Right hand side | |
+| Description | Reset the buffer |
+| Left hand side | <code> gR</code> |
+| Right hand side | |
+| Description | Open neogit |
+| Left hand side | <code> gg</code> |
+| Right hand side | |
+| Description | Open lsp references |
+| Left hand side | <code> xr</code> |
+| Right hand side | |
+| Description | Open quickfix |
+| Left hand side | <code> xq</code> |
+| Right hand side | |
+| Description | Open document diagnostics |
+| Left hand side | <code> xd</code> |
+| Right hand side | |
+| Description | Open workspace diagnostics |
+| Left hand side | <code> xw</code> |
+| Right hand side | |
+| Description | Toggle trouble.nvim |
+| Left hand side | <code> xx</code> |
+| Right hand side | |
+| Description | Open location list |
+| Left hand side | <code> xl</code> |
+| Right hand side | |
+| Description | Session |
+| Left hand side | <code> ds</code> |
+| Right hand side | |
+| Description | Toggle REPL |
+| Left hand side | <code> dr</code> |
+| Right hand side | |
+| Description | Pause |
+| Left hand side | <code> dp</code> |
+| Right hand side | |
+| Description | Step Over |
+| Left hand side | <code> dO</code> |
+| Right hand side | |
+| Description | Step Out |
+| Left hand side | <code> do</code> |
+| Right hand side | |
+| Description | Run Last |
+| Left hand side | <code> dl</code> |
+| Right hand side | |
+| Description | Up |
+| Left hand side | <code> dk</code> |
+| Right hand side | |
+| Description | Down |
+| Left hand side | <code> dj</code> |
+| Right hand side | |
+| Description | Step Into |
+| Left hand side | <code> di</code> |
+| Right hand side | |
+| Description | Go to line (no execute) |
+| Left hand side | <code> dg</code> |
+| Right hand side | |
+| Description | Run to Cursor |
+| Left hand side | <code> dC</code> |
+| Right hand side | |
+| Description | Continue |
+| Left hand side | <code> dc</code> |
+| Right hand side | |
+| Description | Toggle Breakpoint |
+| Left hand side | <code> db</code> |
+| Right hand side | |
+| Description | Breakpoint Condition |
+| Left hand side | <code> dB</code> |
+| Right hand side | |
+| Description | Widgets |
+| Left hand side | <code> dw</code> |
+| Right hand side | |
+| Description | Terminate |
+| Left hand side | <code> dt</code> |
+| Right hand side | |
+| Description | Toggle twilight.nvim |
+| Left hand side | <code> t</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> </code> |
+| Right hand side | |
+| Description | Split node under cursor |
+| Left hand side | <code> s</code> |
+| Right hand side | |
+| Description | Join node under cursor |
+| Left hand side | <code> j</code> |
+| Right hand side | |
+| Description | Toggle node under cursor |
+| Left hand side | <code> m</code> |
+| Right hand side | |
+| Description | Open lazy.nvim |
+| Left hand side | <code> l</code> |
+| Right hand side | |
+| Description | Save the current file |
+| Left hand side | <code> w</code> |
+| Right hand side | <code>&lt;Cmd&gt;w&lt;CR&gt;</code> |
+| Description | Quit the current file |
+| Left hand side | <code> qq</code> |
+| Right hand side | <code>&lt;Cmd&gt;q&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>"</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>#</code> |
+| Right hand side | |
+| Description | Nvim builtin |
+| Left hand side | <code>&</code> |
+| Right hand side | <code>:&&&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>'</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>*</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>.</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>/</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>?</code> |
+| Right hand side | |
+| Description | F |
+| Left hand side | <code>F</code> |
+| Right hand side | |
+| Description | Go to next buffer |
+| Left hand side | <code>H</code> |
+| Right hand side | |
+| Description | Hover |
+| Left hand side | <code>K</code> |
+| Right hand side | |
+| Description | Go to previous buffer |
+| Left hand side | <code>L</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>N</code> |
+| Right hand side | |
+| Description | Leap backward to |
+| Left hand side | <code>S</code> |
+| Right hand side | |
+| Description | T |
+| Left hand side | <code>T</code> |
+| Right hand side | |
+| Description | Nvim builtin |
+| Left hand side | <code>Y</code> |
+| Right hand side | <code>y$</code> |
+| Description | Prev Reference |
+| Left hand side | <code>[[</code> |
+| Right hand side | |
+| Description | Go to next buffer |
+| Left hand side | <code>[b</code> |
+| Right hand side | |
+| Description | Previous hunk |
+| Left hand side | <code>[g</code> |
+| Right hand side | |
+| Description | Jump to previous todo comment |
+| Left hand side | <code>[t</code> |
+| Right hand side | |
+| Description | Next Reference |
+| Left hand side | <code>]]</code> |
+| Right hand side | |
+| Description | Go to previous buffer |
+| Left hand side | <code>]b</code> |
+| Right hand side | |
+| Description | Next hunk |
+| Left hand side | <code>]g</code> |
+| Right hand side | |
+| Description | Jump to next todo comment |
+| Left hand side | <code>]t</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>`</code> |
+| Right hand side | |
+| Description | Change surroundings |
+| Left hand side | <code>cs</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>c</code> |
+| Right hand side | |
+| Description | Delete surroundings |
+| Left hand side | <code>ds</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>d</code> |
+| Right hand side | |
+| Description | f |
+| Left hand side | <code>f</code> |
+| Right hand side | |
+| Description | Goto Declaration |
+| Left hand side | <code>gD</code> |
+| Right hand side | |
+| Description | Signature Help |
+| Left hand side | <code>gK</code> |
+| Right hand side | |
+| Description | Goto Implementation |
+| Left hand side | <code>gI</code> |
+| Right hand side | |
+| Description | Goto Definition |
+| Left hand side | <code>gd</code> |
+| Right hand side | |
+| Description | Goto T[y]pe Definition |
+| Left hand side | <code>gy</code> |
+| Right hand side | |
+| Description | References |
+| Left hand side | <code>gr</code> |
+| Right hand side | |
+| Description | Toggle block comments |
+| Left hand side | <code>gb</code> |
+| Right hand side | |
+| Description | Toggle comments |
+| Left hand side | <code>gc</code> |
+| Right hand side | |
+| Description | Leap from windows |
+| Left hand side | <code>gs</code> |
+| Right hand side | |
+| Description | Multiline increment |
+| Left hand side | <code>g&lt;C-A&gt;</code> |
+| Right hand side | |
+| Description | Multiline decrement |
+| Left hand side | <code>g&lt;C-X&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>g*</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>g#</code> |
+| Right hand side | |
+| Description | Open actions-preview.nvim |
+| Left hand side | <code>gf</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>g</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>n</code> |
+| Right hand side | |
+| Description | Leap forward to |
+| Left hand side | <code>s</code> |
+| Right hand side | |
+| Description | t |
+| Left hand side | <code>t</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>u</code> |
+| Right hand side | |
+| Description | Add surroundings |
+| Left hand side | <code>ys</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>y</code> |
+| Right hand side | |
+| Description | Open all folds |
+| Left hand side | <code>zR</code> |
+| Right hand side | |
+| Description | Close all folds |
+| Left hand side | <code>zM</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>z</code> |
+| Right hand side | |
+| Description | Block up |
+| Left hand side | <code>&lt;M-k&gt;</code> |
+| Right hand side | |
+| Description | Block down |
+| Left hand side | <code>&lt;M-j&gt;</code> |
+| Right hand side | |
+| Description | Block right |
+| Left hand side | <code>&lt;M-l&gt;</code> |
+| Right hand side | |
+| Description | Block left |
+| Left hand side | <code>&lt;M-h&gt;</code> |
+| Right hand side | |
+| Description | Max out window width |
+| Left hand side | <code>&lt;C-W&gt;&#124;</code> |
+| Right hand side | |
+| Description | Max out window height |
+| Left hand side | <code>&lt;C-W&gt;_</code> |
+| Right hand side | |
+| Description | Max out current window |
+| Left hand side | <code>&lt;C-W&gt;z</code> |
+| Right hand side | |
+| Description | Equalize windows |
+| Left hand side | <code>&lt;C-W&gt;=</code> |
+| Right hand side | |
+| Description | Go to previous buffer |
+| Left hand side | <code>&lt;S-Tab&gt;</code> |
+| Right hand side | |
+| Description | Decrement |
+| Left hand side | <code>&lt;C-X&gt;</code> |
+| Right hand side | |
+| Description | Increment |
+| Left hand side | <code>&lt;C-A&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;C-R&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;C-Bslash&gt;</code> |
+| Right hand side | |
+| Description | Increase window width |
+| Left hand side | <code>&lt;C-Right&gt;</code> |
+| Right hand side | <code>&lt;Cmd&gt;vertical resize +2&lt;CR&gt;</code> |
+| Description | Decrease window width |
+| Left hand side | <code>&lt;C-Left&gt;</code> |
+| Right hand side | <code>&lt;Cmd&gt;vertical resize -2&lt;CR&gt;</code> |
+| Description | Decrease window height |
+| Left hand side | <code>&lt;C-Down&gt;</code> |
+| Right hand side | <code>&lt;Cmd&gt;resize -2&lt;CR&gt;</code> |
+| Description | Increase window height |
+| Left hand side | <code>&lt;C-Up&gt;</code> |
+| Right hand side | <code>&lt;Cmd&gt;resize +2&lt;CR&gt;</code> |
+| Description | Go to upper window |
+| Left hand side | <code>&lt;C-K&gt;</code> |
+| Right hand side | <code>&lt;C-W&gt;k</code> |
+| Description | Go to lower window |
+| Left hand side | <code>&lt;C-J&gt;</code> |
+| Right hand side | <code>&lt;C-W&gt;j</code> |
+| Description | Go to left window |
+| Left hand side | <code>&lt;C-H&gt;</code> |
+| Right hand side | <code>&lt;C-W&gt;h</code> |
+| Description | Go to right window |
+| Left hand side | <code>&lt;C-L&gt;</code> |
+| Right hand side | <code>&lt;C-W&gt;l</code> |
 
 #### visual mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code> de</code>|  | Eval | 
-| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>&lt;lt&gt;</code> | <code>&lt;lt&gt;gv</code> |  |
-| <code>&gt;</code> | <code>&gt;gv</code> |  |
-| <code>F</code>|  | F | 
-| <code>N</code> | <code>'nN'[v:searchforward]</code> | Next search result | 
-| <code>S</code>|  | Leap backward to | 
-| <code>T</code>|  | T | 
-| <code>f</code>|  | f | 
-| <code>gc</code>|  | Toggle comments | 
-| <code>gb</code>|  | Toggle block comments | 
-| <code>gs</code>|  | Leap from windows | 
-| <code>g&lt;C-X&gt;</code>|  | Multiline decrement | 
-| <code>g&lt;C-A&gt;</code>|  | Multiline increment | 
-| <code>n</code> | <code>'Nn'[v:searchforward]</code> | Next search result | 
-| <code>s</code>|  | Leap forward to | 
-| <code>t</code>|  | t | 
-| <code>&lt;M-k&gt;</code>|  | Block up | 
-| <code>&lt;M-h&gt;</code>|  | Block left | 
-| <code>&lt;M-l&gt;</code>|  | Block right | 
-| <code>&lt;M-j&gt;</code>|  | Block down | 
-| <code>&lt;C-X&gt;</code>|  | Decrement | 
-| <code>&lt;C-A&gt;</code>|  | Increment | 
+|  Key  | Value |
+| :---- | :---- |
+| Description | Eval |
+| Left hand side | <code> de</code> |
+| Right hand side | |
+| Description | Nvim builtin |
+| Left hand side | <code>#</code> |
+| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>*</code> |
+| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;lt&gt;</code> |
+| Right hand side | <code>&lt;lt&gt;gv</code> |
+| Description | |
+| Left hand side | <code>&gt;</code> |
+| Right hand side | <code>&gt;gv</code> |
+| Description | F |
+| Left hand side | <code>F</code> |
+| Right hand side | |
+| Description | Next search result |
+| Left hand side | <code>N</code> |
+| Right hand side | <code>'nN'[v:searchforward]</code> |
+| Description | Leap backward to |
+| Left hand side | <code>S</code> |
+| Right hand side | |
+| Description | T |
+| Left hand side | <code>T</code> |
+| Right hand side | |
+| Description | f |
+| Left hand side | <code>f</code> |
+| Right hand side | |
+| Description | Leap from windows |
+| Left hand side | <code>gs</code> |
+| Right hand side | |
+| Description | Multiline decrement |
+| Left hand side | <code>g&lt;C-X&gt;</code> |
+| Right hand side | |
+| Description | Multiline increment |
+| Left hand side | <code>g&lt;C-A&gt;</code> |
+| Right hand side | |
+| Description | Toggle block comments |
+| Left hand side | <code>gb</code> |
+| Right hand side | |
+| Description | Toggle comments |
+| Left hand side | <code>gc</code> |
+| Right hand side | |
+| Description | Next search result |
+| Left hand side | <code>n</code> |
+| Right hand side | <code>'Nn'[v:searchforward]</code> |
+| Description | Leap forward to |
+| Left hand side | <code>s</code> |
+| Right hand side | |
+| Description | t |
+| Left hand side | <code>t</code> |
+| Right hand side | |
+| Description | Block up |
+| Left hand side | <code>&lt;M-k&gt;</code> |
+| Right hand side | |
+| Description | Block left |
+| Left hand side | <code>&lt;M-h&gt;</code> |
+| Right hand side | |
+| Description | Block right |
+| Left hand side | <code>&lt;M-l&gt;</code> |
+| Right hand side | |
+| Description | Block down |
+| Left hand side | <code>&lt;M-j&gt;</code> |
+| Right hand side | |
+| Description | Decrement |
+| Left hand side | <code>&lt;C-X&gt;</code> |
+| Right hand side | |
+| Description | Increment |
+| Left hand side | <code>&lt;C-A&gt;</code> |
+| Right hand side | |
 
 #### operator mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code>F</code>|  | F | 
-| <code>N</code> | <code>'nN'[v:searchforward]</code> | Next search result | 
-| <code>S</code>|  | Leap backward to | 
-| <code>T</code>|  | T | 
-| <code>f</code>|  | f | 
-| <code>gs</code>|  | Leap from windows | 
-| <code>n</code> | <code>'Nn'[v:searchforward]</code> | Next search result | 
-| <code>s</code>|  | Leap forward to | 
-| <code>t</code>|  | t | 
+|  Key  | Value |
+| :---- | :---- |
+| Description | F |
+| Left hand side | <code>F</code> |
+| Right hand side | |
+| Description | Next search result |
+| Left hand side | <code>N</code> |
+| Right hand side | <code>'nN'[v:searchforward]</code> |
+| Description | Leap backward to |
+| Left hand side | <code>S</code> |
+| Right hand side | |
+| Description | T |
+| Left hand side | <code>T</code> |
+| Right hand side | |
+| Description | f |
+| Left hand side | <code>f</code> |
+| Right hand side | |
+| Description | Leap from windows |
+| Left hand side | <code>gs</code> |
+| Right hand side | |
+| Description | Next search result |
+| Left hand side | <code>n</code> |
+| Right hand side | <code>'Nn'[v:searchforward]</code> |
+| Description | Leap forward to |
+| Left hand side | <code>s</code> |
+| Right hand side | |
+| Description | t |
+| Left hand side | <code>t</code> |
+| Right hand side | |

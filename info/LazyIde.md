@@ -145,204 +145,582 @@ LazyVim IDE config for Neovim
 
 #### normal mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |  |
-| <code>&</code> | <code>:&&&lt;CR&gt;</code> | Nvim builtin | 
-| <code>,M</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> | Mason Menu | 
-| <code>,cm</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> | Mason | 
-| <code>,tf</code>|  | Move Float | 
-| <code>,tH</code>|  | Move Bottom Right New | 
-| <code>,th</code>|  | Move Below Right New | 
-| <code>,tL</code>|  | Move Bottom Right | 
-| <code>,tl</code>|  | Move Below Right | 
-| <code>,t[</code>|  | Terminal Prev | 
-| <code>,t]</code>|  | Terminal Next | 
-| <code>,tk</code>|  | Terminal Kill | 
-| <code>,tR</code>|  | New Terminal Run | 
-| <code>,ut</code>|  | Toggle Transparency | 
-| <code>,qd</code>|  | Don't Save Current Session | 
-| <code>,ql</code>|  | Restore Last Session | 
-| <code>,qs</code>|  | Restore Session | 
-| <code>,uE</code>|  | Edgy Select Window | 
-| <code>,ue</code>|  | Edgy Toggle | 
-| <code>,d</code>|  | JsDoc | 
-| <code>,sna</code>|  | Noice All | 
-| <code>,snh</code>|  | Noice History | 
-| <code>,snl</code>|  | Noice Last Message | 
-| <code>,snd</code>|  | Dismiss All | 
-| <code>,B</code>|  | Bufferlist | 
-| <code>, </code>|  | Find Files (root dir) | 
-| <code>,mt</code>|  | Telescope | 
-| <code>,mm</code>|  | Run make | 
-| <code>,fz</code>|  | Zoxide | 
-| <code>,gm</code>|  | Commits | 
-| <code>,gh</code>|  | Branches | 
-| <code>,sf</code>|  | Fuzzy search | 
-| <code>,s;</code>|  | Command history | 
-| <code>,s:</code>|  | Search History | 
-| <code>,sO</code>|  | Vim Options | 
-| <code>,s?</code>|  | Help | 
-| <code>,sS</code>|  | Goto Symbol (Workspace) | 
-| <code>,ss</code>|  | Goto Symbol | 
-| <code>,uC</code>|  | Colorscheme with preview | 
-| <code>,sW</code>|  | Word (cwd) | 
-| <code>,sw</code>|  | Word (root dir) | 
-| <code>,sR</code>|  | Resume | 
-| <code>,so</code>|  | Options | 
-| <code>,sm</code>|  | Jump to Mark | 
-| <code>,sM</code>|  | Man Pages | 
-| <code>,sk</code>|  | Key Maps | 
-| <code>,sH</code>|  | Search Highlight Groups | 
-| <code>,sh</code>|  | Help Pages | 
-| <code>,sG</code>|  | Grep (cwd) | 
-| <code>,sg</code>|  | Grep (root dir) | 
-| <code>,sD</code>|  | Workspace diagnostics | 
-| <code>,sd</code>|  | Diagnostics | 
-| <code>,sC</code>|  | Commands | 
-| <code>,sc</code>|  | Command History | 
-| <code>,sb</code>|  | Buffer | 
-| <code>,sa</code>|  | Auto Commands | 
-| <code>,s"</code>|  | Registers | 
-| <code>,gs</code>|  | Status | 
-| <code>,gc</code>|  | commits | 
-| <code>,fR</code>|  | Recent (cwd) | 
-| <code>,fr</code>|  | Recent files | 
-| <code>,fF</code>|  | Find Files (cwd) | 
-| <code>,ff</code>|  | Open file | 
-| <code>,fb</code>|  | Filebrowser | 
-| <code>,:</code>|  | Command History | 
-| <code>,/</code>|  | Find in Files (Grep) | 
-| <code>,,</code>|  | Switch Buffer | 
-| <code>,ht</code>|  | Toggle hardtime.nvim | 
-| <code>,fm</code>|  | Telescope Harpoon Marks | 
-| <code>,bp</code>|  | Toggle pin | 
-| <code>,bP</code>|  | Delete non-pinned buffers | 
-| <code>,fE</code>|  | Explorer NeoTree (cwd) | 
-| <code>,E</code>|  | Explorer NeoTree (cwd) | 
-| <code>,e</code>|  | Explorer NeoTree (root dir) | 
-| <code>,fe</code>|  | Explorer NeoTree (root dir) | 
-| <code>,dw</code>|  | Widgets | 
-| <code>,dt</code>|  | Terminate | 
-| <code>,ds</code>|  | Session | 
-| <code>,dr</code>|  | Toggle REPL | 
-| <code>,dp</code>|  | Pause | 
-| <code>,dO</code>|  | Step Over | 
-| <code>,do</code>|  | Step Out | 
-| <code>,dl</code>|  | Run Last | 
-| <code>,dk</code>|  | Up | 
-| <code>,dj</code>|  | Down | 
-| <code>,di</code>|  | Step Into | 
-| <code>,dg</code>|  | Go to line (no execute) | 
-| <code>,dC</code>|  | Run to Cursor | 
-| <code>,dc</code>|  | Continue | 
-| <code>,db</code>|  | Toggle Breakpoint | 
-| <code>,dB</code>|  | Breakpoint Condition | 
-| <code>,td</code>|  | Debug Nearest | 
-| <code>,n</code>|  | Open note | 
-| <code>,ng</code>|  | Open note | 
-| <code>,de</code>|  | Eval | 
-| <code>,du</code>|  | Dap UI | 
-| <code>,fs</code>|  | Telescope persisted | 
-| <code>,sr</code>|  | Sarch and replace | 
-| <code>,cS</code>|  | Run Test Suite | 
-| <code>,cT</code>|  | Run Test File | 
-| <code>,ct</code>|  | Run Test Nearest | 
-| <code>,bd</code>|  | Delete Buffer | 
-| <code>,bD</code>|  | Delete Buffer (Force) | 
-| <code>,r</code>|  | Undo Tree Toggle | 
-| <code>,fp</code>|  | Projects | 
-| <code>,m</code>|  | Markdown preview | 
-| <code>,cn</code>|  | NullLs Info | 
-| <code>,uL</code>|  | LSP Len Toggle | 
-| <code>,xT</code>|  | Todo/Fix/Fixme (Trouble) | 
-| <code>,xt</code>|  | Todo (Trouble) | 
-| <code>,st</code>|  | Todo | 
-| <code>,sT</code>|  | Todo/Fix/Fixme | 
-| <code>,xL</code>|  | Location List (Trouble) | 
-| <code>,xX</code>|  | Workspace Diagnostics (Trouble) | 
-| <code>,xx</code>|  | Document Diagnostics (Trouble) | 
-| <code>,xQ</code>|  | Quickfix List (Trouble) | 
-| <code>,fi</code>|  | Telescope Aerial | 
-| <code>,a</code>|  | AerialToggle | 
-| <code>,tS</code>|  | Stop | 
-| <code>,tO</code>|  | New Terminal Toggle | 
-| <code>,to</code>|  | Terminal Toggle | 
-| <code>,ts</code>|  | Terminal Send | 
-| <code>,tr</code>|  | Terminal Run | 
-| <code>,tT</code>|  | Run All Test Files | 
-| <code>,tt</code>|  | Run File | 
-| <code>,z</code>|  | Toggle zen mode | 
-| <code>S</code>|  | Flash Treesitter | 
-| <code>Y</code> | <code>y$</code> | Nvim builtin | 
-| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |  |
-| <code>[[</code>|  | Prev Reference | 
-| <code>[t</code>|  | Previous todo comment | 
-| <code>[q</code>|  | Previous trouble/quickfix item | 
-| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |  |
-| <code>]]</code>|  | Next Reference | 
-| <code>]t</code>|  | Next todo comment | 
-| <code>]q</code>|  | Next trouble/quickfix item | 
-| <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |  |
-| <code>gzf</code>|  | Find right surrounding | 
-| <code>gzr</code>|  | Replace surrounding | 
-| <code>gzh</code>|  | Highlight surrounding | 
-| <code>gzd</code>|  | Delete surrounding | 
-| <code>gzn</code>|  | Update `MiniSurround.config.n_lines` | 
-| <code>gzF</code>|  | Find left surrounding | 
-| <code>gza</code>|  | Add surrounding | 
-| <code>s</code>|  | Flash | 
-| <code>zM</code>|  |  |
-| <code>zR</code>|  |  |
-| <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |  |
-| <code>&lt;C-F&gt;</code>|  | Scroll forward | 
-| <code>&lt;C-B&gt;</code>|  | Scroll backward | 
-| <code>&lt;C-Space&gt;</code>|  | Increment selection | 
-| <code>&lt;C-S&gt;</code>|  | Search in buffer | 
-| <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> | Nvim builtin | 
+|  Key  | Value |
+| :---- | :---- |
+| Description | |
+| Left hand side | <code>%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>&</code> |
+| Right hand side | <code>:&&&lt;CR&gt;</code> |
+| Description | Mason |
+| Left hand side | <code>,cm</code> |
+| Right hand side | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
+| Description | Mason Menu |
+| Left hand side | <code>,M</code> |
+| Right hand side | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
+| Description | Move Float |
+| Left hand side | <code>,tf</code> |
+| Right hand side | |
+| Description | Move Bottom Right New |
+| Left hand side | <code>,tH</code> |
+| Right hand side | |
+| Description | Move Below Right New |
+| Left hand side | <code>,th</code> |
+| Right hand side | |
+| Description | Move Bottom Right |
+| Left hand side | <code>,tL</code> |
+| Right hand side | |
+| Description | Move Below Right |
+| Left hand side | <code>,tl</code> |
+| Right hand side | |
+| Description | Terminal Prev |
+| Left hand side | <code>,t[</code> |
+| Right hand side | |
+| Description | Terminal Next |
+| Left hand side | <code>,t]</code> |
+| Right hand side | |
+| Description | Terminal Kill |
+| Left hand side | <code>,tk</code> |
+| Right hand side | |
+| Description | New Terminal Run |
+| Left hand side | <code>,tR</code> |
+| Right hand side | |
+| Description | Toggle Transparency |
+| Left hand side | <code>,ut</code> |
+| Right hand side | |
+| Description | Noice Last Message |
+| Left hand side | <code>,snl</code> |
+| Right hand side | |
+| Description | Dismiss All |
+| Left hand side | <code>,snd</code> |
+| Right hand side | |
+| Description | Noice All |
+| Left hand side | <code>,sna</code> |
+| Right hand side | |
+| Description | Noice History |
+| Left hand side | <code>,snh</code> |
+| Right hand side | |
+| Description | LSP Len Toggle |
+| Left hand side | <code>,uL</code> |
+| Right hand side | |
+| Description | Toggle hardtime.nvim |
+| Left hand side | <code>,ht</code> |
+| Right hand side | |
+| Description | Edgy Select Window |
+| Left hand side | <code>,uE</code> |
+| Right hand side | |
+| Description | Edgy Toggle |
+| Left hand side | <code>,ue</code> |
+| Right hand side | |
+| Description | Quickfix List (Trouble) |
+| Left hand side | <code>,xQ</code> |
+| Right hand side | |
+| Description | Location List (Trouble) |
+| Left hand side | <code>,xL</code> |
+| Right hand side | |
+| Description | Workspace Diagnostics (Trouble) |
+| Left hand side | <code>,xX</code> |
+| Right hand side | |
+| Description | Document Diagnostics (Trouble) |
+| Left hand side | <code>,xx</code> |
+| Right hand side | |
+| Description | Markdown preview |
+| Left hand side | <code>,m</code> |
+| Right hand side | |
+| Description | Run Test File |
+| Left hand side | <code>,cT</code> |
+| Right hand side | |
+| Description | Run Test Nearest |
+| Left hand side | <code>,ct</code> |
+| Right hand side | |
+| Description | Run Test Suite |
+| Left hand side | <code>,cS</code> |
+| Right hand side | |
+| Description | Don't Save Current Session |
+| Left hand side | <code>,qd</code> |
+| Right hand side | |
+| Description | Restore Last Session |
+| Left hand side | <code>,ql</code> |
+| Right hand side | |
+| Description | Restore Session |
+| Left hand side | <code>,qs</code> |
+| Right hand side | |
+| Description | JsDoc |
+| Left hand side | <code>,d</code> |
+| Right hand side | |
+| Description | Dap UI |
+| Left hand side | <code>,du</code> |
+| Right hand side | |
+| Description | Eval |
+| Left hand side | <code>,de</code> |
+| Right hand side | |
+| Description | Stop |
+| Left hand side | <code>,tS</code> |
+| Right hand side | |
+| Description | New Terminal Toggle |
+| Left hand side | <code>,tO</code> |
+| Right hand side | |
+| Description | Terminal Toggle |
+| Left hand side | <code>,to</code> |
+| Right hand side | |
+| Description | Terminal Send |
+| Left hand side | <code>,ts</code> |
+| Right hand side | |
+| Description | Terminal Run |
+| Left hand side | <code>,tr</code> |
+| Right hand side | |
+| Description | Run All Test Files |
+| Left hand side | <code>,tT</code> |
+| Right hand side | |
+| Description | Run File |
+| Left hand side | <code>,tt</code> |
+| Right hand side | |
+| Description | Projects |
+| Left hand side | <code>,fp</code> |
+| Right hand side | |
+| Description | Todo/Fix/Fixme |
+| Left hand side | <code>,sT</code> |
+| Right hand side | |
+| Description | Todo/Fix/Fixme (Trouble) |
+| Left hand side | <code>,xT</code> |
+| Right hand side | |
+| Description | Todo (Trouble) |
+| Left hand side | <code>,xt</code> |
+| Right hand side | |
+| Description | Telescope persisted |
+| Left hand side | <code>,fs</code> |
+| Right hand side | |
+| Description | NullLs Info |
+| Left hand side | <code>,cn</code> |
+| Right hand side | |
+| Description | Sarch and replace |
+| Left hand side | <code>,sr</code> |
+| Right hand side | |
+| Description | Open note |
+| Left hand side | <code>,n</code> |
+| Right hand side | |
+| Description | Open note |
+| Left hand side | <code>,ng</code> |
+| Right hand side | |
+| Description | Telescope Harpoon Marks |
+| Left hand side | <code>,fm</code> |
+| Right hand side | |
+| Description | AerialToggle |
+| Left hand side | <code>,a</code> |
+| Right hand side | |
+| Description | Telescope Aerial |
+| Left hand side | <code>,fi</code> |
+| Right hand side | |
+| Description | Undo Tree Toggle |
+| Left hand side | <code>,r</code> |
+| Right hand side | |
+| Description | Toggle pin |
+| Left hand side | <code>,bp</code> |
+| Right hand side | |
+| Description | Delete non-pinned buffers |
+| Left hand side | <code>,bP</code> |
+| Right hand side | |
+| Description | Session |
+| Left hand side | <code>,ds</code> |
+| Right hand side | |
+| Description | Toggle REPL |
+| Left hand side | <code>,dr</code> |
+| Right hand side | |
+| Description | Pause |
+| Left hand side | <code>,dp</code> |
+| Right hand side | |
+| Description | Step Over |
+| Left hand side | <code>,dO</code> |
+| Right hand side | |
+| Description | Step Out |
+| Left hand side | <code>,do</code> |
+| Right hand side | |
+| Description | Run Last |
+| Left hand side | <code>,dl</code> |
+| Right hand side | |
+| Description | Up |
+| Left hand side | <code>,dk</code> |
+| Right hand side | |
+| Description | Down |
+| Left hand side | <code>,dj</code> |
+| Right hand side | |
+| Description | Step Into |
+| Left hand side | <code>,di</code> |
+| Right hand side | |
+| Description | Go to line (no execute) |
+| Left hand side | <code>,dg</code> |
+| Right hand side | |
+| Description | Run to Cursor |
+| Left hand side | <code>,dC</code> |
+| Right hand side | |
+| Description | Continue |
+| Left hand side | <code>,dc</code> |
+| Right hand side | |
+| Description | Toggle Breakpoint |
+| Left hand side | <code>,db</code> |
+| Right hand side | |
+| Description | Breakpoint Condition |
+| Left hand side | <code>,dB</code> |
+| Right hand side | |
+| Description | Debug Nearest |
+| Left hand side | <code>,td</code> |
+| Right hand side | |
+| Description | Widgets |
+| Left hand side | <code>,dw</code> |
+| Right hand side | |
+| Description | Terminate |
+| Left hand side | <code>,dt</code> |
+| Right hand side | |
+| Description | Delete Buffer |
+| Left hand side | <code>,bd</code> |
+| Right hand side | |
+| Description | Delete Buffer (Force) |
+| Left hand side | <code>,bD</code> |
+| Right hand side | |
+| Description | Vim Options |
+| Left hand side | <code>,sO</code> |
+| Right hand side | |
+| Description | Help |
+| Left hand side | <code>,s?</code> |
+| Right hand side | |
+| Description | Strings |
+| Left hand side | <code>,st</code> |
+| Right hand side | |
+| Description | Goto Symbol (Workspace) |
+| Left hand side | <code>,sS</code> |
+| Right hand side | |
+| Description | Goto Symbol |
+| Left hand side | <code>,ss</code> |
+| Right hand side | |
+| Description | Colorscheme with preview |
+| Left hand side | <code>,uC</code> |
+| Right hand side | |
+| Description | Word (cwd) |
+| Left hand side | <code>,sW</code> |
+| Right hand side | |
+| Description | Word (root dir) |
+| Left hand side | <code>,sw</code> |
+| Right hand side | |
+| Description | Resume |
+| Left hand side | <code>,sR</code> |
+| Right hand side | |
+| Description | Options |
+| Left hand side | <code>,so</code> |
+| Right hand side | |
+| Description | Jump to Mark |
+| Left hand side | <code>,sm</code> |
+| Right hand side | |
+| Description | Man Pages |
+| Left hand side | <code>,sM</code> |
+| Right hand side | |
+| Description | Key Maps |
+| Left hand side | <code>,sk</code> |
+| Right hand side | |
+| Description | Search Highlight Groups |
+| Left hand side | <code>,sH</code> |
+| Right hand side | |
+| Description | Help Pages |
+| Left hand side | <code>,sh</code> |
+| Right hand side | |
+| Description | Grep (cwd) |
+| Left hand side | <code>,sG</code> |
+| Right hand side | |
+| Description | Grep (root dir) |
+| Left hand side | <code>,sg</code> |
+| Right hand side | |
+| Description | Workspace diagnostics |
+| Left hand side | <code>,sD</code> |
+| Right hand side | |
+| Description | Diagnostics |
+| Left hand side | <code>,sd</code> |
+| Right hand side | |
+| Description | Commands |
+| Left hand side | <code>,sC</code> |
+| Right hand side | |
+| Description | Command History |
+| Left hand side | <code>,sc</code> |
+| Right hand side | |
+| Description | Buffer |
+| Left hand side | <code>,sb</code> |
+| Right hand side | |
+| Description | Auto Commands |
+| Left hand side | <code>,sa</code> |
+| Right hand side | |
+| Description | Registers |
+| Left hand side | <code>,s"</code> |
+| Right hand side | |
+| Description | Status |
+| Left hand side | <code>,gs</code> |
+| Right hand side | |
+| Description | commits |
+| Left hand side | <code>,gc</code> |
+| Right hand side | |
+| Description | Recent (cwd) |
+| Left hand side | <code>,fR</code> |
+| Right hand side | |
+| Description | Recent files |
+| Left hand side | <code>,fr</code> |
+| Right hand side | |
+| Description | Find Files (cwd) |
+| Left hand side | <code>,fF</code> |
+| Right hand side | |
+| Description | Open file |
+| Left hand side | <code>,ff</code> |
+| Right hand side | |
+| Description | Filebrowser |
+| Left hand side | <code>,fb</code> |
+| Right hand side | |
+| Description | Find Files (root dir) |
+| Left hand side | <code>, </code> |
+| Right hand side | |
+| Description | Find in Files (Grep) |
+| Left hand side | <code>,/</code> |
+| Right hand side | |
+| Description | Switch Buffer |
+| Left hand side | <code>,,</code> |
+| Right hand side | |
+| Description | Command History |
+| Left hand side | <code>,:</code> |
+| Right hand side | |
+| Description | Bufferlist |
+| Left hand side | <code>,B</code> |
+| Right hand side | |
+| Description | Telescope |
+| Left hand side | <code>,mt</code> |
+| Right hand side | |
+| Description | Run make |
+| Left hand side | <code>,mm</code> |
+| Right hand side | |
+| Description | Zoxide |
+| Left hand side | <code>,fz</code> |
+| Right hand side | |
+| Description | Commits |
+| Left hand side | <code>,gm</code> |
+| Right hand side | |
+| Description | Branches |
+| Left hand side | <code>,gh</code> |
+| Right hand side | |
+| Description | Fuzzy search |
+| Left hand side | <code>,sf</code> |
+| Right hand side | |
+| Description | Command history |
+| Left hand side | <code>,s;</code> |
+| Right hand side | |
+| Description | Search History |
+| Left hand side | <code>,s:</code> |
+| Right hand side | |
+| Description | Explorer NeoTree (root dir) |
+| Left hand side | <code>,e</code> |
+| Right hand side | |
+| Description | Explorer NeoTree (cwd) |
+| Left hand side | <code>,fE</code> |
+| Right hand side | |
+| Description | Explorer NeoTree (root dir) |
+| Left hand side | <code>,fe</code> |
+| Right hand side | |
+| Description | Explorer NeoTree (cwd) |
+| Left hand side | <code>,E</code> |
+| Right hand side | |
+| Description | Toggle zen mode |
+| Left hand side | <code>,z</code> |
+| Right hand side | |
+| Description | Flash Treesitter |
+| Left hand side | <code>S</code> |
+| Right hand side | |
+| Description | Nvim builtin |
+| Left hand side | <code>Y</code> |
+| Right hand side | <code>y$</code> |
+| Description | |
+| Left hand side | <code>[%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+| Description | Previous trouble/quickfix item |
+| Left hand side | <code>[q</code> |
+| Right hand side | |
+| Description | Previous todo comment |
+| Left hand side | <code>[t</code> |
+| Right hand side | |
+| Description | Prev Reference |
+| Left hand side | <code>[[</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>]%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+| Description | Next trouble/quickfix item |
+| Left hand side | <code>]q</code> |
+| Right hand side | |
+| Description | Next todo comment |
+| Left hand side | <code>]t</code> |
+| Right hand side | |
+| Description | Next Reference |
+| Left hand side | <code>]]</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>g%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+| Description | Add surrounding |
+| Left hand side | <code>gza</code> |
+| Right hand side | |
+| Description | Find right surrounding |
+| Left hand side | <code>gzf</code> |
+| Right hand side | |
+| Description | Replace surrounding |
+| Left hand side | <code>gzr</code> |
+| Right hand side | |
+| Description | Highlight surrounding |
+| Left hand side | <code>gzh</code> |
+| Right hand side | |
+| Description | Delete surrounding |
+| Left hand side | <code>gzd</code> |
+| Right hand side | |
+| Description | Update `MiniSurround.config.n_lines` |
+| Left hand side | <code>gzn</code> |
+| Right hand side | |
+| Description | Find left surrounding |
+| Left hand side | <code>gzF</code> |
+| Right hand side | |
+| Description | Flash |
+| Left hand side | <code>s</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>zM</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>zR</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+| Description | Scroll forward |
+| Left hand side | <code>&lt;C-F&gt;</code> |
+| Right hand side | |
+| Description | Scroll backward |
+| Left hand side | <code>&lt;C-B&gt;</code> |
+| Right hand side | |
+| Description | Increment selection |
+| Left hand side | <code>&lt;C-Space&gt;</code> |
+| Right hand side | |
+| Description | Search in buffer |
+| Left hand side | <code>&lt;C-S&gt;</code> |
+| Right hand side | |
+| Description | Nvim builtin |
+| Left hand side | <code>&lt;C-L&gt;</code> |
+| Right hand side | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 #### visual mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |  |
-| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>,ts</code>|  | Terminal Send | 
-| <code>,sw</code>|  | Selection (root dir) | 
-| <code>,sW</code>|  | Selection (cwd) | 
-| <code>,de</code>|  | Eval | 
-| <code>R</code>|  | Treesitter Search | 
-| <code>S</code>|  | Flash Treesitter | 
-| <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |  |
-| <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |  |
-| <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |  |
-| <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |  |
-| <code>gza</code>|  | Add surrounding | 
-| <code>s</code>|  | Flash | 
-| <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |  |
-| <code>&lt;BS&gt;</code>|  | Decrement selection | 
+|  Key  | Value |
+| :---- | :---- |
+| Description | Nvim builtin |
+| Left hand side | <code>#</code> |
+| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>*</code> |
+| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | Terminal Send |
+| Left hand side | <code>,ts</code> |
+| Right hand side | |
+| Description | Eval |
+| Left hand side | <code>,de</code> |
+| Right hand side | |
+| Description | Selection (cwd) |
+| Left hand side | <code>,sW</code> |
+| Right hand side | |
+| Description | Selection (root dir) |
+| Left hand side | <code>,sw</code> |
+| Right hand side | |
+| Description | Treesitter Search |
+| Left hand side | <code>R</code> |
+| Right hand side | |
+| Description | Flash Treesitter |
+| Left hand side | <code>S</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>[%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+| Description | |
+| Left hand side | <code>]%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| Description | |
+| Left hand side | <code>a%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+| Description | |
+| Left hand side | <code>g%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+| Description | Add surrounding |
+| Left hand side | <code>gza</code> |
+| Right hand side | |
+| Description | Flash |
+| Left hand side | <code>s</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
+| Description | Decrement selection |
+| Left hand side | <code>&lt;BS&gt;</code> |
+| Right hand side | |
 
 #### operator mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |  |
-| <code>R</code>|  | Treesitter Search | 
-| <code>S</code>|  | Flash Treesitter | 
-| <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |  |
-| <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |  |
-| <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |  |
-| <code>r</code>|  | Remote Flash | 
-| <code>s</code>|  | Flash | 
-| <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |  |
+|  Key  | Value |
+| :---- | :---- |
+| Description | |
+| Left hand side | <code>%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+| Description | Treesitter Search |
+| Left hand side | <code>R</code> |
+| Right hand side | |
+| Description | Flash Treesitter |
+| Left hand side | <code>S</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>[%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+| Description | |
+| Left hand side | <code>]%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+| Description | |
+| Left hand side | <code>g%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+| Description | Remote Flash |
+| Left hand side | <code>r</code> |
+| Right hand side | |
+| Description | Flash |
+| Left hand side | <code>s</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |

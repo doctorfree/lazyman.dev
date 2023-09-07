@@ -95,221 +95,633 @@ AstroNvim based configuration of open source developer Orhun Parmaksiz
 
 #### normal mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code>&lt;Esc&gt;</code> | <code>:nohl&lt;CR&gt;</code> | No highlight | 
-| <code> un</code>|  | Change line numbering | 
-| <code> bsm</code>|  | By modification | 
-| <code> uN</code>|  | Toggle Notifications | 
-| <code> up</code>|  | Toggle paste mode | 
-| <code> w</code> | <code>&lt;Cmd&gt;w&lt;CR&gt;</code> | Save | 
-| <code> us</code>|  | Toggle spellcheck | 
-| <code> q</code> | <code>&lt;Cmd&gt;confirm q&lt;CR&gt;</code> | Quit | 
-| <code> ft</code>|  | Find themes | 
-| <code> uS</code>|  | Toggle conceal | 
-| <code> n</code> | <code>&lt;Cmd&gt;enew&lt;CR&gt;</code> | New File | 
-| <code> ut</code>|  | Toggle tabline | 
-| <code> gS</code>|  | Stage Git buffer | 
-| <code> dO</code>|  | Step Out (S-F11) | 
-| <code> uu</code>|  | Toggle URL highlight | 
-| <code> Sl</code> | <code>&lt;Cmd&gt;SessionManager! load_last_session&lt;CR&gt;</code> | Load last session | 
-| <code> gd</code>|  | View Git diff | 
-| <code> uw</code>|  | Toggle wrap | 
-| <code> uy</code>|  | Toggle syntax highlighting (buffer) | 
-| <code> uh</code>|  | Toggle foldcolumn | 
-| <code> pi</code>|  | Plugins Install | 
-| <code> ps</code>|  | Plugins Status | 
-| <code> pA</code> | <code>&lt;Cmd&gt;AstroUpdate&lt;CR&gt;</code> | AstroNvim Update | 
-| <code> pS</code>|  | Plugins Sync | 
-| <code> pu</code>|  | Plugins Check Updates | 
-| <code> gC</code>|  | Git commits (current file) | 
-| <code> pU</code>|  | Plugins Update | 
-| <code> gc</code>|  | Git commits (repository) | 
-| <code> pa</code> | <code>&lt;Cmd&gt;AstroUpdatePackages&lt;CR&gt;</code> | Update Plugins and Mason Packages | 
-| <code> fo</code>|  | Find history | 
-| <code> fr</code>|  | Find registers | 
-| <code> db</code>|  | Toggle Breakpoint (F9) | 
-| <code> pv</code> | <code>&lt;Cmd&gt;AstroVersion&lt;CR&gt;</code> | AstroNvim Version | 
-| <code> dB</code>|  | Clear Breakpoints | 
-| <code> dc</code>|  | Start/Continue (F5) | 
-| <code> dC</code>|  | Conditional Breakpoint (S-F9) | 
-| <code> c</code>|  | Close buffer | 
-| <code> di</code>|  | Step Into (F11) | 
-| <code> C</code>|  | Force close buffer | 
-| <code> do</code>|  | Step Over (F10) | 
-| <code> o</code>|  | Toggle Explorer Focus | 
-| <code> dq</code>|  | Close Session | 
-| <code> fw</code>|  | Find words | 
-| <code> dQ</code>|  | Terminate Session (S-F5) | 
-| <code> bc</code>|  | Close all buffers except current | 
-| <code> dp</code>|  | Pause (F6) | 
-| <code> bC</code>|  | Close all buffers | 
-| <code> dr</code>|  | Restart (C-F5) | 
-| <code> bl</code>|  | Close all buffers to the left | 
-| <code> dR</code>|  | Toggle REPL | 
-| <code> bp</code>|  | Previous buffer | 
-| <code> ds</code>|  | Run To Cursor | 
-| <code> br</code>|  | Close all buffers to the right | 
-| <code> dE</code>|  | Evaluate Input | 
-| <code> du</code>|  | Toggle Debugger UI | 
-| <code> gt</code>|  | Git status | 
-| <code> dh</code>|  | Debugger Hover | 
-| <code> f&lt;CR&gt;</code>|  | Resume previous search | 
-| <code> bsp</code>|  | By full path | 
-| <code> f'</code>|  | Find marks | 
-| <code> bsi</code>|  | By buffer number | 
-| <code> f/</code>|  | Find words in current buffer | 
-| <code> fa</code>|  | Find AstroNvim config files | 
-| <code> fb</code>|  | Find buffers | 
-| <code> fc</code>|  | Find word under cursor | 
-| <code> b\</code>|  | Horizontal split buffer from tabline | 
-| <code> fC</code>|  | Find commands | 
-| <code> b&#124;</code>|  | Vertical split buffer from tabline | 
-| <code> ff</code>|  | Find files | 
-| <code> fF</code>|  | Find all files | 
-| <code> fh</code>|  | Find help | 
-| <code> h</code>|  | Home Screen | 
-| <code> fk</code>|  | Find keymaps | 
-| <code> /</code>|  | Toggle comment line | 
-| <code> fm</code>|  | Find man | 
-| <code> ua</code>|  | Toggle autopairs | 
-| <code> ub</code>|  | Toggle background | 
-| <code> fn</code>|  | Find notifications | 
-| <code> gl</code>|  | View Git blame | 
-| <code> bb</code>|  | Select buffer from tabline | 
-| <code> gL</code>|  | View full Git blame | 
-| <code> tu</code>|  | ToggleTerm gdu | 
-| <code> fW</code>|  | Find words in all files | 
-| <code> ls</code>|  | Search symbols | 
-| <code> gr</code>|  | Reset Git buffer | 
-| <code> gg</code> | <code>:Git&lt;CR&gt;</code> | Open Git | 
-| <code> gs</code>|  | Stage Git hunk | 
-| <code> tl</code>|  | ToggleTerm lazygit | 
-| <code> tn</code>|  | ToggleTerm node | 
-| <code> gu</code>|  | Unstage Git hunk | 
-| <code> gp</code>|  | Preview Git hunk | 
-| <code> tt</code>|  | ToggleTerm btm | 
-| <code> bse</code>|  | By extension | 
-| <code> e</code> | <code>&lt;Cmd&gt;Neotree toggle&lt;CR&gt;</code> | Toggle Explorer | 
-| <code> tp</code>|  | ToggleTerm python | 
-| <code> bsr</code>|  | By relative path | 
-| <code> tf</code> | <code>&lt;Cmd&gt;ToggleTerm direction=float&lt;CR&gt;</code> | ToggleTerm float | 
-| <code> gh</code>|  | Reset Git hunk | 
-| <code> th</code> | <code>&lt;Cmd&gt;ToggleTerm size=10 direction=horizontal&lt;CR&gt;</code> | ToggleTerm horizontal split | 
-| <code> bd</code>|  | Close buffer from tabline | 
-| <code> Ss</code> | <code>&lt;Cmd&gt;SessionManager! save_current_session&lt;CR&gt;</code> | Save this session | 
-| <code> tv</code> | <code>&lt;Cmd&gt;ToggleTerm size=80 direction=vertical&lt;CR&gt;</code> | ToggleTerm vertical split | 
-| <code> Sd</code> | <code>&lt;Cmd&gt;SessionManager! delete_session&lt;CR&gt;</code> | Delete session | 
-| <code> Sf</code> | <code>&lt;Cmd&gt;SessionManager! load_session&lt;CR&gt;</code> | Search sessions | 
-| <code> S.</code> | <code>&lt;Cmd&gt;SessionManager! load_current_dir_session&lt;CR&gt;</code> | Load current directory session | 
-| <code> ;</code> | <code>:2ToggleTerm size=30 direction=horizontal&lt;CR&gt;</code> | Open terminal with tab | 
-| <code> m</code> | <code>:MarkdownPreview&lt;CR&gt;</code> | Show markdown preview | 
-| <code> pl</code> | <code>&lt;Cmd&gt;AstroChangelog&lt;CR&gt;</code> | AstroNvim Changelog | 
-| <code> pm</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> | Mason Installer | 
-| <code> uR</code> | <code>:CellularAutomaton make_it_rain&lt;CR&gt;</code> | Make it rain | 
-| <code> pM</code> | <code>&lt;Cmd&gt;MasonUpdateAll&lt;CR&gt;</code> | Mason Update | 
-| <code> r</code> | <code>:AstroReload&lt;CR&gt;</code> | Reload AstroNvim | 
-| <code> uG</code> | <code>:CellularAutomaton game_of_life&lt;CR&gt;</code> | Game of life | 
-| <code> bn</code> | <code>&lt;Cmd&gt;tabnew&lt;CR&gt;</code> | New tab | 
-| <code> s</code> | <code>:SessionManager! load_current_dir_session&lt;CR&gt;</code> | Load the last session | 
-| <code> bD</code>|  | Pick to close | 
-| <code> fM</code> | <code>:Telescope media_files&lt;CR&gt;</code> | Find media files | 
-| <code> U</code> | <code>:UndotreeToggle&lt;CR&gt;</code> | Toggle undo history | 
-| <code> z</code> | <code>:ZenMode&lt;CR&gt;</code> | Toggle Zen mode | 
-| <code> lS</code>|  | Symbols outline | 
-| <code> fs</code> | <code>:Silicon&lt;CR&gt;</code> | Save image | 
-| <code> gb</code>|  | Git branches | 
-| <code> uc</code>|  | Toggle autocompletion | 
-| <code> uC</code> | <code>&lt;Cmd&gt;ColorizerToggle&lt;CR&gt;</code> | Toggle color highlight | 
-| <code> ud</code>|  | Toggle diagnostics | 
-| <code> ug</code>|  | Toggle signcolumn | 
-| <code> ui</code>|  | Change indent setting | 
-| <code> ul</code>|  | Toggle statusline | 
-| <code> uL</code>|  | Toggle CodeLens | 
-| <code>&</code> | <code>:&&&lt;CR&gt;</code> | Nvim builtin | 
-| <code>&lt;lt&gt;b</code>|  | Move buffer tab left | 
-| <code>&gt;b</code>|  | Move buffer tab right | 
-| <code>H</code>|  | Previous buffer | 
-| <code>L</code>|  | Next buffer | 
-| <code>Y</code> | <code>y$</code> | Nvim builtin | 
-| <code>[t</code>|  | Previous tab | 
-| <code>[g</code>|  | Previous Git hunk | 
-| <code>[b</code>|  | Previous buffer | 
-| <code>[x</code> | <code>:GitConflictPrevConflict&lt;CR&gt;</code> | Previous Git conflict | 
-| <code>\</code> | <code>&lt;Cmd&gt;split&lt;CR&gt;</code> | Horizontal Split | 
-| <code>]b</code>|  | Next buffer | 
-| <code>]t</code>|  | Next tab | 
-| <code>]g</code>|  | Next Git hunk | 
-| <code>]x</code> | <code>:GitConflictNextConflict&lt;CR&gt;</code> | Next Git conflict | 
-| <code>cx</code> | <code>:GitConflictListQf&lt;CR&gt;</code> | List Git conflicts | 
-| <code>cb</code> | <code>:GitConflictChooseBoth&lt;CR&gt;</code> |  |
-| <code>co</code> | <code>:GitConflictChooseOurs&lt;CR&gt;</code> |  |
-| <code>ct</code> | <code>:GitConflictChooseTheirs&lt;CR&gt;</code> |  |
-| <code>c0</code> | <code>:GitConflictChooseNone&lt;CR&gt;</code> |  |
-| <code>gx</code>|  | Open the file under cursor with system app | 
-| <code>gb</code>|  | Comment toggle blockwise | 
-| <code>gc</code>|  | Comment toggle linewise | 
-| <code>j</code> | <code>v:count == 0 ? 'gj' : 'j'</code> | Move cursor down | 
-| <code>k</code> | <code>v:count == 0 ? 'gk' : 'k'</code> | Move cursor up | 
-| <code>y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |  |
-| <code>zM</code>|  | Close all folds | 
-| <code>zr</code>|  | Fold less | 
-| <code>zm</code>|  | Fold more | 
-| <code>zp</code>|  | Peek fold | 
-| <code>zR</code>|  | Open all folds | 
-| <code>&#124;</code> | <code>&lt;Cmd&gt;vsplit&lt;CR&gt;</code> | Vertical Split | 
-| <code>&lt;F11&gt;</code>|  | Debugger: Step Into | 
-| <code>&lt;C-K&gt;</code>|  | Find words | 
-| <code>&lt;C-J&gt;</code> | <code>:ToggleTerm size=30 direction=horizontal&lt;CR&gt;</code> | Toggle terminal | 
-| <code>&lt;C-D&gt;</code> | <code>&lt;C-D&gt;zz</code> | Scroll down | 
-| <code>&lt;C-S&gt;</code> | <code>:w!&lt;CR&gt;</code> | Save file | 
-| <code>&lt;C-Q&gt;</code> | <code>:qa!&lt;CR&gt;</code> | Exit | 
-| <code>&lt;F23&gt;</code>|  | Debugger: Step Out | 
-| <code>&lt;F5&gt;</code>|  | Debugger: Start | 
-| <code>&lt;F10&gt;</code>|  | Debugger: Step Over | 
-| <code>&lt;C-M&gt;</code> | <code>:Mason&lt;CR&gt;</code> | Open Mason installer | 
-| <code>&lt;C-'&gt;</code> | <code>&lt;Cmd&gt;ToggleTerm&lt;CR&gt;</code> | Toggle terminal | 
-| <code>&lt;F17&gt;</code>|  | Debugger: Stop | 
-| <code>&lt;M-z&gt;</code> | <code>:set wrap!&lt;CR&gt;</code> | Toggle word wrap | 
-| <code>&lt;F21&gt;</code>|  | Debugger: Conditional Breakpoint | 
-| <code>&lt;F29&gt;</code>|  | Debugger: Restart | 
-| <code>&lt;F6&gt;</code>|  | Debugger: Pause | 
-| <code>&lt;F9&gt;</code>|  | Debugger: Toggle Breakpoint | 
-| <code>&lt;C-H&gt;</code>|  | Move to left split | 
-| <code>&lt;C-Up&gt;</code>|  | Resize split up | 
-| <code>&lt;C-Down&gt;</code>|  | Resize split down | 
-| <code>&lt;C-Left&gt;</code>|  | Resize split left | 
-| <code>&lt;C-Right&gt;</code>|  | Resize split right | 
-| <code>&lt;C-U&gt;</code> | <code>&lt;C-U&gt;zz</code> | Scroll up | 
-| <code>&lt;C-F&gt;</code>|  | Find files | 
-| <code>&lt;F7&gt;</code> | <code>&lt;Cmd&gt;ToggleTerm&lt;CR&gt;</code> | Toggle terminal | 
-| <code>&lt;Plug&gt;(git-conflict-prev-conflict)</code> | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> | Git Conflict: Previous Conflict | 
-| <code>&lt;Plug&gt;(git-conflict-next-conflict)</code> | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> | Git Conflict: Next Conflict | 
-| <code>&lt;Plug&gt;(git-conflict-theirs)</code> | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> | Git Conflict: Choose Theirs | 
-| <code>&lt;Plug&gt;(git-conflict-none)</code> | <code>&lt;Cmd&gt;GitConflictChooseNone&lt;CR&gt;</code> | Git Conflict: Choose None | 
-| <code>&lt;Plug&gt;(git-conflict-both)</code> | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> | Git Conflict: Choose Both | 
-| <code>&lt;Plug&gt;(git-conflict-ours)</code> | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> | Git Conflict: Choose Ours | 
-| <code>&lt;Plug&gt;fugitive:</code> | <code></code> |  |
-| <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |  |
-| <code>&lt;C-L&gt;</code>|  | Move to right split | 
+|  Key  | Value |
+| :---- | :---- |
+| Description | No highlight |
+| Left hand side | <code>&lt;Esc&gt;</code> |
+| Right hand side | <code>:nohl&lt;CR&gt;</code> |
+| Description | Select buffer from tabline |
+| Left hand side | <code> bb</code> |
+| Right hand side | |
+| Description | Open Git |
+| Left hand side | <code> gg</code> |
+| Right hand side | <code>:Git&lt;CR&gt;</code> |
+| Description | Close buffer from tabline |
+| Left hand side | <code> bd</code> |
+| Right hand side | |
+| Description | Horizontal split buffer from tabline |
+| Left hand side | <code> b\</code> |
+| Right hand side | |
+| Description | ToggleTerm node |
+| Left hand side | <code> tn</code> |
+| Right hand side | |
+| Description | Vertical split buffer from tabline |
+| Left hand side | <code> b&#124;</code> |
+| Right hand side | |
+| Description | ToggleTerm python |
+| Left hand side | <code> tp</code> |
+| Right hand side | |
+| Description | Home Screen |
+| Left hand side | <code> h</code> |
+| Right hand side | |
+| Description | ToggleTerm float |
+| Left hand side | <code> tf</code> |
+| Right hand side | <code>&lt;Cmd&gt;ToggleTerm direction=float&lt;CR&gt;</code> |
+| Description | Toggle comment line |
+| Left hand side | <code> /</code> |
+| Right hand side | |
+| Description | Save |
+| Left hand side | <code> w</code> |
+| Right hand side | <code>&lt;Cmd&gt;w&lt;CR&gt;</code> |
+| Description | Find buffers |
+| Left hand side | <code> fb</code> |
+| Right hand side | |
+| Description | Find words |
+| Left hand side | <code> fw</code> |
+| Right hand side | |
+| Description | Find commands |
+| Left hand side | <code> fC</code> |
+| Right hand side | |
+| Description | View Git blame |
+| Left hand side | <code> gl</code> |
+| Right hand side | |
+| Description | View full Git blame |
+| Left hand side | <code> gL</code> |
+| Right hand side | |
+| Description | Find help |
+| Left hand side | <code> fh</code> |
+| Right hand side | |
+| Description | Preview Git hunk |
+| Left hand side | <code> gp</code> |
+| Right hand side | |
+| Description | Find keymaps |
+| Left hand side | <code> fk</code> |
+| Right hand side | |
+| Description | Reset Git hunk |
+| Left hand side | <code> gh</code> |
+| Right hand side | |
+| Description | Reset Git buffer |
+| Left hand side | <code> gr</code> |
+| Right hand side | |
+| Description | Stage Git hunk |
+| Left hand side | <code> gs</code> |
+| Right hand side | |
+| Description | Stage Git buffer |
+| Left hand side | <code> gS</code> |
+| Right hand side | |
+| Description | Unstage Git hunk |
+| Left hand side | <code> gu</code> |
+| Right hand side | |
+| Description | View Git diff |
+| Left hand side | <code> gd</code> |
+| Right hand side | |
+| Description | Toggle Explorer |
+| Left hand side | <code> e</code> |
+| Right hand side | <code>&lt;Cmd&gt;Neotree toggle&lt;CR&gt;</code> |
+| Description | New tab |
+| Left hand side | <code> bn</code> |
+| Right hand side | <code>&lt;Cmd&gt;tabnew&lt;CR&gt;</code> |
+| Description | Toggle Explorer Focus |
+| Left hand side | <code> o</code> |
+| Right hand side | |
+| Description | Pick to close |
+| Left hand side | <code> bD</code> |
+| Right hand side | |
+| Description | Clear Breakpoints |
+| Left hand side | <code> dB</code> |
+| Right hand side | |
+| Description | Start/Continue (F5) |
+| Left hand side | <code> dc</code> |
+| Right hand side | |
+| Description | Git status |
+| Left hand side | <code> gt</code> |
+| Right hand side | |
+| Description | Conditional Breakpoint (S-F9) |
+| Left hand side | <code> dC</code> |
+| Right hand side | |
+| Description | Step Into (F11) |
+| Left hand side | <code> di</code> |
+| Right hand side | |
+| Description | Find words in all files |
+| Left hand side | <code> fW</code> |
+| Right hand side | |
+| Description | Step Over (F10) |
+| Left hand side | <code> do</code> |
+| Right hand side | |
+| Description | Find themes |
+| Left hand side | <code> ft</code> |
+| Right hand side | |
+| Description | Step Out (S-F11) |
+| Left hand side | <code> dO</code> |
+| Right hand side | |
+| Description | Close Session |
+| Left hand side | <code> dq</code> |
+| Right hand side | |
+| Description | Toggle Breakpoint (F9) |
+| Left hand side | <code> db</code> |
+| Right hand side | |
+| Description | Terminate Session (S-F5) |
+| Left hand side | <code> dQ</code> |
+| Right hand side | |
+| Description | By extension |
+| Left hand side | <code> bse</code> |
+| Right hand side | |
+| Description | Pause (F6) |
+| Left hand side | <code> dp</code> |
+| Right hand side | |
+| Description | Restart (C-F5) |
+| Left hand side | <code> dr</code> |
+| Right hand side | |
+| Description | Toggle REPL |
+| Left hand side | <code> dR</code> |
+| Right hand side | |
+| Description | Open terminal with tab |
+| Left hand side | <code> ;</code> |
+| Right hand side | <code>:2ToggleTerm size=30 direction=horizontal&lt;CR&gt;</code> |
+| Description | Run To Cursor |
+| Left hand side | <code> ds</code> |
+| Right hand side | |
+| Description | Evaluate Input |
+| Left hand side | <code> dE</code> |
+| Right hand side | |
+| Description | Toggle Debugger UI |
+| Left hand side | <code> du</code> |
+| Right hand side | |
+| Description | Quit |
+| Left hand side | <code> q</code> |
+| Right hand side | <code>&lt;Cmd&gt;confirm q&lt;CR&gt;</code> |
+| Description | Debugger Hover |
+| Left hand side | <code> dh</code> |
+| Right hand side | |
+| Description | Find files |
+| Left hand side | <code> ff</code> |
+| Right hand side | |
+| Description | Toggle color highlight |
+| Left hand side | <code> uC</code> |
+| Right hand side | <code>&lt;Cmd&gt;ColorizerToggle&lt;CR&gt;</code> |
+| Description | Load last session |
+| Left hand side | <code> Sl</code> |
+| Right hand side | <code>&lt;Cmd&gt;SessionManager! load_last_session&lt;CR&gt;</code> |
+| Description | Save this session |
+| Left hand side | <code> Ss</code> |
+| Right hand side | <code>&lt;Cmd&gt;SessionManager! save_current_session&lt;CR&gt;</code> |
+| Description | ToggleTerm vertical split |
+| Left hand side | <code> tv</code> |
+| Right hand side | <code>&lt;Cmd&gt;ToggleTerm size=80 direction=vertical&lt;CR&gt;</code> |
+| Description | Delete session |
+| Left hand side | <code> Sd</code> |
+| Right hand side | <code>&lt;Cmd&gt;SessionManager! delete_session&lt;CR&gt;</code> |
+| Description | Toggle statusline |
+| Left hand side | <code> ul</code> |
+| Right hand side | |
+| Description | Find word under cursor |
+| Left hand side | <code> fc</code> |
+| Right hand side | |
+| Description | Search sessions |
+| Left hand side | <code> Sf</code> |
+| Right hand side | <code>&lt;Cmd&gt;SessionManager! load_session&lt;CR&gt;</code> |
+| Description | Toggle CodeLens |
+| Left hand side | <code> uL</code> |
+| Right hand side | |
+| Description | AstroNvim Version |
+| Left hand side | <code> pv</code> |
+| Right hand side | <code>&lt;Cmd&gt;AstroVersion&lt;CR&gt;</code> |
+| Description | Load current directory session |
+| Left hand side | <code> S.</code> |
+| Right hand side | <code>&lt;Cmd&gt;SessionManager! load_current_dir_session&lt;CR&gt;</code> |
+| Description | Change line numbering |
+| Left hand side | <code> un</code> |
+| Right hand side | |
+| Description | ToggleTerm horizontal split |
+| Left hand side | <code> th</code> |
+| Right hand side | <code>&lt;Cmd&gt;ToggleTerm size=10 direction=horizontal&lt;CR&gt;</code> |
+| Description | Make it rain |
+| Left hand side | <code> uR</code> |
+| Right hand side | <code>:CellularAutomaton make_it_rain&lt;CR&gt;</code> |
+| Description | Toggle Notifications |
+| Left hand side | <code> uN</code> |
+| Right hand side | |
+| Description | Toggle autopairs |
+| Left hand side | <code> ua</code> |
+| Right hand side | |
+| Description | Toggle paste mode |
+| Left hand side | <code> up</code> |
+| Right hand side | |
+| Description | Save image |
+| Left hand side | <code> fs</code> |
+| Right hand side | <code>:Silicon&lt;CR&gt;</code> |
+| Description | Toggle background |
+| Left hand side | <code> ub</code> |
+| Right hand side | |
+| Description | Toggle spellcheck |
+| Left hand side | <code> us</code> |
+| Right hand side | |
+| Description | Find media files |
+| Left hand side | <code> fM</code> |
+| Right hand side | <code>:Telescope media_files&lt;CR&gt;</code> |
+| Description | Toggle autocompletion |
+| Left hand side | <code> uc</code> |
+| Right hand side | |
+| Description | Toggle conceal |
+| Left hand side | <code> uS</code> |
+| Right hand side | |
+| Description | Toggle tabline |
+| Left hand side | <code> ut</code> |
+| Right hand side | |
+| Description | Toggle diagnostics |
+| Left hand side | <code> ud</code> |
+| Right hand side | |
+| Description | Toggle signcolumn |
+| Left hand side | <code> ug</code> |
+| Right hand side | |
+| Description | Find words in current buffer |
+| Left hand side | <code> f/</code> |
+| Right hand side | |
+| Description | Toggle wrap |
+| Left hand side | <code> uw</code> |
+| Right hand side | |
+| Description | Find marks |
+| Left hand side | <code> f'</code> |
+| Right hand side | |
+| Description | Toggle syntax highlighting (buffer) |
+| Left hand side | <code> uy</code> |
+| Right hand side | |
+| Description | Search symbols |
+| Left hand side | <code> ls</code> |
+| Right hand side | |
+| Description | ToggleTerm btm |
+| Left hand side | <code> tt</code> |
+| Right hand side | |
+| Description | Toggle foldcolumn |
+| Left hand side | <code> uh</code> |
+| Right hand side | |
+| Description | ToggleTerm gdu |
+| Left hand side | <code> tu</code> |
+| Right hand side | |
+| Description | By buffer number |
+| Left hand side | <code> bsi</code> |
+| Right hand side | |
+| Description | ToggleTerm lazygit |
+| Left hand side | <code> tl</code> |
+| Right hand side | |
+| Description | Git commits (repository) |
+| Left hand side | <code> gc</code> |
+| Right hand side | |
+| Description | Change indent setting |
+| Left hand side | <code> ui</code> |
+| Right hand side | |
+| Description | Git branches |
+| Left hand side | <code> gb</code> |
+| Right hand side | |
+| Description | Plugins Install |
+| Left hand side | <code> pi</code> |
+| Right hand side | |
+| Description | New File |
+| Left hand side | <code> n</code> |
+| Right hand side | <code>&lt;Cmd&gt;enew&lt;CR&gt;</code> |
+| Description | Plugins Status |
+| Left hand side | <code> ps</code> |
+| Right hand side | |
+| Description | Plugins Sync |
+| Left hand side | <code> pS</code> |
+| Right hand side | |
+| Description | Plugins Check Updates |
+| Left hand side | <code> pu</code> |
+| Right hand side | |
+| Description | Resume previous search |
+| Left hand side | <code> f&lt;CR&gt;</code> |
+| Right hand side | |
+| Description | Plugins Update |
+| Left hand side | <code> pU</code> |
+| Right hand side | |
+| Description | Reload AstroNvim |
+| Left hand side | <code> r</code> |
+| Right hand side | <code>:AstroReload&lt;CR&gt;</code> |
+| Description | Update Plugins and Mason Packages |
+| Left hand side | <code> pa</code> |
+| Right hand side | <code>&lt;Cmd&gt;AstroUpdatePackages&lt;CR&gt;</code> |
+| Description | Mason Installer |
+| Left hand side | <code> pm</code> |
+| Right hand side | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
+| Description | AstroNvim Update |
+| Left hand side | <code> pA</code> |
+| Right hand side | <code>&lt;Cmd&gt;AstroUpdate&lt;CR&gt;</code> |
+| Description | Toggle URL highlight |
+| Left hand side | <code> uu</code> |
+| Right hand side | |
+| Description | Find AstroNvim config files |
+| Left hand side | <code> fa</code> |
+| Right hand side | |
+| Description | Game of life |
+| Left hand side | <code> uG</code> |
+| Right hand side | <code>:CellularAutomaton game_of_life&lt;CR&gt;</code> |
+| Description | AstroNvim Changelog |
+| Left hand side | <code> pl</code> |
+| Right hand side | <code>&lt;Cmd&gt;AstroChangelog&lt;CR&gt;</code> |
+| Description | Find all files |
+| Left hand side | <code> fF</code> |
+| Right hand side | |
+| Description | Close buffer |
+| Left hand side | <code> c</code> |
+| Right hand side | |
+| Description | Toggle Zen mode |
+| Left hand side | <code> z</code> |
+| Right hand side | <code>:ZenMode&lt;CR&gt;</code> |
+| Description | Show markdown preview |
+| Left hand side | <code> m</code> |
+| Right hand side | <code>:MarkdownPreview&lt;CR&gt;</code> |
+| Description | Toggle undo history |
+| Left hand side | <code> U</code> |
+| Right hand side | <code>:UndotreeToggle&lt;CR&gt;</code> |
+| Description | Mason Update |
+| Left hand side | <code> pM</code> |
+| Right hand side | <code>&lt;Cmd&gt;MasonUpdateAll&lt;CR&gt;</code> |
+| Description | Load the last session |
+| Left hand side | <code> s</code> |
+| Right hand side | <code>:SessionManager! load_current_dir_session&lt;CR&gt;</code> |
+| Description | Git commits (current file) |
+| Left hand side | <code> gC</code> |
+| Right hand side | |
+| Description | Force close buffer |
+| Left hand side | <code> C</code> |
+| Right hand side | |
+| Description | Close all buffers except current |
+| Left hand side | <code> bc</code> |
+| Right hand side | |
+| Description | Close all buffers |
+| Left hand side | <code> bC</code> |
+| Right hand side | |
+| Description | Close all buffers to the left |
+| Left hand side | <code> bl</code> |
+| Right hand side | |
+| Description | Find man |
+| Left hand side | <code> fm</code> |
+| Right hand side | |
+| Description | Previous buffer |
+| Left hand side | <code> bp</code> |
+| Right hand side | |
+| Description | Find notifications |
+| Left hand side | <code> fn</code> |
+| Right hand side | |
+| Description | Close all buffers to the right |
+| Left hand side | <code> br</code> |
+| Right hand side | |
+| Description | Find history |
+| Left hand side | <code> fo</code> |
+| Right hand side | |
+| Description | Find registers |
+| Left hand side | <code> fr</code> |
+| Right hand side | |
+| Description | By relative path |
+| Left hand side | <code> bsr</code> |
+| Right hand side | |
+| Description | By full path |
+| Left hand side | <code> bsp</code> |
+| Right hand side | |
+| Description | Symbols outline |
+| Left hand side | <code> lS</code> |
+| Right hand side | |
+| Description | By modification |
+| Left hand side | <code> bsm</code> |
+| Right hand side | |
+| Description | Nvim builtin |
+| Left hand side | <code>&</code> |
+| Right hand side | <code>:&&&lt;CR&gt;</code> |
+| Description | Move buffer tab left |
+| Left hand side | <code>&lt;lt&gt;b</code> |
+| Right hand side | |
+| Description | Move buffer tab right |
+| Left hand side | <code>&gt;b</code> |
+| Right hand side | |
+| Description | Previous buffer |
+| Left hand side | <code>H</code> |
+| Right hand side | |
+| Description | Next buffer |
+| Left hand side | <code>L</code> |
+| Right hand side | |
+| Description | Nvim builtin |
+| Left hand side | <code>Y</code> |
+| Right hand side | <code>y$</code> |
+| Description | Previous tab |
+| Left hand side | <code>[t</code> |
+| Right hand side | |
+| Description | Previous Git hunk |
+| Left hand side | <code>[g</code> |
+| Right hand side | |
+| Description | Previous buffer |
+| Left hand side | <code>[b</code> |
+| Right hand side | |
+| Description | Previous Git conflict |
+| Left hand side | <code>[x</code> |
+| Right hand side | <code>:GitConflictPrevConflict&lt;CR&gt;</code> |
+| Description | Horizontal Split |
+| Left hand side | <code>\</code> |
+| Right hand side | <code>&lt;Cmd&gt;split&lt;CR&gt;</code> |
+| Description | Next tab |
+| Left hand side | <code>]t</code> |
+| Right hand side | |
+| Description | Next Git hunk |
+| Left hand side | <code>]g</code> |
+| Right hand side | |
+| Description | Next buffer |
+| Left hand side | <code>]b</code> |
+| Right hand side | |
+| Description | Next Git conflict |
+| Left hand side | <code>]x</code> |
+| Right hand side | <code>:GitConflictNextConflict&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>cb</code> |
+| Right hand side | <code>:GitConflictChooseBoth&lt;CR&gt;</code> |
+| Description | List Git conflicts |
+| Left hand side | <code>cx</code> |
+| Right hand side | <code>:GitConflictListQf&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>co</code> |
+| Right hand side | <code>:GitConflictChooseOurs&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>c0</code> |
+| Right hand side | <code>:GitConflictChooseNone&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>ct</code> |
+| Right hand side | <code>:GitConflictChooseTheirs&lt;CR&gt;</code> |
+| Description | Open the file under cursor with system app |
+| Left hand side | <code>gx</code> |
+| Right hand side | |
+| Description | Comment toggle linewise |
+| Left hand side | <code>gc</code> |
+| Right hand side | |
+| Description | Comment toggle blockwise |
+| Left hand side | <code>gb</code> |
+| Right hand side | |
+| Description | Move cursor down |
+| Left hand side | <code>j</code> |
+| Right hand side | <code>v:count == 0 ? 'gj' : 'j'</code> |
+| Description | Move cursor up |
+| Left hand side | <code>k</code> |
+| Right hand side | <code>v:count == 0 ? 'gk' : 'k'</code> |
+| Description | |
+| Left hand side | <code>y&lt;C-G&gt;</code> |
+| Right hand side | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+| Description | Fold more |
+| Left hand side | <code>zm</code> |
+| Right hand side | |
+| Description | Open all folds |
+| Left hand side | <code>zR</code> |
+| Right hand side | |
+| Description | Close all folds |
+| Left hand side | <code>zM</code> |
+| Right hand side | |
+| Description | Fold less |
+| Left hand side | <code>zr</code> |
+| Right hand side | |
+| Description | Peek fold |
+| Left hand side | <code>zp</code> |
+| Right hand side | |
+| Description | Vertical Split |
+| Left hand side | <code>&#124;</code> |
+| Right hand side | <code>&lt;Cmd&gt;vsplit&lt;CR&gt;</code> |
+| Description | Find words |
+| Left hand side | <code>&lt;C-K&gt;</code> |
+| Right hand side | |
+| Description | Scroll down |
+| Left hand side | <code>&lt;C-D&gt;</code> |
+| Right hand side | <code>&lt;C-D&gt;zz</code> |
+| Description | Resize split right |
+| Left hand side | <code>&lt;C-Right&gt;</code> |
+| Right hand side | |
+| Description | Toggle terminal |
+| Left hand side | <code>&lt;C-'&gt;</code> |
+| Right hand side | <code>&lt;Cmd&gt;ToggleTerm&lt;CR&gt;</code> |
+| Description | Debugger: Conditional Breakpoint |
+| Left hand side | <code>&lt;F21&gt;</code> |
+| Right hand side | |
+| Description | Debugger: Restart |
+| Left hand side | <code>&lt;F29&gt;</code> |
+| Right hand side | |
+| Description | Debugger: Pause |
+| Left hand side | <code>&lt;F6&gt;</code> |
+| Right hand side | |
+| Description | Debugger: Toggle Breakpoint |
+| Left hand side | <code>&lt;F9&gt;</code> |
+| Right hand side | |
+| Description | Debugger: Step Over |
+| Left hand side | <code>&lt;F10&gt;</code> |
+| Right hand side | |
+| Description | Debugger: Step Into |
+| Left hand side | <code>&lt;F11&gt;</code> |
+| Right hand side | |
+| Description | Debugger: Step Out |
+| Left hand side | <code>&lt;F23&gt;</code> |
+| Right hand side | |
+| Description | Toggle word wrap |
+| Left hand side | <code>&lt;M-z&gt;</code> |
+| Right hand side | <code>:set wrap!&lt;CR&gt;</code> |
+| Description | Debugger: Stop |
+| Left hand side | <code>&lt;F17&gt;</code> |
+| Right hand side | |
+| Description | Debugger: Start |
+| Left hand side | <code>&lt;F5&gt;</code> |
+| Right hand side | |
+| Description | Resize split down |
+| Left hand side | <code>&lt;C-Down&gt;</code> |
+| Right hand side | |
+| Description | Move to left split |
+| Left hand side | <code>&lt;C-H&gt;</code> |
+| Right hand side | |
+| Description | Resize split up |
+| Left hand side | <code>&lt;C-Up&gt;</code> |
+| Right hand side | |
+| Description | Resize split left |
+| Left hand side | <code>&lt;C-Left&gt;</code> |
+| Right hand side | |
+| Description | Save file |
+| Left hand side | <code>&lt;C-S&gt;</code> |
+| Right hand side | <code>:w!&lt;CR&gt;</code> |
+| Description | Exit |
+| Left hand side | <code>&lt;C-Q&gt;</code> |
+| Right hand side | <code>:qa!&lt;CR&gt;</code> |
+| Description | Toggle terminal |
+| Left hand side | <code>&lt;C-J&gt;</code> |
+| Right hand side | <code>:ToggleTerm size=30 direction=horizontal&lt;CR&gt;</code> |
+| Description | Find files |
+| Left hand side | <code>&lt;C-F&gt;</code> |
+| Right hand side | |
+| Description | Open Mason installer |
+| Left hand side | <code>&lt;C-M&gt;</code> |
+| Right hand side | <code>:Mason&lt;CR&gt;</code> |
+| Description | Scroll up |
+| Left hand side | <code>&lt;C-U&gt;</code> |
+| Right hand side | <code>&lt;C-U&gt;zz</code> |
+| Description | Toggle terminal |
+| Left hand side | <code>&lt;F7&gt;</code> |
+| Right hand side | <code>&lt;Cmd&gt;ToggleTerm&lt;CR&gt;</code> |
+| Description | Git Conflict: Previous Conflict |
+| Left hand side | <code>&lt;Plug&gt;(git-conflict-prev-conflict)</code> |
+| Right hand side | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
+| Description | Git Conflict: Next Conflict |
+| Left hand side | <code>&lt;Plug&gt;(git-conflict-next-conflict)</code> |
+| Right hand side | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
+| Description | Git Conflict: Choose Theirs |
+| Left hand side | <code>&lt;Plug&gt;(git-conflict-theirs)</code> |
+| Right hand side | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> |
+| Description | Git Conflict: Choose None |
+| Left hand side | <code>&lt;Plug&gt;(git-conflict-none)</code> |
+| Right hand side | <code>&lt;Cmd&gt;GitConflictChooseNone&lt;CR&gt;</code> |
+| Description | Git Conflict: Choose Both |
+| Left hand side | <code>&lt;Plug&gt;(git-conflict-both)</code> |
+| Right hand side | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
+| Description | Git Conflict: Choose Ours |
+| Left hand side | <code>&lt;Plug&gt;(git-conflict-ours)</code> |
+| Right hand side | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;fugitive:</code> |
+| Right hand side | <code></code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
+| Right hand side | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+| Description | Move to right split |
+| Left hand side | <code>&lt;C-L&gt;</code> |
+| Right hand side | |
 
 #### visual mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code>&lt;Tab&gt;</code> | <code>&gt;gv</code> | Indent line | 
-| <code> p</code> | <code>"0p</code> | Paste without replacing the buffer | 
-| <code> s</code> | <code>:'&lt;lt&gt;,'&gt;Silicon&lt;CR&gt;</code> | Save image | 
-| <code> dE</code>|  | Evaluate Input | 
-| <code> /</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require('Comment.api').toggle.linewise(vim.fn.visualmode())&lt;CR&gt;</code> | Toggle comment for selection | 
-| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>gc</code>|  | Comment toggle linewise | 
-| <code>gb</code>|  | Comment toggle blockwise | 
-| <code>&lt;C-R&gt;</code> | <code>"hy:%s/&lt;C-R&gt;h//gc&lt;Left&gt;&lt;Left&gt;&lt;Left&gt;</code> | Replace | 
-| <code>&lt;S-Tab&gt;</code> | <code>&lt;lt&gt;gv</code> | Unindent line | 
+|  Key  | Value |
+| :---- | :---- |
+| Description | Indent line |
+| Left hand side | <code>&lt;Tab&gt;</code> |
+| Right hand side | <code>&gt;gv</code> |
+| Description | Toggle comment for selection |
+| Left hand side | <code> /</code> |
+| Right hand side | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require('Comment.api').toggle.linewise(vim.fn.visualmode())&lt;CR&gt;</code> |
+| Description | Evaluate Input |
+| Left hand side | <code> dE</code> |
+| Right hand side | |
+| Description | Save image |
+| Left hand side | <code> s</code> |
+| Right hand side | <code>:'&lt;lt&gt;,'&gt;Silicon&lt;CR&gt;</code> |
+| Description | Paste without replacing the buffer |
+| Left hand side | <code> p</code> |
+| Right hand side | <code>"0p</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>#</code> |
+| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>*</code> |
+| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | Comment toggle linewise |
+| Left hand side | <code>gc</code> |
+| Right hand side | |
+| Description | Comment toggle blockwise |
+| Left hand side | <code>gb</code> |
+| Right hand side | |
+| Description | Unindent line |
+| Left hand side | <code>&lt;S-Tab&gt;</code> |
+| Right hand side | <code>&lt;lt&gt;gv</code> |
+| Description | Replace |
+| Left hand side | <code>&lt;C-R&gt;</code> |
+| Right hand side | <code>"hy:%s/&lt;C-R&gt;h//gc&lt;Left&gt;&lt;Left&gt;&lt;Left&gt;</code> |
 
 #### operator mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+|  Key  | Value |
+| :---- | :---- |

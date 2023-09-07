@@ -74,171 +74,483 @@ Author of [tsc.nvim](https://github.com/dmmulroy/tsc.nvim), asynchronous TypeScr
 
 #### normal mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code> oc</code>|  |  |
-| <code> [</code>|  | Illuminate: Goto previous reference | 
-| <code> ]</code>|  | Illuminate: Goto next reference | 
-| <code> so</code> | <code>:SymbolsOutline&lt;CR&gt;</code> |  |
-| <code> ss</code>|  | [S]earch [S]pelling suggestions | 
-| <code> /</code>|  | [/] Fuzzily search in current buffer] | 
-| <code> sc</code>|  |  |
-| <code> sd</code>|  | [S]earch [D]iagnostics | 
-| <code> sg</code>|  | [S]earch by [G]rep | 
-| <code> sw</code>|  | [S]earch current [W]ord | 
-| <code> sh</code>|  | [S]earch [H]elp | 
-| <code> sf</code>|  | [S]earch [F]iles | 
-| <code> sb</code>|  | [S]earch Open [B]uffers | 
-| <code> ?</code>|  | [?] Find recently opened files | 
-| <code> gb</code> | <code>:Gitsigns toggle_current_line_blame&lt;CR&gt;</code> |  |
-| <code> 5</code>|  |  |
-| <code> 4</code>|  |  |
-| <code> 3</code>|  |  |
-| <code> 2</code>|  |  |
-| <code> 1</code>|  |  |
-| <code> hc</code>|  |  |
-| <code> hr</code>|  |  |
-| <code> ha</code>|  |  |
-| <code> ho</code>|  |  |
-| <code> tc</code> | <code>:TSC&lt;CR&gt;</code> |  |
-| <code> rw</code> | <code>:RotateWindows&lt;CR&gt;</code> | [R]otate [W]indows | 
-| <code> f</code> | <code>:Format&lt;CR&gt;</code> |  |
-| <code> =</code> | <code>&lt;C-W&gt;=</code> |  |
-| <code> m</code> | <code>:MaximizerToggle&lt;CR&gt;</code> |  |
-| <code> cc</code> | <code>:cclose&lt;CR&gt;zz</code> |  |
-| <code> co</code> | <code>:copen&lt;CR&gt;zz</code> |  |
-| <code> cp</code> | <code>:cprevious&lt;CR&gt;zz</code> |  |
-| <code> cn</code> | <code>:cnext&lt;CR&gt;zz</code> |  |
-| <code> ld</code>|  | Quickfix [L]ist [D]iagnostics | 
-| <code> d</code>|  |  |
-| <code> no</code> | <code>&lt;Cmd&gt;noh&lt;CR&gt;</code> |  |
-| <code> E</code> | <code>&lt;Cmd&gt;Neotree action=focus&lt;CR&gt;</code> |  |
-| <code> e</code> | <code>&lt;Cmd&gt;Neotree toggle&lt;CR&gt;</code> |  |
-| <code> z</code> | <code>&lt;Cmd&gt;wq&lt;CR&gt;</code> |  |
-| <code> q</code> | <code>&lt;Cmd&gt;q&lt;CR&gt;</code> |  |
-| <code> w</code> | <code>&lt;Cmd&gt;w&lt;CR&gt;</code> |  |
-| <code> </code> | <code></code> |  |
-| <code>#</code> | <code>#zz</code> |  |
-| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |  |
-| <code>&</code> | <code>:&&&lt;CR&gt;</code> | Nvim builtin | 
-| <code>*</code> | <code>*zz</code> |  |
-| <code>G</code> | <code>Gzz</code> |  |
-| <code>H</code> | <code>^</code> |  |
-| <code>L</code> | <code>$</code> |  |
-| <code>N</code> | <code>Nzz</code> |  |
-| <code>S</code>|  |  |
-| <code>U</code> | <code>&lt;C-R&gt;</code> |  |
-| <code>Y</code> | <code>y$</code> | Nvim builtin | 
-| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |  |
-| <code>[w</code>|  |  |
-| <code>[e</code>|  |  |
-| <code>[d</code>|  |  |
-| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |  |
-| <code>]w</code>|  |  |
-| <code>]e</code>|  |  |
-| <code>]d</code>|  |  |
-| <code>cS</code> | <code>&lt;Plug&gt;CSurround</code> |  |
-| <code>cs</code> | <code>&lt;Plug&gt;Csurround</code> |  |
-| <code>ds</code> | <code>&lt;Plug&gt;Dsurround</code> |  |
-| <code>gcA</code>|  | Comment insert end of line | 
-| <code>gcO</code>|  | Comment insert above | 
-| <code>gco</code>|  | Comment insert below | 
-| <code>gbc</code>|  | Comment toggle current block | 
-| <code>gcc</code>|  | Comment toggle current line | 
-| <code>gb</code> | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> | Comment toggle blockwise | 
-| <code>gc</code> | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> | Comment toggle linewise | 
-| <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |  |
-| <code>gx</code> | <code>:sil !open &lt;lt&gt;cWORD&gt;&lt;CR&gt;</code> |  |
-| <code>gg</code> | <code>ggzz</code> |  |
-| <code>n</code> | <code>nzz</code> |  |
-| <code>ySS</code> | <code>&lt;Plug&gt;YSsurround</code> |  |
-| <code>ySs</code> | <code>&lt;Plug&gt;YSsurround</code> |  |
-| <code>yss</code> | <code>&lt;Plug&gt;Yssurround</code> |  |
-| <code>yS</code> | <code>&lt;Plug&gt;YSurround</code> |  |
-| <code>ys</code> | <code>&lt;Plug&gt;Ysurround</code> |  |
-| <code>{</code> | <code>{zz</code> |  |
-| <code>}</code> | <code>}zz</code> |  |
-| <code>&lt;Plug&gt;YSurround</code> | <code>&lt;SNR&gt;48_opfunc2('setup')</code> |  |
-| <code>&lt;Plug&gt;Ysurround</code> | <code>&lt;SNR&gt;48_opfunc('setup')</code> |  |
-| <code>&lt;Plug&gt;YSsurround</code> | <code>&lt;SNR&gt;48_opfunc2('setup').'_'</code> |  |
-| <code>&lt;Plug&gt;Yssurround</code> | <code>'^'.v:count1.&lt;SNR&gt;48_opfunc('setup').'g_'</code> |  |
-| <code>&lt;Plug&gt;CSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;48_changesurround(1)&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;Csurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;48_changesurround()&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;Dsurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;48_dosurround(&lt;SNR&gt;48_inputtarget())&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;SurroundRepeat</code> | <code>.</code> |  |
-| <code>&lt;F3&gt;</code> | <code>:MaximizerToggle&lt;CR&gt;</code> |  |
-| <code>&lt;M-p&gt;</code>|  | Move to previous reference | 
-| <code>&lt;M-n&gt;</code>|  | Move to next reference | 
-| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;luasnip-expand-repeat</code>|  |  |
-| <code>&lt;Plug&gt;luasnip-delete-check</code>|  |  |
-| <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code>|  | Comment toggle blockwise with count | 
-| <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code>|  | Comment toggle linewise with count | 
-| <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code>|  | Comment toggle current block | 
-| <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code>|  | Comment toggle current line | 
-| <code>&lt;Plug&gt;(comment_toggle_blockwise)</code>|  | Comment toggle blockwise | 
-| <code>&lt;Plug&gt;(comment_toggle_linewise)</code>|  | Comment toggle linewise | 
-| <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |  |
-| <code>&lt;C-O&gt;</code> | <code>&lt;C-O&gt;zz</code> |  |
-| <code>&lt;C-I&gt;</code> | <code>&lt;Tab&gt;zz</code> |  |
-| <code>&lt;C-D&gt;</code> | <code>&lt;C-D&gt;zz</code> |  |
-| <code>&lt;C-U&gt;</code> | <code>&lt;C-U&gt;zz</code> |  |
-| <code>&lt;C-'&gt;</code> | <code>&lt;C-^&gt;</code> | Switch to last buffer | 
-| <code>&lt;C-H&gt;</code>|  |  |
-| <code>&lt;C-K&gt;</code>|  |  |
-| <code>&lt;C-J&gt;</code>|  |  |
-| <code>&lt;C-L&gt;</code>|  |  |
+|  Key  | Value |
+| :---- | :---- |
+| Description | |
+| Left hand side | <code> oc</code> |
+| Right hand side | |
+| Description | Illuminate: Goto previous reference |
+| Left hand side | <code> [</code> |
+| Right hand side | |
+| Description | Illuminate: Goto next reference |
+| Left hand side | <code> ]</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> so</code> |
+| Right hand side | <code>:SymbolsOutline&lt;CR&gt;</code> |
+| Description | [S]earch [S]pelling suggestions |
+| Left hand side | <code> ss</code> |
+| Right hand side | |
+| Description | [/] Fuzzily search in current buffer] |
+| Left hand side | <code> /</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> sc</code> |
+| Right hand side | |
+| Description | [S]earch [D]iagnostics |
+| Left hand side | <code> sd</code> |
+| Right hand side | |
+| Description | [S]earch by [G]rep |
+| Left hand side | <code> sg</code> |
+| Right hand side | |
+| Description | [S]earch current [W]ord |
+| Left hand side | <code> sw</code> |
+| Right hand side | |
+| Description | [S]earch [H]elp |
+| Left hand side | <code> sh</code> |
+| Right hand side | |
+| Description | [S]earch [F]iles |
+| Left hand side | <code> sf</code> |
+| Right hand side | |
+| Description | [S]earch Open [B]uffers |
+| Left hand side | <code> sb</code> |
+| Right hand side | |
+| Description | [?] Find recently opened files |
+| Left hand side | <code> ?</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> gb</code> |
+| Right hand side | <code>:Gitsigns toggle_current_line_blame&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> 5</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> 4</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> 3</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> 2</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> 1</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> hc</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> hr</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> ha</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> ho</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> tc</code> |
+| Right hand side | <code>:TSC&lt;CR&gt;</code> |
+| Description | [R]otate [W]indows |
+| Left hand side | <code> rw</code> |
+| Right hand side | <code>:RotateWindows&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> f</code> |
+| Right hand side | <code>:Format&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> =</code> |
+| Right hand side | <code>&lt;C-W&gt;=</code> |
+| Description | |
+| Left hand side | <code> m</code> |
+| Right hand side | <code>:MaximizerToggle&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> cc</code> |
+| Right hand side | <code>:cclose&lt;CR&gt;zz</code> |
+| Description | |
+| Left hand side | <code> co</code> |
+| Right hand side | <code>:copen&lt;CR&gt;zz</code> |
+| Description | |
+| Left hand side | <code> cp</code> |
+| Right hand side | <code>:cprevious&lt;CR&gt;zz</code> |
+| Description | |
+| Left hand side | <code> cn</code> |
+| Right hand side | <code>:cnext&lt;CR&gt;zz</code> |
+| Description | Quickfix [L]ist [D]iagnostics |
+| Left hand side | <code> ld</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> d</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> no</code> |
+| Right hand side | <code>&lt;Cmd&gt;noh&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> E</code> |
+| Right hand side | <code>&lt;Cmd&gt;Neotree action=focus&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> e</code> |
+| Right hand side | <code>&lt;Cmd&gt;Neotree toggle&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> z</code> |
+| Right hand side | <code>&lt;Cmd&gt;wq&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> q</code> |
+| Right hand side | <code>&lt;Cmd&gt;q&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> w</code> |
+| Right hand side | <code>&lt;Cmd&gt;w&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> </code> |
+| Right hand side | <code></code> |
+| Description | |
+| Left hand side | <code>#</code> |
+| Right hand side | <code>#zz</code> |
+| Description | |
+| Left hand side | <code>%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>&</code> |
+| Right hand side | <code>:&&&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>*</code> |
+| Right hand side | <code>*zz</code> |
+| Description | |
+| Left hand side | <code>G</code> |
+| Right hand side | <code>Gzz</code> |
+| Description | |
+| Left hand side | <code>H</code> |
+| Right hand side | <code>^</code> |
+| Description | |
+| Left hand side | <code>L</code> |
+| Right hand side | <code>$</code> |
+| Description | |
+| Left hand side | <code>N</code> |
+| Right hand side | <code>Nzz</code> |
+| Description | |
+| Left hand side | <code>S</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>U</code> |
+| Right hand side | <code>&lt;C-R&gt;</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>Y</code> |
+| Right hand side | <code>y$</code> |
+| Description | |
+| Left hand side | <code>[%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+| Description | |
+| Left hand side | <code>[w</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>[e</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>[d</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>]%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+| Description | |
+| Left hand side | <code>]w</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>]e</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>]d</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>cS</code> |
+| Right hand side | <code>&lt;Plug&gt;CSurround</code> |
+| Description | |
+| Left hand side | <code>cs</code> |
+| Right hand side | <code>&lt;Plug&gt;Csurround</code> |
+| Description | |
+| Left hand side | <code>ds</code> |
+| Right hand side | <code>&lt;Plug&gt;Dsurround</code> |
+| Description | Comment insert end of line |
+| Left hand side | <code>gcA</code> |
+| Right hand side | |
+| Description | Comment insert above |
+| Left hand side | <code>gcO</code> |
+| Right hand side | |
+| Description | Comment insert below |
+| Left hand side | <code>gco</code> |
+| Right hand side | |
+| Description | Comment toggle current block |
+| Left hand side | <code>gbc</code> |
+| Right hand side | |
+| Description | Comment toggle current line |
+| Left hand side | <code>gcc</code> |
+| Right hand side | |
+| Description | Comment toggle blockwise |
+| Left hand side | <code>gb</code> |
+| Right hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
+| Description | Comment toggle linewise |
+| Left hand side | <code>gc</code> |
+| Right hand side | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
+| Description | |
+| Left hand side | <code>g%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+| Description | |
+| Left hand side | <code>gx</code> |
+| Right hand side | <code>:sil !open &lt;lt&gt;cWORD&gt;&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>gg</code> |
+| Right hand side | <code>ggzz</code> |
+| Description | |
+| Left hand side | <code>n</code> |
+| Right hand side | <code>nzz</code> |
+| Description | |
+| Left hand side | <code>ySS</code> |
+| Right hand side | <code>&lt;Plug&gt;YSsurround</code> |
+| Description | |
+| Left hand side | <code>ySs</code> |
+| Right hand side | <code>&lt;Plug&gt;YSsurround</code> |
+| Description | |
+| Left hand side | <code>yss</code> |
+| Right hand side | <code>&lt;Plug&gt;Yssurround</code> |
+| Description | |
+| Left hand side | <code>yS</code> |
+| Right hand side | <code>&lt;Plug&gt;YSurround</code> |
+| Description | |
+| Left hand side | <code>ys</code> |
+| Right hand side | <code>&lt;Plug&gt;Ysurround</code> |
+| Description | |
+| Left hand side | <code>{</code> |
+| Right hand side | <code>{zz</code> |
+| Description | |
+| Left hand side | <code>}</code> |
+| Right hand side | <code>}zz</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;YSurround</code> |
+| Right hand side | <code>&lt;SNR&gt;48_opfunc2('setup')</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;Ysurround</code> |
+| Right hand side | <code>&lt;SNR&gt;48_opfunc('setup')</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;YSsurround</code> |
+| Right hand side | <code>&lt;SNR&gt;48_opfunc2('setup').'_'</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;Yssurround</code> |
+| Right hand side | <code>'^'.v:count1.&lt;SNR&gt;48_opfunc('setup').'g_'</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;CSurround</code> |
+| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;48_changesurround(1)&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;Csurround</code> |
+| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;48_changesurround()&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;Dsurround</code> |
+| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;48_dosurround(&lt;SNR&gt;48_inputtarget())&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;SurroundRepeat</code> |
+| Right hand side | <code>.</code> |
+| Description | |
+| Left hand side | <code>&lt;F3&gt;</code> |
+| Right hand side | <code>:MaximizerToggle&lt;CR&gt;</code> |
+| Description | Move to previous reference |
+| Left hand side | <code>&lt;M-p&gt;</code> |
+| Right hand side | |
+| Description | Move to next reference |
+| Left hand side | <code>&lt;M-n&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| Right hand side | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;luasnip-delete-check</code> |
+| Right hand side | |
+| Description | Comment toggle blockwise with count |
+| Left hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
+| Right hand side | |
+| Description | Comment toggle linewise with count |
+| Left hand side | <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |
+| Right hand side | |
+| Description | Comment toggle current block |
+| Left hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |
+| Right hand side | |
+| Description | Comment toggle current line |
+| Left hand side | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
+| Right hand side | |
+| Description | Comment toggle blockwise |
+| Left hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
+| Right hand side | |
+| Description | Comment toggle linewise |
+| Left hand side | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;C-O&gt;</code> |
+| Right hand side | <code>&lt;C-O&gt;zz</code> |
+| Description | |
+| Left hand side | <code>&lt;C-I&gt;</code> |
+| Right hand side | <code>&lt;Tab&gt;zz</code> |
+| Description | |
+| Left hand side | <code>&lt;C-D&gt;</code> |
+| Right hand side | <code>&lt;C-D&gt;zz</code> |
+| Description | |
+| Left hand side | <code>&lt;C-U&gt;</code> |
+| Right hand side | <code>&lt;C-U&gt;zz</code> |
+| Description | Switch to last buffer |
+| Left hand side | <code>&lt;C-'&gt;</code> |
+| Right hand side | <code>&lt;C-^&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;C-H&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;C-K&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;C-J&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;C-L&gt;</code> |
+| Right hand side | |
 
 #### visual mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code> p</code> | <code>"_dP</code> |  |
-| <code> </code> | <code></code> |  |
-| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |  |
-| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>H</code> | <code>^</code> |  |
-| <code>L</code> | <code>$&lt;Left&gt;</code> |  |
-| <code>S</code> | <code>&lt;Plug&gt;VSurround</code> |  |
-| <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |  |
-| <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |  |
-| <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |  |
-| <code>gb</code> | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> | Comment toggle blockwise (visual) | 
-| <code>gc</code> | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> | Comment toggle linewise (visual) | 
-| <code>gS</code> | <code>&lt;Plug&gt;VgSurround</code> |  |
-| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |  |
-| <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |  |
-| <code>&lt;Plug&gt;VgSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;48_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;VSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;48_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |  |
-| <code>&lt;F3&gt;</code> | <code>:MaximizerToggle&lt;CR&gt;gv</code> |  |
-| <code>&lt;M-i&gt;</code>|  |  |
-| <code>&lt;Plug&gt;luasnip-expand-repeat</code>|  |  |
-| <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> | Comment toggle blockwise (visual) | 
-| <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> | Comment toggle linewise (visual) | 
-| <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |  |
-| <code>&lt;M-k&gt;</code> | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv=gv</code> |  |
-| <code>&lt;M-j&gt;</code> | <code>:m '&gt;+1&lt;CR&gt;gv=gv</code> |  |
+|  Key  | Value |
+| :---- | :---- |
+| Description | |
+| Left hand side | <code> p</code> |
+| Right hand side | <code>"_dP</code> |
+| Description | |
+| Left hand side | <code> </code> |
+| Right hand side | <code></code> |
+| Description | Nvim builtin |
+| Left hand side | <code>#</code> |
+| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>*</code> |
+| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>H</code> |
+| Right hand side | <code>^</code> |
+| Description | |
+| Left hand side | <code>L</code> |
+| Right hand side | <code>$&lt;Left&gt;</code> |
+| Description | |
+| Left hand side | <code>S</code> |
+| Right hand side | <code>&lt;Plug&gt;VSurround</code> |
+| Description | |
+| Left hand side | <code>[%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+| Description | |
+| Left hand side | <code>]%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| Description | |
+| Left hand side | <code>a%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+| Description | Comment toggle blockwise (visual) |
+| Left hand side | <code>gb</code> |
+| Right hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
+| Description | Comment toggle linewise (visual) |
+| Left hand side | <code>gc</code> |
+| Right hand side | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
+| Description | |
+| Left hand side | <code>gS</code> |
+| Right hand side | <code>&lt;Plug&gt;VgSurround</code> |
+| Description | |
+| Left hand side | <code>gx</code> |
+| Right hand side | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+| Description | |
+| Left hand side | <code>g%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;VgSurround</code> |
+| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;48_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;VSurround</code> |
+| Right hand side | <code>:&lt;C-U&gt;call &lt;SNR&gt;48_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;F3&gt;</code> |
+| Right hand side | <code>:MaximizerToggle&lt;CR&gt;gv</code> |
+| Description | |
+| Left hand side | <code>&lt;M-i&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| Right hand side | |
+| Description | Comment toggle blockwise (visual) |
+| Left hand side | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
+| Right hand side | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+| Description | Comment toggle linewise (visual) |
+| Left hand side | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
+| Right hand side | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+| Right hand side | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
+| Description | |
+| Left hand side | <code>&lt;M-k&gt;</code> |
+| Right hand side | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv=gv</code> |
+| Description | |
+| Left hand side | <code>&lt;M-j&gt;</code> |
+| Right hand side | <code>:m '&gt;+1&lt;CR&gt;gv=gv</code> |
 
 #### operator mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |  |
-| <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |  |
-| <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |  |
-| <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |  |
-| <code>&lt;M-i&gt;</code>|  |  |
-| <code>&lt;Plug&gt;luasnip-expand-repeat</code>|  |  |
-| <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |  |
+|  Key  | Value |
+| :---- | :---- |
+| Description | |
+| Left hand side | <code>%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+| Description | |
+| Left hand side | <code>[%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+| Description | |
+| Left hand side | <code>]%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+| Description | |
+| Left hand side | <code>g%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+| Description | |
+| Left hand side | <code>&lt;M-i&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |

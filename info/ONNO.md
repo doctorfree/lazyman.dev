@@ -94,115 +94,315 @@ One of the primary inspirations for Lazyman
 
 #### normal mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code> c</code> | <code>&lt;Cmd&gt;MonokaiProSelect&lt;CR&gt;</code> | Select Moonokai pro filter | 
-| <code> gs</code>|  | Stage Hunk | 
-| <code> gR</code>|  | Reset Buffer | 
-| <code> gr</code>|  | Reset Hunk | 
-| <code> gp</code>|  | Preview Hunk | 
-| <code> gl</code>|  | Blame | 
-| <code> gk</code>|  | Prev Hunk | 
-| <code> gj</code>|  | Next Hunk | 
-| <code> gg</code>|  | Lazygit | 
-| <code> gd</code>|  | Diff | 
-| <code> gu</code>|  | Undo Stage Hunk | 
-| <code> r</code>|  | Open file manager | 
-| <code> b</code>|  | Find buffer | 
-| <code> F</code>|  | Find Text | 
-| <code> f</code>|  | Find files | 
-| <code> gc</code>|  | Checkout commit | 
-| <code> gb</code>|  | Checkout branch | 
-| <code> go</code>|  | Open changed file | 
-| <code> n</code>|  | Delete all Notifications | 
-| <code> E</code>|  | Explorer Float (root dir) | 
-| <code> e</code>|  | Explorer (root dir) | 
-| <code> sd</code>|  | Don't Save Current Session | 
-| <code> sl</code>|  | Restore Last Session | 
-| <code> ss</code>|  | Restore Session | 
-| <code> d</code>|  | Close Buffer | 
-| <code> p</code>|  | Peek (Markdown Preview) | 
-| <code> 0</code>|  | Dashboard | 
-| <code> m</code>|  | Zoom window | 
-| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |  |
-| <code>&</code> | <code>:&&&lt;CR&gt;</code> | Nvim builtin | 
-| <code>Y</code> | <code>y$</code> | Nvim builtin | 
-| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |  |
-| <code>[[</code>|  | Prev Reference | 
-| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |  |
-| <code>]]</code>|  | Next Reference | 
-| <code>fR</code>|  | Open all folds | 
-| <code>fx</code>|  | Update folds | 
-| <code>fm</code>|  | Fold more | 
-| <code>fd</code>|  | Delete fold under cursor | 
-| <code>fr</code>|  | Fold less | 
-| <code>fL</code>|  | Half screen to the right | 
-| <code>fo</code>|  | Open fold under cursor | 
-| <code>ft</code>|  | Top this line | 
-| <code>fO</code>|  | Open all folds under cursor | 
-| <code>fz</code>|  | Center this line | 
-| <code>fb</code>|  | Bottom this line | 
-| <code>fc</code>|  | Close all folds under cursor | 
-| <code>fw</code>|  | Mark word as bad/misspelling | 
-| <code>fs</code>|  | Left this line | 
-| <code>fa</code>|  | Toggle fold under cursor | 
-| <code>fe</code>|  | Right this line | 
-| <code>fA</code>|  | Toggle all folds under cursor | 
-| <code>fE</code>|  | Delete all folds in current buffer | 
-| <code>fg</code>|  | Add word to spell list | 
-| <code>fv</code>|  | Show cursor line | 
-| <code>fM</code>|  | Close all folds | 
-| <code>fH</code>|  | Half screen to the left | 
-| <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |  |
-| <code>gd</code>|  | Go to definition | 
-| <code>gr</code>|  | Go to references | 
-| <code>gi</code>|  | Go to implementations | 
-| <code>sR</code>|  | Registers | 
-| <code>sh</code>|  | Find Help | 
-| <code>sk</code>|  | Keymaps | 
-| <code>sC</code>|  | Commands | 
-| <code>sH</code>|  | Highlight Groups | 
-| <code>sb</code>|  | Checkout branch | 
-| <code>sc</code>|  | Colorscheme | 
-| <code>sM</code>|  | Man Pages | 
-| <code>sr</code>|  | Open Recent File | 
-| <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;luasnip-expand-repeat</code>|  |  |
-| <code>&lt;Plug&gt;luasnip-delete-check</code>|  |  |
-| <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> | Nvim builtin | 
+|  Key  | Value |
+| :---- | :---- |
+| Description | Select Moonokai pro filter |
+| Left hand side | <code> c</code> |
+| Right hand side | <code>&lt;Cmd&gt;MonokaiProSelect&lt;CR&gt;</code> |
+| Description | Diff |
+| Left hand side | <code> gd</code> |
+| Right hand side | |
+| Description | Undo Stage Hunk |
+| Left hand side | <code> gu</code> |
+| Right hand side | |
+| Description | Stage Hunk |
+| Left hand side | <code> gs</code> |
+| Right hand side | |
+| Description | Reset Buffer |
+| Left hand side | <code> gR</code> |
+| Right hand side | |
+| Description | Reset Hunk |
+| Left hand side | <code> gr</code> |
+| Right hand side | |
+| Description | Preview Hunk |
+| Left hand side | <code> gp</code> |
+| Right hand side | |
+| Description | Blame |
+| Left hand side | <code> gl</code> |
+| Right hand side | |
+| Description | Prev Hunk |
+| Left hand side | <code> gk</code> |
+| Right hand side | |
+| Description | Next Hunk |
+| Left hand side | <code> gj</code> |
+| Right hand side | |
+| Description | Lazygit |
+| Left hand side | <code> gg</code> |
+| Right hand side | |
+| Description | Checkout branch |
+| Left hand side | <code> gb</code> |
+| Right hand side | |
+| Description | Find Text |
+| Left hand side | <code> F</code> |
+| Right hand side | |
+| Description | Find buffer |
+| Left hand side | <code> b</code> |
+| Right hand side | |
+| Description | Find files |
+| Left hand side | <code> f</code> |
+| Right hand side | |
+| Description | Checkout commit |
+| Left hand side | <code> gc</code> |
+| Right hand side | |
+| Description | Open changed file |
+| Left hand side | <code> go</code> |
+| Right hand side | |
+| Description | Open file manager |
+| Left hand side | <code> r</code> |
+| Right hand side | |
+| Description | Explorer Float (root dir) |
+| Left hand side | <code> E</code> |
+| Right hand side | |
+| Description | Explorer (root dir) |
+| Left hand side | <code> e</code> |
+| Right hand side | |
+| Description | Peek (Markdown Preview) |
+| Left hand side | <code> p</code> |
+| Right hand side | |
+| Description | Don't Save Current Session |
+| Left hand side | <code> sd</code> |
+| Right hand side | |
+| Description | Restore Last Session |
+| Left hand side | <code> sl</code> |
+| Right hand side | |
+| Description | Restore Session |
+| Left hand side | <code> ss</code> |
+| Right hand side | |
+| Description | Dashboard |
+| Left hand side | <code> 0</code> |
+| Right hand side | |
+| Description | Zoom window |
+| Left hand side | <code> m</code> |
+| Right hand side | |
+| Description | Delete all Notifications |
+| Left hand side | <code> n</code> |
+| Right hand side | |
+| Description | Close Buffer |
+| Left hand side | <code> d</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>&</code> |
+| Right hand side | <code>:&&&lt;CR&gt;</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>Y</code> |
+| Right hand side | <code>y$</code> |
+| Description | |
+| Left hand side | <code>[%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+| Description | Prev Reference |
+| Left hand side | <code>[[</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>]%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+| Description | Next Reference |
+| Left hand side | <code>]]</code> |
+| Right hand side | |
+| Description | Top this line |
+| Left hand side | <code>ft</code> |
+| Right hand side | |
+| Description | Toggle fold under cursor |
+| Left hand side | <code>fa</code> |
+| Right hand side | |
+| Description | Right this line |
+| Left hand side | <code>fe</code> |
+| Right hand side | |
+| Description | Center this line |
+| Left hand side | <code>fz</code> |
+| Right hand side | |
+| Description | Toggle all folds under cursor |
+| Left hand side | <code>fA</code> |
+| Right hand side | |
+| Description | Delete all folds in current buffer |
+| Left hand side | <code>fE</code> |
+| Right hand side | |
+| Description | Half screen to the right |
+| Left hand side | <code>fL</code> |
+| Right hand side | |
+| Description | Show cursor line |
+| Left hand side | <code>fv</code> |
+| Right hand side | |
+| Description | Left this line |
+| Left hand side | <code>fs</code> |
+| Right hand side | |
+| Description | Close all folds |
+| Left hand side | <code>fM</code> |
+| Right hand side | |
+| Description | Half screen to the left |
+| Left hand side | <code>fH</code> |
+| Right hand side | |
+| Description | Open all folds |
+| Left hand side | <code>fR</code> |
+| Right hand side | |
+| Description | Fold more |
+| Left hand side | <code>fm</code> |
+| Right hand side | |
+| Description | Add word to spell list |
+| Left hand side | <code>fg</code> |
+| Right hand side | |
+| Description | Fold less |
+| Left hand side | <code>fr</code> |
+| Right hand side | |
+| Description | Update folds |
+| Left hand side | <code>fx</code> |
+| Right hand side | |
+| Description | Delete fold under cursor |
+| Left hand side | <code>fd</code> |
+| Right hand side | |
+| Description | Open fold under cursor |
+| Left hand side | <code>fo</code> |
+| Right hand side | |
+| Description | Bottom this line |
+| Left hand side | <code>fb</code> |
+| Right hand side | |
+| Description | Open all folds under cursor |
+| Left hand side | <code>fO</code> |
+| Right hand side | |
+| Description | Close all folds under cursor |
+| Left hand side | <code>fc</code> |
+| Right hand side | |
+| Description | Mark word as bad/misspelling |
+| Left hand side | <code>fw</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>g%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+| Description | Go to definition |
+| Left hand side | <code>gd</code> |
+| Right hand side | |
+| Description | Go to references |
+| Left hand side | <code>gr</code> |
+| Right hand side | |
+| Description | Go to implementations |
+| Left hand side | <code>gi</code> |
+| Right hand side | |
+| Description | Find Help |
+| Left hand side | <code>sh</code> |
+| Right hand side | |
+| Description | Man Pages |
+| Left hand side | <code>sM</code> |
+| Right hand side | |
+| Description | Open Recent File |
+| Left hand side | <code>sr</code> |
+| Right hand side | |
+| Description | Registers |
+| Left hand side | <code>sR</code> |
+| Right hand side | |
+| Description | Keymaps |
+| Left hand side | <code>sk</code> |
+| Right hand side | |
+| Description | Commands |
+| Left hand side | <code>sC</code> |
+| Right hand side | |
+| Description | Highlight Groups |
+| Left hand side | <code>sH</code> |
+| Right hand side | |
+| Description | Checkout branch |
+| Left hand side | <code>sb</code> |
+| Right hand side | |
+| Description | Colorscheme |
+| Left hand side | <code>sc</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;luasnip-delete-check</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| Right hand side | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>&lt;C-L&gt;</code> |
+| Right hand side | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 #### visual mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |  |
-| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |  |
-| <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |  |
-| <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |  |
-| <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |  |
-| <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |  |
-| <code>&lt;Plug&gt;luasnip-expand-repeat</code>|  |  |
+|  Key  | Value |
+| :---- | :---- |
+| Description | Nvim builtin |
+| Left hand side | <code>#</code> |
+| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>*</code> |
+| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>[%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+| Description | |
+| Left hand side | <code>]%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| Description | |
+| Left hand side | <code>a%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+| Description | |
+| Left hand side | <code>g%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| Right hand side | |
 
 #### operator mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |  |
-| <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |  |
-| <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |  |
-| <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |  |
-| <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |  |
-| <code>&lt;Plug&gt;luasnip-expand-repeat</code>|  |  |
+|  Key  | Value |
+| :---- | :---- |
+| Description | |
+| Left hand side | <code>%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+| Description | |
+| Left hand side | <code>[%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+| Description | |
+| Left hand side | <code>]%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+| Description | |
+| Left hand side | <code>g%</code> |
+| Right hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+| Right hand side | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| Right hand side | |

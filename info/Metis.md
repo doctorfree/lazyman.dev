@@ -49,59 +49,147 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
 
 #### normal mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code>&lt;Tab&gt;</code>|  |  |
-| <code> ls</code> | <code>:LspStart&lt;CR&gt;</code> |  |
-| <code> lr</code> | <code>:LspRestart&lt;CR&gt;</code> |  |
-| <code> lp</code> | <code>:LspInfo&lt;CR&gt;</code> |  |
-| <code> x</code> | <code>&lt;C-W&gt;c</code> |  |
-| <code> h</code> | <code>:nohlsearch&lt;CR&gt;</code> |  |
-| <code> pd</code>|  |  |
-| <code> pp</code>|  |  |
-| <code> pr</code>|  |  |
-| <code> pl</code>|  |  |
-| <code> pc</code>|  |  |
-| <code> px</code>|  |  |
-| <code> ps</code>|  |  |
-| <code> pu</code>|  |  |
-| <code> pi</code>|  |  |
-| <code> ph</code>|  |  |
-| <code> d</code>|  |  |
-| <code> e</code>|  |  |
-| <code> ft</code>|  |  |
-| <code> fr</code>|  |  |
-| <code> fw</code>|  |  |
-| <code> ff</code>|  |  |
-| <code> b</code>|  |  |
-| <code>&</code> | <code>:&&&lt;CR&gt;</code> | Nvim builtin | 
-| <code>J</code> | <code>jzz</code> |  |
-| <code>K</code> | <code>kzz</code> |  |
-| <code>Y</code> | <code>y$</code> | Nvim builtin | 
-| <code>[d</code>|  |  |
-| <code>]d</code>|  |  |
-| <code>&lt;C-Q&gt;</code> | <code>:bd!&lt;CR&gt;</code> |  |
-| <code>&lt;C-S&gt;</code> | <code>:w &lt;CR&gt;</code> |  |
-| <code>&lt;C-K&gt;</code> | <code>&lt;C-W&gt;k</code> |  |
-| <code>&lt;C-J&gt;</code> | <code>&lt;C-W&gt;j</code> |  |
-| <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> |  |
-| <code>&lt;M-h&gt;</code>|  |  |
-| <code>&lt;M-t&gt;</code>|  |  |
-| <code>&lt;M-H&gt;</code>|  |  |
-| <code>&lt;S-Tab&gt;</code>|  |  |
-| <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |  |
+|  Key  | Value |
+| :---- | :---- |
+| Description | |
+| Left hand side | <code>&lt;Tab&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> ls</code> |
+| Right hand side | <code>:LspStart&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> lr</code> |
+| Right hand side | <code>:LspRestart&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> lp</code> |
+| Right hand side | <code>:LspInfo&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> x</code> |
+| Right hand side | <code>&lt;C-W&gt;c</code> |
+| Description | |
+| Left hand side | <code> h</code> |
+| Right hand side | <code>:nohlsearch&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code> pd</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> pp</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> pr</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> pl</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> pc</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> px</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> ps</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> pu</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> pi</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> ph</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> d</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> b</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> e</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> ft</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> fr</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> fw</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> ff</code> |
+| Right hand side | |
+| Description | Nvim builtin |
+| Left hand side | <code>&</code> |
+| Right hand side | <code>:&&&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>J</code> |
+| Right hand side | <code>jzz</code> |
+| Description | |
+| Left hand side | <code>K</code> |
+| Right hand side | <code>kzz</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>Y</code> |
+| Right hand side | <code>y$</code> |
+| Description | |
+| Left hand side | <code>[d</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>]d</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;C-Q&gt;</code> |
+| Right hand side | <code>:bd!&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;C-S&gt;</code> |
+| Right hand side | <code>:w &lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>&lt;C-K&gt;</code> |
+| Right hand side | <code>&lt;C-W&gt;k</code> |
+| Description | |
+| Left hand side | <code>&lt;C-J&gt;</code> |
+| Right hand side | <code>&lt;C-W&gt;j</code> |
+| Description | |
+| Left hand side | <code>&lt;C-H&gt;</code> |
+| Right hand side | <code>&lt;C-W&gt;h</code> |
+| Description | |
+| Left hand side | <code>&lt;S-Tab&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;M-H&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;M-h&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;M-t&gt;</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;C-L&gt;</code> |
+| Right hand side | <code>&lt;C-W&gt;l</code> |
 
 #### visual mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>J</code> | <code>:m '&gt;+1&lt;CR&gt;gv=gv</code> |  |
-| <code>K</code> | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv=gv</code> |  |
-| <code>p</code> | <code>_dP</code> |  |
+|  Key  | Value |
+| :---- | :---- |
+| Description | Nvim builtin |
+| Left hand side | <code>#</code> |
+| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>*</code> |
+| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>J</code> |
+| Right hand side | <code>:m '&gt;+1&lt;CR&gt;gv=gv</code> |
+| Description | |
+| Left hand side | <code>K</code> |
+| Right hand side | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv=gv</code> |
+| Description | |
+| Left hand side | <code>p</code> |
+| Right hand side | <code>_dP</code> |
 
 #### operator mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+|  Key  | Value |
+| :---- | :---- |

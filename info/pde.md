@@ -102,116 +102,318 @@ Configure Neovim as a Personalized Development Environment (PDE)
 
 #### normal mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code> lv</code>|  | Select VirtualEnv | 
-| <code> gs</code>|  | Status | 
-| <code> ttd</code>|  | Delete Bundle | 
-| <code> ttc</code>|  | Close | 
-| <code> ttb</code>|  | Build | 
-| <code> tta</code>|  | Task Action | 
-| <code> ttR</code>|  | Run Command | 
-| <code> ttt</code>|  | Toggle | 
-| <code> tts</code>|  | Save Bundle | 
-| <code> ttr</code>|  | Run | 
-| <code> ttq</code>|  | Quick Action | 
-| <code> tto</code>|  | Open | 
-| <code> ttl</code>|  | Load Bundle | 
-| <code> fg</code>|  | Git Files | 
-| <code> ff</code>|  | Find Files | 
-| <code> fh</code>|  | Help | 
-| <code> fb</code>|  | Buffers | 
-| <code> zCc</code>|  | Convert | 
-| <code> zCp</code>|  | Pick | 
-| <code> zCh</code>|  | Toggle Highlighter | 
-| <code> fd</code>|  | Docker | 
-| <code> qd</code>|  | Don't Save Current Session | 
-| <code> ql</code>|  | Restore Last Session | 
-| <code> qs</code>|  | Restore Session | 
-| <code> x</code>|  | +REPL | 
-| <code> xH</code>|  | Hide | 
-| <code> xF</code>|  | Focus | 
-| <code> xS</code>|  | Restart | 
-| <code> xR</code>|  | REPL | 
-| <code> xmr</code>|  | Remove Mark | 
-| <code> xmm</code>|  | Mark Motion | 
-| <code> xms</code>|  | Send Mark | 
-| <code> xc</code>|  | Clear | 
-| <code> xC</code>|  | Close REPL | 
-| <code> xI</code>|  | Interrupt | 
-| <code> x&lt;CR&gt;</code>|  | ENTER | 
-| <code> xf</code>|  | Send File | 
-| <code> xt</code>|  | Send Until Cursor | 
-| <code> xl</code>|  | Send Line | 
-| <code> xs</code>|  | Send Motion | 
-| <code> xm</code>|  | +Mark | 
-| <code> td</code>|  | Debug File | 
-| <code> tS</code>|  | Summary | 
-| <code> ts</code>|  | Stop | 
-| <code> to</code>|  | Output | 
-| <code> tN</code>|  | Debug Nearest | 
-| <code> tn</code>|  | Nearest | 
-| <code> tl</code>|  | Last | 
-| <code> tF</code>|  | All Files | 
-| <code> tf</code>|  | File | 
-| <code> ta</code>|  | Attach | 
-| <code> tL</code>|  | Debug Last | 
-| <code> ds</code>|  | Start | 
-| <code> dr</code>|  | Toggle REPL | 
-| <code> dq</code>|  | Quit | 
-| <code> dp</code>|  | Pause | 
-| <code> do</code>|  | Step Over | 
-| <code> di</code>|  | Step Into | 
-| <code> dS</code>|  | Scopes | 
-| <code> dh</code>|  | Hover Variables | 
-| <code> dg</code>|  | Get Session | 
-| <code> de</code>|  | Evaluate | 
-| <code> dd</code>|  | Disconnect | 
-| <code> dc</code>|  | Continue | 
-| <code> db</code>|  | Step Back | 
-| <code> dU</code>|  | Toggle UI | 
-| <code> dC</code>|  | Conditional Breakpoint | 
-| <code> dE</code>|  | Evaluate Input | 
-| <code> dR</code>|  | Run to Cursor | 
-| <code> du</code>|  | Step Out | 
-| <code> dx</code>|  | Terminate | 
-| <code> dt</code>|  | Toggle Breakpoint | 
-| <code> </code> | <code></code> |  |
-| <code>&</code> | <code>:&&&lt;CR&gt;</code> | Nvim builtin | 
-| <code>Y</code> | <code>y$</code> | Nvim builtin | 
-| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |  |
-| <code>gbc</code>|  |  |
-| <code>gcc</code>|  |  |
-| <code>gc</code>|  |  |
-| <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |  |
-| <code>&lt;C-B&gt;</code>|  | Scroll backward | 
-| <code>&lt;C-F&gt;</code>|  | Scroll forward | 
-| <code>&lt;M-k&gt;</code>|  | Previous Cell | 
-| <code>&lt;M-j&gt;</code>|  | Next Cell | 
-| <code>&lt;M-x&gt;</code>|  | Delete Cell | 
-| <code>&lt;M-e&gt;</code>|  | Execute Cell | 
-| <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> | Nvim builtin | 
+|  Key  | Value |
+| :---- | :---- |
+| Description | Docker |
+| Left hand side | <code> fd</code> |
+| Right hand side | |
+| Description | Don't Save Current Session |
+| Left hand side | <code> qd</code> |
+| Right hand side | |
+| Description | Restore Last Session |
+| Left hand side | <code> ql</code> |
+| Right hand side | |
+| Description | Restore Session |
+| Left hand side | <code> qs</code> |
+| Right hand side | |
+| Description | Close REPL |
+| Left hand side | <code> xC</code> |
+| Right hand side | |
+| Description | Interrupt |
+| Left hand side | <code> xI</code> |
+| Right hand side | |
+| Description | ENTER |
+| Left hand side | <code> x&lt;CR&gt;</code> |
+| Right hand side | |
+| Description | Send File |
+| Left hand side | <code> xf</code> |
+| Right hand side | |
+| Description | Send Until Cursor |
+| Left hand side | <code> xt</code> |
+| Right hand side | |
+| Description | Send Line |
+| Left hand side | <code> xl</code> |
+| Right hand side | |
+| Description | Send Motion |
+| Left hand side | <code> xs</code> |
+| Right hand side | |
+| Description | +Mark |
+| Left hand side | <code> xm</code> |
+| Right hand side | |
+| Description | +REPL |
+| Left hand side | <code> x</code> |
+| Right hand side | |
+| Description | Hide |
+| Left hand side | <code> xH</code> |
+| Right hand side | |
+| Description | Focus |
+| Left hand side | <code> xF</code> |
+| Right hand side | |
+| Description | Restart |
+| Left hand side | <code> xS</code> |
+| Right hand side | |
+| Description | REPL |
+| Left hand side | <code> xR</code> |
+| Right hand side | |
+| Description | Remove Mark |
+| Left hand side | <code> xmr</code> |
+| Right hand side | |
+| Description | Mark Motion |
+| Left hand side | <code> xmm</code> |
+| Right hand side | |
+| Description | Send Mark |
+| Left hand side | <code> xms</code> |
+| Right hand side | |
+| Description | Clear |
+| Left hand side | <code> xc</code> |
+| Right hand side | |
+| Description | Buffers |
+| Left hand side | <code> fb</code> |
+| Right hand side | |
+| Description | Git Files |
+| Left hand side | <code> fg</code> |
+| Right hand side | |
+| Description | Find Files |
+| Left hand side | <code> ff</code> |
+| Right hand side | |
+| Description | Help |
+| Left hand side | <code> fh</code> |
+| Right hand side | |
+| Description | Status |
+| Left hand side | <code> gs</code> |
+| Right hand side | |
+| Description | Select VirtualEnv |
+| Left hand side | <code> lv</code> |
+| Right hand side | |
+| Description | Toggle Highlighter |
+| Left hand side | <code> zCh</code> |
+| Right hand side | |
+| Description | Convert |
+| Left hand side | <code> zCc</code> |
+| Right hand side | |
+| Description | Pick |
+| Left hand side | <code> zCp</code> |
+| Right hand side | |
+| Description | Summary |
+| Left hand side | <code> tS</code> |
+| Right hand side | |
+| Description | Stop |
+| Left hand side | <code> ts</code> |
+| Right hand side | |
+| Description | Output |
+| Left hand side | <code> to</code> |
+| Right hand side | |
+| Description | Debug Nearest |
+| Left hand side | <code> tN</code> |
+| Right hand side | |
+| Description | Nearest |
+| Left hand side | <code> tn</code> |
+| Right hand side | |
+| Description | Last |
+| Left hand side | <code> tl</code> |
+| Right hand side | |
+| Description | All Files |
+| Left hand side | <code> tF</code> |
+| Right hand side | |
+| Description | File |
+| Left hand side | <code> tf</code> |
+| Right hand side | |
+| Description | Attach |
+| Left hand side | <code> ta</code> |
+| Right hand side | |
+| Description | Debug Last |
+| Left hand side | <code> tL</code> |
+| Right hand side | |
+| Description | Debug File |
+| Left hand side | <code> td</code> |
+| Right hand side | |
+| Description | Toggle |
+| Left hand side | <code> ttt</code> |
+| Right hand side | |
+| Description | Save Bundle |
+| Left hand side | <code> tts</code> |
+| Right hand side | |
+| Description | Run |
+| Left hand side | <code> ttr</code> |
+| Right hand side | |
+| Description | Quick Action |
+| Left hand side | <code> ttq</code> |
+| Right hand side | |
+| Description | Open |
+| Left hand side | <code> tto</code> |
+| Right hand side | |
+| Description | Load Bundle |
+| Left hand side | <code> ttl</code> |
+| Right hand side | |
+| Description | Delete Bundle |
+| Left hand side | <code> ttd</code> |
+| Right hand side | |
+| Description | Close |
+| Left hand side | <code> ttc</code> |
+| Right hand side | |
+| Description | Build |
+| Left hand side | <code> ttb</code> |
+| Right hand side | |
+| Description | Task Action |
+| Left hand side | <code> tta</code> |
+| Right hand side | |
+| Description | Run Command |
+| Left hand side | <code> ttR</code> |
+| Right hand side | |
+| Description | Scopes |
+| Left hand side | <code> dS</code> |
+| Right hand side | |
+| Description | Hover Variables |
+| Left hand side | <code> dh</code> |
+| Right hand side | |
+| Description | Get Session |
+| Left hand side | <code> dg</code> |
+| Right hand side | |
+| Description | Evaluate |
+| Left hand side | <code> de</code> |
+| Right hand side | |
+| Description | Disconnect |
+| Left hand side | <code> dd</code> |
+| Right hand side | |
+| Description | Continue |
+| Left hand side | <code> dc</code> |
+| Right hand side | |
+| Description | Step Back |
+| Left hand side | <code> db</code> |
+| Right hand side | |
+| Description | Toggle UI |
+| Left hand side | <code> dU</code> |
+| Right hand side | |
+| Description | Conditional Breakpoint |
+| Left hand side | <code> dC</code> |
+| Right hand side | |
+| Description | Evaluate Input |
+| Left hand side | <code> dE</code> |
+| Right hand side | |
+| Description | Run to Cursor |
+| Left hand side | <code> dR</code> |
+| Right hand side | |
+| Description | Step Out |
+| Left hand side | <code> du</code> |
+| Right hand side | |
+| Description | Terminate |
+| Left hand side | <code> dx</code> |
+| Right hand side | |
+| Description | Toggle Breakpoint |
+| Left hand side | <code> dt</code> |
+| Right hand side | |
+| Description | Start |
+| Left hand side | <code> ds</code> |
+| Right hand side | |
+| Description | Toggle REPL |
+| Left hand side | <code> dr</code> |
+| Right hand side | |
+| Description | Quit |
+| Left hand side | <code> dq</code> |
+| Right hand side | |
+| Description | Pause |
+| Left hand side | <code> dp</code> |
+| Right hand side | |
+| Description | Step Over |
+| Left hand side | <code> do</code> |
+| Right hand side | |
+| Description | Step Into |
+| Left hand side | <code> di</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> </code> |
+| Right hand side | <code></code> |
+| Description | Nvim builtin |
+| Left hand side | <code>&</code> |
+| Right hand side | <code>:&&&lt;CR&gt;</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>Y</code> |
+| Right hand side | <code>y$</code> |
+| Description | |
+| Left hand side | <code>gx</code> |
+| Right hand side | <code>&lt;Plug&gt;NetrwBrowseX</code> |
+| Description | |
+| Left hand side | <code>gbc</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>gcc</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>gc</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;NetrwBrowseX</code> |
+| Right hand side | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
+| Description | Scroll backward |
+| Left hand side | <code>&lt;C-B&gt;</code> |
+| Right hand side | |
+| Description | Scroll forward |
+| Left hand side | <code>&lt;C-F&gt;</code> |
+| Right hand side | |
+| Description | Previous Cell |
+| Left hand side | <code>&lt;M-k&gt;</code> |
+| Right hand side | |
+| Description | Next Cell |
+| Left hand side | <code>&lt;M-j&gt;</code> |
+| Right hand side | |
+| Description | Delete Cell |
+| Left hand side | <code>&lt;M-x&gt;</code> |
+| Right hand side | |
+| Description | Execute Cell |
+| Left hand side | <code>&lt;M-e&gt;</code> |
+| Right hand side | |
+| Description | Nvim builtin |
+| Left hand side | <code>&lt;C-L&gt;</code> |
+| Right hand side | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 #### visual mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code> de</code>|  | Evaluate | 
-| <code> xs</code>|  | Send | 
-| <code> xm</code>|  | +Mark | 
-| <code> x</code>|  | +REPL | 
-| <code> xmv</code>|  | Mark Visual | 
-| <code> xL</code>|  | Clear Highlight | 
-| <code> </code> | <code></code> |  |
-| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
-| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |  |
-| <code>gcc</code>|  |  |
-| <code>gc</code>|  |  |
-| <code>gbc</code>|  |  |
-| <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |  |
+|  Key  | Value |
+| :---- | :---- |
+| Description | +REPL |
+| Left hand side | <code> x</code> |
+| Right hand side | |
+| Description | Mark Visual |
+| Left hand side | <code> xmv</code> |
+| Right hand side | |
+| Description | Clear Highlight |
+| Left hand side | <code> xL</code> |
+| Right hand side | |
+| Description | Send |
+| Left hand side | <code> xs</code> |
+| Right hand side | |
+| Description | +Mark |
+| Left hand side | <code> xm</code> |
+| Right hand side | |
+| Description | Evaluate |
+| Left hand side | <code> de</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code> </code> |
+| Right hand side | <code></code> |
+| Description | Nvim builtin |
+| Left hand side | <code>#</code> |
+| Right hand side | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | Nvim builtin |
+| Left hand side | <code>*</code> |
+| Right hand side | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| Description | |
+| Left hand side | <code>gx</code> |
+| Right hand side | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+| Description | |
+| Left hand side | <code>gbc</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>gcc</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>gc</code> |
+| Right hand side | |
+| Description | |
+| Left hand side | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+| Right hand side | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
 
 #### operator mode keymaps
 
-|  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+|  Key  | Value |
+| :---- | :---- |
