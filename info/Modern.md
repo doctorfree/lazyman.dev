@@ -19,6 +19,12 @@ Configure Neovim as a modernized development environment. Details described in [
 
 [https://github.com/alpha2phi/modern-neovim](https://github.com/alpha2phi/modern-neovim)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [jackMort/ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim.git)
@@ -194,59 +200,14 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code> zz</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;:Lazy&lt;CR&gt;</code> |
 
+| **Description** | Toggle Split/Join |
+| :---- | :---- |
+| **Left hand side** | <code> lj</code> |
+| **Right hand side** | |
+
 | **Description** | Node Action |
 | :---- | :---- |
 | **Left hand side** | <code> ln</code> |
-| **Right hand side** | |
-
-| **Description** | Search and Replace (SSR) |
-| :---- | :---- |
-| **Left hand side** | <code> sR</code> |
-| **Right hand side** | |
-
-| **Description** | Debug Cleanup |
-| :---- | :---- |
-| **Left hand side** | <code> rc</code> |
-| **Right hand side** | |
-
-| **Description** | Debug Print Variable |
-| :---- | :---- |
-| **Left hand side** | <code> rp</code> |
-| **Right hand side** | |
-
-| **Description** | Debug Print |
-| :---- | :---- |
-| **Left hand side** | <code> rP</code> |
-| **Right hand side** | |
-
-| **Description** | Extract Block to File |
-| :---- | :---- |
-| **Left hand side** | <code> rf</code> |
-| **Right hand side** | |
-
-| **Description** | Extract Block |
-| :---- | :---- |
-| **Left hand side** | <code> rb</code> |
-| **Right hand side** | |
-
-| **Description** | Inline Variable |
-| :---- | :---- |
-| **Left hand side** | <code> ri</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Minimap |
-| :---- | :---- |
-| **Left hand side** | <code> vm</code> |
-| **Right hand side** | |
-
-| **Description** | Type |
-| :---- | :---- |
-| **Left hand side** | <code> lgt</code> |
-| **Right hand side** | |
-
-| **Description** | Function |
-| :---- | :---- |
-| **Left hand side** | <code> lgf</code> |
 | **Right hand side** | |
 
 | **Description** | Class |
@@ -259,34 +220,59 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code> lgd</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle UI |
+| **Description** | Type |
 | :---- | :---- |
-| **Left hand side** | <code> Dt</code> |
+| **Left hand side** | <code> lgt</code> |
 | **Right hand side** | |
 
-| **Description** | Last Query Info |
+| **Description** | Function |
 | :---- | :---- |
-| **Left hand side** | <code> Dq</code> |
+| **Left hand side** | <code> lgf</code> |
 | **Right hand side** | |
 
-| **Description** | Rename Buffer |
+| **Description** | Terminal 1 |
 | :---- | :---- |
-| **Left hand side** | <code> Dr</code> |
+| **Left hand side** | <code> 3</code> |
 | **Right hand side** | |
 
-| **Description** | Find Buffer |
+| **Description** | File 2 |
 | :---- | :---- |
-| **Left hand side** | <code> Df</code> |
+| **Left hand side** | <code> 2</code> |
 | **Right hand side** | |
 
-| **Description** | ToDo |
+| **Description** | File 1 |
 | :---- | :---- |
-| **Left hand side** | <code> lT</code> |
+| **Left hand side** | <code> 1</code> |
 | **Right hand side** | |
 
-| **Description** | ToDo (Trouble) |
+| **Description** | Command Menu |
 | :---- | :---- |
-| **Left hand side** | <code> lt</code> |
+| **Left hand side** | <code> jc</code> |
+| **Right hand side** | |
+
+| **Description** | File Menu |
+| :---- | :---- |
+| **Left hand side** | <code> jm</code> |
+| **Right hand side** | |
+
+| **Description** | Add File |
+| :---- | :---- |
+| **Left hand side** | <code> ja</code> |
+| **Right hand side** | |
+
+| **Description** | Command 2 |
+| :---- | :---- |
+| **Left hand side** | <code> 6</code> |
+| **Right hand side** | |
+
+| **Description** | Command 1 |
+| :---- | :---- |
+| **Left hand side** | <code> 5</code> |
+| **Right hand side** | |
+
+| **Description** | Terminal 2 |
+| :---- | :---- |
+| **Left hand side** | <code> 4</code> |
 | **Right hand side** | |
 
 | **Description** | Terminal #2 |
@@ -294,14 +280,74 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code> 0</code> |
 | **Right hand side** | |
 
-| **Description** | Workspace Diagnostics |
+| **Description** | Code Outline (navbuddy) |
 | :---- | :---- |
-| **Left hand side** | <code> lD</code> |
+| **Left hand side** | <code> vO</code> |
 | **Right hand side** | |
 
-| **Description** | Document Diagnostics |
+| **Description** | Visit |
 | :---- | :---- |
-| **Left hand side** | <code> ld</code> |
+| **Left hand side** | <code> tv</code> |
+| **Right hand side** | |
+
+| **Description** | Suite |
+| :---- | :---- |
+| **Left hand side** | <code> ts</code> |
+| **Right hand side** | |
+
+| **Description** | Nearest |
+| :---- | :---- |
+| **Left hand side** | <code> tn</code> |
+| **Right hand side** | |
+
+| **Description** | Last |
+| :---- | :---- |
+| **Left hand side** | <code> tl</code> |
+| **Right hand side** | |
+
+| **Description** | File |
+| :---- | :---- |
+| **Left hand side** | <code> tf</code> |
+| **Right hand side** | |
+
+| **Description** | Class |
+| :---- | :---- |
+| **Left hand side** | <code> tc</code> |
+| **Right hand side** | |
+
+| **Description** | Command Palette |
+| :---- | :---- |
+| **Left hand side** | <code> hc</code> |
+| **Right hand side** | |
+
+| **Description** | Open Yank History |
+| :---- | :---- |
+| **Left hand side** | <code> zp</code> |
+| **Right hand side** | |
+
+| **Description** | Summarize Text |
+| :---- | :---- |
+| **Left hand side** | <code> as</code> |
+| **Right hand side** | |
+
+| **Description** | Generate Git Message |
+| :---- | :---- |
+| **Left hand side** | <code> ag</code> |
+| **Right hand side** | |
+
+| **Description** | ToDo (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> lt</code> |
+| **Right hand side** | |
+
+| **Description** | ToDo |
+| :---- | :---- |
+| **Left hand side** | <code> lT</code> |
+| **Right hand side** | |
+
+| **Description** | Forward jump |
+| :---- | :---- |
+| **Left hand side** | <code> nj</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Preview |
@@ -319,254 +365,49 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code> np</code> |
 | **Right hand side** | |
 
-| **Description** | Forward jump |
+| **Description** | Edit with Instructions |
 | :---- | :---- |
-| **Left hand side** | <code> nj</code> |
+| **Left hand side** | <code> ae</code> |
 | **Right hand side** | |
 
-| **Description** | Last |
+| **Description** | Complete Code |
 | :---- | :---- |
-| **Left hand side** | <code> tNl</code> |
+| **Left hand side** | <code> ac</code> |
 | **Right hand side** | |
 
-| **Description** | File |
+| **Description** | Chat |
 | :---- | :---- |
-| **Left hand side** | <code> tNf</code> |
+| **Left hand side** | <code> aa</code> |
 | **Right hand side** | |
 
-| **Description** | Attach |
+| **Description** | Edgy Toggle |
 | :---- | :---- |
-| **Left hand side** | <code> tNa</code> |
+| **Left hand side** | <code> ze</code> |
 | **Right hand side** | |
 
-| **Description** | Debug Last |
+| **Description** | Edgy Select Window |
 | :---- | :---- |
-| **Left hand side** | <code> tNL</code> |
+| **Left hand side** | <code> zE</code> |
 | **Right hand side** | |
 
-| **Description** | Debug File |
+| **Description** | Docker |
 | :---- | :---- |
-| **Left hand side** | <code> tNF</code> |
+| **Left hand side** | <code> fd</code> |
 | **Right hand side** | |
 
-| **Description** | Stop |
+| **Description** | Search and Replace (SSR) |
 | :---- | :---- |
-| **Left hand side** | <code> tNs</code> |
+| **Left hand side** | <code> sR</code> |
 | **Right hand side** | |
 
-| **Description** | Summary |
+| **Description** | Remove Mark |
 | :---- | :---- |
-| **Left hand side** | <code> tNS</code> |
+| **Left hand side** | <code> xmr</code> |
 | **Right hand side** | |
 
-| **Description** | Output |
+| **Description** | Mark Motion |
 | :---- | :---- |
-| **Left hand side** | <code> tNo</code> |
-| **Right hand side** | |
-
-| **Description** | Debug Nearest |
-| :---- | :---- |
-| **Left hand side** | <code> tNN</code> |
-| **Right hand side** | |
-
-| **Description** | Nearest |
-| :---- | :---- |
-| **Left hand side** | <code> tNn</code> |
-| **Right hand side** | |
-
-| **Description** | Search and Replace (Spectre) |
-| :---- | :---- |
-| **Left hand side** | <code> sr</code> |
-| **Right hand side** | |
-
-| **Description** | Status |
-| :---- | :---- |
-| **Left hand side** | <code> gs</code> |
-| **Right hand side** | |
-
-| **Description** | Delete Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> bd</code> |
-| **Right hand side** | |
-
-| **Description** | Close Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> bc</code> |
-| **Right hand side** | |
-
-| **Description** | Reload Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> br</code> |
-| **Right hand side** | |
-
-| **Description** | Delete Buffer (Force) |
-| :---- | :---- |
-| **Left hand side** | <code> bD</code> |
-| **Right hand side** | |
-
-| **Description** | Code Outline (navbuddy) |
-| :---- | :---- |
-| **Left hand side** | <code> vO</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle |
-| :---- | :---- |
-| **Left hand side** | <code> tot</code> |
-| **Right hand side** | |
-
-| **Description** | Save Bundle |
-| :---- | :---- |
-| **Left hand side** | <code> tos</code> |
-| **Right hand side** | |
-
-| **Description** | Run |
-| :---- | :---- |
-| **Left hand side** | <code> tor</code> |
-| **Right hand side** | |
-
-| **Description** | Quick Action |
-| :---- | :---- |
-| **Left hand side** | <code> toq</code> |
-| **Right hand side** | |
-
-| **Description** | Open |
-| :---- | :---- |
-| **Left hand side** | <code> too</code> |
-| **Right hand side** | |
-
-| **Description** | Load Bundle |
-| :---- | :---- |
-| **Left hand side** | <code> tol</code> |
-| **Right hand side** | |
-
-| **Description** | Delete Bundle |
-| :---- | :---- |
-| **Left hand side** | <code> tod</code> |
-| **Right hand side** | |
-
-| **Description** | Close |
-| :---- | :---- |
-| **Left hand side** | <code> toc</code> |
-| **Right hand side** | |
-
-| **Description** | Build |
-| :---- | :---- |
-| **Left hand side** | <code> tob</code> |
-| **Right hand side** | |
-
-| **Description** | Task Action |
-| :---- | :---- |
-| **Left hand side** | <code> toa</code> |
-| **Right hand side** | |
-
-| **Description** | Run Command |
-| :---- | :---- |
-| **Left hand side** | <code> toR</code> |
-| **Right hand side** | |
-
-| **Description** | Step Out |
-| :---- | :---- |
-| **Left hand side** | <code> du</code> |
-| **Right hand side** | |
-
-| **Description** | Terminate |
-| :---- | :---- |
-| **Left hand side** | <code> dx</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Breakpoint |
-| :---- | :---- |
-| **Left hand side** | <code> dt</code> |
-| **Right hand side** | |
-
-| **Description** | Start |
-| :---- | :---- |
-| **Left hand side** | <code> ds</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle REPL |
-| :---- | :---- |
-| **Left hand side** | <code> dr</code> |
-| **Right hand side** | |
-
-| **Description** | Quit |
-| :---- | :---- |
-| **Left hand side** | <code> dq</code> |
-| **Right hand side** | |
-
-| **Description** | Pause |
-| :---- | :---- |
-| **Left hand side** | <code> dp</code> |
-| **Right hand side** | |
-
-| **Description** | Run Last |
-| :---- | :---- |
-| **Left hand side** | <code> dl</code> |
-| **Right hand side** | |
-
-| **Description** | Step Over |
-| :---- | :---- |
-| **Left hand side** | <code> do</code> |
-| **Right hand side** | |
-
-| **Description** | Step Into |
-| :---- | :---- |
-| **Left hand side** | <code> di</code> |
-| **Right hand side** | |
-
-| **Description** | Scopes |
-| :---- | :---- |
-| **Left hand side** | <code> dS</code> |
-| **Right hand side** | |
-
-| **Description** | Hover Variables |
-| :---- | :---- |
-| **Left hand side** | <code> dh</code> |
-| **Right hand side** | |
-
-| **Description** | Get Session |
-| :---- | :---- |
-| **Left hand side** | <code> dg</code> |
-| **Right hand side** | |
-
-| **Description** | Evaluate |
-| :---- | :---- |
-| **Left hand side** | <code> de</code> |
-| **Right hand side** | |
-
-| **Description** | Disconnect |
-| :---- | :---- |
-| **Left hand side** | <code> dd</code> |
-| **Right hand side** | |
-
-| **Description** | Continue |
-| :---- | :---- |
-| **Left hand side** | <code> dc</code> |
-| **Right hand side** | |
-
-| **Description** | Step Back |
-| :---- | :---- |
-| **Left hand side** | <code> db</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle UI |
-| :---- | :---- |
-| **Left hand side** | <code> dU</code> |
-| **Right hand side** | |
-
-| **Description** | Conditional Breakpoint |
-| :---- | :---- |
-| **Left hand side** | <code> dC</code> |
-| **Right hand side** | |
-
-| **Description** | Evaluate Input |
-| :---- | :---- |
-| **Left hand side** | <code> dE</code> |
-| **Right hand side** | |
-
-| **Description** | Run to Cursor |
-| :---- | :---- |
-| **Left hand side** | <code> dR</code> |
+| **Left hand side** | <code> xmm</code> |
 | **Right hand side** | |
 
 | **Description** | Send Mark |
@@ -644,36 +485,6 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code> xR</code> |
 | **Right hand side** | |
 
-| **Description** | Remove Mark |
-| :---- | :---- |
-| **Left hand side** | <code> xmr</code> |
-| **Right hand side** | |
-
-| **Description** | Mark Motion |
-| :---- | :---- |
-| **Left hand side** | <code> xmm</code> |
-| **Right hand side** | |
-
-| **Description** | Command Palette |
-| :---- | :---- |
-| **Left hand side** | <code> hc</code> |
-| **Right hand side** | |
-
-| **Description** | Summarize Text |
-| :---- | :---- |
-| **Left hand side** | <code> as</code> |
-| **Right hand side** | |
-
-| **Description** | Generate Git Message |
-| :---- | :---- |
-| **Left hand side** | <code> ag</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Highlighter |
-| :---- | :---- |
-| **Left hand side** | <code> zCh</code> |
-| **Right hand side** | |
-
 | **Description** | Convert |
 | :---- | :---- |
 | **Left hand side** | <code> zCc</code> |
@@ -689,54 +500,19 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code> zC</code> |
 | **Right hand side** | |
 
-| **Description** | Last |
+| **Description** | Toggle Highlighter |
 | :---- | :---- |
-| **Left hand side** | <code> tl</code> |
+| **Left hand side** | <code> zCh</code> |
 | **Right hand side** | |
 
-| **Description** | File |
+| **Description** | Select VirtualEnv |
 | :---- | :---- |
-| **Left hand side** | <code> tf</code> |
+| **Left hand side** | <code> lv</code> |
 | **Right hand side** | |
 
-| **Description** | Class |
+| **Description** | Search and Replace (Spectre) |
 | :---- | :---- |
-| **Left hand side** | <code> tc</code> |
-| **Right hand side** | |
-
-| **Description** | Visit |
-| :---- | :---- |
-| **Left hand side** | <code> tv</code> |
-| **Right hand side** | |
-
-| **Description** | Suite |
-| :---- | :---- |
-| **Left hand side** | <code> ts</code> |
-| **Right hand side** | |
-
-| **Description** | Nearest |
-| :---- | :---- |
-| **Left hand side** | <code> tn</code> |
-| **Right hand side** | |
-
-| **Description** | Edit with Instructions |
-| :---- | :---- |
-| **Left hand side** | <code> ae</code> |
-| **Right hand side** | |
-
-| **Description** | Chat |
-| :---- | :---- |
-| **Left hand side** | <code> aa</code> |
-| **Right hand side** | |
-
-| **Description** | Complete Code |
-| :---- | :---- |
-| **Left hand side** | <code> ac</code> |
-| **Right hand side** | |
-
-| **Description** | Mason |
-| :---- | :---- |
-| **Left hand side** | <code> lm</code> |
+| **Left hand side** | <code> sr</code> |
 | **Right hand side** | |
 
 | **Description** | Explorer (Current File) |
@@ -749,29 +525,359 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code> fe</code> |
 | **Right hand side** | |
 
-| **Description** | Open Yank History |
-| :---- | :---- |
-| **Left hand side** | <code> zp</code> |
-| **Right hand side** | |
-
-| **Description** | Restore Session |
-| :---- | :---- |
-| **Left hand side** | <code> qs</code> |
-| **Right hand side** | |
-
-| **Description** | Don't Save Current Session |
-| :---- | :---- |
-| **Left hand side** | <code> qd</code> |
-| **Right hand side** | |
-
-| **Description** | Restore Last Session |
-| :---- | :---- |
-| **Left hand side** | <code> ql</code> |
-| **Right hand side** | |
-
 | **Description** | Toggle Zoom |
 | :---- | :---- |
 | **Left hand side** | <code> vz</code> |
+| **Right hand side** | |
+
+| **Description** | Close Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> bc</code> |
+| **Right hand side** | |
+
+| **Description** | Reload Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> br</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer (Force) |
+| :---- | :---- |
+| **Left hand side** | <code> bD</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> bd</code> |
+| **Right hand side** | |
+
+| **Description** | Summary |
+| :---- | :---- |
+| **Left hand side** | <code> tNS</code> |
+| **Right hand side** | |
+
+| **Description** | Stop |
+| :---- | :---- |
+| **Left hand side** | <code> tNs</code> |
+| **Right hand side** | |
+
+| **Description** | Output |
+| :---- | :---- |
+| **Left hand side** | <code> tNo</code> |
+| **Right hand side** | |
+
+| **Description** | Debug Nearest |
+| :---- | :---- |
+| **Left hand side** | <code> tNN</code> |
+| **Right hand side** | |
+
+| **Description** | Nearest |
+| :---- | :---- |
+| **Left hand side** | <code> tNn</code> |
+| **Right hand side** | |
+
+| **Description** | Last |
+| :---- | :---- |
+| **Left hand side** | <code> tNl</code> |
+| **Right hand side** | |
+
+| **Description** | File |
+| :---- | :---- |
+| **Left hand side** | <code> tNf</code> |
+| **Right hand side** | |
+
+| **Description** | Attach |
+| :---- | :---- |
+| **Left hand side** | <code> tNa</code> |
+| **Right hand side** | |
+
+| **Description** | Debug Last |
+| :---- | :---- |
+| **Left hand side** | <code> tNL</code> |
+| **Right hand side** | |
+
+| **Description** | Debug File |
+| :---- | :---- |
+| **Left hand side** | <code> tNF</code> |
+| **Right hand side** | |
+
+| **Description** | Rename Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> Dr</code> |
+| **Right hand side** | |
+
+| **Description** | Find Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> Df</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle UI |
+| :---- | :---- |
+| **Left hand side** | <code> Dt</code> |
+| **Right hand side** | |
+
+| **Description** | Last Query Info |
+| :---- | :---- |
+| **Left hand side** | <code> Dq</code> |
+| **Right hand side** | |
+
+| **Description** | Notation |
+| :---- | :---- |
+| **Left hand side** | <code> nn</code> |
+| **Right hand side** | |
+
+| **Description** | Load Bundle |
+| :---- | :---- |
+| **Left hand side** | <code> tol</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Bundle |
+| :---- | :---- |
+| **Left hand side** | <code> tod</code> |
+| **Right hand side** | |
+
+| **Description** | Close |
+| :---- | :---- |
+| **Left hand side** | <code> toc</code> |
+| **Right hand side** | |
+
+| **Description** | Build |
+| :---- | :---- |
+| **Left hand side** | <code> tob</code> |
+| **Right hand side** | |
+
+| **Description** | Task Action |
+| :---- | :---- |
+| **Left hand side** | <code> toa</code> |
+| **Right hand side** | |
+
+| **Description** | Run Command |
+| :---- | :---- |
+| **Left hand side** | <code> toR</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle |
+| :---- | :---- |
+| **Left hand side** | <code> tot</code> |
+| **Right hand side** | |
+
+| **Description** | Save Bundle |
+| :---- | :---- |
+| **Left hand side** | <code> tos</code> |
+| **Right hand side** | |
+
+| **Description** | Run |
+| :---- | :---- |
+| **Left hand side** | <code> tor</code> |
+| **Right hand side** | |
+
+| **Description** | Quick Action |
+| :---- | :---- |
+| **Left hand side** | <code> toq</code> |
+| **Right hand side** | |
+
+| **Description** | Open |
+| :---- | :---- |
+| **Left hand side** | <code> too</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Minimap |
+| :---- | :---- |
+| **Left hand side** | <code> vm</code> |
+| **Right hand side** | |
+
+| **Description** | Workspace Diagnostics |
+| :---- | :---- |
+| **Left hand side** | <code> lD</code> |
+| **Right hand side** | |
+
+| **Description** | Document Diagnostics |
+| :---- | :---- |
+| **Left hand side** | <code> ld</code> |
+| **Right hand side** | |
+
+| **Description** | Disconnect |
+| :---- | :---- |
+| **Left hand side** | <code> dd</code> |
+| **Right hand side** | |
+
+| **Description** | Continue |
+| :---- | :---- |
+| **Left hand side** | <code> dc</code> |
+| **Right hand side** | |
+
+| **Description** | Step Back |
+| :---- | :---- |
+| **Left hand side** | <code> db</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle UI |
+| :---- | :---- |
+| **Left hand side** | <code> dU</code> |
+| **Right hand side** | |
+
+| **Description** | Conditional Breakpoint |
+| :---- | :---- |
+| **Left hand side** | <code> dC</code> |
+| **Right hand side** | |
+
+| **Description** | Evaluate Input |
+| :---- | :---- |
+| **Left hand side** | <code> dE</code> |
+| **Right hand side** | |
+
+| **Description** | Run to Cursor |
+| :---- | :---- |
+| **Left hand side** | <code> dR</code> |
+| **Right hand side** | |
+
+| **Description** | Step Out |
+| :---- | :---- |
+| **Left hand side** | <code> du</code> |
+| **Right hand side** | |
+
+| **Description** | Terminate |
+| :---- | :---- |
+| **Left hand side** | <code> dx</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Breakpoint |
+| :---- | :---- |
+| **Left hand side** | <code> dt</code> |
+| **Right hand side** | |
+
+| **Description** | Start |
+| :---- | :---- |
+| **Left hand side** | <code> ds</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle REPL |
+| :---- | :---- |
+| **Left hand side** | <code> dr</code> |
+| **Right hand side** | |
+
+| **Description** | Quit |
+| :---- | :---- |
+| **Left hand side** | <code> dq</code> |
+| **Right hand side** | |
+
+| **Description** | Pause |
+| :---- | :---- |
+| **Left hand side** | <code> dp</code> |
+| **Right hand side** | |
+
+| **Description** | Run Last |
+| :---- | :---- |
+| **Left hand side** | <code> dl</code> |
+| **Right hand side** | |
+
+| **Description** | Step Over |
+| :---- | :---- |
+| **Left hand side** | <code> do</code> |
+| **Right hand side** | |
+
+| **Description** | Step Into |
+| :---- | :---- |
+| **Left hand side** | <code> di</code> |
+| **Right hand side** | |
+
+| **Description** | Scopes |
+| :---- | :---- |
+| **Left hand side** | <code> dS</code> |
+| **Right hand side** | |
+
+| **Description** | Hover Variables |
+| :---- | :---- |
+| **Left hand side** | <code> dh</code> |
+| **Right hand side** | |
+
+| **Description** | Get Session |
+| :---- | :---- |
+| **Left hand side** | <code> dg</code> |
+| **Right hand side** | |
+
+| **Description** | Evaluate |
+| :---- | :---- |
+| **Left hand side** | <code> de</code> |
+| **Right hand side** | |
+
+| **Description** | Debug Print Variable |
+| :---- | :---- |
+| **Left hand side** | <code> rp</code> |
+| **Right hand side** | |
+
+| **Description** | Debug Print |
+| :---- | :---- |
+| **Left hand side** | <code> rP</code> |
+| **Right hand side** | |
+
+| **Description** | Extract Block to File |
+| :---- | :---- |
+| **Left hand side** | <code> rf</code> |
+| **Right hand side** | |
+
+| **Description** | Extract Block |
+| :---- | :---- |
+| **Left hand side** | <code> rb</code> |
+| **Right hand side** | |
+
+| **Description** | Inline Variable |
+| :---- | :---- |
+| **Left hand side** | <code> ri</code> |
+| **Right hand side** | |
+
+| **Description** | Debug Cleanup |
+| :---- | :---- |
+| **Left hand side** | <code> rc</code> |
+| **Right hand side** | |
+
+| **Description** | Status |
+| :---- | :---- |
+| **Left hand side** | <code> gs</code> |
+| **Right hand side** | |
+
+| **Description** | Find Files |
+| :---- | :---- |
+| **Left hand side** | <code>  </code> |
+| **Right hand side** | |
+
+| **Description** | Colorscheme |
+| :---- | :---- |
+| **Left hand side** | <code> zc</code> |
+| **Right hand side** | |
+
+| **Description** | Code Outline |
+| :---- | :---- |
+| **Left hand side** | <code> vo</code> |
+| **Right hand side** | |
+
+| **Description** | Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> sb</code> |
+| **Right hand side** | |
+
+| **Description** | Snippets |
+| :---- | :---- |
+| **Left hand side** | <code> ss</code> |
+| **Right hand side** | |
+
+| **Description** | Grep (Cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> sW</code> |
+| **Right hand side** | |
+
+| **Description** | Grep (Root Dir) |
+| :---- | :---- |
+| **Left hand side** | <code> sw</code> |
+| **Right hand side** | |
+
+| **Description** | List |
+| :---- | :---- |
+| **Left hand side** | <code> pp</code> |
+| **Right hand side** | |
+
+| **Description** | Search |
+| :---- | :---- |
+| **Left hand side** | <code> hs</code> |
 | **Right hand side** | |
 
 | **Description** | Search |
@@ -819,124 +925,24 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code> ff</code> |
 | **Right hand side** | |
 
-| **Description** | Colorscheme |
+| **Description** | Mason |
 | :---- | :---- |
-| **Left hand side** | <code> zc</code> |
+| **Left hand side** | <code> lm</code> |
 | **Right hand side** | |
 
-| **Description** | Code Outline |
+| **Description** | Don't Save Current Session |
 | :---- | :---- |
-| **Left hand side** | <code> vo</code> |
+| **Left hand side** | <code> qd</code> |
 | **Right hand side** | |
 
-| **Description** | Buffer |
+| **Description** | Restore Last Session |
 | :---- | :---- |
-| **Left hand side** | <code> sb</code> |
+| **Left hand side** | <code> ql</code> |
 | **Right hand side** | |
 
-| **Description** | Snippets |
+| **Description** | Restore Session |
 | :---- | :---- |
-| **Left hand side** | <code> ss</code> |
-| **Right hand side** | |
-
-| **Description** | Grep (Cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> sW</code> |
-| **Right hand side** | |
-
-| **Description** | Grep (Root Dir) |
-| :---- | :---- |
-| **Left hand side** | <code> sw</code> |
-| **Right hand side** | |
-
-| **Description** | List |
-| :---- | :---- |
-| **Left hand side** | <code> pp</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files |
-| :---- | :---- |
-| **Left hand side** | <code>  </code> |
-| **Right hand side** | |
-
-| **Description** | Search |
-| :---- | :---- |
-| **Left hand side** | <code> hs</code> |
-| **Right hand side** | |
-
-| **Description** | Edgy Toggle |
-| :---- | :---- |
-| **Left hand side** | <code> ze</code> |
-| **Right hand side** | |
-
-| **Description** | Edgy Select Window |
-| :---- | :---- |
-| **Left hand side** | <code> zE</code> |
-| **Right hand side** | |
-
-| **Description** | Command 2 |
-| :---- | :---- |
-| **Left hand side** | <code> 6</code> |
-| **Right hand side** | |
-
-| **Description** | Command 1 |
-| :---- | :---- |
-| **Left hand side** | <code> 5</code> |
-| **Right hand side** | |
-
-| **Description** | Terminal 2 |
-| :---- | :---- |
-| **Left hand side** | <code> 4</code> |
-| **Right hand side** | |
-
-| **Description** | Terminal 1 |
-| :---- | :---- |
-| **Left hand side** | <code> 3</code> |
-| **Right hand side** | |
-
-| **Description** | File 2 |
-| :---- | :---- |
-| **Left hand side** | <code> 2</code> |
-| **Right hand side** | |
-
-| **Description** | File 1 |
-| :---- | :---- |
-| **Left hand side** | <code> 1</code> |
-| **Right hand side** | |
-
-| **Description** | Command Menu |
-| :---- | :---- |
-| **Left hand side** | <code> jc</code> |
-| **Right hand side** | |
-
-| **Description** | File Menu |
-| :---- | :---- |
-| **Left hand side** | <code> jm</code> |
-| **Right hand side** | |
-
-| **Description** | Add File |
-| :---- | :---- |
-| **Left hand side** | <code> ja</code> |
-| **Right hand side** | |
-
-| **Description** | Docker |
-| :---- | :---- |
-| **Left hand side** | <code> fd</code> |
-| **Right hand side** | |
-
-| **Description** | Notation |
-| :---- | :---- |
-| **Left hand side** | <code> nn</code> |
-| **Right hand side** | |
-
-| **Description** | Select VirtualEnv |
-| :---- | :---- |
-| **Left hand side** | <code> lv</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Split/Join |
-| :---- | :---- |
-| **Left hand side** | <code> lj</code> |
+| **Left hand side** | <code> qs</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -979,14 +985,14 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code>=P</code> |
 | **Right hand side** | |
 
-| **Description** | Put before and indent right |
-| :---- | :---- |
-| **Left hand side** | <code>&gt;P</code> |
-| **Right hand side** | |
-
 | **Description** | Put and indent right |
 | :---- | :---- |
 | **Left hand side** | <code>&gt;p</code> |
+| **Right hand side** | |
+
+| **Description** | Put before and indent right |
+| :---- | :---- |
+| **Left hand side** | <code>&gt;P</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1009,14 +1015,9 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code>Y</code> |
 | **Right hand side** | <code>y$</code> |
 
-| **Description** | Previous ToDo |
-| :---- | :---- |
-| **Left hand side** | <code>[t</code> |
-| **Right hand side** | |
-
 | **Description** | Put indented before cursor (linewise) |
 | :---- | :---- |
-| **Left hand side** | <code>[p</code> |
+| **Left hand side** | <code>[P</code> |
 | **Right hand side** | |
 
 | **Description** | Cycle forward through yank history |
@@ -1026,12 +1027,17 @@ Configure Neovim as a modernized development environment. Details described in [
 
 | **Description** | Put indented before cursor (linewise) |
 | :---- | :---- |
-| **Left hand side** | <code>[P</code> |
+| **Left hand side** | <code>[p</code> |
 | **Right hand side** | |
 
-| **Description** | Next ToDo |
+| **Description** | Previous ToDo |
 | :---- | :---- |
-| **Left hand side** | <code>]t</code> |
+| **Left hand side** | <code>[t</code> |
+| **Right hand side** | |
+
+| **Description** | Cycle backward through yank history |
+| :---- | :---- |
+| **Left hand side** | <code>]y</code> |
 | **Right hand side** | |
 
 | **Description** | Put indented after cursor (linewise) |
@@ -1044,9 +1050,9 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code>]P</code> |
 | **Right hand side** | |
 
-| **Description** | Cycle backward through yank history |
+| **Description** | Next ToDo |
 | :---- | :---- |
-| **Left hand side** | <code>]y</code> |
+| **Left hand side** | <code>]t</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1061,6 +1067,16 @@ Configure Neovim as a modernized development environment. Details described in [
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>g*</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g#</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>gcc</code> |
 | **Right hand side** | |
 
@@ -1072,16 +1088,6 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>gbc</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>g*</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>g#</code> |
 | **Right hand side** | |
 
 | **Description** | Put yanked text before selection |
@@ -1112,6 +1118,16 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Description** | Yank text |
 | :---- | :---- |
 | **Left hand side** | <code>y</code> |
+| **Right hand side** | |
+
+| **Description** | Open Folds Except Kinds |
+| :---- | :---- |
+| **Left hand side** | <code>zr</code> |
+| **Right hand side** | |
+
+| **Description** | Open All Folds |
+| :---- | :---- |
+| **Left hand side** | <code>zR</code> |
 | **Right hand side** | |
 
 | **Description** | Close All Folds |
@@ -1159,16 +1175,6 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code>zA</code> |
 | **Right hand side** | |
 
-| **Description** | Open Folds Except Kinds |
-| :---- | :---- |
-| **Left hand side** | <code>zr</code> |
-| **Right hand side** | |
-
-| **Description** | Open All Folds |
-| :---- | :---- |
-| **Left hand side** | <code>zR</code> |
-| **Right hand side** | |
-
 | **Description** | Decrement |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-X&gt;</code> |
@@ -1189,6 +1195,16 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code>&lt;Plug&gt;(dial-increment)</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Legendary |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-S-P&gt;</code> |
+| **Right hand side** | |
+
 | **Description** | Scroll backward |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-B&gt;</code> |
@@ -1197,11 +1213,6 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Description** | Scroll forward |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-F&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Previous Cell |
@@ -1224,11 +1235,6 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code>&lt;M-e&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | Legendary |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-S-P&gt;</code> |
-| **Right hand side** | |
-
 | **Description** | Nvim builtin |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
@@ -1237,19 +1243,9 @@ Configure Neovim as a modernized development environment. Details described in [
 
 ### Visual mode keymaps
 
-| **Description** | Evaluate |
+| **Description** | Extract Function |
 | :---- | :---- |
-| **Left hand side** | <code> de</code> |
-| **Right hand side** | |
-
-| **Description** | Edit with Instructions |
-| :---- | :---- |
-| **Left hand side** | <code> ae</code> |
-| **Right hand side** | |
-
-| **Description** | Complete Code |
-| :---- | :---- |
-| **Left hand side** | <code> ac</code> |
+| **Left hand side** | <code> rf</code> |
 | **Right hand side** | |
 
 | **Description** | Inline Variable |
@@ -1277,9 +1273,19 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code> rF</code> |
 | **Right hand side** | |
 
-| **Description** | Extract Function |
+| **Description** | Complete Code |
 | :---- | :---- |
-| **Left hand side** | <code> rf</code> |
+| **Left hand side** | <code> ac</code> |
+| **Right hand side** | |
+
+| **Description** | Edit with Instructions |
+| :---- | :---- |
+| **Left hand side** | <code> ae</code> |
+| **Right hand side** | |
+
+| **Description** | Clear Highlight |
+| :---- | :---- |
+| **Left hand side** | <code> xL</code> |
 | **Right hand side** | |
 
 | **Description** | Send |
@@ -1302,9 +1308,9 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code> xmv</code> |
 | **Right hand side** | |
 
-| **Description** | Clear Highlight |
+| **Description** | Evaluate |
 | :---- | :---- |
-| **Left hand side** | <code> xL</code> |
+| **Left hand side** | <code> de</code> |
 | **Right hand side** | |
 
 | **Description** | Search and Replace (SSR) |
@@ -1362,16 +1368,6 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Left hand side** | <code>g&lt;Plug&gt;(dial-increment)</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gvisual"&lt;CR&gt;g@gv</code> |
 
-| **Description** | Put yanked text before selection |
-| :---- | :---- |
-| **Left hand side** | <code>gP</code> |
-| **Right hand side** | |
-
-| **Description** | Put yanked text after selection |
-| :---- | :---- |
-| **Left hand side** | <code>gp</code> |
-| **Right hand side** | |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>gbc</code> |
@@ -1385,6 +1381,16 @@ Configure Neovim as a modernized development environment. Details described in [
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | Put yanked text before selection |
+| :---- | :---- |
+| **Left hand side** | <code>gP</code> |
+| **Right hand side** | |
+
+| **Description** | Put yanked text after selection |
+| :---- | :---- |
+| **Left hand side** | <code>gp</code> |
 | **Right hand side** | |
 
 | **Description** | Put yanked text after cursor |

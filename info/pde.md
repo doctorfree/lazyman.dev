@@ -19,6 +19,12 @@ Configure Neovim as a Personalized Development Environment (PDE)
 
 [https://github.com/alpha2phi/neovim-pde](https://github.com/alpha2phi/neovim-pde)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
@@ -102,99 +108,24 @@ Configure Neovim as a Personalized Development Environment (PDE)
 
 ### Normal mode keymaps
 
-| **Description** | Docker |
-| :---- | :---- |
-| **Left hand side** | <code> fd</code> |
-| **Right hand side** | |
-
-| **Description** | Mark Motion |
-| :---- | :---- |
-| **Left hand side** | <code> xmm</code> |
-| **Right hand side** | |
-
-| **Description** | Send Mark |
-| :---- | :---- |
-| **Left hand side** | <code> xms</code> |
-| **Right hand side** | |
-
-| **Description** | Clear |
-| :---- | :---- |
-| **Left hand side** | <code> xc</code> |
-| **Right hand side** | |
-
-| **Description** | Close REPL |
-| :---- | :---- |
-| **Left hand side** | <code> xC</code> |
-| **Right hand side** | |
-
-| **Description** | Interrupt |
-| :---- | :---- |
-| **Left hand side** | <code> xI</code> |
-| **Right hand side** | |
-
-| **Description** | ENTER |
-| :---- | :---- |
-| **Left hand side** | <code> x&lt;CR&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Send File |
-| :---- | :---- |
-| **Left hand side** | <code> xf</code> |
-| **Right hand side** | |
-
-| **Description** | Send Until Cursor |
-| :---- | :---- |
-| **Left hand side** | <code> xt</code> |
-| **Right hand side** | |
-
-| **Description** | Send Line |
-| :---- | :---- |
-| **Left hand side** | <code> xl</code> |
-| **Right hand side** | |
-
-| **Description** | Send Motion |
-| :---- | :---- |
-| **Left hand side** | <code> xs</code> |
-| **Right hand side** | |
-
-| **Description** | +Mark |
-| :---- | :---- |
-| **Left hand side** | <code> xm</code> |
-| **Right hand side** | |
-
-| **Description** | +REPL |
-| :---- | :---- |
-| **Left hand side** | <code> x</code> |
-| **Right hand side** | |
-
-| **Description** | Hide |
-| :---- | :---- |
-| **Left hand side** | <code> xH</code> |
-| **Right hand side** | |
-
-| **Description** | Focus |
-| :---- | :---- |
-| **Left hand side** | <code> xF</code> |
-| **Right hand side** | |
-
-| **Description** | Restart |
-| :---- | :---- |
-| **Left hand side** | <code> xS</code> |
-| **Right hand side** | |
-
-| **Description** | REPL |
-| :---- | :---- |
-| **Left hand side** | <code> xR</code> |
-| **Right hand side** | |
-
-| **Description** | Remove Mark |
-| :---- | :---- |
-| **Left hand side** | <code> xmr</code> |
-| **Right hand side** | |
-
 | **Description** | Select VirtualEnv |
 | :---- | :---- |
 | **Left hand side** | <code> lv</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Session |
+| :---- | :---- |
+| **Left hand side** | <code> qs</code> |
+| **Right hand side** | |
+
+| **Description** | Don't Save Current Session |
+| :---- | :---- |
+| **Left hand side** | <code> qd</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Last Session |
+| :---- | :---- |
+| **Left hand side** | <code> ql</code> |
 | **Right hand side** | |
 
 | **Description** | Help |
@@ -272,79 +203,44 @@ Configure Neovim as a Personalized Development Environment (PDE)
 | **Left hand side** | <code> ttR</code> |
 | **Right hand side** | |
 
-| **Description** | Don't Save Current Session |
+| **Description** | Evaluate |
 | :---- | :---- |
-| **Left hand side** | <code> qd</code> |
+| **Left hand side** | <code> de</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Last Session |
+| **Description** | Disconnect |
 | :---- | :---- |
-| **Left hand side** | <code> ql</code> |
+| **Left hand side** | <code> dd</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Session |
+| **Description** | Continue |
 | :---- | :---- |
-| **Left hand side** | <code> qs</code> |
+| **Left hand side** | <code> dc</code> |
 | **Right hand side** | |
 
-| **Description** | Status |
+| **Description** | Step Back |
 | :---- | :---- |
-| **Left hand side** | <code> gs</code> |
+| **Left hand side** | <code> db</code> |
 | **Right hand side** | |
 
-| **Description** | Last |
+| **Description** | Toggle UI |
 | :---- | :---- |
-| **Left hand side** | <code> tl</code> |
+| **Left hand side** | <code> dU</code> |
 | **Right hand side** | |
 
-| **Description** | All Files |
+| **Description** | Conditional Breakpoint |
 | :---- | :---- |
-| **Left hand side** | <code> tF</code> |
+| **Left hand side** | <code> dC</code> |
 | **Right hand side** | |
 
-| **Description** | File |
+| **Description** | Evaluate Input |
 | :---- | :---- |
-| **Left hand side** | <code> tf</code> |
+| **Left hand side** | <code> dE</code> |
 | **Right hand side** | |
 
-| **Description** | Attach |
+| **Description** | Run to Cursor |
 | :---- | :---- |
-| **Left hand side** | <code> ta</code> |
-| **Right hand side** | |
-
-| **Description** | Debug Last |
-| :---- | :---- |
-| **Left hand side** | <code> tL</code> |
-| **Right hand side** | |
-
-| **Description** | Debug File |
-| :---- | :---- |
-| **Left hand side** | <code> td</code> |
-| **Right hand side** | |
-
-| **Description** | Summary |
-| :---- | :---- |
-| **Left hand side** | <code> tS</code> |
-| **Right hand side** | |
-
-| **Description** | Stop |
-| :---- | :---- |
-| **Left hand side** | <code> ts</code> |
-| **Right hand side** | |
-
-| **Description** | Output |
-| :---- | :---- |
-| **Left hand side** | <code> to</code> |
-| **Right hand side** | |
-
-| **Description** | Debug Nearest |
-| :---- | :---- |
-| **Left hand side** | <code> tN</code> |
-| **Right hand side** | |
-
-| **Description** | Nearest |
-| :---- | :---- |
-| **Left hand side** | <code> tn</code> |
+| **Left hand side** | <code> dR</code> |
 | **Right hand side** | |
 
 | **Description** | Step Out |
@@ -407,49 +303,64 @@ Configure Neovim as a Personalized Development Environment (PDE)
 | **Left hand side** | <code> dg</code> |
 | **Right hand side** | |
 
-| **Description** | Evaluate |
+| **Description** | Summary |
 | :---- | :---- |
-| **Left hand side** | <code> de</code> |
+| **Left hand side** | <code> tS</code> |
 | **Right hand side** | |
 
-| **Description** | Disconnect |
+| **Description** | Stop |
 | :---- | :---- |
-| **Left hand side** | <code> dd</code> |
+| **Left hand side** | <code> ts</code> |
 | **Right hand side** | |
 
-| **Description** | Continue |
+| **Description** | Output |
 | :---- | :---- |
-| **Left hand side** | <code> dc</code> |
+| **Left hand side** | <code> to</code> |
 | **Right hand side** | |
 
-| **Description** | Step Back |
+| **Description** | Debug Nearest |
 | :---- | :---- |
-| **Left hand side** | <code> db</code> |
+| **Left hand side** | <code> tN</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle UI |
+| **Description** | Nearest |
 | :---- | :---- |
-| **Left hand side** | <code> dU</code> |
+| **Left hand side** | <code> tn</code> |
 | **Right hand side** | |
 
-| **Description** | Conditional Breakpoint |
+| **Description** | Last |
 | :---- | :---- |
-| **Left hand side** | <code> dC</code> |
+| **Left hand side** | <code> tl</code> |
 | **Right hand side** | |
 
-| **Description** | Evaluate Input |
+| **Description** | All Files |
 | :---- | :---- |
-| **Left hand side** | <code> dE</code> |
+| **Left hand side** | <code> tF</code> |
 | **Right hand side** | |
 
-| **Description** | Run to Cursor |
+| **Description** | File |
 | :---- | :---- |
-| **Left hand side** | <code> dR</code> |
+| **Left hand side** | <code> tf</code> |
 | **Right hand side** | |
 
-| **Description** | Pick |
+| **Description** | Attach |
 | :---- | :---- |
-| **Left hand side** | <code> zCp</code> |
+| **Left hand side** | <code> ta</code> |
+| **Right hand side** | |
+
+| **Description** | Debug Last |
+| :---- | :---- |
+| **Left hand side** | <code> tL</code> |
+| **Right hand side** | |
+
+| **Description** | Debug File |
+| :---- | :---- |
+| **Left hand side** | <code> td</code> |
+| **Right hand side** | |
+
+| **Description** | Status |
+| :---- | :---- |
+| **Left hand side** | <code> gs</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Highlighter |
@@ -460,6 +371,101 @@ Configure Neovim as a Personalized Development Environment (PDE)
 | **Description** | Convert |
 | :---- | :---- |
 | **Left hand side** | <code> zCc</code> |
+| **Right hand side** | |
+
+| **Description** | Pick |
+| :---- | :---- |
+| **Left hand side** | <code> zCp</code> |
+| **Right hand side** | |
+
+| **Description** | Docker |
+| :---- | :---- |
+| **Left hand side** | <code> fd</code> |
+| **Right hand side** | |
+
+| **Description** | +Mark |
+| :---- | :---- |
+| **Left hand side** | <code> xm</code> |
+| **Right hand side** | |
+
+| **Description** | +REPL |
+| :---- | :---- |
+| **Left hand side** | <code> x</code> |
+| **Right hand side** | |
+
+| **Description** | Hide |
+| :---- | :---- |
+| **Left hand side** | <code> xH</code> |
+| **Right hand side** | |
+
+| **Description** | Focus |
+| :---- | :---- |
+| **Left hand side** | <code> xF</code> |
+| **Right hand side** | |
+
+| **Description** | Restart |
+| :---- | :---- |
+| **Left hand side** | <code> xS</code> |
+| **Right hand side** | |
+
+| **Description** | REPL |
+| :---- | :---- |
+| **Left hand side** | <code> xR</code> |
+| **Right hand side** | |
+
+| **Description** | Remove Mark |
+| :---- | :---- |
+| **Left hand side** | <code> xmr</code> |
+| **Right hand side** | |
+
+| **Description** | Mark Motion |
+| :---- | :---- |
+| **Left hand side** | <code> xmm</code> |
+| **Right hand side** | |
+
+| **Description** | Send Mark |
+| :---- | :---- |
+| **Left hand side** | <code> xms</code> |
+| **Right hand side** | |
+
+| **Description** | Clear |
+| :---- | :---- |
+| **Left hand side** | <code> xc</code> |
+| **Right hand side** | |
+
+| **Description** | Close REPL |
+| :---- | :---- |
+| **Left hand side** | <code> xC</code> |
+| **Right hand side** | |
+
+| **Description** | Interrupt |
+| :---- | :---- |
+| **Left hand side** | <code> xI</code> |
+| **Right hand side** | |
+
+| **Description** | ENTER |
+| :---- | :---- |
+| **Left hand side** | <code> x&lt;CR&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Send File |
+| :---- | :---- |
+| **Left hand side** | <code> xf</code> |
+| **Right hand side** | |
+
+| **Description** | Send Until Cursor |
+| :---- | :---- |
+| **Left hand side** | <code> xt</code> |
+| **Right hand side** | |
+
+| **Description** | Send Line |
+| :---- | :---- |
+| **Left hand side** | <code> xl</code> |
+| **Right hand side** | |
+
+| **Description** | Send Motion |
+| :---- | :---- |
+| **Left hand side** | <code> xs</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -502,9 +508,14 @@ Configure Neovim as a Personalized Development Environment (PDE)
 | **Left hand side** | <code>&lt;Plug&gt;NetrwBrowseX</code> |
 | **Right hand side** | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
 
-| **Description** | Previous Cell |
+| **Description** | Scroll backward |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;M-k&gt;</code> |
+| **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Scroll forward |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-F&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Next Cell |
@@ -522,14 +533,9 @@ Configure Neovim as a Personalized Development Environment (PDE)
 | **Left hand side** | <code>&lt;M-e&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | Scroll forward |
+| **Description** | Previous Cell |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-F&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Scroll backward |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Left hand side** | <code>&lt;M-k&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Nvim builtin |
@@ -539,6 +545,16 @@ Configure Neovim as a Personalized Development Environment (PDE)
 
 
 ### Visual mode keymaps
+
+| **Description** | Evaluate |
+| :---- | :---- |
+| **Left hand side** | <code> de</code> |
+| **Right hand side** | |
+
+| **Description** | Clear Highlight |
+| :---- | :---- |
+| **Left hand side** | <code> xL</code> |
+| **Right hand side** | |
 
 | **Description** | Send |
 | :---- | :---- |
@@ -558,16 +574,6 @@ Configure Neovim as a Personalized Development Environment (PDE)
 | **Description** | Mark Visual |
 | :---- | :---- |
 | **Left hand side** | <code> xmv</code> |
-| **Right hand side** | |
-
-| **Description** | Clear Highlight |
-| :---- | :---- |
-| **Left hand side** | <code> xL</code> |
-| **Right hand side** | |
-
-| **Description** | Evaluate |
-| :---- | :---- |
-| **Left hand side** | <code> de</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -592,17 +598,17 @@ Configure Neovim as a Personalized Development Environment (PDE)
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>gbc</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>gcc</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
 
 | **Description** | |

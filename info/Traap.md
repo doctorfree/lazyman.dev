@@ -27,6 +27,12 @@ post_style: page
 
 [https://www.youtube.com/@traap.](https://www.youtube.com/@traap.)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [antoinemadec/FixCursorHold.nvim](https://github.com/antoinemadec/FixCursorHold.nvim)
@@ -142,9 +148,84 @@ post_style: page
 | **Left hand side** | <code> tn</code> |
 | **Right hand side** | |
 
-| **Description** | Select VirtualEnv |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> cv</code> |
+| **Left hand side** | <code> cm</code> |
+| **Right hand side** | |
+
+| **Description** | Dismiss all Notifications |
+| :---- | :---- |
+| **Left hand side** | <code> un</code> |
+| **Right hand side** | |
+
+| **Description** | Oil buffer |
+| :---- | :---- |
+| **Left hand side** | <code> no</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> bd</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer (Force) |
+| :---- | :---- |
+| **Left hand side** | <code> bD</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> Tl</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> Tb</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> Tr</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> Tm</code> |
+| **Right hand side** | |
+
+| **Description** | Todo/Fix/Fixme |
+| :---- | :---- |
+| **Left hand side** | <code> sT</code> |
+| **Right hand side** | |
+
+| **Description** | Todo |
+| :---- | :---- |
+| **Left hand side** | <code> st</code> |
+| **Right hand side** | |
+
+| **Description** | Todo/Fix/Fixme (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xT</code> |
+| **Right hand side** | |
+
+| **Description** | Todo (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xt</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Session |
+| :---- | :---- |
+| **Left hand side** | <code> qs</code> |
+| **Right hand side** | |
+
+| **Description** | Don't Save Current Session |
+| :---- | :---- |
+| **Left hand side** | <code> qd</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Last Session |
+| :---- | :---- |
+| **Left hand side** | <code> ql</code> |
 | **Right hand side** | |
 
 | **Description** | Quickfix List (Trouble) |
@@ -167,19 +248,9 @@ post_style: page
 | **Left hand side** | <code> xx</code> |
 | **Right hand side** | |
 
-| **Description** | Debug Method |
+| **Description** | Select VirtualEnv |
 | :---- | :---- |
-| **Left hand side** | <code> dPt</code> |
-| **Right hand side** | |
-
-| **Description** | Debug Class |
-| :---- | :---- |
-| **Left hand side** | <code> dPc</code> |
-| **Right hand side** | |
-
-| **Description** | Dap UI |
-| :---- | :---- |
-| **Left hand side** | <code> du</code> |
+| **Left hand side** | <code> cv</code> |
 | **Right hand side** | |
 
 | **Description** | Eval |
@@ -187,19 +258,19 @@ post_style: page
 | **Left hand side** | <code> de</code> |
 | **Right hand side** | |
 
-| **Description** | Delete Buffer (Force) |
+| **Description** | Dap UI |
 | :---- | :---- |
-| **Left hand side** | <code> bD</code> |
+| **Left hand side** | <code> du</code> |
 | **Right hand side** | |
 
-| **Description** | Delete Buffer |
+| **Description** | Debug Class |
 | :---- | :---- |
-| **Left hand side** | <code> bd</code> |
+| **Left hand side** | <code> dPc</code> |
 | **Right hand side** | |
 
-| **Description** | Breakpoint Condition |
+| **Description** | Debug Method |
 | :---- | :---- |
-| **Left hand side** | <code> dB</code> |
+| **Left hand side** | <code> dPt</code> |
 | **Right hand side** | |
 
 | **Description** | Step Over |
@@ -217,79 +288,14 @@ post_style: page
 | **Left hand side** | <code> dj</code> |
 | **Right hand side** | |
 
-| **Description** | Todo/Fix/Fixme (Trouble) |
+| **Description** | Breakpoint Condition |
 | :---- | :---- |
-| **Left hand side** | <code> xT</code> |
-| **Right hand side** | |
-
-| **Description** | Todo/Fix/Fixme |
-| :---- | :---- |
-| **Left hand side** | <code> sT</code> |
-| **Right hand side** | |
-
-| **Description** | Todo |
-| :---- | :---- |
-| **Left hand side** | <code> st</code> |
-| **Right hand side** | |
-
-| **Description** | Todo (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xt</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> cm</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> Tm</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> Tl</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> Tb</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> Tr</code> |
+| **Left hand side** | <code> dB</code> |
 | **Right hand side** | |
 
 | **Description** | Replace in files (Spectre) |
 | :---- | :---- |
 | **Left hand side** | <code> sr</code> |
-| **Right hand side** | |
-
-| **Description** | Dismiss all Notifications |
-| :---- | :---- |
-| **Left hand side** | <code> un</code> |
-| **Right hand side** | |
-
-| **Description** | Oil buffer |
-| :---- | :---- |
-| **Left hand side** | <code> no</code> |
-| **Right hand side** | |
-
-| **Description** | Don't Save Current Session |
-| :---- | :---- |
-| **Left hand side** | <code> qd</code> |
-| **Right hand side** | |
-
-| **Description** | Restore Last Session |
-| :---- | :---- |
-| **Left hand side** | <code> ql</code> |
-| **Right hand side** | |
-
-| **Description** | Restore Session |
-| :---- | :---- |
-| **Left hand side** | <code> qs</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -782,14 +788,14 @@ post_style: page
 | **Left hand side** | <code>[%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
 
-| **Description** | Previous trouble/quickfix item |
-| :---- | :---- |
-| **Left hand side** | <code>[q</code> |
-| **Right hand side** | |
-
 | **Description** | Previous todo comment |
 | :---- | :---- |
 | **Left hand side** | <code>[t</code> |
+| **Right hand side** | |
+
+| **Description** | Previous trouble/quickfix item |
+| :---- | :---- |
+| **Left hand side** | <code>[q</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -797,14 +803,14 @@ post_style: page
 | **Left hand side** | <code>]%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
 
-| **Description** | Next trouble/quickfix item |
-| :---- | :---- |
-| **Left hand side** | <code>]q</code> |
-| **Right hand side** | |
-
 | **Description** | Next todo comment |
 | :---- | :---- |
 | **Left hand side** | <code>]t</code> |
+| **Right hand side** | |
+
+| **Description** | Next trouble/quickfix item |
+| :---- | :---- |
+| **Left hand side** | <code>]q</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -862,9 +868,9 @@ post_style: page
 | **Left hand side** | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
 
-| **Description** | |
+| **Description** | Increment selection |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;M-6&gt;</code> |
+| **Left hand side** | <code>&lt;C-Space&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -902,9 +908,9 @@ post_style: page
 | **Left hand side** | <code>&lt;M-7&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | Increment selection |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-Space&gt;</code> |
+| **Left hand side** | <code>&lt;M-6&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |

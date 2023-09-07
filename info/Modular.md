@@ -19,6 +19,12 @@ Same as 'StartMason' but everything is split in modules
 
 [https://github.com/VonHeikemen/nvim-starter/tree/05-modular](https://github.com/VonHeikemen/nvim-starter/tree/05-modular)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
@@ -61,11 +67,6 @@ Same as 'StartMason' but everything is split in modules
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> e</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;NvimTreeToggle&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code> bc</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;Bdelete&lt;CR&gt;</code> |
 
@@ -98,6 +99,11 @@ Same as 'StartMason' but everything is split in modules
 | :---- | :---- |
 | **Left hand side** | <code> ?</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> e</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;NvimTreeToggle&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |

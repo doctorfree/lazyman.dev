@@ -19,6 +19,12 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 
 [https://github.com/VonHeikemen/dotfiles](https://github.com/VonHeikemen/dotfiles)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -83,28 +89,13 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> ui</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;IndentBlanklineToggle&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> uf</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;CtrlSFToggle&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> fw</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;exe 'Find' expand('&lt;lt&gt;cword&gt;')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> F</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;FineCmdline Find &lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code> s</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;SearchBoxClear&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> ui</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;IndentBlanklineToggle&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -140,6 +131,21 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 | :---- | :---- |
 | **Left hand side** | <code> fg</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;Telescope live_grep&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> uf</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;CtrlSFToggle&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fw</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;exe 'Find' expand('&lt;lt&gt;cword&gt;')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> F</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;FineCmdline Find &lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -363,12 +369,12 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>[q</code> |
+| **Left hand side** | <code>[g</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>[g</code> |
+| **Left hand side** | <code>[q</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -388,12 +394,12 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>]g</code> |
+| **Left hand side** | <code>]q</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>]q</code> |
+| **Left hand side** | <code>]g</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -413,12 +419,12 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>cr</code> |
+| **Left hand side** | <code>cs</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>cs</code> |
+| **Left hand side** | <code>cr</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -801,12 +807,12 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gb</code> |
+| **Left hand side** | <code>gB</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gB</code> |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -999,12 +1005,12 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gB</code> |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gb</code> |
+| **Left hand side** | <code>gB</code> |
 | **Right hand side** | |
 
 | **Description** | |

@@ -23,6 +23,12 @@ Uses the [mini.nvim](https://github.com/echasnovski/mini.nvim) library. Personal
 
 [http://neovimcraft.com/plugin/echasnovski/nvim](http://neovimcraft.com/plugin/echasnovski/nvim)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Mini.nvim managed plugins
 
 

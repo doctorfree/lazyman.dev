@@ -27,6 +27,12 @@ Wuelner's Neovim setup follows a well-defined philosophy governed by coherence a
 
 [https://dotfyle.com/wuelnerdotexe/nvim](https://dotfyle.com/wuelnerdotexe/nvim)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)

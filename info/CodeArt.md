@@ -27,6 +27,12 @@ Use Neovim as a general purpose IDE
 
 [https://dotfyle.com/plugins/artart222/CodeArt](https://dotfyle.com/plugins/artart222/CodeArt)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Packer managed plugins
 
 - [antoinemadec/FixCursorHold.nvim](https://github.com/antoinemadec/FixCursorHold.nvim)

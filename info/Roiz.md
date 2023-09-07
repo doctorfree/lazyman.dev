@@ -19,6 +19,12 @@ Just a random Neovim config found on Github, works well
 
 [https://github.com/MrRoiz/rnvim](https://github.com/MrRoiz/rnvim)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
@@ -81,6 +87,11 @@ Just a random Neovim config found on Github, works well
 | **Left hand side** | <code>&lt;Tab&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua MiniMove.move_line('right')&lt;CR&gt;</code> |
 
+| **Description** | Open a floating term |
+| :---- | :---- |
+| **Left hand side** | <code> tt</code> |
+| **Right hand side** | <code>:ToggleTerm direction=float&lt;CR&gt;</code> |
+
 | **Description** | Select all |
 | :---- | :---- |
 | **Left hand side** | <code> a</code> |
@@ -90,6 +101,26 @@ Just a random Neovim config found on Github, works well
 | :---- | :---- |
 | **Left hand side** | <code> test</code> |
 | **Right hand side** | <code>:echo 'This is a test keymap!'&lt;CR&gt;</code> |
+
+| **Description** | Open Spectre |
+| :---- | :---- |
+| **Left hand side** | <code> ss</code> |
+| **Right hand side** | <code>:lua require('spectre').open()&lt;CR&gt;</code> |
+
+| **Description** | Search on current file with Spectre |
+| :---- | :---- |
+| **Left hand side** | <code> sf</code> |
+| **Right hand side** | <code>:lua require('spectre').open_file_search({select_word=true})&lt;CR&gt;</code> |
+
+| **Description** | Search current word with Spectre |
+| :---- | :---- |
+| **Left hand side** | <code> sw</code> |
+| **Right hand side** | <code>:lua require('spectre').open_visual({select_word=true})&lt;CR&gt;</code> |
+
+| **Description** | Where am I |
+| :---- | :---- |
+| **Left hand side** | <code> wai</code> |
+| **Right hand side** | <code>:echo expand('%:p')&lt;CR&gt;</code> |
 
 | **Description** | Show git log |
 | :---- | :---- |
@@ -121,31 +152,6 @@ Just a random Neovim config found on Github, works well
 | **Left hand side** | <code> gb</code> |
 | **Right hand side** | <code>:Telescope git_branches initial_mode=normal&lt;CR&gt;</code> |
 
-| **Description** | Search current word with Spectre |
-| :---- | :---- |
-| **Left hand side** | <code> sw</code> |
-| **Right hand side** | <code>:lua require('spectre').open_visual({select_word=true})&lt;CR&gt;</code> |
-
-| **Description** | Search on current file with Spectre |
-| :---- | :---- |
-| **Left hand side** | <code> sf</code> |
-| **Right hand side** | <code>:lua require('spectre').open_file_search({select_word=true})&lt;CR&gt;</code> |
-
-| **Description** | Open Spectre |
-| :---- | :---- |
-| **Left hand side** | <code> ss</code> |
-| **Right hand side** | <code>:lua require('spectre').open()&lt;CR&gt;</code> |
-
-| **Description** | Where am I |
-| :---- | :---- |
-| **Left hand side** | <code> wai</code> |
-| **Right hand side** | <code>:echo expand('%:p')&lt;CR&gt;</code> |
-
-| **Description** | Show Commit history with changes |
-| :---- | :---- |
-| **Left hand side** | <code> dh</code> |
-| **Right hand side** | <code>:DiffviewFileHistory&lt;CR&gt;</code> |
-
 | **Description** | Close diffview |
 | :---- | :---- |
 | **Left hand side** | <code> dcc</code> |
@@ -160,6 +166,11 @@ Just a random Neovim config found on Github, works well
 | :---- | :---- |
 | **Left hand side** | <code> dch</code> |
 | **Right hand side** | <code>:DiffviewFileHistory %&lt;CR&gt;</code> |
+
+| **Description** | Show Commit history with changes |
+| :---- | :---- |
+| **Left hand side** | <code> dh</code> |
+| **Right hand side** | <code>:DiffviewFileHistory&lt;CR&gt;</code> |
 
 | **Description** | Start PR review |
 | :---- | :---- |
@@ -190,11 +201,6 @@ Just a random Neovim config found on Github, works well
 | :---- | :---- |
 | **Left hand side** | <code> orss</code> |
 | **Right hand side** | <code>:Octo review submit&lt;CR&gt;</code> |
-
-| **Description** | Open a floating term |
-| :---- | :---- |
-| **Left hand side** | <code> tt</code> |
-| **Right hand side** | <code>:ToggleTerm direction=float&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -266,6 +272,31 @@ Just a random Neovim config found on Github, works well
 | **Left hand side** | <code>g%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
 
+| **Description** | Close preview windows |
+| :---- | :---- |
+| **Left hand side** | <code>gP</code> |
+| **Right hand side** | |
+
+| **Description** | Preview references |
+| :---- | :---- |
+| **Left hand side** | <code>gpr</code> |
+| **Right hand side** | |
+
+| **Description** | Preview implementation |
+| :---- | :---- |
+| **Left hand side** | <code>gpi</code> |
+| **Right hand side** | |
+
+| **Description** | Preview type definition |
+| :---- | :---- |
+| **Left hand side** | <code>gpt</code> |
+| **Right hand side** | |
+
+| **Description** | Preview definition |
+| :---- | :---- |
+| **Left hand side** | <code>gpd</code> |
+| **Right hand side** | |
+
 | **Description** | Comment insert end of line |
 | :---- | :---- |
 | **Left hand side** | <code>gcA</code> |
@@ -301,31 +332,6 @@ Just a random Neovim config found on Github, works well
 | **Left hand side** | <code>gc</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
 
-| **Description** | Close preview windows |
-| :---- | :---- |
-| **Left hand side** | <code>gP</code> |
-| **Right hand side** | |
-
-| **Description** | Preview references |
-| :---- | :---- |
-| **Left hand side** | <code>gpr</code> |
-| **Right hand side** | |
-
-| **Description** | Preview implementation |
-| :---- | :---- |
-| **Left hand side** | <code>gpi</code> |
-| **Right hand side** | |
-
-| **Description** | Preview type definition |
-| :---- | :---- |
-| **Left hand side** | <code>gpt</code> |
-| **Right hand side** | |
-
-| **Description** | Preview definition |
-| :---- | :---- |
-| **Left hand side** | <code>gpd</code> |
-| **Right hand side** | |
-
 | **Description** | Close all folds |
 | :---- | :---- |
 | **Left hand side** | <code>zM</code> |
@@ -335,6 +341,16 @@ Just a random Neovim config found on Github, works well
 | :---- | :---- |
 | **Left hand side** | <code>zR</code> |
 | **Right hand side** | |
+
+| **Description** | Save current file |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-S&gt;</code> |
+| **Right hand side** | <code>:w&lt;CR&gt;</code> |
+
+| **Description** | Open Nvimtree |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Right hand side** | <code>:NvimTreeFindFileToggle&lt;CR&gt;</code> |
 
 | **Description** | Close current buffer |
 | :---- | :---- |
@@ -351,16 +367,6 @@ Just a random Neovim config found on Github, works well
 | **Left hand side** | <code>&lt;M-l&gt;</code> |
 | **Right hand side** | <code>:BufferLineCycleNext&lt;CR&gt;</code> |
 
-| **Description** | Save current file |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-S&gt;</code> |
-| **Right hand side** | <code>:w&lt;CR&gt;</code> |
-
-| **Description** | Open Nvimtree |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-B&gt;</code> |
-| **Right hand side** | <code>:NvimTreeFindFileToggle&lt;CR&gt;</code> |
-
 | **Description** | Move up faster |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-K&gt;</code> |
@@ -376,15 +382,15 @@ Just a random Neovim config found on Github, works well
 | **Left hand side** | <code>&lt;C-J&gt;</code> |
 | **Right hand side** | <code>10j</code> |
 
-| **Description** | Format file |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-F&gt;</code> |
-| **Right hand side** | <code>:lua vim.lsp.buf.format({ timeout_ms = 5000 })&lt;CR&gt;</code> |
-
 | **Description** | Update buffer |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;F5&gt;</code> |
 | **Right hand side** | <code>:bufdo e!&lt;CR&gt;</code> |
+
+| **Description** | Format file |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-F&gt;</code> |
+| **Right hand side** | <code>:lua vim.lsp.buf.format({ timeout_ms = 5000 })&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -440,6 +446,11 @@ Just a random Neovim config found on Github, works well
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
 | **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -621,11 +632,6 @@ Just a random Neovim config found on Github, works well
 | **Left hand side** | <code>&lt;S-Tab&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua MiniMove.move_line('left')&lt;CR&gt;</code> |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-
 | **Description** | Nvim builtin |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
@@ -774,31 +780,6 @@ Just a random Neovim config found on Github, works well
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
-| **Description** | Comment toggle blockwise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-
-| **Description** | Comment toggle linewise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-
-| **Description** | Move up |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-k&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua MiniMove.move_selection('up')&lt;CR&gt;</code> |
-
-| **Description** | Move down |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-j&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua MiniMove.move_selection('down')&lt;CR&gt;</code> |
-
-| **Description** | Move left |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;S-Tab&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua MiniMove.move_selection('left')&lt;CR&gt;</code> |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-N&gt;</code> |
@@ -812,7 +793,7 @@ Just a random Neovim config found on Github, works well
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Find-Subword-Under)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;11_Visual('under')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;20_Visual('under')</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -832,12 +813,37 @@ Just a random Neovim config found on Github, works well
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Visual-All)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;11_Visual('all')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;20_Visual('all')</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Visual-Find)</code> |
 | **Right hand side** | <code>vm#operators#find(1, 1)</code> |
+
+| **Description** | Move up |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-k&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua MiniMove.move_selection('up')&lt;CR&gt;</code> |
+
+| **Description** | Move down |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-j&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua MiniMove.move_selection('down')&lt;CR&gt;</code> |
+
+| **Description** | Move left |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;S-Tab&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua MiniMove.move_selection('left')&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle blockwise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle linewise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
 
 
 ### Operator mode keymaps

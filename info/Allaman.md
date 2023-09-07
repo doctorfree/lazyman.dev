@@ -23,6 +23,12 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 
 [https://dotfyle.com/Allaman/nvim](https://dotfyle.com/Allaman/nvim)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -225,84 +231,9 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 | **Left hand side** | <code> bD</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;%bd&#124;e#|bd#&lt;CR&gt;</code> |
 
-| **Description** | Toggle SymbolsOutline |
-| :---- | :---- |
-| **Left hand side** | <code> tO</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle search and replace |
-| :---- | :---- |
-| **Left hand side** | <code> Rr</code> |
-| **Right hand side** | |
-
-| **Description** | Search on current file |
-| :---- | :---- |
-| **Left hand side** | <code> Rf</code> |
-| **Right hand side** | |
-
-| **Description** | Search current word |
-| :---- | :---- |
-| **Left hand side** | <code> Rw</code> |
-| **Right hand side** | |
-
 | **Description** | Toggle Filetree |
 | :---- | :---- |
 | **Left hand side** | <code> fp</code> |
-| **Right hand side** | |
-
-| **Description** | Advanced Git Search |
-| :---- | :---- |
-| **Left hand side** | <code> ga</code> |
-| **Right hand side** | |
-
-| **Description** | Keymaps |
-| :---- | :---- |
-| **Left hand side** | <code> sk</code> |
-| **Right hand side** | |
-
-| **Description** | Headings |
-| :---- | :---- |
-| **Left hand side** | <code> sh</code> |
-| **Right hand side** | |
-
-| **Description** | Help |
-| :---- | :---- |
-| **Left hand side** | <code> s?</code> |
-| **Right hand side** | |
-
-| **Description** | Strings |
-| :---- | :---- |
-| **Left hand side** | <code> st</code> |
-| **Right hand side** | |
-
-| **Description** | Commands |
-| :---- | :---- |
-| **Left hand side** | <code> sc</code> |
-| **Right hand side** | |
-
-| **Description** | Bufferlist |
-| :---- | :---- |
-| **Left hand side** | <code> bb</code> |
-| **Right hand side** | |
-
-| **Description** | Telescope |
-| :---- | :---- |
-| **Left hand side** | <code> mt</code> |
-| **Right hand side** | |
-
-| **Description** | Run make |
-| :---- | :---- |
-| **Left hand side** | <code> mm</code> |
-| **Right hand side** | |
-
-| **Description** | Recent files |
-| :---- | :---- |
-| **Left hand side** | <code> fr</code> |
-| **Right hand side** | |
-
-| **Description** | Open file (ignore git) |
-| :---- | :---- |
-| **Left hand side** | <code> fF</code> |
 | **Right hand side** | |
 
 | **Description** | Open file |
@@ -310,24 +241,29 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 | **Left hand side** | <code> ff</code> |
 | **Right hand side** | |
 
-| **Description** | Zoxide |
+| **Description** | Open file (ignore git) |
 | :---- | :---- |
-| **Left hand side** | <code> fz</code> |
+| **Left hand side** | <code> fF</code> |
 | **Right hand side** | |
 
-| **Description** | Filebrowser |
+| **Description** | Recent files |
 | :---- | :---- |
-| **Left hand side** | <code> fb</code> |
+| **Left hand side** | <code> fr</code> |
 | **Right hand side** | |
 
-| **Description** | Commits |
+| **Description** | Run make |
 | :---- | :---- |
-| **Left hand side** | <code> gm</code> |
+| **Left hand side** | <code> mm</code> |
 | **Right hand side** | |
 
-| **Description** | Status |
+| **Description** | Telescope |
 | :---- | :---- |
-| **Left hand side** | <code> gg</code> |
+| **Left hand side** | <code> mt</code> |
+| **Right hand side** | |
+
+| **Description** | Bufferlist |
+| :---- | :---- |
+| **Left hand side** | <code> bb</code> |
 | **Right hand side** | |
 
 | **Description** | Branches |
@@ -373,6 +309,76 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 | **Description** | Vim Options |
 | :---- | :---- |
 | **Left hand side** | <code> sO</code> |
+| **Right hand side** | |
+
+| **Description** | Keymaps |
+| :---- | :---- |
+| **Left hand side** | <code> sk</code> |
+| **Right hand side** | |
+
+| **Description** | Headings |
+| :---- | :---- |
+| **Left hand side** | <code> sh</code> |
+| **Right hand side** | |
+
+| **Description** | Help |
+| :---- | :---- |
+| **Left hand side** | <code> s?</code> |
+| **Right hand side** | |
+
+| **Description** | Strings |
+| :---- | :---- |
+| **Left hand side** | <code> st</code> |
+| **Right hand side** | |
+
+| **Description** | Commands |
+| :---- | :---- |
+| **Left hand side** | <code> sc</code> |
+| **Right hand side** | |
+
+| **Description** | Zoxide |
+| :---- | :---- |
+| **Left hand side** | <code> fz</code> |
+| **Right hand side** | |
+
+| **Description** | Filebrowser |
+| :---- | :---- |
+| **Left hand side** | <code> fb</code> |
+| **Right hand side** | |
+
+| **Description** | Commits |
+| :---- | :---- |
+| **Left hand side** | <code> gm</code> |
+| **Right hand side** | |
+
+| **Description** | Status |
+| :---- | :---- |
+| **Left hand side** | <code> gg</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle SymbolsOutline |
+| :---- | :---- |
+| **Left hand side** | <code> tO</code> |
+| **Right hand side** | |
+
+| **Description** | Advanced Git Search |
+| :---- | :---- |
+| **Left hand side** | <code> ga</code> |
+| **Right hand side** | |
+
+| **Description** | Search current word |
+| :---- | :---- |
+| **Left hand side** | <code> Rw</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle search and replace |
+| :---- | :---- |
+| **Left hand side** | <code> Rr</code> |
+| **Right hand side** | |
+
+| **Description** | Search on current file |
+| :---- | :---- |
+| **Left hand side** | <code> Rf</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -505,16 +511,6 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
 
-| **Description** | Toggle Terminal |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-N&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-J&gt;</code> |
@@ -529,16 +525,6 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-H&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').left()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;fugitive:</code> |
-| **Right hand side** | <code></code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
 
 | **Description** | Git Conflict: Previous Conflict |
 | :---- | :---- |
@@ -569,6 +555,26 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(git-conflict-ours)</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
+
+| **Description** | Toggle Terminal |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-N&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;fugitive:</code> |
+| **Right hand side** | <code></code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
 
 | **Description** | Search in buffer |
 | :---- | :---- |

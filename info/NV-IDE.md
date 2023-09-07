@@ -27,6 +27,12 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 
 [https://dotfyle.com/crivotz/nv-ide](https://dotfyle.com/crivotz/nv-ide)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
@@ -420,6 +426,16 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 | **Left hand side** | <code>\nm</code> |
 | **Right hand side** | <code>:Dispatch npm start&lt;CR&gt;</code> |
 
+| **Description** | Create a selection for selcted text or word under the cursor |
+| :---- | :---- |
+| **Left hand side** | <code>\mc</code> |
+| **Right hand side** | |
+
+| **Description** | Symbols Outline |
+| :---- | :---- |
+| **Left hand side** | <code>\cs</code> |
+| **Right hand side** | |
+
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>\ld</code> |
@@ -433,16 +449,6 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>\x</code> |
-| **Right hand side** | |
-
-| **Description** | Create a selection for selcted text or word under the cursor |
-| :---- | :---- |
-| **Left hand side** | <code>\mc</code> |
-| **Right hand side** | |
-
-| **Description** | Symbols Outline |
-| :---- | :---- |
-| **Left hand side** | <code>\cs</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -469,6 +475,11 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 | :---- | :---- |
 | **Left hand side** | <code>g%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gC</code> |
+| **Right hand side** | <code>&lt;Plug&gt;CapsLockToggle</code> |
 
 | **Description** | Comment insert end of line |
 | :---- | :---- |
@@ -507,11 +518,6 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gC</code> |
-| **Right hand side** | <code>&lt;Plug&gt;CapsLockToggle</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>h</code> |
 | **Right hand side** | |
 
@@ -545,14 +551,14 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 | **Left hand side** | <code>zZ</code> |
 | **Right hand side** | |
 
-| **Description** | Open all folds |
-| :---- | :---- |
-| **Left hand side** | <code>zR</code> |
-| **Right hand side** | |
-
 | **Description** | Close all folds |
 | :---- | :---- |
 | **Left hand side** | <code>zM</code> |
+| **Right hand side** | |
+
+| **Description** | Open all folds |
+| :---- | :---- |
+| **Left hand side** | <code>zR</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -597,13 +603,18 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
-| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;15_vsnip_cut_text_normal&lt;CR&gt;g@</code> |
+| **Left hand side** | <code>&lt;Plug&gt;CapsLockDisable</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;37_disable('i')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
-| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;15_vsnip_select_text_normal&lt;CR&gt;g@</code> |
+| **Left hand side** | <code>&lt;Plug&gt;CapsLockEnable</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;37_enable('i',1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CapsLockToggle</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;37_toggle('i',1)&lt;CR&gt;</code> |
 
 | **Description** | Comment toggle blockwise with count |
 | :---- | :---- |
@@ -637,11 +648,6 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
 
@@ -662,18 +668,18 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;CapsLockDisable</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_disable('i')&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
+| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;18_vsnip_cut_text_normal&lt;CR&gt;g@</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;CapsLockEnable</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_enable('i',1)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
+| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;18_vsnip_select_text_normal&lt;CR&gt;g@</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;CapsLockToggle</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_toggle('i',1)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -803,6 +809,16 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 | **Left hand side** | <code>&lt;C-H&gt;</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;13_vsnip_visual_text(visualmode())&lt;CR&gt;gv"_c</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;13_vsnip_visual_text(visualmode())&lt;CR&gt;gv</code> |
+
 | **Description** | Comment toggle blockwise (visual) |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
@@ -812,16 +828,6 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
 | **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_vsnip_visual_text(visualmode())&lt;CR&gt;gv"_c</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_vsnip_visual_text(visualmode())&lt;CR&gt;gv</code> |
 
 | **Description** | |
 | :---- | :---- |

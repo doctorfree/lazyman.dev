@@ -19,6 +19,12 @@ post_style: page
 
 [https://github.com/igorcguedes/SaleVim](https://github.com/igorcguedes/SaleVim)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Packer managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)

@@ -27,6 +27,12 @@ Personal Neovim configuration of Elijah Manor
 
 [https://www.youtube.com/@ElijahManor](https://www.youtube.com/@ElijahManor)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [LazyVim/LazyVim](https://github.com/LazyVim/LazyVim.git)
@@ -60,6 +66,31 @@ Personal Neovim configuration of Elijah Manor
 ## Elijah Keymaps
 
 ### Normal mode keymaps
+
+| **Description** | Find Files (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code>  </code> |
+| **Right hand side** | |
+
+| **Description** | Goto Symbol (Workspace) |
+| :---- | :---- |
+| **Left hand side** | <code> sS</code> |
+| **Right hand side** | |
+
+| **Description** | Goto Symbol |
+| :---- | :---- |
+| **Left hand side** | <code> ss</code> |
+| **Right hand side** | |
+
+| **Description** | Colorscheme with preview |
+| :---- | :---- |
+| **Left hand side** | <code> uC</code> |
+| **Right hand side** | |
+
+| **Description** | Word (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> sW</code> |
+| **Right hand side** | |
 
 | **Description** | Word (root dir) |
 | :---- | :---- |
@@ -196,65 +227,10 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code> ,</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;Telescope buffers show_all_buffers=true&lt;CR&gt;</code> |
 
-| **Description** | Find Files (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code>  </code> |
-| **Right hand side** | |
-
 | **Description** | Browse Files |
 | :---- | :---- |
 | **Left hand side** | <code> sB</code> |
 | **Right hand side** | <code>:Telescope file_browser file_browser path=%:p:h=%:p:h&lt;CR&gt;</code> |
-
-| **Description** | Goto Symbol (Workspace) |
-| :---- | :---- |
-| **Left hand side** | <code> sS</code> |
-| **Right hand side** | |
-
-| **Description** | Goto Symbol |
-| :---- | :---- |
-| **Left hand side** | <code> ss</code> |
-| **Right hand side** | |
-
-| **Description** | Colorscheme with preview |
-| :---- | :---- |
-| **Left hand side** | <code> uC</code> |
-| **Right hand side** | |
-
-| **Description** | Word (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> sW</code> |
-| **Right hand side** | |
-
-| **Description** | Restore Last Session |
-| :---- | :---- |
-| **Left hand side** | <code> ql</code> |
-| **Right hand side** | |
-
-| **Description** | Restore Session |
-| :---- | :---- |
-| **Left hand side** | <code> qs</code> |
-| **Right hand side** | |
-
-| **Description** | Don't Save Current Session |
-| :---- | :---- |
-| **Left hand side** | <code> qd</code> |
-| **Right hand side** | |
-
-| **Description** | Type-check |
-| :---- | :---- |
-| **Left hand side** | <code> tc</code> |
-| **Right hand side** | |
-
-| **Description** | Dismiss all Notifications |
-| :---- | :---- |
-| **Left hand side** | <code> un</code> |
-| **Right hand side** | |
-
-| **Description** | Replace in files (Spectre) |
-| :---- | :---- |
-| **Left hand side** | <code> sr</code> |
-| **Right hand side** | |
 
 | **Description** | Stop |
 | :---- | :---- |
@@ -296,6 +272,16 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code> gd</code> |
 | **Right hand side** | |
 
+| **Description** | Mason |
+| :---- | :---- |
+| **Left hand side** | <code> cm</code> |
+| **Right hand side** | |
+
+| **Description** | Dismiss all Notifications |
+| :---- | :---- |
+| **Left hand side** | <code> un</code> |
+| **Right hand side** | |
+
 | **Description** | Open mini.files (cwd) |
 | :---- | :---- |
 | **Left hand side** | <code> fM</code> |
@@ -306,24 +292,9 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code> fm</code> |
 | **Right hand side** | |
 
-| **Description** | Explorer NeoTree (cwd) |
+| **Description** | Toggle LSP output |
 | :---- | :---- |
-| **Left hand side** | <code> E</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer NeoTree (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> e</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer NeoTree (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> fE</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer NeoTree (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> fe</code> |
+| **Left hand side** | <code> uo</code> |
 | **Right hand side** | |
 
 | **Description** | Dismiss All |
@@ -346,19 +317,19 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code> snl</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle LSP output |
+| **Description** | Type-check |
 | :---- | :---- |
-| **Left hand side** | <code> uo</code> |
+| **Left hand side** | <code> tc</code> |
 | **Right hand side** | |
 
-| **Description** | Mason |
+| **Description** | Step Over |
 | :---- | :---- |
-| **Left hand side** | <code> cm</code> |
+| **Left hand side** | <code> dO</code> |
 | **Right hand side** | |
 
-| **Description** | Open Yank History |
+| **Description** | Step Out |
 | :---- | :---- |
-| **Left hand side** | <code> p</code> |
+| **Left hand side** | <code> do</code> |
 | **Right hand side** | |
 
 | **Description** | Run Last |
@@ -436,41 +407,6 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code> dp</code> |
 | **Right hand side** | |
 
-| **Description** | Step Over |
-| :---- | :---- |
-| **Left hand side** | <code> dO</code> |
-| **Right hand side** | |
-
-| **Description** | Step Out |
-| :---- | :---- |
-| **Left hand side** | <code> do</code> |
-| **Right hand side** | |
-
-| **Description** | Neogit |
-| :---- | :---- |
-| **Left hand side** | <code> gn</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle pin |
-| :---- | :---- |
-| **Left hand side** | <code> bp</code> |
-| **Right hand side** | |
-
-| **Description** | Delete non-pinned buffers |
-| :---- | :---- |
-| **Left hand side** | <code> bP</code> |
-| **Right hand side** | |
-
-| **Description** | Dap UI |
-| :---- | :---- |
-| **Left hand side** | <code> du</code> |
-| **Right hand side** | |
-
-| **Description** | Eval |
-| :---- | :---- |
-| **Left hand side** | <code> de</code> |
-| **Right hand side** | |
-
 | **Description** | Todo/Fix/Fixme |
 | :---- | :---- |
 | **Left hand side** | <code> sT</code> |
@@ -491,6 +427,11 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code> xt</code> |
 | **Right hand side** | |
 
+| **Description** | Quickfix List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xQ</code> |
+| **Right hand side** | |
+
 | **Description** | Location List (Trouble) |
 | :---- | :---- |
 | **Left hand side** | <code> xL</code> |
@@ -506,9 +447,69 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code> xx</code> |
 | **Right hand side** | |
 
-| **Description** | Quickfix List (Trouble) |
+| **Description** | Neogit |
 | :---- | :---- |
-| **Left hand side** | <code> xQ</code> |
+| **Left hand side** | <code> gn</code> |
+| **Right hand side** | |
+
+| **Description** | Delete non-pinned buffers |
+| :---- | :---- |
+| **Left hand side** | <code> bP</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle pin |
+| :---- | :---- |
+| **Left hand side** | <code> bp</code> |
+| **Right hand side** | |
+
+| **Description** | Open Yank History |
+| :---- | :---- |
+| **Left hand side** | <code> p</code> |
+| **Right hand side** | |
+
+| **Description** | Replace in files (Spectre) |
+| :---- | :---- |
+| **Left hand side** | <code> sr</code> |
+| **Right hand side** | |
+
+| **Description** | Don't Save Current Session |
+| :---- | :---- |
+| **Left hand side** | <code> qd</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Last Session |
+| :---- | :---- |
+| **Left hand side** | <code> ql</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Session |
+| :---- | :---- |
+| **Left hand side** | <code> qs</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer NeoTree (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> E</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer NeoTree (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> e</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer NeoTree (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> fE</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer NeoTree (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> fe</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> bd</code> |
 | **Right hand side** | |
 
 | **Description** | Delete Buffer (Force) |
@@ -516,9 +517,14 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code> bD</code> |
 | **Right hand side** | |
 
-| **Description** | Delete Buffer |
+| **Description** | Eval |
 | :---- | :---- |
-| **Left hand side** | <code> bd</code> |
+| **Left hand side** | <code> de</code> |
+| **Right hand side** | |
+
+| **Description** | Dap UI |
+| :---- | :---- |
+| **Left hand side** | <code> du</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -586,26 +592,6 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code>[%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
 
-| **Description** | Prev Reference |
-| :---- | :---- |
-| **Left hand side** | <code>[[</code> |
-| **Right hand side** | |
-
-| **Description** | Cycle forward through yank history |
-| :---- | :---- |
-| **Left hand side** | <code>[y</code> |
-| **Right hand side** | |
-
-| **Description** | Put indented before cursor (linewise) |
-| :---- | :---- |
-| **Left hand side** | <code>[p</code> |
-| **Right hand side** | |
-
-| **Description** | Put indented before cursor (linewise) |
-| :---- | :---- |
-| **Left hand side** | <code>[P</code> |
-| **Right hand side** | |
-
 | **Description** | Previous todo comment |
 | :---- | :---- |
 | **Left hand side** | <code>[t</code> |
@@ -616,10 +602,40 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code>[q</code> |
 | **Right hand side** | |
 
+| **Description** | Prev Reference |
+| :---- | :---- |
+| **Left hand side** | <code>[[</code> |
+| **Right hand side** | |
+
+| **Description** | Put indented before cursor (linewise) |
+| :---- | :---- |
+| **Left hand side** | <code>[p</code> |
+| **Right hand side** | |
+
+| **Description** | Cycle forward through yank history |
+| :---- | :---- |
+| **Left hand side** | <code>[y</code> |
+| **Right hand side** | |
+
+| **Description** | Put indented before cursor (linewise) |
+| :---- | :---- |
+| **Left hand side** | <code>[P</code> |
+| **Right hand side** | |
+
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>]%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+
+| **Description** | Next todo comment |
+| :---- | :---- |
+| **Left hand side** | <code>]t</code> |
+| **Right hand side** | |
+
+| **Description** | Next trouble/quickfix item |
+| :---- | :---- |
+| **Left hand side** | <code>]q</code> |
+| **Right hand side** | |
 
 | **Description** | Next Reference |
 | :---- | :---- |
@@ -641,16 +657,6 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code>]P</code> |
 | **Right hand side** | |
 
-| **Description** | Next todo comment |
-| :---- | :---- |
-| **Left hand side** | <code>]t</code> |
-| **Right hand side** | |
-
-| **Description** | Next trouble/quickfix item |
-| :---- | :---- |
-| **Left hand side** | <code>]q</code> |
-| **Right hand side** | |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>gx</code> |
@@ -661,14 +667,9 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code>g%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
 
-| **Description** | Replace surrounding |
+| **Description** | Add surrounding |
 | :---- | :---- |
-| **Left hand side** | <code>gzr</code> |
-| **Right hand side** | |
-
-| **Description** | Delete surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gzd</code> |
+| **Left hand side** | <code>gza</code> |
 | **Right hand side** | |
 
 | **Description** | Highlight surrounding |
@@ -676,9 +677,9 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code>gzh</code> |
 | **Right hand side** | |
 
-| **Description** | Add surrounding |
+| **Description** | Delete surrounding |
 | :---- | :---- |
-| **Left hand side** | <code>gza</code> |
+| **Left hand side** | <code>gzd</code> |
 | **Right hand side** | |
 
 | **Description** | Find right surrounding |
@@ -694,6 +695,11 @@ Personal Neovim configuration of Elijah Manor
 | **Description** | Update `MiniSurround.config.n_lines` |
 | :---- | :---- |
 | **Left hand side** | <code>gzn</code> |
+| **Right hand side** | |
+
+| **Description** | Replace surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gzr</code> |
 | **Right hand side** | |
 
 | **Description** | Put yanked text before selection |
@@ -748,11 +754,6 @@ Personal Neovim configuration of Elijah Manor
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
 
@@ -771,14 +772,19 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code>&lt;C-H&gt;</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
 
-| **Description** | Scroll backward |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-B&gt;</code> |
-| **Right hand side** | |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
 | **Description** | Scroll forward |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-F&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Scroll backward |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-B&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -859,9 +865,9 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code>g%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
 
-| **Description** | Add surrounding |
+| **Description** | Put yanked text before selection |
 | :---- | :---- |
-| **Left hand side** | <code>gza</code> |
+| **Left hand side** | <code>gP</code> |
 | **Right hand side** | |
 
 | **Description** | Put yanked text after selection |
@@ -869,9 +875,9 @@ Personal Neovim configuration of Elijah Manor
 | **Left hand side** | <code>gp</code> |
 | **Right hand side** | |
 
-| **Description** | Put yanked text before selection |
+| **Description** | Add surrounding |
 | :---- | :---- |
-| **Left hand side** | <code>gP</code> |
+| **Left hand side** | <code>gza</code> |
 | **Right hand side** | |
 
 | **Description** | Put yanked text after cursor |

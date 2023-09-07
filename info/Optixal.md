@@ -23,6 +23,12 @@ Hybrid Neovim config for developers with a functional yet aesthetic experience. 
 
 [http://neovimcraft.com/plugin/Optixal/neovim-init.vim](http://neovimcraft.com/plugin/Optixal/neovim-init.vim)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Plug managed plugins
 
 - [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs.git)

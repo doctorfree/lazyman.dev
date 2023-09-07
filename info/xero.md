@@ -27,6 +27,12 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 
 [https://dotfyle.com/xero/dotfiles-neovim-config-nvim](https://dotfyle.com/xero/dotfiles-neovim-config-nvim)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim.git)
@@ -105,6 +111,31 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 | **Left hand side** | <code>,</code> |
 | **Right hand side** | |
 
+| **Description** | Resume FZF |
+| :---- | :---- |
+| **Left hand side** | <code>,//</code> |
+| **Right hand side** | |
+
+| **Description** | Search git buffer commits |
+| :---- | :---- |
+| **Left hand side** | <code>,bc</code> |
+| **Right hand side** | |
+
+| **Description** | Search git buffer commits |
+| :---- | :---- |
+| **Left hand side** | <code>,/gC</code> |
+| **Right hand side** | |
+
+| **Description** | Search git commits |
+| :---- | :---- |
+| **Left hand side** | <code>,/gc</code> |
+| **Right hand side** | |
+
+| **Description** | Search git branches |
+| :---- | :---- |
+| **Left hand side** | <code>,/gb</code> |
+| **Right hand side** | |
+
 | **Description** | Find git files |
 | :---- | :---- |
 | **Left hand side** | <code>,/gf</code> |
@@ -148,31 +179,6 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 | **Description** | Search commands |
 | :---- | :---- |
 | **Left hand side** | <code>,/c</code> |
-| **Right hand side** | |
-
-| **Description** | Resume FZF |
-| :---- | :---- |
-| **Left hand side** | <code>,//</code> |
-| **Right hand side** | |
-
-| **Description** | Search git buffer commits |
-| :---- | :---- |
-| **Left hand side** | <code>,bc</code> |
-| **Right hand side** | |
-
-| **Description** | Search git buffer commits |
-| :---- | :---- |
-| **Left hand side** | <code>,/gC</code> |
-| **Right hand side** | |
-
-| **Description** | Search git commits |
-| :---- | :---- |
-| **Left hand side** | <code>,/gc</code> |
-| **Right hand side** | |
-
-| **Description** | Search git branches |
-| :---- | :---- |
-| **Left hand side** | <code>,/gb</code> |
 | **Right hand side** | |
 
 | **Description** | chmod +x buffer |

@@ -23,6 +23,12 @@ Personal Neovim configuration of Github user justchokingaround
 
 [https://dotfyle.com/justchokingaround/dotfiles-coding-neovim-nvim](https://dotfyle.com/justchokingaround/dotfiles-coding-neovim-nvim)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [LazyVim/LazyVim](https://github.com/LazyVim/LazyVim.git)
@@ -113,11 +119,6 @@ Personal Neovim configuration of Github user justchokingaround
 
 ### Normal mode keymaps
 
-| **Description** | Diff View |
-| :---- | :---- |
-| **Left hand side** | <code> gv</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;DiffviewOpen&lt;CR&gt;</code> |
-
 | **Description** | Commit history |
 | :---- | :---- |
 | **Left hand side** | <code> gH</code> |
@@ -127,6 +128,11 @@ Personal Neovim configuration of Github user justchokingaround
 | :---- | :---- |
 | **Left hand side** | <code> gh</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;DiffviewFileHistory %&lt;CR&gt;</code> |
+
+| **Description** | Diff View |
+| :---- | :---- |
+| **Left hand side** | <code> gv</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;DiffviewOpen&lt;CR&gt;</code> |
 
 | **Description** | [Hydra] UI Options |
 | :---- | :---- |
@@ -153,29 +159,134 @@ Personal Neovim configuration of Github user justchokingaround
 | **Left hand side** | <code> r</code> |
 | **Right hand side** | |
 
-| **Description** | Mason |
+| **Description** | Run File |
 | :---- | :---- |
-| **Left hand side** | <code> cm</code> |
+| **Left hand side** | <code> tt</code> |
 | **Right hand side** | |
 
-| **Description** | Explorer NeoTree (root dir) |
+| **Description** | Stop |
 | :---- | :---- |
-| **Left hand side** | <code> fe</code> |
+| **Left hand side** | <code> tS</code> |
 | **Right hand side** | |
 
-| **Description** | Explorer NeoTree (cwd) |
+| **Description** | Toggle Output Panel |
 | :---- | :---- |
-| **Left hand side** | <code> E</code> |
+| **Left hand side** | <code> tO</code> |
 | **Right hand side** | |
 
-| **Description** | Explorer |
+| **Description** | Show Output |
 | :---- | :---- |
-| **Left hand side** | <code> e</code> |
+| **Left hand side** | <code> to</code> |
 | **Right hand side** | |
 
-| **Description** | Explorer NeoTree (cwd) |
+| **Description** | Toggle Summary |
 | :---- | :---- |
-| **Left hand side** | <code> fE</code> |
+| **Left hand side** | <code> ts</code> |
+| **Right hand side** | |
+
+| **Description** | Run Nearest |
+| :---- | :---- |
+| **Left hand side** | <code> tr</code> |
+| **Right hand side** | |
+
+| **Description** | Run All Test Files |
+| :---- | :---- |
+| **Left hand side** | <code> tT</code> |
+| **Right hand side** | |
+
+| **Description** | Replace in files (Spectre) |
+| :---- | :---- |
+| **Left hand side** | <code> sr</code> |
+| **Right hand side** | |
+
+| **Description** | Delete non-pinned buffers |
+| :---- | :---- |
+| **Left hand side** | <code> bP</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle pin |
+| :---- | :---- |
+| **Left hand side** | <code> bp</code> |
+| **Right hand side** | |
+
+| **Description** | Symbols Outline |
+| :---- | :---- |
+| **Left hand side** | <code> cs</code> |
+| **Right hand side** | |
+
+| **Description** | LSP Len Toggle |
+| :---- | :---- |
+| **Left hand side** | <code> uL</code> |
+| **Right hand side** | |
+
+| **Description** | org return |
+| :---- | :---- |
+| **Left hand side** | <code> or</code> |
+| **Right hand side** | |
+
+| **Description** | org index |
+| :---- | :---- |
+| **Left hand side** | <code> oi</code> |
+| **Right hand side** | |
+
+| **Description** | Todo |
+| :---- | :---- |
+| **Left hand side** | <code> st</code> |
+| **Right hand side** | |
+
+| **Description** | Todo/Fix/Fixme (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xT</code> |
+| **Right hand side** | |
+
+| **Description** | Todo (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xt</code> |
+| **Right hand side** | |
+
+| **Description** | Todo/Fix/Fixme |
+| :---- | :---- |
+| **Left hand side** | <code> sT</code> |
+| **Right hand side** | |
+
+| **Description** | Workspace Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xX</code> |
+| **Right hand side** | |
+
+| **Description** | Document Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xx</code> |
+| **Right hand side** | |
+
+| **Description** | Quickfix List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xQ</code> |
+| **Right hand side** | |
+
+| **Description** | Location List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xL</code> |
+| **Right hand side** | |
+
+| **Description** | Projects |
+| :---- | :---- |
+| **Left hand side** | <code> fp</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Last Session |
+| :---- | :---- |
+| **Left hand side** | <code> ql</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Session |
+| :---- | :---- |
+| **Left hand side** | <code> qs</code> |
+| **Right hand side** | |
+
+| **Description** | Don't Save Current Session |
+| :---- | :---- |
+| **Left hand side** | <code> qd</code> |
 | **Right hand side** | |
 
 | **Description** | Edgy Select Window |
@@ -188,19 +299,39 @@ Personal Neovim configuration of Github user justchokingaround
 | **Left hand side** | <code> ue</code> |
 | **Right hand side** | |
 
-| **Description** | Don't Save Current Session |
+| **Description** | Word (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code> qd</code> |
+| **Left hand side** | <code> sw</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Last Session |
+| **Description** | Goto Symbol (Workspace) |
 | :---- | :---- |
-| **Left hand side** | <code> ql</code> |
+| **Left hand side** | <code> sS</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Session |
+| **Description** | Goto Symbol |
 | :---- | :---- |
-| **Left hand side** | <code> qs</code> |
+| **Left hand side** | <code> ss</code> |
+| **Right hand side** | |
+
+| **Description** | Colorscheme with preview |
+| :---- | :---- |
+| **Left hand side** | <code> uC</code> |
+| **Right hand side** | |
+
+| **Description** | Word (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> sW</code> |
+| **Right hand side** | |
+
+| **Description** | Find Files (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code>  </code> |
+| **Right hand side** | |
+
+| **Description** | Resume |
+| :---- | :---- |
+| **Left hand side** | <code> sR</code> |
 | **Right hand side** | |
 
 | **Description** | Options |
@@ -328,64 +459,29 @@ Personal Neovim configuration of Github user justchokingaround
 | **Left hand side** | <code> ,</code> |
 | **Right hand side** | |
 
-| **Description** | Find Files (root dir) |
+| **Description** | Explorer NeoTree (cwd) |
 | :---- | :---- |
-| **Left hand side** | <code>  </code> |
+| **Left hand side** | <code> fE</code> |
 | **Right hand side** | |
 
-| **Description** | Goto Symbol (Workspace) |
+| **Description** | Explorer NeoTree (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code> sS</code> |
+| **Left hand side** | <code> fe</code> |
 | **Right hand side** | |
 
-| **Description** | Goto Symbol |
+| **Description** | Explorer NeoTree (cwd) |
 | :---- | :---- |
-| **Left hand side** | <code> ss</code> |
+| **Left hand side** | <code> E</code> |
 | **Right hand side** | |
 
-| **Description** | Colorscheme with preview |
+| **Description** | Explorer |
 | :---- | :---- |
-| **Left hand side** | <code> uC</code> |
+| **Left hand side** | <code> e</code> |
 | **Right hand side** | |
 
-| **Description** | Word (cwd) |
+| **Description** | Mason |
 | :---- | :---- |
-| **Left hand side** | <code> sW</code> |
-| **Right hand side** | |
-
-| **Description** | Word (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> sw</code> |
-| **Right hand side** | |
-
-| **Description** | Resume |
-| :---- | :---- |
-| **Left hand side** | <code> sR</code> |
-| **Right hand side** | |
-
-| **Description** | Replace in files (Spectre) |
-| :---- | :---- |
-| **Left hand side** | <code> sr</code> |
-| **Right hand side** | |
-
-| **Description** | LSP Len Toggle |
-| :---- | :---- |
-| **Left hand side** | <code> uL</code> |
-| **Right hand side** | |
-
-| **Description** | Symbols Outline |
-| :---- | :---- |
-| **Left hand side** | <code> cs</code> |
-| **Right hand side** | |
-
-| **Description** | Noice History |
-| :---- | :---- |
-| **Left hand side** | <code> snh</code> |
-| **Right hand side** | |
-
-| **Description** | Noice Last Message |
-| :---- | :---- |
-| **Left hand side** | <code> snl</code> |
+| **Left hand side** | <code> cm</code> |
 | **Right hand side** | |
 
 | **Description** | Dismiss All |
@@ -398,104 +494,14 @@ Personal Neovim configuration of Github user justchokingaround
 | **Left hand side** | <code> sna</code> |
 | **Right hand side** | |
 
-| **Description** | Stop |
+| **Description** | Noice History |
 | :---- | :---- |
-| **Left hand side** | <code> tS</code> |
+| **Left hand side** | <code> snh</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle Output Panel |
+| **Description** | Noice Last Message |
 | :---- | :---- |
-| **Left hand side** | <code> tO</code> |
-| **Right hand side** | |
-
-| **Description** | Show Output |
-| :---- | :---- |
-| **Left hand side** | <code> to</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Summary |
-| :---- | :---- |
-| **Left hand side** | <code> ts</code> |
-| **Right hand side** | |
-
-| **Description** | Run Nearest |
-| :---- | :---- |
-| **Left hand side** | <code> tr</code> |
-| **Right hand side** | |
-
-| **Description** | Run All Test Files |
-| :---- | :---- |
-| **Left hand side** | <code> tT</code> |
-| **Right hand side** | |
-
-| **Description** | Run File |
-| :---- | :---- |
-| **Left hand side** | <code> tt</code> |
-| **Right hand side** | |
-
-| **Description** | org return |
-| :---- | :---- |
-| **Left hand side** | <code> or</code> |
-| **Right hand side** | |
-
-| **Description** | org index |
-| :---- | :---- |
-| **Left hand side** | <code> oi</code> |
-| **Right hand side** | |
-
-| **Description** | Todo/Fix/Fixme (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xT</code> |
-| **Right hand side** | |
-
-| **Description** | Todo |
-| :---- | :---- |
-| **Left hand side** | <code> st</code> |
-| **Right hand side** | |
-
-| **Description** | Todo (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xt</code> |
-| **Right hand side** | |
-
-| **Description** | Todo/Fix/Fixme |
-| :---- | :---- |
-| **Left hand side** | <code> sT</code> |
-| **Right hand side** | |
-
-| **Description** | Projects |
-| :---- | :---- |
-| **Left hand side** | <code> fp</code> |
-| **Right hand side** | |
-
-| **Description** | Quickfix List (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xQ</code> |
-| **Right hand side** | |
-
-| **Description** | Location List (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xL</code> |
-| **Right hand side** | |
-
-| **Description** | Workspace Diagnostics (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xX</code> |
-| **Right hand side** | |
-
-| **Description** | Document Diagnostics (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xx</code> |
-| **Right hand side** | |
-
-| **Description** | Delete non-pinned buffers |
-| :---- | :---- |
-| **Left hand side** | <code> bP</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle pin |
-| :---- | :---- |
-| **Left hand side** | <code> bp</code> |
+| **Left hand side** | <code> snl</code> |
 | **Right hand side** | |
 
 | **Description** |  Insert Macro Breakpoint. |
@@ -583,9 +589,9 @@ Personal Neovim configuration of Github user justchokingaround
 | **Left hand side** | <code>gh</code> |
 | **Right hand side** | |
 
-| **Description** | Add surrounding |
+| **Description** | Find right surrounding |
 | :---- | :---- |
-| **Left hand side** | <code>gza</code> |
+| **Left hand side** | <code>gzf</code> |
 | **Right hand side** | |
 
 | **Description** | Delete surrounding |
@@ -603,9 +609,9 @@ Personal Neovim configuration of Github user justchokingaround
 | **Left hand side** | <code>gzr</code> |
 | **Right hand side** | |
 
-| **Description** | Find right surrounding |
+| **Description** | Add surrounding |
 | :---- | :---- |
-| **Left hand side** | <code>gzf</code> |
+| **Left hand side** | <code>gza</code> |
 | **Right hand side** | |
 
 | **Description** | Highlight surrounding |
@@ -638,6 +644,11 @@ Personal Neovim configuration of Github user justchokingaround
 | **Left hand side** | <code>zL</code> |
 | **Right hand side** | |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zh</code> |
+| **Right hand side** | |
+
 | **Description** | ←/→ |
 | :---- | :---- |
 | **Left hand side** | <code>zl</code> |
@@ -646,11 +657,6 @@ Personal Neovim configuration of Github user justchokingaround
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>zH</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>zh</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -677,31 +683,6 @@ Personal Neovim configuration of Github user justchokingaround
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
-
-| **Description** |  Switch Macro Slot |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Q&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(accelerated_jk_j)</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'accelerated-jk'.move_to('j')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(accelerated_jk_gk)</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'accelerated-jk'.move_to('gk')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(accelerated_jk_gj)</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'accelerated-jk'.move_to('gj')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(accelerated_jk_k)</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'accelerated-jk'.move_to('k')&lt;CR&gt;</code> |
 
 | **Description** | Git Conflict: Previous Conflict |
 | :---- | :---- |
@@ -733,9 +714,44 @@ Personal Neovim configuration of Github user justchokingaround
 | **Left hand side** | <code>&lt;Plug&gt;(git-conflict-ours)</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
 
-| **Description** | cursor line |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)c</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(accelerated_jk_gk)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'accelerated-jk'.move_to('gk')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(accelerated_jk_j)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'accelerated-jk'.move_to('j')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(accelerated_jk_k)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'accelerated-jk'.move_to('k')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(accelerated_jk_gj)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'accelerated-jk'.move_to('gj')&lt;CR&gt;</code> |
+
+| **Description** |  Switch Macro Slot |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)&lt;Esc&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | spell |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)s</code> |
+| **Right hand side** | |
+
+| **Description** | show invisible |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)i</code> |
 | **Right hand side** | |
 
 | **Description** | zen mode |
@@ -748,21 +764,6 @@ Personal Neovim configuration of Github user justchokingaround
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)r</code> |
 | **Right hand side** | |
 
-| **Description** | show invisible |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)i</code> |
-| **Right hand side** | |
-
-| **Description** | number |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)n</code> |
-| **Right hand side** | |
-
-| **Description** | spell |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)s</code> |
-| **Right hand side** | |
-
 | **Description** | wrap |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)w</code> |
@@ -773,9 +774,14 @@ Personal Neovim configuration of Github user justchokingaround
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)v</code> |
 | **Right hand side** | |
 
-| **Description** | |
+| **Description** | cursor line |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)&lt;Esc&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)c</code> |
+| **Right hand side** | |
+
+| **Description** | number |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)n</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -785,27 +791,7 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)c</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)L</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)i</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)s</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)p</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -815,12 +801,17 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)u</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)s</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)D</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)L</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)p</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -835,6 +826,21 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)u</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)D</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)c</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)</code> |
 | **Right hand side** | |
 
@@ -845,7 +851,7 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)r</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)a</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -855,12 +861,12 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)o</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)p</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)p</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)r</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -870,12 +876,12 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)K</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)o</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)a</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)K</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -890,12 +896,12 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)g</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)r</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)r</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;CR&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -910,21 +916,6 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)o</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)c</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)?</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)p</code> |
 | **Right hand side** | |
 
@@ -935,12 +926,7 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;CR&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)O</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait);</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -950,12 +936,32 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)g</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)h</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait);</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)?</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)o</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)c</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)O</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -965,17 +971,7 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)c</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)r</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)m</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)w</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -985,17 +981,12 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)g</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)s</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)w</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)m</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1005,7 +996,7 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)D</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)r</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1015,7 +1006,22 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)g</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)h</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)D</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)c</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1035,6 +1041,11 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra1_wait)h</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra1_wait)&lt;Esc&gt;</code> |
 | **Right hand side** | |
 
@@ -1046,11 +1057,6 @@ Personal Neovim configuration of Github user justchokingaround
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra1_wait)H</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra1_wait)h</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1206,26 +1212,6 @@ Personal Neovim configuration of Github user justchokingaround
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
-| **Description** | show invisible |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)i</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)&lt;Esc&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | virtualedit |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)v</code> |
-| **Right hand side** | |
-
-| **Description** | relativenumber |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)r</code> |
-| **Right hand side** | |
-
 | **Description** | cursor line |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)c</code> |
@@ -1236,14 +1222,34 @@ Personal Neovim configuration of Github user justchokingaround
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)n</code> |
 | **Right hand side** | |
 
+| **Description** | virtualedit |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)v</code> |
+| **Right hand side** | |
+
 | **Description** | zen mode |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)z</code> |
 | **Right hand side** | |
 
+| **Description** | show invisible |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)i</code> |
+| **Right hand side** | |
+
+| **Description** | relativenumber |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)r</code> |
+| **Right hand side** | |
+
 | **Description** | spell |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)s</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)&lt;Esc&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | wrap |
@@ -1258,12 +1264,17 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)i</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)D</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)c</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)s</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)&lt;CR&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1278,7 +1289,12 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)c</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)i</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1293,17 +1309,7 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)D</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)p</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)s</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1313,32 +1319,7 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)t</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)P</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)&lt;Esc&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)r</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)K</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)d</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1353,6 +1334,31 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)&lt;Esc&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)r</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)d</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)t</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)P</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)a</code> |
 | **Right hand side** | |
 
@@ -1363,57 +1369,7 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)k</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)/</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)c</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait);</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)O</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)?</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;Esc&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)r</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;CR&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)h</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)f</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1428,6 +1384,56 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait);</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)c</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;CR&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)?</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)r</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)f</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)h</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;Esc&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)/</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)k</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)g</code> |
 | **Right hand side** | |
 
@@ -1438,12 +1444,17 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)h</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)D</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)m</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)c</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)h</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1468,7 +1479,7 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)c</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)s</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1478,17 +1489,12 @@ Personal Neovim configuration of Github user justchokingaround
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)D</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)m</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)p</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)s</code> |
 | **Right hand side** | |
 
 | **Description** | |

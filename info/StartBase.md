@@ -19,6 +19,12 @@ Small configuration that includes a plugin manager
 
 [https://github.com/VonHeikemen/nvim-starter/tree/01-base](https://github.com/VonHeikemen/nvim-starter/tree/01-base)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [folke/lazy.nvim](https://github.com/folke/lazy.nvim)

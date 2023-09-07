@@ -23,6 +23,12 @@ Personal Neovim configuration of chadcat, a high school student with no life. Ko
 
 [https://dotfyle.com/chadcat7/kodo](https://dotfyle.com/chadcat7/kodo)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)

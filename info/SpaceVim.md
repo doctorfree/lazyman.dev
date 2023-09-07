@@ -23,6 +23,12 @@ SpaceVim started in December 2016, it is a mature and well supported Neovim conf
 
 [https://spacevim.org](https://spacevim.org)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## SP (dein) managed plugins
 
 - [2072/PHP-Indenting-for-VIm](https://github.com/2072/PHP-Indenting-for-VIm)

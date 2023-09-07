@@ -23,6 +23,12 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 
 [https://astronvim.lazyman.dev](https://astronvim.lazyman.dev)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [stevearc/aerial.nvim](https://github.com/stevearc/aerial.nvim.git)
@@ -126,10 +132,80 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 
 ### Normal mode keymaps
 
-| **Description** | Search sessions |
+| **Description** | Toggle statusline |
 | :---- | :---- |
-| **Left hand side** | <code> Sf</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! load_session&lt;CR&gt;</code> |
+| **Left hand side** | <code> ul</code> |
+| **Right hand side** | |
+
+| **Description** | Debugger Hover |
+| :---- | :---- |
+| **Left hand side** | <code> dh</code> |
+| **Right hand side** | |
+
+| **Description** | Run To Cursor |
+| :---- | :---- |
+| **Left hand side** | <code> ds</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle REPL |
+| :---- | :---- |
+| **Left hand side** | <code> dR</code> |
+| **Right hand side** | |
+
+| **Description** | Restart (C-F5) |
+| :---- | :---- |
+| **Left hand side** | <code> dr</code> |
+| **Right hand side** | |
+
+| **Description** | Quit |
+| :---- | :---- |
+| **Left hand side** | <code> q</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;confirm q&lt;CR&gt;</code> |
+
+| **Description** | Change line numbering |
+| :---- | :---- |
+| **Left hand side** | <code> un</code> |
+| **Right hand side** | |
+
+| **Description** | New File |
+| :---- | :---- |
+| **Left hand side** | <code> n</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;enew&lt;CR&gt;</code> |
+
+| **Description** | Toggle spellcheck |
+| :---- | :---- |
+| **Left hand side** | <code> us</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle wrap |
+| :---- | :---- |
+| **Left hand side** | <code> uw</code> |
+| **Right hand side** | |
+
+| **Description** | Find man |
+| :---- | :---- |
+| **Left hand side** | <code> fm</code> |
+| **Right hand side** | |
+
+| **Description** | Pick to close |
+| :---- | :---- |
+| **Left hand side** | <code> bD</code> |
+| **Right hand side** | |
+
+| **Description** | Plugins Install |
+| :---- | :---- |
+| **Left hand side** | <code> pi</code> |
+| **Right hand side** | |
+
+| **Description** | Plugins Status |
+| :---- | :---- |
+| **Left hand side** | <code> ps</code> |
+| **Right hand side** | |
+
+| **Description** | Plugins Sync |
+| :---- | :---- |
+| **Left hand side** | <code> pS</code> |
+| **Right hand side** | |
 
 | **Description** | Plugins Check Updates |
 | :---- | :---- |
@@ -146,25 +222,10 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> pa</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;AstroUpdatePackages&lt;CR&gt;</code> |
 
-| **Description** | Toggle paste mode |
-| :---- | :---- |
-| **Left hand side** | <code> up</code> |
-| **Right hand side** | |
-
-| **Description** | Git commits (current file) |
-| :---- | :---- |
-| **Left hand side** | <code> gC</code> |
-| **Right hand side** | |
-
 | **Description** | AstroNvim Update |
 | :---- | :---- |
 | **Left hand side** | <code> pA</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;AstroUpdate&lt;CR&gt;</code> |
-
-| **Description** | Step Out (S-F11) |
-| :---- | :---- |
-| **Left hand side** | <code> dO</code> |
-| **Right hand side** | |
 
 | **Description** | AstroNvim Version |
 | :---- | :---- |
@@ -176,16 +237,6 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> pl</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;AstroChangelog&lt;CR&gt;</code> |
 
-| **Description** | Step Into (F11) |
-| :---- | :---- |
-| **Left hand side** | <code> di</code> |
-| **Right hand side** | |
-
-| **Description** | By buffer number |
-| :---- | :---- |
-| **Left hand side** | <code> bsi</code> |
-| **Right hand side** | |
-
 | **Description** | Close buffer |
 | :---- | :---- |
 | **Left hand side** | <code> c</code> |
@@ -196,39 +247,14 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> C</code> |
 | **Right hand side** | |
 
-| **Description** | Stage Git hunk |
-| :---- | :---- |
-| **Left hand side** | <code> gs</code> |
-| **Right hand side** | |
-
-| **Description** | Reset Git hunk |
-| :---- | :---- |
-| **Left hand side** | <code> gh</code> |
-| **Right hand side** | |
-
-| **Description** | Horizontal split buffer from tabline |
-| :---- | :---- |
-| **Left hand side** | <code> b\</code> |
-| **Right hand side** | |
-
 | **Description** | Close all buffers except current |
 | :---- | :---- |
 | **Left hand side** | <code> bc</code> |
 | **Right hand side** | |
 
-| **Description** | View Git blame |
-| :---- | :---- |
-| **Left hand side** | <code> gl</code> |
-| **Right hand side** | |
-
 | **Description** | Close all buffers |
 | :---- | :---- |
 | **Left hand side** | <code> bC</code> |
-| **Right hand side** | |
-
-| **Description** | Unstage Git hunk |
-| :---- | :---- |
-| **Left hand side** | <code> gu</code> |
 | **Right hand side** | |
 
 | **Description** | Close all buffers to the left |
@@ -246,11 +272,6 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> br</code> |
 | **Right hand side** | |
 
-| **Description** | Step Over (F10) |
-| :---- | :---- |
-| **Left hand side** | <code> do</code> |
-| **Right hand side** | |
-
 | **Description** | By extension |
 | :---- | :---- |
 | **Left hand side** | <code> bse</code> |
@@ -266,19 +287,9 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> bsp</code> |
 | **Right hand side** | |
 
-| **Description** | Vertical split buffer from tabline |
+| **Description** | By buffer number |
 | :---- | :---- |
-| **Left hand side** | <code> b&#124;</code> |
-| **Right hand side** | |
-
-| **Description** | Quit |
-| :---- | :---- |
-| **Left hand side** | <code> q</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;confirm q&lt;CR&gt;</code> |
-
-| **Description** | Home Screen |
-| :---- | :---- |
-| **Left hand side** | <code> h</code> |
+| **Left hand side** | <code> bsi</code> |
 | **Right hand side** | |
 
 | **Description** | By modification |
@@ -286,19 +297,9 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> bsm</code> |
 | **Right hand side** | |
 
-| **Description** | New File |
-| :---- | :---- |
-| **Left hand side** | <code> n</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;enew&lt;CR&gt;</code> |
-
 | **Description** | Select buffer from tabline |
 | :---- | :---- |
 | **Left hand side** | <code> bb</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle syntax highlighting (buffer) |
-| :---- | :---- |
-| **Left hand side** | <code> uy</code> |
 | **Right hand side** | |
 
 | **Description** | Close buffer from tabline |
@@ -306,14 +307,19 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> bd</code> |
 | **Right hand side** | |
 
-| **Description** | ToggleTerm vertical split |
+| **Description** | Horizontal split buffer from tabline |
 | :---- | :---- |
-| **Left hand side** | <code> tv</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm size=80 direction=vertical&lt;CR&gt;</code> |
+| **Left hand side** | <code> b\</code> |
+| **Right hand side** | |
 
-| **Description** | Toggle conceal |
+| **Description** | Vertical split buffer from tabline |
 | :---- | :---- |
-| **Left hand side** | <code> uS</code> |
+| **Left hand side** | <code> b&#124;</code> |
+| **Right hand side** | |
+
+| **Description** | Home Screen |
+| :---- | :---- |
+| **Left hand side** | <code> h</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle comment line |
@@ -321,29 +327,14 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> /</code> |
 | **Right hand side** | |
 
+| **Description** | View Git blame |
+| :---- | :---- |
+| **Left hand side** | <code> gl</code> |
+| **Right hand side** | |
+
 | **Description** | View full Git blame |
 | :---- | :---- |
 | **Left hand side** | <code> gL</code> |
-| **Right hand side** | |
-
-| **Description** | Preview Git hunk |
-| :---- | :---- |
-| **Left hand side** | <code> gp</code> |
-| **Right hand side** | |
-
-| **Description** | Find marks |
-| :---- | :---- |
-| **Left hand side** | <code> f'</code> |
-| **Right hand side** | |
-
-| **Description** | Reset Git buffer |
-| :---- | :---- |
-| **Left hand side** | <code> gr</code> |
-| **Right hand side** | |
-
-| **Description** | Stage Git buffer |
-| :---- | :---- |
-| **Left hand side** | <code> gS</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Breakpoint (F9) |
@@ -351,19 +342,19 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> db</code> |
 | **Right hand side** | |
 
-| **Description** | ToggleTerm horizontal split |
+| **Description** | Preview Git hunk |
 | :---- | :---- |
-| **Left hand side** | <code> th</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm size=10 direction=horizontal&lt;CR&gt;</code> |
+| **Left hand side** | <code> gp</code> |
+| **Right hand side** | |
 
 | **Description** | Clear Breakpoints |
 | :---- | :---- |
 | **Left hand side** | <code> dB</code> |
 | **Right hand side** | |
 
-| **Description** | Pick to close |
+| **Description** | Reset Git hunk |
 | :---- | :---- |
-| **Left hand side** | <code> bD</code> |
+| **Left hand side** | <code> gh</code> |
 | **Right hand side** | |
 
 | **Description** | Start/Continue (F5) |
@@ -371,14 +362,44 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> dc</code> |
 | **Right hand side** | |
 
-| **Description** | New tab |
+| **Description** | Reset Git buffer |
 | :---- | :---- |
-| **Left hand side** | <code> bn</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;tabnew&lt;CR&gt;</code> |
+| **Left hand side** | <code> gr</code> |
+| **Right hand side** | |
 
 | **Description** | Conditional Breakpoint (S-F9) |
 | :---- | :---- |
 | **Left hand side** | <code> dC</code> |
+| **Right hand side** | |
+
+| **Description** | Stage Git hunk |
+| :---- | :---- |
+| **Left hand side** | <code> gs</code> |
+| **Right hand side** | |
+
+| **Description** | Step Into (F11) |
+| :---- | :---- |
+| **Left hand side** | <code> di</code> |
+| **Right hand side** | |
+
+| **Description** | Stage Git buffer |
+| :---- | :---- |
+| **Left hand side** | <code> gS</code> |
+| **Right hand side** | |
+
+| **Description** | Step Over (F10) |
+| :---- | :---- |
+| **Left hand side** | <code> do</code> |
+| **Right hand side** | |
+
+| **Description** | Unstage Git hunk |
+| :---- | :---- |
+| **Left hand side** | <code> gu</code> |
+| **Right hand side** | |
+
+| **Description** | Step Out (S-F11) |
+| :---- | :---- |
+| **Left hand side** | <code> dO</code> |
 | **Right hand side** | |
 
 | **Description** | View Git diff |
@@ -386,14 +407,24 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> gd</code> |
 | **Right hand side** | |
 
+| **Description** | Close Session |
+| :---- | :---- |
+| **Left hand side** | <code> dq</code> |
+| **Right hand side** | |
+
+| **Description** | Terminate Session (S-F5) |
+| :---- | :---- |
+| **Left hand side** | <code> dQ</code> |
+| **Right hand side** | |
+
 | **Description** | Toggle Explorer Focus |
 | :---- | :---- |
 | **Left hand side** | <code> o</code> |
 | **Right hand side** | |
 
-| **Description** | Close Session |
+| **Description** | Pause (F6) |
 | :---- | :---- |
-| **Left hand side** | <code> dq</code> |
+| **Left hand side** | <code> dp</code> |
 | **Right hand side** | |
 
 | **Description** | Load last session |
@@ -401,60 +432,35 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> Sl</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;SessionManager! load_last_session&lt;CR&gt;</code> |
 
-| **Description** | Terminate Session (S-F5) |
-| :---- | :---- |
-| **Left hand side** | <code> dQ</code> |
-| **Right hand side** | |
-
 | **Description** | Save this session |
 | :---- | :---- |
 | **Left hand side** | <code> Ss</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;SessionManager! save_current_session&lt;CR&gt;</code> |
-
-| **Description** | Pause (F6) |
-| :---- | :---- |
-| **Left hand side** | <code> dp</code> |
-| **Right hand side** | |
 
 | **Description** | Delete session |
 | :---- | :---- |
 | **Left hand side** | <code> Sd</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;SessionManager! delete_session&lt;CR&gt;</code> |
 
-| **Description** | Restart (C-F5) |
-| :---- | :---- |
-| **Left hand side** | <code> dr</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle REPL |
-| :---- | :---- |
-| **Left hand side** | <code> dR</code> |
-| **Right hand side** | |
-
-| **Description** | Run To Cursor |
-| :---- | :---- |
-| **Left hand side** | <code> ds</code> |
-| **Right hand side** | |
-
-| **Description** | Load current directory session |
-| :---- | :---- |
-| **Left hand side** | <code> S.</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! load_current_dir_session&lt;CR&gt;</code> |
-
 | **Description** | Evaluate Input |
 | :---- | :---- |
 | **Left hand side** | <code> dE</code> |
 | **Right hand side** | |
+
+| **Description** | Search sessions |
+| :---- | :---- |
+| **Left hand side** | <code> Sf</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! load_session&lt;CR&gt;</code> |
 
 | **Description** | Toggle Debugger UI |
 | :---- | :---- |
 | **Left hand side** | <code> du</code> |
 | **Right hand side** | |
 
-| **Description** | Debugger Hover |
+| **Description** | Load current directory session |
 | :---- | :---- |
-| **Left hand side** | <code> dh</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> S.</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! load_current_dir_session&lt;CR&gt;</code> |
 
 | **Description** | Mason Installer |
 | :---- | :---- |
@@ -486,19 +492,14 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> lS</code> |
 | **Right hand side** | |
 
-| **Description** | Git branches |
-| :---- | :---- |
-| **Left hand side** | <code> gb</code> |
-| **Right hand side** | |
-
 | **Description** | Toggle signcolumn |
 | :---- | :---- |
 | **Left hand side** | <code> ug</code> |
 | **Right hand side** | |
 
-| **Description** | Git commits (repository) |
+| **Description** | Git branches |
 | :---- | :---- |
-| **Left hand side** | <code> gc</code> |
+| **Left hand side** | <code> gb</code> |
 | **Right hand side** | |
 
 | **Description** | Change indent setting |
@@ -506,19 +507,19 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> ui</code> |
 | **Right hand side** | |
 
+| **Description** | Git commits (repository) |
+| :---- | :---- |
+| **Left hand side** | <code> gc</code> |
+| **Right hand side** | |
+
+| **Description** | Git commits (current file) |
+| :---- | :---- |
+| **Left hand side** | <code> gC</code> |
+| **Right hand side** | |
+
 | **Description** | Git status |
 | :---- | :---- |
 | **Left hand side** | <code> gt</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle statusline |
-| :---- | :---- |
-| **Left hand side** | <code> ul</code> |
-| **Right hand side** | |
-
-| **Description** | Resume previous search |
-| :---- | :---- |
-| **Left hand side** | <code> f&lt;CR&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle CodeLens |
@@ -526,14 +527,24 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> uL</code> |
 | **Right hand side** | |
 
+| **Description** | Resume previous search |
+| :---- | :---- |
+| **Left hand side** | <code> f&lt;CR&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Find marks |
+| :---- | :---- |
+| **Left hand side** | <code> f'</code> |
+| **Right hand side** | |
+
 | **Description** | Find words in current buffer |
 | :---- | :---- |
 | **Left hand side** | <code> f/</code> |
 | **Right hand side** | |
 
-| **Description** | Change line numbering |
+| **Description** | Toggle Notifications |
 | :---- | :---- |
-| **Left hand side** | <code> un</code> |
+| **Left hand side** | <code> uN</code> |
 | **Right hand side** | |
 
 | **Description** | Find buffers |
@@ -541,9 +552,9 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> fb</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle Notifications |
+| **Description** | Toggle paste mode |
 | :---- | :---- |
-| **Left hand side** | <code> uN</code> |
+| **Left hand side** | <code> up</code> |
 | **Right hand side** | |
 
 | **Description** | Find word under cursor |
@@ -561,9 +572,9 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> ff</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle spellcheck |
+| **Description** | Toggle conceal |
 | :---- | :---- |
-| **Left hand side** | <code> us</code> |
+| **Left hand side** | <code> uS</code> |
 | **Right hand side** | |
 
 | **Description** | Find all files |
@@ -581,19 +592,14 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> fk</code> |
 | **Right hand side** | |
 
-| **Description** | Find man |
-| :---- | :---- |
-| **Left hand side** | <code> fm</code> |
-| **Right hand side** | |
-
 | **Description** | Find notifications |
 | :---- | :---- |
 | **Left hand side** | <code> fn</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle wrap |
+| **Description** | Toggle syntax highlighting (buffer) |
 | :---- | :---- |
-| **Left hand side** | <code> uw</code> |
+| **Left hand side** | <code> uy</code> |
 | **Right hand side** | |
 
 | **Description** | Find history |
@@ -615,6 +621,11 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | :---- | :---- |
 | **Left hand side** | <code> fW</code> |
 | **Right hand side** | |
+
+| **Description** | New tab |
+| :---- | :---- |
+| **Left hand side** | <code> bn</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;tabnew&lt;CR&gt;</code> |
 
 | **Description** | Search symbols |
 | :---- | :---- |
@@ -656,19 +667,19 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> tf</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm direction=float&lt;CR&gt;</code> |
 
-| **Description** | Plugins Install |
+| **Description** | ToggleTerm horizontal split |
 | :---- | :---- |
-| **Left hand side** | <code> pi</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> th</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm size=10 direction=horizontal&lt;CR&gt;</code> |
 
-| **Description** | Plugins Status |
+| **Description** | ToggleTerm vertical split |
 | :---- | :---- |
-| **Left hand side** | <code> ps</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> tv</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm size=80 direction=vertical&lt;CR&gt;</code> |
 
-| **Description** | Plugins Sync |
+| **Description** | Find themes |
 | :---- | :---- |
-| **Left hand side** | <code> pS</code> |
+| **Left hand side** | <code> ft</code> |
 | **Right hand side** | |
 
 | **Description** | Find AstroNvim config files |
@@ -696,34 +707,9 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> w</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;w&lt;CR&gt;</code> |
 
-| **Description** | Find themes |
-| :---- | :---- |
-| **Left hand side** | <code> ft</code> |
-| **Right hand side** | |
-
 | **Description** | Toggle autopairs |
 | :---- | :---- |
 | **Left hand side** | <code> ua</code> |
-| **Right hand side** | |
-
-| **Description** | Split/join block |
-| :---- | :---- |
-| **Left hand side** | <code> m</code> |
-| **Right hand side** | |
-
-| **Description** | Split/join block recursively |
-| :---- | :---- |
-| **Left hand side** | <code> M</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle tabline |
-| :---- | :---- |
-| **Left hand side** | <code> ut</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle trouble for document |
-| :---- | :---- |
-| **Left hand side** | <code> fd</code> |
 | **Right hand side** | |
 
 | **Description** | Go to Harpoon file 5 |
@@ -766,19 +752,14 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> hh</code> |
 | **Right hand side** | |
 
-| **Description** | Breadcrumb search |
+| **Description** | Split/join block |
 | :---- | :---- |
-| **Left hand side** | <code> fs</code> |
+| **Left hand side** | <code> m</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle URL highlight |
+| **Description** | Split/join block recursively |
 | :---- | :---- |
-| **Left hand side** | <code> uu</code> |
-| **Right hand side** | |
-
-| **Description** | Structural search and replace |
-| :---- | :---- |
-| **Left hand side** | <code> sr</code> |
+| **Left hand side** | <code> M</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Explorer |
@@ -791,9 +772,34 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code> ud</code> |
 | **Right hand side** | |
 
+| **Description** | Structural search and replace |
+| :---- | :---- |
+| **Left hand side** | <code> sr</code> |
+| **Right hand side** | |
+
 | **Description** | Command palette |
 | :---- | :---- |
 | **Left hand side** | <code> P</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle URL highlight |
+| :---- | :---- |
+| **Left hand side** | <code> uu</code> |
+| **Right hand side** | |
+
+| **Description** | Breadcrumb search |
+| :---- | :---- |
+| **Left hand side** | <code> fs</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle tabline |
+| :---- | :---- |
+| **Left hand side** | <code> ut</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle trouble for document |
+| :---- | :---- |
+| **Left hand side** | <code> fd</code> |
 | **Right hand side** | |
 
 | **Description** | Nvim builtin |
@@ -816,9 +822,9 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code>Y</code> |
 | **Right hand side** | <code>y$</code> |
 
-| **Description** | Previous Git hunk |
+| **Description** | Previous buffer |
 | :---- | :---- |
-| **Left hand side** | <code>[g</code> |
+| **Left hand side** | <code>[b</code> |
 | **Right hand side** | |
 
 | **Description** | Previous tab |
@@ -826,9 +832,9 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code>[t</code> |
 | **Right hand side** | |
 
-| **Description** | Previous buffer |
+| **Description** | Previous Git hunk |
 | :---- | :---- |
-| **Left hand side** | <code>[b</code> |
+| **Left hand side** | <code>[g</code> |
 | **Right hand side** | |
 
 | **Description** | Previous Harpoon file |
@@ -861,6 +867,11 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code>\\A</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(VM-Select-All)</code> |
 
+| **Description** | Next buffer |
+| :---- | :---- |
+| **Left hand side** | <code>]b</code> |
+| **Right hand side** | |
+
 | **Description** | Next tab |
 | :---- | :---- |
 | **Left hand side** | <code>]t</code> |
@@ -869,11 +880,6 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Description** | Next Git hunk |
 | :---- | :---- |
 | **Left hand side** | <code>]g</code> |
-| **Right hand side** | |
-
-| **Description** | Next buffer |
-| :---- | :---- |
-| **Left hand side** | <code>]b</code> |
 | **Right hand side** | |
 
 | **Description** | Next Harpoon file |
@@ -931,21 +937,6 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code>zp</code> |
 | **Right hand side** | |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>zt</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zt(250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>zb</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zb(250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>zz</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zz(250)&lt;CR&gt;</code> |
-
 | **Description** | Close all folds |
 | :---- | :---- |
 | **Left hand side** | <code>zM</code> |
@@ -971,45 +962,25 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code>zo</code> |
 | **Right hand side** | |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zt</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zt(250)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zz</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zz(250)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zb</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zb(250)&lt;CR&gt;</code> |
+
 | **Description** | Vertical Split |
 | :---- | :---- |
 | **Left hand side** | <code>&#124;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;vsplit&lt;CR&gt;</code> |
-
-| **Description** | Force write |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-S&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;w!&lt;CR&gt;</code> |
-
-| **Description** | Toggle terminal |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F7&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm&lt;CR&gt;</code> |
-
-| **Description** | Force quit |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Q&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;qa!&lt;CR&gt;</code> |
-
-| **Description** | Toggle terminal |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-'&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm&lt;CR&gt;</code> |
-
-| **Description** | Debugger: Start |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F5&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Debugger: Stop |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F17&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Debugger: Conditional Breakpoint |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F21&gt;</code> |
-| **Right hand side** | |
 
 | **Description** | Debugger: Restart |
 | :---- | :---- |
@@ -1031,6 +1002,11 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code>&lt;F10&gt;</code> |
 | **Right hand side** | |
 
+| **Description** | Force quit |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;qa!&lt;CR&gt;</code> |
+
 | **Description** | Debugger: Step Into |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;F11&gt;</code> |
@@ -1040,6 +1016,11 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | :---- | :---- |
 | **Left hand side** | <code>&lt;F23&gt;</code> |
 | **Right hand side** | |
+
+| **Description** | Toggle terminal |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F7&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm&lt;CR&gt;</code> |
 
 | **Description** | Move to left split |
 | :---- | :---- |
@@ -1056,6 +1037,11 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code>&lt;C-Right&gt;</code> |
 | **Right hand side** | |
 
+| **Description** | Force write |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-S&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;w!&lt;CR&gt;</code> |
+
 | **Description** | Move to above split |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-K&gt;</code> |
@@ -1066,40 +1052,35 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code>&lt;C-J&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | |
+| **Description** | Toggle terminal |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Left hand side** | <code>&lt;C-'&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm&lt;CR&gt;</code> |
+
+| **Description** | Debugger: Start |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F5&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Debugger: Stop |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F17&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Debugger: Conditional Breakpoint |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F21&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
-| **Right hand side** | |
+| **Left hand side** | <code>&lt;C-E&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;CamelCaseMotion_ge</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call camelcasemotion#Motion('ge',v:count1,'n')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;CamelCaseMotion_e</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call camelcasemotion#Motion('e',v:count1,'n')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;CamelCaseMotion_b</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call camelcasemotion#Motion('b',v:count1,'n')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;CamelCaseMotion_w</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call camelcasemotion#Motion('w',v:count1,'n')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1108,8 +1089,8 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-B&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-Y&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1120,16 +1101,6 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-D&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Y&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-E&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
 
 | **Description** | Resize split down |
 | :---- | :---- |
@@ -1296,6 +1267,41 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-At-Pos)</code> |
 | **Right hand side** | <code>:call vm#commands#add_cursor_at_pos(0)&lt;CR&gt;</code> |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CamelCaseMotion_ge</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call camelcasemotion#Motion('ge',v:count1,'n')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CamelCaseMotion_e</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call camelcasemotion#Motion('e',v:count1,'n')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CamelCaseMotion_b</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call camelcasemotion#Motion('b',v:count1,'n')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CamelCaseMotion_w</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call camelcasemotion#Motion('w',v:count1,'n')&lt;CR&gt;</code> |
+
 | **Description** | Move to right split |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
@@ -1309,15 +1315,15 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Left hand side** | <code>&lt;Tab&gt;</code> |
 | **Right hand side** | <code>&gt;gv</code> |
 
-| **Description** | Toggle comment for selection |
-| :---- | :---- |
-| **Left hand side** | <code> /</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require('Comment.api').toggle.linewise(vim.fn.visualmode())&lt;CR&gt;</code> |
-
 | **Description** | Evaluate Input |
 | :---- | :---- |
 | **Left hand side** | <code> dE</code> |
 | **Right hand side** | |
+
+| **Description** | Toggle comment for selection |
+| :---- | :---- |
+| **Left hand side** | <code> /</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require('Comment.api').toggle.linewise(vim.fn.visualmode())&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1436,8 +1442,8 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>zb</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zb(250)&lt;CR&gt;</code> |
+| **Left hand side** | <code>zt</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zt(250)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1446,13 +1452,43 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>zt</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zt(250)&lt;CR&gt;</code> |
+| **Left hand side** | <code>zb</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zb(250)&lt;CR&gt;</code> |
 
 | **Description** | Unindent line |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;S-Tab&gt;</code> |
 | **Right hand side** | <code>&lt;lt&gt;gv</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-D&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Y&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-U&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-F&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-E&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1467,7 +1503,7 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Find-Subword-Under)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;23_Visual('under')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;22_Visual('under')</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1487,47 +1523,12 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Visual-All)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;23_Visual('all')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;22_Visual('all')</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Visual-Find)</code> |
 | **Right hand side** | <code>vm#operators#find(1, 1)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-F&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Y&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-U&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-D&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-E&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-B&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
@@ -1568,6 +1569,11 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;CamelCaseMotion_w</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call camelcasemotion#Motion('w',v:count1,'v')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
 
 
 ### Operator mode keymaps
@@ -1614,6 +1620,11 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>i</code> |
+| **Right hand side** | <code>targets#e('o', 'i', 'i')</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>i ge</code> |
 | **Right hand side** | <code>&lt;Plug&gt;CamelCaseMotion_ige</code> |
 
@@ -1631,11 +1642,6 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 | :---- | :---- |
 | **Left hand side** | <code>i w</code> |
 | **Right hand side** | <code>&lt;Plug&gt;CamelCaseMotion_iw</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>i</code> |
-| **Right hand side** | <code>targets#e('o', 'i', 'i')</code> |
 
 | **Description** | |
 | :---- | :---- |

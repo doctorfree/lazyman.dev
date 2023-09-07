@@ -19,6 +19,12 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
 
 [https://github.com/metis-os/pwnvim](https://github.com/metis-os/pwnvim)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -136,12 +142,7 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> e</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> ft</code> |
+| **Left hand side** | <code> b</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -161,7 +162,12 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> b</code> |
+| **Left hand side** | <code> ft</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> e</code> |
 | **Right hand side** | |
 
 | **Description** | Nvim builtin |
@@ -221,12 +227,7 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;M-t&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-H&gt;</code> |
+| **Left hand side** | <code>&lt;S-Tab&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -236,7 +237,12 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;S-Tab&gt;</code> |
+| **Left hand side** | <code>&lt;M-t&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-H&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |

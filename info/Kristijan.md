@@ -23,6 +23,12 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 
 [https://dotfyle.com/kristijanhusak/neovim-config-nvim](https://dotfyle.com/kristijanhusak/neovim-config-nvim)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [LunarVim/bigfile.nvim](https://github.com/LunarVim/bigfile.nvim.git)
@@ -187,6 +193,11 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>,G</code> |
+| **Right hand side** | <code>:vert G&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>,lt</code> |
 | **Right hand side** | |
 
@@ -244,11 +255,6 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 | :---- | :---- |
 | **Left hand side** | <code>,do</code> |
 | **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,G</code> |
-| **Right hand side** | <code>:vert G&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |

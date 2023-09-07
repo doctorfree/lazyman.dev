@@ -19,6 +19,12 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 
 [https://github.com/rohit-kumar-j/nvim](https://github.com/rohit-kumar-j/nvim)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
@@ -192,54 +198,14 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 | **Left hand side** | <code> N</code> |
 | **Right hand side** | <code>:lua require('neogen').generate()&lt;CR&gt;</code> |
 
-| **Description** | GodBolt |
-| :---- | :---- |
-| **Left hand side** | <code> GG</code> |
-| **Right hand side** | |
-
 | **Description** | GodBolt Compiler |
 | :---- | :---- |
 | **Left hand side** | <code> GC</code> |
 | **Right hand side** | |
 
-| **Description** | DapUI Toggle |
+| **Description** | GodBolt |
 | :---- | :---- |
-| **Left hand side** | <code> du</code> |
-| **Right hand side** | |
-
-| **Description** | Lazy Git |
-| :---- | :---- |
-| **Left hand side** | <code> gg</code> |
-| **Right hand side** | |
-
-| **Description** | TrueZen Minimalist |
-| :---- | :---- |
-| **Left hand side** | <code> zm</code> |
-| **Right hand side** | |
-
-| **Description** | TrueZen Focus |
-| :---- | :---- |
-| **Left hand side** | <code> zf</code> |
-| **Right hand side** | |
-
-| **Description** | TrueZen Narrow Visual |
-| :---- | :---- |
-| **Left hand side** | <code> zn</code> |
-| **Right hand side** | |
-
-| **Description** | TrueZen Ataraxis |
-| :---- | :---- |
-| **Left hand side** | <code> za</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle BreakPoint |
-| :---- | :---- |
-| **Left hand side** | <code> dt</code> |
-| **Right hand side** | |
-
-| **Description** | UndotreeToggle |
-| :---- | :---- |
-| **Left hand side** | <code> U</code> |
+| **Left hand side** | <code> GG</code> |
 | **Right hand side** | |
 
 | **Description** | Todo List |
@@ -252,19 +218,19 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 | **Left hand side** | <code> th</code> |
 | **Right hand side** | |
 
-| **Description** | Hex Dump |
+| **Description** | Twilight |
 | :---- | :---- |
-| **Left hand side** | <code> Hd</code> |
+| **Left hand side** | <code> zt</code> |
 | **Right hand side** | |
 
-| **Description** | Hex Toggle View |
+| **Description** | Lazy Git |
 | :---- | :---- |
-| **Left hand side** | <code> Ht</code> |
+| **Left hand side** | <code> gg</code> |
 | **Right hand side** | |
 
-| **Description** | Hex Assemble |
+| **Description** | UndotreeToggle |
 | :---- | :---- |
-| **Left hand side** | <code> Ha</code> |
+| **Left hand side** | <code> U</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle CheckBox |
@@ -287,14 +253,14 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 | **Left hand side** | <code>  p</code> |
 | **Right hand side** | |
 
-| **Description** | Add file to Harpoon |
-| :---- | :---- |
-| **Left hand side** | <code> ha</code> |
-| **Right hand side** | |
-
 | **Description** | Toggle Harpoon Menu |
 | :---- | :---- |
 | **Left hand side** | <code> hs</code> |
+| **Right hand side** | |
+
+| **Description** | Add file to Harpoon |
+| :---- | :---- |
+| **Left hand side** | <code> ha</code> |
 | **Right hand side** | |
 
 | **Description** | Zen Mode |
@@ -302,9 +268,49 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 | **Left hand side** | <code> zz</code> |
 | **Right hand side** | |
 
-| **Description** | Twilight |
+| **Description** | TrueZen Minimalist |
 | :---- | :---- |
-| **Left hand side** | <code> zt</code> |
+| **Left hand side** | <code> zm</code> |
+| **Right hand side** | |
+
+| **Description** | TrueZen Focus |
+| :---- | :---- |
+| **Left hand side** | <code> zf</code> |
+| **Right hand side** | |
+
+| **Description** | TrueZen Narrow Visual |
+| :---- | :---- |
+| **Left hand side** | <code> zn</code> |
+| **Right hand side** | |
+
+| **Description** | TrueZen Ataraxis |
+| :---- | :---- |
+| **Left hand side** | <code> za</code> |
+| **Right hand side** | |
+
+| **Description** | DapUI Toggle |
+| :---- | :---- |
+| **Left hand side** | <code> du</code> |
+| **Right hand side** | |
+
+| **Description** | Hex Toggle View |
+| :---- | :---- |
+| **Left hand side** | <code> Ht</code> |
+| **Right hand side** | |
+
+| **Description** | Hex Assemble |
+| :---- | :---- |
+| **Left hand side** | <code> Ha</code> |
+| **Right hand side** | |
+
+| **Description** | Hex Dump |
+| :---- | :---- |
+| **Left hand side** | <code> Hd</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle BreakPoint |
+| :---- | :---- |
+| **Left hand side** | <code> dt</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Format on Save |

@@ -27,6 +27,12 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 
 [https://www.youtube.com/@justindevelops](https://www.youtube.com/@justindevelops)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [antoinemadec/FixCursorHold.nvim](https://github.com/antoinemadec/FixCursorHold.nvim)
@@ -326,6 +332,56 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 
 | **Description** | Word (cwd) |
 | :---- | :---- |
+| **Left hand side** | <code> fW</code> |
+| **Right hand side** | |
+
+| **Description** | Word (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> fw</code> |
+| **Right hand side** | |
+
+| **Description** | All Buffers |
+| :---- | :---- |
+| **Left hand side** | <code> fB</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope buffers show_all_buffers=true&lt;CR&gt;</code> |
+
+| **Description** | Text |
+| :---- | :---- |
+| **Left hand side** | <code> ft</code> |
+| **Right hand side** | |
+
+| **Description** | Find LazyVim Config |
+| :---- | :---- |
+| **Left hand side** | <code> fC</code> |
+| **Right hand side** | |
+
+| **Description** | Find Plugin File |
+| :---- | :---- |
+| **Left hand side** | <code> fP</code> |
+| **Right hand side** | |
+
+| **Description** | Command History |
+| :---- | :---- |
+| **Left hand side** | <code> fc</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope command_history&lt;CR&gt;</code> |
+
+| **Description** | Goto Symbol (Workspace) |
+| :---- | :---- |
+| **Left hand side** | <code> sS</code> |
+| **Right hand side** | |
+
+| **Description** | Goto Symbol |
+| :---- | :---- |
+| **Left hand side** | <code> ss</code> |
+| **Right hand side** | |
+
+| **Description** | Colorscheme with preview |
+| :---- | :---- |
+| **Left hand side** | <code> uC</code> |
+| **Right hand side** | |
+
+| **Description** | Word (cwd) |
+| :---- | :---- |
 | **Left hand side** | <code> sW</code> |
 | **Right hand side** | |
 
@@ -449,79 +505,89 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 | **Left hand side** | <code> fb</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;Telescope buffers&lt;CR&gt;</code> |
 
-| **Description** | Word (cwd) |
+| **Description** | Mason |
 | :---- | :---- |
-| **Left hand side** | <code> fW</code> |
+| **Left hand side** | <code> cm</code> |
 | **Right hand side** | |
 
-| **Description** | Word (root dir) |
+| **Description** | Delete non-pinned buffers |
 | :---- | :---- |
-| **Left hand side** | <code> fw</code> |
+| **Left hand side** | <code> bP</code> |
 | **Right hand side** | |
 
-| **Description** | All Buffers |
+| **Description** | Toggle pin |
 | :---- | :---- |
-| **Left hand side** | <code> fB</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;Telescope buffers show_all_buffers=true&lt;CR&gt;</code> |
-
-| **Description** | Text |
-| :---- | :---- |
-| **Left hand side** | <code> ft</code> |
+| **Left hand side** | <code> bp</code> |
 | **Right hand side** | |
 
-| **Description** | Find LazyVim Config |
+| **Description** | Dismiss all Notifications |
 | :---- | :---- |
-| **Left hand side** | <code> fC</code> |
+| **Left hand side** | <code> un</code> |
 | **Right hand side** | |
 
-| **Description** | Find Plugin File |
+| **Description** | Replace in files (Spectre) |
 | :---- | :---- |
-| **Left hand side** | <code> fP</code> |
+| **Left hand side** | <code> sr</code> |
 | **Right hand side** | |
 
-| **Description** | Command History |
+| **Description** | Symbols Outline |
 | :---- | :---- |
-| **Left hand side** | <code> fc</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;Telescope command_history&lt;CR&gt;</code> |
-
-| **Description** | Goto Symbol (Workspace) |
-| :---- | :---- |
-| **Left hand side** | <code> sS</code> |
+| **Left hand side** | <code> cs</code> |
 | **Right hand side** | |
 
-| **Description** | Goto Symbol |
+| **Description** | Open Code Outline Window |
 | :---- | :---- |
-| **Left hand side** | <code> ss</code> |
+| **Left hand side** | <code> a</code> |
 | **Right hand side** | |
 
-| **Description** | Colorscheme with preview |
+| **Description** | Dismiss All |
 | :---- | :---- |
-| **Left hand side** | <code> uC</code> |
+| **Left hand side** | <code> snd</code> |
 | **Right hand side** | |
 
-| **Description** | Down |
+| **Description** | Noice All |
 | :---- | :---- |
-| **Left hand side** | <code> Dj</code> |
+| **Left hand side** | <code> sna</code> |
 | **Right hand side** | |
 
-| **Description** | Step Into |
+| **Description** | Noice History |
 | :---- | :---- |
-| **Left hand side** | <code> Di</code> |
+| **Left hand side** | <code> snh</code> |
 | **Right hand side** | |
 
-| **Description** | Go to line (no execute) |
+| **Description** | Noice Last Message |
 | :---- | :---- |
-| **Left hand side** | <code> Dg</code> |
+| **Left hand side** | <code> snl</code> |
 | **Right hand side** | |
 
-| **Description** | Run to Cursor |
+| **Description** | Explorer |
 | :---- | :---- |
-| **Left hand side** | <code> DC</code> |
+| **Left hand side** | <code> e</code> |
 | **Right hand side** | |
 
-| **Description** | Continue |
+| **Description** | Eval |
 | :---- | :---- |
-| **Left hand side** | <code> Dc</code> |
+| **Left hand side** | <code> De</code> |
+| **Right hand side** | |
+
+| **Description** | Dap UI |
+| :---- | :---- |
+| **Left hand side** | <code> Du</code> |
+| **Right hand side** | |
+
+| **Description** | Close Buffer (Force) |
+| :---- | :---- |
+| **Left hand side** | <code> bC</code> |
+| **Right hand side** | |
+
+| **Description** | Close Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> bc</code> |
+| **Right hand side** | |
+
+| **Description** | Bookmarks |
+| :---- | :---- |
+| **Left hand side** | <code> &lt;Tab&gt;b</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Breakpoint |
@@ -584,104 +650,29 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 | **Left hand side** | <code> Dk</code> |
 | **Right hand side** | |
 
-| **Description** | Open Code Outline Window |
+| **Description** | Down |
 | :---- | :---- |
-| **Left hand side** | <code> a</code> |
+| **Left hand side** | <code> Dj</code> |
 | **Right hand side** | |
 
-| **Description** | Close Buffer |
+| **Description** | Step Into |
 | :---- | :---- |
-| **Left hand side** | <code> bc</code> |
+| **Left hand side** | <code> Di</code> |
 | **Right hand side** | |
 
-| **Description** | Close Buffer (Force) |
+| **Description** | Go to line (no execute) |
 | :---- | :---- |
-| **Left hand side** | <code> bC</code> |
+| **Left hand side** | <code> Dg</code> |
 | **Right hand side** | |
 
-| **Description** | Symbols Outline |
+| **Description** | Run to Cursor |
 | :---- | :---- |
-| **Left hand side** | <code> cs</code> |
+| **Left hand side** | <code> DC</code> |
 | **Right hand side** | |
 
-| **Description** | Replace in files (Spectre) |
+| **Description** | Continue |
 | :---- | :---- |
-| **Left hand side** | <code> sr</code> |
-| **Right hand side** | |
-
-| **Description** | Dap UI |
-| :---- | :---- |
-| **Left hand side** | <code> Du</code> |
-| **Right hand side** | |
-
-| **Description** | Eval |
-| :---- | :---- |
-| **Left hand side** | <code> De</code> |
-| **Right hand side** | |
-
-| **Description** | Noice All |
-| :---- | :---- |
-| **Left hand side** | <code> sna</code> |
-| **Right hand side** | |
-
-| **Description** | Noice History |
-| :---- | :---- |
-| **Left hand side** | <code> snh</code> |
-| **Right hand side** | |
-
-| **Description** | Noice Last Message |
-| :---- | :---- |
-| **Left hand side** | <code> snl</code> |
-| **Right hand side** | |
-
-| **Description** | Dismiss All |
-| :---- | :---- |
-| **Left hand side** | <code> snd</code> |
-| **Right hand side** | |
-
-| **Description** | Mason |
-| :---- | :---- |
-| **Left hand side** | <code> cm</code> |
-| **Right hand side** | |
-
-| **Description** | Don't Save Current Session |
-| :---- | :---- |
-| **Left hand side** | <code> Sd</code> |
-| **Right hand side** | |
-
-| **Description** | Restore Last Session |
-| :---- | :---- |
-| **Left hand side** | <code> Sl</code> |
-| **Right hand side** | |
-
-| **Description** | Restore Session |
-| :---- | :---- |
-| **Left hand side** | <code> Ss</code> |
-| **Right hand side** | |
-
-| **Description** | Delete non-pinned buffers |
-| :---- | :---- |
-| **Left hand side** | <code> bP</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle pin |
-| :---- | :---- |
-| **Left hand side** | <code> bp</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer |
-| :---- | :---- |
-| **Left hand side** | <code> e</code> |
-| **Right hand side** | |
-
-| **Description** | Dismiss all Notifications |
-| :---- | :---- |
-| **Left hand side** | <code> un</code> |
-| **Right hand side** | |
-
-| **Description** | Bookmarks |
-| :---- | :---- |
-| **Left hand side** | <code> &lt;Tab&gt;b</code> |
+| **Left hand side** | <code> Dc</code> |
 | **Right hand side** | |
 
 | **Description** | Adapter Lua |
@@ -699,9 +690,9 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 | **Left hand side** | <code> sT</code> |
 | **Right hand side** | |
 
-| **Description** | Todo |
+| **Description** | Todo/Fix/Fixme (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> st</code> |
+| **Left hand side** | <code> dT</code> |
 | **Right hand side** | |
 
 | **Description** | Todo (Trouble) |
@@ -709,9 +700,49 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 | **Left hand side** | <code> dt</code> |
 | **Right hand side** | |
 
-| **Description** | Todo/Fix/Fixme (Trouble) |
+| **Description** | Todo |
 | :---- | :---- |
-| **Left hand side** | <code> dT</code> |
+| **Left hand side** | <code> st</code> |
+| **Right hand side** | |
+
+| **Description** | Quickfix List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> dQ</code> |
+| **Right hand side** | |
+
+| **Description** | Location List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> dL</code> |
+| **Right hand side** | |
+
+| **Description** | Workspace Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> dX</code> |
+| **Right hand side** | |
+
+| **Description** | Document Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> dx</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Session |
+| :---- | :---- |
+| **Left hand side** | <code> Ss</code> |
+| **Right hand side** | |
+
+| **Description** | Don't Save Current Session |
+| :---- | :---- |
+| **Left hand side** | <code> Sd</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Last Session |
+| :---- | :---- |
+| **Left hand side** | <code> Sl</code> |
+| **Right hand side** | |
+
+| **Description** | Show Output |
+| :---- | :---- |
+| **Left hand side** | <code> To</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Summary |
@@ -744,31 +775,6 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 | **Left hand side** | <code> TO</code> |
 | **Right hand side** | |
 
-| **Description** | Show Output |
-| :---- | :---- |
-| **Left hand side** | <code> To</code> |
-| **Right hand side** | |
-
-| **Description** | Document Diagnostics (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> dx</code> |
-| **Right hand side** | |
-
-| **Description** | Location List (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> dL</code> |
-| **Right hand side** | |
-
-| **Description** | Quickfix List (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> dQ</code> |
-| **Right hand side** | |
-
-| **Description** | Workspace Diagnostics (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> dX</code> |
-| **Right hand side** | |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>%</code> |
@@ -794,11 +800,6 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 | **Left hand side** | <code>[%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
 
-| **Description** | Prev Reference |
-| :---- | :---- |
-| **Left hand side** | <code>[[</code> |
-| **Right hand side** | |
-
 | **Description** | Previous todo comment |
 | :---- | :---- |
 | **Left hand side** | <code>[t</code> |
@@ -809,9 +810,9 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 | **Left hand side** | <code>[q</code> |
 | **Right hand side** | |
 
-| **Description** | Close Buffer |
+| **Description** | Prev Reference |
 | :---- | :---- |
-| **Left hand side** | <code>\c</code> |
+| **Left hand side** | <code>[[</code> |
 | **Right hand side** | |
 
 | **Description** | Find right surrounding |
@@ -849,6 +850,11 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 | **Left hand side** | <code>\sF</code> |
 | **Right hand side** | |
 
+| **Description** | Close Buffer |
+| :---- | :---- |
+| **Left hand side** | <code>\c</code> |
+| **Right hand side** | |
+
 | **Description** | Toggle TreeSJ |
 | :---- | :---- |
 | **Left hand side** | <code>\j</code> |
@@ -859,11 +865,6 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 | **Left hand side** | <code>]%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
 
-| **Description** | Next Reference |
-| :---- | :---- |
-| **Left hand side** | <code>]]</code> |
-| **Right hand side** | |
-
 | **Description** | Next todo comment |
 | :---- | :---- |
 | **Left hand side** | <code>]t</code> |
@@ -872,6 +873,11 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 | **Description** | Next trouble/quickfix item |
 | :---- | :---- |
 | **Left hand side** | <code>]q</code> |
+| **Right hand side** | |
+
+| **Description** | Next Reference |
+| :---- | :---- |
+| **Left hand side** | <code>]]</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -934,11 +940,6 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
 
-| **Description** | Toggle Terminal |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-X&gt;</code> |
@@ -963,6 +964,11 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
 | **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | Toggle Terminal |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
 
 | **Description** | Scroll forward |
 | :---- | :---- |

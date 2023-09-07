@@ -23,6 +23,12 @@ PaK in Farsi means pure, something that is in its purest form
 
 [http://neovimcraft.com/plugin/Pakrohk-DotFiles/NvPak](http://neovimcraft.com/plugin/Pakrohk-DotFiles/NvPak)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)

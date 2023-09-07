@@ -23,6 +23,12 @@ Starter config by the author of NvChad with [video tutorial](https://youtube.com
 
 [https://www.youtube.com/@siduck_og](https://www.youtube.com/@siduck_og)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)

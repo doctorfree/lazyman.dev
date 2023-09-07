@@ -27,6 +27,12 @@ post_style: page
 
 [https://www.youtube.com/@dreamsofcode](https://www.youtube.com/@dreamsofcode)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
@@ -98,14 +104,19 @@ post_style: page
 | **Left hand side** | <code>c</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle current line |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gcc</code> |
+| **Left hand side** | <code>g</code> |
 | **Right hand side** | |
 
 | **Description** | Comment toggle current block |
 | :---- | :---- |
 | **Left hand side** | <code>gbc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current line |
+| :---- | :---- |
+| **Left hand side** | <code>gcc</code> |
 | **Right hand side** | |
 
 | **Description** | Comment toggle blockwise |
@@ -116,11 +127,6 @@ post_style: page
 | **Description** | Comment toggle linewise |
 | :---- | :---- |
 | **Left hand side** | <code>gc</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>g</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -164,13 +170,13 @@ post_style: page
 
 ### Operator mode keymaps
 
-| **Description** | Comment toggle blockwise |
-| :---- | :---- |
-| **Left hand side** | <code>gb</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle linewise |
 | :---- | :---- |
 | **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 

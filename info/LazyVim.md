@@ -23,6 +23,12 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 
 [https://lazyvim.lazyman.dev](https://lazyvim.lazyman.dev)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [LazyVim/LazyVim](https://github.com/LazyVim/LazyVim.git)
@@ -78,9 +84,9 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 
 ### Normal mode keymaps
 
-| **Description** | Replace in files (Spectre) |
+| **Description** | Explorer NeoTree (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code> sr</code> |
+| **Left hand side** | <code> e</code> |
 | **Right hand side** | |
 
 | **Description** | Explorer NeoTree (cwd) |
@@ -98,29 +104,14 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code> E</code> |
 | **Right hand side** | |
 
-| **Description** | Explorer NeoTree (root dir) |
+| **Description** | Todo/Fix/Fixme (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> e</code> |
-| **Right hand side** | |
-
-| **Description** | Mason |
-| :---- | :---- |
-| **Left hand side** | <code> cm</code> |
-| **Right hand side** | |
-
-| **Description** | Dismiss all Notifications |
-| :---- | :---- |
-| **Left hand side** | <code> un</code> |
+| **Left hand side** | <code> xT</code> |
 | **Right hand side** | |
 
 | **Description** | Todo/Fix/Fixme |
 | :---- | :---- |
 | **Left hand side** | <code> sT</code> |
-| **Right hand side** | |
-
-| **Description** | Todo/Fix/Fixme (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xT</code> |
 | **Right hand side** | |
 
 | **Description** | Todo |
@@ -133,9 +124,19 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code> xt</code> |
 | **Right hand side** | |
 
-| **Description** | Quickfix List (Trouble) |
+| **Description** | Mason |
 | :---- | :---- |
-| **Left hand side** | <code> xQ</code> |
+| **Left hand side** | <code> cm</code> |
+| **Right hand side** | |
+
+| **Description** | Delete non-pinned buffers |
+| :---- | :---- |
+| **Left hand side** | <code> bP</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle pin |
+| :---- | :---- |
+| **Left hand side** | <code> bp</code> |
 | **Right hand side** | |
 
 | **Description** | Location List (Trouble) |
@@ -153,24 +154,29 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code> xx</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle pin |
+| **Description** | Quickfix List (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> bp</code> |
+| **Left hand side** | <code> xQ</code> |
 | **Right hand side** | |
 
-| **Description** | Delete non-pinned buffers |
+| **Description** | Noice All |
 | :---- | :---- |
-| **Left hand side** | <code> bP</code> |
+| **Left hand side** | <code> sna</code> |
 | **Right hand side** | |
 
-| **Description** | Delete Buffer |
+| **Description** | Noice History |
 | :---- | :---- |
-| **Left hand side** | <code> bd</code> |
+| **Left hand side** | <code> snh</code> |
 | **Right hand side** | |
 
-| **Description** | Delete Buffer (Force) |
+| **Description** | Noice Last Message |
 | :---- | :---- |
-| **Left hand side** | <code> bD</code> |
+| **Left hand side** | <code> snl</code> |
+| **Right hand side** | |
+
+| **Description** | Dismiss All |
+| :---- | :---- |
+| **Left hand side** | <code> snd</code> |
 | **Right hand side** | |
 
 | **Description** | Restore Session |
@@ -188,9 +194,104 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code> ql</code> |
 | **Right hand side** | |
 
+| **Description** | Delete Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> bd</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer (Force) |
+| :---- | :---- |
+| **Left hand side** | <code> bD</code> |
+| **Right hand side** | |
+
+| **Description** | Dismiss all Notifications |
+| :---- | :---- |
+| **Left hand side** | <code> un</code> |
+| **Right hand side** | |
+
+| **Description** | Document diagnostics |
+| :---- | :---- |
+| **Left hand side** | <code> sd</code> |
+| **Right hand side** | |
+
+| **Description** | Commands |
+| :---- | :---- |
+| **Left hand side** | <code> sC</code> |
+| **Right hand side** | |
+
+| **Description** | Command History |
+| :---- | :---- |
+| **Left hand side** | <code> sc</code> |
+| **Right hand side** | |
+
+| **Description** | Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> sb</code> |
+| **Right hand side** | |
+
+| **Description** | Auto Commands |
+| :---- | :---- |
+| **Left hand side** | <code> sa</code> |
+| **Right hand side** | |
+
+| **Description** | Registers |
+| :---- | :---- |
+| **Left hand side** | <code> s"</code> |
+| **Right hand side** | |
+
+| **Description** | status |
+| :---- | :---- |
+| **Left hand side** | <code> gs</code> |
+| **Right hand side** | |
+
+| **Description** | commits |
+| :---- | :---- |
+| **Left hand side** | <code> gc</code> |
+| **Right hand side** | |
+
 | **Description** | Recent (cwd) |
 | :---- | :---- |
 | **Left hand side** | <code> fR</code> |
+| **Right hand side** | |
+
+| **Description** | Recent |
+| :---- | :---- |
+| **Left hand side** | <code> fr</code> |
+| **Right hand side** | |
+
+| **Description** | Find Files (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> fF</code> |
+| **Right hand side** | |
+
+| **Description** | Find Files (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> ff</code> |
+| **Right hand side** | |
+
+| **Description** | Buffers |
+| :---- | :---- |
+| **Left hand side** | <code> fb</code> |
+| **Right hand side** | |
+
+| **Description** | Command History |
+| :---- | :---- |
+| **Left hand side** | <code> :</code> |
+| **Right hand side** | |
+
+| **Description** | Grep (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> /</code> |
+| **Right hand side** | |
+
+| **Description** | Switch Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> ,</code> |
+| **Right hand side** | |
+
+| **Description** | Find Files (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code>  </code> |
 | **Right hand side** | |
 
 | **Description** | Goto Symbol (Workspace) |
@@ -268,104 +369,9 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code> sD</code> |
 | **Right hand side** | |
 
-| **Description** | Document diagnostics |
+| **Description** | Replace in files (Spectre) |
 | :---- | :---- |
-| **Left hand side** | <code> sd</code> |
-| **Right hand side** | |
-
-| **Description** | Commands |
-| :---- | :---- |
-| **Left hand side** | <code> sC</code> |
-| **Right hand side** | |
-
-| **Description** | Command History |
-| :---- | :---- |
-| **Left hand side** | <code> sc</code> |
-| **Right hand side** | |
-
-| **Description** | Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> sb</code> |
-| **Right hand side** | |
-
-| **Description** | Auto Commands |
-| :---- | :---- |
-| **Left hand side** | <code> sa</code> |
-| **Right hand side** | |
-
-| **Description** | Registers |
-| :---- | :---- |
-| **Left hand side** | <code> s"</code> |
-| **Right hand side** | |
-
-| **Description** | status |
-| :---- | :---- |
-| **Left hand side** | <code> gs</code> |
-| **Right hand side** | |
-
-| **Description** | commits |
-| :---- | :---- |
-| **Left hand side** | <code> gc</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code>  </code> |
-| **Right hand side** | |
-
-| **Description** | Recent |
-| :---- | :---- |
-| **Left hand side** | <code> fr</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> fF</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> ff</code> |
-| **Right hand side** | |
-
-| **Description** | Buffers |
-| :---- | :---- |
-| **Left hand side** | <code> fb</code> |
-| **Right hand side** | |
-
-| **Description** | Command History |
-| :---- | :---- |
-| **Left hand side** | <code> :</code> |
-| **Right hand side** | |
-
-| **Description** | Grep (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> /</code> |
-| **Right hand side** | |
-
-| **Description** | Switch Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> ,</code> |
-| **Right hand side** | |
-
-| **Description** | Noice Last Message |
-| :---- | :---- |
-| **Left hand side** | <code> snl</code> |
-| **Right hand side** | |
-
-| **Description** | Dismiss All |
-| :---- | :---- |
-| **Left hand side** | <code> snd</code> |
-| **Right hand side** | |
-
-| **Description** | Noice All |
-| :---- | :---- |
-| **Left hand side** | <code> sna</code> |
-| **Right hand side** | |
-
-| **Description** | Noice History |
-| :---- | :---- |
-| **Left hand side** | <code> snh</code> |
+| **Left hand side** | <code> sr</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -393,6 +399,11 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code>[%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
 
+| **Description** | Prev Reference |
+| :---- | :---- |
+| **Left hand side** | <code>[[</code> |
+| **Right hand side** | |
+
 | **Description** | Previous todo comment |
 | :---- | :---- |
 | **Left hand side** | <code>[t</code> |
@@ -403,15 +414,15 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code>[q</code> |
 | **Right hand side** | |
 
-| **Description** | Prev Reference |
-| :---- | :---- |
-| **Left hand side** | <code>[[</code> |
-| **Right hand side** | |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>]%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+
+| **Description** | Next Reference |
+| :---- | :---- |
+| **Left hand side** | <code>]]</code> |
+| **Right hand side** | |
 
 | **Description** | Next todo comment |
 | :---- | :---- |
@@ -421,11 +432,6 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Description** | Next trouble/quickfix item |
 | :---- | :---- |
 | **Left hand side** | <code>]q</code> |
-| **Right hand side** | |
-
-| **Description** | Next Reference |
-| :---- | :---- |
-| **Left hand side** | <code>]]</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -438,19 +444,9 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code>g%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
 
-| **Description** | Highlight surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gzh</code> |
-| **Right hand side** | |
-
 | **Description** | Find right surrounding |
 | :---- | :---- |
 | **Left hand side** | <code>gzf</code> |
-| **Right hand side** | |
-
-| **Description** | Add surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gza</code> |
 | **Right hand side** | |
 
 | **Description** | Delete surrounding |
@@ -463,14 +459,24 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code>gzn</code> |
 | **Right hand side** | |
 
-| **Description** | Find left surrounding |
+| **Description** | Add surrounding |
 | :---- | :---- |
-| **Left hand side** | <code>gzF</code> |
+| **Left hand side** | <code>gza</code> |
 | **Right hand side** | |
 
 | **Description** | Replace surrounding |
 | :---- | :---- |
 | **Left hand side** | <code>gzr</code> |
+| **Right hand side** | |
+
+| **Description** | Highlight surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gzh</code> |
+| **Right hand side** | |
+
+| **Description** | Find left surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gzF</code> |
 | **Right hand side** | |
 
 | **Description** | Flash |
@@ -526,14 +532,14 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 
 ### Visual mode keymaps
 
-| **Description** | Selection (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> sw</code> |
-| **Right hand side** | |
-
 | **Description** | Selection (cwd) |
 | :---- | :---- |
 | **Left hand side** | <code> sW</code> |
+| **Right hand side** | |
+
+| **Description** | Selection (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> sw</code> |
 | **Right hand side** | |
 
 | **Description** | Nvim builtin |

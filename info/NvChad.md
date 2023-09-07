@@ -27,6 +27,12 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 
 [https://www.youtube.com/@siduck_og](https://www.youtube.com/@siduck_og)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
@@ -90,21 +96,6 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>'</code> |
-| **Right hand side** | |
-
-| **Description** | Move to end of Treehopper node |
-| :---- | :---- |
-| **Left hand side** | <code>,h]</code> |
-| **Right hand side** | |
-
-| **Description** | Move to start of Treehopper node |
-| :---- | :---- |
-| **Left hand side** | <code>,h[</code> |
-| **Right hand side** | |
-
-| **Description** | Treehopper nodes |
-| :---- | :---- |
-| **Left hand side** | <code>,hm</code> |
 | **Right hand side** | |
 
 | **Description** | Open new line above HopLineStart target |
@@ -192,6 +183,21 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>,hw</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;HopWord&lt;CR&gt;</code> |
 
+| **Description** | Move to end of Treehopper node |
+| :---- | :---- |
+| **Left hand side** | <code>,h]</code> |
+| **Right hand side** | |
+
+| **Description** | Move to start of Treehopper node |
+| :---- | :---- |
+| **Left hand side** | <code>,h[</code> |
+| **Right hand side** | |
+
+| **Description** | Treehopper nodes |
+| :---- | :---- |
+| **Left hand side** | <code>,hm</code> |
+| **Right hand side** | |
+
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>,</code> |
@@ -237,14 +243,9 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>f</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle linewise |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gc</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle current line |
-| :---- | :---- |
-| **Left hand side** | <code>gcc</code> |
+| **Left hand side** | <code>g</code> |
 | **Right hand side** | |
 
 | **Description** | Comment toggle blockwise |
@@ -257,9 +258,14 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>gbc</code> |
 | **Right hand side** | |
 
-| **Description** | |
+| **Description** | Comment toggle linewise |
 | :---- | :---- |
-| **Left hand side** | <code>g</code> |
+| **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current line |
+| :---- | :---- |
+| **Left hand side** | <code>gcc</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -375,14 +381,14 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>f</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle blockwise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>gb</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle linewise (visual) |
 | :---- | :---- |
 | **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -413,14 +419,14 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>f</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle linewise |
-| :---- | :---- |
-| **Left hand side** | <code>gc</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle blockwise |
 | :---- | :---- |
 | **Left hand side** | <code>gb</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise |
+| :---- | :---- |
+| **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
 
 | **Description** | |

@@ -19,6 +19,12 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 [https://github.com/ngscheurich/nvim-from-scratch](https://github.com/ngscheurich/nvim-from-scratch)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -38,29 +44,9 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 | **Left hand side** | <code>&lt;Esc&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&lt;CR&gt;</code> |
 
-| **Description** | File (toggle) |
-| :---- | :---- |
-| **Left hand side** | <code> ef</code> |
-| **Right hand side** | |
-
-| **Description** | Root (toggle) |
-| :---- | :---- |
-| **Left hand side** | <code> ee</code> |
-| **Right hand side** | |
-
-| **Description** | Autocommands |
-| :---- | :---- |
-| **Left hand side** | <code> fa</code> |
-| **Right hand side** | |
-
 | **Description** | Search |
 | :---- | :---- |
 | **Left hand side** | <code> /</code> |
-| **Right hand side** | |
-
-| **Description** | Help |
-| :---- | :---- |
-| **Left hand side** | <code> fh</code> |
 | **Right hand side** | |
 
 | **Description** | Quickfix list |
@@ -73,9 +59,9 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 | **Left hand side** | <code> fl</code> |
 | **Right hand side** | |
 
-| **Description** | Buffers |
+| **Description** | Help |
 | :---- | :---- |
-| **Left hand side** | <code>  </code> |
+| **Left hand side** | <code> fh</code> |
 | **Right hand side** | |
 
 | **Description** | Grep |
@@ -91,6 +77,26 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 | **Description** | Commands |
 | :---- | :---- |
 | **Left hand side** | <code> fc</code> |
+| **Right hand side** | |
+
+| **Description** | Autocommands |
+| :---- | :---- |
+| **Left hand side** | <code> fa</code> |
+| **Right hand side** | |
+
+| **Description** | Buffers |
+| :---- | :---- |
+| **Left hand side** | <code>  </code> |
+| **Right hand side** | |
+
+| **Description** | Root (toggle) |
+| :---- | :---- |
+| **Left hand side** | <code> ee</code> |
+| **Right hand side** | |
+
+| **Description** | File (toggle) |
+| :---- | :---- |
+| **Left hand side** | <code> ef</code> |
 | **Right hand side** | |
 
 | **Description** | Plugins |
@@ -192,6 +198,11 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 | :---- | :---- |
 | **Left hand side** | <code>Y</code> |
 | **Right hand side** | <code>y$</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -340,8 +351,8 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>[%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -490,11 +501,6 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>]%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>cS</code> |
 | **Right hand side** | <code>&lt;Plug&gt;CSurround</code> |
 
@@ -540,13 +546,13 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gs</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(leap-cross-window)</code> |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>g%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
+| **Left hand side** | <code>gs</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(leap-cross-window)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -557,11 +563,6 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 | :---- | :---- |
 | **Left hand side** | <code>t</code> |
 | **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>y&lt;C-G&gt;</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -600,6 +601,11 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>y&lt;C-G&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>z%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
 
@@ -610,233 +616,273 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;fugitive:</code> |
-| **Right hand side** | <code></code> |
+| **Left hand side** | <code>&lt;2-LeftMouse&gt;</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-double-click)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-reload)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;MatchupReload&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-double-click)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#double_click()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;30_(wise)</code> |
+| **Right hand side** | <code>empty(g:v_motion_force) ? 'v' : g:v_motion_force</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-hi-surround)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#matchparen#highlight_surrounding()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-xml-decode-line)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("xml_decode")."_"</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("xml_decode")."_"</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-xml-decode)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("xml_decode")</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("xml_decode")</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpaired_line_xml_decode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("xml_decode")."_"</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("xml_decode")."_"</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpaired_xml_decode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("xml_decode")</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("xml_decode")</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-xml-encode-line)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("xml_encode")."_"</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("xml_encode")."_"</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-xml-encode)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("xml_encode")</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("xml_encode")</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpaired_line_xml_encode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("xml_encode")."_"</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("xml_encode")."_"</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpaired_xml_encode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("xml_encode")</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("xml_encode")</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-url-decode-line)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("url_decode")."_"</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("url_decode")."_"</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-url-decode)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("url_decode")</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("url_decode")</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpaired_line_url_decode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("url_decode")."_"</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("url_decode")."_"</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpaired_url_decode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("url_decode")</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("url_decode")</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-url-encode-line)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("url_encode")."_"</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("url_encode")."_"</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-url-encode)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("url_encode")</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("url_encode")</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpaired_line_url_encode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("url_encode")."_"</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("url_encode")."_"</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpaired_url_encode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("url_encode")</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("url_encode")</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-string-decode-line)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("string_decode")."_"</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("string_decode")."_"</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-string-decode)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("string_decode")</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("string_decode")</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpaired_line_string_decode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("string_decode")."_"</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("string_decode")."_"</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpaired_string_decode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("string_decode")</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("string_decode")</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-string-encode-line)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("string_encode")."_"</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("string_encode")."_"</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-string-encode)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("string_encode")</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("string_encode")</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpaired_line_string_encode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("string_encode")."_"</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("string_encode")."_"</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpaired_string_encode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_TransformSetup("string_encode")</code> |
+| **Right hand side** | <code>&lt;SNR&gt;21_TransformSetup("string_encode")</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpairedPutBelow</code> |
-| **Right hand side** | <code>:call &lt;SNR&gt;22_putline(']p', 'below')&lt;CR&gt;</code> |
+| **Right hand side** | <code>:call &lt;SNR&gt;21_putline(']p', 'below')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpairedPutAbove</code> |
-| **Right hand side** | <code>:call &lt;SNR&gt;22_putline('[p', 'above')&lt;CR&gt;</code> |
+| **Right hand side** | <code>:call &lt;SNR&gt;21_putline('[p', 'above')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-put-below-reformat)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_putline(v:count1 . ']p', 'Below')&lt;CR&gt;=']</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_putline(v:count1 . ']p', 'Below')&lt;CR&gt;=']</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-put-above-reformat)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_putline(v:count1 . '[p', 'Above')&lt;CR&gt;=']</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_putline(v:count1 . '[p', 'Above')&lt;CR&gt;=']</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-put-below-leftward)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_putline(v:count1 . ']p', 'Below')&lt;CR&gt;&lt;lt&gt;']</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_putline(v:count1 . ']p', 'Below')&lt;CR&gt;&lt;lt&gt;']</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-put-above-leftward)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_putline(v:count1 . '[p', 'Above')&lt;CR&gt;&lt;lt&gt;']</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_putline(v:count1 . '[p', 'Above')&lt;CR&gt;&lt;lt&gt;']</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-put-below-rightward)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_putline(v:count1 . ']p', 'Below')&lt;CR&gt;&gt;']</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_putline(v:count1 . ']p', 'Below')&lt;CR&gt;&gt;']</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-put-above-rightward)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_putline(v:count1 . '[p', 'Above')&lt;CR&gt;&gt;']</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_putline(v:count1 . '[p', 'Above')&lt;CR&gt;&gt;']</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-put-below)</code> |
-| **Right hand side** | <code>:call &lt;SNR&gt;22_putline(']p', 'below')&lt;CR&gt;</code> |
+| **Right hand side** | <code>:call &lt;SNR&gt;21_putline(']p', 'below')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-put-above)</code> |
-| **Right hand side** | <code>:call &lt;SNR&gt;22_putline('[p', 'above')&lt;CR&gt;</code> |
+| **Right hand side** | <code>:call &lt;SNR&gt;21_putline('[p', 'above')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)p</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_SetupPaste()&lt;CR&gt;0C</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_SetupPaste()&lt;CR&gt;0C</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)p</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_SetupPaste()&lt;CR&gt;o</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_SetupPaste()&lt;CR&gt;o</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)p</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_SetupPaste()&lt;CR&gt;O</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_SetupPaste()&lt;CR&gt;O</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-paste)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_SetupPaste()&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_SetupPaste()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpairedPaste</code> |
-| **Right hand side** | <code>:call &lt;SNR&gt;22_SetupPaste()&lt;CR&gt;</code> |
+| **Right hand side** | <code>:call &lt;SNR&gt;21_SetupPaste()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)t</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;set colorcolumn=&lt;C-R&gt;=&lt;SNR&gt;22_ColorColumn(!empty(&cc))&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;set colorcolumn=&lt;C-R&gt;=&lt;SNR&gt;21_ColorColumn(!empty(&cc))&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)t</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;set colorcolumn=&lt;C-R&gt;=&lt;SNR&gt;22_ColorColumn(1)&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;set colorcolumn=&lt;C-R&gt;=&lt;SNR&gt;21_ColorColumn(1)&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)t</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;set colorcolumn=&lt;C-R&gt;=&lt;SNR&gt;22_ColorColumn(0)&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;set colorcolumn=&lt;C-R&gt;=&lt;SNR&gt;21_ColorColumn(0)&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)+</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;set &lt;C-R&gt;=&lt;SNR&gt;22_CursorOptions()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;set &lt;C-R&gt;=&lt;SNR&gt;21_CursorOptions()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -851,7 +897,7 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)x</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;set &lt;C-R&gt;=&lt;SNR&gt;22_CursorOptions()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;set &lt;C-R&gt;=&lt;SNR&gt;21_CursorOptions()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -881,122 +927,122 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)z</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;22_Toggle("spell")&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;21_Toggle("spell")&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)z</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal nospell&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal nospell&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)z</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal spell&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal spell&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)w</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;22_Toggle("wrap")&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;21_Toggle("wrap")&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)w</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal nowrap&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal nowrap&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)w</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal wrap&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal wrap&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)s</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;22_Toggle("spell")&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;21_Toggle("spell")&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)s</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal nospell&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal nospell&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)s</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal spell&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal spell&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)r</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;22_Toggle("relativenumber")&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;21_Toggle("relativenumber")&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)r</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal norelativenumber&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal norelativenumber&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)r</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal relativenumber&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal relativenumber&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)n</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;22_Toggle("number")&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;21_Toggle("number")&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)n</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal nonumber&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal nonumber&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)n</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal number&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal number&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)l</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;22_Toggle("list")&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;21_Toggle("list")&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)l</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal nolist&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal nolist&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)l</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal list&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal list&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)i</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;set &lt;C-R&gt;=&lt;SNR&gt;22_Toggle("ignorecase")&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;set &lt;C-R&gt;=&lt;SNR&gt;21_Toggle("ignorecase")&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)i</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;set noignorecase&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;set noignorecase&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)i</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;set ignorecase&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;set ignorecase&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)h</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;set &lt;C-R&gt;=&lt;SNR&gt;22_Toggle("hlsearch")&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;set &lt;C-R&gt;=&lt;SNR&gt;21_Toggle("hlsearch")&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)h</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;set nohlsearch&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;set nohlsearch&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)h</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;set hlsearch&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;set hlsearch&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1016,77 +1062,77 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)&#124;</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;22_Toggle("cursorcolumn")&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;21_Toggle("cursorcolumn")&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)&#124;</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal nocursorcolumn&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal nocursorcolumn&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)&#124;</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal cursorcolumn&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal cursorcolumn&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)u</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;22_Toggle("cursorcolumn")&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;21_Toggle("cursorcolumn")&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)u</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal nocursorcolumn&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal nocursorcolumn&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)u</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal cursorcolumn&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal cursorcolumn&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)_</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;22_Toggle("cursorline")&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;21_Toggle("cursorline")&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)_</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal nocursorline&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal nocursorline&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)_</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal cursorline&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal cursorline&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)-</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;22_Toggle("cursorline")&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;21_Toggle("cursorline")&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)-</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal nocursorline&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal nocursorline&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)-</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal cursorline&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal cursorline&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-toggle)c</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;22_Toggle("cursorline")&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal &lt;C-R&gt;=&lt;SNR&gt;21_Toggle("cursorline")&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-disable)c</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal nocursorline&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal nocursorline&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-enable)c</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;setlocal cursorline&lt;C-R&gt;=&lt;SNR&gt;22_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;setlocal cursorline&lt;C-R&gt;=&lt;SNR&gt;21_StatuslineRefresh()&lt;CR&gt;&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1106,102 +1152,102 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpairedMoveSelectionDown</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_MoveSelectionDown(v:count1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_MoveSelectionDown(v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpairedMoveSelectionUp</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_MoveSelectionUp(v:count1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_MoveSelectionUp(v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpairedMoveDown</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_Move('+',v:count1,'down')&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_Move('+',v:count1,'down')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpairedMoveUp</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_Move('--',v:count1,'up')&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_Move('--',v:count1,'up')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-move-selection-down)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_MoveSelectionDown(v:count1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_MoveSelectionDown(v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-move-selection-up)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_MoveSelectionUp(v:count1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_MoveSelectionUp(v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-move-down)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_Move('+',v:count1,'down')&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_Move('+',v:count1,'down')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-move-up)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_Move('--',v:count1,'up')&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_Move('--',v:count1,'up')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpairedBlankDown</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;exe &lt;SNR&gt;22_BlankDown()&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;exe &lt;SNR&gt;21_BlankDown()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpairedBlankUp</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;exe &lt;SNR&gt;22_BlankUp()&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;exe &lt;SNR&gt;21_BlankUp()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-blank-down)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;exe &lt;SNR&gt;22_BlankDown()&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;exe &lt;SNR&gt;21_BlankDown()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-blank-up)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;exe &lt;SNR&gt;22_BlankUp()&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;exe &lt;SNR&gt;21_BlankUp()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpairedContextNext</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_Context(0)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_Context(0)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpairedContextPrevious</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_Context(1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_Context(1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-context-next)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_Context(0)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_Context(0)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-context-previous)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_Context(1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;21_Context(1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpairedDirectoryPrevious</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;execute &lt;SNR&gt;22_PreviousFileEntry(v:count1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;execute &lt;SNR&gt;21_PreviousFileEntry(v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;unimpairedDirectoryNext</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;execute &lt;SNR&gt;22_NextFileEntry(v:count1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;execute &lt;SNR&gt;21_NextFileEntry(v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-directory-previous)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;execute &lt;SNR&gt;22_PreviousFileEntry(v:count1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;execute &lt;SNR&gt;21_PreviousFileEntry(v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(unimpaired-directory-next)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;execute &lt;SNR&gt;22_NextFileEntry(v:count1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;execute &lt;SNR&gt;21_NextFileEntry(v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1465,6 +1511,46 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;YSurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;20_opfunc2('setup')</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Ysurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;20_opfunc('setup')</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;YSsurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;20_opfunc2('setup').'_'</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Yssurround</code> |
+| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;20_opfunc('setup').'g_'</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;20_changesurround(1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Csurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;20_changesurround()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Dsurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;20_dosurround(&lt;SNR&gt;20_inputtarget())&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SurroundRepeat</code> |
+| **Right hand side** | <code>.</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(leap-backward-x)</code> |
 | **Right hand side** | |
 
@@ -1510,6 +1596,16 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;fugitive:</code> |
+| **Right hand side** | <code></code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require'luasnip'.expand_repeat()&lt;CR&gt;</code> |
 
@@ -1517,101 +1613,6 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require'luasnip'.unlink_current_if_deleted()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;YSurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;16_opfunc2('setup')</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Ysurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;16_opfunc('setup')</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;YSsurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;16_opfunc2('setup').'_'</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Yssurround</code> |
-| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;16_opfunc('setup').'g_'</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;CSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;16_changesurround(1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Csurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;16_changesurround()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Dsurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;16_dosurround(&lt;SNR&gt;16_inputtarget())&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SurroundRepeat</code> |
-| **Right hand side** | <code>.</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;2-LeftMouse&gt;</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-double-click)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-reload)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;MatchupReload&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-double-click)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#double_click()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;9_(wise)</code> |
-| **Right hand side** | <code>empty(g:v_motion_force) ? 'v' : g:v_motion_force</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-hi-surround)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#matchparen#highlight_surrounding()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1627,6 +1628,11 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(dirvish_up)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;exe 'Dirvish' fnameescape(fnamemodify(@%, ':p'.(@%[-1:]=~'[\\/]'?':h':'').repeat(':h',v:count1)))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1693,6 +1699,11 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>[x</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(unimpaired-xml-encode)</code> |
 
@@ -1723,8 +1734,8 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>[%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1758,11 +1769,6 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>]%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>a%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
 
@@ -1778,13 +1784,13 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gS</code> |
-| **Right hand side** | <code>&lt;Plug&gt;VgSurround</code> |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>g%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
+| **Left hand side** | <code>gS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;VgSurround</code> |
 
 | **Description** | Comment selection |
 | :---- | :---- |
@@ -1838,116 +1844,6 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;VgSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;34_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;VSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;34_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-xml-decode)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;33_TransformSetup("xml_decode")</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpaired_xml_decode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;33_TransformSetup("xml_decode")</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-xml-encode)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;33_TransformSetup("xml_encode")</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpaired_xml_encode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;33_TransformSetup("xml_encode")</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-url-decode)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;33_TransformSetup("url_decode")</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpaired_url_decode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;33_TransformSetup("url_decode")</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-url-encode)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;33_TransformSetup("url_encode")</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpaired_url_encode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;33_TransformSetup("url_encode")</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-string-decode)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;33_TransformSetup("string_decode")</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpaired_string_decode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;33_TransformSetup("string_decode")</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-string-encode)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;33_TransformSetup("string_encode")</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpaired_string_encode</code> |
-| **Right hand side** | <code>&lt;SNR&gt;33_TransformSetup("string_encode")</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpairedMoveSelectionDown</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;33_MoveSelectionDown(v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpairedMoveSelectionUp</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;33_MoveSelectionUp(v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-move-selection-down)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;33_MoveSelectionDown(v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-move-selection-up)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;33_MoveSelectionUp(v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpairedContextNext</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;exe 'normal! gv'&#124;call &lt;SNR&gt;33_Context(0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpairedContextPrevious</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;exe 'normal! gv'&#124;call &lt;SNR&gt;33_Context(1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-context-next)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;exe 'normal! gv'&#124;call &lt;SNR&gt;33_Context(0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-context-previous)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;exe 'normal! gv'&#124;call &lt;SNR&gt;33_Context(1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(0, 1, 'delim_all')&lt;CR&gt;</code> |
 
@@ -1959,62 +1855,172 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;28_(matchup-Z%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;32_(matchup-Z%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;28_(matchup-Z%)</code> |
+| **Left hand side** | <code>&lt;SNR&gt;32_(matchup-Z%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;28_(matchup-z%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;32_(matchup-z%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;28_(matchup-z%)</code> |
+| **Left hand side** | <code>&lt;SNR&gt;32_(matchup-z%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;28_(matchup-[%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;32_(matchup-[%)</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;28_(matchup-]%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;32_(matchup-]%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;28_(matchup-[%)</code> |
+| **Left hand side** | <code>&lt;SNR&gt;32_(matchup-[%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 0)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;28_(matchup-]%)</code> |
+| **Left hand side** | <code>&lt;SNR&gt;32_(matchup-]%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;28_(matchup-g%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;32_(matchup-g%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;28_(matchup-g%)</code> |
+| **Left hand side** | <code>&lt;SNR&gt;32_(matchup-g%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 0)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;28_(matchup-%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;32_(matchup-%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;28_(matchup-%)</code> |
+| **Left hand side** | <code>&lt;SNR&gt;32_(matchup-%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;VgSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;VSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-xml-decode)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;25_TransformSetup("xml_decode")</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;unimpaired_xml_decode</code> |
+| **Right hand side** | <code>&lt;SNR&gt;25_TransformSetup("xml_decode")</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-xml-encode)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;25_TransformSetup("xml_encode")</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;unimpaired_xml_encode</code> |
+| **Right hand side** | <code>&lt;SNR&gt;25_TransformSetup("xml_encode")</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-url-decode)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;25_TransformSetup("url_decode")</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;unimpaired_url_decode</code> |
+| **Right hand side** | <code>&lt;SNR&gt;25_TransformSetup("url_decode")</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-url-encode)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;25_TransformSetup("url_encode")</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;unimpaired_url_encode</code> |
+| **Right hand side** | <code>&lt;SNR&gt;25_TransformSetup("url_encode")</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-string-decode)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;25_TransformSetup("string_decode")</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;unimpaired_string_decode</code> |
+| **Right hand side** | <code>&lt;SNR&gt;25_TransformSetup("string_decode")</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-string-encode)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;25_TransformSetup("string_encode")</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;unimpaired_string_encode</code> |
+| **Right hand side** | <code>&lt;SNR&gt;25_TransformSetup("string_encode")</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;unimpairedMoveSelectionDown</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_MoveSelectionDown(v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;unimpairedMoveSelectionUp</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_MoveSelectionUp(v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-move-selection-down)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_MoveSelectionDown(v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-move-selection-up)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_MoveSelectionUp(v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;unimpairedContextNext</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;exe 'normal! gv'&#124;call &lt;SNR&gt;25_Context(0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;unimpairedContextPrevious</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;exe 'normal! gv'&#124;call &lt;SNR&gt;25_Context(1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-context-next)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;exe 'normal! gv'&#124;call &lt;SNR&gt;25_Context(0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-context-previous)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;exe 'normal! gv'&#124;call &lt;SNR&gt;25_Context(1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -2101,23 +2107,23 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>[n</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(unimpaired-context-previous)</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>[%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>]n</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(unimpaired-context-next)</code> |
+| **Left hand side** | <code>[n</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(unimpaired-context-previous)</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>]%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]n</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(unimpaired-context-next)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -2136,13 +2142,13 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gs</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(leap-cross-window)</code> |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Ignore&gt;&lt;Plug&gt;(matchup-g%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>g%</code> |
-| **Right hand side** | <code>&lt;Ignore&gt;&lt;Plug&gt;(matchup-g%)</code> |
+| **Left hand side** | <code>gs</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(leap-cross-window)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -2171,43 +2177,53 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpairedMoveSelectionDown</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_MoveSelectionDown(v:count1)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'luasnip'.expand_repeat()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpairedMoveSelectionUp</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_MoveSelectionUp(v:count1)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'luasnip'.unlink_current_if_deleted()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-move-selection-down)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_MoveSelectionDown(v:count1)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(0, 0, 'delim_all')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-move-selection-up)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_MoveSelectionUp(v:count1)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-i%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(1, 0, 'delim_all')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpairedContextNext</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_ContextMotion(0)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#op('Z%')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;unimpairedContextPrevious</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_ContextMotion(1)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#op('z%')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-context-next)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_ContextMotion(0)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#op('[%')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-context-previous)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_ContextMotion(1)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#op(']%')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#op('g%')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#op('%')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -2256,51 +2272,41 @@ Jumping-off point for new Neovim users or those who have declared config bankrup
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(0, 0, 'delim_all')&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;unimpairedMoveSelectionDown</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_MoveSelectionDown(v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-i%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(1, 0, 'delim_all')&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;unimpairedMoveSelectionUp</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_MoveSelectionUp(v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#op('Z%')&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-move-selection-down)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_MoveSelectionDown(v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#op('z%')&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-move-selection-up)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_MoveSelectionUp(v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#op('[%')&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;unimpairedContextNext</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_ContextMotion(0)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#op(']%')&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;unimpairedContextPrevious</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_ContextMotion(1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#op('g%')&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-context-next)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_ContextMotion(0)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#op('%')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'luasnip'.expand_repeat()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'luasnip'.unlink_current_if_deleted()&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(unimpaired-context-previous)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_ContextMotion(1)&lt;CR&gt;</code> |
 

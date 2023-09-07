@@ -23,6 +23,12 @@ A remarkably effective Neovim configuration in only one small file. The author's
 
 [https://www.youtube.com/@anthonygg_](https://www.youtube.com/@anthonygg_)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Packer managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)

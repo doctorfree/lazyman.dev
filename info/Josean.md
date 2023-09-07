@@ -23,6 +23,12 @@ Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8)
 
 [https://www.youtube.com/@joseanmartinez](https://www.youtube.com/@joseanmartinez)
 
+Jump to:
+
+- [Normal mode keymaps](#normal-mode-keymaps)
+- [Visual mode keymaps](#visual-mode-keymaps)
+- [Operator mode keymaps](#operator-mode-keymaps)
+
 ## Packer managed plugins
 
 
@@ -39,6 +45,26 @@ Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8)
 | :---- | :---- |
 | **Left hand side** | <code> wr</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;SessionRestore&lt;CR&gt;</code> |
+
+| **Description** | Find string under cursor in cwd |
+| :---- | :---- |
+| **Left hand side** | <code> fc</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope grep_string&lt;CR&gt;</code> |
+
+| **Description** | Find string in cwd |
+| :---- | :---- |
+| **Left hand side** | <code> fs</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope live_grep&lt;CR&gt;</code> |
+
+| **Description** | Fuzzy find recent files |
+| :---- | :---- |
+| **Left hand side** | <code> fr</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
+
+| **Description** | Fuzzy find files in cwd |
+| :---- | :---- |
+| **Left hand side** | <code> ff</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Telescope find_files&lt;CR&gt;</code> |
 
 | **Description** | Refresh file explorer |
 | :---- | :---- |
@@ -74,26 +100,6 @@ Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8)
 | :---- | :---- |
 | **Left hand side** | <code> hm</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('harpoon.mark').add_file()&lt;CR&gt;</code> |
-
-| **Description** | Find string under cursor in cwd |
-| :---- | :---- |
-| **Left hand side** | <code> fc</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;Telescope grep_string&lt;CR&gt;</code> |
-
-| **Description** | Find string in cwd |
-| :---- | :---- |
-| **Left hand side** | <code> fs</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;Telescope live_grep&lt;CR&gt;</code> |
-
-| **Description** | Fuzzy find recent files |
-| :---- | :---- |
-| **Left hand side** | <code> fr</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
-
-| **Description** | Fuzzy find files in cwd |
-| :---- | :---- |
-| **Left hand side** | <code> ff</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;Telescope find_files&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -242,11 +248,6 @@ Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8)
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;ReplaceWithRegisterVisual</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call setline('.', getline('.'))&#124;execute 'silent! call repeat#setreg("\&lt;lt&gt;Plug&gt;ReplaceWithRegisterVisual", v:register)'|call ReplaceWithRegister#SetRegister()|if ReplaceWithRegister#IsExprReg()|    let g:ReplaceWithRegister#expr = getreg('=')|endif|execute 'normal!' ReplaceWithRegister#VisualMode()|call ReplaceWithRegister#Operator('visual', "\&lt;lt&gt;Plug&gt;ReplaceWithRegisterVisual")&lt;CR&gt;</code> |
 
@@ -264,6 +265,11 @@ Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8)
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;ReplaceWithRegisterOperator</code> |
 | **Right hand side** | <code>ReplaceWithRegister#OperatorExpression()</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
