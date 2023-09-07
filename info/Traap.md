@@ -138,39 +138,39 @@ post_style: page
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> tn</code> |  |
- | | <code> dO</code> |  |
+ | | <code> dB</code> |  |
+ | Breakpoint Condition| <code> dO</code> |  |
  | Step Over| <code> dk</code> |  |
  | Up| <code> dj</code> |  |
- | Down| <code> dB</code> |  |
- | Breakpoint Condition| <code> un</code> |  |
- | Dismiss all Notifications| <code> cv</code> |  |
- | Select VirtualEnv| <code> qs</code> |  |
- | Restore Session| <code> qd</code> |  |
- | Don't Save Current Session| <code> ql</code> |  |
- | Restore Last Session| <code> dPc</code> |  |
- | Debug Class| <code> dPt</code> |  |
- | Debug Method| <code> cm</code> |  |
- | | <code> no</code> |  |
- | Oil buffer| <code> Tl</code> |  |
- | | <code> Tb</code> |  |
- | | <code> Tr</code> |  |
- | | <code> Tm</code> |  |
- | | <code> du</code> |  |
- | Dap UI| <code> de</code> |  |
- | Eval| <code> bD</code> |  |
+ | Down| <code> un</code> |  |
+ | Dismiss all Notifications| <code> bD</code> |  |
  | Delete Buffer (Force)| <code> bd</code> |  |
- | Delete Buffer| <code> sr</code> |  |
- | Replace in files (Spectre)| <code> st</code> |  |
+ | Delete Buffer| <code> cv</code> |  |
+ | Select VirtualEnv| <code> dPt</code> |  |
+ | Debug Method| <code> dPc</code> |  |
+ | Debug Class| <code> sT</code> |  |
+ | Todo/Fix/Fixme| <code> st</code> |  |
  | Todo| <code> xT</code> |  |
  | Todo/Fix/Fixme (Trouble)| <code> xt</code> |  |
- | Todo (Trouble)| <code> sT</code> |  |
- | Todo/Fix/Fixme| <code> xQ</code> |  |
+ | Todo (Trouble)| <code> no</code> |  |
+ | Oil buffer| <code> xQ</code> |  |
  | Quickfix List (Trouble)| <code> xL</code> |  |
  | Location List (Trouble)| <code> xX</code> |  |
  | Workspace Diagnostics (Trouble)| <code> xx</code> |  |
- | Document Diagnostics (Trouble)| <code> oz</code> | <code>&lt;Cmd&gt;lua require("zen-mode").toggle()&lt;CR&gt;</code> |
+ | Document Diagnostics (Trouble)| <code> Tm</code> |  |
+ | | <code> Tl</code> |  |
+ | | <code> Tb</code> |  |
+ | | <code> Tr</code> |  |
+ | | <code> sr</code> |  |
+ | Replace in files (Spectre)| <code> qd</code> |  |
+ | Don't Save Current Session| <code> ql</code> |  |
+ | Restore Last Session| <code> qs</code> |  |
+ | Restore Session| <code> cm</code> |  |
+ | | <code> de</code> |  |
+ | Eval| <code> du</code> |  |
+ | Dap UI| <code> oz</code> | <code>&lt;Cmd&gt;lua require("zen-mode").toggle()&lt;CR&gt;</code> |
  | | <code> lx</code> | <code>&lt;Plug&gt;(vimtex-reload)</code> |
  | | <code> lv</code> | <code>&lt;Plug&gt;(vimtex-view)</code> |
  | | <code> lt</code> | <code>&lt;Plug&gt;(vimtex-toc_open)</code> |
@@ -284,16 +284,16 @@ post_style: page
  | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;fugitive:</code> | <code></code> |
  | | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
- | | <code>&lt;M-7&gt;</code> |  |
- | | <code>&lt;M-6&gt;</code> |  |
+ | | <code>&lt;C-Space&gt;</code> |  |
+ | Increment selection| <code>&lt;M-6&gt;</code> |  |
  | | <code>&lt;M-5&gt;</code> |  |
  | | <code>&lt;M-4&gt;</code> |  |
  | | <code>&lt;M-3&gt;</code> |  |
  | | <code>&lt;M-2&gt;</code> |  |
  | | <code>&lt;M-1&gt;</code> |  |
  | | <code>&lt;M-8&gt;</code> |  |
- | | <code>&lt;C-Space&gt;</code> |  |
- | Increment selection| <code>&lt;C-N&gt;</code> | <code>&lt;Cmd&gt;Neotree toggle&lt;CR&gt;</code> |
+ | | <code>&lt;M-7&gt;</code> |  |
+ | | <code>&lt;C-N&gt;</code> | <code>&lt;Cmd&gt;Neotree toggle&lt;CR&gt;</code> |
  | | <code>&lt;F12&gt;</code> | <code>&lt;Cmd&gt;lua require("dap").step_out()&lt;CR&gt;</code> |
  | | <code>&lt;F11&gt;</code> | <code>&lt;Cmd&gt;lua require("dap").step_into()&lt;CR&gt;</code> |
  | | <code>&lt;F10&gt;</code> | <code>&lt;Cmd&gt;lua require("dap").step_over()&lt;CR&gt;</code> |
@@ -303,7 +303,7 @@ post_style: page
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> tn</code> |  |
  | | <code> de</code> |  |
  | Eval| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -327,7 +327,7 @@ post_style: page
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>R</code> |  |
  | Treesitter Search| <code>S</code> |  |

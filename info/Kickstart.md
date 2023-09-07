@@ -55,7 +55,7 @@ Popular starting point, small, single file, well documented, modular
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> q</code> |  |
  | Open diagnostics list| <code> e</code> |  |
  | Open floating diagnostic message| <code> sd</code> |  |
@@ -92,23 +92,23 @@ Popular starting point, small, single file, well documented, modular
  | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
- | | <code>&lt;Plug&gt;luasnip-delete-check</code> |  |
  | | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |  |
  | Comment toggle blockwise with count| <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |  |
  | Comment toggle linewise with count| <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |  |
  | Comment toggle current block| <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |  |
  | Comment toggle current line| <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |  |
  | Comment toggle blockwise| <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |  |
- | Comment toggle linewise| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+ | Comment toggle linewise| <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
+ | | <code>&lt;Plug&gt;luasnip-delete-check</code> |  |
  | | <code>&lt;Plug&gt;fugitive:</code> | <code></code> |
  | | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
  | | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
  | Nvim builtin
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> </code> | <code></code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
@@ -133,7 +133,7 @@ Popular starting point, small, single file, well documented, modular
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

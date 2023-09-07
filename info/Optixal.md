@@ -71,7 +71,7 @@ Hybrid Neovim config for developers with a functional yet aesthetic experience. 
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Tab&gt;</code> | <code>:bnext&lt;CR&gt;</code> |
  | | <code> q</code> | <code>&lt;Cmd&gt;lua vim.diagnostic.setloclist()&lt;CR&gt;</code> |
  | | <code> e</code> | <code>&lt;Cmd&gt;lua vim.diagnostic.open_float()&lt;CR&gt;</code> |
@@ -189,7 +189,7 @@ Hybrid Neovim config for developers with a functional yet aesthetic experience. 
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -249,7 +249,7 @@ Hybrid Neovim config for developers with a functional yet aesthetic experience. 
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

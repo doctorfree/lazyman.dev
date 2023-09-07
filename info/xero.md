@@ -86,12 +86,14 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Esc&gt;&lt;Esc&gt;</code> | <code>:nohlsearch&lt;CR&gt;</code> |
  | remove highlighting| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>,</code> |  |
- | | <code>,/gC</code> |  |
+ | | <code>,//</code> |  |
+ | Resume FZF| <code>,bc</code> |  |
+ | Search git buffer commits| <code>,/gC</code> |  |
  | Search git buffer commits| <code>,/gc</code> |  |
  | Search git commits| <code>,/gb</code> |  |
  | Search git branches| <code>,/gf</code> |  |
@@ -103,9 +105,7 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
  | Find files| <code>,/f</code> |  |
  | Find files| <code>,/C</code> |  |
  | Search command history| <code>,/c</code> |  |
- | Search commands| <code>,//</code> |  |
- | Resume FZF| <code>,bc</code> |  |
- | Search git buffer commits| <code>,x</code> | <code>:Chmodx&lt;CR&gt;</code> |
+ | Search commands| <code>,x</code> | <code>:Chmodx&lt;CR&gt;</code> |
  | chmod +x buffer| <code>,s</code> | <code>:Sp&lt;CR&gt;</code> |
  | toggle spell check| <code>,j</code> | <code>:%!jq .&lt;CR&gt;</code> |
  | jq format| <code>,&lt;Tab&gt;[</code> | <code>&lt;Cmd&gt;tabprevious&lt;CR&gt;</code> |
@@ -136,7 +136,7 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -155,7 +155,7 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

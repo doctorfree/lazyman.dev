@@ -64,7 +64,7 @@ post_style: page
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> </code> |  |
  | | <code>"</code> |  |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
@@ -74,17 +74,17 @@ post_style: page
  | | <code>c</code> |  |
  | | <code>g</code> |  |
  | | <code>gb</code> |  |
- | Comment toggle blockwise| <code>gbc</code> |  |
+ | Comment toggle blockwise| <code>gcc</code> |  |
+ | Comment toggle current line| <code>gbc</code> |  |
  | Comment toggle current block| <code>gc</code> |  |
- | Comment toggle linewise| <code>gcc</code> |  |
- | Comment toggle current line| <code>v</code> |  |
+ | Comment toggle linewise| <code>v</code> |  |
  | | <code>&lt;C-R&gt;</code> |  |
  | | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
  | Nvim builtin
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>gb</code> |  |
@@ -93,7 +93,7 @@ post_style: page
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>gb</code> |  |
  | Comment toggle blockwise| <code>gc</code> |  |
  | Comment toggle linewise

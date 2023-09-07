@@ -140,7 +140,7 @@ Personal Neovim configuration of Lukas Reineke, author of many excellent Neovim 
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> k</code> | <code>&lt;Cmd&gt;lua require'luasnip'.jump(-1)&lt;CR&gt;</code> |
  | | <code> j</code> | <code>&lt;Cmd&gt;lua require'luasnip'.jump(1)&lt;CR&gt;</code> |
  | | <code> gl</code> | <code>:diffget //3&lt;CR&gt; :diffupdate&lt;CR&gt;</code> |
@@ -520,7 +520,7 @@ Personal Neovim configuration of Lukas Reineke, author of many excellent Neovim 
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> rr</code> | <code>:s/\v%V()</code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
@@ -692,7 +692,7 @@ Personal Neovim configuration of Lukas Reineke, author of many excellent Neovim 
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>&lt;Plug&gt;(is-#)</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>*</code> | <code>&lt;Plug&gt;(is-*)N</code> |

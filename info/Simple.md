@@ -56,7 +56,7 @@ A remarkably effective Neovim configuration in only one small file. The author's
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> /</code> | <code>&lt;Cmd&gt;set operatorfunc=CommentOperator&lt;CR&gt;g@</code> |
  | | <code> sd</code> |  |
  | [S]earch [D]iagnostics| <code> sg</code> |  |
@@ -93,7 +93,7 @@ A remarkably effective Neovim configuration in only one small file. The author's
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> /</code> | <code>:&lt;C-U&gt;call CommentOperator(visualmode())&lt;CR&gt;</code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
@@ -115,7 +115,7 @@ A remarkably effective Neovim configuration in only one small file. The author's
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

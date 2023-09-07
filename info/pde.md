@@ -103,28 +103,27 @@ Configure Neovim as a Personalized Development Environment (PDE)
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code> tta</code> |  |
- | Task Action| <code> ttR</code> |  |
- | Run Command| <code> ttt</code> |  |
- | Toggle| <code> tts</code> |  |
- | Save Bundle| <code> ttr</code> |  |
- | Run| <code> ttq</code> |  |
- | Quick Action| <code> tto</code> |  |
- | Open| <code> ttl</code> |  |
- | Load Bundle| <code> ttd</code> |  |
- | Delete Bundle| <code> ttc</code> |  |
- | Close| <code> ttb</code> |  |
- | Build| <code> dg</code> |  |
- | Get Session| <code> de</code> |  |
- | Evaluate| <code> dd</code> |  |
- | Disconnect| <code> dc</code> |  |
- | Continue| <code> db</code> |  |
- | Step Back| <code> dU</code> |  |
- | Toggle UI| <code> dC</code> |  |
- | Conditional Breakpoint| <code> dE</code> |  |
- | Evaluate Input| <code> dR</code> |  |
- | Run to Cursor| <code> du</code> |  |
+| ----- | ----- | ----------- |
+| <code> ff</code> |  |
+ | Find Files| <code> fh</code> |  |
+ | Help| <code> fb</code> |  |
+ | Buffers| <code> fg</code> |  |
+ | Git Files| <code> zCh</code> |  |
+ | Toggle Highlighter| <code> zCc</code> |  |
+ | Convert| <code> zCp</code> |  |
+ | Pick| <code> lv</code> |  |
+ | Select VirtualEnv| <code> tf</code> |  |
+ | File| <code> ta</code> |  |
+ | Attach| <code> tL</code> |  |
+ | Debug Last| <code> td</code> |  |
+ | Debug File| <code> tS</code> |  |
+ | Summary| <code> ts</code> |  |
+ | Stop| <code> to</code> |  |
+ | Output| <code> tN</code> |  |
+ | Debug Nearest| <code> tn</code> |  |
+ | Nearest| <code> tl</code> |  |
+ | Last| <code> tF</code> |  |
+ | All Files| <code> du</code> |  |
  | Step Out| <code> dx</code> |  |
  | Terminate| <code> dt</code> |  |
  | Toggle Breakpoint| <code> ds</code> |  |
@@ -135,54 +134,55 @@ Configure Neovim as a Personalized Development Environment (PDE)
  | Step Over| <code> di</code> |  |
  | Step Into| <code> dS</code> |  |
  | Scopes| <code> dh</code> |  |
- | Hover Variables| <code> xI</code> |  |
- | Interrupt| <code> x&lt;CR&gt;</code> |  |
- | ENTER| <code> xs</code> |  |
- | Send Motion| <code> xm</code> |  |
- | +Mark| <code> xC</code> |  |
- | Close REPL| <code> xl</code> |  |
- | Send Line| <code> xt</code> |  |
- | Send Until Cursor| <code> xS</code> |  |
- | Restart| <code> xH</code> |  |
- | Hide| <code> xF</code> |  |
- | Focus| <code> x</code> |  |
- | +REPL| <code> xR</code> |  |
- | REPL| <code> xmr</code> |  |
- | Remove Mark| <code> xmm</code> |  |
+ | Hover Variables| <code> dg</code> |  |
+ | Get Session| <code> de</code> |  |
+ | Evaluate| <code> dd</code> |  |
+ | Disconnect| <code> dc</code> |  |
+ | Continue| <code> db</code> |  |
+ | Step Back| <code> dU</code> |  |
+ | Toggle UI| <code> dC</code> |  |
+ | Conditional Breakpoint| <code> dE</code> |  |
+ | Evaluate Input| <code> dR</code> |  |
+ | Run to Cursor| <code> fd</code> |  |
+ | Docker| <code> ql</code> |  |
+ | Restore Last Session| <code> qs</code> |  |
+ | Restore Session| <code> qd</code> |  |
+ | Don't Save Current Session| <code> gs</code> |  |
+ | Status| <code> ttR</code> |  |
+ | Run Command| <code> ttt</code> |  |
+ | Toggle| <code> tts</code> |  |
+ | Save Bundle| <code> ttr</code> |  |
+ | Run| <code> ttq</code> |  |
+ | Quick Action| <code> tto</code> |  |
+ | Open| <code> ttl</code> |  |
+ | Load Bundle| <code> ttd</code> |  |
+ | Delete Bundle| <code> ttc</code> |  |
+ | Close| <code> ttb</code> |  |
+ | Build| <code> tta</code> |  |
+ | Task Action| <code> xmm</code> |  |
  | Mark Motion| <code> xms</code> |  |
  | Send Mark| <code> xc</code> |  |
- | Clear| <code> xf</code> |  |
- | Send File| <code> qs</code> |  |
- | Restore Session| <code> qd</code> |  |
- | Don't Save Current Session| <code> ql</code> |  |
- | Restore Last Session| <code> gs</code> |  |
- | Status| <code> fh</code> |  |
- | Help| <code> fb</code> |  |
- | Buffers| <code> fg</code> |  |
- | Git Files| <code> ff</code> |  |
- | Find Files| <code> tN</code> |  |
- | Debug Nearest| <code> tn</code> |  |
- | Nearest| <code> tl</code> |  |
- | Last| <code> tF</code> |  |
- | All Files| <code> tf</code> |  |
- | File| <code> td</code> |  |
- | Debug File| <code> tL</code> |  |
- | Debug Last| <code> to</code> |  |
- | Output| <code> tS</code> |  |
- | Summary| <code> ts</code> |  |
- | Stop| <code> ta</code> |  |
- | Attach| <code> fd</code> |  |
- | Docker| <code> zCh</code> |  |
- | Toggle Highlighter| <code> zCc</code> |  |
- | Convert| <code> zCp</code> |  |
- | Pick| <code> lv</code> |  |
- | Select VirtualEnv| <code> </code> | <code></code> |
+ | Clear| <code> xC</code> |  |
+ | Close REPL| <code> xI</code> |  |
+ | Interrupt| <code> x&lt;CR&gt;</code> |  |
+ | ENTER| <code> xf</code> |  |
+ | Send File| <code> xt</code> |  |
+ | Send Until Cursor| <code> xl</code> |  |
+ | Send Line| <code> xs</code> |  |
+ | Send Motion| <code> xm</code> |  |
+ | +Mark| <code> x</code> |  |
+ | +REPL| <code> xH</code> |  |
+ | Hide| <code> xF</code> |  |
+ | Focus| <code> xS</code> |  |
+ | Restart| <code> xR</code> |  |
+ | REPL| <code> xmr</code> |  |
+ | Remove Mark| <code> </code> | <code></code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>Y</code> | <code>y$</code> |
  | Nvim builtin| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
- | | <code>gc</code> |  |
  | | <code>gbc</code> |  |
  | | <code>gcc</code> |  |
+ | | <code>gc</code> |  |
  | | <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
  | | <code>&lt;C-B&gt;</code> |  |
  | Scroll backward| <code>&lt;C-F&gt;</code> |  |
@@ -195,23 +195,23 @@ Configure Neovim as a Personalized Development Environment (PDE)
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code> xm</code> |  |
- | +Mark| <code> x</code> |  |
- | +REPL| <code> xmv</code> |  |
+| ----- | ----- | ----------- |
+| <code> de</code> |  |
+ | Evaluate| <code> xmv</code> |  |
  | Mark Visual| <code> xL</code> |  |
  | Clear Highlight| <code> xs</code> |  |
- | Send| <code> de</code> |  |
- | Evaluate| <code> </code> | <code></code> |
+ | Send| <code> xm</code> |  |
+ | +Mark| <code> x</code> |  |
+ | +REPL| <code> </code> | <code></code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
- | | <code>gbc</code> |  |
  | | <code>gcc</code> |  |
  | | <code>gc</code> |  |
+ | | <code>gbc</code> |  |
  | | <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
  | 
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |

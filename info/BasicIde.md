@@ -63,7 +63,7 @@ Maintained by LunarVim, this is a descendent of 'Neovim from Scratch'.All plugin
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> lf</code> | <code>&lt;Cmd&gt;lua vim.lsp.buf.format{ async = true }&lt;CR&gt;</code> |
  | | <code> dt</code> | <code>&lt;Cmd&gt;lua require'dap'.terminate()&lt;CR&gt;</code> |
  | | <code> du</code> | <code>&lt;Cmd&gt;lua require'dapui'.toggle()&lt;CR&gt;</code> |
@@ -111,7 +111,7 @@ Maintained by LunarVim, this is a descendent of 'Neovim from Scratch'.All plugin
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> /</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require('Comment.api').toggle.linewise(vim.fn.visualmode())&lt;CR&gt;</code> |
  | | <code> </code> | <code></code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -135,7 +135,7 @@ Maintained by LunarVim, this is a descendent of 'Neovim from Scratch'.All plugin
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> </code> | <code></code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |

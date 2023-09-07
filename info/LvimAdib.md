@@ -91,10 +91,10 @@ post_style: page
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code> t</code> | <code>&lt;Cmd&gt;TroubleToggle&lt;CR&gt;</code> |
- | | <code>  </code> | <code>:Telescope buffers&lt;CR&gt;</code> |
+| ----- | ----- | ----------- |
+| <code>  </code> | <code>:Telescope buffers&lt;CR&gt;</code> |
  | | <code> o</code> | <code>&lt;Cmd&gt;SymbolsOutline&lt;CR&gt;</code> |
+ | | <code> t</code> | <code>&lt;Cmd&gt;TroubleToggle&lt;CR&gt;</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>H</code> | <code>:BufferLineCyclePrev&lt;CR&gt;</code> |
@@ -115,9 +115,9 @@ post_style: page
  | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
  | | <code>&lt;M-3&gt;</code> |  |
  | Float Terminal| <code>&lt;M-2&gt;</code> |  |
  | Vertical Terminal| <code>&lt;M-1&gt;</code> |  |
@@ -131,22 +131,22 @@ post_style: page
  | | <code>&lt;M-l&gt;</code> | <code>&lt;C-W&gt;l</code> |
  | | <code>&lt;M-h&gt;</code> | <code>&lt;C-W&gt;h</code> |
  | | <code>&lt;C-Space&gt;</code> | <code>&lt;Cmd&gt;WhichKey \ &lt;CR&gt;</code> |
- | | <code>&lt;C-Left&gt;</code> | <code>:vertical resize -2&lt;CR&gt;</code> |
- | | <code>&lt;C-J&gt;</code> | <code>&lt;C-W&gt;j</code> |
- | | <code>&lt;C-Down&gt;</code> | <code>:resize +2&lt;CR&gt;</code> |
- | | <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> |
- | | <code>&lt;C-Up&gt;</code> | <code>:resize -2&lt;CR&gt;</code> |
- | | <code>&lt;M-k&gt;</code> | <code>&lt;C-W&gt;k</code> |
  | | <code>&lt;M-j&gt;</code> | <code>&lt;C-W&gt;j</code> |
- | | <code>&lt;C-Q&gt;</code> | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
- | | <code>&lt;C-Right&gt;</code> | <code>:vertical resize +2&lt;CR&gt;</code> |
  | | <code>&lt;C-K&gt;</code> | <code>&lt;C-W&gt;k</code> |
+ | | <code>&lt;M-k&gt;</code> | <code>&lt;C-W&gt;k</code> |
+ | | <code>&lt;C-J&gt;</code> | <code>&lt;C-W&gt;j</code> |
+ | | <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> |
+ | | <code>&lt;C-Right&gt;</code> | <code>:vertical resize +2&lt;CR&gt;</code> |
+ | | <code>&lt;C-Q&gt;</code> | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
+ | | <code>&lt;C-Left&gt;</code> | <code>:vertical resize -2&lt;CR&gt;</code> |
+ | | <code>&lt;C-Down&gt;</code> | <code>:resize +2&lt;CR&gt;</code> |
+ | | <code>&lt;C-Up&gt;</code> | <code>:resize -2&lt;CR&gt;</code> |
  | | <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |
  | 
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -161,8 +161,8 @@ post_style: page
  | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
  | | <code>g&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gvisual"&lt;CR&gt;g@gv</code> |
  | | <code>g&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gvisual"&lt;CR&gt;g@gv</code> |
- | | <code>gb</code> |  |
  | | <code>gc</code> |  |
+ | | <code>gb</code> |  |
  | | <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
@@ -173,13 +173,13 @@ post_style: page
  | | <code>&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_visual"&lt;CR&gt;g@gv</code> |
  | | <code>&lt;C-X&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal('visual')&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
  | | <code>&lt;C-A&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal('visual')&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
- | | <code>&lt;M-k&gt;</code> | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv-gv</code> |
  | | <code>&lt;M-j&gt;</code> | <code>:m '&gt;+1&lt;CR&gt;gv-gv</code> |
+ | | <code>&lt;M-k&gt;</code> | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv-gv</code> |
  | 
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

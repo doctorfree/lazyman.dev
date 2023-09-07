@@ -31,7 +31,7 @@ Small configuration that includes a plugin manager
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> bl</code> | <code>&lt;Cmd&gt;buffer #&lt;CR&gt;</code> |
  | | <code> bq</code> | <code>&lt;Cmd&gt;bdelete&lt;CR&gt;</code> |
  | | <code> w</code> | <code>&lt;Cmd&gt;write&lt;CR&gt;</code> |
@@ -58,7 +58,7 @@ Small configuration that includes a plugin manager
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> l</code> | <code>g_</code> |
  | | <code> h</code> | <code>^</code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -82,7 +82,7 @@ Small configuration that includes a plugin manager
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> l</code> | <code>g_</code> |
  | | <code> h</code> | <code>^</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |

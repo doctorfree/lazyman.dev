@@ -130,7 +130,7 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> jh</code> | <code>&lt;Cmd&gt;:call PythonHelp()&lt;CR&gt;</code> |
  | convenience func PythonHelp| <code> jc</code> | <code>&lt;Cmd&gt;:call DFColumns()&lt;CR&gt;</code> |
  | convenience func DFColumns| <code> jos</code> | <code>&lt;Cmd&gt;:call jukit#splits#output()&lt;CR&gt;</code> |
@@ -170,24 +170,12 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
  | | <code> jrpd</code> | <code>&lt;Cmd&gt;:call jukit#convert#save_nb_to_file(1,1,'pdf')&lt;CR&gt;</code> |
  | | <code> pos</code> | <code>&lt;Cmd&gt;:call jukit#ueberzug#set_default_pos()&lt;CR&gt;</code> |
  | set position and dimension of überzug window| <code> fp</code> | <code>&lt;Cmd&gt;Telescope projects&lt;CR&gt;</code> |
- | Projects| <code> fw</code> |  |
- | Word (root dir)| <code> fB</code> | <code>&lt;Cmd&gt;Telescope buffers show_all_buffers=true&lt;CR&gt;</code> |
- | All Buffers| <code> ft</code> |  |
- | Text| <code> fC</code> |  |
- | Find LazyVim Config| <code> fP</code> |  |
- | Find Plugin File| <code> fc</code> | <code>&lt;Cmd&gt;Telescope command_history&lt;CR&gt;</code> |
- | Command History| <code> sS</code> |  |
- | Goto Symbol (Workspace)| <code> ss</code> |  |
- | Goto Symbol| <code> sW</code> |  |
- | Word (cwd)| <code> sw</code> |  |
- | Word (root dir)| <code> sR</code> | <code>&lt;Cmd&gt;Telescope resume&lt;CR&gt;</code> |
- | Resume| <code> so</code> | <code>&lt;Cmd&gt;Telescope vim_options&lt;CR&gt;</code> |
- | Options| <code> sm</code> | <code>&lt;Cmd&gt;Telescope marks&lt;CR&gt;</code> |
- | Jump to Mark| <code> sM</code> | <code>&lt;Cmd&gt;Telescope man_pages&lt;CR&gt;</code> |
+ | Projects| <code> sM</code> | <code>&lt;Cmd&gt;Telescope man_pages&lt;CR&gt;</code> |
  | Man Pages| <code> sk</code> | <code>&lt;Cmd&gt;Telescope keymaps&lt;CR&gt;</code> |
  | Key Maps| <code> sH</code> | <code>&lt;Cmd&gt;Telescope highlights&lt;CR&gt;</code> |
  | Search Highlight Groups| <code> sh</code> | <code>&lt;Cmd&gt;Telescope help_tags&lt;CR&gt;</code> |
- | Help Pages| <code> sG</code> |  |
+ | Help Pages| <code> sW</code> |  |
+ | Word (cwd)| <code> sG</code> |  |
  | Grep (cwd)| <code> sg</code> |  |
  | Grep (root dir)| <code> sD</code> | <code>&lt;Cmd&gt;Telescope diagnostics&lt;CR&gt;</code> |
  | Workspace diagnostics| <code> sd</code> | <code>&lt;Cmd&gt;Telescope diagnostics bufnr=0&lt;CR&gt;</code> |
@@ -203,32 +191,37 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
  | Recent| <code> fF</code> |  |
  | Find Files (cwd)| <code> ff</code> |  |
  | Find Files (root dir)| <code> fb</code> | <code>&lt;Cmd&gt;Telescope buffers&lt;CR&gt;</code> |
- | Buffers| <code> uC</code> |  |
- | Colorscheme with preview| <code> fW</code> |  |
- | Word (cwd)| <code> Du</code> |  |
- | Dap UI| <code> De</code> |  |
- | Eval| <code> snd</code> |  |
+ | Buffers| <code> fW</code> |  |
+ | Word (cwd)| <code> fw</code> |  |
+ | Word (root dir)| <code> fB</code> | <code>&lt;Cmd&gt;Telescope buffers show_all_buffers=true&lt;CR&gt;</code> |
+ | All Buffers| <code> ft</code> |  |
+ | Text| <code> fC</code> |  |
+ | Find LazyVim Config| <code> fP</code> |  |
+ | Find Plugin File| <code> fc</code> | <code>&lt;Cmd&gt;Telescope command_history&lt;CR&gt;</code> |
+ | Command History| <code> sS</code> |  |
+ | Goto Symbol (Workspace)| <code> ss</code> |  |
+ | Goto Symbol| <code> uC</code> |  |
+ | Colorscheme with preview| <code> sw</code> |  |
+ | Word (root dir)| <code> sR</code> | <code>&lt;Cmd&gt;Telescope resume&lt;CR&gt;</code> |
+ | Resume| <code> so</code> | <code>&lt;Cmd&gt;Telescope vim_options&lt;CR&gt;</code> |
+ | Options| <code> sm</code> | <code>&lt;Cmd&gt;Telescope marks&lt;CR&gt;</code> |
+ | Jump to Mark| <code> cm</code> |  |
+ | Mason| <code> a</code> |  |
+ | Open Code Outline Window| <code> TO</code> |  |
+ | Toggle Output Panel| <code> To</code> |  |
+ | Show Output| <code> Ts</code> |  |
+ | Toggle Summary| <code> Tr</code> |  |
+ | Run Nearest| <code> TT</code> |  |
+ | Run All Test Files| <code> Tt</code> |  |
+ | Run File| <code> TS</code> |  |
+ | Stop| <code> snd</code> |  |
  | Dismiss All| <code> sna</code> |  |
  | Noice All| <code> snh</code> |  |
  | Noice History| <code> snl</code> |  |
- | Noice Last Message| <code> dT</code> |  |
- | Todo/Fix/Fixme (Trouble)| <code> dt</code> |  |
- | Todo (Trouble)| <code> sT</code> |  |
- | Todo/Fix/Fixme| <code> st</code> |  |
- | Todo| <code> dx</code> |  |
- | Document Diagnostics (Trouble)| <code> dL</code> |  |
- | Location List (Trouble)| <code> dQ</code> |  |
- | Quickfix List (Trouble)| <code> dX</code> |  |
- | Workspace Diagnostics (Trouble)| <code> cs</code> |  |
- | Symbols Outline| <code> bc</code> |  |
- | Close Buffer| <code> bC</code> |  |
- | Close Buffer (Force)| <code> a</code> |  |
- | Open Code Outline Window| <code> e</code> |  |
- | Explorer| <code> &lt;Tab&gt;b</code> |  |
- | Bookmarks| <code> Td</code> |  |
- | Debug Nearest| <code> Dw</code> |  |
- | Widgets| <code> Dt</code> |  |
- | Terminate| <code> Ds</code> |  |
+ | Noice Last Message| <code> Du</code> |  |
+ | Dap UI| <code> De</code> |  |
+ | Eval| <code> cs</code> |  |
+ | Symbols Outline| <code> Ds</code> |  |
  | Session| <code> Dr</code> |  |
  | Toggle REPL| <code> Dp</code> |  |
  | Pause| <code> DO</code> |  |
@@ -242,21 +235,28 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
  | Run to Cursor| <code> Dc</code> |  |
  | Continue| <code> Db</code> |  |
  | Toggle Breakpoint| <code> DB</code> |  |
- | Breakpoint Condition| <code> TS</code> |  |
- | Stop| <code> TO</code> |  |
- | Toggle Output Panel| <code> To</code> |  |
- | Show Output| <code> Ts</code> |  |
- | Toggle Summary| <code> Tr</code> |  |
- | Run Nearest| <code> TT</code> |  |
- | Run All Test Files| <code> Tt</code> |  |
- | Run File| <code> sr</code> |  |
- | Replace in files (Spectre)| <code> bp</code> |  |
- | Toggle pin| <code> bP</code> |  |
- | Delete non-pinned buffers| <code> cm</code> |  |
- | Mason| <code> Sd</code> |  |
+ | Breakpoint Condition| <code> Td</code> |  |
+ | Debug Nearest| <code> Dw</code> |  |
+ | Widgets| <code> Dt</code> |  |
+ | Terminate| <code> sr</code> |  |
+ | Replace in files (Spectre)| <code> bc</code> |  |
+ | Close Buffer| <code> bC</code> |  |
+ | Close Buffer (Force)| <code> e</code> |  |
+ | Explorer| <code> Ss</code> |  |
+ | Restore Session| <code> Sd</code> |  |
  | Don't Save Current Session| <code> Sl</code> |  |
- | Restore Last Session| <code> Ss</code> |  |
- | Restore Session| <code> un</code> |  |
+ | Restore Last Session| <code> &lt;Tab&gt;b</code> |  |
+ | Bookmarks| <code> bp</code> |  |
+ | Toggle pin| <code> bP</code> |  |
+ | Delete non-pinned buffers| <code> dt</code> |  |
+ | Todo (Trouble)| <code> sT</code> |  |
+ | Todo/Fix/Fixme| <code> st</code> |  |
+ | Todo| <code> dT</code> |  |
+ | Todo/Fix/Fixme (Trouble)| <code> dQ</code> |  |
+ | Quickfix List (Trouble)| <code> dL</code> |  |
+ | Location List (Trouble)| <code> dx</code> |  |
+ | Document Diagnostics (Trouble)| <code> dX</code> |  |
+ | Workspace Diagnostics (Trouble)| <code> un</code> |  |
  | Dismiss all Notifications| <code> Dal</code> |  |
  | Adapter Lua| <code> DaL</code> |  |
  | Adapter Lua Server| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
@@ -267,16 +267,16 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
  | | <code>[t</code> |  |
  | Previous todo comment| <code>[q</code> |  |
  | Previous trouble/quickfix item| <code>[[</code> |  |
- | Prev Reference| <code>\sr</code> |  |
+ | Prev Reference| <code>\j</code> |  |
+ | Toggle TreeSJ| <code>\c</code> |  |
+ | Close Buffer| <code>\sr</code> |  |
  | Replace surrounding| <code>\sh</code> |  |
  | Highlight surrounding| <code>\sF</code> |  |
  | Find left surrounding| <code>\sf</code> |  |
  | Find right surrounding| <code>\sd</code> |  |
  | Delete surrounding| <code>\sa</code> |  |
  | Add surrounding| <code>\sn</code> |  |
- | Update `MiniSurround.config.n_lines`| <code>\c</code> |  |
- | Close Buffer| <code>\j</code> |  |
- | Toggle TreeSJ| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+ | Update `MiniSurround.config.n_lines`| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
  | | <code>]t</code> |  |
  | Next todo comment| <code>]q</code> |  |
  | Next trouble/quickfix item| <code>]]</code> |  |
@@ -298,14 +298,14 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
  | | <code>&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
- | | <code>&lt;C-B&gt;</code> |  |
- | Scroll backward| <code>&lt;C-F&gt;</code> |  |
- | Scroll forward| <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
+ | | <code>&lt;C-F&gt;</code> |  |
+ | Scroll forward| <code>&lt;C-B&gt;</code> |  |
+ | Scroll backward| <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
  | Nvim builtin
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> sW</code> |  |
  | Selection (cwd)| <code> sw</code> |  |
  | Selection (root dir)| <code> De</code> |  |
@@ -339,7 +339,7 @@ Full featured starter LazyVim based Neovim configuration by Justin Angeles. Just
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>R</code> |  |
  | Treesitter Search| <code>S</code> |  |

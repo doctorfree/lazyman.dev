@@ -87,7 +87,7 @@ Dan is a computer science student at Arizona State University
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>&lt;Cmd&gt;lua Scroll('#', 1)&lt;CR&gt;</code> |
  | | <code>$</code> | <code>&lt;Cmd&gt;lua Scroll('$', 0, 1)&lt;CR&gt;</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
@@ -160,23 +160,23 @@ Dan is a computer science student at Arizona State University
  | Comment toggle current block| <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |  |
  | Comment toggle current line| <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |  |
  | Comment toggle blockwise| <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |  |
- | Comment toggle linewise| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
+ | Comment toggle linewise| <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
  | | <code>&lt;Plug&gt;luasnip-delete-check</code> |  |
- | | <code>&lt;Plug&gt;YSurround</code> | <code>&lt;SNR&gt;8_opfunc2('setup')</code> |
- | | <code>&lt;Plug&gt;Ysurround</code> | <code>&lt;SNR&gt;8_opfunc('setup')</code> |
- | | <code>&lt;Plug&gt;YSsurround</code> | <code>&lt;SNR&gt;8_opfunc2('setup').'_'</code> |
- | | <code>&lt;Plug&gt;Yssurround</code> | <code>'^'.v:count1.&lt;SNR&gt;8_opfunc('setup').'g_'</code> |
- | | <code>&lt;Plug&gt;CSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_changesurround(1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;Csurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_changesurround()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;Dsurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_dosurround(&lt;SNR&gt;8_inputtarget())&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;YSurround</code> | <code>&lt;SNR&gt;10_opfunc2('setup')</code> |
+ | | <code>&lt;Plug&gt;Ysurround</code> | <code>&lt;SNR&gt;10_opfunc('setup')</code> |
+ | | <code>&lt;Plug&gt;YSsurround</code> | <code>&lt;SNR&gt;10_opfunc2('setup').'_'</code> |
+ | | <code>&lt;Plug&gt;Yssurround</code> | <code>'^'.v:count1.&lt;SNR&gt;10_opfunc('setup').'g_'</code> |
+ | | <code>&lt;Plug&gt;CSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_changesurround(1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;Csurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_changesurround()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;Dsurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_dosurround(&lt;SNR&gt;10_inputtarget())&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;SurroundRepeat</code> | <code>.</code> |
+ | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
  | | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
  | Nvim builtin
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>$</code> | <code>&lt;Cmd&gt;lua Scroll('$', 0, 1)&lt;CR&gt;</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
@@ -214,16 +214,16 @@ Dan is a computer science student at Arizona State University
  | | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
- | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
- | | <code>&lt;Plug&gt;VgSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;18_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;VSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;18_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
  | Comment toggle blockwise (visual)| <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
- | Comment toggle linewise (visual)
+ | Comment toggle linewise (visual)| <code>&lt;Plug&gt;VgSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;26_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;VSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;26_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
+ | 
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

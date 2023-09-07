@@ -93,53 +93,26 @@ Bare bones LazyVim configuration by Traap with a [video introduction](https://yo
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code> di</code> |  |
- | Step Into| <code> dC</code> |  |
- | Run to Cursor| <code> dc</code> |  |
- | Continue| <code> db</code> |  |
- | Toggle Breakpoint| <code> dB</code> |  |
- | Breakpoint Condition| <code> dg</code> |  |
- | Go to line (no execute)| <code> dw</code> |  |
- | Widgets| <code> dt</code> |  |
- | Terminate| <code> ds</code> |  |
- | Session| <code> dr</code> |  |
- | Toggle REPL| <code> dp</code> |  |
- | Pause| <code> dO</code> |  |
- | Step Over| <code> do</code> |  |
- | Step Out| <code> dl</code> |  |
- | Run Last| <code> dk</code> |  |
- | Up| <code> dj</code> |  |
- | Down| <code> un</code> |  |
- | Dismiss all Notifications| <code> xT</code> |  |
- | Todo/Fix/Fixme (Trouble)| <code> xt</code> |  |
- | Todo (Trouble)| <code> st</code> |  |
- | Todo| <code> sT</code> |  |
- | Todo/Fix/Fixme| <code> xQ</code> |  |
- | Quickfix List (Trouble)| <code> xL</code> |  |
- | Location List (Trouble)| <code> xX</code> |  |
- | Workspace Diagnostics (Trouble)| <code> xx</code> |  |
- | Document Diagnostics (Trouble)| <code> bP</code> |  |
- | Delete non-pinned buffers| <code> bp</code> |  |
- | Toggle pin| <code> bd</code> |  |
+| ----- | ----- | ----------- |
+| <code> bp</code> |  |
+ | Toggle pin| <code> bP</code> |  |
+ | Delete non-pinned buffers| <code> sr</code> |  |
+ | Replace in files (Spectre)| <code> cv</code> |  |
+ | Select VirtualEnv| <code> bd</code> |  |
  | Delete Buffer| <code> bD</code> |  |
- | Delete Buffer (Force)| <code> cv</code> |  |
- | Select VirtualEnv| <code> de</code> |  |
- | Eval| <code> du</code> |  |
- | Dap UI| <code> dPc</code> |  |
+ | Delete Buffer (Force)| <code> dPc</code> |  |
  | Debug Class| <code> dPt</code> |  |
- | Debug Method| <code> cm</code> |  |
- | Mason| <code> snd</code> |  |
+ | Debug Method| <code> snd</code> |  |
  | Dismiss All| <code> sna</code> |  |
  | Noice All| <code> snh</code> |  |
  | Noice History| <code> snl</code> |  |
- | Noice Last Message| <code> fb</code> |  |
- | Buffers| <code> sS</code> |  |
+ | Noice Last Message| <code> sw</code> |  |
+ | Word (root dir)| <code> sS</code> |  |
  | Goto Symbol (Workspace)| <code> ss</code> |  |
  | Goto Symbol| <code> uC</code> |  |
  | Colorscheme with preview| <code> sW</code> |  |
- | Word (cwd)| <code> sw</code> |  |
- | Word (root dir)| <code> sR</code> |  |
+ | Word (cwd)| <code>  </code> |  |
+ | Find Files (root dir)| <code> sR</code> |  |
  | Resume| <code> so</code> |  |
  | Options| <code> sm</code> |  |
  | Jump to Mark| <code> sM</code> |  |
@@ -161,39 +134,66 @@ Bare bones LazyVim configuration by Traap with a [video introduction](https://yo
  | Recent (cwd)| <code> fr</code> |  |
  | Recent| <code> fF</code> |  |
  | Find Files (cwd)| <code> ff</code> |  |
- | Find Files (root dir)| <code>  </code> |  |
- | Find Files (root dir)| <code> :</code> |  |
+ | Find Files (root dir)| <code> fb</code> |  |
+ | Buffers| <code> :</code> |  |
  | Command History| <code> /</code> |  |
  | Grep (root dir)| <code> ,</code> |  |
- | Switch Buffer| <code> ql</code> |  |
+ | Switch Buffer| <code> fE</code> |  |
+ | Explorer NeoTree (cwd)| <code> fe</code> |  |
+ | Explorer NeoTree (root dir)| <code> E</code> |  |
+ | Explorer NeoTree (cwd)| <code> e</code> |  |
+ | Explorer NeoTree (root dir)| <code> cm</code> |  |
+ | Mason| <code> un</code> |  |
+ | Dismiss all Notifications| <code> ql</code> |  |
  | Restore Last Session| <code> qs</code> |  |
  | Restore Session| <code> qd</code> |  |
- | Don't Save Current Session| <code> sr</code> |  |
- | Replace in files (Spectre)| <code> E</code> |  |
- | Explorer NeoTree (cwd)| <code> e</code> |  |
- | Explorer NeoTree (root dir)| <code> fE</code> |  |
- | Explorer NeoTree (cwd)| <code> fe</code> |  |
- | Explorer NeoTree (root dir)| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+ | Don't Save Current Session| <code> du</code> |  |
+ | Dap UI| <code> de</code> |  |
+ | Eval| <code> dk</code> |  |
+ | Up| <code> dj</code> |  |
+ | Down| <code> di</code> |  |
+ | Step Into| <code> dg</code> |  |
+ | Go to line (no execute)| <code> dC</code> |  |
+ | Run to Cursor| <code> dc</code> |  |
+ | Continue| <code> db</code> |  |
+ | Toggle Breakpoint| <code> dB</code> |  |
+ | Breakpoint Condition| <code> dw</code> |  |
+ | Widgets| <code> dt</code> |  |
+ | Terminate| <code> ds</code> |  |
+ | Session| <code> dr</code> |  |
+ | Toggle REPL| <code> dp</code> |  |
+ | Pause| <code> dO</code> |  |
+ | Step Over| <code> do</code> |  |
+ | Step Out| <code> dl</code> |  |
+ | Run Last| <code> xT</code> |  |
+ | Todo/Fix/Fixme (Trouble)| <code> sT</code> |  |
+ | Todo/Fix/Fixme| <code> st</code> |  |
+ | Todo| <code> xt</code> |  |
+ | Todo (Trouble)| <code> xQ</code> |  |
+ | Quickfix List (Trouble)| <code> xL</code> |  |
+ | Location List (Trouble)| <code> xX</code> |  |
+ | Workspace Diagnostics (Trouble)| <code> xx</code> |  |
+ | Document Diagnostics (Trouble)| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>S</code> |  |
  | Flash Treesitter| <code>Y</code> | <code>y$</code> |
  | Nvim builtin| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
- | | <code>[t</code> |  |
- | Previous todo comment| <code>[[</code> |  |
- | Prev Reference| <code>[q</code> |  |
+ | | <code>[[</code> |  |
+ | Prev Reference| <code>[t</code> |  |
+ | Previous todo comment| <code>[q</code> |  |
  | Previous trouble/quickfix item| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
- | | <code>]t</code> |  |
- | Next todo comment| <code>]]</code> |  |
- | Next Reference| <code>]q</code> |  |
+ | | <code>]]</code> |  |
+ | Next Reference| <code>]t</code> |  |
+ | Next todo comment| <code>]q</code> |  |
  | Next trouble/quickfix item| <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
- | | <code>gzh</code> |  |
- | Highlight surrounding| <code>gzn</code> |  |
- | Update `MiniSurround.config.n_lines`| <code>gzd</code> |  |
+ | | <code>gzd</code> |  |
  | Delete surrounding| <code>gzF</code> |  |
- | Find left surrounding| <code>gza</code> |  |
- | Add surrounding| <code>gzr</code> |  |
- | Replace surrounding| <code>gzf</code> |  |
- | Find right surrounding| <code>s</code> |  |
+ | Find left surrounding| <code>gzr</code> |  |
+ | Replace surrounding| <code>gzh</code> |  |
+ | Highlight surrounding| <code>gza</code> |  |
+ | Add surrounding| <code>gzf</code> |  |
+ | Find right surrounding| <code>gzn</code> |  |
+ | Update `MiniSurround.config.n_lines`| <code>s</code> |  |
  | Flash| <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
@@ -206,11 +206,11 @@ Bare bones LazyVim configuration by Traap with a [video introduction](https://yo
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code> de</code> |  |
- | Eval| <code> sW</code> |  |
+| ----- | ----- | ----------- |
+| <code> sW</code> |  |
  | Selection (cwd)| <code> sw</code> |  |
- | Selection (root dir)| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Selection (root dir)| <code> de</code> |  |
+ | Eval| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>R</code> |  |
@@ -231,7 +231,7 @@ Bare bones LazyVim configuration by Traap with a [video introduction](https://yo
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>R</code> |  |
  | Treesitter Search| <code>S</code> |  |

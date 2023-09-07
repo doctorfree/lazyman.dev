@@ -91,7 +91,7 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> sp</code> | <code>&lt;Cmd&gt;lua require("spectre").open_file_search({select_word=true})&lt;CR&gt;</code> |
  | Search on current file| <code> E</code> | <code>&lt;Cmd&gt;lua require("spectre").open()&lt;CR&gt;</code> |
  | Open Spectre| <code> U</code> | <code>:Navbuddy&lt;CR&gt;</code> |
@@ -200,14 +200,16 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
  | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+ | | <code>&lt;M-p&gt;</code> |  |
+ | Move to previous reference| <code>&lt;M-n&gt;</code> |  |
+ | Move to next reference| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |  |
  | Comment toggle blockwise with count| <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |  |
  | Comment toggle linewise with count| <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |  |
  | Comment toggle current block| <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |  |
  | Comment toggle current line| <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |  |
  | Comment toggle blockwise| <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |  |
- | Comment toggle linewise| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
+ | Comment toggle linewise| <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
  | | <code>&lt;Plug&gt;luasnip-delete-check</code> |  |
  | | <code>&lt;M-C-RightMouse&gt;</code> | <code>&lt;Plug&gt;(VM-Mouse-Column)</code> |
  | | <code>&lt;C-RightMouse&gt;</code> | <code>&lt;Plug&gt;(VM-Mouse-Word)</code> |
@@ -247,16 +249,14 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
  | | <code>&lt;Plug&gt;(VM-Add-Cursor-Down)</code> | <code>:&lt;C-U&gt;call vm#commands#add_cursor_down(0, v:count1)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(VM-Add-Cursor-At-Word)</code> | <code>:call vm#commands#add_cursor_at_word(1, 1)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(VM-Add-Cursor-At-Pos)</code> | <code>:call vm#commands#add_cursor_at_pos(0)&lt;CR&gt;</code> |
- | | <code>&lt;M-p&gt;</code> |  |
- | Move to previous reference| <code>&lt;M-n&gt;</code> |  |
- | Move to next reference| <code>&lt;C-S-V&gt;</code> | <code>"+p</code> |
+ | | <code>&lt;C-S-V&gt;</code> | <code>"+p</code> |
  | | <code>&lt;C-S-C&gt;</code> | <code>"+y</code> |
  | | <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |
  | 
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> p</code> | <code>"_dP</code> |
  | | <code> sw</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("spectre").open_visual()&lt;CR&gt;</code> |
  | Search current word| <code> /</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").toggle.linewise(vim.fn.visualmode())&lt;CR&gt;</code> |
@@ -290,24 +290,24 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
  | | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
  | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
- | | <code>&lt;C-N&gt;</code> | <code>&lt;Plug&gt;(VM-Find-Subword-Under)</code> |
- | | <code>&lt;Plug&gt;(VM-Visual-Regex)</code> | <code>:call vm#commands#find_by_regex(2)&lt;CR&gt;:call feedkeys('/', 'n')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(VM-Find-Subword-Under)</code> | <code>&lt;SNR&gt;30_Visual('under')</code> |
- | | <code>&lt;Plug&gt;(VM-Visual-Reduce)</code> | <code>:&lt;C-U&gt;call vm#visual#reduce()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(VM-Visual-Add)</code> | <code>&lt;Esc&gt;:call vm#commands#visual_add()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(VM-Visual-Cursors)</code> | <code>&lt;Esc&gt;:call vm#commands#visual_cursors()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(VM-Visual-All)</code> | <code>&lt;SNR&gt;30_Visual('all')</code> |
- | | <code>&lt;Plug&gt;(VM-Visual-Find)</code> | <code>vm#operators#find(1, 1)</code> |
  | | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
  | Comment toggle blockwise (visual)| <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
  | Comment toggle linewise (visual)| <code>&lt;M-i&gt;</code> |  |
+ | | <code>&lt;C-N&gt;</code> | <code>&lt;Plug&gt;(VM-Find-Subword-Under)</code> |
+ | | <code>&lt;Plug&gt;(VM-Visual-Regex)</code> | <code>:call vm#commands#find_by_regex(2)&lt;CR&gt;:call feedkeys('/', 'n')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(VM-Find-Subword-Under)</code> | <code>&lt;SNR&gt;8_Visual('under')</code> |
+ | | <code>&lt;Plug&gt;(VM-Visual-Reduce)</code> | <code>:&lt;C-U&gt;call vm#visual#reduce()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(VM-Visual-Add)</code> | <code>&lt;Esc&gt;:call vm#commands#visual_add()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(VM-Visual-Cursors)</code> | <code>&lt;Esc&gt;:call vm#commands#visual_cursors()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(VM-Visual-All)</code> | <code>&lt;SNR&gt;8_Visual('all')</code> |
+ | | <code>&lt;Plug&gt;(VM-Visual-Find)</code> | <code>vm#operators#find(1, 1)</code> |
  | | <code>&lt;C-S-C&gt;</code> | <code>"+y</code> |
  | | <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |
  | 
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
@@ -319,7 +319,7 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
  | | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
  | | <code>&lt;M-i&gt;</code> |  |
+ | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
  | | <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |
  | 

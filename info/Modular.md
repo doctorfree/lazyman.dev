@@ -60,7 +60,7 @@ Same as 'StartMason' but everything is split in modules
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> bc</code> | <code>&lt;Cmd&gt;Bdelete&lt;CR&gt;</code> |
  | | <code> e</code> | <code>&lt;Cmd&gt;NvimTreeToggle&lt;CR&gt;</code> |
  | | <code> fs</code> | <code>&lt;Cmd&gt;Telescope current_buffer_fuzzy_find&lt;CR&gt;</code> |
@@ -80,8 +80,8 @@ Same as 'StartMason' but everything is split in modules
  | Nvim builtin| <code>Y</code> | <code>y$</code> |
  | Nvim builtin| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
- | | <code>cs</code> |  |
  | | <code>cS</code> |  |
+ | | <code>cs</code> |  |
  | | <code>ds</code> |  |
  | | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
  | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
@@ -107,7 +107,7 @@ Same as 'StartMason' but everything is split in modules
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> l</code> | <code>g_</code> |
  | | <code> h</code> | <code>^</code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -138,7 +138,7 @@ Same as 'StartMason' but everything is split in modules
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> l</code> | <code>g_</code> |
  | | <code> h</code> | <code>^</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |

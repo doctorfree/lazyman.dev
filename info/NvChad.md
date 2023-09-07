@@ -78,14 +78,11 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>"</code> |  |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>'</code> |  |
- | | <code>,h]</code> |  |
- | Move to end of Treehopper node| <code>,h[</code> |  |
- | Move to start of Treehopper node| <code>,hm</code> |  |
- | Treehopper nodes| <code>,vO</code> |  |
+ | | <code>,vO</code> |  |
  | Open new line above HopLineStart target| <code>,vo</code> |  |
  | Open new line below HopLineStart target| <code>,vP</code> |  |
  | Paste above target using HopLineStart| <code>,vp</code> |  |
@@ -102,7 +99,10 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
  | | <code>,hW</code> | <code>&lt;Cmd&gt;HopWordMW&lt;CR&gt;</code> |
  | | <code>,hl</code> | <code>&lt;Cmd&gt;HopLineStart&lt;CR&gt;</code> |
  | | <code>,hw</code> | <code>&lt;Cmd&gt;HopWord&lt;CR&gt;</code> |
- | | <code>,</code> |  |
+ | | <code>,h]</code> |  |
+ | Move to end of Treehopper node| <code>,h[</code> |  |
+ | Move to start of Treehopper node| <code>,hm</code> |  |
+ | Treehopper nodes| <code>,</code> |  |
  | | <code>?</code> | <code>/</code> |
  | | <code>F</code> |  |
  | | <code>Ls</code> |  |
@@ -112,11 +112,11 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
  | | <code>c</code> |  |
  | | <code>f</code> |  |
  | | <code>g</code> |  |
- | | <code>gb</code> |  |
- | Comment toggle blockwise| <code>gbc</code> |  |
- | Comment toggle current block| <code>gc</code> |  |
- | Comment toggle linewise| <code>gcc</code> |  |
- | Comment toggle current line| <code>t</code> |  |
+ | | <code>gcc</code> |  |
+ | Comment toggle current line| <code>gbc</code> |  |
+ | Comment toggle current block| <code>gb</code> |  |
+ | Comment toggle blockwise| <code>gc</code> |  |
+ | Comment toggle linewise| <code>t</code> |  |
  | | <code>vy</code> |  |
  | Treehopper node target insert| <code>vY</code> |  |
  | HopLineStart target in normal mode| <code>vO</code> |  |
@@ -135,7 +135,7 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>,hl</code> | <code>&lt;Cmd&gt;HopLineStart&lt;CR&gt;</code> |
@@ -151,7 +151,7 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>F</code> |  |
  | | <code>T</code> |  |
  | | <code>f</code> |  |

@@ -86,7 +86,7 @@ Use Neovim as a general purpose IDE
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Tab&gt;</code> | <code>:BufferLineCycleNext&lt;CR&gt;</code> |
  | | <code> </code> | <code>&lt;Cmd&gt;lua require("packer.load")({'which-key.nvim'}, { keys = "&lt;lt&gt;leader&gt;", prefix = "" }, _G.packer_plugins)&lt;CR&gt;</code> |
  | | <code> co</code> | <code>&lt;Cmd&gt;lua require("onedark").toggle()&lt;CR&gt;</code> |
@@ -121,7 +121,7 @@ Use Neovim as a general purpose IDE
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> </code> | <code>&lt;Cmd&gt;lua require("packer.load")({'which-key.nvim'}, { keys = "&lt;lt&gt;leader&gt;", prefix = "" }, _G.packer_plugins)&lt;CR&gt;</code> |
  | | <code>!</code> | <code>&lt;Cmd&gt;lua require("packer.load")({'which-key.nvim'}, { keys = "!", prefix = "" }, _G.packer_plugins)&lt;CR&gt;</code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -146,7 +146,7 @@ Use Neovim as a general purpose IDE
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> </code> | <code>&lt;Cmd&gt;lua require("packer.load")({'which-key.nvim'}, { keys = "&lt;lt&gt;leader&gt;", prefix = "" }, _G.packer_plugins)&lt;CR&gt;</code> |
  | | <code>!</code> | <code>&lt;Cmd&gt;lua require("packer.load")({'which-key.nvim'}, { keys = "!", prefix = "" }, _G.packer_plugins)&lt;CR&gt;</code> |
  | | <code>&lt;lt&gt;</code> | <code>&lt;Cmd&gt;lua require("packer.load")({'which-key.nvim'}, { keys = "&lt;lt&gt;", prefix = "" }, _G.packer_plugins)&lt;CR&gt;</code> |

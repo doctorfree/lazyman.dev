@@ -126,7 +126,7 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> e</code> |  |
  | | <code>#</code> | <code>#&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
@@ -186,17 +186,16 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
  | | <code>\bda</code> | <code>:BDelete! all&lt;CR&gt;</code> |
  | | <code>\bd</code> | <code>:BDelete this&lt;CR&gt;</code> |
  | | <code>\nm</code> | <code>:Dispatch npm start&lt;CR&gt;</code> |
- | | <code>\cs</code> |  |
- | Symbols Outline| <code>\mc</code> |  |
- | Create a selection for selcted text or word under the cursor| <code>\gg</code> |  |
- | | <code>\x</code> |  |
+ | | <code>\mc</code> |  |
+ | Create a selection for selcted text or word under the cursor| <code>\cs</code> |  |
+ | Symbols Outline| <code>\x</code> |  |
  | | <code>\ld</code> |  |
+ | | <code>\gg</code> |  |
  | | <code>]d</code> |  |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
  | | <code>g#</code> | <code>g#&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
  | | <code>g*</code> | <code>g*&lt;Cmd&gt;lua require('hlslens').start()&lt;CR&gt;</code> |
  | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
- | | <code>gC</code> | <code>&lt;Plug&gt;CapsLockToggle</code> |
  | | <code>gcA</code> |  |
  | Comment insert end of line| <code>gcO</code> |  |
  | Comment insert above| <code>gco</code> |  |
@@ -204,7 +203,8 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
  | Comment toggle current block| <code>gcc</code> |  |
  | Comment toggle current line| <code>gb</code> | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
  | Comment toggle blockwise| <code>gc</code> | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
- | Comment toggle linewise| <code>h</code> |  |
+ | Comment toggle linewise| <code>gC</code> | <code>&lt;Plug&gt;CapsLockToggle</code> |
+ | | <code>h</code> |  |
  | | <code>j</code> |  |
  | | <code>k</code> |  |
  | | <code>l</code> |  |
@@ -221,29 +221,29 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
  | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;CapsLockDisable</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;38_disable('i')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;CapsLockEnable</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;38_enable('i',1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;CapsLockToggle</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;38_toggle('i',1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(vsnip-cut-text)</code> | <code>:set operatorfunc=&lt;SNR&gt;26_vsnip_cut_text_normal&lt;CR&gt;g@</code> |
- | | <code>&lt;Plug&gt;(vsnip-select-text)</code> | <code>:set operatorfunc=&lt;SNR&gt;26_vsnip_select_text_normal&lt;CR&gt;g@</code> |
+ | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |  |
  | Comment toggle blockwise with count| <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |  |
  | Comment toggle linewise with count| <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |  |
  | Comment toggle current block| <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |  |
  | Comment toggle current line| <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |  |
  | Comment toggle blockwise| <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |  |
- | Comment toggle linewise| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+ | Comment toggle linewise| <code>&lt;Plug&gt;CapsLockDisable</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;26_disable('i')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;CapsLockEnable</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;26_enable('i',1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;CapsLockToggle</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;26_toggle('i',1)&lt;CR&gt;</code> |
  | | <code>&lt;C-Bslash&gt;</code> | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
  | | <code>&lt;C-K&gt;</code> | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
  | | <code>&lt;C-J&gt;</code> | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
  | | <code>&lt;C-H&gt;</code> | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(vsnip-cut-text)</code> | <code>:set operatorfunc=&lt;SNR&gt;10_vsnip_cut_text_normal&lt;CR&gt;g@</code> |
+ | | <code>&lt;Plug&gt;(vsnip-select-text)</code> | <code>:set operatorfunc=&lt;SNR&gt;10_vsnip_select_text_normal&lt;CR&gt;g@</code> |
  | | <code>&lt;F5&gt;</code> |  |
  | | <code>&lt;C-L&gt;</code> | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
  | 
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -267,16 +267,16 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
  | | <code>&lt;C-K&gt;</code> | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
  | | <code>&lt;C-J&gt;</code> | <code>:&lt;C-U&gt;TmuxNavigateDown&lt;CR&gt;</code> |
  | | <code>&lt;C-H&gt;</code> | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(vsnip-cut-text)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_vsnip_visual_text(visualmode())&lt;CR&gt;gv"_c</code> |
- | | <code>&lt;Plug&gt;(vsnip-select-text)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_vsnip_visual_text(visualmode())&lt;CR&gt;gv</code> |
  | | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
  | Comment toggle blockwise (visual)| <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
- | Comment toggle linewise (visual)| <code>&lt;C-L&gt;</code> | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+ | Comment toggle linewise (visual)| <code>&lt;Plug&gt;(vsnip-cut-text)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_vsnip_visual_text(visualmode())&lt;CR&gt;gv"_c</code> |
+ | | <code>&lt;Plug&gt;(vsnip-select-text)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_vsnip_visual_text(visualmode())&lt;CR&gt;gv</code> |
+ | | <code>&lt;C-L&gt;</code> | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
  | 
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>R</code> |  |
  | Treesitter Search| <code>S</code> |  |

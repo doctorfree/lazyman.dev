@@ -84,20 +84,20 @@ Neovim configuration written in the [C programming language](https://en.wikipedi
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code> cm</code> |  |
- | Mason| <code> un</code> |  |
- | Dismiss all Notifications| <code> sna</code> |  |
+| ----- | ----- | ----------- |
+| <code> E</code> |  |
+ | Explorer NeoTree (cwd)| <code> e</code> |  |
+ | Explorer NeoTree (root dir)| <code> fE</code> |  |
+ | Explorer NeoTree (cwd)| <code> fe</code> |  |
+ | Explorer NeoTree (root dir)| <code> bD</code> |  |
+ | Delete Buffer (Force)| <code> bd</code> |  |
+ | Delete Buffer| <code> un</code> |  |
+ | Dismiss all Notifications| <code> snd</code> |  |
+ | Dismiss All| <code> sna</code> |  |
  | Noice All| <code> snh</code> |  |
  | Noice History| <code> snl</code> |  |
- | Noice Last Message| <code> snd</code> |  |
- | Dismiss All| <code> fF</code> |  |
- | Find Files (cwd)| <code> ff</code> |  |
- | Find Files (root dir)| <code> fb</code> |  |
- | Buffers| <code> :</code> |  |
- | Command History| <code> /</code> |  |
- | Grep (root dir)| <code> ,</code> |  |
- | Switch Buffer| <code>  </code> |  |
+ | Noice Last Message| <code> sr</code> |  |
+ | Replace in files (Spectre)| <code>  </code> |  |
  | Find Files (root dir)| <code> sS</code> |  |
  | Goto Symbol (Workspace)| <code> ss</code> |  |
  | Goto Symbol| <code> uC</code> |  |
@@ -123,27 +123,27 @@ Neovim configuration written in the [C programming language](https://en.wikipedi
  | status| <code> gc</code> |  |
  | commits| <code> fR</code> |  |
  | Recent (cwd)| <code> fr</code> |  |
- | Recent| <code> sr</code> |  |
- | Replace in files (Spectre)| <code> bp</code> |  |
- | Toggle pin| <code> bP</code> |  |
- | Delete non-pinned buffers| <code> bD</code> |  |
- | Delete Buffer (Force)| <code> bd</code> |  |
- | Delete Buffer| <code> fe</code> |  |
- | Explorer NeoTree (root dir)| <code> E</code> |  |
- | Explorer NeoTree (cwd)| <code> e</code> |  |
- | Explorer NeoTree (root dir)| <code> fE</code> |  |
- | Explorer NeoTree (cwd)| <code> st</code> |  |
- | Todo| <code> xT</code> |  |
- | Todo/Fix/Fixme (Trouble)| <code> xt</code> |  |
- | Todo (Trouble)| <code> sT</code> |  |
- | Todo/Fix/Fixme| <code> qd</code> |  |
+ | Recent| <code> fF</code> |  |
+ | Find Files (cwd)| <code> ff</code> |  |
+ | Find Files (root dir)| <code> fb</code> |  |
+ | Buffers| <code> :</code> |  |
+ | Command History| <code> /</code> |  |
+ | Grep (root dir)| <code> ,</code> |  |
+ | Switch Buffer| <code> qd</code> |  |
  | Don't Save Current Session| <code> ql</code> |  |
  | Restore Last Session| <code> qs</code> |  |
- | Restore Session| <code> xQ</code> |  |
+ | Restore Session| <code> cm</code> |  |
+ | Mason| <code> bP</code> |  |
+ | Delete non-pinned buffers| <code> bp</code> |  |
+ | Toggle pin| <code> xT</code> |  |
+ | Todo/Fix/Fixme (Trouble)| <code> xt</code> |  |
+ | Todo (Trouble)| <code> sT</code> |  |
+ | Todo/Fix/Fixme| <code> st</code> |  |
+ | Todo| <code> xx</code> |  |
+ | Document Diagnostics (Trouble)| <code> xQ</code> |  |
  | Quickfix List (Trouble)| <code> xL</code> |  |
  | Location List (Trouble)| <code> xX</code> |  |
- | Workspace Diagnostics (Trouble)| <code> xx</code> |  |
- | Document Diagnostics (Trouble)| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+ | Workspace Diagnostics (Trouble)| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>S</code> |  |
  | Flash Treesitter| <code>Y</code> | <code>y$</code> |
@@ -157,11 +157,11 @@ Neovim configuration written in the [C programming language](https://en.wikipedi
  | Next todo comment| <code>]q</code> |  |
  | Next trouble/quickfix item| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
  | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
- | | <code>gzF</code> |  |
- | Find left surrounding| <code>gzd</code> |  |
- | Delete surrounding| <code>gzn</code> |  |
- | Update `MiniSurround.config.n_lines`| <code>gza</code> |  |
- | Add surrounding| <code>gzr</code> |  |
+ | | <code>gzn</code> |  |
+ | Update `MiniSurround.config.n_lines`| <code>gzd</code> |  |
+ | Delete surrounding| <code>gza</code> |  |
+ | Add surrounding| <code>gzF</code> |  |
+ | Find left surrounding| <code>gzr</code> |  |
  | Replace surrounding| <code>gzf</code> |  |
  | Find right surrounding| <code>gzh</code> |  |
  | Highlight surrounding| <code>s</code> |  |
@@ -178,7 +178,7 @@ Neovim configuration written in the [C programming language](https://en.wikipedi
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> sW</code> |  |
  | Selection (cwd)| <code> sw</code> |  |
  | Selection (root dir)| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -204,7 +204,7 @@ Neovim configuration written in the [C programming language](https://en.wikipedi
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>R</code> |  |
  | Treesitter Search| <code>S</code> |  |

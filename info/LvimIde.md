@@ -161,7 +161,7 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Esc&gt;</code> | <code>&lt;Esc&gt;:noh&lt;CR&gt;</code> |
  | Esc| <code>  </code> | <code>&lt;Cmd&gt;CtrlSpace&lt;CR&gt;</code> |
  | CtrlSpace| <code> qd</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.store').clear_macros()&lt;CR&gt;</code> |
@@ -224,11 +224,11 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
  | QfPrev| <code>]]</code> |  |
  | QfNext| <code>cS</code> | <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |
  | Change a surrounding pair, putting replacements on new lines| <code>cs</code> | <code>&lt;Plug&gt;(nvim-surround-change)</code> |
- | Change a surrounding pair| <code>ds</code> | <code>&lt;Plug&gt;(nvim-surround-delete)</code> |
- | Delete a surrounding pair| <code>dp</code> |  |
+ | Change a surrounding pair| <code>dp</code> |  |
  | LspShowDiagnosticPrev| <code>dn</code> |  |
  | LspShowDiagnosticNext| <code>dc</code> |  |
- | LspShowDiagnosticCurrent| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
+ | LspShowDiagnosticCurrent| <code>ds</code> | <code>&lt;Plug&gt;(nvim-surround-delete)</code> |
+ | Delete a surrounding pair| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
  | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
  | | <code>gw</code> |  |
  | WindowPicker| <code>j</code> | <code>gj</code> |
@@ -243,53 +243,53 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
  | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(fzf-normal)</code> | <code></code> |
+ | | <code>&lt;Nul&gt;</code> | <code>:CtrlSpace&lt;CR&gt;</code> |
+ | | <code>&lt;C-C&gt;m</code> |  |
+ | GitSignsBlameLine| <code>&lt;C-C&gt;b</code> |  |
+ | GitSignsToggleLineBlame| <code>&lt;M-;&gt;</code> |  |
+ | GitSignsPreviewHunk| <code>&lt;M-[&gt;</code> |  |
+ | GitSignsPrevHunk| <code>&lt;M-]&gt;</code> |  |
+ | GitSignsNextHunk| <code>&lt;C-C&gt;&lt;C-L&gt;</code> |  |
+ | DAPLocal| <code>&lt;C-C&gt;&lt;C-H&gt;</code> |  |
+ | LspDiagnostic QF| <code>&lt;Plug&gt;(fzf-normal)</code> | <code></code> |
  | | <code>&lt;Plug&gt;(fzf-insert)</code> | <code>i</code> |
- | | <code>&lt;C-C&gt;&lt;C-H&gt;</code> |  |
- | LspDiagnostic QF| <code>&lt;F4&gt;</code> |  |
+ | | <code>&lt;C-C&gt;k</code> |  |
+ | LvimLinguisticsTOGGLESpelling| <code>&lt;C-C&gt;l</code> |  |
+ | LvimLinguisticsTOGGLEInsertModeLanguage| <code>&lt;C-C&gt;v</code> |  |
+ | Navbuddy| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+ | | <code>&lt;F4&gt;</code> |  |
  | Terminal Float| <code>&lt;F3&gt;</code> |  |
  | Terminal Three| <code>&lt;F2&gt;</code> |  |
  | Terminal Two| <code>&lt;F1&gt;</code> |  |
  | Terminal One| <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
  | | <code>&lt;Plug&gt;luasnip-delete-check</code> |  |
- | | <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |  |
+ | | <code>&lt;M-f&gt;</code> |  |
+ | Ranger| <code>&lt;M-r&gt;</code> |  |
+ | Ranger| <code>&lt;M-d&gt;</code> |  |
+ | Lazydocker| <code>&lt;M-g&gt;</code> |  |
+ | Lazygit| <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |  |
  | Change a surrounding pair, putting replacements on new lines| <code>&lt;Plug&gt;(nvim-surround-change)</code> |  |
  | Change a surrounding pair| <code>&lt;Plug&gt;(nvim-surround-delete)</code> |  |
  | Delete a surrounding pair| <code>&lt;Plug&gt;(nvim-surround-normal-cur-line)</code> |  |
  | Add a surrounding pair around the current line, on new lines (normal mode)| <code>&lt;Plug&gt;(nvim-surround-normal-line)</code> |  |
  | Add a surrounding pair around a motion, on new lines (normal mode)| <code>&lt;Plug&gt;(nvim-surround-normal-cur)</code> |  |
  | Add a surrounding pair around the current line (normal mode)| <code>&lt;Plug&gt;(nvim-surround-normal)</code> |  |
- | Add a surrounding pair around a motion (normal mode)| <code>&lt;C-C&gt;v</code> |  |
- | Navbuddy| <code>&lt;Nul&gt;</code> | <code>:CtrlSpace&lt;CR&gt;</code> |
- | | <code>&lt;C-C&gt;m</code> |  |
- | GitSignsBlameLine| <code>&lt;C-C&gt;b</code> |  |
- | GitSignsToggleLineBlame| <code>&lt;M-;&gt;</code> |  |
- | GitSignsPreviewHunk| <code>&lt;M-[&gt;</code> |  |
- | GitSignsPrevHunk| <code>&lt;M-]&gt;</code> |  |
- | GitSignsNextHunk| <code>&lt;C-C&gt;k</code> |  |
- | LvimLinguisticsTOGGLESpelling| <code>&lt;C-C&gt;l</code> |  |
- | LvimLinguisticsTOGGLEInsertModeLanguage| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
- | | <code>&lt;C-C&gt;&lt;C-L&gt;</code> |  |
- | DAPLocal| <code>&lt;M-f&gt;</code> |  |
- | Ranger| <code>&lt;M-r&gt;</code> |  |
- | Ranger| <code>&lt;M-d&gt;</code> |  |
- | Lazydocker| <code>&lt;M-g&gt;</code> |  |
- | Lazygit| <code>&lt;C-C&gt;z</code> |  |
- | NeoZoom| <code>&lt;M-n&gt;</code> |  |
- | Neogit| <code>&lt;M-,&gt;</code> |  |
- | Telescope find files| <code>&lt;C-C&gt;t</code> |  |
+ | Add a surrounding pair around a motion (normal mode)| <code>&lt;C-C&gt;w</code> |  |
+ | WinShift| <code>&lt;C-C&gt;&lt;C-V&gt;</code> |  |
+ | Trouble| <code>&lt;M-t&gt;</code> |  |
+ | Lvim forgit| <code>&lt;C-C&gt;t</code> |  |
  | Telescope tmux session| <code>&lt;M-b&gt;</code> |  |
  | Telescope buffers| <code>&lt;M-/&gt;</code> |  |
  | Telescope file browser| <code>&lt;M-.&gt;</code> |  |
- | Telescope live grep| <code>&lt;C-C&gt;&lt;C-V&gt;</code> |  |
- | Trouble| <code>&lt;C-C&gt;w</code> |  |
- | WinShift| <code>&lt;C-C&gt;&lt;C-F&gt;</code> |  |
+ | Telescope live grep| <code>&lt;M-,&gt;</code> |  |
+ | Telescope find files| <code>&lt;C-C&gt;h</code> |  |
+ | LvimHelper| <code>&lt;F11&gt;</code> |  |
+ | LvimHelper| <code>&lt;C-C&gt;z</code> |  |
+ | NeoZoom| <code>&lt;M-n&gt;</code> |  |
+ | Neogit| <code>&lt;C-C&gt;&lt;C-F&gt;</code> |  |
  | NeoTree filesystem| <code>&lt;C-C&gt;&lt;C-G&gt;</code> |  |
  | NeoTree git status| <code>&lt;C-C&gt;&lt;C-B&gt;</code> |  |
- | NeoTree buffers| <code>&lt;C-C&gt;h</code> |  |
- | LvimHelper| <code>&lt;F11&gt;</code> |  |
- | LvimHelper| <code>&lt;M-t&gt;</code> |  |
- | Lvim forgit| <code>&lt;F5&gt;</code> |  |
+ | NeoTree buffers| <code>&lt;F5&gt;</code> |  |
  | Undotree| <code>&lt;C-C&gt;c</code> | <code>:Inspect&lt;CR&gt;</code> |
  | Inspect| <code>&lt;C-C&gt;ff</code> | <code>:CloseFloatWindows&lt;CR&gt;</code> |
  | Close float windows| <code>&lt;C-C&gt;p</code> | <code>:tabp&lt;CR&gt;</code> |
@@ -318,7 +318,7 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> qq</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.macro').toggle_play_macro()&lt;CR&gt;</code> |
  | Macro Play| <code> </code> | <code></code> |
  | | <code>#</code> | <code>&lt;Esc&gt;?\%V</code> |
@@ -364,7 +364,7 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

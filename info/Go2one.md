@@ -27,7 +27,7 @@ Neovim Go development environment that does not touch standard Neovim configurat
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> t</code> | <code>:lua require'testo'.test_nearest()&lt;CR&gt;</code> |
  | | <code> s</code> | <code>:lua require'utils'.reload('go2one')&lt;CR&gt;</code> |
  | | <code> a</code> | <code>ggVG$</code> |
@@ -43,9 +43,16 @@ Neovim Go development environment that does not touch standard Neovim configurat
  | | <code> h</code> | <code>&lt;C-W&gt;h</code> |
  | | <code> k</code> | <code>&lt;C-W&gt;k</code> |
  | | <code> j</code> | <code>&lt;C-W&gt;j</code> |
- | | <code> /</code> | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
- | | <code> q</code> | <code>:NvimTreeToggle&lt;CR&gt;</code> |
  | | <code> y</code> |  |
+ | | <code> 9</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 9&lt;CR&gt;</code> |
+ | | <code> 8</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 8&lt;CR&gt;</code> |
+ | | <code> 7</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 7&lt;CR&gt;</code> |
+ | | <code> 6</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 6&lt;CR&gt;</code> |
+ | | <code> 5</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 5&lt;CR&gt;</code> |
+ | | <code> 4</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 4&lt;CR&gt;</code> |
+ | | <code> 3</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 3&lt;CR&gt;</code> |
+ | | <code> 2</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 2&lt;CR&gt;</code> |
+ | | <code> 1</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 1&lt;CR&gt;</code> |
  | | <code> db</code> | <code>:lua require'dap'.toggle_breakpoint()&lt;CR&gt;</code> |
  | | <code> dd</code> | <code>:lua require'dap'.continue()&lt;CR&gt;</code> |
  | | <code> do</code> | <code>:lua require'dap'.step_over()&lt;CR&gt;</code> |
@@ -53,6 +60,8 @@ Neovim Go development environment that does not touch standard Neovim configurat
  | | <code> dc</code> | <code>:lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))&lt;CR&gt;</code> |
  | | <code> du</code> | <code>:lua require'dapui'.toggle()&lt;CR&gt;</code> |
  | | <code> i</code> | <code>:lua require'dapui'.eval()&lt;CR&gt;</code> |
+ | | <code> q</code> | <code>:NvimTreeToggle&lt;CR&gt;</code> |
+ | | <code> /</code> | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
  | | <code> ghc</code> |  |
  | | <code> ghf</code> |  |
  | | <code> ghh</code> |  |
@@ -71,15 +80,6 @@ Neovim Go development environment that does not touch standard Neovim configurat
  | | <code> gp</code> | <code>:Git push&lt;CR&gt;</code> |
  | | <code> gc</code> | <code>:Git commit -s&lt;CR&gt;</code> |
  | | <code> gg</code> | <code>:Git&lt;CR&gt;</code> |
- | | <code> 9</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 9&lt;CR&gt;</code> |
- | | <code> 8</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 8&lt;CR&gt;</code> |
- | | <code> 7</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 7&lt;CR&gt;</code> |
- | | <code> 6</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 6&lt;CR&gt;</code> |
- | | <code> 5</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 5&lt;CR&gt;</code> |
- | | <code> 4</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 4&lt;CR&gt;</code> |
- | | <code> 3</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 3&lt;CR&gt;</code> |
- | | <code> 2</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 2&lt;CR&gt;</code> |
- | | <code> 1</code> | <code>&lt;Cmd&gt;BufferLineGoToBuffer 1&lt;CR&gt;</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>,</code> |  |
@@ -93,20 +93,20 @@ Neovim Go development environment that does not touch standard Neovim configurat
  | | <code>cS</code> | <code>&lt;Plug&gt;CSurround</code> |
  | | <code>cs</code> | <code>&lt;Plug&gt;Csurround</code> |
  | | <code>ds</code> | <code>&lt;Plug&gt;Dsurround</code> |
- | | <code>dm1</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark1()&lt;CR&gt;</code> |
  | | <code>dm0</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark0()&lt;CR&gt;</code> |
  | | <code>dm </code> | <code>&lt;Cmd&gt;lua require'marks'.delete_buf()&lt;CR&gt;</code> |
- | | <code>dm5</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark5()&lt;CR&gt;</code> |
- | | <code>dm6</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark6()&lt;CR&gt;</code> |
- | | <code>dm-</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_line()&lt;CR&gt;</code> |
- | | <code>dm7</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark7()&lt;CR&gt;</code> |
- | | <code>dm=</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark()&lt;CR&gt;</code> |
  | | <code>dm3</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark3()&lt;CR&gt;</code> |
- | | <code>dm8</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark8()&lt;CR&gt;</code> |
- | | <code>dm4</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark4()&lt;CR&gt;</code> |
  | | <code>dm</code> | <code>&lt;Cmd&gt;lua require'marks'.delete()&lt;CR&gt;</code> |
- | | <code>dm2</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark2()&lt;CR&gt;</code> |
+ | | <code>dm4</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark4()&lt;CR&gt;</code> |
  | | <code>dm9</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark9()&lt;CR&gt;</code> |
+ | | <code>dm-</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_line()&lt;CR&gt;</code> |
+ | | <code>dm6</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark6()&lt;CR&gt;</code> |
+ | | <code>dm=</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark()&lt;CR&gt;</code> |
+ | | <code>dm8</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark8()&lt;CR&gt;</code> |
+ | | <code>dm2</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark2()&lt;CR&gt;</code> |
+ | | <code>dm7</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark7()&lt;CR&gt;</code> |
+ | | <code>dm5</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark5()&lt;CR&gt;</code> |
+ | | <code>dm1</code> | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark1()&lt;CR&gt;</code> |
  | | <code>f</code> |  |
  | | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
  | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
@@ -119,24 +119,24 @@ Neovim Go development environment that does not touch standard Neovim configurat
  | | <code>gc</code> | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
  | Comment toggle linewise| <code>j</code> | <code>(v:count == 0 ? 'gj' : 'j')</code> |
  | | <code>k</code> | <code>(v:count == 0 ? 'gk' : 'k')</code> |
- | | <code>m</code> | <code>&lt;Cmd&gt;lua require'marks'.set()&lt;CR&gt;</code> |
  | | <code>m1</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark1()&lt;CR&gt;</code> |
- | | <code>m2</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark2()&lt;CR&gt;</code> |
+ | | <code>m</code> | <code>&lt;Cmd&gt;lua require'marks'.set()&lt;CR&gt;</code> |
+ | | <code>m7</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark7()&lt;CR&gt;</code> |
+ | | <code>m[</code> | <code>&lt;Cmd&gt;lua require'marks'.prev()&lt;CR&gt;</code> |
+ | | <code>m0</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark0()&lt;CR&gt;</code> |
+ | | <code>m6</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark6()&lt;CR&gt;</code> |
+ | | <code>m}</code> | <code>&lt;Cmd&gt;lua require'marks'.next_bookmark()&lt;CR&gt;</code> |
+ | | <code>m{</code> | <code>&lt;Cmd&gt;lua require'marks'.prev_bookmark()&lt;CR&gt;</code> |
+ | | <code>m4</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark4()&lt;CR&gt;</code> |
+ | | <code>m:</code> | <code>&lt;Cmd&gt;lua require'marks'.preview()&lt;CR&gt;</code> |
+ | | <code>m5</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark5()&lt;CR&gt;</code> |
  | | <code>m9</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark9()&lt;CR&gt;</code> |
  | | <code>m3</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark3()&lt;CR&gt;</code> |
- | | <code>m0</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark0()&lt;CR&gt;</code> |
  | | <code>m8</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark8()&lt;CR&gt;</code> |
- | | <code>m}</code> | <code>&lt;Cmd&gt;lua require'marks'.next_bookmark()&lt;CR&gt;</code> |
- | | <code>m5</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark5()&lt;CR&gt;</code> |
- | | <code>m{</code> | <code>&lt;Cmd&gt;lua require'marks'.prev_bookmark()&lt;CR&gt;</code> |
- | | <code>m7</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark7()&lt;CR&gt;</code> |
- | | <code>m]</code> | <code>&lt;Cmd&gt;lua require'marks'.next()&lt;CR&gt;</code> |
- | | <code>m,</code> | <code>&lt;Cmd&gt;lua require'marks'.set_next()&lt;CR&gt;</code> |
- | | <code>m:</code> | <code>&lt;Cmd&gt;lua require'marks'.preview()&lt;CR&gt;</code> |
- | | <code>m6</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark6()&lt;CR&gt;</code> |
  | | <code>m;</code> | <code>&lt;Cmd&gt;lua require'marks'.toggle()&lt;CR&gt;</code> |
- | | <code>m[</code> | <code>&lt;Cmd&gt;lua require'marks'.prev()&lt;CR&gt;</code> |
- | | <code>m4</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark4()&lt;CR&gt;</code> |
+ | | <code>m2</code> | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark2()&lt;CR&gt;</code> |
+ | | <code>m,</code> | <code>&lt;Cmd&gt;lua require'marks'.set_next()&lt;CR&gt;</code> |
+ | | <code>m]</code> | <code>&lt;Cmd&gt;lua require'marks'.next()&lt;CR&gt;</code> |
  | | <code>t</code> |  |
  | | <code>ySS</code> | <code>&lt;Plug&gt;YSsurround</code> |
  | | <code>ySs</code> | <code>&lt;Plug&gt;YSsurround</code> |
@@ -153,23 +153,29 @@ Neovim Go development environment that does not touch standard Neovim configurat
  | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
- | | <code>&lt;Plug&gt;luasnip-delete-check</code> |  |
+ | | <code>&lt;Plug&gt;YSurround</code> | <code>&lt;SNR&gt;25_opfunc2('setup')</code> |
+ | | <code>&lt;Plug&gt;Ysurround</code> | <code>&lt;SNR&gt;25_opfunc('setup')</code> |
+ | | <code>&lt;Plug&gt;YSsurround</code> | <code>&lt;SNR&gt;25_opfunc2('setup').'_'</code> |
+ | | <code>&lt;Plug&gt;Yssurround</code> | <code>'^'.v:count1.&lt;SNR&gt;25_opfunc('setup').'g_'</code> |
+ | | <code>&lt;Plug&gt;CSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_changesurround(1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;Csurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_changesurround()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;Dsurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_dosurround(&lt;SNR&gt;25_inputtarget())&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;SurroundRepeat</code> | <code>.</code> |
+ | | <code>&lt;C-J&gt;</code> | <code>:BufferLineMovePrev&lt;CR&gt;</code> |
+ | | <code>&lt;C-K&gt;</code> | <code>:BufferLineMoveNext&lt;CR&gt;</code> |
+ | | <code>&lt;C-H&gt;</code> | <code>:BufferLineCyclePrev&lt;CR&gt;</code> |
+ | | <code>&lt;F11&gt;</code> | <code>:lua require'dap'.step_out()&lt;CR&gt;</code> |
+ | | <code>&lt;F10&gt;</code> | <code>:lua require'dap'.step_into()&lt;CR&gt;</code> |
+ | | <code>&lt;F9&gt;</code> | <code>:lua require'dap'.step_over()&lt;CR&gt;</code> |
+ | | <code>&lt;F8&gt;</code> | <code>:lua require'dap'.continue()&lt;CR&gt;</code> |
+ | | <code>&lt;F7&gt;</code> | <code>:lua require'dap'.toggle_breakpoint()&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |  |
  | Comment toggle blockwise with count| <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |  |
  | Comment toggle linewise with count| <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |  |
  | Comment toggle current block| <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |  |
  | Comment toggle current line| <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |  |
  | Comment toggle blockwise| <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |  |
- | Comment toggle linewise| <code>&lt;Plug&gt;YSurround</code> | <code>&lt;SNR&gt;17_opfunc2('setup')</code> |
- | | <code>&lt;Plug&gt;Ysurround</code> | <code>&lt;SNR&gt;17_opfunc('setup')</code> |
- | | <code>&lt;Plug&gt;YSsurround</code> | <code>&lt;SNR&gt;17_opfunc2('setup').'_'</code> |
- | | <code>&lt;Plug&gt;Yssurround</code> | <code>'^'.v:count1.&lt;SNR&gt;17_opfunc('setup').'g_'</code> |
- | | <code>&lt;Plug&gt;CSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;17_changesurround(1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;Csurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;17_changesurround()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;Dsurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;17_dosurround(&lt;SNR&gt;17_inputtarget())&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;SurroundRepeat</code> | <code>.</code> |
- | | <code>&lt;Plug&gt;(Marks-prev-bookmark9)</code> | <code>&lt;Cmd&gt; lua require'marks'.prev_bookmark9()&lt;CR&gt;</code> |
+ | Comment toggle linewise| <code>&lt;Plug&gt;(Marks-prev-bookmark9)</code> | <code>&lt;Cmd&gt; lua require'marks'.prev_bookmark9()&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(Marks-next-bookmark9)</code> | <code>&lt;Cmd&gt; lua require'marks'.next_bookmark9()&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(Marks-toggle-bookmark9)</code> | <code>&lt;Cmd&gt; lua require'marks'.toggle_bookmark9()&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(Marks-delete-bookmark9)</code> | <code>&lt;Cmd&gt; lua require'marks'.delete_bookmark9()&lt;CR&gt;</code> |
@@ -231,23 +237,17 @@ Neovim Go development environment that does not touch standard Neovim configurat
  | | <code>&lt;Plug&gt;(Marks-toggle)</code> | <code>&lt;Cmd&gt; lua require'marks'.toggle()&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(Marks-setnext)</code> | <code>&lt;Cmd&gt; lua require'marks'.set_next()&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(Marks-set)</code> | <code>&lt;Cmd&gt; lua require'marks'.set()&lt;CR&gt;</code> |
- | | <code>&lt;F11&gt;</code> | <code>:lua require'dap'.step_out()&lt;CR&gt;</code> |
- | | <code>&lt;F10&gt;</code> | <code>:lua require'dap'.step_into()&lt;CR&gt;</code> |
- | | <code>&lt;F9&gt;</code> | <code>:lua require'dap'.step_over()&lt;CR&gt;</code> |
- | | <code>&lt;F8&gt;</code> | <code>:lua require'dap'.continue()&lt;CR&gt;</code> |
- | | <code>&lt;F7&gt;</code> | <code>:lua require'dap'.toggle_breakpoint()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
+ | | <code>&lt;Plug&gt;luasnip-delete-check</code> |  |
  | | <code>&lt;Plug&gt;fugitive:</code> | <code></code> |
  | | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
- | | <code>&lt;C-J&gt;</code> | <code>:BufferLineMovePrev&lt;CR&gt;</code> |
- | | <code>&lt;C-K&gt;</code> | <code>:BufferLineMoveNext&lt;CR&gt;</code> |
- | | <code>&lt;C-H&gt;</code> | <code>:BufferLineCyclePrev&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
  | | <code>&lt;C-L&gt;</code> | <code>:BufferLineCycleNext&lt;CR&gt;</code> |
  | 
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> /</code> | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
@@ -274,16 +274,16 @@ Neovim Go development environment that does not touch standard Neovim configurat
  | | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
+ | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
  | | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
  | Comment toggle blockwise (visual)| <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
- | Comment toggle linewise (visual)| <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
- | | <code>&lt;Plug&gt;VgSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;VSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
+ | Comment toggle linewise (visual)| <code>&lt;Plug&gt;VgSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;VSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
  | 
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>,</code> |  |
  | | <code>;</code> |  |

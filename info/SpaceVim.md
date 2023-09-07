@@ -119,7 +119,7 @@ SpaceVim started in December 2016, it is a mature and well supported Neovim conf
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> h </code> | <code>[SPC]h[SPC]</code> |
  | | <code> xd </code> | <code>[SPC]xd[SPC]</code> |
  | | <code> xa </code> | <code>[SPC]xa[SPC]</code> |
@@ -878,7 +878,7 @@ SpaceVim started in December 2016, it is a mature and well supported Neovim conf
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Tab&gt;</code> | <code>&gt;gv</code> |
  | | <code> </code> | <code>[SPC]</code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -1062,7 +1062,7 @@ SpaceVim started in December 2016, it is a mature and well supported Neovim conf
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(matchup-%)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(matchup-[%)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(matchup-]%)</code> |

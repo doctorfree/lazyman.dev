@@ -134,7 +134,7 @@ post_style: page
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;CR&gt;</code> |  |
  | Toggle Fold| <code>&lt;Esc&gt;</code> | <code>&lt;Cmd&gt;noh&lt;CR&gt;</code> |
  | Clear Search Highlight| <code> a</code> |  |
@@ -163,39 +163,31 @@ post_style: page
  | Yank absolute path| <code> y</code> |  |
  | Yank relative path| <code>  </code> | <code>V</code> |
  | Visual Mode| <code> l</code> | <code>&lt;Cmd&gt;Lazy&lt;CR&gt;</code> |
- | Open Lazy UI| <code> gu</code> |  |
- | Undo Tree| <code> go</code> |  |
- | Git open in browser| <code> mm</code> |  |
- | Mason| <code> gm</code> |  |
- | Git messenger| <code> sp</code> |  |
- | Spectre| <code> gB</code> |  |
- | Git blame (window)| <code> gb</code> |  |
- | Git blame| <code> zl</code> |  |
+ | Open Lazy UI| <code> zn</code> |  |
+ | Zk New| <code> zl</code> |  |
  | Zk Links| <code> zb</code> |  |
  | Zk Backlinks| <code> zf</code> |  |
  | Zk Search| <code> zt</code> |  |
  | Zk Tags| <code> zo</code> |  |
- | Zk Notes| <code> zn</code> |  |
- | Zk New| <code> mh</code> |  |
- | Execute HTTP request| <code> sna</code> |  |
+ | Zk Notes| <code> cc</code> |  |
+ | Neogen Comment| <code> zz</code> |  |
+ | Zen Mode| <code> o</code> |  |
+ | Symbols Outline| <code> sna</code> |  |
  | Noice All| <code> snh</code> |  |
  | Noice History| <code> snl</code> |  |
- | Noice Last Message| <code> un</code> |  |
- | Dismiss all Notifications| <code> cc</code> |  |
- | Neogen Comment| <code> cv</code> |  |
- | Select VirtualEnv| <code> ue</code> |  |
- | | <code> tf</code> |  |
- | Toggle structure panel| <code> mt</code> |  |
- | Highlight word| <code> o</code> |  |
- | Symbols Outline| <code> mg</code> |  |
- | Neogit| <code> v</code> |  |
- | | <code> xX</code> |  |
- | Workspace Diagnostics (Trouble)| <code> xx</code> |  |
- | Document Diagnostics (Trouble)| <code> r</code> |  |
- | Workspace Diagnostics| <code> e</code> |  |
- | Document Diagnostics| <code> xL</code> |  |
- | Location List (Trouble)| <code> xQ</code> |  |
- | Quickfix List (Trouble)| <code> gf</code> |  |
+ | Noice Last Message| <code> gB</code> |  |
+ | Git blame (window)| <code> gb</code> |  |
+ | Git blame| <code> un</code> |  |
+ | Dismiss all Notifications| <code> tf</code> |  |
+ | Toggle structure panel| <code> gu</code> |  |
+ | Undo Tree| <code> mg</code> |  |
+ | Neogit| <code> mt</code> |  |
+ | Highlight word| <code> go</code> |  |
+ | Git open in browser| <code> mm</code> |  |
+ | Mason| <code> cv</code> |  |
+ | Select VirtualEnv| <code> gm</code> |  |
+ | Git messenger| <code> gg</code> |  |
+ | Grep cursor word| <code> gf</code> |  |
  | Find file| <code> gt</code> |  |
  | Find symbol| <code> gc</code> |  |
  | Git bcommits range| <code> gh</code> |  |
@@ -214,27 +206,35 @@ post_style: page
  | Help Pages| <code> sD</code> |  |
  | Workspace diagnostics| <code> sd</code> |  |
  | Document diagnostics| <code> /</code> |  |
- | Buffer find| <code> gg</code> |  |
- | Grep cursor word| <code> bd</code> |  |
- | Delete Buffer| <code> sT</code> |  |
+ | Buffer find| <code> sp</code> |  |
+ | Spectre| <code> mdr</code> |  |
+ | Line diff reset| <code> mds</code> |  |
+ | Line diff show| <code> gd</code> |  |
+ | Diff File| <code> gv</code> |  |
+ | Diff View| <code> mh</code> |  |
+ | Execute HTTP request| <code> cp</code> | <code>yap&lt;S-}&gt;p</code> |
+ | Duplicate Paragraph| <code> bd</code> |  |
+ | Delete Buffer| <code> xx</code> |  |
+ | Document Diagnostics (Trouble)| <code> r</code> |  |
+ | Workspace Diagnostics| <code> e</code> |  |
+ | Document Diagnostics| <code> xL</code> |  |
+ | Location List (Trouble)| <code> xQ</code> |  |
+ | Quickfix List (Trouble)| <code> xX</code> |  |
+ | Workspace Diagnostics (Trouble)| <code> v</code> |  |
+ | | <code> sT</code> |  |
  | Todo/Fix/Fixme| <code> st</code> |  |
  | Todo| <code> xT</code> |  |
  | Todo/Fix/Fixme (Trouble)| <code> xt</code> |  |
- | Todo (Trouble)| <code> zz</code> |  |
- | Zen Mode| <code> cp</code> | <code>yap&lt;S-}&gt;p</code> |
- | Duplicate Paragraph| <code> gd</code> |  |
- | Diff File| <code> gv</code> |  |
- | Diff View| <code> mds</code> |  |
- | Line diff show| <code> mdr</code> |  |
- | Line diff reset| <code>!</code> | <code>:!</code> |
+ | Todo (Trouble)| <code> ue</code> |  |
+ | | <code>!</code> | <code>:!</code> |
  | Execute Shell Command| <code>#</code> | <code>g#</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>*</code> | <code>g*</code> |
  | | <code>-</code> |  |
  | Pick window| <code>;c</code> |  |
- | Content-aware menu| <code>;e</code> |  |
- | Explorer NeoTree Toggle| <code>;a</code> |  |
- | Explorer NeoTree Reveal| <code>;z</code> |  |
+ | Content-aware menu| <code>;a</code> |  |
+ | Explorer NeoTree Reveal| <code>;e</code> |  |
+ | Explorer NeoTree Toggle| <code>;z</code> |  |
  | Zoxide (MRU)| <code>;w</code> |  |
  | Zk notes| <code>;k</code> |  |
  | Thesaurus| <code>;n</code> |  |
@@ -274,11 +274,11 @@ post_style: page
  | Next Loclist Item| <code>]]</code> |  |
  | Next Reference| <code>]q</code> |  |
  | Next trouble/quickfix item| <code>]t</code> |  |
- | Next todo comment| <code>cs</code> |  |
- | Replace surrounding| <code>csf</code> |  |
- | Change Surrounding Function| <code>ds</code> |  |
- | Delete surrounding| <code>dsf</code> |  |
- | Delete Surrounding Function| <code>f</code> |  |
+ | Next todo comment| <code>csf</code> |  |
+ | Change Surrounding Function| <code>cs</code> |  |
+ | Replace surrounding| <code>dsf</code> |  |
+ | Delete Surrounding Function| <code>ds</code> |  |
+ | Delete surrounding| <code>f</code> |  |
  | f| <code>g&lt;C-O&gt;</code> |  |
  | Jump to older buffer| <code>g&lt;C-I&gt;</code> |  |
  | Jump to newer buffer| <code>g!</code> | <code>:put=execute('')&lt;Left&gt;&lt;Left&gt;</code> |
@@ -287,17 +287,17 @@ post_style: page
  | | <code>g*</code> | <code>*</code> |
  | | <code>gl</code> | <code>g$</code> |
  | | <code>gh</code> | <code>g^</code> |
- | | <code>gzn</code> |  |
- | Update `MiniSurround.config.n_lines`| <code>gzh</code> |  |
+ | | <code>gj</code> |  |
+ | Move to bottom edge| <code>gk</code> |  |
+ | Move to top edge| <code>gpd</code> |  |
+ | | <code>gpi</code> |  |
+ | | <code>gpr</code> |  |
+ | | <code>gpy</code> |  |
+ | | <code>gzh</code> |  |
  | Highlight surrounding| <code>gzF</code> |  |
  | Find left surrounding| <code>gzf</code> |  |
- | Find right surrounding| <code>gk</code> |  |
- | Move to top edge| <code>gj</code> |  |
- | Move to bottom edge| <code>gpi</code> |  |
- | | <code>gpy</code> |  |
- | | <code>gpd</code> |  |
- | | <code>gpr</code> |  |
- | | <code>j</code> | <code>v:count == 0 ? 'gj' : 'j'</code> |
+ | Find right surrounding| <code>gzn</code> |  |
+ | Update `MiniSurround.config.n_lines`| <code>j</code> | <code>v:count == 0 ? 'gj' : 'j'</code> |
  | | <code>k</code> | <code>v:count == 0 ? 'gk' : 'k'</code> |
  | | <code>m/</code> |  |
  | Marks from all opened buffers| <code>sh</code> |  |
@@ -311,14 +311,14 @@ post_style: page
  | Split window horizontally| <code>sd</code> | <code>&lt;Cmd&gt;bdelete&lt;CR&gt;</code> |
  | Buffer delete| <code>sc</code> | <code>&lt;Cmd&gt;close&lt;CR&gt;</code> |
  | Close window| <code>sb</code> | <code>&lt;Cmd&gt;buffer#&lt;CR&gt;</code> |
- | Alternate buffer| <code>sa</code> |  |
- | Add surrounding| <code>sw</code> |  |
+ | Alternate buffer| <code>sk</code> |  |
+ | Split arguments| <code>sj</code> |  |
+ | Join arguments| <code>sS</code> |  |
+ | Leap backward to| <code>ss</code> |  |
+ | Leap forward to| <code>sw</code> |  |
  | Swap picked window| <code>sp</code> |  |
- | Pick window| <code>ss</code> |  |
- | Leap forward to| <code>sS</code> |  |
- | Leap backward to| <code>sj</code> |  |
- | Join arguments| <code>sk</code> |  |
- | Split arguments| <code>t</code> |  |
+ | Pick window| <code>sa</code> |  |
+ | Add surrounding| <code>t</code> |  |
  | t| <code>zh</code> | <code>z4h</code> |
  | | <code>zl</code> | <code>z4l</code> |
  | | <code>&lt;C-X&gt;</code> | <code>&lt;C-W&gt;x</code> |
@@ -346,22 +346,22 @@ post_style: page
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Tab&gt;</code> | <code>&gt;gv&#124;</code> |
  | Indent Left| <code> d</code> | <code>""Y""Pgv</code> |
  | Duplicate selection| <code> j</code> | <code>:move'&gt;+&lt;CR&gt;gv=gv</code> |
  | Move selection down| <code> k</code> | <code>:move'&lt;lt&gt;-2&lt;CR&gt;gv=gv</code> |
  | Move selection up| <code>  </code> | <code>&lt;Esc&gt;</code> |
- | Exit Visual Mode| <code> gc</code> |  |
- | Git bcommits range| <code> gg</code> |  |
- | Grep cursor word| <code> v</code> |  |
- | | <code> sp</code> |  |
+ | Exit Visual Mode| <code> go</code> |  |
+ | Git open in browser| <code> zf</code> |  |
+ | Zk Match| <code> mdf</code> |  |
+ | Line diff| <code> mda</code> |  |
+ | Line diff add| <code> sp</code> |  |
  | Spectre Word| <code> mt</code> |  |
- | Highlight word| <code> zf</code> |  |
- | Zk Match| <code> mda</code> |  |
- | Line diff add| <code> mdf</code> |  |
- | Line diff| <code> go</code> |  |
- | Git open in browser| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | Highlight word| <code> gg</code> |  |
+ | Grep cursor word| <code> gc</code> |  |
+ | Git bcommits range| <code> v</code> |  |
+ | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>;da</code> |  |
  | Code actions| <code>&lt;lt&gt;</code> | <code>&lt;lt&gt;gv</code> |
@@ -382,11 +382,11 @@ post_style: page
  | | <code>p</code> | <code>p:let @+=@0&lt;CR&gt;:let @"=@0&lt;CR&gt;</code> |
  | Paste| <code>sg</code> | <code>:s//gc&lt;Left&gt;&lt;Left&gt;&lt;Left&gt;</code> |
  | Substitute Within Selection| <code>sa</code> |  |
- | Add surrounding| <code>sS</code> |  |
+ | Add surrounding| <code>sk</code> |  |
+ | Split arguments| <code>sj</code> |  |
+ | Join arguments| <code>sS</code> |  |
  | Leap backward to| <code>ss</code> |  |
- | Leap forward to| <code>sj</code> |  |
- | Join arguments| <code>sk</code> |  |
- | Split arguments| <code>t</code> |  |
+ | Leap forward to| <code>t</code> |  |
  | t| <code>v</code> |  |
  | Increment selection| <code>&lt;C-S&gt;</code> | <code>&lt;Cmd&gt;write&lt;CR&gt;</code> |
  | Save| <code>&lt;C-R&gt;</code> | <code>:&lt;C-U&gt;%s/\V&lt;C-R&gt;=v:lua.require'rafi.lib.edit'.get_visual_selection()&lt;CR&gt;//gc&lt;Left&gt;&lt;Left&gt;&lt;Left&gt;</code> |
@@ -396,12 +396,12 @@ post_style: page
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>F</code> |  |
  | F| <code>SS</code> |  |
  | Leap from windows| <code>T</code> |  |
  | T| <code>f</code> |  |
- | f| <code>sS</code> |  |
- | Leap backward to| <code>ss</code> |  |
- | Leap forward to| <code>t</code> |  |
+ | f| <code>ss</code> |  |
+ | Leap forward to| <code>sS</code> |  |
+ | Leap backward to| <code>t</code> |  |
  | t

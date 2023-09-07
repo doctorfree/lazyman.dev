@@ -146,10 +146,12 @@ LazyVim IDE config for Neovim
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
- | Nvim builtin| <code>,tf</code> |  |
+ | Nvim builtin| <code>,M</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
+ | Mason Menu| <code>,cm</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
+ | Mason| <code>,tf</code> |  |
  | Move Float| <code>,tH</code> |  |
  | Move Bottom Right New| <code>,th</code> |  |
  | Move Below Right New| <code>,tL</code> |  |
@@ -158,27 +160,94 @@ LazyVim IDE config for Neovim
  | Terminal Prev| <code>,t]</code> |  |
  | Terminal Next| <code>,tk</code> |  |
  | Terminal Kill| <code>,tR</code> |  |
- | New Terminal Run| <code>,cm</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
- | Mason| <code>,M</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
- | Mason Menu| <code>,ut</code> |  |
- | Toggle Transparency| <code>,cT</code> |  |
- | Run Test File| <code>,ct</code> |  |
- | Run Test Nearest| <code>,cS</code> |  |
- | Run Test Suite| <code>,sna</code> |  |
+ | New Terminal Run| <code>,ut</code> |  |
+ | Toggle Transparency| <code>,bD</code> |  |
+ | Delete Buffer (Force)| <code>,bd</code> |  |
+ | Delete Buffer| <code>,tO</code> |  |
+ | New Terminal Toggle| <code>,tr</code> |  |
+ | Terminal Run| <code>,tT</code> |  |
+ | Run All Test Files| <code>,tt</code> |  |
+ | Run File| <code>,to</code> |  |
+ | Terminal Toggle| <code>,ts</code> |  |
+ | Terminal Send| <code>,tS</code> |  |
+ | Stop| <code>,d</code> |  |
+ | JsDoc| <code>,qd</code> |  |
+ | Don't Save Current Session| <code>,ql</code> |  |
+ | Restore Last Session| <code>,qs</code> |  |
+ | Restore Session| <code>,ht</code> |  |
+ | Toggle hardtime.nvim| <code>,uL</code> |  |
+ | LSP Len Toggle| <code>,m</code> |  |
+ | Markdown preview| <code>,ng</code> |  |
+ | Open note| <code>,n</code> |  |
+ | Open note| <code>,du</code> |  |
+ | Dap UI| <code>,de</code> |  |
+ | Eval| <code>,fp</code> |  |
+ | Projects| <code>,snd</code> |  |
+ | Dismiss All| <code>,sna</code> |  |
  | Noice All| <code>,snh</code> |  |
  | Noice History| <code>,snl</code> |  |
- | Noice Last Message| <code>,snd</code> |  |
- | Dismiss All| <code>,qs</code> |  |
- | Restore Session| <code>,qd</code> |  |
- | Don't Save Current Session| <code>,ql</code> |  |
- | Restore Last Session| <code>,d</code> |  |
- | JsDoc| <code>,ue</code> |  |
+ | Noice Last Message| <code>,sT</code> |  |
+ | Todo/Fix/Fixme| <code>,xT</code> |  |
+ | Todo/Fix/Fixme (Trouble)| <code>,xt</code> |  |
+ | Todo (Trouble)| <code>,xQ</code> |  |
+ | Quickfix List (Trouble)| <code>,xL</code> |  |
+ | Location List (Trouble)| <code>,xX</code> |  |
+ | Workspace Diagnostics (Trouble)| <code>,xx</code> |  |
+ | Document Diagnostics (Trouble)| <code>,cn</code> |  |
+ | NullLs Info| <code>,fs</code> |  |
+ | Telescope persisted| <code>,sr</code> |  |
+ | Sarch and replace| <code>,ue</code> |  |
  | Edgy Toggle| <code>,uE</code> |  |
- | Edgy Select Window| <code>,s;</code> |  |
+ | Edgy Select Window| <code>,dw</code> |  |
+ | Widgets| <code>,dt</code> |  |
+ | Terminate| <code>,ds</code> |  |
+ | Session| <code>,dr</code> |  |
+ | Toggle REPL| <code>,dp</code> |  |
+ | Pause| <code>,dO</code> |  |
+ | Step Over| <code>,do</code> |  |
+ | Step Out| <code>,dl</code> |  |
+ | Run Last| <code>,dk</code> |  |
+ | Up| <code>,dj</code> |  |
+ | Down| <code>,di</code> |  |
+ | Step Into| <code>,dg</code> |  |
+ | Go to line (no execute)| <code>,dC</code> |  |
+ | Run to Cursor| <code>,dc</code> |  |
+ | Continue| <code>,db</code> |  |
+ | Toggle Breakpoint| <code>,dB</code> |  |
+ | Breakpoint Condition| <code>,td</code> |  |
+ | Debug Nearest| <code>,cS</code> |  |
+ | Run Test Suite| <code>,cT</code> |  |
+ | Run Test File| <code>,ct</code> |  |
+ | Run Test Nearest| <code>,r</code> |  |
+ | Undo Tree Toggle| <code>,sC</code> |  |
+ | Commands| <code>,sc</code> |  |
+ | Command History| <code>,sb</code> |  |
+ | Buffer| <code>,sa</code> |  |
+ | Auto Commands| <code>,s"</code> |  |
+ | Registers| <code>,gs</code> |  |
+ | Status| <code>,gc</code> |  |
+ | commits| <code>,fR</code> |  |
+ | Recent (cwd)| <code>,fr</code> |  |
+ | Recent files| <code>,fF</code> |  |
+ | Find Files (cwd)| <code>,ff</code> |  |
+ | Open file| <code>,fb</code> |  |
+ | Filebrowser| <code>,:</code> |  |
+ | Command History| <code>,/</code> |  |
+ | Find in Files (Grep)| <code>,,</code> |  |
+ | Switch Buffer| <code>, </code> |  |
+ | Find Files (root dir)| <code>,B</code> |  |
+ | Bufferlist| <code>,mt</code> |  |
+ | Telescope| <code>,mm</code> |  |
+ | Run make| <code>,fz</code> |  |
+ | Zoxide| <code>,gm</code> |  |
+ | Commits| <code>,gh</code> |  |
+ | Branches| <code>,sf</code> |  |
+ | Fuzzy search| <code>,s;</code> |  |
  | Command history| <code>,s:</code> |  |
  | Search History| <code>,sO</code> |  |
  | Vim Options| <code>,s?</code> |  |
- | Help| <code>,sS</code> |  |
+ | Help| <code>,st</code> |  |
+ | Strings| <code>,sS</code> |  |
  | Goto Symbol (Workspace)| <code>,ss</code> |  |
  | Goto Symbol| <code>,uC</code> |  |
  | Colorscheme with preview| <code>,sW</code> |  |
@@ -194,104 +263,35 @@ LazyVim IDE config for Neovim
  | Grep (cwd)| <code>,sg</code> |  |
  | Grep (root dir)| <code>,sD</code> |  |
  | Workspace diagnostics| <code>,sd</code> |  |
- | Diagnostics| <code>,sC</code> |  |
- | Commands| <code>, </code> |  |
- | Find Files (root dir)| <code>,sc</code> |  |
- | Command History| <code>,sb</code> |  |
- | Buffer| <code>,sa</code> |  |
- | Auto Commands| <code>,s"</code> |  |
- | Registers| <code>,gs</code> |  |
- | Status| <code>,gc</code> |  |
- | commits| <code>,fR</code> |  |
- | Recent (cwd)| <code>,fr</code> |  |
- | Recent files| <code>,fF</code> |  |
- | Find Files (cwd)| <code>,ff</code> |  |
- | Open file| <code>,fb</code> |  |
- | Filebrowser| <code>,:</code> |  |
- | Command History| <code>,/</code> |  |
- | Find in Files (Grep)| <code>,,</code> |  |
- | Switch Buffer| <code>,B</code> |  |
- | Bufferlist| <code>,mt</code> |  |
- | Telescope| <code>,mm</code> |  |
- | Run make| <code>,fz</code> |  |
- | Zoxide| <code>,gm</code> |  |
- | Commits| <code>,gh</code> |  |
- | Branches| <code>,sf</code> |  |
- | Fuzzy search| <code>,uL</code> |  |
- | LSP Len Toggle| <code>,m</code> |  |
- | Markdown preview| <code>,bd</code> |  |
- | Delete Buffer| <code>,bD</code> |  |
- | Delete Buffer (Force)| <code>,xt</code> |  |
- | Todo (Trouble)| <code>,st</code> |  |
- | Todo| <code>,sT</code> |  |
- | Todo/Fix/Fixme| <code>,xT</code> |  |
- | Todo/Fix/Fixme (Trouble)| <code>,xx</code> |  |
- | Document Diagnostics (Trouble)| <code>,xQ</code> |  |
- | Quickfix List (Trouble)| <code>,xL</code> |  |
- | Location List (Trouble)| <code>,xX</code> |  |
- | Workspace Diagnostics (Trouble)| <code>,fp</code> |  |
- | Projects| <code>,fm</code> |  |
- | Telescope Harpoon Marks| <code>,fs</code> |  |
- | Telescope persisted| <code>,sr</code> |  |
- | Sarch and replace| <code>,ht</code> |  |
- | Toggle hardtime.nvim| <code>,E</code> |  |
+ | Diagnostics| <code>,E</code> |  |
  | Explorer NeoTree (cwd)| <code>,e</code> |  |
  | Explorer NeoTree (root dir)| <code>,fE</code> |  |
  | Explorer NeoTree (cwd)| <code>,fe</code> |  |
- | Explorer NeoTree (root dir)| <code>,fi</code> |  |
+ | Explorer NeoTree (root dir)| <code>,bP</code> |  |
+ | Delete non-pinned buffers| <code>,bp</code> |  |
+ | Toggle pin| <code>,fm</code> |  |
+ | Telescope Harpoon Marks| <code>,fi</code> |  |
  | Telescope Aerial| <code>,a</code> |  |
- | AerialToggle| <code>,dc</code> |  |
- | Continue| <code>,db</code> |  |
- | Toggle Breakpoint| <code>,dB</code> |  |
- | Breakpoint Condition| <code>,td</code> |  |
- | Debug Nearest| <code>,dw</code> |  |
- | Widgets| <code>,dt</code> |  |
- | Terminate| <code>,ds</code> |  |
- | Session| <code>,dr</code> |  |
- | Toggle REPL| <code>,dp</code> |  |
- | Pause| <code>,dO</code> |  |
- | Step Over| <code>,do</code> |  |
- | Step Out| <code>,dl</code> |  |
- | Run Last| <code>,dk</code> |  |
- | Up| <code>,dj</code> |  |
- | Down| <code>,di</code> |  |
- | Step Into| <code>,dg</code> |  |
- | Go to line (no execute)| <code>,dC</code> |  |
- | Run to Cursor| <code>,tO</code> |  |
- | New Terminal Toggle| <code>,to</code> |  |
- | Terminal Toggle| <code>,ts</code> |  |
- | Terminal Send| <code>,tr</code> |  |
- | Terminal Run| <code>,tT</code> |  |
- | Run All Test Files| <code>,tt</code> |  |
- | Run File| <code>,tS</code> |  |
- | Stop| <code>,r</code> |  |
- | Undo Tree Toggle| <code>,cn</code> |  |
- | NullLs Info| <code>,du</code> |  |
- | Dap UI| <code>,de</code> |  |
- | Eval| <code>,bp</code> |  |
- | Toggle pin| <code>,bP</code> |  |
- | Delete non-pinned buffers| <code>,n</code> |  |
- | Open note| <code>,ng</code> |  |
- | Open note| <code>,z</code> |  |
+ | AerialToggle| <code>,z</code> |  |
  | Toggle zen mode| <code>S</code> |  |
  | Flash Treesitter| <code>Y</code> | <code>y$</code> |
  | Nvim builtin| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
- | | <code>[t</code> |  |
+ | | <code>[[</code> |  |
+ | Prev Reference| <code>[t</code> |  |
  | Previous todo comment| <code>[q</code> |  |
- | Previous trouble/quickfix item| <code>[[</code> |  |
- | Prev Reference| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
- | | <code>]t</code> |  |
+ | Previous trouble/quickfix item| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+ | | <code>]]</code> |  |
+ | Next Reference| <code>]t</code> |  |
  | Next todo comment| <code>]q</code> |  |
- | Next trouble/quickfix item| <code>]]</code> |  |
- | Next Reference| <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
- | | <code>gzh</code> |  |
+ | Next trouble/quickfix item| <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+ | | <code>gzr</code> |  |
+ | Replace surrounding| <code>gzh</code> |  |
  | Highlight surrounding| <code>gzd</code> |  |
  | Delete surrounding| <code>gzn</code> |  |
  | Update `MiniSurround.config.n_lines`| <code>gzF</code> |  |
  | Find left surrounding| <code>gzf</code> |  |
  | Find right surrounding| <code>gza</code> |  |
- | Add surrounding| <code>gzr</code> |  |
- | Replace surrounding| <code>s</code> |  |
+ | Add surrounding| <code>s</code> |  |
  | Flash| <code>zM</code> |  |
  | | <code>zR</code> |  |
  | | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
@@ -307,7 +307,7 @@ LazyVim IDE config for Neovim
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -333,7 +333,7 @@ LazyVim IDE config for Neovim
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>R</code> |  |
  | Treesitter Search| <code>S</code> |  |

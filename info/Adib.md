@@ -102,18 +102,18 @@ Personal Neovim configuration of Adib Hanna. Tips, distros, and configuration [d
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;CR&gt;</code> | <code>ciw</code> |
- | | <code> e</code> |  |
- | Float File Explorer| <code> &lt;Tab&gt;</code> |  |
- | Left File Explorer| <code> tr</code> |  |
- | Run Nearest| <code> tT</code> |  |
- | Run All Test Files| <code> tt</code> |  |
+ | | <code> tt</code> |  |
  | Run File| <code> tS</code> |  |
  | Stop| <code> tO</code> |  |
  | Toggle Output Panel| <code> to</code> |  |
  | Show Output| <code> ts</code> |  |
- | Toggle Summary| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+ | Toggle Summary| <code> tr</code> |  |
+ | Run Nearest| <code> tT</code> |  |
+ | Run All Test Files| <code> e</code> |  |
+ | Float File Explorer| <code> &lt;Tab&gt;</code> |  |
+ | Left File Explorer| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>+</code> | <code>:vertical resize +5&lt;CR&gt;</code> |
  | | <code>-</code> | <code>:resize -5&lt;CR&gt;</code> |
@@ -136,14 +136,14 @@ Personal Neovim configuration of Adib Hanna. Tips, distros, and configuration [d
  | Next Reference| <code>_</code> | <code>:vertical resize -5&lt;CR&gt;</code> |
  | | <code>f</code> |  |
  | f| <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
- | | <code>gJ</code> |  |
- | Join the object under cursor| <code>gS</code> |  |
- | Split the object under cursor| <code>gs</code> |  |
- | Leap from windows| <code>gR</code> |  |
+ | | <code>gR</code> |  |
  | Glance references| <code>gD</code> |  |
  | Glance definitions| <code>gM</code> |  |
  | Glance implementations| <code>gY</code> |  |
- | Glance type_definitions| <code>j</code> | <code>gj</code> |
+ | Glance type_definitions| <code>gJ</code> |  |
+ | Join the object under cursor| <code>gS</code> |  |
+ | Split the object under cursor| <code>gs</code> |  |
+ | Leap from windows| <code>j</code> | <code>gj</code> |
  | | <code>k</code> | <code>gk</code> |
  | | <code>s</code> |  |
  | Leap forward to| <code>t</code> |  |
@@ -154,15 +154,15 @@ Personal Neovim configuration of Adib Hanna. Tips, distros, and configuration [d
  | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
  | | <code>&lt;C-F&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
- | | <code>&lt;C-E&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
- | | <code>&lt;C-Y&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
  | | <code>&lt;C-B&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
- | | <code>&lt;M-p&gt;</code> |  |
+ | | <code>&lt;C-Y&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
+ | | <code>&lt;C-E&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+ | | <code>&lt;C-T&gt;</code> | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
+ | Toggle Terminal| <code>&lt;M-p&gt;</code> |  |
  | Move to previous reference| <code>&lt;M-n&gt;</code> |  |
- | Move to next reference| <code>&lt;C-T&gt;</code> | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
- | Toggle Terminal| <code>&lt;C-S&gt;</code> | <code>:Telescope current_buffer_fuzzy_find&lt;CR&gt;</code> |
+ | Move to next reference| <code>&lt;C-S&gt;</code> | <code>:Telescope current_buffer_fuzzy_find&lt;CR&gt;</code> |
  | | <code>&lt;BS&gt;</code> | <code>ci</code> |
  | | <code>&lt;Left&gt;</code> | <code>:bprevious&lt;CR&gt;</code> |
  | | <code>&lt;Right&gt;</code> | <code>:bnext&lt;CR&gt;</code> |
@@ -173,7 +173,7 @@ Personal Neovim configuration of Adib Hanna. Tips, distros, and configuration [d
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -196,26 +196,26 @@ Personal Neovim configuration of Adib Hanna. Tips, distros, and configuration [d
  | Leap from windows| <code>p</code> | <code>"_dp</code> |
  | | <code>s</code> |  |
  | Leap forward to| <code>t</code> |  |
- | t| <code>zz</code> | <code>&lt;Cmd&gt;lua require('neoscroll').zz(250)&lt;CR&gt;</code> |
- | | <code>zb</code> | <code>&lt;Cmd&gt;lua require('neoscroll').zb(250)&lt;CR&gt;</code> |
+ | t| <code>zb</code> | <code>&lt;Cmd&gt;lua require('neoscroll').zb(250)&lt;CR&gt;</code> |
  | | <code>zt</code> | <code>&lt;Cmd&gt;lua require('neoscroll').zt(250)&lt;CR&gt;</code> |
+ | | <code>zz</code> | <code>&lt;Cmd&gt;lua require('neoscroll').zz(250)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
- | | <code>&lt;C-F&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
- | | <code>&lt;C-U&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
+ | | <code>&lt;M-i&gt;</code> |  |
  | | <code>&lt;C-E&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
  | | <code>&lt;C-B&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
  | | <code>&lt;C-D&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
  | | <code>&lt;C-Y&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
- | | <code>&lt;M-i&gt;</code> |  |
+ | | <code>&lt;C-F&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+ | | <code>&lt;C-U&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
  | 
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>F</code> |  |
  | F| <code>H</code> | <code>^</code> |

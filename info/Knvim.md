@@ -96,7 +96,7 @@ Targets Python, Bash, LaTeX, Markdown, and C/C++. See the [Knvim Config Cheat Sh
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> e</code> |  |
  | Switch python env| <code> s</code> | <code>&lt;Cmd&gt;SessionManager load_session&lt;CR&gt;</code> |
  | | <code> n</code> | <code>&lt;Cmd&gt;Telescope notify&lt;CR&gt;</code> |
@@ -141,7 +141,6 @@ Targets Python, Bash, LaTeX, Markdown, and C/C++. See the [Knvim Config Cheat Sh
  | | <code>]%</code> | <code>&lt;Plug&gt;(matchup-]%)</code> |
  | | <code>]e</code> |  |
  | LSP: Go to the next diagnostic| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
- | | <code>g%</code> | <code>&lt;Plug&gt;(matchup-g%)</code> |
  | | <code>gcA</code> |  |
  | Comment insert end of line| <code>gcO</code> |  |
  | Comment insert above| <code>gco</code> |  |
@@ -149,10 +148,25 @@ Targets Python, Bash, LaTeX, Markdown, and C/C++. See the [Knvim Config Cheat Sh
  | Comment toggle current block| <code>gcc</code> |  |
  | Comment toggle current line| <code>gb</code> | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
  | Comment toggle blockwise| <code>gc</code> | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
- | Comment toggle linewise| <code>s</code> | <code>&lt;Cmd&gt;Pounce&lt;CR&gt;</code> |
+ | Comment toggle linewise| <code>g%</code> | <code>&lt;Plug&gt;(matchup-g%)</code> |
+ | | <code>s</code> | <code>&lt;Cmd&gt;Pounce&lt;CR&gt;</code> |
  | | <code>z%</code> | <code>&lt;Plug&gt;(matchup-z%)</code> |
  | | <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
- | | <code>&lt;2-LeftMouse&gt;</code> | <code>&lt;Plug&gt;(matchup-double-click)</code> |
+ | | <code>&lt;Plug&gt;(EasyAlignOperator)</code> | <code>:set opfunc=&lt;SNR&gt;37_easy_align_op&lt;CR&gt;g@</code> |
+ | | <code>&lt;Plug&gt;(EasyAlignRepeat)</code> | <code>:call &lt;SNR&gt;37_easy_align_repeat()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(LiveEasyAlign)</code> | <code>:set opfunc=&lt;SNR&gt;37_live_easy_align_op&lt;CR&gt;g@</code> |
+ | | <code>&lt;Plug&gt;(EasyAlign)</code> | <code>:set opfunc=&lt;SNR&gt;37_easy_align_op&lt;CR&gt;g@</code> |
+ | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
+ | | <code>&lt;Plug&gt;luasnip-delete-check</code> |  |
+ | | <code>&lt;M-p&gt;</code> |  |
+ | Move to previous reference| <code>&lt;M-n&gt;</code> |  |
+ | Move to next reference| <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |  |
+ | Comment toggle blockwise with count| <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |  |
+ | Comment toggle linewise with count| <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |  |
+ | Comment toggle current block| <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |  |
+ | Comment toggle current line| <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |  |
+ | Comment toggle blockwise| <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |  |
+ | Comment toggle linewise| <code>&lt;2-LeftMouse&gt;</code> | <code>&lt;Plug&gt;(matchup-double-click)</code> |
  | | <code>&lt;Plug&gt;(matchup-reload)</code> | <code>:&lt;C-U&gt;MatchupReload&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-double-click)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#double_click()&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-Z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(0)&lt;CR&gt;</code> |
@@ -161,22 +175,8 @@ Targets Python, Bash, LaTeX, Markdown, and C/C++. See the [Knvim Config Cheat Sh
  | | <code>&lt;Plug&gt;(matchup-]%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 1)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-g%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 0)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 1)&lt;CR&gt;</code> |
- | | <code>&lt;SNR&gt;33_(wise)</code> | <code>empty(g:v_motion_force) ? 'v' : g:v_motion_force</code> |
+ | | <code>&lt;SNR&gt;14_(wise)</code> | <code>empty(g:v_motion_force) ? 'v' : g:v_motion_force</code> |
  | | <code>&lt;Plug&gt;(matchup-hi-surround)</code> | <code>:&lt;C-U&gt;call matchup#matchparen#highlight_surrounding()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |  |
- | Comment toggle blockwise with count| <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |  |
- | Comment toggle linewise with count| <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |  |
- | Comment toggle current block| <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |  |
- | Comment toggle current line| <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |  |
- | Comment toggle blockwise| <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |  |
- | Comment toggle linewise| <code>&lt;M-p&gt;</code> |  |
- | Move to previous reference| <code>&lt;M-n&gt;</code> |  |
- | Move to next reference| <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
- | | <code>&lt;Plug&gt;luasnip-delete-check</code> |  |
- | | <code>&lt;Plug&gt;(EasyAlignOperator)</code> | <code>:set opfunc=&lt;SNR&gt;6_easy_align_op&lt;CR&gt;g@</code> |
- | | <code>&lt;Plug&gt;(EasyAlignRepeat)</code> | <code>:call &lt;SNR&gt;6_easy_align_repeat()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(LiveEasyAlign)</code> | <code>:set opfunc=&lt;SNR&gt;6_live_easy_align_op&lt;CR&gt;g@</code> |
- | | <code>&lt;Plug&gt;(EasyAlign)</code> | <code>:set opfunc=&lt;SNR&gt;6_easy_align_op&lt;CR&gt;g@</code> |
  | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
  | | <code>&lt;F24&gt;</code> | <code>&lt;Cmd&gt;Alpha&lt;CR&gt;</code> |
  | | <code>&lt;F12&gt;</code> | <code>&lt;Cmd&gt;set nu rnu!&lt;CR&gt;</code> |
@@ -225,7 +225,7 @@ Targets Python, Bash, LaTeX, Markdown, and C/C++. See the [Knvim Config Cheat Sh
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(matchup-%)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -236,39 +236,39 @@ Targets Python, Bash, LaTeX, Markdown, and C/C++. See the [Knvim Config Cheat Sh
  | | <code>]%</code> | <code>&lt;Plug&gt;(matchup-]%)</code> |
  | | <code>a%</code> | <code>&lt;Plug&gt;(matchup-a%)</code> |
  | | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+ | | <code>g%</code> | <code>&lt;Plug&gt;(matchup-g%)</code> |
  | | <code>gb</code> | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
  | Comment toggle blockwise (visual)| <code>gc</code> | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
- | Comment toggle linewise (visual)| <code>g%</code> | <code>&lt;Plug&gt;(matchup-g%)</code> |
- | | <code>i%</code> | <code>&lt;Plug&gt;(matchup-i%)</code> |
+ | Comment toggle linewise (visual)| <code>i%</code> | <code>&lt;Plug&gt;(matchup-i%)</code> |
  | | <code>s</code> | <code>&lt;Cmd&gt;Pounce&lt;CR&gt;</code> |
  | | <code>z%</code> | <code>&lt;Plug&gt;(matchup-z%)</code> |
  | | <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
- | Comment toggle blockwise (visual)| <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
- | Comment toggle linewise (visual)| <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
- | | <code>&lt;Plug&gt;(EasyAlignRepeat)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;27_repeat_in_visual()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(LiveEasyAlign)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;27_live_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(EasyAlign)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;27_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
+ | | <code>&lt;M-i&gt;</code> |  |
+ | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
+ | | <code>&lt;Plug&gt;(EasyAlignRepeat)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_repeat_in_visual()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(LiveEasyAlign)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_live_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(EasyAlign)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-a%)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(0, 1, 'delim_all')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-i%)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(1, 1, 'delim_all')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-Z%)</code> | <code>&lt;SNR&gt;20_(matchup-Z%)</code> |
- | | <code>&lt;SNR&gt;20_(matchup-Z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-z%)</code> | <code>&lt;SNR&gt;20_(matchup-z%)</code> |
- | | <code>&lt;SNR&gt;20_(matchup-z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-[%)</code> | <code>&lt;SNR&gt;20_(matchup-[%)</code> |
- | | <code>&lt;Plug&gt;(matchup-]%)</code> | <code>&lt;SNR&gt;20_(matchup-]%)</code> |
- | | <code>&lt;SNR&gt;20_(matchup-[%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 0)&lt;CR&gt;</code> |
- | | <code>&lt;SNR&gt;20_(matchup-]%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-g%)</code> | <code>&lt;SNR&gt;20_(matchup-g%)</code> |
- | | <code>&lt;SNR&gt;20_(matchup-g%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-%)</code> | <code>&lt;SNR&gt;20_(matchup-%)</code> |
- | | <code>&lt;SNR&gt;20_(matchup-%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 1)&lt;CR&gt;</code> |
- | | <code>&lt;M-i&gt;</code> |  |
- | 
+ | | <code>&lt;Plug&gt;(matchup-Z%)</code> | <code>&lt;SNR&gt;12_(matchup-Z%)</code> |
+ | | <code>&lt;SNR&gt;12_(matchup-Z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-z%)</code> | <code>&lt;SNR&gt;12_(matchup-z%)</code> |
+ | | <code>&lt;SNR&gt;12_(matchup-z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-[%)</code> | <code>&lt;SNR&gt;12_(matchup-[%)</code> |
+ | | <code>&lt;Plug&gt;(matchup-]%)</code> | <code>&lt;SNR&gt;12_(matchup-]%)</code> |
+ | | <code>&lt;SNR&gt;12_(matchup-[%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 0)&lt;CR&gt;</code> |
+ | | <code>&lt;SNR&gt;12_(matchup-]%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-g%)</code> | <code>&lt;SNR&gt;12_(matchup-g%)</code> |
+ | | <code>&lt;SNR&gt;12_(matchup-g%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 0)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-%)</code> | <code>&lt;SNR&gt;12_(matchup-%)</code> |
+ | | <code>&lt;SNR&gt;12_(matchup-%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+ | Comment toggle blockwise (visual)| <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+ | Comment toggle linewise (visual)
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Ignore&gt;&lt;Plug&gt;(matchup-%)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(matchup-[%)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(matchup-]%)</code> |
@@ -277,6 +277,7 @@ Targets Python, Bash, LaTeX, Markdown, and C/C++. See the [Knvim Config Cheat Sh
  | | <code>gs</code> | <code>&lt;Cmd&gt;Pounce&lt;CR&gt;</code> |
  | | <code>i%</code> | <code>&lt;Plug&gt;(matchup-i%)</code> |
  | | <code>z%</code> | <code>&lt;Plug&gt;(matchup-z%)</code> |
+ | | <code>&lt;M-i&gt;</code> |  |
  | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
  | | <code>&lt;Plug&gt;(matchup-a%)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(0, 0, 'delim_all')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-i%)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(1, 0, 'delim_all')&lt;CR&gt;</code> |
@@ -286,5 +287,4 @@ Targets Python, Bash, LaTeX, Markdown, and C/C++. See the [Knvim Config Cheat Sh
  | | <code>&lt;Plug&gt;(matchup-]%)</code> | <code>:&lt;C-U&gt;call matchup#motion#op(']%')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-g%)</code> | <code>:&lt;C-U&gt;call matchup#motion#op('g%')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-%)</code> | <code>:&lt;C-U&gt;call matchup#motion#op('%')&lt;CR&gt;</code> |
- | | <code>&lt;M-i&gt;</code> |  |
  | 

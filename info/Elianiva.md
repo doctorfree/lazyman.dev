@@ -63,7 +63,7 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> gy</code> | <code>&lt;Cmd&gt;lua require'gitlinker'.get_buf_range_url('n')&lt;CR&gt;</code> |
  | | <code> w</code> |  |
  | | <code> c</code> |  |
@@ -81,9 +81,9 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
  | Run file using Deno| <code>\rn</code> | <code>&lt;Cmd&gt;!node %&lt;CR&gt;</code> |
  | Run file using Node| <code>\rl</code> | <code>&lt;Cmd&gt;luafile %&lt;CR&gt;</code> |
  | Run Lua file| <code>]%</code> | <code>&lt;Plug&gt;(matchup-]%)</code> |
+ | | <code>gS</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;28_Mapping(g:splitjoin_split_mapping, "sj#Split")&lt;CR&gt;</code> |
+ | | <code>gJ</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;28_Mapping(g:splitjoin_join_mapping, "sj#Join")&lt;CR&gt;</code> |
  | | <code>g%</code> | <code>&lt;Plug&gt;(matchup-g%)</code> |
- | | <code>gS</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;23_Mapping(g:splitjoin_split_mapping, "sj#Split")&lt;CR&gt;</code> |
- | | <code>gJ</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;23_Mapping(g:splitjoin_join_mapping, "sj#Join")&lt;CR&gt;</code> |
  | | <code>j</code> | <code>gj</code> |
  | Move down by visual line on wrapped lines| <code>k</code> | <code>gk</code> |
  | Move up by visual line on wrapped lines| <code>n</code> | <code>"Nn"[v:searchforward]</code> |
@@ -96,24 +96,13 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
  | | <code>z%</code> | <code>&lt;Plug&gt;(matchup-z%)</code> |
  | | <code>&lt;M-k&gt;</code> | <code>&lt;Cmd&gt;Sayonara&lt;CR&gt;</code> |
  | | <code>&lt;M-j&gt;</code> | <code>&lt;Cmd&gt;Sayonara!&lt;CR&gt;</code> |
- | | <code>&lt;2-LeftMouse&gt;</code> | <code>&lt;Plug&gt;(matchup-double-click)</code> |
- | | <code>&lt;Plug&gt;(matchup-reload)</code> | <code>:&lt;C-U&gt;MatchupReload&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-double-click)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#double_click()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-Z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-[%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-]%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-g%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 1)&lt;CR&gt;</code> |
- | | <code>&lt;SNR&gt;26_(wise)</code> | <code>empty(g:v_motion_force) ? 'v' : g:v_motion_force</code> |
- | | <code>&lt;Plug&gt;(matchup-hi-surround)</code> | <code>:&lt;C-U&gt;call matchup#matchparen#highlight_surrounding()&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;SplitjoinJoin</code> | <code>:&lt;C-U&gt;call sj#Join()&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;SplitjoinSplit</code> | <code>:&lt;C-U&gt;call sj#Split()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(EasyAlignOperator)</code> | <code>:set opfunc=&lt;SNR&gt;22_easy_align_op&lt;CR&gt;g@</code> |
+ | | <code>&lt;Plug&gt;(EasyAlignRepeat)</code> | <code>:call &lt;SNR&gt;22_easy_align_repeat()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(LiveEasyAlign)</code> | <code>:set opfunc=&lt;SNR&gt;22_live_easy_align_op&lt;CR&gt;g@</code> |
+ | | <code>&lt;Plug&gt;(EasyAlign)</code> | <code>:set opfunc=&lt;SNR&gt;22_easy_align_op&lt;CR&gt;g@</code> |
  | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(EasyAlignOperator)</code> | <code>:set opfunc=&lt;SNR&gt;17_easy_align_op&lt;CR&gt;g@</code> |
- | | <code>&lt;Plug&gt;(EasyAlignRepeat)</code> | <code>:call &lt;SNR&gt;17_easy_align_repeat()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(LiveEasyAlign)</code> | <code>:set opfunc=&lt;SNR&gt;17_live_easy_align_op&lt;CR&gt;g@</code> |
- | | <code>&lt;Plug&gt;(EasyAlign)</code> | <code>:set opfunc=&lt;SNR&gt;17_easy_align_op&lt;CR&gt;g@</code> |
  | | <code>&lt;Plug&gt;(textobj-sandwich-literal-query-a)</code> | <code>textobj#sandwich#query('n', 'a', {}, [])</code> |
  | | <code>&lt;Plug&gt;(textobj-sandwich-literal-query-i)</code> | <code>textobj#sandwich#query('n', 'i', {}, [])</code> |
  | | <code>&lt;Plug&gt;(textobj-sandwich-query-a)</code> | <code>textobj#sandwich#query('n', 'a')</code> |
@@ -140,6 +129,17 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
  | | <code>&lt;Plug&gt;(operator-sandwich-replace)</code> | <code>&lt;Plug&gt;(operator-sandwich-replace-pre)&lt;Plug&gt;(operator-sandwich-g@)</code> |
  | | <code>&lt;Plug&gt;(operator-sandwich-delete)</code> | <code>&lt;Plug&gt;(operator-sandwich-delete-pre)&lt;Plug&gt;(operator-sandwich-g@)</code> |
  | | <code>&lt;Plug&gt;(operator-sandwich-add)</code> | <code>&lt;Plug&gt;(operator-sandwich-add-pre)&lt;Plug&gt;(operator-sandwich-g@)</code> |
+ | | <code>&lt;2-LeftMouse&gt;</code> | <code>&lt;Plug&gt;(matchup-double-click)</code> |
+ | | <code>&lt;Plug&gt;(matchup-reload)</code> | <code>:&lt;C-U&gt;MatchupReload&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-double-click)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#double_click()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-Z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(0)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(0)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-[%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 0)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-]%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-g%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 0)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 1)&lt;CR&gt;</code> |
+ | | <code>&lt;SNR&gt;11_(wise)</code> | <code>empty(g:v_motion_force) ? 'v' : g:v_motion_force</code> |
+ | | <code>&lt;Plug&gt;(matchup-hi-surround)</code> | <code>:&lt;C-U&gt;call matchup#matchparen#highlight_surrounding()&lt;CR&gt;</code> |
  | | <code>&lt;F2&gt;</code> |  |
  | Toggle whitespace stripping| <code>&lt;M-l&gt;</code> | <code>&lt;Cmd&gt;bn&lt;CR&gt;</code> |
  | Go to next buffer| <code>&lt;M-h&gt;</code> | <code>&lt;Cmd&gt;bp&lt;CR&gt;</code> |
@@ -156,7 +156,7 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> gy</code> | <code>&lt;Cmd&gt;lua require'gitlinker'.get_buf_range_url('v')&lt;CR&gt;</code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(matchup-%)</code> |
@@ -206,29 +206,29 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
  | | <code>&lt;Plug&gt;(operator-sandwich-replace)</code> | <code>&lt;Plug&gt;(operator-sandwich-replace-pre)&lt;Plug&gt;(operator-sandwich-gv)&lt;Plug&gt;(operator-sandwich-g@)</code> |
  | | <code>&lt;Plug&gt;(operator-sandwich-delete)</code> | <code>&lt;Plug&gt;(operator-sandwich-delete-pre)&lt;Plug&gt;(operator-sandwich-gv)&lt;Plug&gt;(operator-sandwich-g@)</code> |
  | | <code>&lt;Plug&gt;(operator-sandwich-add)</code> | <code>&lt;Plug&gt;(operator-sandwich-add-pre)&lt;Plug&gt;(operator-sandwich-gv)&lt;Plug&gt;(operator-sandwich-g@)</code> |
+ | | <code>&lt;Plug&gt;(EasyAlignRepeat)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;27_repeat_in_visual()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(LiveEasyAlign)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;27_live_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(EasyAlign)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;27_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-a%)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(0, 1, 'delim_all')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-i%)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(1, 1, 'delim_all')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-Z%)</code> | <code>&lt;SNR&gt;22_(matchup-Z%)</code> |
- | | <code>&lt;SNR&gt;22_(matchup-Z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-z%)</code> | <code>&lt;SNR&gt;22_(matchup-z%)</code> |
- | | <code>&lt;SNR&gt;22_(matchup-z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-[%)</code> | <code>&lt;SNR&gt;22_(matchup-[%)</code> |
- | | <code>&lt;Plug&gt;(matchup-]%)</code> | <code>&lt;SNR&gt;22_(matchup-]%)</code> |
- | | <code>&lt;SNR&gt;22_(matchup-[%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 0)&lt;CR&gt;</code> |
- | | <code>&lt;SNR&gt;22_(matchup-]%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-g%)</code> | <code>&lt;SNR&gt;22_(matchup-g%)</code> |
- | | <code>&lt;SNR&gt;22_(matchup-g%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-%)</code> | <code>&lt;SNR&gt;22_(matchup-%)</code> |
- | | <code>&lt;SNR&gt;22_(matchup-%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(EasyAlignRepeat)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_repeat_in_visual()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(LiveEasyAlign)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_live_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(EasyAlign)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-Z%)</code> | <code>&lt;SNR&gt;23_(matchup-Z%)</code> |
+ | | <code>&lt;SNR&gt;23_(matchup-Z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-z%)</code> | <code>&lt;SNR&gt;23_(matchup-z%)</code> |
+ | | <code>&lt;SNR&gt;23_(matchup-z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-[%)</code> | <code>&lt;SNR&gt;23_(matchup-[%)</code> |
+ | | <code>&lt;Plug&gt;(matchup-]%)</code> | <code>&lt;SNR&gt;23_(matchup-]%)</code> |
+ | | <code>&lt;SNR&gt;23_(matchup-[%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 0)&lt;CR&gt;</code> |
+ | | <code>&lt;SNR&gt;23_(matchup-]%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-g%)</code> | <code>&lt;SNR&gt;23_(matchup-g%)</code> |
+ | | <code>&lt;SNR&gt;23_(matchup-g%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 0)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-%)</code> | <code>&lt;SNR&gt;23_(matchup-%)</code> |
+ | | <code>&lt;SNR&gt;23_(matchup-%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 1)&lt;CR&gt;</code> |
  | | <code>&lt;M-y&gt;</code> | <code>"+y</code> |
  | Yank selection to clipboard
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Ignore&gt;&lt;Plug&gt;(matchup-%)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(matchup-[%)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(matchup-]%)</code> |

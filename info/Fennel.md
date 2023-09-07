@@ -94,7 +94,7 @@ An opinionated configuration reminiscent of Doom-Emacs, written in Fennel
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> *</code> | <code>:execute 'noautocmd vimgrep /\V' . substitute(escape(expand("&lt;lt&gt;cword&gt;"), '\'), '\n', '\\n', 'g') . '/ **'&lt;CR&gt;</code> |
  | | <code> gy</code> | <code>&lt;Cmd&gt;lua require'gitlinker'.get_buf_range_url('n')&lt;CR&gt;</code> |
  | | <code> </code> | <code></code> |
@@ -199,7 +199,7 @@ An opinionated configuration reminiscent of Doom-Emacs, written in Fennel
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> *</code> | <code>:&lt;C-U&gt;call VisualStarSearchSet('/')&lt;CR&gt;:execute 'noautocmd vimgrep /' . @/ . '/ **'&lt;CR&gt;</code> |
  | | <code> gy</code> | <code>&lt;Cmd&gt;lua require'gitlinker'.get_buf_range_url('v')&lt;CR&gt;</code> |
  | | <code>#</code> | <code>:&lt;C-U&gt;call VisualStarSearchSet('?')&lt;CR&gt;?&lt;C-R&gt;=@/&lt;CR&gt;&lt;CR&gt;</code> |
@@ -256,7 +256,7 @@ An opinionated configuration reminiscent of Doom-Emacs, written in Fennel
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

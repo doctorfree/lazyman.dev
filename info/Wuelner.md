@@ -99,7 +99,7 @@ Wuelner's Neovim setup follows a well-defined philosophy governed by coherence a
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>Y</code> | <code>y$</code> |
  | Nvim builtin| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
@@ -109,7 +109,7 @@ Wuelner's Neovim setup follows a well-defined philosophy governed by coherence a
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
@@ -118,4 +118,4 @@ Wuelner's Neovim setup follows a well-defined philosophy governed by coherence a
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |

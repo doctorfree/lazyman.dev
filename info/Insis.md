@@ -102,7 +102,7 @@ An out-of-the-box Neovim IDE solution with simple development environment setup
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> tc</code> |  |
  | | <code> tb</code> |  |
  | | <code> ta</code> |  |
@@ -204,7 +204,7 @@ An out-of-the-box Neovim IDE solution with simple development environment setup
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>$</code> | <code>g_</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
@@ -241,7 +241,7 @@ An out-of-the-box Neovim IDE solution with simple development environment setup
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

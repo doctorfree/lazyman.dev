@@ -133,7 +133,7 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> P?</code> | <code>&lt;Cmd&gt;Lazy help&lt;CR&gt;</code> |
  | Help| <code> PD</code> | <code>&lt;Cmd&gt;Lazy debug&lt;CR&gt;</code> |
  | Debug| <code> PP</code> | <code>&lt;Cmd&gt;Lazy profile&lt;CR&gt;</code> |
@@ -146,30 +146,30 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
  | Update| <code> PI</code> | <code>&lt;Cmd&gt;Lazy install&lt;CR&gt;</code> |
  | Install| <code> PH</code> | <code>&lt;Cmd&gt;Lazy home&lt;CR&gt;</code> |
  | Home| <code> N</code> | <code>:lua require('neogen').generate()&lt;CR&gt;</code> |
- | Generate Doc String| <code> du</code> |  |
- | DapUI Toggle| <code> gg</code> |  |
- | Lazy Git| <code> U</code> |  |
- | UndotreeToggle| <code> GC</code> |  |
- | GodBolt Compiler| <code> GG</code> |  |
- | GodBolt| <code> Ht</code> |  |
+ | Generate Doc String| <code> zn</code> |  |
+ | TrueZen Narrow Visual| <code> za</code> |  |
+ | TrueZen Ataraxis| <code> zm</code> |  |
+ | TrueZen Minimalist| <code> zf</code> |  |
+ | TrueZen Focus| <code> zz</code> |  |
+ | Zen Mode| <code> Ht</code> |  |
  | Hex Toggle View| <code> Ha</code> |  |
  | Hex Assemble| <code> Hd</code> |  |
- | Hex Dump| <code> th</code> |  |
- | Help Tags| <code> tt</code> |  |
- | Todo List| <code> zt</code> |  |
- | Twilight| <code>  t</code> |  |
+ | Hex Dump| <code> GC</code> |  |
+ | GodBolt Compiler| <code> GG</code> |  |
+ | GodBolt| <code> du</code> |  |
+ | DapUI Toggle| <code>  t</code> |  |
  | Toggle CheckBox| <code>  a</code> |  |
  | Add CheckBox| <code>  b</code> |  |
  | Toggle Branch Workbench| <code>  p</code> |  |
- | Toggle Project Workbench| <code> zz</code> |  |
- | Zen Mode| <code> zm</code> |  |
- | TrueZen Minimalist| <code> zf</code> |  |
- | TrueZen Focus| <code> zn</code> |  |
- | TrueZen Narrow Visual| <code> za</code> |  |
- | TrueZen Ataraxis| <code> dt</code> |  |
+ | Toggle Project Workbench| <code> dt</code> |  |
  | Toggle BreakPoint| <code> hs</code> |  |
  | Toggle Harpoon Menu| <code> ha</code> |  |
- | Add file to Harpoon| <code> F</code> | <code>:lua toggleAutoformat()&lt;CR&gt;</code> |
+ | Add file to Harpoon| <code> U</code> |  |
+ | UndotreeToggle| <code> th</code> |  |
+ | Help Tags| <code> tt</code> |  |
+ | Todo List| <code> zt</code> |  |
+ | Twilight| <code> gg</code> |  |
+ | Lazy Git| <code> F</code> | <code>:lua toggleAutoformat()&lt;CR&gt;</code> |
  | Toggle Format on Save| <code> td</code> | <code>&lt;Cmd&gt;tabclose&lt;CR&gt;</code> |
  | Close Tab| <code> ta</code> | <code>&lt;Cmd&gt;tabnew&lt;CR&gt;</code> |
  | New Tab| <code> bW</code> | <code>&lt;Cmd&gt;noautocmd w&lt;CR&gt;</code> |
@@ -202,7 +202,7 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> p</code> | <code>"_dP</code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -213,4 +213,4 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |

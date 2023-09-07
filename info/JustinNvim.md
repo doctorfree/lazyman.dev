@@ -96,15 +96,33 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
-| <code> dT</code> |  |
- | Todo/Fix/Fixme (Trouble)| <code> dt</code> |  |
- | Todo (Trouble)| <code> sT</code> |  |
- | Todo/Fix/Fixme| <code> st</code> |  |
+| ----- | ----- | ----------- |
+| <code> st</code> |  |
  | Todo| <code> xT</code> |  |
  | Todo/Fix/Fixme (Trouble)| <code> xt</code> |  |
- | Todo (Trouble)| <code> un</code> |  |
- | Dismiss all Notifications| <code> fW</code> |  |
+ | Todo (Trouble)| <code> dT</code> |  |
+ | Todo/Fix/Fixme (Trouble)| <code> dt</code> |  |
+ | Todo (Trouble)| <code> sT</code> |  |
+ | Todo/Fix/Fixme| <code> sr</code> |  |
+ | Replace in files (Spectre)| <code> dX</code> |  |
+ | Workspace Diagnostics (Trouble)| <code> dL</code> |  |
+ | Location List (Trouble)| <code> dx</code> |  |
+ | Document Diagnostics (Trouble)| <code> xQ</code> |  |
+ | Quickfix List (Trouble)| <code> xL</code> |  |
+ | Location List (Trouble)| <code> xX</code> |  |
+ | Workspace Diagnostics (Trouble)| <code> xx</code> |  |
+ | Document Diagnostics (Trouble)| <code> dQ</code> |  |
+ | Quickfix List (Trouble)| <code> bc</code> |  |
+ | Close Buffer| <code> bC</code> |  |
+ | Close Buffer (Force)| <code> bp</code> |  |
+ | Toggle pin| <code> bP</code> |  |
+ | Delete non-pinned buffers| <code> un</code> |  |
+ | Dismiss all Notifications| <code> qd</code> |  |
+ | Don't Save Current Session| <code> ql</code> |  |
+ | Restore Last Session| <code> qs</code> |  |
+ | Restore Session| <code> cm</code> |  |
+ | Mason| <code> fp</code> |  |
+ | Find Plugin File| <code> fW</code> |  |
  | Word (cwd)| <code> fw</code> |  |
  | Word (root dir)| <code> fB</code> |  |
  | All Buffers| <code> ft</code> |  |
@@ -137,29 +155,11 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
  | Recent| <code> fF</code> |  |
  | Find Files (cwd)| <code> ff</code> |  |
  | Find Files (root dir)| <code> fb</code> |  |
- | Buffers| <code> sr</code> |  |
- | Replace in files (Spectre)| <code> bp</code> |  |
- | Toggle pin| <code> bP</code> |  |
- | Delete non-pinned buffers| <code> snd</code> |  |
+ | Buffers| <code> snd</code> |  |
  | Dismiss All| <code> sna</code> |  |
  | Noice All| <code> snh</code> |  |
  | Noice History| <code> snl</code> |  |
- | Noice Last Message| <code> cm</code> |  |
- | Mason| <code> bC</code> |  |
- | Close Buffer (Force)| <code> bc</code> |  |
- | Close Buffer| <code> dQ</code> |  |
- | Quickfix List (Trouble)| <code> dL</code> |  |
- | Location List (Trouble)| <code> dX</code> |  |
- | Workspace Diagnostics (Trouble)| <code> dx</code> |  |
- | Document Diagnostics (Trouble)| <code> xQ</code> |  |
- | Quickfix List (Trouble)| <code> xL</code> |  |
- | Location List (Trouble)| <code> xX</code> |  |
- | Workspace Diagnostics (Trouble)| <code> xx</code> |  |
- | Document Diagnostics (Trouble)| <code> fp</code> |  |
- | Projects| <code> qs</code> |  |
- | Restore Session| <code> qd</code> |  |
- | Don't Save Current Session| <code> ql</code> |  |
- | Restore Last Session| <code> e</code> |  |
+ | Noice Last Message| <code> e</code> |  |
  | Explorer| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>S</code> |  |
@@ -168,16 +168,16 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
  | | <code>[t</code> |  |
  | Previous todo comment| <code>[q</code> |  |
  | Previous trouble/quickfix item| <code>[[</code> |  |
- | Prev Reference| <code>\sa</code> |  |
+ | Prev Reference| <code>\c</code> |  |
+ | Close Buffer| <code>\j</code> |  |
+ | Toggle TreeSJ| <code>\sd</code> |  |
+ | Delete surrounding| <code>\sa</code> |  |
  | Add surrounding| <code>\sn</code> |  |
  | Update `MiniSurround.config.n_lines`| <code>\sr</code> |  |
  | Replace surrounding| <code>\sh</code> |  |
  | Highlight surrounding| <code>\sF</code> |  |
  | Find left surrounding| <code>\sf</code> |  |
- | Find right surrounding| <code>\sd</code> |  |
- | Delete surrounding| <code>\c</code> |  |
- | Close Buffer| <code>\j</code> |  |
- | Toggle TreeSJ| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+ | Find right surrounding| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
  | | <code>]t</code> |  |
  | Next todo comment| <code>]q</code> |  |
  | Next trouble/quickfix item| <code>]]</code> |  |
@@ -197,7 +197,7 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> sW</code> |  |
  | Selection (cwd)| <code> sw</code> |  |
  | Selection (root dir)| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -223,7 +223,7 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>R</code> |  |
  | Treesitter Search| <code>S</code> |  |

@@ -127,7 +127,7 @@ LunarVim config based on [Christian Chiarulli's](https://github.com/ChristianChi
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Tab&gt;</code> | <code>&lt;Cmd&gt;lua require('telescope').extensions.bookmark.filemarks(require('telescope.themes').get_dropdown{previewer = false, initial_mode='normal', prompt_title='Filemarks'})&lt;CR&gt;</code> |
  | | <code>#</code> | <code>#zz</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(matchup-%)</code> |
@@ -176,9 +176,6 @@ LunarVim config based on [Christian Chiarulli's](https://github.com/ChristianChi
  | | <code>z%</code> | <code>&lt;Plug&gt;(matchup-z%)</code> |
  | | <code>{</code> | <code>&lt;Cmd&gt;let [v:hlsearch, @/, v:searchforward]=smoothie#do("{")&lt;CR&gt;</code> |
  | | <code>}</code> | <code>&lt;Cmd&gt;let [v:hlsearch, @/, v:searchforward]=smoothie#do("}")&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(SmoothieBackwards)</code> | <code>&lt;Cmd&gt;call smoothie#backwards() &lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(SmoothieForwards)</code> | <code>&lt;Cmd&gt;call smoothie#forwards()  &lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(SmoothieUpwards)</code> | <code>&lt;Cmd&gt;call smoothie#upwards()   &lt;CR&gt;</code> |
@@ -193,6 +190,9 @@ LunarVim config based on [Christian Chiarulli's](https://github.com/ChristianChi
  | | <code>&lt;C-F&gt;</code> | <code>&lt;Cmd&gt;let [v:hlsearch, @/, v:searchforward]=smoothie#do("\&lt;lt&gt;C-F&gt;")&lt;CR&gt;</code> |
  | | <code>&lt;C-U&gt;</code> | <code>&lt;Cmd&gt;let [v:hlsearch, @/, v:searchforward]=smoothie#do("\&lt;lt&gt;C-U&gt;")&lt;CR&gt;</code> |
  | | <code>&lt;C-D&gt;</code> | <code>&lt;Cmd&gt;let [v:hlsearch, @/, v:searchforward]=smoothie#do("\&lt;lt&gt;C-D&gt;")&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
  | | <code>&lt;2-LeftMouse&gt;</code> | <code>&lt;Plug&gt;(matchup-double-click)</code> |
  | | <code>&lt;Plug&gt;(matchup-reload)</code> | <code>:&lt;C-U&gt;MatchupReload&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-double-click)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#double_click()&lt;CR&gt;</code> |
@@ -202,7 +202,7 @@ LunarVim config based on [Christian Chiarulli's](https://github.com/ChristianChi
  | | <code>&lt;Plug&gt;(matchup-]%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 1)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-g%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 0)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 1)&lt;CR&gt;</code> |
- | | <code>&lt;SNR&gt;16_(wise)</code> | <code>empty(g:v_motion_force) ? 'v' : g:v_motion_force</code> |
+ | | <code>&lt;SNR&gt;20_(wise)</code> | <code>empty(g:v_motion_force) ? 'v' : g:v_motion_force</code> |
  | | <code>&lt;Plug&gt;(matchup-hi-surround)</code> | <code>:&lt;C-U&gt;call matchup#matchparen#highlight_surrounding()&lt;CR&gt;</code> |
  | | <code>&lt;M-3&gt;</code> |  |
  | Float Terminal| <code>&lt;M-2&gt;</code> |  |
@@ -236,22 +236,22 @@ LunarVim config based on [Christian Chiarulli's](https://github.com/ChristianChi
  | | <code>&lt;M-h&gt;</code> | <code>&lt;C-W&gt;h</code> |
  | | <code>&lt;C-I&gt;</code> | <code>&lt;Tab&gt;</code> |
  | | <code>&lt;C-Space&gt;</code> | <code>&lt;Cmd&gt;WhichKey \ &lt;CR&gt;</code> |
+ | | <code>&lt;M-j&gt;</code> | <code>&lt;C-W&gt;j</code> |
  | | <code>&lt;C-Down&gt;</code> | <code>:resize +2&lt;CR&gt;</code> |
- | | <code>&lt;C-K&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;C-U&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;C-Left&gt;</code> | <code>:vertical resize -2&lt;CR&gt;</code> |
- | | <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> |
- | | <code>&lt;C-Q&gt;</code> | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
  | | <code>&lt;M-k&gt;</code> | <code>&lt;C-W&gt;k</code> |
  | | <code>&lt;C-Up&gt;</code> | <code>:resize -2&lt;CR&gt;</code> |
- | | <code>&lt;M-j&gt;</code> | <code>&lt;C-W&gt;j</code> |
- | | <code>&lt;C-Right&gt;</code> | <code>:vertical resize +2&lt;CR&gt;</code> |
+ | | <code>&lt;C-K&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;C-U&gt;") &lt;CR&gt;</code> |
+ | | <code>&lt;C-Q&gt;</code> | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
  | | <code>&lt;C-J&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;C-D&gt;") &lt;CR&gt;</code> |
+ | | <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> |
+ | | <code>&lt;C-Right&gt;</code> | <code>:vertical resize +2&lt;CR&gt;</code> |
+ | | <code>&lt;C-Left&gt;</code> | <code>:vertical resize -2&lt;CR&gt;</code> |
  | | <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |
  | 
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(matchup-%)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -292,18 +292,18 @@ LunarVim config based on [Christian Chiarulli's](https://github.com/ChristianChi
  | | <code>&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_visual"&lt;CR&gt;g@gv</code> |
  | | <code>&lt;Plug&gt;(matchup-a%)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(0, 1, 'delim_all')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-i%)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(1, 1, 'delim_all')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-Z%)</code> | <code>&lt;SNR&gt;35_(matchup-Z%)</code> |
- | | <code>&lt;SNR&gt;35_(matchup-Z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-z%)</code> | <code>&lt;SNR&gt;35_(matchup-z%)</code> |
- | | <code>&lt;SNR&gt;35_(matchup-z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-[%)</code> | <code>&lt;SNR&gt;35_(matchup-[%)</code> |
- | | <code>&lt;Plug&gt;(matchup-]%)</code> | <code>&lt;SNR&gt;35_(matchup-]%)</code> |
- | | <code>&lt;SNR&gt;35_(matchup-[%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 0)&lt;CR&gt;</code> |
- | | <code>&lt;SNR&gt;35_(matchup-]%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-g%)</code> | <code>&lt;SNR&gt;35_(matchup-g%)</code> |
- | | <code>&lt;SNR&gt;35_(matchup-g%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(matchup-%)</code> | <code>&lt;SNR&gt;35_(matchup-%)</code> |
- | | <code>&lt;SNR&gt;35_(matchup-%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-Z%)</code> | <code>&lt;SNR&gt;30_(matchup-Z%)</code> |
+ | | <code>&lt;SNR&gt;30_(matchup-Z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-z%)</code> | <code>&lt;SNR&gt;30_(matchup-z%)</code> |
+ | | <code>&lt;SNR&gt;30_(matchup-z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-[%)</code> | <code>&lt;SNR&gt;30_(matchup-[%)</code> |
+ | | <code>&lt;Plug&gt;(matchup-]%)</code> | <code>&lt;SNR&gt;30_(matchup-]%)</code> |
+ | | <code>&lt;SNR&gt;30_(matchup-[%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 0)&lt;CR&gt;</code> |
+ | | <code>&lt;SNR&gt;30_(matchup-]%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-g%)</code> | <code>&lt;SNR&gt;30_(matchup-g%)</code> |
+ | | <code>&lt;SNR&gt;30_(matchup-g%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 0)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(matchup-%)</code> | <code>&lt;SNR&gt;30_(matchup-%)</code> |
+ | | <code>&lt;SNR&gt;30_(matchup-%)</code> | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 1)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(SmoothieBackwards)</code> | <code>&lt;Cmd&gt;call smoothie#backwards() &lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(SmoothieForwards)</code> | <code>&lt;Cmd&gt;call smoothie#forwards()  &lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(SmoothieUpwards)</code> | <code>&lt;Cmd&gt;call smoothie#upwards()   &lt;CR&gt;</code> |
@@ -331,7 +331,7 @@ LunarVim config based on [Christian Chiarulli's](https://github.com/ChristianChi
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Ignore&gt;&lt;Plug&gt;(matchup-%)</code> |
  | | <code>F</code> |  |
  | | <code>T</code> |  |
@@ -343,6 +343,10 @@ LunarVim config based on [Christian Chiarulli's](https://github.com/ChristianChi
  | | <code>i%</code> | <code>&lt;Plug&gt;(matchup-i%)</code> |
  | | <code>t</code> |  |
  | | <code>z%</code> | <code>&lt;Plug&gt;(matchup-z%)</code> |
+ | | <code>&lt;Plug&gt;(SmoothieBackwards)</code> | <code>&lt;Cmd&gt;call smoothie#backwards() &lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(SmoothieForwards)</code> | <code>&lt;Cmd&gt;call smoothie#forwards()  &lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(SmoothieUpwards)</code> | <code>&lt;Cmd&gt;call smoothie#upwards()   &lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(SmoothieDownwards)</code> | <code>&lt;Cmd&gt;call smoothie#downwards() &lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-a%)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(0, 0, 'delim_all')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-i%)</code> | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(1, 0, 'delim_all')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-Z%)</code> | <code>:&lt;C-U&gt;call matchup#motion#op('Z%')&lt;CR&gt;</code> |
@@ -351,8 +355,4 @@ LunarVim config based on [Christian Chiarulli's](https://github.com/ChristianChi
  | | <code>&lt;Plug&gt;(matchup-]%)</code> | <code>:&lt;C-U&gt;call matchup#motion#op(']%')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-g%)</code> | <code>:&lt;C-U&gt;call matchup#motion#op('g%')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(matchup-%)</code> | <code>:&lt;C-U&gt;call matchup#motion#op('%')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieBackwards)</code> | <code>&lt;Cmd&gt;call smoothie#backwards() &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieForwards)</code> | <code>&lt;Cmd&gt;call smoothie#forwards()  &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieUpwards)</code> | <code>&lt;Cmd&gt;call smoothie#upwards()   &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieDownwards)</code> | <code>&lt;Cmd&gt;call smoothie#downwards() &lt;CR&gt;</code> |
  | 

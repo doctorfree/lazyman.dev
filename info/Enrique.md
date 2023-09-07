@@ -27,7 +27,7 @@ Personal Neovim configuration of Enrique Mejidas
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> r#</code> |  |
  | | <code> #</code> |  |
  | | <code> g?</code> | <code>:map  g&lt;CR&gt;</code> |
@@ -378,7 +378,7 @@ Personal Neovim configuration of Enrique Mejidas
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> #</code> | <code>y:match MatchGroup /&lt;C-R&gt;"/&lt;CR&gt;</code> |
  | | <code> y</code> | <code>"+y</code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -445,7 +445,7 @@ Personal Neovim configuration of Enrique Mejidas
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[n</code> | <code>&lt;Plug&gt;(unimpaired-context-previous)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |

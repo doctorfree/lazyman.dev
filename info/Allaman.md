@@ -116,7 +116,7 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Tab&gt;</code> | <code>&lt;Cmd&gt;bnext&lt;CR&gt;</code> |
  | Next buffer| <code>&lt;Esc&gt;</code> | <code>&lt;Cmd&gt;noh&lt;CR&gt;&lt;Esc&gt;</code> |
  | Clear hlsearch and ESC| <code> qt</code> |  |
@@ -139,11 +139,17 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
  | New file| <code> &lt;Tab&gt;</code> | <code>&lt;Cmd&gt;e#&lt;CR&gt;</code> |
  | Previous Buffer| <code> bd</code> | <code>&lt;Cmd&gt;Bdelete&lt;CR&gt;</code> |
  | Close buffer| <code> bD</code> | <code>&lt;Cmd&gt;%bd&#124;e#|bd#&lt;CR&gt;</code> |
- | Close all but the current buffer| <code> fp</code> |  |
- | Toggle Filetree| <code> tO</code> |  |
- | Toggle SymbolsOutline| <code> mt</code> |  |
- | Telescope| <code> bb</code> |  |
- | Bufferlist| <code> sf</code> |  |
+ | Close all but the current buffer| <code> fF</code> |  |
+ | Open file (ignore git)| <code> fr</code> |  |
+ | Recent files| <code> mm</code> |  |
+ | Run make| <code> bb</code> |  |
+ | Bufferlist| <code> ff</code> |  |
+ | Open file| <code> fz</code> |  |
+ | Zoxide| <code> fb</code> |  |
+ | Filebrowser| <code> gm</code> |  |
+ | Commits| <code> gg</code> |  |
+ | Status| <code> gh</code> |  |
+ | Branches| <code> sf</code> |  |
  | Word search| <code> s;</code> |  |
  | Command history| <code> s:</code> |  |
  | Search History| <code> sS</code> |  |
@@ -156,20 +162,14 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
  | Headings| <code> s?</code> |  |
  | Help| <code> st</code> |  |
  | Strings| <code> sc</code> |  |
- | Commands| <code> mm</code> |  |
- | Run make| <code> fr</code> |  |
- | Recent files| <code> fF</code> |  |
- | Open file (ignore git)| <code> ff</code> |  |
- | Open file| <code> fz</code> |  |
- | Zoxide| <code> fb</code> |  |
- | Filebrowser| <code> gm</code> |  |
- | Commits| <code> gg</code> |  |
- | Status| <code> gh</code> |  |
- | Branches| <code> ga</code> |  |
+ | Commands| <code> mt</code> |  |
+ | Telescope| <code> tO</code> |  |
+ | Toggle SymbolsOutline| <code> ga</code> |  |
  | Advanced Git Search| <code> Rw</code> |  |
  | Search current word| <code> Rr</code> |  |
  | Toggle search and replace| <code> Rf</code> |  |
- | Search on current file| <code> ml</code> | <code>&lt;Cmd&gt;Lazy&lt;CR&gt;</code> |
+ | Search on current file| <code> fp</code> |  |
+ | Toggle Filetree| <code> ml</code> | <code>&lt;Cmd&gt;Lazy&lt;CR&gt;</code> |
  | | <code> </code> | <code></code> |
  | | <code>#</code> | <code>:lua require'starlite'.hash()&lt;CR&gt;</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
@@ -195,26 +195,26 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
  | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;fugitive:</code> | <code></code> |
+ | | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(git-conflict-prev-conflict)</code> | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
  | Git Conflict: Previous Conflict| <code>&lt;Plug&gt;(git-conflict-next-conflict)</code> | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
  | Git Conflict: Next Conflict| <code>&lt;Plug&gt;(git-conflict-theirs)</code> | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> |
  | Git Conflict: Choose Theirs| <code>&lt;Plug&gt;(git-conflict-none)</code> | <code>&lt;Cmd&gt;GitConflictChooseNone&lt;CR&gt;</code> |
  | Git Conflict: Choose None| <code>&lt;Plug&gt;(git-conflict-both)</code> | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
  | Git Conflict: Choose Both| <code>&lt;Plug&gt;(git-conflict-ours)</code> | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
- | Git Conflict: Choose Ours| <code>&lt;C-J&gt;</code> | <code>&lt;Cmd&gt;lua require('Navigator').down()&lt;CR&gt;</code> |
+ | Git Conflict: Choose Ours| <code>&lt;C-N&gt;</code> | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
+ | Toggle Terminal| <code>&lt;C-J&gt;</code> | <code>&lt;Cmd&gt;lua require('Navigator').down()&lt;CR&gt;</code> |
  | | <code>&lt;C-K&gt;</code> | <code>&lt;Cmd&gt;lua require('Navigator').up()&lt;CR&gt;</code> |
  | | <code>&lt;C-H&gt;</code> | <code>&lt;Cmd&gt;lua require('Navigator').left()&lt;CR&gt;</code> |
- | | <code>&lt;C-N&gt;</code> | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
- | Toggle Terminal| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;fugitive:</code> | <code></code> |
- | | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
  | | <code>&lt;C-F&gt;</code> |  |
  | Search in buffer| <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;lua require('Navigator').right()&lt;CR&gt;</code> |
  | 
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> sr</code> | <code>:%s/</code> |
  | Buffer search and replace| <code> Rw</code> |  |
  | Search current word| <code> </code> | <code></code> |
@@ -243,7 +243,7 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>S</code> |  |
  | Flash Treesitter| <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |

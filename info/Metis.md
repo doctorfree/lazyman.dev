@@ -50,7 +50,7 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Tab&gt;</code> |  |
  | | <code> ls</code> | <code>:LspStart&lt;CR&gt;</code> |
  | | <code> lr</code> | <code>:LspRestart&lt;CR&gt;</code> |
@@ -68,12 +68,12 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
  | | <code> pi</code> |  |
  | | <code> ph</code> |  |
  | | <code> d</code> |  |
- | | <code> e</code> |  |
+ | | <code> b</code> |  |
+ | | <code> fw</code> |  |
  | | <code> ff</code> |  |
  | | <code> ft</code> |  |
  | | <code> fr</code> |  |
- | | <code> fw</code> |  |
- | | <code> b</code> |  |
+ | | <code> e</code> |  |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>J</code> | <code>jzz</code> |
  | | <code>K</code> | <code>kzz</code> |
@@ -85,16 +85,16 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
  | | <code>&lt;C-K&gt;</code> | <code>&lt;C-W&gt;k</code> |
  | | <code>&lt;C-J&gt;</code> | <code>&lt;C-W&gt;j</code> |
  | | <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> |
+ | | <code>&lt;S-Tab&gt;</code> |  |
  | | <code>&lt;M-H&gt;</code> |  |
  | | <code>&lt;M-h&gt;</code> |  |
  | | <code>&lt;M-t&gt;</code> |  |
- | | <code>&lt;S-Tab&gt;</code> |  |
  | | <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |
  | 
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>J</code> | <code>:m '&gt;+1&lt;CR&gt;gv=gv</code> |
@@ -104,4 +104,4 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |

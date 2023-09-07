@@ -63,7 +63,7 @@ Oriented toward Python development
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Esc&gt;</code> | <code>:noh&lt;CR&gt;</code> |
  | | <code> u</code> |  |
  | | <code> g</code> |  |
@@ -143,11 +143,11 @@ Oriented toward Python development
  | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
- | | <code>&lt;C-K&gt;</code> | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateUp()&lt;CR&gt;</code> |
- | | <code>&lt;C-Bslash&gt;</code> | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateLastActive()&lt;CR&gt;</code> |
- | | <code>&lt;C-J&gt;</code> | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateDown()&lt;CR&gt;</code> |
  | | <code>&lt;C-Space&gt;</code> | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateNext()&lt;CR&gt;</code> |
  | | <code>&lt;C-H&gt;</code> | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateLeft()&lt;CR&gt;</code> |
+ | | <code>&lt;C-Bslash&gt;</code> | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateLastActive()&lt;CR&gt;</code> |
+ | | <code>&lt;C-K&gt;</code> | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateUp()&lt;CR&gt;</code> |
+ | | <code>&lt;C-J&gt;</code> | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateDown()&lt;CR&gt;</code> |
  | | <code>&lt;C-N&gt;</code> | <code>:NvimTreeToggle&lt;CR&gt;</code> |
  | | <code>&lt;M-l&gt;</code> | <code>:vertical resize +2&lt;CR&gt;</code> |
  | | <code>&lt;M-h&gt;</code> | <code>:vertical resize -2&lt;CR&gt;</code> |
@@ -158,7 +158,7 @@ Oriented toward Python development
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
  | | <code>'go</code> | <code>:&lt;C-U&gt; lua require('git.browse').open(true)&lt;CR&gt;</code> |
@@ -191,7 +191,7 @@ Oriented toward Python development
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

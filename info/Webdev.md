@@ -105,12 +105,10 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
- | Nvim builtin| <code>,M</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
- | Mason Menu| <code>,cm</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
- | Mason| <code>,tf</code> |  |
+ | Nvim builtin| <code>,tf</code> |  |
  | Move Float| <code>,tH</code> |  |
  | Move Bottom Right New| <code>,th</code> |  |
  | Move Below Right New| <code>,tL</code> |  |
@@ -122,36 +120,23 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
  | New Terminal Run| <code>,tr</code> |  |
  | Terminal Run| <code>,tO</code> |  |
  | New Terminal Toggle| <code>,to</code> |  |
- | Terminal Toggle| <code>,ut</code> |  |
- | Toggle Transparency| <code>,E</code> |  |
- | Explorer NeoTree (cwd)| <code>,e</code> |  |
- | Explorer NeoTree (root dir)| <code>,fE</code> |  |
- | Explorer NeoTree (cwd)| <code>,fe</code> |  |
- | Explorer NeoTree (root dir)| <code>,tt</code> |  |
- | Toggle Treesitter Join| <code>,ts</code> |  |
- | Terminal Send| <code>,tj</code> |  |
- | Treesitter Join| <code>,fp</code> |  |
- | Projects| <code>,bd</code> |  |
- | Delete Buffer| <code>,bD</code> |  |
- | Delete Buffer (Force)| <code>,bP</code> |  |
- | Delete non-pinned buffers| <code>,bp</code> |  |
- | Toggle pin| <code>,snl</code> |  |
- | Noice Last Message| <code>,snd</code> |  |
- | Dismiss All| <code>,sna</code> |  |
- | Noice All| <code>,snh</code> |  |
- | Noice History| <code>,xt</code> |  |
- | Todo (Trouble)| <code>,sT</code> |  |
- | Todo/Fix/Fixme| <code>,st</code> |  |
- | Todo| <code>,xT</code> |  |
- | Todo/Fix/Fixme (Trouble)| <code>,xQ</code> |  |
- | Quickfix List (Trouble)| <code>,xL</code> |  |
- | Location List (Trouble)| <code>,xX</code> |  |
- | Workspace Diagnostics (Trouble)| <code>,xx</code> |  |
- | Document Diagnostics (Trouble)| <code>,qd</code> |  |
- | Don't Save Current Session| <code>,ql</code> |  |
- | Restore Last Session| <code>,qs</code> |  |
- | Restore Session| <code>,d</code> |  |
- | JsDoc| <code>,sH</code> |  |
+ | Terminal Toggle| <code>,M</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
+ | Mason Menu| <code>,cm</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
+ | Mason| <code>,ut</code> |  |
+ | Toggle Transparency| <code>,fp</code> |  |
+ | Projects| <code>,d</code> |  |
+ | JsDoc| <code>,/</code> |  |
+ | Grep (root dir)| <code>,sS</code> |  |
+ | Goto Symbol (Workspace)| <code>,ss</code> |  |
+ | Goto Symbol| <code>,uC</code> |  |
+ | Colorscheme with preview| <code>,sW</code> |  |
+ | Word (cwd)| <code>,sw</code> |  |
+ | Word (root dir)| <code>,sR</code> |  |
+ | Resume| <code>,so</code> |  |
+ | Options| <code>,sm</code> |  |
+ | Jump to Mark| <code>,sM</code> |  |
+ | Man Pages| <code>,sk</code> |  |
+ | Key Maps| <code>,sH</code> |  |
  | Search Highlight Groups| <code>,sh</code> |  |
  | Help Pages| <code>,sG</code> |  |
  | Grep (cwd)| <code>,sg</code> |  |
@@ -168,22 +153,37 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
  | Recent (cwd)| <code>,fr</code> |  |
  | Recent| <code>,fF</code> |  |
  | Find Files (cwd)| <code>,ff</code> |  |
- | Find Files (root dir)| <code>,so</code> |  |
- | Options| <code>,fb</code> |  |
+ | Find Files (root dir)| <code>,fb</code> |  |
  | Buffers| <code>,:</code> |  |
- | Command History| <code>,/</code> |  |
- | Grep (root dir)| <code>,,</code> |  |
- | Switch Buffer| <code>,sS</code> |  |
- | Goto Symbol (Workspace)| <code>,ss</code> |  |
- | Goto Symbol| <code>,uC</code> |  |
- | Colorscheme with preview| <code>,sW</code> |  |
- | Word (cwd)| <code>,sw</code> |  |
- | Word (root dir)| <code>,sR</code> |  |
- | Resume| <code>, </code> |  |
- | Find Files (root dir)| <code>,sm</code> |  |
- | Jump to Mark| <code>,sM</code> |  |
- | Man Pages| <code>,sk</code> |  |
- | Key Maps| <code>,z</code> |  |
+ | Command History| <code>, </code> |  |
+ | Find Files (root dir)| <code>,,</code> |  |
+ | Switch Buffer| <code>,bp</code> |  |
+ | Toggle pin| <code>,bP</code> |  |
+ | Delete non-pinned buffers| <code>,fE</code> |  |
+ | Explorer NeoTree (cwd)| <code>,fe</code> |  |
+ | Explorer NeoTree (root dir)| <code>,E</code> |  |
+ | Explorer NeoTree (cwd)| <code>,e</code> |  |
+ | Explorer NeoTree (root dir)| <code>,ts</code> |  |
+ | Terminal Send| <code>,tj</code> |  |
+ | Treesitter Join| <code>,tt</code> |  |
+ | Toggle Treesitter Join| <code>,snd</code> |  |
+ | Dismiss All| <code>,sna</code> |  |
+ | Noice All| <code>,snh</code> |  |
+ | Noice History| <code>,snl</code> |  |
+ | Noice Last Message| <code>,sT</code> |  |
+ | Todo/Fix/Fixme| <code>,xT</code> |  |
+ | Todo/Fix/Fixme (Trouble)| <code>,xt</code> |  |
+ | Todo (Trouble)| <code>,st</code> |  |
+ | Todo| <code>,xX</code> |  |
+ | Workspace Diagnostics (Trouble)| <code>,xx</code> |  |
+ | Document Diagnostics (Trouble)| <code>,xQ</code> |  |
+ | Quickfix List (Trouble)| <code>,xL</code> |  |
+ | Location List (Trouble)| <code>,qd</code> |  |
+ | Don't Save Current Session| <code>,ql</code> |  |
+ | Restore Last Session| <code>,qs</code> |  |
+ | Restore Session| <code>,bd</code> |  |
+ | Delete Buffer| <code>,bD</code> |  |
+ | Delete Buffer (Force)| <code>,z</code> |  |
  | Toggle zen mode| <code>S</code> |  |
  | Flash Treesitter| <code>Y</code> | <code>y$</code> |
  | Nvim builtin| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
@@ -195,14 +195,14 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
  | Next todo comment| <code>]q</code> |  |
  | Next trouble/quickfix item| <code>]]</code> |  |
  | Next Reference| <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
- | | <code>gzr</code> |  |
- | Replace surrounding| <code>gzh</code> |  |
- | Highlight surrounding| <code>gzd</code> |  |
- | Delete surrounding| <code>gzn</code> |  |
- | Update `MiniSurround.config.n_lines`| <code>gzF</code> |  |
+ | | <code>gza</code> |  |
+ | Add surrounding| <code>gzF</code> |  |
  | Find left surrounding| <code>gzf</code> |  |
- | Find right surrounding| <code>gza</code> |  |
- | Add surrounding| <code>s</code> |  |
+ | Find right surrounding| <code>gzh</code> |  |
+ | Highlight surrounding| <code>gzr</code> |  |
+ | Replace surrounding| <code>gzn</code> |  |
+ | Update `MiniSurround.config.n_lines`| <code>gzd</code> |  |
+ | Delete surrounding| <code>s</code> |  |
  | Flash| <code>zM</code> |  |
  | | <code>zR</code> |  |
  | | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
@@ -217,7 +217,7 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -242,7 +242,7 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>R</code> |  |
  | Treesitter Search| <code>S</code> |  |

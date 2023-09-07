@@ -72,13 +72,15 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;CR&gt;</code> | <code>&lt;Cmd&gt;FineCmdline&lt;CR&gt;</code> |
  | | <code> m</code> | <code>&lt;Cmd&gt;BufferNavMark&lt;CR&gt;</code> |
- | | <code> ui</code> | <code>&lt;Cmd&gt;IndentBlanklineToggle&lt;CR&gt;</code> |
  | | <code> uf</code> | <code>&lt;Cmd&gt;CtrlSFToggle&lt;CR&gt;</code> |
  | | <code> fw</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;exe 'Find' expand('&lt;lt&gt;cword&gt;')&lt;CR&gt;</code> |
  | | <code> F</code> | <code>&lt;Cmd&gt;FineCmdline Find &lt;CR&gt;</code> |
+ | | <code> s</code> | <code>&lt;Cmd&gt;SearchBoxClear&lt;CR&gt;</code> |
+ | | <code> da</code> |  |
+ | | <code> dd</code> |  |
  | | <code> bb</code> | <code>&lt;Cmd&gt;Telescope buffers&lt;CR&gt;</code> |
  | | <code> fh</code> | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
  | | <code> fb</code> | <code>&lt;Cmd&gt;Telescope current_buffer_fuzzy_find&lt;CR&gt;</code> |
@@ -86,12 +88,10 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
  | | <code> ff</code> | <code>&lt;Cmd&gt;Telescope find_files&lt;CR&gt;</code> |
  | | <code> ?</code> | <code>&lt;Cmd&gt;Telescope keymaps&lt;CR&gt;</code> |
  | | <code> fg</code> | <code>&lt;Cmd&gt;Telescope live_grep&lt;CR&gt;</code> |
- | | <code> s</code> | <code>&lt;Cmd&gt;SearchBoxClear&lt;CR&gt;</code> |
- | | <code> da</code> |  |
- | | <code> dd</code> |  |
- | | <code> g</code> |  |
+ | | <code> ui</code> | <code>&lt;Cmd&gt;IndentBlanklineToggle&lt;CR&gt;</code> |
  | | <code> bc</code> |  |
  | | <code> uz</code> |  |
+ | | <code> g</code> |  |
  | | <code> j</code> | <code>&lt;Cmd&gt;let @/='\&lt;lt&gt;'.expand('&lt;lt&gt;cword&gt;').'\&gt;'&lt;CR&gt;"_ciw</code> |
  | | <code> ur</code> | <code>&lt;Cmd&gt;set invrelativenumber&lt;CR&gt;</code> |
  | | <code> un</code> | <code>&lt;Cmd&gt;set invnumber&lt;CR&gt;</code> |
@@ -131,8 +131,8 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
  | | <code>X</code> | <code>"_d</code> |
  | | <code>Y</code> | <code>y$</code> |
  | Nvim builtin| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
- | | <code>[q</code> |  |
  | | <code>[g</code> |  |
+ | | <code>[q</code> |  |
  | | <code>[t</code> | <code>&lt;Cmd&gt;tabprevious&lt;CR&gt;</code> |
  | | <code>[b</code> | <code>&lt;Cmd&gt;bprevious&lt;CR&gt;</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
@@ -141,8 +141,8 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
  | | <code>]t</code> | <code>&lt;Cmd&gt;tabnext&lt;CR&gt;</code> |
  | | <code>]b</code> | <code>&lt;Cmd&gt;bnext&lt;CR&gt;</code> |
  | | <code>b</code> |  |
- | Jump to line above cursor| <code>cr</code> |  |
- | | <code>cs</code> |  |
+ | Jump to line above cursor| <code>cs</code> |  |
+ | | <code>cr</code> |  |
  | | <code>c</code> | <code>"_c</code> |
  | | <code>ds</code> |  |
  | | <code>e</code> |  |
@@ -152,8 +152,8 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
  | | <code>gH</code> | <code>B</code> |
  | | <code>gB</code> |  |
  | | <code>gb</code> |  |
- | | <code>gcc</code> |  |
  | | <code>gc</code> |  |
+ | | <code>gcc</code> |  |
  | | <code>gp</code> | <code>"+p</code> |
  | | <code>gy</code> | <code>"+y</code> |
  | | <code>n</code> | <code>nzzzv</code> |
@@ -186,7 +186,7 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;CR&gt;</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;FineCmdline '&lt;lt&gt;,'&gt;&lt;CR&gt;</code> |
  | | <code> F</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;GetSelection&lt;CR&gt;&lt;Cmd&gt;exe 'Find' getreg('/')&lt;CR&gt;</code> |
  | | <code> j</code> | <code>y&lt;Cmd&gt;let @/=substitute(escape(@", '/'), '\n', '\\n', 'g')&lt;CR&gt;"_cgn</code> |
@@ -247,7 +247,7 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> l</code> | <code>g_</code> |
  | | <code> h</code> | <code>^</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |

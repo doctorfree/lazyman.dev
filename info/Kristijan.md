@@ -86,7 +86,7 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>#N</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>*</code> | <code>*N</code> |
@@ -104,7 +104,13 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
  | | <code>,s</code> | <code>:w&lt;CR&gt;</code> |
  | | <code>,F</code> | <code>:call v:lua.kris.search.run(expand("&lt;lt&gt;cword&gt;"))&lt;CR&gt;</code> |
  | | <code>,f</code> | <code>:call v:lua.kris.search.run("")&lt;CR&gt;</code> |
- | | <code>,yg</code> |  |
+ | | <code>,df</code> | <code>:Git push --force-with-lease&lt;CR&gt;</code> |
+ | | <code>,dp</code> | <code>:Git push&lt;CR&gt;</code> |
+ | | <code>,da</code> |  |
+ | | <code>,dc</code> |  |
+ | | <code>,dh</code> | <code>:DiffviewFileHistory %&lt;CR&gt;</code> |
+ | | <code>,do</code> |  |
+ | | <code>,G</code> | <code>:vert G&lt;CR&gt;</code> |
  | | <code>,lt</code> |  |
  | | <code>,lT</code> |  |
  | | <code>,g</code> |  |
@@ -113,16 +119,10 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
  | | <code>,b</code> |  |
  | | <code>,hf</code> | <code>:NvimTreeToggle&lt;CR&gt;</code> |
  | | <code>,n</code> | <code>:NvimTreeToggle&lt;CR&gt;</code> |
- | | <code>,df</code> | <code>:Git push --force-with-lease&lt;CR&gt;</code> |
- | | <code>,dp</code> | <code>:Git push&lt;CR&gt;</code> |
- | | <code>,da</code> |  |
- | | <code>,dc</code> |  |
- | | <code>,dh</code> | <code>:DiffviewFileHistory %&lt;CR&gt;</code> |
- | | <code>,do</code> |  |
- | | <code>,G</code> | <code>:vert G&lt;CR&gt;</code> |
+ | | <code>,yg</code> |  |
  | | <code>,c</code> |  |
- | | <code>,oc</code> |  |
  | | <code>,oa</code> |  |
+ | | <code>,oc</code> |  |
  | | <code>F</code> |  |
  | | <code>N</code> | <code>Nzz</code> |
  | | <code>Q</code> | <code>&lt;C-Z&gt;</code> |
@@ -174,7 +174,7 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Tab&gt;</code> | <code>&gt;gv</code> |
  | | <code>#</code> | <code>"yy?\V&lt;C-R&gt;=escape(getreg('y'), '\/?')&lt;CR&gt;&lt;CR&gt;N</code> |
  | | <code>*</code> | <code>"yy/\V&lt;C-R&gt;=escape(getreg('y'), '\/?')&lt;CR&gt;&lt;CR&gt;N</code> |
@@ -225,7 +225,7 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>F</code> |  |
  | | <code>Q</code> | <code>&lt;C-Z&gt;</code> |
  | | <code>T</code> |  |

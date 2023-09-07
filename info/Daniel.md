@@ -108,7 +108,7 @@ post_style: page
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>Q</code> | <code></code> |
@@ -123,8 +123,8 @@ post_style: page
  | | <code>ds</code> | <code>&lt;Plug&gt;Dsurround</code> |
  | | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
  | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
- | | <code>gb</code> |  |
  | | <code>gc</code> |  |
+ | | <code>gb</code> |  |
  | | <code>ySS</code> | <code>&lt;Plug&gt;YSsurround</code> |
  | | <code>ySs</code> | <code>&lt;Plug&gt;YSsurround</code> |
  | | <code>yss</code> | <code>&lt;Plug&gt;Yssurround</code> |
@@ -135,6 +135,14 @@ post_style: page
  | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;YSurround</code> | <code>&lt;SNR&gt;25_opfunc2('setup')</code> |
+ | | <code>&lt;Plug&gt;Ysurround</code> | <code>&lt;SNR&gt;25_opfunc('setup')</code> |
+ | | <code>&lt;Plug&gt;YSsurround</code> | <code>&lt;SNR&gt;25_opfunc2('setup').'_'</code> |
+ | | <code>&lt;Plug&gt;Yssurround</code> | <code>'^'.v:count1.&lt;SNR&gt;25_opfunc('setup').'g_'</code> |
+ | | <code>&lt;Plug&gt;CSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_changesurround(1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;Csurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_changesurround()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;Dsurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_dosurround(&lt;SNR&gt;25_inputtarget())&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;SurroundRepeat</code> | <code>.</code> |
  | | <code>&lt;Plug&gt;(openbrowser-smart-search)</code> | <code>:&lt;C-U&gt;call openbrowser#_keymap_smart_search('n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(openbrowser-search)</code> | <code>:&lt;C-U&gt;call openbrowser#_keymap_search('n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(openbrowser-open-incognito)</code> | <code>:&lt;C-U&gt;call openbrowser#_keymap_open('n', 0, ['--incognito'])&lt;CR&gt;</code> |
@@ -143,15 +151,7 @@ post_style: page
  | | <code>&lt;Plug&gt;(bullets-demote)</code> | <code>:BulletDemote&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(bullets-toggle-checkbox)</code> | <code>:ToggleCheckbox&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(bullets-renumber)</code> | <code>:RenumberList&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(bullets-newline)</code> | <code>:call &lt;SNR&gt;20_insert_new_bullet()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;YSurround</code> | <code>&lt;SNR&gt;16_opfunc2('setup')</code> |
- | | <code>&lt;Plug&gt;Ysurround</code> | <code>&lt;SNR&gt;16_opfunc('setup')</code> |
- | | <code>&lt;Plug&gt;YSsurround</code> | <code>&lt;SNR&gt;16_opfunc2('setup').'_'</code> |
- | | <code>&lt;Plug&gt;Yssurround</code> | <code>'^'.v:count1.&lt;SNR&gt;16_opfunc('setup').'g_'</code> |
- | | <code>&lt;Plug&gt;CSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;16_changesurround(1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;Csurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;16_changesurround()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;Dsurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;16_dosurround(&lt;SNR&gt;16_inputtarget())&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;SurroundRepeat</code> | <code>.</code> |
+ | | <code>&lt;Plug&gt;(bullets-newline)</code> | <code>:call &lt;SNR&gt;12_insert_new_bullet()&lt;CR&gt;</code> |
  | | <code>&lt;M-3&gt;</code> |  |
  | Float Terminal| <code>&lt;M-2&gt;</code> |  |
  | Vertical Terminal| <code>&lt;M-1&gt;</code> |  |
@@ -163,7 +163,6 @@ post_style: page
  | | <code>&lt;F4&gt;</code> | <code>:ASToggle&lt;CR&gt;</code> |
  | | <code>&lt;F7&gt;</code> | <code>:set spelllang=de spellfile=~/.config/nvim-Daniel/spell/de.utf-8.add spell&lt;CR&gt;</code> |
  | | <code>&lt;F6&gt;</code> | <code>:set nospell&lt;CR&gt;</code> |
- | | <code>&lt;C-Right&gt;</code> | <code>:vertical resize +2&lt;CR&gt;</code> |
  | | <code>&lt;M-j&gt;</code> | <code>:m .+1&lt;CR&gt;==</code> |
  | | <code>&lt;C-Left&gt;</code> | <code>:vertical resize -2&lt;CR&gt;</code> |
  | | <code>&lt;M-k&gt;</code> | <code>:m .-2&lt;CR&gt;==</code> |
@@ -173,12 +172,13 @@ post_style: page
  | | <code>&lt;C-K&gt;</code> | <code>&lt;C-W&gt;k</code> |
  | | <code>&lt;C-J&gt;</code> | <code>&lt;C-W&gt;j</code> |
  | | <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> |
+ | | <code>&lt;C-Right&gt;</code> | <code>:vertical resize +2&lt;CR&gt;</code> |
  | | <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |
  | 
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -200,15 +200,15 @@ post_style: page
  | | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
- | | <code>&lt;Plug&gt;VgSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;28_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;VSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;28_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(bullets-promote)</code> | <code>:BulletPromoteVisual&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(bullets-demote)</code> | <code>:BulletDemoteVisual&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(bullets-renumber)</code> | <code>:RenumberSelection&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;VgSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;VSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(openbrowser-smart-search)</code> | <code>:&lt;C-U&gt;call openbrowser#_keymap_smart_search('v')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(openbrowser-search)</code> | <code>:&lt;C-U&gt;call openbrowser#_keymap_search('v')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(openbrowser-open-incognito)</code> | <code>:&lt;C-U&gt;call openbrowser#_keymap_open('v', 0, ['--incognito'])&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(openbrowser-open)</code> | <code>:&lt;C-U&gt;call openbrowser#_keymap_open('v')&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(bullets-promote)</code> | <code>:BulletPromoteVisual&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(bullets-demote)</code> | <code>:BulletDemoteVisual&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(bullets-renumber)</code> | <code>:RenumberSelection&lt;CR&gt;</code> |
  | | <code>&lt;D-v&gt;</code> | <code>&lt;C-R&gt;+</code> |
  | | <code>&lt;F5&gt;</code> | <code>:lua require('persistence').load()&lt;CR&gt;</code> |
  | | <code>&lt;M-k&gt;</code> | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv-gv</code> |
@@ -217,7 +217,7 @@ post_style: page
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

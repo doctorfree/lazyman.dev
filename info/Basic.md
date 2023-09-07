@@ -55,7 +55,7 @@ Starter config by the author of NvChad with [video tutorial](https://youtube.com
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Tab&gt;</code> | <code>&lt;Cmd&gt; BufferLineCycleNext &lt;CR&gt;</code> |
  | | <code> /</code> |  |
  | | <code> gt</code> | <code>&lt;Cmd&gt; Telescope git_status &lt;CR&gt;</code> |
@@ -74,7 +74,7 @@ Starter config by the author of NvChad with [video tutorial](https://youtube.com
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> /</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require('Comment.api').toggle.linewise(vim.fn.visualmode())&lt;CR&gt;</code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -82,4 +82,4 @@ Starter config by the author of NvChad with [video tutorial](https://youtube.com
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |

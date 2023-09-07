@@ -91,7 +91,7 @@ Preconfigured Neovim as an IDE
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> R</code> | <code>&lt;Cmd&gt;lua require("renamer").rename()&lt;CR&gt;</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
@@ -156,7 +156,7 @@ Preconfigured Neovim as an IDE
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> R</code> | <code>&lt;Cmd&gt;lua require("renamer").rename()&lt;CR&gt;</code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
@@ -189,7 +189,7 @@ Preconfigured Neovim as an IDE
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>&lt;lt&gt;C&gt;</code> | <code>&lt;Cmd&gt;lua require("packer.load")({'telescope.nvim'}, { keys = "&lt;lt&gt;C&gt;", prefix = "" }, _G.packer_plugins)&lt;CR&gt;</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |

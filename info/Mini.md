@@ -31,7 +31,7 @@ Uses the [mini.nvim](https://github.com/echasnovski/mini.nvim) library. Personal
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> Ts</code> | <code>&lt;Cmd&gt;TestSuite&lt;CR&gt;</code> |
  | Suite| <code> TS</code> | <code>&lt;Cmd&gt;TestSuite -strategy=make &#124; copen&lt;CR&gt;</code> |
  | Suite (quickfix)| <code> Tn</code> | <code>&lt;Cmd&gt;TestNearest&lt;CR&gt;</code> |
@@ -144,7 +144,7 @@ Uses the [mini.nvim](https://github.com/echasnovski/mini.nvim) library. Personal
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> s</code> | <code>mode() ==# "v" ? ":TREPLSendSelection&lt;CR&gt;`&gt;l" : ":TREPLSendSelection&lt;CR&gt;'&gt;j"</code> |
  | Send to terminal| <code> rx</code> | <code>"+y :T reprex::reprex()&lt;CR&gt;</code> |
  | Reprex selection| <code> lf</code> | <code>&lt;Cmd&gt;lua vim.lsp.buf.format()&lt;CR&gt;&lt;Esc&gt;</code> |
@@ -169,7 +169,7 @@ Uses the [mini.nvim](https://github.com/echasnovski/mini.nvim) library. Personal
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

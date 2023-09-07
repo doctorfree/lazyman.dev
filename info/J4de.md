@@ -103,31 +103,35 @@ Personal Neovim configuration of Jade Fox
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Tab&gt;</code> |  |
- | Go to next buffer| <code> u</code> |  |
- | Open undo tree| <code> gR</code> |  |
- | Reset the buffer| <code> gd</code> |  |
+ | Go to next buffer| <code> bo</code> |  |
+ | Delete all other buffers except current| <code> gd</code> |  |
  | Open a diff| <code> gu</code> |  |
  | Unstage the hunk| <code> gS</code> |  |
  | Stage the buffer| <code> gs</code> |  |
- | Stage the hunk| <code> gr</code> |  |
- | Reset the hunk| <code> gl</code> |  |
+ | Stage the hunk| <code> gR</code> |  |
+ | Reset the buffer| <code> gr</code> |  |
+ | Reset the hunk| <code> gp</code> |  |
+ | Preview the hunk| <code> gl</code> |  |
  | Open git blame| <code> gk</code> |  |
  | Previous hunk| <code> gj</code> |  |
- | Next hunk| <code> gp</code> |  |
- | Preview the hunk| <code> e</code> |  |
- | Open neo-tree.nvim| <code> bK</code> |  |
- | Delete the current buffer forcefully| <code> bk</code> |  |
- | Delete the current buffer| <code> </code> |  |
- | | <code> de</code> |  |
+ | Next hunk| <code> bk</code> |  |
+ | Delete the current buffer| <code> bK</code> |  |
+ | Delete the current buffer forcefully| <code> gg</code> |  |
+ | Open neogit| <code> </code> |  |
+ | | <code> t</code> |  |
+ | Toggle twilight.nvim| <code> z</code> |  |
+ | Toggle zen-mode.nvim| <code> m</code> |  |
+ | Toggle node under cursor| <code> s</code> |  |
+ | Split node under cursor| <code> j</code> |  |
+ | Join node under cursor| <code> e</code> |  |
+ | Open neo-tree.nvim| <code> de</code> |  |
  | Eval| <code> du</code> |  |
- | Dap UI| <code> bo</code> |  |
- | Delete all other buffers except current| <code> dt</code> |  |
- | Terminate| <code> ds</code> |  |
- | Session| <code> dr</code> |  |
- | Toggle REPL| <code> dp</code> |  |
- | Pause| <code> dO</code> |  |
+ | Dap UI| <code> qd</code> |  |
+ | Stop persistence| <code> ql</code> |  |
+ | Restore the last session| <code> qs</code> |  |
+ | Restore the session for the current dir| <code> dO</code> |  |
  | Step Over| <code> do</code> |  |
  | Step Out| <code> dl</code> |  |
  | Run Last| <code> dk</code> |  |
@@ -139,21 +143,17 @@ Personal Neovim configuration of Jade Fox
  | Continue| <code> db</code> |  |
  | Toggle Breakpoint| <code> dB</code> |  |
  | Breakpoint Condition| <code> dw</code> |  |
- | Widgets| <code> xx</code> |  |
- | Toggle trouble.nvim| <code> xr</code> |  |
+ | Widgets| <code> dt</code> |  |
+ | Terminate| <code> ds</code> |  |
+ | Session| <code> dr</code> |  |
+ | Toggle REPL| <code> dp</code> |  |
+ | Pause| <code> xr</code> |  |
  | Open lsp references| <code> xl</code> |  |
  | Open location list| <code> xq</code> |  |
  | Open quickfix| <code> xd</code> |  |
  | Open document diagnostics| <code> xw</code> |  |
- | Open workspace diagnostics| <code> t</code> |  |
- | Toggle twilight.nvim| <code> z</code> |  |
- | Toggle zen-mode.nvim| <code> gg</code> |  |
- | Open neogit| <code> qd</code> |  |
- | Stop persistence| <code> ql</code> |  |
- | Restore the last session| <code> qs</code> |  |
- | Restore the session for the current dir| <code> fc</code> |  |
- | Commands| <code> fk</code> |  |
- | Keymaps| <code> fR</code> |  |
+ | Open workspace diagnostics| <code> xx</code> |  |
+ | Toggle trouble.nvim| <code> fR</code> |  |
  | Registers| <code> fr</code> |  |
  | Recently opened| <code> fm</code> |  |
  | Man pages| <code> fh</code> |  |
@@ -167,20 +167,20 @@ Personal Neovim configuration of Jade Fox
  | Workspace diagnostics| <code> fd</code> |  |
  | Document diagnostics| <code> fl</code> |  |
  | Resume| <code> ft</code> |  |
- | Todo comments| <code> j</code> |  |
- | Join node under cursor| <code> m</code> |  |
- | Toggle node under cursor| <code> s</code> |  |
- | Split node under cursor| <code> b9</code> |  |
- | Jump to ninth buffer| <code> b8</code> |  |
- | Jump to eighth buffer| <code> b6</code> |  |
- | Jump to sixth buffer| <code> b4</code> |  |
- | Jump to fourth buffer| <code> b3</code> |  |
+ | Todo comments| <code> fc</code> |  |
+ | Commands| <code> fk</code> |  |
+ | Keymaps| <code> b3</code> |  |
  | Jump to third buffer| <code> b2</code> |  |
  | Jump to second buffer| <code> b1</code> |  |
- | Jump to first buffer| <code> b7</code> |  |
- | Jump to seventh buffer| <code> b5</code> |  |
- | Jump to fifth buffer| <code> b$</code> |  |
- | Jump to last buffer| <code> l</code> |  |
+ | Jump to first buffer| <code> b$</code> |  |
+ | Jump to last buffer| <code> b9</code> |  |
+ | Jump to ninth buffer| <code> b8</code> |  |
+ | Jump to eighth buffer| <code> b7</code> |  |
+ | Jump to seventh buffer| <code> b6</code> |  |
+ | Jump to sixth buffer| <code> b5</code> |  |
+ | Jump to fifth buffer| <code> b4</code> |  |
+ | Jump to fourth buffer| <code> u</code> |  |
+ | Open undo tree| <code> l</code> |  |
  | Open lazy.nvim| <code> w</code> | <code>&lt;Cmd&gt;w&lt;CR&gt;</code> |
  | Save the current file| <code> qq</code> | <code>&lt;Cmd&gt;q&lt;CR&gt;</code> |
  | Quit the current file| <code>"</code> |  |
@@ -200,57 +200,57 @@ Personal Neovim configuration of Jade Fox
  | Leap backward to| <code>T</code> |  |
  | T| <code>Y</code> | <code>y$</code> |
  | Nvim builtin| <code>[g</code> |  |
- | Previous hunk| <code>[t</code> |  |
- | Jump to previous todo comment| <code>[[</code> |  |
- | Prev Reference| <code>[b</code> |  |
+ | Previous hunk| <code>[[</code> |  |
+ | Prev Reference| <code>[t</code> |  |
+ | Jump to previous todo comment| <code>[b</code> |  |
  | Go to next buffer| <code>]g</code> |  |
- | Next hunk| <code>]t</code> |  |
- | Jump to next todo comment| <code>]]</code> |  |
- | Next Reference| <code>]b</code> |  |
+ | Next hunk| <code>]]</code> |  |
+ | Next Reference| <code>]t</code> |  |
+ | Jump to next todo comment| <code>]b</code> |  |
  | Go to previous buffer| <code>`</code> |  |
  | | <code>c</code> |  |
  | | <code>cs</code> |  |
  | Change surroundings| <code>d</code> |  |
  | | <code>ds</code> |  |
  | Delete surroundings| <code>f</code> |  |
- | f| <code>g</code> |  |
- | | <code>g#</code> |  |
+ | f| <code>gs</code> |  |
+ | Leap from windows| <code>gc</code> |  |
+ | Toggle comments| <code>gb</code> |  |
+ | Toggle block comments| <code>gr</code> |  |
+ | References| <code>gD</code> |  |
+ | Goto Declaration| <code>gK</code> |  |
+ | Signature Help| <code>gI</code> |  |
+ | Goto Implementation| <code>gd</code> |  |
+ | Goto Definition| <code>gy</code> |  |
+ | Goto T[y]pe Definition| <code>g</code> |  |
+ | | <code>g&lt;C-X&gt;</code> |  |
+ | Multiline decrement| <code>g&lt;C-A&gt;</code> |  |
+ | Multiline increment| <code>g#</code> |  |
  | | <code>g*</code> |  |
  | | <code>gf</code> |  |
- | Open actions-preview.nvim| <code>gs</code> |  |
- | Leap from windows| <code>g&lt;C-X&gt;</code> |  |
- | Multiline decrement| <code>g&lt;C-A&gt;</code> |  |
- | Multiline increment| <code>gb</code> |  |
- | Toggle block comments| <code>gc</code> |  |
- | Toggle comments| <code>gI</code> |  |
- | Goto Implementation| <code>gy</code> |  |
- | Goto T[y]pe Definition| <code>gd</code> |  |
- | Goto Definition| <code>gK</code> |  |
- | Signature Help| <code>gr</code> |  |
- | References| <code>gD</code> |  |
- | Goto Declaration| <code>n</code> |  |
+ | Open actions-preview.nvim| <code>n</code> |  |
  | | <code>s</code> |  |
  | Leap forward to| <code>t</code> |  |
  | t| <code>u</code> |  |
  | | <code>y</code> |  |
  | | <code>ys</code> |  |
- | Add surroundings| <code>z</code> |  |
- | | <code>zR</code> |  |
- | Open all folds| <code>zM</code> |  |
- | Close all folds| <code>&lt;C-Bslash&gt;</code> |  |
- | | <code>&lt;C-R&gt;</code> |  |
- | | <code>&lt;C-W&gt;_</code> |  |
+ | Add surroundings| <code>zM</code> |  |
+ | Close all folds| <code>zR</code> |  |
+ | Open all folds| <code>z</code> |  |
+ | | <code>&lt;M-j&gt;</code> |  |
+ | Block down| <code>&lt;M-k&gt;</code> |  |
+ | Block up| <code>&lt;M-h&gt;</code> |  |
+ | Block left| <code>&lt;M-l&gt;</code> |  |
+ | Block right| <code>&lt;C-Bslash&gt;</code> |  |
+ | | <code>&lt;C-W&gt;&#124;</code> |  |
+ | Max out window width| <code>&lt;C-W&gt;_</code> |  |
  | Max out window height| <code>&lt;C-W&gt;z</code> |  |
  | Max out current window| <code>&lt;C-W&gt;=</code> |  |
- | Equalize windows| <code>&lt;C-W&gt;&#124;</code> |  |
- | Max out window width| <code>&lt;C-X&gt;</code> |  |
- | Decrement| <code>&lt;C-A&gt;</code> |  |
- | Increment| <code>&lt;M-h&gt;</code> |  |
- | Block left| <code>&lt;M-k&gt;</code> |  |
- | Block up| <code>&lt;M-j&gt;</code> |  |
- | Block down| <code>&lt;M-l&gt;</code> |  |
- | Block right| <code>&lt;S-Tab&gt;</code> |  |
- | Go to previous buffer| <code>&lt;C-Right&gt;</code> | <code>&lt;Cmd&gt;vertical resize +2&lt;CR&gt;</code> |
+ | Equalize windows| <code>&lt;C-A&gt;</code> |  |
+ | Increment| <code>&lt;C-X&gt;</code> |  |
+ | Decrement| <code>&lt;S-Tab&gt;</code> |  |
+ | Go to previous buffer| <code>&lt;C-R&gt;</code> |  |
+ | | <code>&lt;C-Right&gt;</code> | <code>&lt;Cmd&gt;vertical resize +2&lt;CR&gt;</code> |
  | Increase window width| <code>&lt;C-Left&gt;</code> | <code>&lt;Cmd&gt;vertical resize -2&lt;CR&gt;</code> |
  | Decrease window width| <code>&lt;C-Down&gt;</code> | <code>&lt;Cmd&gt;resize -2&lt;CR&gt;</code> |
  | Decrease window height| <code>&lt;C-Up&gt;</code> | <code>&lt;Cmd&gt;resize +2&lt;CR&gt;</code> |
@@ -262,7 +262,7 @@ Personal Neovim configuration of Jade Fox
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> de</code> |  |
  | Eval| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -273,25 +273,25 @@ Personal Neovim configuration of Jade Fox
  | Next search result| <code>S</code> |  |
  | Leap backward to| <code>T</code> |  |
  | T| <code>f</code> |  |
- | f| <code>gs</code> |  |
- | Leap from windows| <code>g&lt;C-X&gt;</code> |  |
- | Multiline decrement| <code>g&lt;C-A&gt;</code> |  |
- | Multiline increment| <code>gc</code> |  |
+ | f| <code>gc</code> |  |
  | Toggle comments| <code>gb</code> |  |
- | Toggle block comments| <code>n</code> | <code>'Nn'[v:searchforward]</code> |
+ | Toggle block comments| <code>g&lt;C-X&gt;</code> |  |
+ | Multiline decrement| <code>g&lt;C-A&gt;</code> |  |
+ | Multiline increment| <code>gs</code> |  |
+ | Leap from windows| <code>n</code> | <code>'Nn'[v:searchforward]</code> |
  | Next search result| <code>s</code> |  |
  | Leap forward to| <code>t</code> |  |
- | t| <code>&lt;M-j&gt;</code> |  |
- | Block down| <code>&lt;M-k&gt;</code> |  |
- | Block up| <code>&lt;M-h&gt;</code> |  |
- | Block left| <code>&lt;M-l&gt;</code> |  |
- | Block right| <code>&lt;C-A&gt;</code> |  |
- | Increment| <code>&lt;C-X&gt;</code> |  |
- | Decrement
+ | t| <code>&lt;C-X&gt;</code> |  |
+ | Decrement| <code>&lt;C-A&gt;</code> |  |
+ | Increment| <code>&lt;M-k&gt;</code> |  |
+ | Block up| <code>&lt;M-j&gt;</code> |  |
+ | Block down| <code>&lt;M-l&gt;</code> |  |
+ | Block right| <code>&lt;M-h&gt;</code> |  |
+ | Block left
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>F</code> |  |
  | F| <code>N</code> | <code>'nN'[v:searchforward]</code> |
  | Next search result| <code>S</code> |  |

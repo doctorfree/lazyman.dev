@@ -59,7 +59,7 @@ post_style: page
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> zZ</code> |  |
  | | <code> zz</code> |  |
  | | <code> u</code> |  |
@@ -121,7 +121,7 @@ post_style: page
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> ri</code> | <code> &lt;Esc&gt;&lt;Cmd&gt;lua require('refactoring').refactor('Inline Variable')&lt;CR&gt;</code> |
  | | <code> d</code> | <code>"_d</code> |
  | | <code> y</code> | <code>"+y</code> |
@@ -147,7 +147,7 @@ post_style: page
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

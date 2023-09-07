@@ -126,7 +126,7 @@ Tailored for frontend development with React and Vue.js
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Tab&gt;</code> | <code>:BufferLineCycleNext&lt;CR&gt;</code> |
  | | <code>&lt;CR&gt;</code> | <code>:noh&lt;CR&gt;&lt;CR&gt;</code> |
  | | <code> cl</code> | <code>&lt;Cmd&gt;lua vim.diagnostic.open_float({ border = 'rounded', max_width = 100 })&lt;CR&gt;</code> |
@@ -139,29 +139,25 @@ Tailored for frontend development with React and Vue.js
  | | <code> pw</code> | <code>&lt;Cmd&gt;lua require('telescope.builtin').grep_string({ initial_mode = 'normal' })&lt;CR&gt;</code> |
  | | <code> pf</code> | <code>&lt;Cmd&gt;lua require('plugins.telescope').project_files({ default_text = vim.fn.expand('&lt;lt&gt;cword&gt;'), initial_mode = 'normal' })&lt;CR&gt;</code> |
  | | <code> /l</code> | <code>&lt;Cmd&gt;:Lazy&lt;CR&gt;</code> |
- | | <code> at</code> | <code>&lt;Cmd&gt;ToggleTerm direction=float&lt;CR&gt;</code> |
- | terminal float| <code> cm</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
- | Mason| <code> ac</code> | <code>&lt;Cmd&gt;lua require('comment-box').lbox()&lt;CR&gt;</code> |
- | comment box| <code> gcn</code> | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
+ | | <code> ac</code> | <code>&lt;Cmd&gt;lua require('comment-box').lbox()&lt;CR&gt;</code> |
+ | comment box| <code> cm</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
+ | Mason| <code> gcp</code> | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
+ | move to prev conflict| <code> gct</code> | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> |
+ | choose theirs| <code> gco</code> | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
+ | choose ours| <code> gcn</code> | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
  | move to next conflict| <code> gcb</code> | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
- | choose both| <code> gct</code> | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> |
- | choose theirs| <code> gcp</code> | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
- | move to prev conflict| <code> gco</code> | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
- | choose ours| <code> gwc</code> | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.create_git_worktree()&lt;CR&gt;</code> |
- | | <code> gww</code> | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.git_worktrees()&lt;CR&gt;</code> |
- | | <code> /sd</code> | <code>&lt;Cmd&gt;SessionManager load_current_dir_session&lt;CR&gt;</code> |
+ | choose both| <code> at</code> | <code>&lt;Cmd&gt;ToggleTerm direction=float&lt;CR&gt;</code> |
+ | terminal float| <code> /ss</code> | <code>&lt;Cmd&gt;SessionManager save_current_session&lt;CR&gt;</code> |
+ | save session| <code> /sl</code> | <code>&lt;Cmd&gt;SessionManager load_last_session&lt;CR&gt;</code> |
+ | load last session| <code> /sd</code> | <code>&lt;Cmd&gt;SessionManager load_current_dir_session&lt;CR&gt;</code> |
  | load current dir session| <code> /sr</code> | <code>&lt;Cmd&gt;SessionManager delete_session&lt;CR&gt;</code> |
  | remove session| <code> /sc</code> | <code>&lt;Cmd&gt;SessionManager load_session&lt;CR&gt;</code> |
- | choose session| <code> /ss</code> | <code>&lt;Cmd&gt;SessionManager save_current_session&lt;CR&gt;</code> |
- | save session| <code> /sl</code> | <code>&lt;Cmd&gt;SessionManager load_last_session&lt;CR&gt;</code> |
- | load last session| <code> bb</code> |  |
- | Move back| <code> 9</code> |  |
- | | <code> 8</code> |  |
- | | <code> 7</code> |  |
- | | <code> 6</code> |  |
- | | <code> 5</code> |  |
- | | <code> 4</code> |  |
- | | <code> 3</code> |  |
+ | choose session| <code> gwc</code> | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.create_git_worktree()&lt;CR&gt;</code> |
+ | | <code> gww</code> | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.git_worktrees()&lt;CR&gt;</code> |
+ | | <code> pr</code> |  |
+ | refactor| <code> gd</code> |  |
+ | diff file| <code> gs</code> |  |
+ | status| <code> 3</code> |  |
  | | <code> 2</code> |  |
  | | <code> 1</code> |  |
  | | <code> bsr</code> |  |
@@ -172,31 +168,35 @@ Tailored for frontend development with React and Vue.js
  | Pick Buffer| <code> bn</code> |  |
  | Move next| <code> br</code> |  |
  | Close Right| <code> bl</code> |  |
- | Close Left| <code> gg</code> |  |
- | lazygit| <code> m</code> |  |
- | multicursor| <code> ghr</code> |  |
- | reset hunk| <code> ghR</code> |  |
- | reset buffer| <code> ghp</code> |  |
- | preview| <code> ghd</code> |  |
- | diff hunk| <code> ghu</code> |  |
- | undo stage| <code> ght</code> |  |
- | toggle deleted| <code> ghS</code> |  |
- | stage buffer| <code> ghs</code> |  |
- | stage hunk| <code> gd</code> |  |
- | diff file| <code> gs</code> |  |
- | status| <code> ag</code> |  |
- | generate git message| <code> as</code> |  |
- | summarize text| <code> do</code> |  |
- | | <code> di</code> |  |
- | | <code> dh</code> |  |
- | | <code> dd</code> |  |
+ | Close Left| <code> bb</code> |  |
+ | Move back| <code> 9</code> |  |
+ | | <code> 8</code> |  |
+ | | <code> 7</code> |  |
+ | | <code> 6</code> |  |
+ | | <code> 5</code> |  |
+ | | <code> 4</code> |  |
  | | <code> dc</code> |  |
  | | <code> db</code> |  |
  | | <code> da</code> |  |
  | | <code> dt</code> |  |
  | | <code> dO</code> |  |
- | | <code> pr</code> |  |
- | refactor| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+ | | <code> do</code> |  |
+ | | <code> di</code> |  |
+ | | <code> dh</code> |  |
+ | | <code> dd</code> |  |
+ | | <code> gg</code> |  |
+ | lazygit| <code> m</code> |  |
+ | multicursor| <code> ghd</code> |  |
+ | diff hunk| <code> ghu</code> |  |
+ | undo stage| <code> ght</code> |  |
+ | toggle deleted| <code> ghS</code> |  |
+ | stage buffer| <code> ghs</code> |  |
+ | stage hunk| <code> ghr</code> |  |
+ | reset hunk| <code> ghR</code> |  |
+ | reset buffer| <code> ghp</code> |  |
+ | preview| <code> ag</code> |  |
+ | generate git message| <code> as</code> |  |
+ | summarize text| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>&lt;lt&gt;&lt;lt&gt;</code> |  |
  | | <code>&lt;lt&gt;</code> |  |
@@ -228,17 +228,17 @@ Tailored for frontend development with React and Vue.js
  | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
  | | <code>gA</code> |  |
  | Align with preview| <code>ga</code> |  |
- | Align| <code>g]</code> |  |
- | Move to right "around"| <code>g[</code> |  |
- | Move to left "around"| <code>gs</code> | <code>&lt;Plug&gt;(Switch)</code> |
- | | <code>gcA</code> |  |
+ | Align| <code>gcA</code> |  |
  | Comment insert end of line| <code>gcO</code> |  |
  | Comment insert above| <code>gco</code> |  |
  | Comment insert below| <code>gbc</code> |  |
  | Comment toggle current block| <code>gcc</code> |  |
  | Comment toggle current line| <code>gb</code> | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
  | Comment toggle blockwise| <code>gc</code> | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
- | Comment toggle linewise| <code>gm</code> |  |
+ | Comment toggle linewise| <code>gs</code> | <code>&lt;Plug&gt;(Switch)</code> |
+ | | <code>g]</code> |  |
+ | Move to right "around"| <code>g[</code> |  |
+ | Move to left "around"| <code>gm</code> |  |
  | LSP Implementations| <code>gr</code> |  |
  | LSP References| <code>gd</code> |  |
  | LSP Definition| <code>gy</code> |  |
@@ -268,35 +268,35 @@ Tailored for frontend development with React and Vue.js
  | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
- | | <code>&lt;F12&gt;</code> | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
- | Toggle Terminal| <code>&lt;Plug&gt;SpeedDatingFallbackDown</code> | <code>&lt;C-X&gt;</code> |
+ | | <code>&lt;Plug&gt;SpeedDatingFallbackDown</code> | <code>&lt;C-X&gt;</code> |
  | | <code>&lt;Plug&gt;SpeedDatingFallbackUp</code> | <code>&lt;C-A&gt;</code> |
  | | <code>&lt;Plug&gt;SpeedDatingNowUTC</code> | <code>:&lt;C-U&gt;call speeddating#timestamp(1,v:count)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;SpeedDatingNowLocal</code> | <code>:&lt;C-U&gt;call speeddating#timestamp(0,v:count)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;SpeedDatingDown</code> | <code>:&lt;C-U&gt;call speeddating#increment(-v:count1)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;SpeedDatingUp</code> | <code>:&lt;C-U&gt;call speeddating#increment(v:count1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SwitchReverse)</code> | <code>:set opfunc=switch#OpfuncReverse&lt;CR&gt;g@l</code> |
- | | <code>&lt;Plug&gt;(Switch)</code> | <code>:set opfunc=switch#OpfuncForward&lt;CR&gt;g@l</code> |
  | | <code>&lt;Plug&gt;(git-conflict-prev-conflict)</code> | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
  | Git Conflict: Previous Conflict| <code>&lt;Plug&gt;(git-conflict-next-conflict)</code> | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
  | Git Conflict: Next Conflict| <code>&lt;Plug&gt;(git-conflict-theirs)</code> | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> |
  | Git Conflict: Choose Theirs| <code>&lt;Plug&gt;(git-conflict-none)</code> | <code>&lt;Cmd&gt;GitConflictChooseNone&lt;CR&gt;</code> |
  | Git Conflict: Choose None| <code>&lt;Plug&gt;(git-conflict-both)</code> | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
  | Git Conflict: Choose Both| <code>&lt;Plug&gt;(git-conflict-ours)</code> | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
- | Git Conflict: Choose Ours| <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |  |
- | Comment toggle blockwise with count| <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |  |
- | Comment toggle linewise with count| <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |  |
- | Comment toggle current block| <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |  |
- | Comment toggle current line| <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |  |
- | Comment toggle blockwise| <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |  |
- | Comment toggle linewise| <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |  |
+ | Git Conflict: Choose Ours| <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |  |
  | Change a surrounding pair, putting replacements on new lines| <code>&lt;Plug&gt;(nvim-surround-change)</code> |  |
  | Change a surrounding pair| <code>&lt;Plug&gt;(nvim-surround-delete)</code> |  |
  | Delete a surrounding pair| <code>&lt;Plug&gt;(nvim-surround-normal-cur-line)</code> |  |
  | Add a surrounding pair around the current line, on new lines (normal mode)| <code>&lt;Plug&gt;(nvim-surround-normal-line)</code> |  |
  | Add a surrounding pair around a motion, on new lines (normal mode)| <code>&lt;Plug&gt;(nvim-surround-normal-cur)</code> |  |
  | Add a surrounding pair around the current line (normal mode)| <code>&lt;Plug&gt;(nvim-surround-normal)</code> |  |
- | Add a surrounding pair around a motion (normal mode)| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+ | Add a surrounding pair around a motion (normal mode)| <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |  |
+ | Comment toggle blockwise with count| <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |  |
+ | Comment toggle linewise with count| <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |  |
+ | Comment toggle current block| <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |  |
+ | Comment toggle current line| <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |  |
+ | Comment toggle blockwise| <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |  |
+ | Comment toggle linewise| <code>&lt;Plug&gt;(SwitchReverse)</code> | <code>:set opfunc=switch#OpfuncReverse&lt;CR&gt;g@l</code> |
+ | | <code>&lt;Plug&gt;(Switch)</code> | <code>:set opfunc=switch#OpfuncForward&lt;CR&gt;g@l</code> |
+ | | <code>&lt;F12&gt;</code> | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
+ | Toggle Terminal| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
  | | <code>&lt;M-9&gt;</code> |  |
  | | <code>&lt;M-8&gt;</code> |  |
  | | <code>&lt;M-7&gt;</code> |  |
@@ -313,13 +313,13 @@ Tailored for frontend development with React and Vue.js
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> cf</code> |  |
  | | <code> ca</code> | <code>&lt;Cmd&gt;'&lt;lt&gt;,'&gt;lua vim.lsp.buf.code_action()&lt;CR&gt;</code> |
  | | <code> ac</code> | <code>&lt;Cmd&gt;lua require('comment-box').lbox()&lt;CR&gt;</code> |
- | comment box| <code> m</code> |  |
- | multicursor| <code> pr</code> |  |
- | refactor| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+ | comment box| <code> pr</code> |  |
+ | refactor| <code> m</code> |  |
+ | multicursor| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>&lt;lt&gt;</code> | <code>&lt;lt&gt;gv</code> |
@@ -340,12 +340,12 @@ Tailored for frontend development with React and Vue.js
  | Operator keymap for printer.nvim| <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
  | | <code>gb</code> | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
  | Comment toggle blockwise (visual)| <code>gc</code> | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
- | Comment toggle linewise (visual)| <code>g]</code> |  |
+ | Comment toggle linewise (visual)| <code>gS</code> | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
+ | Add a surrounding pair around a visual selection, on new lines| <code>g]</code> |  |
  | Move to right "around"| <code>g[</code> |  |
  | Move to left "around"| <code>gA</code> |  |
  | Align with preview| <code>ga</code> |  |
- | Align| <code>gS</code> | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
- | Add a surrounding pair around a visual selection, on new lines| <code>il</code> |  |
+ | Align| <code>il</code> |  |
  | Inside last textobject| <code>in</code> |  |
  | Inside next textobject| <code>i</code> |  |
  | Inside textobject| <code>p</code> | <code>"_dP</code> |
@@ -358,17 +358,17 @@ Tailored for frontend development with React and Vue.js
  | | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
- | | <code>&lt;Plug&gt;SpeedDatingDown</code> | <code>:&lt;C-U&gt;call speeddating#incrementvisual(-v:count1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;SpeedDatingUp</code> | <code>:&lt;C-U&gt;call speeddating#incrementvisual(v:count1)&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
  | Comment toggle blockwise (visual)| <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
- | Comment toggle linewise (visual)| <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = true })&lt;CR&gt;</code> |
+ | Comment toggle linewise (visual)| <code>&lt;Plug&gt;SpeedDatingDown</code> | <code>:&lt;C-U&gt;call speeddating#incrementvisual(-v:count1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;SpeedDatingUp</code> | <code>:&lt;C-U&gt;call speeddating#incrementvisual(v:count1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = true })&lt;CR&gt;</code> |
  | Add a surrounding pair around a visual selection, on new lines| <code>&lt;Plug&gt;(nvim-surround-visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = false })&lt;CR&gt;</code> |
  | Add a surrounding pair around a visual selection
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

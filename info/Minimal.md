@@ -27,7 +27,7 @@ Small configuration without third party plugins
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> E</code> | <code>&lt;Cmd&gt;Lexplore&lt;CR&gt;</code> |
  | | <code> e</code> | <code>&lt;Cmd&gt;Lexplore %:p:h&lt;CR&gt;</code> |
  | | <code>  </code> | <code>&lt;Cmd&gt;buffers&lt;CR&gt;:buffer </code> |
@@ -57,7 +57,7 @@ Small configuration without third party plugins
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> l</code> | <code>g_</code> |
  | | <code> h</code> | <code>^</code> |
  | | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -81,7 +81,7 @@ Small configuration without third party plugins
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> l</code> | <code>g_</code> |
  | | <code> h</code> | <code>^</code> |
  | | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |

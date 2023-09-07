@@ -71,7 +71,7 @@ Custom Neovim configuration designed to be light and fast. LSP, Treesitter & Cod
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> la</code> | <code>&lt;Cmd&gt;lua vim.lsp.buf.code_action()&lt;CR&gt;</code> |
  | Take Action| <code> lu</code> | <code>&lt;Cmd&gt;MasonUpdate&lt;CR&gt;</code> |
  | Update Mason(LSP)| <code> lm</code> | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
@@ -171,10 +171,10 @@ Custom Neovim configuration designed to be light and fast. LSP, Treesitter & Cod
  | | <code>&lt;Plug&gt;(cokeline-switch-prev)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterFilterJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterFilter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutAfterShiftRightJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutAfterShiftRight)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterShiftLeftJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterShiftLeft)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutAfterShiftRightJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutAfterShiftRight)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterBlockwiseJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterBlockwise)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterCharwiseJoined)</code> |  |
@@ -183,68 +183,12 @@ Custom Neovim configuration designed to be light and fast. LSP, Treesitter & Cod
  | | <code>&lt;Plug&gt;(YankyPutAfterLinewise)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterFilterJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterFilter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterShiftRightJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterShiftRight)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterShiftLeftJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterShiftLeft)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterBlockwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterBlockwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterCharwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterCharwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterLinewiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterLinewise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterFilterJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterFilter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftRightJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftRight)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftLeftJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftLeft)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterBlockwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterBlockwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterCharwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterCharwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterLinewiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterLinewise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeFilterJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeFilter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftRightJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftRight)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftLeftJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftLeft)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeBlockwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeBlockwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeCharwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeCharwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeLinewiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeLinewise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBefore)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeFilterJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeFilter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeShiftRightJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeShiftRight)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeShiftLeftJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeShiftLeft)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeBlockwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeBlockwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeCharwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeCharwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeLinewiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeLinewise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBefore)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeFilterJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeFilter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutBeforeShiftRightJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutBeforeShiftRight)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeShiftLeftJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeShiftLeft)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutBeforeShiftRightJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutBeforeShiftRight)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeBlockwiseJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeBlockwise)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeCharwiseJoined)</code> |  |
@@ -253,6 +197,62 @@ Custom Neovim configuration designed to be light and fast. LSP, Treesitter & Cod
  | | <code>&lt;Plug&gt;(YankyGPutBeforeLinewise)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBefore)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterFilterJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterFilter)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterShiftLeftJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterShiftLeft)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterShiftRightJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterShiftRight)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterBlockwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterBlockwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterCharwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterCharwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterLinewiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterLinewise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfter)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeFilterJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeFilter)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftLeftJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftLeft)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftRightJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftRight)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeBlockwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeBlockwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeCharwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeCharwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeLinewiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeLinewise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBefore)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterFilterJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterFilter)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftLeftJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftLeft)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftRightJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftRight)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterBlockwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterBlockwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterCharwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterCharwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterLinewiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterLinewise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfter)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeFilterJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeFilter)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeShiftLeftJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeShiftLeft)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeShiftRightJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeShiftRight)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeBlockwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeBlockwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeCharwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeCharwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeLinewiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeLinewise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBefore)</code> |  |
  | | <code>&lt;Plug&gt;(YankyYank)</code> |  |
  | | <code>&lt;Plug&gt;(YankyCycleBackward)</code> |  |
  | | <code>&lt;Plug&gt;(YankyCycleForward)</code> |  |
@@ -287,7 +287,7 @@ Custom Neovim configuration designed to be light and fast. LSP, Treesitter & Cod
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> c</code> | <code>"+y&lt;CR&gt;</code> |
  | Copy| <code> a</code> | <code>:norm A</code> |
  | Add Text to End of Selected Lines| <code> i</code> | <code>:norm I</code> |
@@ -300,26 +300,40 @@ Custom Neovim configuration designed to be light and fast. LSP, Treesitter & Cod
  | | <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
  | | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
  | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
- | | <code>&lt;Plug&gt;(YankyPutBeforeFilterJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeFilter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeShiftLeftJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeShiftLeft)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeShiftRightJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeShiftRight)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeBlockwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeBlockwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeCharwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeCharwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeLinewiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeLinewise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBeforeJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutBefore)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterFilterJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterFilter)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftRightJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftRight)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftLeftJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftLeft)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterBlockwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterBlockwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterCharwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterCharwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterLinewiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterLinewise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfterJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentAfter)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterFilterJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterFilter)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterShiftRightJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterShiftRight)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterShiftLeftJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterShiftLeft)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterBlockwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterBlockwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterCharwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterCharwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterLinewiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterLinewise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfterJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutAfter)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeFilterJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeFilter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutBeforeShiftLeftJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutBeforeShiftLeft)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeShiftRightJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeShiftRight)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutBeforeShiftLeftJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyGPutBeforeShiftLeft)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeBlockwiseJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeBlockwise)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeCharwiseJoined)</code> |  |
@@ -328,12 +342,26 @@ Custom Neovim configuration designed to be light and fast. LSP, Treesitter & Cod
  | | <code>&lt;Plug&gt;(YankyGPutBeforeLinewise)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBeforeJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyGPutBefore)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeFilterJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeFilter)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeShiftRightJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeShiftRight)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeShiftLeftJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeShiftLeft)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeBlockwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeBlockwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeCharwiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeCharwise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeLinewiseJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeLinewise)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBeforeJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutBefore)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterFilterJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterFilter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutAfterShiftLeftJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutAfterShiftLeft)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterShiftRightJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterShiftRight)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutAfterShiftLeftJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutAfterShiftLeft)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterBlockwiseJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterBlockwise)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutAfterCharwiseJoined)</code> |  |
@@ -344,10 +372,10 @@ Custom Neovim configuration designed to be light and fast. LSP, Treesitter & Cod
  | | <code>&lt;Plug&gt;(YankyPutAfter)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutIndentBeforeFilterJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutIndentBeforeFilter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftLeftJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftLeft)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftRightJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftRight)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftLeftJoined)</code> |  |
+ | | <code>&lt;Plug&gt;(YankyPutIndentBeforeShiftLeft)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutIndentBeforeBlockwiseJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutIndentBeforeBlockwise)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutIndentBeforeCharwiseJoined)</code> |  |
@@ -356,34 +384,6 @@ Custom Neovim configuration designed to be light and fast. LSP, Treesitter & Cod
  | | <code>&lt;Plug&gt;(YankyPutIndentBeforeLinewise)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutIndentBeforeJoined)</code> |  |
  | | <code>&lt;Plug&gt;(YankyPutIndentBefore)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterFilterJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterFilter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterShiftLeftJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterShiftLeft)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterShiftRightJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterShiftRight)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterBlockwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterBlockwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterCharwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterCharwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterLinewiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterLinewise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfterJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyGPutAfter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterFilterJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterFilter)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftLeftJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftLeft)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftRightJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterShiftRight)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterBlockwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterBlockwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterCharwiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterCharwise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterLinewiseJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterLinewise)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfterJoined)</code> |  |
- | | <code>&lt;Plug&gt;(YankyPutIndentAfter)</code> |  |
  | | <code>&lt;Plug&gt;(YankyYank)</code> |  |
  | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
  | | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
@@ -400,7 +400,7 @@ Custom Neovim configuration designed to be light and fast. LSP, Treesitter & Cod
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

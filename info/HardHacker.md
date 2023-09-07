@@ -73,7 +73,7 @@ A theme-driven modern Neovim configuration
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>&lt;Esc&gt;</code> | <code>:nohlsearch&lt;CR&gt;:echo&lt;CR&gt;</code> |
  | | <code> ss</code> | <code>:SessionManager load_session&lt;CR&gt;</code> |
  | | <code> dc</code> | <code>:DiffviewClose&lt;CR&gt;</code> |
@@ -119,7 +119,7 @@ A theme-driven modern Neovim configuration
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -139,7 +139,7 @@ A theme-driven modern Neovim configuration
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |

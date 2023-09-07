@@ -91,7 +91,7 @@ LunarVim based Neovim configuration by Justin Angeles
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
  | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
  | Nvim builtin| <code>&lt;lt&gt;</code> | <code>&lt;lt&gt;&lt;lt&gt;</code> |
@@ -137,34 +137,34 @@ LunarVim based Neovim configuration by Justin Angeles
  | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;YSurround</code> | <code>&lt;SNR&gt;10_opfunc2('setup')</code> |
- | | <code>&lt;Plug&gt;Ysurround</code> | <code>&lt;SNR&gt;10_opfunc('setup')</code> |
- | | <code>&lt;Plug&gt;YSsurround</code> | <code>&lt;SNR&gt;10_opfunc2('setup').'_'</code> |
- | | <code>&lt;Plug&gt;Yssurround</code> | <code>'^'.v:count1.&lt;SNR&gt;10_opfunc('setup').'g_'</code> |
- | | <code>&lt;Plug&gt;CSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_changesurround(1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;Csurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_changesurround()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;Dsurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_dosurround(&lt;SNR&gt;10_inputtarget())&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;YSurround</code> | <code>&lt;SNR&gt;8_opfunc2('setup')</code> |
+ | | <code>&lt;Plug&gt;Ysurround</code> | <code>&lt;SNR&gt;8_opfunc('setup')</code> |
+ | | <code>&lt;Plug&gt;YSsurround</code> | <code>&lt;SNR&gt;8_opfunc2('setup').'_'</code> |
+ | | <code>&lt;Plug&gt;Yssurround</code> | <code>'^'.v:count1.&lt;SNR&gt;8_opfunc('setup').'g_'</code> |
+ | | <code>&lt;Plug&gt;CSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_changesurround(1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;Csurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_changesurround()&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;Dsurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_dosurround(&lt;SNR&gt;8_inputtarget())&lt;CR&gt;</code> |
  | | <code>&lt;Plug&gt;SurroundRepeat</code> | <code>.</code> |
  | | <code>&lt;M-3&gt;</code> |  |
  | Float Terminal| <code>&lt;M-2&gt;</code> |  |
  | Vertical Terminal| <code>&lt;M-1&gt;</code> |  |
  | Horizontal Terminal| <code>&lt;C-Bslash&gt;</code> |  |
+ | | <code>&lt;C-K&gt;</code> | <code>&lt;C-W&gt;k</code> |
+ | | <code>&lt;M-j&gt;</code> | <code>:m .+1&lt;CR&gt;==</code> |
+ | | <code>&lt;C-J&gt;</code> | <code>&lt;C-W&gt;j</code> |
+ | | <code>&lt;M-k&gt;</code> | <code>:m .-2&lt;CR&gt;==</code> |
+ | | <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> |
  | | <code>&lt;C-Right&gt;</code> | <code>:vertical resize +2&lt;CR&gt;</code> |
  | | <code>&lt;C-Left&gt;</code> | <code>:vertical resize -2&lt;CR&gt;</code> |
- | | <code>&lt;C-Down&gt;</code> | <code>:resize +2&lt;CR&gt;</code> |
  | | <code>&lt;C-Q&gt;</code> | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
+ | | <code>&lt;C-Down&gt;</code> | <code>:resize +2&lt;CR&gt;</code> |
  | | <code>&lt;C-Up&gt;</code> | <code>:resize -2&lt;CR&gt;</code> |
- | | <code>&lt;C-K&gt;</code> | <code>&lt;C-W&gt;k</code> |
- | | <code>&lt;M-k&gt;</code> | <code>:m .-2&lt;CR&gt;==</code> |
- | | <code>&lt;C-J&gt;</code> | <code>&lt;C-W&gt;j</code> |
- | | <code>&lt;M-j&gt;</code> | <code>:m .+1&lt;CR&gt;==</code> |
- | | <code>&lt;C-H&gt;</code> | <code>&lt;C-W&gt;h</code> |
  | | <code>&lt;C-L&gt;</code> | <code>&lt;C-W&gt;l</code> |
  | 
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
  | | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
@@ -189,15 +189,15 @@ LunarVim based Neovim configuration by Justin Angeles
  | | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
  | | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
- | | <code>&lt;Plug&gt;VgSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;VSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
- | | <code>&lt;M-k&gt;</code> | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv-gv</code> |
+ | | <code>&lt;Plug&gt;VgSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
+ | | <code>&lt;Plug&gt;VSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
  | | <code>&lt;M-j&gt;</code> | <code>:m '&gt;+1&lt;CR&gt;gv-gv</code> |
+ | | <code>&lt;M-k&gt;</code> | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv-gv</code> |
  | 
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>S</code> |  |
  | Flash Treesitter| <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |

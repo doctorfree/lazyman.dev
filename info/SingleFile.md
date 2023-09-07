@@ -27,7 +27,7 @@ A clean, organized pre-configured Neovim configuration guide in a single 'init.l
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> ff</code> | <code>&lt;Cmd&gt;Neotree reveal toggle right&lt;CR&gt;</code> |
  | Toggle file tree (neo-tree)| <code> p</code> | <code>"+p</code> |
  | Paste from system clipboard| <code> y</code> | <code>"+y</code> |
@@ -118,7 +118,7 @@ A clean, organized pre-configured Neovim configuration guide in a single 'init.l
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code> y</code> | <code>"+y</code> |
  | Yank from system clipboard| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
  | Nvim builtin| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
@@ -159,7 +159,7 @@ A clean, organized pre-configured Neovim configuration guide in a single 'init.l
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| :---- | ----: | :---------- |
+| ----- | ----- | ----------- |
 | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
  | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
  | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
