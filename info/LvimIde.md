@@ -161,217 +161,216 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| ----- | ----- | ----------- |
-| <code>&lt;Esc&gt;</code> | <code>&lt;Esc&gt;:noh&lt;CR&gt;</code> |
- | Esc| <code>  </code> | <code>&lt;Cmd&gt;CtrlSpace&lt;CR&gt;</code> |
- | CtrlSpace| <code> qd</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.store').clear_macros()&lt;CR&gt;</code> |
- | Macro delete all| <code> qt</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.macro').toggle_delay()&lt;CR&gt;</code> |
- | Macro delay toggle| <code> qe</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.ui').edit_macros()&lt;CR&gt;</code> |
- | Macro edit| <code> qm</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.ui').toggle_macro_menu()&lt;CR&gt;</code> |
- | Macro menu| <code> qq</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.macro').toggle_play_macro()&lt;CR&gt;</code> |
- | Macro Play| <code> qr</code> |  |
- | Macro Record Start/Stop| <code> qs</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.macro').halt_macro()&lt;CR&gt;</code> |
- | Macro stop| <code> qy</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.macro').yank_macro()&lt;CR&gt;</code> |
- | Macro yank| <code> qp</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.ui').cycle_prev()&lt;CR&gt;</code> |
- | Macro prev| <code> qn</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.ui').cycle_next()&lt;CR&gt;</code> |
- | Macro next| <code> f</code> |  |
- | FzfLua files| <code> b</code> |  |
- | FzfLua buffers| <code> m</code> |  |
- | FzfLua marks| <code> s</code> |  |
- | FzfLua search| <code> i</code> |  |
- | Mini files| <code> =</code> |  |
- | Lvim file manager| <code> </code> | <code></code> |
- | | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
- | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
- | Nvim builtin| <code>;;</code> |  |
- | [Hydra] HYDRA KEYS| <code>;p</code> |  |
- | [Hydra] PLUGINS| <code>;m</code> |  |
- | [Hydra] TERMINAL| <code>;'</code> |  |
- | [Hydra] NEOTEST| <code>;o</code> |  |
- | [Hydra] LOCATION| <code>;q</code> |  |
- | [Hydra] QUICKFIX| <code>;t</code> |  |
- | [Hydra] TELESCOPE| <code>;r</code> |  |
- | [Hydra] SPECTRE| <code>;n</code> |  |
- | [Hydra] NAVIGATION| <code>;l</code> |  |
- | [Hydra] LVIM| <code>;u</code> |  |
- | [Hydra] LINGUISTICS| <code>;s</code> |  |
- | [Hydra] GLANCE| <code>;g</code> |  |
- | [Hydra] GIT| <code>;f</code> |  |
- | [Hydra] FZF| <code>;e</code> |  |
- | [Hydra] EXPLORER| <code>;d</code> |  |
- | [Hydra] LSP| <code>;a</code> |  |
- | [Hydra] COMMON| <code>;c</code> |  |
- | [Hydra] COMMENT, ANNOTATION, FOLD| <code>Q</code> |  |
- | NeoTree close| <code>X</code> |  |
- | NeoTree filesystem| <code>Y</code> | <code>y$</code> |
- | Nvim builtin| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
- | | <code>[s</code> |  |
- | LocMenuSave| <code>[l</code> |  |
- | LocMenuLoad| <code>[d</code> |  |
- | LocMenuDelete| <code>[c</code> |  |
- | LocMenuChoice| <code>[q</code> |  |
- | LocClose| <code>[o</code> |  |
- | LocOpen| <code>[[</code> |  |
- | LocPrev| <code>[]</code> |  |
- | LocNext| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
- | | <code>]s</code> |  |
- | QfMenuSave| <code>]l</code> |  |
- | QfMenuLoad| <code>]d</code> |  |
- | QfMenuDelete| <code>]c</code> |  |
- | QfMenuChoice| <code>]q</code> |  |
- | QfClose| <code>]o</code> |  |
- | QfOpen| <code>][</code> |  |
- | QfPrev| <code>]]</code> |  |
- | QfNext| <code>cS</code> | <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |
- | Change a surrounding pair, putting replacements on new lines| <code>cs</code> | <code>&lt;Plug&gt;(nvim-surround-change)</code> |
- | Change a surrounding pair| <code>dp</code> |  |
- | LspShowDiagnosticPrev| <code>dn</code> |  |
- | LspShowDiagnosticNext| <code>dc</code> |  |
- | LspShowDiagnosticCurrent| <code>ds</code> | <code>&lt;Plug&gt;(nvim-surround-delete)</code> |
- | Delete a surrounding pair| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
- | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
- | | <code>gw</code> |  |
- | WindowPicker| <code>j</code> | <code>gj</code> |
- | j| <code>k</code> | <code>gk</code> |
- | k| <code>q</code> | <code></code> |
- | q| <code>ySS</code> | <code>&lt;Plug&gt;(nvim-surround-normal-cur-line)</code> |
- | Add a surrounding pair around the current line, on new lines (normal mode)| <code>yS</code> | <code>&lt;Plug&gt;(nvim-surround-normal-line)</code> |
- | Add a surrounding pair around a motion, on new lines (normal mode)| <code>yss</code> | <code>&lt;Plug&gt;(nvim-surround-normal-cur)</code> |
- | Add a surrounding pair around the current line (normal mode)| <code>ys</code> | <code>&lt;Plug&gt;(nvim-surround-normal)</code> |
- | Add a surrounding pair around a motion (normal mode)| <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
- | | <code>&lt;Nul&gt;</code> | <code>:CtrlSpace&lt;CR&gt;</code> |
- | | <code>&lt;C-C&gt;m</code> |  |
- | GitSignsBlameLine| <code>&lt;C-C&gt;b</code> |  |
- | GitSignsToggleLineBlame| <code>&lt;M-;&gt;</code> |  |
- | GitSignsPreviewHunk| <code>&lt;M-[&gt;</code> |  |
- | GitSignsPrevHunk| <code>&lt;M-]&gt;</code> |  |
- | GitSignsNextHunk| <code>&lt;C-C&gt;&lt;C-L&gt;</code> |  |
- | DAPLocal| <code>&lt;C-C&gt;&lt;C-H&gt;</code> |  |
- | LspDiagnostic QF| <code>&lt;Plug&gt;(fzf-normal)</code> | <code></code> |
- | | <code>&lt;Plug&gt;(fzf-insert)</code> | <code>i</code> |
- | | <code>&lt;C-C&gt;k</code> |  |
- | LvimLinguisticsTOGGLESpelling| <code>&lt;C-C&gt;l</code> |  |
- | LvimLinguisticsTOGGLEInsertModeLanguage| <code>&lt;C-C&gt;v</code> |  |
- | Navbuddy| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
- | | <code>&lt;F4&gt;</code> |  |
- | Terminal Float| <code>&lt;F3&gt;</code> |  |
- | Terminal Three| <code>&lt;F2&gt;</code> |  |
- | Terminal Two| <code>&lt;F1&gt;</code> |  |
- | Terminal One| <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
- | | <code>&lt;Plug&gt;luasnip-delete-check</code> |  |
- | | <code>&lt;M-f&gt;</code> |  |
- | Ranger| <code>&lt;M-r&gt;</code> |  |
- | Ranger| <code>&lt;M-d&gt;</code> |  |
- | Lazydocker| <code>&lt;M-g&gt;</code> |  |
- | Lazygit| <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |  |
- | Change a surrounding pair, putting replacements on new lines| <code>&lt;Plug&gt;(nvim-surround-change)</code> |  |
- | Change a surrounding pair| <code>&lt;Plug&gt;(nvim-surround-delete)</code> |  |
- | Delete a surrounding pair| <code>&lt;Plug&gt;(nvim-surround-normal-cur-line)</code> |  |
- | Add a surrounding pair around the current line, on new lines (normal mode)| <code>&lt;Plug&gt;(nvim-surround-normal-line)</code> |  |
- | Add a surrounding pair around a motion, on new lines (normal mode)| <code>&lt;Plug&gt;(nvim-surround-normal-cur)</code> |  |
- | Add a surrounding pair around the current line (normal mode)| <code>&lt;Plug&gt;(nvim-surround-normal)</code> |  |
- | Add a surrounding pair around a motion (normal mode)| <code>&lt;C-C&gt;w</code> |  |
- | WinShift| <code>&lt;C-C&gt;&lt;C-V&gt;</code> |  |
- | Trouble| <code>&lt;M-t&gt;</code> |  |
- | Lvim forgit| <code>&lt;C-C&gt;t</code> |  |
- | Telescope tmux session| <code>&lt;M-b&gt;</code> |  |
- | Telescope buffers| <code>&lt;M-/&gt;</code> |  |
- | Telescope file browser| <code>&lt;M-.&gt;</code> |  |
- | Telescope live grep| <code>&lt;M-,&gt;</code> |  |
- | Telescope find files| <code>&lt;C-C&gt;h</code> |  |
- | LvimHelper| <code>&lt;F11&gt;</code> |  |
- | LvimHelper| <code>&lt;C-C&gt;z</code> |  |
- | NeoZoom| <code>&lt;M-n&gt;</code> |  |
- | Neogit| <code>&lt;C-C&gt;&lt;C-F&gt;</code> |  |
- | NeoTree filesystem| <code>&lt;C-C&gt;&lt;C-G&gt;</code> |  |
- | NeoTree git status| <code>&lt;C-C&gt;&lt;C-B&gt;</code> |  |
- | NeoTree buffers| <code>&lt;F5&gt;</code> |  |
- | Undotree| <code>&lt;C-C&gt;c</code> | <code>:Inspect&lt;CR&gt;</code> |
- | Inspect| <code>&lt;C-C&gt;ff</code> | <code>:CloseFloatWindows&lt;CR&gt;</code> |
- | Close float windows| <code>&lt;C-C&gt;p</code> | <code>:tabp&lt;CR&gt;</code> |
- | Tab prev| <code>&lt;C-C&gt;n</code> | <code>:tabn&lt;CR&gt;</code> |
- | Tab next| <code>&lt;C-Down&gt;</code> | <code>:resize +2&lt;CR&gt;</code> |
- | Resize height +| <code>&lt;C-Up&gt;</code> | <code>:resize -2&lt;CR&gt;</code> |
- | Resize height -| <code>&lt;C-Right&gt;</code> | <code>:vertical resize +2&lt;CR&gt;</code> |
- | Resize width +| <code>&lt;C-Left&gt;</code> | <code>:vertical resize -2&lt;CR&gt;</code> |
- | Resize width -| <code>&lt;C-K&gt;</code> | <code>&lt;Cmd&gt;NavigatorUp&lt;CR&gt;</code> |
- | | <code>&lt;C-J&gt;</code> | <code>&lt;Cmd&gt;NavigatorDown&lt;CR&gt;</code> |
- | | <code>&lt;C-H&gt;</code> | <code>&lt;Cmd&gt;NavigatorLeft&lt;CR&gt;</code> |
- | | <code>&lt;C-C&gt;=</code> | <code>:wincmd=&lt;CR&gt;</code> |
- | Win resize =| <code>&lt;C-C&gt;d</code> | <code>:bdelete&lt;CR&gt;</code> |
- | Delete buffer| <code>&lt;C-C&gt;o</code> | <code>&lt;C-W&gt;o</code> |
- | Close other windows| <code>&lt;C-C&gt;x</code> | <code>&lt;C-W&gt;c</code> |
- | Close current window| <code>&lt;C-C&gt;e</code> | <code>:Quit&lt;CR&gt;</code> |
- | Close LvimIDE| <code>&lt;C-C&gt;a</code> | <code>:wa&lt;CR&gt;</code> |
- | Save all| <code>&lt;C-C&gt;s</code> | <code>:Save&lt;CR&gt;</code> |
- | Save| <code>&lt;C-C&gt;N</code> | <code>:enew&lt;CR&gt;</code> |
- | Create empty buffer| <code>&lt;C-B&gt;</code> | <code>&lt;C-B&gt;zz</code> |
- | C-b| <code>&lt;C-F&gt;</code> | <code>&lt;C-F&gt;zz</code> |
- | C-f| <code>&lt;C-U&gt;</code> |  |
- | Scroll Up| <code>&lt;C-D&gt;</code> |  |
- | Scroll Down| <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;NavigatorRight&lt;CR&gt;</code> |
- | 
+| :---- | ----: | :---------- |
+| <code>&lt;Esc&gt;</code> | <code>&lt;Esc&gt;:noh&lt;CR&gt;</code> | Esc | 
+| <code>  </code> | <code>&lt;Cmd&gt;CtrlSpace&lt;CR&gt;</code> | CtrlSpace | 
+| <code> qd</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.store').clear_macros()&lt;CR&gt;</code> | Macro delete all | 
+| <code> qt</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.macro').toggle_delay()&lt;CR&gt;</code> | Macro delay toggle | 
+| <code> qe</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.ui').edit_macros()&lt;CR&gt;</code> | Macro edit | 
+| <code> qm</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.ui').toggle_macro_menu()&lt;CR&gt;</code> | Macro menu | 
+| <code> qq</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.macro').toggle_play_macro()&lt;CR&gt;</code> | Macro Play | 
+| <code> qr</code>|  | Macro Record Start/Stop | 
+| <code> qs</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.macro').halt_macro()&lt;CR&gt;</code> | Macro stop | 
+| <code> qy</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.macro').yank_macro()&lt;CR&gt;</code> | Macro yank | 
+| <code> qp</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.ui').cycle_prev()&lt;CR&gt;</code> | Macro prev | 
+| <code> qn</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.ui').cycle_next()&lt;CR&gt;</code> | Macro next | 
+| <code> i</code>|  | Mini files | 
+| <code> =</code>|  | Lvim file manager | 
+| <code> s</code>|  | FzfLua search | 
+| <code> f</code>|  | FzfLua files | 
+| <code> b</code>|  | FzfLua buffers | 
+| <code> m</code>|  | FzfLua marks | 
+| <code> </code> | <code></code> |  |
+| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |  |
+| <code>&</code> | <code>:&&&lt;CR&gt;</code> | Nvim builtin | 
+| <code>;;</code>|  | [Hydra] HYDRA KEYS | 
+| <code>;p</code>|  | [Hydra] PLUGINS | 
+| <code>;m</code>|  | [Hydra] TERMINAL | 
+| <code>;'</code>|  | [Hydra] NEOTEST | 
+| <code>;o</code>|  | [Hydra] LOCATION | 
+| <code>;q</code>|  | [Hydra] QUICKFIX | 
+| <code>;t</code>|  | [Hydra] TELESCOPE | 
+| <code>;r</code>|  | [Hydra] SPECTRE | 
+| <code>;n</code>|  | [Hydra] NAVIGATION | 
+| <code>;l</code>|  | [Hydra] LVIM | 
+| <code>;u</code>|  | [Hydra] LINGUISTICS | 
+| <code>;s</code>|  | [Hydra] GLANCE | 
+| <code>;g</code>|  | [Hydra] GIT | 
+| <code>;f</code>|  | [Hydra] FZF | 
+| <code>;e</code>|  | [Hydra] EXPLORER | 
+| <code>;d</code>|  | [Hydra] LSP | 
+| <code>;a</code>|  | [Hydra] COMMON | 
+| <code>;c</code>|  | [Hydra] COMMENT, ANNOTATION, FOLD | 
+| <code>Q</code>|  | NeoTree close | 
+| <code>X</code>|  | NeoTree filesystem | 
+| <code>Y</code> | <code>y$</code> | Nvim builtin | 
+| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |  |
+| <code>[s</code>|  | LocMenuSave | 
+| <code>[l</code>|  | LocMenuLoad | 
+| <code>[d</code>|  | LocMenuDelete | 
+| <code>[c</code>|  | LocMenuChoice | 
+| <code>[q</code>|  | LocClose | 
+| <code>[o</code>|  | LocOpen | 
+| <code>[[</code>|  | LocPrev | 
+| <code>[]</code>|  | LocNext | 
+| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |  |
+| <code>]s</code>|  | QfMenuSave | 
+| <code>]l</code>|  | QfMenuLoad | 
+| <code>]d</code>|  | QfMenuDelete | 
+| <code>]c</code>|  | QfMenuChoice | 
+| <code>]q</code>|  | QfClose | 
+| <code>]o</code>|  | QfOpen | 
+| <code>][</code>|  | QfPrev | 
+| <code>]]</code>|  | QfNext | 
+| <code>cS</code> | <code>&lt;Plug&gt;(nvim-surround-change-line)</code> | Change a surrounding pair, putting replacements on new lines | 
+| <code>cs</code> | <code>&lt;Plug&gt;(nvim-surround-change)</code> | Change a surrounding pair | 
+| <code>ds</code> | <code>&lt;Plug&gt;(nvim-surround-delete)</code> | Delete a surrounding pair | 
+| <code>dp</code>|  | LspShowDiagnosticPrev | 
+| <code>dn</code>|  | LspShowDiagnosticNext | 
+| <code>dc</code>|  | LspShowDiagnosticCurrent | 
+| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |  |
+| <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |  |
+| <code>gw</code>|  | WindowPicker | 
+| <code>j</code> | <code>gj</code> | j | 
+| <code>k</code> | <code>gk</code> | k | 
+| <code>q</code> | <code></code> | q | 
+| <code>ySS</code> | <code>&lt;Plug&gt;(nvim-surround-normal-cur-line)</code> | Add a surrounding pair around the current line, on new lines (normal mode) | 
+| <code>yS</code> | <code>&lt;Plug&gt;(nvim-surround-normal-line)</code> | Add a surrounding pair around a motion, on new lines (normal mode) | 
+| <code>yss</code> | <code>&lt;Plug&gt;(nvim-surround-normal-cur)</code> | Add a surrounding pair around the current line (normal mode) | 
+| <code>ys</code> | <code>&lt;Plug&gt;(nvim-surround-normal)</code> | Add a surrounding pair around a motion (normal mode) | 
+| <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |  |
+| <code>&lt;C-C&gt;v</code>|  | Navbuddy | 
+| <code>&lt;C-C&gt;&lt;C-H&gt;</code>|  | LspDiagnostic QF | 
+| <code>&lt;Plug&gt;(nvim-surround-change-line)</code>|  | Change a surrounding pair, putting replacements on new lines | 
+| <code>&lt;Plug&gt;(nvim-surround-change)</code>|  | Change a surrounding pair | 
+| <code>&lt;Plug&gt;(nvim-surround-delete)</code>|  | Delete a surrounding pair | 
+| <code>&lt;Plug&gt;(nvim-surround-normal-cur-line)</code>|  | Add a surrounding pair around the current line, on new lines (normal mode) | 
+| <code>&lt;Plug&gt;(nvim-surround-normal-line)</code>|  | Add a surrounding pair around a motion, on new lines (normal mode) | 
+| <code>&lt;Plug&gt;(nvim-surround-normal-cur)</code>|  | Add a surrounding pair around the current line (normal mode) | 
+| <code>&lt;Plug&gt;(nvim-surround-normal)</code>|  | Add a surrounding pair around a motion (normal mode) | 
+| <code>&lt;Nul&gt;</code> | <code>:CtrlSpace&lt;CR&gt;</code> |  |
+| <code>&lt;C-C&gt;m</code>|  | GitSignsBlameLine | 
+| <code>&lt;C-C&gt;b</code>|  | GitSignsToggleLineBlame | 
+| <code>&lt;M-;&gt;</code>|  | GitSignsPreviewHunk | 
+| <code>&lt;M-[&gt;</code>|  | GitSignsPrevHunk | 
+| <code>&lt;M-]&gt;</code>|  | GitSignsNextHunk | 
+| <code>&lt;C-C&gt;k</code>|  | LvimLinguisticsTOGGLESpelling | 
+| <code>&lt;C-C&gt;l</code>|  | LvimLinguisticsTOGGLEInsertModeLanguage | 
+| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |  |
+| <code>&lt;C-C&gt;&lt;C-L&gt;</code>|  | DAPLocal | 
+| <code>&lt;F4&gt;</code>|  | Terminal Float | 
+| <code>&lt;F3&gt;</code>|  | Terminal Three | 
+| <code>&lt;F2&gt;</code>|  | Terminal Two | 
+| <code>&lt;F1&gt;</code>|  | Terminal One | 
+| <code>&lt;M-f&gt;</code>|  | Ranger | 
+| <code>&lt;M-r&gt;</code>|  | Ranger | 
+| <code>&lt;M-d&gt;</code>|  | Lazydocker | 
+| <code>&lt;M-g&gt;</code>|  | Lazygit | 
+| <code>&lt;Plug&gt;(fzf-normal)</code> | <code></code> |  |
+| <code>&lt;Plug&gt;(fzf-insert)</code> | <code>i</code> |  |
+| <code>&lt;Plug&gt;luasnip-expand-repeat</code>|  |  |
+| <code>&lt;Plug&gt;luasnip-delete-check</code>|  |  |
+| <code>&lt;C-C&gt;w</code>|  | WinShift | 
+| <code>&lt;M-t&gt;</code>|  | Lvim forgit | 
+| <code>&lt;C-C&gt;&lt;C-V&gt;</code>|  | Trouble | 
+| <code>&lt;M-n&gt;</code>|  | Neogit | 
+| <code>&lt;M-/&gt;</code>|  | Telescope file browser | 
+| <code>&lt;M-.&gt;</code>|  | Telescope live grep | 
+| <code>&lt;M-,&gt;</code>|  | Telescope find files | 
+| <code>&lt;C-C&gt;t</code>|  | Telescope tmux session | 
+| <code>&lt;M-b&gt;</code>|  | Telescope buffers | 
+| <code>&lt;F5&gt;</code>|  | Undotree | 
+| <code>&lt;C-C&gt;z</code>|  | NeoZoom | 
+| <code>&lt;C-C&gt;&lt;C-G&gt;</code>|  | NeoTree git status | 
+| <code>&lt;C-C&gt;&lt;C-B&gt;</code>|  | NeoTree buffers | 
+| <code>&lt;C-C&gt;&lt;C-F&gt;</code>|  | NeoTree filesystem | 
+| <code>&lt;C-C&gt;h</code>|  | LvimHelper | 
+| <code>&lt;F11&gt;</code>|  | LvimHelper | 
+| <code>&lt;C-C&gt;c</code> | <code>:Inspect&lt;CR&gt;</code> | Inspect | 
+| <code>&lt;C-C&gt;ff</code> | <code>:CloseFloatWindows&lt;CR&gt;</code> | Close float windows | 
+| <code>&lt;C-C&gt;p</code> | <code>:tabp&lt;CR&gt;</code> | Tab prev | 
+| <code>&lt;C-C&gt;n</code> | <code>:tabn&lt;CR&gt;</code> | Tab next | 
+| <code>&lt;C-Down&gt;</code> | <code>:resize +2&lt;CR&gt;</code> | Resize height + | 
+| <code>&lt;C-Up&gt;</code> | <code>:resize -2&lt;CR&gt;</code> | Resize height - | 
+| <code>&lt;C-Right&gt;</code> | <code>:vertical resize +2&lt;CR&gt;</code> | Resize width + | 
+| <code>&lt;C-Left&gt;</code> | <code>:vertical resize -2&lt;CR&gt;</code> | Resize width - | 
+| <code>&lt;C-K&gt;</code> | <code>&lt;Cmd&gt;NavigatorUp&lt;CR&gt;</code> |  |
+| <code>&lt;C-J&gt;</code> | <code>&lt;Cmd&gt;NavigatorDown&lt;CR&gt;</code> |  |
+| <code>&lt;C-H&gt;</code> | <code>&lt;Cmd&gt;NavigatorLeft&lt;CR&gt;</code> |  |
+| <code>&lt;C-C&gt;=</code> | <code>:wincmd=&lt;CR&gt;</code> | Win resize = | 
+| <code>&lt;C-C&gt;d</code> | <code>:bdelete&lt;CR&gt;</code> | Delete buffer | 
+| <code>&lt;C-C&gt;o</code> | <code>&lt;C-W&gt;o</code> | Close other windows | 
+| <code>&lt;C-C&gt;x</code> | <code>&lt;C-W&gt;c</code> | Close current window | 
+| <code>&lt;C-C&gt;e</code> | <code>:Quit&lt;CR&gt;</code> | Close LvimIDE | 
+| <code>&lt;C-C&gt;a</code> | <code>:wa&lt;CR&gt;</code> | Save all | 
+| <code>&lt;C-C&gt;s</code> | <code>:Save&lt;CR&gt;</code> | Save | 
+| <code>&lt;C-C&gt;N</code> | <code>:enew&lt;CR&gt;</code> | Create empty buffer | 
+| <code>&lt;C-B&gt;</code> | <code>&lt;C-B&gt;zz</code> | C-b | 
+| <code>&lt;C-F&gt;</code> | <code>&lt;C-F&gt;zz</code> | C-f | 
+| <code>&lt;C-U&gt;</code>|  | Scroll Up | 
+| <code>&lt;C-D&gt;</code>|  | Scroll Down | 
+| <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;NavigatorRight&lt;CR&gt;</code> |  |
+
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| ----- | ----- | ----------- |
-| <code> qq</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.macro').toggle_play_macro()&lt;CR&gt;</code> |
- | Macro Play| <code> </code> | <code></code> |
- | | <code>#</code> | <code>&lt;Esc&gt;?\%V</code> |
- | | <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
- | | <code>*</code> | <code>&lt;Esc&gt;/\%V</code> |
- | | <code>;;</code> |  |
- | [Hydra] HYDRA KEYS| <code>;p</code> |  |
- | [Hydra] PLUGINS| <code>;m</code> |  |
- | [Hydra] TERMINAL| <code>;'</code> |  |
- | [Hydra] NEOTEST| <code>;o</code> |  |
- | [Hydra] LOCATION| <code>;q</code> |  |
- | [Hydra] QUICKFIX| <code>;t</code> |  |
- | [Hydra] TELESCOPE| <code>;r</code> |  |
- | [Hydra] SPECTRE| <code>;n</code> |  |
- | [Hydra] NAVIGATION| <code>;l</code> |  |
- | [Hydra] LVIM| <code>;u</code> |  |
- | [Hydra] LINGUISTICS| <code>;s</code> |  |
- | [Hydra] GLANCE| <code>;g</code> |  |
- | [Hydra] GIT| <code>;f</code> |  |
- | [Hydra] FZF| <code>;e</code> |  |
- | [Hydra] EXPLORER| <code>;d</code> |  |
- | [Hydra] LSP| <code>;a</code> |  |
- | [Hydra] COMMON| <code>;c</code> |  |
- | [Hydra] COMMENT, ANNOTATION, FOLD| <code>S</code> | <code>&lt;Plug&gt;(nvim-surround-visual)</code> |
- | Add a surrounding pair around a visual selection| <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
- | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
- | | <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
- | | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
- | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
- | | <code>gS</code> | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
- | Add a surrounding pair around a visual selection, on new lines| <code>j</code> | <code>gj</code> |
- | | <code>k</code> | <code>gk</code> |
- | | <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
- | | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
- | | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
- | | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
- | | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
- | | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = true })&lt;CR&gt;</code> |
- | Add a surrounding pair around a visual selection, on new lines| <code>&lt;Plug&gt;(nvim-surround-visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = false })&lt;CR&gt;</code> |
- | Add a surrounding pair around a visual selection| <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
- | 
+| :---- | ----: | :---------- |
+| <code> qq</code> | <code>&lt;Cmd&gt;lua require('NeoComposer.macro').toggle_play_macro()&lt;CR&gt;</code> | Macro Play | 
+| <code> </code> | <code></code> |  |
+| <code>#</code> | <code>&lt;Esc&gt;?\%V</code> |  |
+| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |  |
+| <code>*</code> | <code>&lt;Esc&gt;/\%V</code> |  |
+| <code>;;</code>|  | [Hydra] HYDRA KEYS | 
+| <code>;p</code>|  | [Hydra] PLUGINS | 
+| <code>;m</code>|  | [Hydra] TERMINAL | 
+| <code>;'</code>|  | [Hydra] NEOTEST | 
+| <code>;o</code>|  | [Hydra] LOCATION | 
+| <code>;q</code>|  | [Hydra] QUICKFIX | 
+| <code>;t</code>|  | [Hydra] TELESCOPE | 
+| <code>;r</code>|  | [Hydra] SPECTRE | 
+| <code>;n</code>|  | [Hydra] NAVIGATION | 
+| <code>;l</code>|  | [Hydra] LVIM | 
+| <code>;u</code>|  | [Hydra] LINGUISTICS | 
+| <code>;s</code>|  | [Hydra] GLANCE | 
+| <code>;g</code>|  | [Hydra] GIT | 
+| <code>;f</code>|  | [Hydra] FZF | 
+| <code>;e</code>|  | [Hydra] EXPLORER | 
+| <code>;d</code>|  | [Hydra] LSP | 
+| <code>;a</code>|  | [Hydra] COMMON | 
+| <code>;c</code>|  | [Hydra] COMMENT, ANNOTATION, FOLD | 
+| <code>S</code> | <code>&lt;Plug&gt;(nvim-surround-visual)</code> | Add a surrounding pair around a visual selection | 
+| <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |  |
+| <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |  |
+| <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |  |
+| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |  |
+| <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |  |
+| <code>gS</code> | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> | Add a surrounding pair around a visual selection, on new lines | 
+| <code>j</code> | <code>gj</code> |  |
+| <code>k</code> | <code>gk</code> |  |
+| <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |  |
+| <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |  |
+| <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |  |
+| <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |  |
+| <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |  |
+| <code>&lt;Plug&gt;luasnip-expand-repeat</code>|  |  |
+| <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = true })&lt;CR&gt;</code> | Add a surrounding pair around a visual selection, on new lines | 
+| <code>&lt;Plug&gt;(nvim-surround-visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = false })&lt;CR&gt;</code> | Add a surrounding pair around a visual selection | 
+
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| ----- | ----- | ----------- |
-| <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
- | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
- | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
- | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
- | | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
- | 
+| :---- | ----: | :---------- |
+| <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |  |
+| <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |  |
+| <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |  |
+| <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |  |
+| <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;luasnip-expand-repeat</code>|  |  |

@@ -94,180 +94,179 @@ An opinionated configuration reminiscent of Doom-Emacs, written in Fennel
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| ----- | ----- | ----------- |
-| <code> *</code> | <code>:execute 'noautocmd vimgrep /\V' . substitute(escape(expand("&lt;lt&gt;cword&gt;"), '\'), '\n', '\\n', 'g') . '/ **'&lt;CR&gt;</code> |
- | | <code> gy</code> | <code>&lt;Cmd&gt;lua require'gitlinker'.get_buf_range_url('n')&lt;CR&gt;</code> |
- | | <code> </code> | <code></code> |
- | | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
- | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
- | Nvim builtin| <code>-</code> | <code>&lt;Plug&gt;VinegarUp</code> |
- | | <code>Y</code> | <code>y$</code> |
- | Nvim builtin| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
- | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
- | | <code>cS</code> | <code>&lt;Plug&gt;CSurround</code> |
- | | <code>cs</code> | <code>&lt;Plug&gt;Csurround</code> |
- | | <code>ds</code> | <code>&lt;Plug&gt;Dsurround</code> |
- | | <code>gcA</code> |  |
- | Comment insert end of line| <code>gcO</code> |  |
- | Comment insert above| <code>gco</code> |  |
- | Comment insert below| <code>gbc</code> |  |
- | Comment toggle current block| <code>gcc</code> |  |
- | Comment toggle current line| <code>gb</code> | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
- | Comment toggle blockwise| <code>gc</code> | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
- | Comment toggle linewise| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
- | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
- | | <code>ySS</code> | <code>&lt;Plug&gt;YSsurround</code> |
- | | <code>ySs</code> | <code>&lt;Plug&gt;YSsurround</code> |
- | | <code>yss</code> | <code>&lt;Plug&gt;Yssurround</code> |
- | | <code>yS</code> | <code>&lt;Plug&gt;YSurround</code> |
- | | <code>ys</code> | <code>&lt;Plug&gt;Ysurround</code> |
- | | <code>y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
- | | <code>zb</code> | <code>&lt;Cmd&gt;call smoothie#do("zb") &lt;CR&gt;</code> |
- | | <code>z-</code> | <code>&lt;Cmd&gt;call smoothie#do("z-") &lt;CR&gt;</code> |
- | | <code>zz</code> | <code>&lt;Cmd&gt;call smoothie#do("zz") &lt;CR&gt;</code> |
- | | <code>z.</code> | <code>&lt;Cmd&gt;call smoothie#do("z.") &lt;CR&gt;</code> |
- | | <code>z&lt;CR&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("z\&lt;lt&gt;CR&gt;") &lt;CR&gt;</code> |
- | | <code>zt</code> | <code>&lt;Cmd&gt;call smoothie#do("zt") &lt;CR&gt;</code> |
- | | <code>z^</code> | <code>&lt;Cmd&gt;call smoothie#do("z^") &lt;CR&gt;</code> |
- | | <code>z+</code> | <code>&lt;Cmd&gt;call smoothie#do("z+") &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(vsnip-cut-text)</code> | <code>:set operatorfunc=&lt;SNR&gt;60_vsnip_cut_text_normal&lt;CR&gt;g@</code> |
- | | <code>&lt;Plug&gt;(vsnip-select-text)</code> | <code>:set operatorfunc=&lt;SNR&gt;60_vsnip_select_text_normal&lt;CR&gt;g@</code> |
- | | <code>&lt;Plug&gt;VinegarVerticalSplitUp</code> | <code>:call &lt;SNR&gt;58_opendir('vsplit')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;VinegarSplitUp</code> | <code>:call &lt;SNR&gt;58_opendir('split')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;VinegarTabUp</code> | <code>:call &lt;SNR&gt;58_opendir('tabedit')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;VinegarUp</code> | <code>:call &lt;SNR&gt;58_opendir('edit')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;YSurround</code> | <code>&lt;SNR&gt;55_opfunc2('setup')</code> |
- | | <code>&lt;Plug&gt;Ysurround</code> | <code>&lt;SNR&gt;55_opfunc('setup')</code> |
- | | <code>&lt;Plug&gt;YSsurround</code> | <code>&lt;SNR&gt;55_opfunc2('setup').'_'</code> |
- | | <code>&lt;Plug&gt;Yssurround</code> | <code>'^'.v:count1.&lt;SNR&gt;55_opfunc('setup').'g_'</code> |
- | | <code>&lt;Plug&gt;CSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;55_changesurround(1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;Csurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;55_changesurround()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;Dsurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;55_dosurround(&lt;SNR&gt;55_inputtarget())&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;SurroundRepeat</code> | <code>.</code> |
- | | <code>&lt;Plug&gt;(SmoothieBackwards)</code> | <code>&lt;Cmd&gt;call smoothie#backwards() &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieForwards)</code> | <code>&lt;Cmd&gt;call smoothie#forwards()  &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieUpwards)</code> | <code>&lt;Cmd&gt;call smoothie#upwards()   &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieDownwards)</code> | <code>&lt;Cmd&gt;call smoothie#downwards() &lt;CR&gt;</code> |
- | | <code>&lt;PageUp&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;PageUp&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;S-Up&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;S-Up&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;C-B&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-B&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;PageDown&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;PageDown&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;S-Down&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;S-Down&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;C-F&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-F&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;C-U&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-U&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;C-D&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-D&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(qf_qf_switch)</code> | <code>&filetype ==# 'qf' ? '&lt;C-W&gt;p' : '&lt;C-W&gt;b'</code> |
- | | <code>&lt;Plug&gt;(qf_loc_toggle_stay)</code> | <code>:&lt;C-U&gt; call qf#toggle#ToggleLocWindow(1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(qf_loc_toggle)</code> | <code>:&lt;C-U&gt; call qf#toggle#ToggleLocWindow(0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(qf_qf_toggle_stay)</code> | <code>:&lt;C-U&gt; call qf#toggle#ToggleQfWindow(1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(qf_qf_toggle)</code> | <code>:&lt;C-U&gt; call qf#toggle#ToggleQfWindow(0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(qf_loc_next)</code> | <code>:&lt;C-U&gt; call qf#wrap#WrapCommand('down', 'l')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(qf_loc_previous)</code> | <code>:&lt;C-U&gt; call qf#wrap#WrapCommand('up', 'l')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(qf_qf_next)</code> | <code>:&lt;C-U&gt; call qf#wrap#WrapCommand('down', 'c')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(qf_qf_previous)</code> | <code>:&lt;C-U&gt; call qf#wrap#WrapCommand('up', 'c')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;QfSwitch</code> | <code>&filetype ==# 'qf' ? '&lt;C-W&gt;p' : '&lt;C-W&gt;b'</code> |
- | | <code>&lt;Plug&gt;QfLtoggle</code> | <code>&lt;Plug&gt;(qf_loc_toggle)</code> |
- | | <code>&lt;Plug&gt;QfCtoggle</code> | <code>&lt;Plug&gt;(qf_qf_toggle)</code> |
- | | <code>&lt;Plug&gt;QfLnext</code> | <code>&lt;Plug&gt;(qf_loc_next)</code> |
- | | <code>&lt;Plug&gt;QfLprevious</code> | <code>&lt;Plug&gt;(qf_loc_previous)</code> |
- | | <code>&lt;Plug&gt;QfCnext</code> | <code>&lt;Plug&gt;(qf_qf_next)</code> |
- | | <code>&lt;Plug&gt;QfCprevious</code> | <code>&lt;Plug&gt;(qf_qf_previous)</code> |
- | | <code>&lt;Plug&gt;fugitive:</code> | <code></code> |
- | | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(EasyAlignOperator)</code> | <code>:set opfunc=&lt;SNR&gt;51_easy_align_op&lt;CR&gt;g@</code> |
- | | <code>&lt;Plug&gt;(EasyAlignRepeat)</code> | <code>:call &lt;SNR&gt;51_easy_align_repeat()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(LiveEasyAlign)</code> | <code>:set opfunc=&lt;SNR&gt;51_live_easy_align_op&lt;CR&gt;g@</code> |
- | | <code>&lt;Plug&gt;(EasyAlign)</code> | <code>:set opfunc=&lt;SNR&gt;51_easy_align_op&lt;CR&gt;g@</code> |
- | | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(fzf-maps-n)</code> | <code>:&lt;C-U&gt;call fzf#vim#maps('n', 0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(fzf-normal)</code> | <code></code> |
- | | <code>&lt;Plug&gt;(fzf-insert)</code> | <code>i</code> |
- | | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |  |
- | Comment toggle blockwise with count| <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |  |
- | Comment toggle linewise with count| <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |  |
- | Comment toggle current block| <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |  |
- | Comment toggle current line| <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |  |
- | Comment toggle blockwise| <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |  |
- | Comment toggle linewise| <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(hotpot-operator-eval)</code> | <code>:lua require("hotpot.api.command")["eval-operator-bang"]()&lt;CR&gt;</code> |
- | | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
- | Nvim builtin
+| :---- | ----: | :---------- |
+| <code> *</code> | <code>:execute 'noautocmd vimgrep /\V' . substitute(escape(expand("&lt;lt&gt;cword&gt;"), '\'), '\n', '\\n', 'g') . '/ **'&lt;CR&gt;</code> |  |
+| <code> gy</code> | <code>&lt;Cmd&gt;lua require'gitlinker'.get_buf_range_url('n')&lt;CR&gt;</code> |  |
+| <code> </code> | <code></code> |  |
+| <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |  |
+| <code>&</code> | <code>:&&&lt;CR&gt;</code> | Nvim builtin | 
+| <code>-</code> | <code>&lt;Plug&gt;VinegarUp</code> |  |
+| <code>Y</code> | <code>y$</code> | Nvim builtin | 
+| <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |  |
+| <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |  |
+| <code>cS</code> | <code>&lt;Plug&gt;CSurround</code> |  |
+| <code>cs</code> | <code>&lt;Plug&gt;Csurround</code> |  |
+| <code>ds</code> | <code>&lt;Plug&gt;Dsurround</code> |  |
+| <code>gcA</code>|  | Comment insert end of line | 
+| <code>gcO</code>|  | Comment insert above | 
+| <code>gco</code>|  | Comment insert below | 
+| <code>gbc</code>|  | Comment toggle current block | 
+| <code>gcc</code>|  | Comment toggle current line | 
+| <code>gb</code> | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> | Comment toggle blockwise | 
+| <code>gc</code> | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> | Comment toggle linewise | 
+| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |  |
+| <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |  |
+| <code>ySS</code> | <code>&lt;Plug&gt;YSsurround</code> |  |
+| <code>ySs</code> | <code>&lt;Plug&gt;YSsurround</code> |  |
+| <code>yss</code> | <code>&lt;Plug&gt;Yssurround</code> |  |
+| <code>yS</code> | <code>&lt;Plug&gt;YSurround</code> |  |
+| <code>ys</code> | <code>&lt;Plug&gt;Ysurround</code> |  |
+| <code>y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |  |
+| <code>zb</code> | <code>&lt;Cmd&gt;call smoothie#do("zb") &lt;CR&gt;</code> |  |
+| <code>z-</code> | <code>&lt;Cmd&gt;call smoothie#do("z-") &lt;CR&gt;</code> |  |
+| <code>zz</code> | <code>&lt;Cmd&gt;call smoothie#do("zz") &lt;CR&gt;</code> |  |
+| <code>z.</code> | <code>&lt;Cmd&gt;call smoothie#do("z.") &lt;CR&gt;</code> |  |
+| <code>z&lt;CR&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("z\&lt;lt&gt;CR&gt;") &lt;CR&gt;</code> |  |
+| <code>zt</code> | <code>&lt;Cmd&gt;call smoothie#do("zt") &lt;CR&gt;</code> |  |
+| <code>z^</code> | <code>&lt;Cmd&gt;call smoothie#do("z^") &lt;CR&gt;</code> |  |
+| <code>z+</code> | <code>&lt;Cmd&gt;call smoothie#do("z+") &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(vsnip-cut-text)</code> | <code>:set operatorfunc=&lt;SNR&gt;60_vsnip_cut_text_normal&lt;CR&gt;g@</code> |  |
+| <code>&lt;Plug&gt;(vsnip-select-text)</code> | <code>:set operatorfunc=&lt;SNR&gt;60_vsnip_select_text_normal&lt;CR&gt;g@</code> |  |
+| <code>&lt;Plug&gt;VinegarVerticalSplitUp</code> | <code>:call &lt;SNR&gt;58_opendir('vsplit')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;VinegarSplitUp</code> | <code>:call &lt;SNR&gt;58_opendir('split')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;VinegarTabUp</code> | <code>:call &lt;SNR&gt;58_opendir('tabedit')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;VinegarUp</code> | <code>:call &lt;SNR&gt;58_opendir('edit')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;YSurround</code> | <code>&lt;SNR&gt;55_opfunc2('setup')</code> |  |
+| <code>&lt;Plug&gt;Ysurround</code> | <code>&lt;SNR&gt;55_opfunc('setup')</code> |  |
+| <code>&lt;Plug&gt;YSsurround</code> | <code>&lt;SNR&gt;55_opfunc2('setup').'_'</code> |  |
+| <code>&lt;Plug&gt;Yssurround</code> | <code>'^'.v:count1.&lt;SNR&gt;55_opfunc('setup').'g_'</code> |  |
+| <code>&lt;Plug&gt;CSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;55_changesurround(1)&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;Csurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;55_changesurround()&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;Dsurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;55_dosurround(&lt;SNR&gt;55_inputtarget())&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;SurroundRepeat</code> | <code>.</code> |  |
+| <code>&lt;Plug&gt;(SmoothieBackwards)</code> | <code>&lt;Cmd&gt;call smoothie#backwards() &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(SmoothieForwards)</code> | <code>&lt;Cmd&gt;call smoothie#forwards()  &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(SmoothieUpwards)</code> | <code>&lt;Cmd&gt;call smoothie#upwards()   &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(SmoothieDownwards)</code> | <code>&lt;Cmd&gt;call smoothie#downwards() &lt;CR&gt;</code> |  |
+| <code>&lt;PageUp&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;PageUp&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;S-Up&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;S-Up&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;C-B&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-B&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;PageDown&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;PageDown&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;S-Down&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;S-Down&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;C-F&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-F&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;C-U&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-U&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;C-D&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-D&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(qf_qf_switch)</code> | <code>&filetype ==# 'qf' ? '&lt;C-W&gt;p' : '&lt;C-W&gt;b'</code> |  |
+| <code>&lt;Plug&gt;(qf_loc_toggle_stay)</code> | <code>:&lt;C-U&gt; call qf#toggle#ToggleLocWindow(1)&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(qf_loc_toggle)</code> | <code>:&lt;C-U&gt; call qf#toggle#ToggleLocWindow(0)&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(qf_qf_toggle_stay)</code> | <code>:&lt;C-U&gt; call qf#toggle#ToggleQfWindow(1)&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(qf_qf_toggle)</code> | <code>:&lt;C-U&gt; call qf#toggle#ToggleQfWindow(0)&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(qf_loc_next)</code> | <code>:&lt;C-U&gt; call qf#wrap#WrapCommand('down', 'l')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(qf_loc_previous)</code> | <code>:&lt;C-U&gt; call qf#wrap#WrapCommand('up', 'l')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(qf_qf_next)</code> | <code>:&lt;C-U&gt; call qf#wrap#WrapCommand('down', 'c')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(qf_qf_previous)</code> | <code>:&lt;C-U&gt; call qf#wrap#WrapCommand('up', 'c')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;QfSwitch</code> | <code>&filetype ==# 'qf' ? '&lt;C-W&gt;p' : '&lt;C-W&gt;b'</code> |  |
+| <code>&lt;Plug&gt;QfLtoggle</code> | <code>&lt;Plug&gt;(qf_loc_toggle)</code> |  |
+| <code>&lt;Plug&gt;QfCtoggle</code> | <code>&lt;Plug&gt;(qf_qf_toggle)</code> |  |
+| <code>&lt;Plug&gt;QfLnext</code> | <code>&lt;Plug&gt;(qf_loc_next)</code> |  |
+| <code>&lt;Plug&gt;QfLprevious</code> | <code>&lt;Plug&gt;(qf_loc_previous)</code> |  |
+| <code>&lt;Plug&gt;QfCnext</code> | <code>&lt;Plug&gt;(qf_qf_next)</code> |  |
+| <code>&lt;Plug&gt;QfCprevious</code> | <code>&lt;Plug&gt;(qf_qf_previous)</code> |  |
+| <code>&lt;Plug&gt;fugitive:</code> | <code></code> |  |
+| <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(EasyAlignOperator)</code> | <code>:set opfunc=&lt;SNR&gt;51_easy_align_op&lt;CR&gt;g@</code> |  |
+| <code>&lt;Plug&gt;(EasyAlignRepeat)</code> | <code>:call &lt;SNR&gt;51_easy_align_repeat()&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(LiveEasyAlign)</code> | <code>:set opfunc=&lt;SNR&gt;51_live_easy_align_op&lt;CR&gt;g@</code> |  |
+| <code>&lt;Plug&gt;(EasyAlign)</code> | <code>:set opfunc=&lt;SNR&gt;51_easy_align_op&lt;CR&gt;g@</code> |  |
+| <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(fzf-maps-n)</code> | <code>:&lt;C-U&gt;call fzf#vim#maps('n', 0)&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(fzf-normal)</code> | <code></code> |  |
+| <code>&lt;Plug&gt;(fzf-insert)</code> | <code>i</code> |  |
+| <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code>|  | Comment toggle blockwise with count | 
+| <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code>|  | Comment toggle linewise with count | 
+| <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code>|  | Comment toggle current block | 
+| <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code>|  | Comment toggle current line | 
+| <code>&lt;Plug&gt;(comment_toggle_blockwise)</code>|  | Comment toggle blockwise | 
+| <code>&lt;Plug&gt;(comment_toggle_linewise)</code>|  | Comment toggle linewise | 
+| <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(hotpot-operator-eval)</code> | <code>:lua require("hotpot.api.command")["eval-operator-bang"]()&lt;CR&gt;</code> |  |
+| <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> | Nvim builtin | 
+
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| ----- | ----- | ----------- |
-| <code> *</code> | <code>:&lt;C-U&gt;call VisualStarSearchSet('/')&lt;CR&gt;:execute 'noautocmd vimgrep /' . @/ . '/ **'&lt;CR&gt;</code> |
- | | <code> gy</code> | <code>&lt;Cmd&gt;lua require'gitlinker'.get_buf_range_url('v')&lt;CR&gt;</code> |
- | | <code>#</code> | <code>:&lt;C-U&gt;call VisualStarSearchSet('?')&lt;CR&gt;?&lt;C-R&gt;=@/&lt;CR&gt;&lt;CR&gt;</code> |
- | | <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
- | | <code>*</code> | <code>:&lt;C-U&gt;call VisualStarSearchSet('/')&lt;CR&gt;/&lt;C-R&gt;=@/&lt;CR&gt;&lt;CR&gt;</code> |
- | | <code>&lt;lt&gt;</code> | <code>&lt;lt&gt;gv</code> |
- | | <code>&gt;</code> | <code>&gt;gv</code> |
- | | <code>S</code> | <code>&lt;Plug&gt;VSurround</code> |
- | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
- | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
- | | <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
- | | <code>gS</code> | <code>&lt;Plug&gt;VgSurround</code> |
- | | <code>gb</code> | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
- | Comment toggle blockwise (visual)| <code>gc</code> | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
- | Comment toggle linewise (visual)| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
- | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
- | | <code>zb</code> | <code>&lt;Cmd&gt;call smoothie#do("zb") &lt;CR&gt;</code> |
- | | <code>z-</code> | <code>&lt;Cmd&gt;call smoothie#do("z-") &lt;CR&gt;</code> |
- | | <code>zz</code> | <code>&lt;Cmd&gt;call smoothie#do("zz") &lt;CR&gt;</code> |
- | | <code>z.</code> | <code>&lt;Cmd&gt;call smoothie#do("z.") &lt;CR&gt;</code> |
- | | <code>z&lt;CR&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("z\&lt;lt&gt;CR&gt;") &lt;CR&gt;</code> |
- | | <code>zt</code> | <code>&lt;Cmd&gt;call smoothie#do("zt") &lt;CR&gt;</code> |
- | | <code>z^</code> | <code>&lt;Cmd&gt;call smoothie#do("z^") &lt;CR&gt;</code> |
- | | <code>z+</code> | <code>&lt;Cmd&gt;call smoothie#do("z+") &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(vsnip-cut-text)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;60_vsnip_visual_text(visualmode())&lt;CR&gt;gv"_c</code> |
- | | <code>&lt;Plug&gt;(vsnip-select-text)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;60_vsnip_visual_text(visualmode())&lt;CR&gt;gv</code> |
- | | <code>&lt;Plug&gt;VgSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;55_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;VSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;55_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieBackwards)</code> | <code>&lt;Cmd&gt;call smoothie#backwards() &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieForwards)</code> | <code>&lt;Cmd&gt;call smoothie#forwards()  &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieUpwards)</code> | <code>&lt;Cmd&gt;call smoothie#upwards()   &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieDownwards)</code> | <code>&lt;Cmd&gt;call smoothie#downwards() &lt;CR&gt;</code> |
- | | <code>&lt;PageUp&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;PageUp&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;S-Up&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;S-Up&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;C-B&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-B&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;PageDown&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;PageDown&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;S-Down&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;S-Down&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;C-F&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-F&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;C-U&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-U&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;C-D&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-D&gt;") &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(EasyAlignRepeat)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;51_repeat_in_visual()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(LiveEasyAlign)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;51_live_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(EasyAlign)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;51_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(fzf-maps-x)</code> | <code>:&lt;C-U&gt;call fzf#vim#maps('x', 0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
- | Comment toggle blockwise (visual)| <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
- | Comment toggle linewise (visual)| <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
- | | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
- | | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
- | | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
- | | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
- | 
+| :---- | ----: | :---------- |
+| <code> *</code> | <code>:&lt;C-U&gt;call VisualStarSearchSet('/')&lt;CR&gt;:execute 'noautocmd vimgrep /' . @/ . '/ **'&lt;CR&gt;</code> |  |
+| <code> gy</code> | <code>&lt;Cmd&gt;lua require'gitlinker'.get_buf_range_url('v')&lt;CR&gt;</code> |  |
+| <code>#</code> | <code>:&lt;C-U&gt;call VisualStarSearchSet('?')&lt;CR&gt;?&lt;C-R&gt;=@/&lt;CR&gt;&lt;CR&gt;</code> |  |
+| <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |  |
+| <code>*</code> | <code>:&lt;C-U&gt;call VisualStarSearchSet('/')&lt;CR&gt;/&lt;C-R&gt;=@/&lt;CR&gt;&lt;CR&gt;</code> |  |
+| <code>&lt;lt&gt;</code> | <code>&lt;lt&gt;gv</code> |  |
+| <code>&gt;</code> | <code>&gt;gv</code> |  |
+| <code>S</code> | <code>&lt;Plug&gt;VSurround</code> |  |
+| <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |  |
+| <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |  |
+| <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |  |
+| <code>gS</code> | <code>&lt;Plug&gt;VgSurround</code> |  |
+| <code>gb</code> | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> | Comment toggle blockwise (visual) | 
+| <code>gc</code> | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> | Comment toggle linewise (visual) | 
+| <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |  |
+| <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |  |
+| <code>zb</code> | <code>&lt;Cmd&gt;call smoothie#do("zb") &lt;CR&gt;</code> |  |
+| <code>z-</code> | <code>&lt;Cmd&gt;call smoothie#do("z-") &lt;CR&gt;</code> |  |
+| <code>zz</code> | <code>&lt;Cmd&gt;call smoothie#do("zz") &lt;CR&gt;</code> |  |
+| <code>z.</code> | <code>&lt;Cmd&gt;call smoothie#do("z.") &lt;CR&gt;</code> |  |
+| <code>z&lt;CR&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("z\&lt;lt&gt;CR&gt;") &lt;CR&gt;</code> |  |
+| <code>zt</code> | <code>&lt;Cmd&gt;call smoothie#do("zt") &lt;CR&gt;</code> |  |
+| <code>z^</code> | <code>&lt;Cmd&gt;call smoothie#do("z^") &lt;CR&gt;</code> |  |
+| <code>z+</code> | <code>&lt;Cmd&gt;call smoothie#do("z+") &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(vsnip-cut-text)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;60_vsnip_visual_text(visualmode())&lt;CR&gt;gv"_c</code> |  |
+| <code>&lt;Plug&gt;(vsnip-select-text)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;60_vsnip_visual_text(visualmode())&lt;CR&gt;gv</code> |  |
+| <code>&lt;Plug&gt;VgSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;55_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;VSurround</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;55_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(SmoothieBackwards)</code> | <code>&lt;Cmd&gt;call smoothie#backwards() &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(SmoothieForwards)</code> | <code>&lt;Cmd&gt;call smoothie#forwards()  &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(SmoothieUpwards)</code> | <code>&lt;Cmd&gt;call smoothie#upwards()   &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(SmoothieDownwards)</code> | <code>&lt;Cmd&gt;call smoothie#downwards() &lt;CR&gt;</code> |  |
+| <code>&lt;PageUp&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;PageUp&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;S-Up&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;S-Up&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;C-B&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-B&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;PageDown&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;PageDown&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;S-Down&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;S-Down&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;C-F&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-F&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;C-U&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-U&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;C-D&gt;</code> | <code>&lt;Cmd&gt;call smoothie#do("\&lt;lt&gt;C-D&gt;") &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(EasyAlignRepeat)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;51_repeat_in_visual()&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(LiveEasyAlign)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;51_live_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(EasyAlign)</code> | <code>:&lt;C-U&gt;call &lt;SNR&gt;51_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(fzf-maps-x)</code> | <code>:&lt;C-U&gt;call fzf#vim#maps('x', 0)&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> | Comment toggle blockwise (visual) | 
+| <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> | Comment toggle linewise (visual) | 
+| <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |  |
+| <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |  |
+| <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |  |
+| <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |  |
+| <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |  |
+
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| ----- | ----- | ----------- |
-| <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
- | | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
- | | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
- | | <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
- | | <code>&lt;Plug&gt;(SmoothieBackwards)</code> | <code>&lt;Cmd&gt;call smoothie#backwards() &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieForwards)</code> | <code>&lt;Cmd&gt;call smoothie#forwards()  &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieUpwards)</code> | <code>&lt;Cmd&gt;call smoothie#upwards()   &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(SmoothieDownwards)</code> | <code>&lt;Cmd&gt;call smoothie#downwards() &lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(fzf-maps-o)</code> | <code>&lt;C-C&gt;:&lt;C-U&gt;call fzf#vim#maps('o', 0)&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
- | | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
- | 
+| :---- | ----: | :---------- |
+| <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |  |
+| <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |  |
+| <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |  |
+| <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |  |
+| <code>&lt;Plug&gt;(SmoothieBackwards)</code> | <code>&lt;Cmd&gt;call smoothie#backwards() &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(SmoothieForwards)</code> | <code>&lt;Cmd&gt;call smoothie#forwards()  &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(SmoothieUpwards)</code> | <code>&lt;Cmd&gt;call smoothie#upwards()   &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(SmoothieDownwards)</code> | <code>&lt;Cmd&gt;call smoothie#downwards() &lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(fzf-maps-o)</code> | <code>&lt;C-C&gt;:&lt;C-U&gt;call fzf#vim#maps('o', 0)&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |  |
+| <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |  |

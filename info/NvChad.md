@@ -78,84 +78,83 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 #### normal mode keymaps
 
 |  LHS  |  RHS  | Description |
-| ----- | ----- | ----------- |
-| <code>"</code> |  |
- | | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
- | Nvim builtin| <code>'</code> |  |
- | | <code>,vO</code> |  |
- | Open new line above HopLineStart target| <code>,vo</code> |  |
- | Open new line below HopLineStart target| <code>,vP</code> |  |
- | Paste above target using HopLineStart| <code>,vp</code> |  |
- | Paste below target using HopLineStart| <code>,hd</code> |  |
- | Jump to definition| <code>,hq]</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[}]])&lt;CR&gt;</code> |
- | | <code>,hq[</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[{]])&lt;CR&gt;</code> |
- | | <code>,hqk</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[)]])&lt;CR&gt;</code> |
- | | <code>,hqj</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[(]])&lt;CR&gt;</code> |
- | | <code>,hf/</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[/\&#124;?]])&lt;CR&gt;</code> |
- | | <code>,hf;</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[;\&#124;:]])&lt;CR&gt;</code> |
- | | <code>,hf-</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[-\&#124;+]])&lt;CR&gt;</code> |
- | | <code>,hf'</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [["\&#124;']])&lt;CR&gt;</code> |
- | | <code>,hH</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[\d\+]])&lt;CR&gt;</code> |
- | | <code>,hW</code> | <code>&lt;Cmd&gt;HopWordMW&lt;CR&gt;</code> |
- | | <code>,hl</code> | <code>&lt;Cmd&gt;HopLineStart&lt;CR&gt;</code> |
- | | <code>,hw</code> | <code>&lt;Cmd&gt;HopWord&lt;CR&gt;</code> |
- | | <code>,h]</code> |  |
- | Move to end of Treehopper node| <code>,h[</code> |  |
- | Move to start of Treehopper node| <code>,hm</code> |  |
- | Treehopper nodes| <code>,</code> |  |
- | | <code>?</code> | <code>/</code> |
- | | <code>F</code> |  |
- | | <code>Ls</code> |  |
- | Trigger LuaSnip snippet| <code>T</code> |  |
- | | <code>Y</code> | <code>y$</code> |
- | Nvim builtin| <code>`</code> |  |
- | | <code>c</code> |  |
- | | <code>f</code> |  |
- | | <code>g</code> |  |
- | | <code>gcc</code> |  |
- | Comment toggle current line| <code>gbc</code> |  |
- | Comment toggle current block| <code>gb</code> |  |
- | Comment toggle blockwise| <code>gc</code> |  |
- | Comment toggle linewise| <code>t</code> |  |
- | | <code>vy</code> |  |
- | Treehopper node target insert| <code>vY</code> |  |
- | HopLineStart target in normal mode| <code>vO</code> |  |
- | Open new line above HopLineStart target| <code>vo</code> |  |
- | Open new line below HopLineStart target| <code>vP</code> |  |
- | Paste above target using HopLineStart| <code>vp</code> |  |
- | Paste below target using HopLineStart| <code>v</code> |  |
- | | <code>ym</code> |  |
- | Yank using Treehopper| <code>yc</code> |  |
- | Yank a Treesitter code block| <code>yl</code> |  |
- | Yank a line with HopLineStart| <code>yx</code> |  |
- | Yank user syntax-tree-surfer| <code>&lt;M-q&gt;</code> | <code>q</code> |
- | | <code>&lt;C-R&gt;</code> |  |
- | | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
- | Nvim builtin
+| :---- | ----: | :---------- |
+| <code>"</code>|  |  |
+| <code>&</code> | <code>:&&&lt;CR&gt;</code> | Nvim builtin | 
+| <code>'</code>|  |  |
+| <code>,vO</code>|  | Open new line above HopLineStart target | 
+| <code>,vo</code>|  | Open new line below HopLineStart target | 
+| <code>,vP</code>|  | Paste above target using HopLineStart | 
+| <code>,vp</code>|  | Paste below target using HopLineStart | 
+| <code>,hd</code>|  | Jump to definition | 
+| <code>,hq]</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[}]])&lt;CR&gt;</code> |  |
+| <code>,hq[</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[{]])&lt;CR&gt;</code> |  |
+| <code>,hqk</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[)]])&lt;CR&gt;</code> |  |
+| <code>,hqj</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[(]])&lt;CR&gt;</code> |  |
+| <code>,hf/</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[/\&#124;?]])&lt;CR&gt;</code> |  |
+| <code>,hf;</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[;\&#124;:]])&lt;CR&gt;</code> |  |
+| <code>,hf-</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[-\&#124;+]])&lt;CR&gt;</code> |  |
+| <code>,hf'</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [["\&#124;']])&lt;CR&gt;</code> |  |
+| <code>,hH</code> | <code>&lt;Cmd&gt;lua require'hop'.hint_patterns({}, [[\d\+]])&lt;CR&gt;</code> |  |
+| <code>,hW</code> | <code>&lt;Cmd&gt;HopWordMW&lt;CR&gt;</code> |  |
+| <code>,hl</code> | <code>&lt;Cmd&gt;HopLineStart&lt;CR&gt;</code> |  |
+| <code>,hw</code> | <code>&lt;Cmd&gt;HopWord&lt;CR&gt;</code> |  |
+| <code>,h]</code>|  | Move to end of Treehopper node | 
+| <code>,h[</code>|  | Move to start of Treehopper node | 
+| <code>,hm</code>|  | Treehopper nodes | 
+| <code>,</code>|  |  |
+| <code>?</code> | <code>/</code> |  |
+| <code>F</code>|  |  |
+| <code>Ls</code>|  | Trigger LuaSnip snippet | 
+| <code>T</code>|  |  |
+| <code>Y</code> | <code>y$</code> | Nvim builtin | 
+| <code>`</code>|  |  |
+| <code>c</code>|  |  |
+| <code>f</code>|  |  |
+| <code>g</code>|  |  |
+| <code>gbc</code>|  | Comment toggle current block | 
+| <code>gb</code>|  | Comment toggle blockwise | 
+| <code>gc</code>|  | Comment toggle linewise | 
+| <code>gcc</code>|  | Comment toggle current line | 
+| <code>t</code>|  |  |
+| <code>vy</code>|  | Treehopper node target insert | 
+| <code>vY</code>|  | HopLineStart target in normal mode | 
+| <code>vO</code>|  | Open new line above HopLineStart target | 
+| <code>vo</code>|  | Open new line below HopLineStart target | 
+| <code>vP</code>|  | Paste above target using HopLineStart | 
+| <code>vp</code>|  | Paste below target using HopLineStart | 
+| <code>v</code>|  |  |
+| <code>ym</code>|  | Yank using Treehopper | 
+| <code>yc</code>|  | Yank a Treesitter code block | 
+| <code>yl</code>|  | Yank a line with HopLineStart | 
+| <code>yx</code>|  | Yank user syntax-tree-surfer | 
+| <code>&lt;M-q&gt;</code> | <code>q</code> |  |
+| <code>&lt;C-R&gt;</code>|  |  |
+| <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> | Nvim builtin | 
+
 #### visual mode keymaps
 
 |  LHS  |  RHS  | Description |
-| ----- | ----- | ----------- |
-| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
- | Nvim builtin| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
- | Nvim builtin| <code>,hl</code> | <code>&lt;Cmd&gt;HopLineStart&lt;CR&gt;</code> |
- | | <code>,hw</code> | <code>&lt;Cmd&gt;HopWord&lt;CR&gt;</code> |
- | | <code>F</code> |  |
- | | <code>T</code> |  |
- | | <code>f</code> |  |
- | | <code>gb</code> |  |
- | Comment toggle blockwise (visual)| <code>gc</code> |  |
- | Comment toggle linewise (visual)| <code>t</code> |  |
- | | <code>&lt;M-q&gt;</code> | <code>q</code> |
- | 
+| :---- | ----: | :---------- |
+| <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
+| <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> | Nvim builtin | 
+| <code>,hl</code> | <code>&lt;Cmd&gt;HopLineStart&lt;CR&gt;</code> |  |
+| <code>,hw</code> | <code>&lt;Cmd&gt;HopWord&lt;CR&gt;</code> |  |
+| <code>F</code>|  |  |
+| <code>T</code>|  |  |
+| <code>f</code>|  |  |
+| <code>gc</code>|  | Comment toggle linewise (visual) | 
+| <code>gb</code>|  | Comment toggle blockwise (visual) | 
+| <code>t</code>|  |  |
+| <code>&lt;M-q&gt;</code> | <code>q</code> |  |
+
 #### operator mode keymaps
 
 |  LHS  |  RHS  | Description |
-| ----- | ----- | ----------- |
-| <code>F</code> |  |
- | | <code>T</code> |  |
- | | <code>f</code> |  |
- | | <code>gb</code> |  |
- | Comment toggle blockwise| <code>gc</code> |  |
- | Comment toggle linewise| <code>t</code> |  |
- | 
+| :---- | ----: | :---------- |
+| <code>F</code>|  |  |
+| <code>T</code>|  |  |
+| <code>f</code>|  |  |
+| <code>gb</code>|  | Comment toggle blockwise | 
+| <code>gc</code>|  | Comment toggle linewise | 
+| <code>t</code>|  |  |
