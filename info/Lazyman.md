@@ -155,8 +155,8 @@ The Lazyman Neovim configuration serves as a reference implementation of a confi
 
 #### normal mode keymaps
 
-| Description | LHS | RHS |
-| ----------- | --- | --- |
+| Description |  LHS  |  RHS  |
+| :---------- | :---- | :---- |
 |  | <code>&lt;Tab&gt;</code> | <code>:BufferLineCycleNext&lt;CR&gt;</code> |
 |  | <code>&lt;CR&gt;</code> | <code>:noh&lt;CR&gt;&lt;CR&gt;</code> |
 |  | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
