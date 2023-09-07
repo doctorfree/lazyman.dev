@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Dillon Neovim Configuration Information
+# Dillon Neovim Configuration Information
 
 Author of [tsc.nvim](https://github.com/dmmulroy/tsc.nvim), asynchronous TypeScript type-checking
 
@@ -15,15 +15,15 @@ Author of [tsc.nvim](https://github.com/dmmulroy/tsc.nvim), asynchronous TypeScr
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Dillon`**
 
-### Git repository
+## Git repository
 
 [https://github.com/dmmulroy/dotfiles](https://github.com/dmmulroy/dotfiles)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/dmmulroy/dotfiles-config-nvim](https://dotfyle.com/dmmulroy/dotfiles-config-nvim)
 
-### Packer managed plugins
+## Packer managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -70,9 +70,9 @@ Author of [tsc.nvim](https://github.com/dmmulroy/tsc.nvim), asynchronous TypeScr
 - [tpope/vim-surround](https://github.com/tpope/vim-surround)
 - [gelguy/wilder.nvim](https://github.com/gelguy/wilder.nvim)
 
-### Dillon Keymaps
+## Dillon Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -650,7 +650,7 @@ Author of [tsc.nvim](https://github.com/dmmulroy/tsc.nvim), asynchronous TypeScr
 | **Right hand side** | |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -808,7 +808,7 @@ Author of [tsc.nvim](https://github.com/dmmulroy/tsc.nvim), asynchronous TypeScr
 | **Right hand side** | <code>:m '&gt;+1&lt;CR&gt;gv=gv</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

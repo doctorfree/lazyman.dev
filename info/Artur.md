@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Artur Neovim Configuration Information
+# Artur Neovim Configuration Information
 
 Personal Neovim config of Artur Gomes
 
@@ -15,15 +15,15 @@ Personal Neovim config of Artur Gomes
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Artur`**
 
-### Git repository
+## Git repository
 
 [https://github.com/arturgoms/nvim](https://github.com/arturgoms/nvim)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/arturgoms/nvim](https://dotfyle.com/arturgoms/nvim)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -93,9 +93,9 @@ Personal Neovim config of Artur Gomes
 - [mattn/webapi-vim](https://github.com/mattn/webapi-vim.git)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### Artur Keymaps
+## Artur Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -327,15 +327,15 @@ Personal Neovim config of Artur Gomes
 | **Left hand side** | <code>cs</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-change)</code> |
 
-| **Description** | Delete a surrounding pair |
-| :---- | :---- |
-| **Left hand side** | <code>ds</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-delete)</code> |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>dm</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call signature#utils#Remove(v:count)&lt;CR&gt;</code> |
+
+| **Description** | Delete a surrounding pair |
+| :---- | :---- |
+| **Left hand side** | <code>ds</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-delete)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -381,46 +381,6 @@ Personal Neovim config of Artur Gomes
 | :---- | :---- |
 | **Left hand side** | <code>gc</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m?</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call signature#marker#List(v:count, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m/</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call signature#mark#List(0, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m&lt;BS&gt;</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call signature#marker#Purge()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m </code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call signature#mark#Purge("all")&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m-</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call signature#mark#Purge("line")&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m.</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call signature#mark#ToggleAtLine()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m,</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call signature#mark#Toggle("next")&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call signature#utils#Input()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -472,6 +432,46 @@ Personal Neovim config of Artur Gomes
 | **Left hand side** | <code>ma</code> |
 | **Right hand side** | <code>&lt;Plug&gt;BookmarkShowAll</code> |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m?</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call signature#marker#List(v:count, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m/</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call signature#mark#List(0, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m&lt;BS&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call signature#marker#Purge()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m </code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call signature#mark#Purge("all")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m-</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call signature#mark#Purge("line")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m.</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call signature#mark#ToggleAtLine()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m,</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call signature#mark#Toggle("next")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call signature#utils#Input()&lt;CR&gt;</code> |
+
 | **Description** | Add a surrounding pair around the current line, on new lines (normal mode) |
 | :---- | :---- |
 | **Left hand side** | <code>ySS</code> |
@@ -494,6 +494,11 @@ Personal Neovim config of Artur Gomes
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>z%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>zb</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zb(250)&lt;CR&gt;</code> |
 
@@ -509,48 +514,8 @@ Personal Neovim config of Artur Gomes
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>z%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;NetrwBrowseX</code> |
 | **Right hand side** | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F3&gt;</code> |
-| **Right hand side** | <code>:MaximizerToggle&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-j&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'tmux'.resize_bottom()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-h&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'tmux'.resize_left()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-k&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'tmux'.resize_top()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-l&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'tmux'.resize_right()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
-| **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
@@ -571,36 +536,6 @@ Personal Neovim config of Artur Gomes
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-D&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-E&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Y&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-B&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-F&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-U&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -649,13 +584,108 @@ Personal Neovim config of Artur Gomes
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;17_(wise)</code> |
+| **Left hand side** | <code>&lt;SNR&gt;31_(wise)</code> |
 | **Right hand side** | <code>empty(g:v_motion_force) ? 'v' : g:v_motion_force</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-hi-surround)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#matchparen#highlight_surrounding()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;BookmarkMoveToLine</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;BookmarkMoveToLine v:count&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;BookmarkMoveDown</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;BookmarkMoveDown v:count&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;BookmarkMoveUp</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;BookmarkMoveUp v:count&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;BookmarkClearAll</code> |
+| **Right hand side** | <code>:BookmarkClearAll&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;BookmarkClear</code> |
+| **Right hand side** | <code>:BookmarkClear&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;BookmarkPrev</code> |
+| **Right hand side** | <code>:BookmarkPrev&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;BookmarkNext</code> |
+| **Right hand side** | <code>:BookmarkNext&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;BookmarkAnnotate</code> |
+| **Right hand side** | <code>:BookmarkAnnotate&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;BookmarkToggle</code> |
+| **Right hand side** | <code>:BookmarkToggle&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;BookmarkShowAll</code> |
+| **Right hand side** | <code>:BookmarkShowAll&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Y&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-D&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-U&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-F&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-E&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F3&gt;</code> |
+| **Right hand side** | <code>:MaximizerToggle&lt;CR&gt;</code> |
 
 | **Description** | Change a surrounding pair, putting replacements on new lines |
 | :---- | :---- |
@@ -724,53 +754,23 @@ Personal Neovim config of Artur Gomes
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;BookmarkMoveToLine</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;BookmarkMoveToLine v:count&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;M-k&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'tmux'.resize_top()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;BookmarkMoveDown</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;BookmarkMoveDown v:count&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;M-h&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'tmux'.resize_left()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;BookmarkMoveUp</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;BookmarkMoveUp v:count&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;M-j&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'tmux'.resize_bottom()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;BookmarkClearAll</code> |
-| **Right hand side** | <code>:BookmarkClearAll&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;BookmarkClear</code> |
-| **Right hand side** | <code>:BookmarkClear&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;BookmarkPrev</code> |
-| **Right hand side** | <code>:BookmarkPrev&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;BookmarkNext</code> |
-| **Right hand side** | <code>:BookmarkNext&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;BookmarkAnnotate</code> |
-| **Right hand side** | <code>:BookmarkAnnotate&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;BookmarkToggle</code> |
-| **Right hand side** | <code>:BookmarkToggle&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;BookmarkShowAll</code> |
-| **Right hand side** | <code>:BookmarkShowAll&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;M-l&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'tmux'.resize_right()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -858,7 +858,7 @@ Personal Neovim config of Artur Gomes
 | **Right hand side** | <code>&lt;Cmd&gt;lua require'tmux'.move_right()&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -935,10 +935,10 @@ Personal Neovim config of Artur Gomes
 | **Left hand side** | <code>gx</code> |
 | **Right hand side** | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
 
-| **Description** | |
+| **Description** | Add a surrounding pair around a visual selection, on new lines |
 | :---- | :---- |
-| **Left hand side** | <code>g%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
+| **Left hand side** | <code>gS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
 
 | **Description** | Comment toggle blockwise (visual) |
 | :---- | :---- |
@@ -950,10 +950,10 @@ Personal Neovim config of Artur Gomes
 | **Left hand side** | <code>gc</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
 
-| **Description** | Add a surrounding pair around a visual selection, on new lines |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gS</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -967,16 +967,6 @@ Personal Neovim config of Artur Gomes
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>z%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>zt</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zt(250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>zb</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zb(250)&lt;CR&gt;</code> |
 
@@ -987,8 +977,78 @@ Personal Neovim config of Artur Gomes
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>zt</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zt(250)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>z%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
+
+| **Description** | Add a surrounding pair around a visual selection, on new lines |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = true })&lt;CR&gt;</code> |
+
+| **Description** | Add a surrounding pair around a visual selection |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = false })&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F3&gt;</code> |
+| **Right hand side** | <code>:MaximizerToggle&lt;CR&gt;gv</code> |
+
+| **Description** | Comment toggle blockwise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle linewise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-F&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-E&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Y&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-D&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-U&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1003,122 +1063,62 @@ Personal Neovim config of Artur Gomes
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;32_(matchup-Z%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;8_(matchup-Z%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;32_(matchup-Z%)</code> |
+| **Left hand side** | <code>&lt;SNR&gt;8_(matchup-Z%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;32_(matchup-z%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;8_(matchup-z%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;32_(matchup-z%)</code> |
+| **Left hand side** | <code>&lt;SNR&gt;8_(matchup-z%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;32_(matchup-[%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;8_(matchup-[%)</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;32_(matchup-]%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;8_(matchup-]%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;32_(matchup-[%)</code> |
+| **Left hand side** | <code>&lt;SNR&gt;8_(matchup-[%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 0)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;32_(matchup-]%)</code> |
+| **Left hand side** | <code>&lt;SNR&gt;8_(matchup-]%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;32_(matchup-g%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;8_(matchup-g%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;32_(matchup-g%)</code> |
+| **Left hand side** | <code>&lt;SNR&gt;8_(matchup-g%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 0)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;32_(matchup-%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;8_(matchup-%)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;32_(matchup-%)</code> |
+| **Left hand side** | <code>&lt;SNR&gt;8_(matchup-%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 1)&lt;CR&gt;</code> |
-
-| **Description** | Comment toggle blockwise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-
-| **Description** | Comment toggle linewise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-
-| **Description** | Add a surrounding pair around a visual selection, on new lines |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = true })&lt;CR&gt;</code> |
-
-| **Description** | Add a surrounding pair around a visual selection |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-visual)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = false })&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-F&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-D&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Y&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-E&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-B&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-U&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F3&gt;</code> |
-| **Right hand side** | <code>:MaximizerToggle&lt;CR&gt;gv</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1131,7 +1131,7 @@ Personal Neovim config of Artur Gomes
 | **Right hand side** | <code>:m .+1&lt;CR&gt;==</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

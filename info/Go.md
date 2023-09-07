@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Go Neovim Configuration Information
+# Go Neovim Configuration Information
 
 NvChad based Neovim config with Go formatting, debugging, and diagnostics. Dreams of Code [video tutorial](https://youtu.be/i04sSQjd-qo)
 
@@ -15,19 +15,19 @@ NvChad based Neovim config with Go formatting, debugging, and diagnostics. Dream
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Go`**
 
-### Git repository
+## Git repository
 
 [https://github.com/dreamsofcode-io/neovim-go-config](https://github.com/dreamsofcode-io/neovim-go-config)
 
-### Website
+## Website
 
 [https://nvchad.com](https://nvchad.com)
 
-### YouTube channel
+## YouTube channel
 
 [https://www.youtube.com/@dreamsofcode](https://www.youtube.com/@dreamsofcode)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -59,9 +59,9 @@ NvChad based Neovim config with Go formatting, debugging, and diagnostics. Dream
 - [bluz71/vim-nightfly-guicolors](https://github.com/bluz71/vim-nightfly-guicolors)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### Go Keymaps
+## Go Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -98,14 +98,14 @@ NvChad based Neovim config with Go formatting, debugging, and diagnostics. Dream
 | **Left hand side** | <code>c</code> |
 | **Right hand side** | |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g</code> |
+| **Right hand side** | |
+
 | **Description** | Comment toggle blockwise |
 | :---- | :---- |
 | **Left hand side** | <code>gb</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle current line |
-| :---- | :---- |
-| **Left hand side** | <code>gcc</code> |
 | **Right hand side** | |
 
 | **Description** | Comment toggle linewise |
@@ -113,14 +113,14 @@ NvChad based Neovim config with Go formatting, debugging, and diagnostics. Dream
 | **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
 
+| **Description** | Comment toggle current line |
+| :---- | :---- |
+| **Left hand side** | <code>gcc</code> |
+| **Right hand side** | |
+
 | **Description** | Comment toggle current block |
 | :---- | :---- |
 | **Left hand side** | <code>gbc</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>g</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -139,7 +139,7 @@ NvChad based Neovim config with Go formatting, debugging, and diagnostics. Dream
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -151,26 +151,26 @@ NvChad based Neovim config with Go formatting, debugging, and diagnostics. Dream
 | **Left hand side** | <code>*</code> |
 | **Right hand side** | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
 
-| **Description** | Comment toggle linewise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>gc</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle blockwise (visual) |
 | :---- | :---- |
 | **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
-
-#### operator mode keymaps
-
-| **Description** | Comment toggle blockwise |
+| **Description** | Comment toggle linewise (visual) |
 | :---- | :---- |
-| **Left hand side** | <code>gb</code> |
+| **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
+
+
+### Operator mode keymaps
 
 | **Description** | Comment toggle linewise |
 | :---- | :---- |
 | **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 

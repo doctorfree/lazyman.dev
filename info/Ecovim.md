@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Ecovim Neovim Configuration Information
+# Ecovim Neovim Configuration Information
 
 Tailored for frontend development with React and Vue.js
 
@@ -15,15 +15,15 @@ Tailored for frontend development with React and Vue.js
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Ecovim`**
 
-### Git repository
+## Git repository
 
 [https://github.com/ecosse3/nvim](https://github.com/ecosse3/nvim)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [http://neovimcraft.com/plugin/ecosse3/nvim](http://neovimcraft.com/plugin/ecosse3/nvim)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [antoinemadec/FixCursorHold.nvim](https://github.com/antoinemadec/FixCursorHold.nvim)
@@ -121,9 +121,9 @@ Tailored for frontend development with React and Vue.js
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 
-### Ecovim Keymaps
+## Ecovim Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -185,65 +185,10 @@ Tailored for frontend development with React and Vue.js
 | **Left hand side** | <code> /l</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;:Lazy&lt;CR&gt;</code> |
 
-| **Description** | Mason |
-| :---- | :---- |
-| **Left hand side** | <code> cm</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> gwc</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.create_git_worktree()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> gww</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.git_worktrees()&lt;CR&gt;</code> |
-
 | **Description** | terminal float |
 | :---- | :---- |
 | **Left hand side** | <code> at</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm direction=float&lt;CR&gt;</code> |
-
-| **Description** | comment box |
-| :---- | :---- |
-| **Left hand side** | <code> ac</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('comment-box').lbox()&lt;CR&gt;</code> |
-
-| **Description** | move to next conflict |
-| :---- | :---- |
-| **Left hand side** | <code> gcn</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
-
-| **Description** | choose both |
-| :---- | :---- |
-| **Left hand side** | <code> gcb</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
-
-| **Description** | choose theirs |
-| :---- | :---- |
-| **Left hand side** | <code> gct</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> |
-
-| **Description** | move to prev conflict |
-| :---- | :---- |
-| **Left hand side** | <code> gcp</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
-
-| **Description** | choose ours |
-| :---- | :---- |
-| **Left hand side** | <code> gco</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
-
-| **Description** | remove session |
-| :---- | :---- |
-| **Left hand side** | <code> /sr</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;SessionManager delete_session&lt;CR&gt;</code> |
-
-| **Description** | choose session |
-| :---- | :---- |
-| **Left hand side** | <code> /sc</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;SessionManager load_session&lt;CR&gt;</code> |
 
 | **Description** | save session |
 | :---- | :---- |
@@ -260,90 +205,60 @@ Tailored for frontend development with React and Vue.js
 | **Left hand side** | <code> /sd</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;SessionManager load_current_dir_session&lt;CR&gt;</code> |
 
-| **Description** | multicursor |
+| **Description** | remove session |
 | :---- | :---- |
-| **Left hand side** | <code> m</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> /sr</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager delete_session&lt;CR&gt;</code> |
 
-| **Description** | summarize text |
+| **Description** | choose session |
 | :---- | :---- |
-| **Left hand side** | <code> as</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> /sc</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager load_session&lt;CR&gt;</code> |
 
-| **Description** | generate git message |
+| **Description** | Mason |
 | :---- | :---- |
-| **Left hand side** | <code> ag</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> cm</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
 
-| **Description** | diff file |
+| **Description** | comment box |
 | :---- | :---- |
-| **Left hand side** | <code> gd</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> ac</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('comment-box').lbox()&lt;CR&gt;</code> |
 
-| **Description** | status |
+| **Description** | choose theirs |
 | :---- | :---- |
-| **Left hand side** | <code> gs</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> gct</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> |
 
-| **Description** | |
+| **Description** | move to prev conflict |
 | :---- | :---- |
-| **Left hand side** | <code> dt</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> gcp</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
 
-| **Description** | |
+| **Description** | choose ours |
 | :---- | :---- |
-| **Left hand side** | <code> dO</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> gco</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
 
-| **Description** | |
+| **Description** | move to next conflict |
 | :---- | :---- |
-| **Left hand side** | <code> do</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> gcn</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
 
-| **Description** | |
+| **Description** | choose both |
 | :---- | :---- |
-| **Left hand side** | <code> di</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> dh</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> gcb</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> dd</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> gwc</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.create_git_worktree()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> dc</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> db</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> da</code> |
-| **Right hand side** | |
-
-| **Description** | lazygit |
-| :---- | :---- |
-| **Left hand side** | <code> gg</code> |
-| **Right hand side** | |
-
-| **Description** | refactor |
-| :---- | :---- |
-| **Left hand side** | <code> pr</code> |
-| **Right hand side** | |
-
-| **Description** | Pin/Unpin Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> bP</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> gww</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.git_worktrees()&lt;CR&gt;</code> |
 
 | **Description** | Pick Buffer |
 | :---- | :---- |
@@ -430,6 +345,31 @@ Tailored for frontend development with React and Vue.js
 | **Left hand side** | <code> bsd</code> |
 | **Right hand side** | |
 
+| **Description** | Pin/Unpin Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> bP</code> |
+| **Right hand side** | |
+
+| **Description** | diff file |
+| :---- | :---- |
+| **Left hand side** | <code> gd</code> |
+| **Right hand side** | |
+
+| **Description** | status |
+| :---- | :---- |
+| **Left hand side** | <code> gs</code> |
+| **Right hand side** | |
+
+| **Description** | diff hunk |
+| :---- | :---- |
+| **Left hand side** | <code> ghd</code> |
+| **Right hand side** | |
+
+| **Description** | undo stage |
+| :---- | :---- |
+| **Left hand side** | <code> ghu</code> |
+| **Right hand side** | |
+
 | **Description** | toggle deleted |
 | :---- | :---- |
 | **Left hand side** | <code> ght</code> |
@@ -460,14 +400,74 @@ Tailored for frontend development with React and Vue.js
 | **Left hand side** | <code> ghp</code> |
 | **Right hand side** | |
 
-| **Description** | diff hunk |
+| **Description** | lazygit |
 | :---- | :---- |
-| **Left hand side** | <code> ghd</code> |
+| **Left hand side** | <code> gg</code> |
 | **Right hand side** | |
 
-| **Description** | undo stage |
+| **Description** | generate git message |
 | :---- | :---- |
-| **Left hand side** | <code> ghu</code> |
+| **Left hand side** | <code> ag</code> |
+| **Right hand side** | |
+
+| **Description** | summarize text |
+| :---- | :---- |
+| **Left hand side** | <code> as</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> dt</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> dO</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> do</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> di</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> dh</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> dd</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> dc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> db</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> da</code> |
+| **Right hand side** | |
+
+| **Description** | multicursor |
+| :---- | :---- |
+| **Left hand side** | <code> m</code> |
+| **Right hand side** | |
+
+| **Description** | refactor |
+| :---- | :---- |
+| **Left hand side** | <code> pr</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -620,16 +620,6 @@ Tailored for frontend development with React and Vue.js
 | **Left hand side** | <code>g%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
 
-| **Description** | Align with preview |
-| :---- | :---- |
-| **Left hand side** | <code>gA</code> |
-| **Right hand side** | |
-
-| **Description** | Align |
-| :---- | :---- |
-| **Left hand side** | <code>ga</code> |
-| **Right hand side** | |
-
 | **Description** | Comment insert end of line |
 | :---- | :---- |
 | **Left hand side** | <code>gcA</code> |
@@ -665,11 +655,6 @@ Tailored for frontend development with React and Vue.js
 | **Left hand side** | <code>gc</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>gs</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(Switch)</code> |
-
 | **Description** | Move to right "around" |
 | :---- | :---- |
 | **Left hand side** | <code>g]</code> |
@@ -678,6 +663,21 @@ Tailored for frontend development with React and Vue.js
 | **Description** | Move to left "around" |
 | :---- | :---- |
 | **Left hand side** | <code>g[</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gs</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(Switch)</code> |
+
+| **Description** | Align with preview |
+| :---- | :---- |
+| **Left hand side** | <code>gA</code> |
+| **Right hand side** | |
+
+| **Description** | Align |
+| :---- | :---- |
+| **Left hand side** | <code>ga</code> |
 | **Right hand side** | |
 
 | **Description** | LSP Implementations |
@@ -830,6 +830,41 @@ Tailored for frontend development with React and Vue.js
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
 
+| **Description** | Toggle Terminal |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F12&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingFallbackDown</code> |
+| **Right hand side** | <code>&lt;C-X&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingFallbackUp</code> |
+| **Right hand side** | <code>&lt;C-A&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingNowUTC</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#timestamp(1,v:count)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingNowLocal</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#timestamp(0,v:count)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingDown</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#increment(-v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingUp</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#increment(v:count1)&lt;CR&gt;</code> |
+
 | **Description** | Comment toggle blockwise with count |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
@@ -869,41 +904,6 @@ Tailored for frontend development with React and Vue.js
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Switch)</code> |
 | **Right hand side** | <code>:set opfunc=switch#OpfuncForward&lt;CR&gt;g@l</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingFallbackDown</code> |
-| **Right hand side** | <code>&lt;C-X&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingFallbackUp</code> |
-| **Right hand side** | <code>&lt;C-A&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingNowUTC</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#timestamp(1,v:count)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingNowLocal</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#timestamp(0,v:count)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingDown</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#increment(-v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingUp</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#increment(v:count1)&lt;CR&gt;</code> |
-
-| **Description** | Toggle Terminal |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F12&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
 
 | **Description** | Change a surrounding pair, putting replacements on new lines |
 | :---- | :---- |
@@ -975,16 +975,6 @@ Tailored for frontend development with React and Vue.js
 | **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
 | **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
-| **Description** | multicursor down |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Down&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | NvimTree |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-E&gt;</code> |
-| **Right hand side** | |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;M-9&gt;</code> |
@@ -1030,13 +1020,23 @@ Tailored for frontend development with React and Vue.js
 | **Left hand side** | <code>&lt;M-1&gt;</code> |
 | **Right hand side** | |
 
+| **Description** | multicursor down |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Down&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | NvimTree |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-E&gt;</code> |
+| **Right hand side** | |
+
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
 | **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -1163,16 +1163,6 @@ Tailored for frontend development with React and Vue.js
 | **Left hand side** | <code>gS</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
 
-| **Description** | Move to right "around" |
-| :---- | :---- |
-| **Left hand side** | <code>g]</code> |
-| **Right hand side** | |
-
-| **Description** | Move to left "around" |
-| :---- | :---- |
-| **Left hand side** | <code>g[</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle blockwise (visual) |
 | :---- | :---- |
 | **Left hand side** | <code>gb</code> |
@@ -1191,6 +1181,16 @@ Tailored for frontend development with React and Vue.js
 | **Description** | Align |
 | :---- | :---- |
 | **Left hand side** | <code>ga</code> |
+| **Right hand side** | |
+
+| **Description** | Move to right "around" |
+| :---- | :---- |
+| **Left hand side** | <code>g]</code> |
+| **Right hand side** | |
+
+| **Description** | Move to left "around" |
+| :---- | :---- |
+| **Left hand side** | <code>g[</code> |
 | **Right hand side** | |
 
 | **Description** | Inside last textobject |
@@ -1289,7 +1289,7 @@ Tailored for frontend development with React and Vue.js
 | **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

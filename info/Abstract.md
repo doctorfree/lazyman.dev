@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Abstract Neovim Configuration Information
+# Abstract Neovim Configuration Information
 
 Preconfigured Neovim as an IDE
 
@@ -15,23 +15,23 @@ Preconfigured Neovim as an IDE
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Abstract`**
 
-### Git repository
+## Git repository
 
 [https://github.com/Abstract-IDE/Abstract](https://github.com/Abstract-IDE/Abstract)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [https://neovimcraft.com/plugin/Abstract-IDE/Abstract](https://neovimcraft.com/plugin/Abstract-IDE/Abstract)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/plugins/Abstract-IDE/Abstract](https://dotfyle.com/plugins/Abstract-IDE/Abstract)
 
-### Website
+## Website
 
 [https://abstract-ide.github.io/site](https://abstract-ide.github.io/site)
 
-### Packer managed plugins
+## Packer managed plugins
 
 - [Abstract-IDE/Abstract-cs](https://github.com/Abstract-IDE/Abstract-cs)
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
@@ -86,9 +86,9 @@ Preconfigured Neovim as an IDE
 - [voldikss/vim-floaterm](https://github.com/voldikss/vim-floaterm)
 - [szw/vim-maximizer](https://github.com/szw/vim-maximizer)
 
-### Abstract Keymaps
+## Abstract Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -391,7 +391,7 @@ Preconfigured Neovim as an IDE
 | **Right hand side** | <code>zl</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -534,7 +534,7 @@ Preconfigured Neovim as an IDE
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

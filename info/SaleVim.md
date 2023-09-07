@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## SaleVim Neovim Configuration Information
+# SaleVim Neovim Configuration Information
 
 'Salesforce' optimized IDE with custom features for editing 'Apex', 'Visualforce', and 'Lightning' code
 
@@ -15,11 +15,11 @@ post_style: page
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-SaleVim`**
 
-### Git repository
+## Git repository
 
 [https://github.com/igorcguedes/SaleVim](https://github.com/igorcguedes/SaleVim)
 
-### Packer managed plugins
+## Packer managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -56,9 +56,9 @@ post_style: page
 - [beyond-the-cloud-dev/vsc-salesforce-code-snippets](https://github.com/beyond-the-cloud-dev/vsc-salesforce-code-snippets)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### SaleVim Keymaps
+## SaleVim Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -521,7 +521,7 @@ post_style: page
 | **Right hand side** | |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -664,7 +664,7 @@ post_style: page
 | **Right hand side** | <code>:move '&gt;+1&lt;CR&gt;gv-gv</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

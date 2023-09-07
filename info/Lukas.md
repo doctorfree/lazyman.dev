@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Lukas Neovim Configuration Information
+# Lukas Neovim Configuration Information
 
 Personal Neovim configuration of Lukas Reineke, author of many excellent Neovim plugins. Requires an externally installed `lua-language-server` and `efm-langserver`
 
@@ -15,11 +15,11 @@ Personal Neovim configuration of Lukas Reineke, author of many excellent Neovim 
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Lukas`**
 
-### Git repository
+## Git repository
 
 [https://github.com/lukas-reineke/dotfiles](https://github.com/lukas-reineke/dotfiles)
 
-### Packer managed plugins
+## Packer managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [antoinemadec/FixCursorHold.nvim](https://github.com/antoinemadec/FixCursorHold.nvim)
@@ -135,9 +135,9 @@ Personal Neovim configuration of Lukas Reineke, author of many excellent Neovim 
 - [lukas-reineke/virt-column.nvim](https://github.com/lukas-reineke/virt-column.nvim)
 - [microsoft/vscode-js-debug](https://github.com/microsoft/vscode-js-debug)
 
-### Lukas Keymaps
+## Lukas Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -2015,7 +2015,7 @@ Personal Neovim configuration of Lukas Reineke, author of many excellent Neovim 
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').right()&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -2853,7 +2853,7 @@ Personal Neovim configuration of Lukas Reineke, author of many excellent Neovim 
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

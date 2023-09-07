@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Minimal Neovim Configuration Information
+# Minimal Neovim Configuration Information
 
 Small configuration without third party plugins
 
@@ -15,16 +15,16 @@ Small configuration without third party plugins
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Minimal`**
 
-### Git repository
+## Git repository
 
 [https://github.com/VonHeikemen/nvim-starter/tree/00-minimal](https://github.com/VonHeikemen/nvim-starter/tree/00-minimal)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 
-### Minimal Keymaps
+## Minimal Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -152,7 +152,7 @@ Small configuration without third party plugins
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -250,7 +250,7 @@ Small configuration without third party plugins
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

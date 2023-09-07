@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## LazyVim Neovim Configuration Information
+# LazyVim Neovim Configuration Information
 
 The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 
@@ -15,15 +15,15 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-LazyVim`**
 
-### Git repository
+## Git repository
 
 [https://github.com/LazyVim LazyVim/starter](https://github.com/LazyVim LazyVim/starter)
 
-### Website
+## Website
 
 [https://lazyvim.lazyman.dev](https://lazyvim.lazyman.dev)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [LazyVim/LazyVim](https://github.com/LazyVim/LazyVim.git)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -74,23 +74,58 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 - [dstein64/vim-startuptime](https://github.com/dstein64/vim-startuptime)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### LazyVim Keymaps
+## LazyVim Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
+
+| **Description** | Replace in files (Spectre) |
+| :---- | :---- |
+| **Left hand side** | <code> sr</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer NeoTree (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> fE</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer NeoTree (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> fe</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer NeoTree (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> E</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer NeoTree (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> e</code> |
+| **Right hand side** | |
+
+| **Description** | Mason |
+| :---- | :---- |
+| **Left hand side** | <code> cm</code> |
+| **Right hand side** | |
+
+| **Description** | Dismiss all Notifications |
+| :---- | :---- |
+| **Left hand side** | <code> un</code> |
+| **Right hand side** | |
 
 | **Description** | Todo/Fix/Fixme |
 | :---- | :---- |
 | **Left hand side** | <code> sT</code> |
 | **Right hand side** | |
 
-| **Description** | Todo |
-| :---- | :---- |
-| **Left hand side** | <code> st</code> |
-| **Right hand side** | |
-
 | **Description** | Todo/Fix/Fixme (Trouble) |
 | :---- | :---- |
 | **Left hand side** | <code> xT</code> |
+| **Right hand side** | |
+
+| **Description** | Todo |
+| :---- | :---- |
+| **Left hand side** | <code> st</code> |
 | **Right hand side** | |
 
 | **Description** | Todo (Trouble) |
@@ -118,49 +153,44 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code> xx</code> |
 | **Right hand side** | |
 
+| **Description** | Toggle pin |
+| :---- | :---- |
+| **Left hand side** | <code> bp</code> |
+| **Right hand side** | |
+
+| **Description** | Delete non-pinned buffers |
+| :---- | :---- |
+| **Left hand side** | <code> bP</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> bd</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer (Force) |
+| :---- | :---- |
+| **Left hand side** | <code> bD</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Session |
+| :---- | :---- |
+| **Left hand side** | <code> qs</code> |
+| **Right hand side** | |
+
+| **Description** | Don't Save Current Session |
+| :---- | :---- |
+| **Left hand side** | <code> qd</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Last Session |
+| :---- | :---- |
+| **Left hand side** | <code> ql</code> |
+| **Right hand side** | |
+
 | **Description** | Recent (cwd) |
 | :---- | :---- |
 | **Left hand side** | <code> fR</code> |
-| **Right hand side** | |
-
-| **Description** | Recent |
-| :---- | :---- |
-| **Left hand side** | <code> fr</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> fF</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> ff</code> |
-| **Right hand side** | |
-
-| **Description** | Buffers |
-| :---- | :---- |
-| **Left hand side** | <code> fb</code> |
-| **Right hand side** | |
-
-| **Description** | Command History |
-| :---- | :---- |
-| **Left hand side** | <code> :</code> |
-| **Right hand side** | |
-
-| **Description** | Grep (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> /</code> |
-| **Right hand side** | |
-
-| **Description** | Switch Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> ,</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code>  </code> |
 | **Right hand side** | |
 
 | **Description** | Goto Symbol (Workspace) |
@@ -278,59 +308,44 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code> gc</code> |
 | **Right hand side** | |
 
-| **Description** | Delete non-pinned buffers |
+| **Description** | Find Files (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code> bP</code> |
+| **Left hand side** | <code>  </code> |
 | **Right hand side** | |
 
-| **Description** | Toggle pin |
+| **Description** | Recent |
 | :---- | :---- |
-| **Left hand side** | <code> bp</code> |
+| **Left hand side** | <code> fr</code> |
 | **Right hand side** | |
 
-| **Description** | Explorer NeoTree (root dir) |
+| **Description** | Find Files (cwd) |
 | :---- | :---- |
-| **Left hand side** | <code> e</code> |
+| **Left hand side** | <code> fF</code> |
 | **Right hand side** | |
 
-| **Description** | Explorer NeoTree (cwd) |
+| **Description** | Find Files (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code> fE</code> |
+| **Left hand side** | <code> ff</code> |
 | **Right hand side** | |
 
-| **Description** | Explorer NeoTree (root dir) |
+| **Description** | Buffers |
 | :---- | :---- |
-| **Left hand side** | <code> fe</code> |
+| **Left hand side** | <code> fb</code> |
 | **Right hand side** | |
 
-| **Description** | Explorer NeoTree (cwd) |
+| **Description** | Command History |
 | :---- | :---- |
-| **Left hand side** | <code> E</code> |
+| **Left hand side** | <code> :</code> |
 | **Right hand side** | |
 
-| **Description** | Dismiss all Notifications |
+| **Description** | Grep (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code> un</code> |
+| **Left hand side** | <code> /</code> |
 | **Right hand side** | |
 
-| **Description** | Mason |
+| **Description** | Switch Buffer |
 | :---- | :---- |
-| **Left hand side** | <code> cm</code> |
-| **Right hand side** | |
-
-| **Description** | Replace in files (Spectre) |
-| :---- | :---- |
-| **Left hand side** | <code> sr</code> |
-| **Right hand side** | |
-
-| **Description** | Noice All |
-| :---- | :---- |
-| **Left hand side** | <code> sna</code> |
-| **Right hand side** | |
-
-| **Description** | Noice History |
-| :---- | :---- |
-| **Left hand side** | <code> snh</code> |
+| **Left hand side** | <code> ,</code> |
 | **Right hand side** | |
 
 | **Description** | Noice Last Message |
@@ -343,29 +358,14 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code> snd</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Session |
+| **Description** | Noice All |
 | :---- | :---- |
-| **Left hand side** | <code> qs</code> |
+| **Left hand side** | <code> sna</code> |
 | **Right hand side** | |
 
-| **Description** | Don't Save Current Session |
+| **Description** | Noice History |
 | :---- | :---- |
-| **Left hand side** | <code> qd</code> |
-| **Right hand side** | |
-
-| **Description** | Restore Last Session |
-| :---- | :---- |
-| **Left hand side** | <code> ql</code> |
-| **Right hand side** | |
-
-| **Description** | Delete Buffer (Force) |
-| :---- | :---- |
-| **Left hand side** | <code> bD</code> |
-| **Right hand side** | |
-
-| **Description** | Delete Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> bd</code> |
+| **Left hand side** | <code> snh</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -443,14 +443,14 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code>gzh</code> |
 | **Right hand side** | |
 
-| **Description** | Replace surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gzr</code> |
-| **Right hand side** | |
-
 | **Description** | Find right surrounding |
 | :---- | :---- |
 | **Left hand side** | <code>gzf</code> |
+| **Right hand side** | |
+
+| **Description** | Add surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gza</code> |
 | **Right hand side** | |
 
 | **Description** | Delete surrounding |
@@ -468,9 +468,9 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Left hand side** | <code>gzF</code> |
 | **Right hand side** | |
 
-| **Description** | Add surrounding |
+| **Description** | Replace surrounding |
 | :---- | :---- |
-| **Left hand side** | <code>gza</code> |
+| **Left hand side** | <code>gzr</code> |
 | **Right hand side** | |
 
 | **Description** | Flash |
@@ -524,16 +524,16 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
-
-| **Description** | Selection (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> sW</code> |
-| **Right hand side** | |
+### Visual mode keymaps
 
 | **Description** | Selection (root dir) |
 | :---- | :---- |
 | **Left hand side** | <code> sw</code> |
+| **Right hand side** | |
+
+| **Description** | Selection (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> sW</code> |
 | **Right hand side** | |
 
 | **Description** | Nvim builtin |
@@ -632,7 +632,7 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 | **Right hand side** | |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

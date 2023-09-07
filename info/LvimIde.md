@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## LvimIde Neovim Configuration Information
+# LvimIde Neovim Configuration Information
 
 Not to be confused with 'LunarVim', this is a standalone Neovim configuration. Modular configuration with LSP support for 60+ languages. Debug support for c, cpp, dart, elixir, go, haskell, java, javascript/typescript, lua, php, python, ruby, rust
 
@@ -15,19 +15,19 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-LvimIde`**
 
-### Git repository
+## Git repository
 
 [https://github.com/lvim-tech/lvim](https://github.com/lvim-tech/lvim)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [http://neovimcraft.com/plugin/lvim-tech/lvim](http://neovimcraft.com/plugin/lvim-tech/lvim)
 
-### YouTube channel
+## YouTube channel
 
 [https://www.youtube.com/@lvimtech5651](https://www.youtube.com/@lvimtech5651)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -156,9 +156,9 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 - [sindrets/winshift.nvim](https://github.com/sindrets/winshift.nvim.git)
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 
-### LvimIde Keymaps
+## LvimIde Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | Esc |
 | :---- | :---- |
@@ -220,16 +220,6 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 | **Left hand side** | <code> qn</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('NeoComposer.ui').cycle_next()&lt;CR&gt;</code> |
 
-| **Description** | Lvim file manager |
-| :---- | :---- |
-| **Left hand side** | <code> =</code> |
-| **Right hand side** | |
-
-| **Description** | Mini files |
-| :---- | :---- |
-| **Left hand side** | <code> i</code> |
-| **Right hand side** | |
-
 | **Description** | FzfLua files |
 | :---- | :---- |
 | **Left hand side** | <code> f</code> |
@@ -248,6 +238,16 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 | **Description** | FzfLua search |
 | :---- | :---- |
 | **Left hand side** | <code> s</code> |
+| **Right hand side** | |
+
+| **Description** | Mini files |
+| :---- | :---- |
+| **Left hand side** | <code> i</code> |
+| **Right hand side** | |
+
+| **Description** | Lvim file manager |
+| :---- | :---- |
+| **Left hand side** | <code> =</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -565,46 +565,6 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
 
-| **Description** | Navbuddy |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;v</code> |
-| **Right hand side** | |
-
-| **Description** | LspDiagnostic QF |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;&lt;C-H&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Terminal Float |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F4&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Terminal Three |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F3&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Terminal Two |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F2&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Terminal One |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F1&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(fzf-normal)</code> |
-| **Right hand side** | <code></code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(fzf-insert)</code> |
-| **Right hand side** | <code>i</code> |
-
 | **Description** | Change a surrounding pair, putting replacements on new lines |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |
@@ -638,6 +598,31 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 | **Description** | Add a surrounding pair around a motion (normal mode) |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal)</code> |
+| **Right hand side** | |
+
+| **Description** | LspDiagnostic QF |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;&lt;C-H&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Terminal Float |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F4&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Terminal Three |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F3&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Terminal Two |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F2&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Terminal One |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F1&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Ranger |
@@ -697,18 +682,13 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(fzf-normal)</code> |
+| **Right hand side** | <code></code> |
 
-| **Description** | LvimLinguisticsTOGGLESpelling |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;k</code> |
-| **Right hand side** | |
-
-| **Description** | LvimLinguisticsTOGGLEInsertModeLanguage |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;l</code> |
-| **Right hand side** | |
+| **Left hand side** | <code>&lt;Plug&gt;(fzf-insert)</code> |
+| **Right hand side** | <code>i</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -720,19 +700,34 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 | **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
 | **Right hand side** | |
 
-| **Description** | NeoZoom |
+| **Description** | LvimLinguisticsTOGGLESpelling |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;z</code> |
+| **Left hand side** | <code>&lt;C-C&gt;k</code> |
+| **Right hand side** | |
+
+| **Description** | LvimLinguisticsTOGGLEInsertModeLanguage |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;l</code> |
+| **Right hand side** | |
+
+| **Description** | Navbuddy |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;v</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | Trouble |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;&lt;C-V&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | WinShift |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-C&gt;w</code> |
-| **Right hand side** | |
-
-| **Description** | Trouble |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;&lt;C-V&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Lvim forgit |
@@ -755,6 +750,41 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 | **Left hand side** | <code>&lt;M-n&gt;</code> |
 | **Right hand side** | |
 
+| **Description** | Undotree |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F5&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | NeoTree filesystem |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;&lt;C-F&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | NeoTree git status |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;&lt;C-G&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | NeoTree buffers |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;&lt;C-B&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | NeoZoom |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;z</code> |
+| **Right hand side** | |
+
+| **Description** | Telescope live grep |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-.&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Telescope find files |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-,&gt;</code> |
+| **Right hand side** | |
+
 | **Description** | Telescope tmux session |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-C&gt;t</code> |
@@ -768,36 +798,6 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 | **Description** | Telescope file browser |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;M-/&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Telescope live grep |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-.&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Telescope find files |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-,&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | NeoTree git status |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;&lt;C-G&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | NeoTree buffers |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;&lt;C-B&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | NeoTree filesystem |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;&lt;C-F&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Undotree |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F5&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Inspect |
@@ -921,7 +921,7 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 | **Right hand side** | <code>&lt;Cmd&gt;NavigatorRight&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Macro Play |
 | :---- | :---- |
@@ -1113,6 +1113,11 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
+
 | **Description** | Add a surrounding pair around a visual selection, on new lines |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
@@ -1123,13 +1128,8 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 | **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-visual)</code> |
 | **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = false })&lt;CR&gt;</code> |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| **Right hand side** | |
 
-
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

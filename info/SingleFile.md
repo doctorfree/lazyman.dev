@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## SingleFile Neovim Configuration Information
+# SingleFile Neovim Configuration Information
 
 A clean, organized pre-configured Neovim configuration guide in a single 'init.lua'
 
@@ -15,16 +15,16 @@ A clean, organized pre-configured Neovim configuration guide in a single 'init.l
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-SingleFile`**
 
-### Git repository
+## Git repository
 
 [https://github.com/creativenull/nvim-oneconfig](https://github.com/creativenull/nvim-oneconfig)
 
-### Packer managed plugins
+## Packer managed plugins
 
 
-### SingleFile Keymaps
+## SingleFile Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | Toggle file tree (neo-tree) |
 | :---- | :---- |
@@ -457,7 +457,7 @@ A clean, organized pre-configured Neovim configuration guide in a single 'init.l
 | **Right hand side** | <code>&lt;Cmd&gt;bnext&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Yank from system clipboard |
 | :---- | :---- |
@@ -640,7 +640,7 @@ A clean, organized pre-configured Neovim configuration guide in a single 'init.l
 | **Right hand side** | <code></code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

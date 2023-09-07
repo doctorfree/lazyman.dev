@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## StartBase Neovim Configuration Information
+# StartBase Neovim Configuration Information
 
 Small configuration that includes a plugin manager
 
@@ -15,20 +15,20 @@ Small configuration that includes a plugin manager
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-StartBase`**
 
-### Git repository
+## Git repository
 
 [https://github.com/VonHeikemen/nvim-starter/tree/01-base](https://github.com/VonHeikemen/nvim-starter/tree/01-base)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 - [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
 
-### StartBase Keymaps
+## StartBase Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -141,7 +141,7 @@ Small configuration that includes a plugin manager
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -239,7 +239,7 @@ Small configuration that includes a plugin manager
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

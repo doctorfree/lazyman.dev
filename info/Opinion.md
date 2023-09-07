@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Opinion Neovim Configuration Information
+# Opinion Neovim Configuration Information
 
 Includes a combination of popular plugins
 
@@ -15,11 +15,11 @@ Includes a combination of popular plugins
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Opinion`**
 
-### Git repository
+## Git repository
 
 [https://github.com/VonHeikemen/nvim-starter/tree/02-opinionated](https://github.com/VonHeikemen/nvim-starter/tree/02-opinionated)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
@@ -45,9 +45,9 @@ Includes a combination of popular plugins
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat)
 - [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
 
-### Opinion Keymaps
+## Opinion Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -279,56 +279,6 @@ Includes a combination of popular plugins
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;YSurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;14_opfunc2('setup')</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Ysurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;14_opfunc('setup')</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;YSsurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;14_opfunc2('setup').'_'</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Yssurround</code> |
-| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;14_opfunc('setup').'g_'</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;CSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_changesurround(1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Csurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_changesurround()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Dsurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_dosurround(&lt;SNR&gt;14_inputtarget())&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SurroundRepeat</code> |
-| **Right hand side** | <code>.</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;fugitive:</code> |
-| **Right hand side** | <code></code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
-
 | **Description** | Comment toggle blockwise with count |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
@@ -364,13 +314,63 @@ Includes a combination of popular plugins
 | **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
 | **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;YSurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;11_opfunc2('setup')</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Ysurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;11_opfunc('setup')</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;YSsurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;11_opfunc2('setup').'_'</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Yssurround</code> |
+| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;11_opfunc('setup').'g_'</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;11_changesurround(1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Csurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;11_changesurround()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Dsurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;11_dosurround(&lt;SNR&gt;11_inputtarget())&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SurroundRepeat</code> |
+| **Right hand side** | <code>.</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;fugitive:</code> |
+| **Right hand side** | <code></code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+
 | **Description** | Nvim builtin |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -512,6 +512,16 @@ Includes a combination of popular plugins
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;VgSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;VSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
+
 | **Description** | Comment toggle blockwise (visual) |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
@@ -522,18 +532,8 @@ Includes a combination of popular plugins
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
 | **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;VgSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;VSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
-
-
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

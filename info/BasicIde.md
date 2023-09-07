@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## BasicIde Neovim Configuration Information
+# BasicIde Neovim Configuration Information
 
 Maintained by LunarVim, this is a descendent of 'Neovim from Scratch'.All plugins are pinned to known working versions
 
@@ -15,11 +15,11 @@ Maintained by LunarVim, this is a descendent of 'Neovim from Scratch'.All plugin
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-BasicIde`**
 
-### Git repository
+## Git repository
 
 [https://github.com/LunarVim/nvim-basic-ide](https://github.com/LunarVim/nvim-basic-ide)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [ravenxrz/DAPInstall.nvim](https://github.com/ravenxrz/DAPInstall.nvim.git)
@@ -58,9 +58,9 @@ Maintained by LunarVim, this is a descendent of 'Neovim from Scratch'.All plugin
 - [RRethy/vim-illuminate](https://github.com/RRethy/vim-illuminate)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### BasicIde Keymaps
+## BasicIde Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -278,7 +278,7 @@ Maintained by LunarVim, this is a descendent of 'Neovim from Scratch'.All plugin
 | **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -376,7 +376,7 @@ Maintained by LunarVim, this is a descendent of 'Neovim from Scratch'.All plugin
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

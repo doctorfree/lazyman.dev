@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Allaman Neovim Configuration Information
+# Allaman Neovim Configuration Information
 
 One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust, YAML, and more
 
@@ -15,15 +15,15 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Allaman`**
 
-### Git repository
+## Git repository
 
 [https://github.com/Allaman/nvim](https://github.com/Allaman/nvim)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/Allaman/nvim](https://dotfyle.com/Allaman/nvim)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [numToStr/Navigator.nvim](https://github.com/numToStr/Navigator.nvim)
@@ -111,9 +111,9 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 - [anuvyklack/windows.nvim](https://github.com/anuvyklack/windows.nvim.git)
 
-### Allaman Keymaps
+## Allaman Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | Next buffer |
 | :---- | :---- |
@@ -225,6 +225,11 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 | **Left hand side** | <code> bD</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;%bd&#124;e#|bd#&lt;CR&gt;</code> |
 
+| **Description** | Toggle SymbolsOutline |
+| :---- | :---- |
+| **Left hand side** | <code> tO</code> |
+| **Right hand side** | |
+
 | **Description** | Toggle search and replace |
 | :---- | :---- |
 | **Left hand side** | <code> Rr</code> |
@@ -245,34 +250,9 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 | **Left hand side** | <code> fp</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle SymbolsOutline |
+| **Description** | Advanced Git Search |
 | :---- | :---- |
-| **Left hand side** | <code> tO</code> |
-| **Right hand side** | |
-
-| **Description** | Emoji |
-| :---- | :---- |
-| **Left hand side** | <code> sS</code> |
-| **Right hand side** | |
-
-| **Description** | Word under cursor |
-| :---- | :---- |
-| **Left hand side** | <code> ss</code> |
-| **Right hand side** | |
-
-| **Description** | Registers |
-| :---- | :---- |
-| **Left hand side** | <code> sR</code> |
-| **Right hand side** | |
-
-| **Description** | Projects |
-| :---- | :---- |
-| **Left hand side** | <code> sp</code> |
-| **Right hand side** | |
-
-| **Description** | Vim Options |
-| :---- | :---- |
-| **Left hand side** | <code> sO</code> |
+| **Left hand side** | <code> ga</code> |
 | **Right hand side** | |
 
 | **Description** | Keymaps |
@@ -370,9 +350,29 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 | **Left hand side** | <code> s:</code> |
 | **Right hand side** | |
 
-| **Description** | Advanced Git Search |
+| **Description** | Emoji |
 | :---- | :---- |
-| **Left hand side** | <code> ga</code> |
+| **Left hand side** | <code> sS</code> |
+| **Right hand side** | |
+
+| **Description** | Word under cursor |
+| :---- | :---- |
+| **Left hand side** | <code> ss</code> |
+| **Right hand side** | |
+
+| **Description** | Registers |
+| :---- | :---- |
+| **Left hand side** | <code> sR</code> |
+| **Right hand side** | |
+
+| **Description** | Projects |
+| :---- | :---- |
+| **Left hand side** | <code> sp</code> |
+| **Right hand side** | |
+
+| **Description** | Vim Options |
+| :---- | :---- |
+| **Left hand side** | <code> sO</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -505,6 +505,41 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
 
+| **Description** | Toggle Terminal |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-N&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').down()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').up()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').left()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;fugitive:</code> |
+| **Right hand side** | <code></code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+
 | **Description** | Git Conflict: Previous Conflict |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(git-conflict-prev-conflict)</code> |
@@ -535,41 +570,6 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 | **Left hand side** | <code>&lt;Plug&gt;(git-conflict-ours)</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-J&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').down()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-K&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').up()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-H&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').left()&lt;CR&gt;</code> |
-
-| **Description** | Toggle Terminal |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-N&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;fugitive:</code> |
-| **Right hand side** | <code></code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
-
 | **Description** | Search in buffer |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-F&gt;</code> |
@@ -581,7 +581,7 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').right()&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Buffer search and replace |
 | :---- | :---- |
@@ -704,7 +704,7 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

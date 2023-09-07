@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## xero Neovim Configuration Information
+# xero Neovim Configuration Information
 
 Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fine example, as are many here, of the Unix Greybeard
 
@@ -15,19 +15,19 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-xero`**
 
-### Git repository
+## Git repository
 
 [https://github.com/xero/dotfiles](https://github.com/xero/dotfiles)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [http://neovimcraft.com/plugin/xero/dotfiles](http://neovimcraft.com/plugin/xero/dotfiles)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/xero/dotfiles-neovim-config-nvim](https://dotfyle.com/xero/dotfiles-neovim-config-nvim)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim.git)
 - [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer.git)
@@ -81,9 +81,9 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 - [powerman/vim-plugin-AnsiEsc](https://github.com/powerman/vim-plugin-AnsiEsc.git)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim.git)
 
-### xero Keymaps
+## xero Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | remove highlighting |
 | :---- | :---- |
@@ -103,6 +103,11 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>,</code> |
+| **Right hand side** | |
+
+| **Description** | Find git files |
+| :---- | :---- |
+| **Left hand side** | <code>,/gf</code> |
 | **Right hand side** | |
 
 | **Description** | Search treesitter |
@@ -168,11 +173,6 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 | **Description** | Search git branches |
 | :---- | :---- |
 | **Left hand side** | <code>,/gb</code> |
-| **Right hand side** | |
-
-| **Description** | Find git files |
-| :---- | :---- |
-| **Left hand side** | <code>,/gf</code> |
 | **Right hand side** | |
 
 | **Description** | chmod +x buffer |
@@ -311,7 +311,7 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -384,7 +384,7 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Daniel Neovim Configuration Information
+# Daniel Neovim Configuration Information
 
 'LunarVim' based config of Daniel Vera Gilliard
 
@@ -15,15 +15,15 @@ post_style: page
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Daniel`**
 
-### Git repository
+## Git repository
 
 [https://github.com/daniel-vera-g/lvim](https://github.com/daniel-vera-g/lvim)
 
-### Website
+## Website
 
 [https://www.lunarvim.org](https://www.lunarvim.org)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [Pocco81/AutoSave.nvim](https://github.com/Pocco81/AutoSave.nvim.git)
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
@@ -103,9 +103,9 @@ post_style: page
 - [gelguy/wilder.nvim](https://github.com/gelguy/wilder.nvim)
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 
-### Daniel Keymaps
+## Daniel Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -179,12 +179,12 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gc</code> |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gb</code> |
+| **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -239,66 +239,6 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(openbrowser-smart-search)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call openbrowser#_keymap_smart_search('n')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(openbrowser-search)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call openbrowser#_keymap_search('n')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(openbrowser-open-incognito)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call openbrowser#_keymap_open('n', 0, ['--incognito'])&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(openbrowser-open)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call openbrowser#_keymap_open('n')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;YSurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;23_opfunc2('setup')</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Ysurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;23_opfunc('setup')</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;YSsurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;23_opfunc2('setup').'_'</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Yssurround</code> |
-| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;23_opfunc('setup').'g_'</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;CSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;23_changesurround(1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Csurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;23_changesurround()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Dsurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;23_dosurround(&lt;SNR&gt;23_inputtarget())&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SurroundRepeat</code> |
-| **Right hand side** | <code>.</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(bullets-promote)</code> |
 | **Right hand side** | <code>:BulletPromote&lt;CR&gt;</code> |
 
@@ -320,7 +260,67 @@ post_style: page
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(bullets-newline)</code> |
-| **Right hand side** | <code>:call &lt;SNR&gt;12_insert_new_bullet()&lt;CR&gt;</code> |
+| **Right hand side** | <code>:call &lt;SNR&gt;26_insert_new_bullet()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;YSurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;15_opfunc2('setup')</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Ysurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;15_opfunc('setup')</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;YSsurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;15_opfunc2('setup').'_'</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Yssurround</code> |
+| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;15_opfunc('setup').'g_'</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_changesurround(1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Csurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_changesurround()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Dsurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_dosurround(&lt;SNR&gt;15_inputtarget())&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SurroundRepeat</code> |
+| **Right hand side** | <code>.</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(openbrowser-smart-search)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call openbrowser#_keymap_smart_search('n')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(openbrowser-search)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call openbrowser#_keymap_search('n')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(openbrowser-open-incognito)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call openbrowser#_keymap_open('n', 0, ['--incognito'])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(openbrowser-open)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call openbrowser#_keymap_open('n')&lt;CR&gt;</code> |
 
 | **Description** | Float Terminal |
 | :---- | :---- |
@@ -379,48 +379,8 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-K&gt;</code> |
-| **Right hand side** | <code>&lt;C-W&gt;k</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-j&gt;</code> |
-| **Right hand side** | <code>:m .+1&lt;CR&gt;==</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-J&gt;</code> |
-| **Right hand side** | <code>&lt;C-W&gt;j</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-k&gt;</code> |
-| **Right hand side** | <code>:m .-2&lt;CR&gt;==</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;C-H&gt;</code> |
 | **Right hand side** | <code>&lt;C-W&gt;h</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Right&gt;</code> |
-| **Right hand side** | <code>:vertical resize +2&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Left&gt;</code> |
-| **Right hand side** | <code>:vertical resize -2&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Q&gt;</code> |
-| **Right hand side** | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Down&gt;</code> |
-| **Right hand side** | <code>:resize -2&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -429,11 +389,51 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;k</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Right hand side** | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-k&gt;</code> |
+| **Right hand side** | <code>:m .-2&lt;CR&gt;==</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Right&gt;</code> |
+| **Right hand side** | <code>:vertical resize +2&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-j&gt;</code> |
+| **Right hand side** | <code>:m .+1&lt;CR&gt;==</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Left&gt;</code> |
+| **Right hand side** | <code>:vertical resize -2&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;j</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Down&gt;</code> |
+| **Right hand side** | <code>:resize -2&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
 | **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -497,12 +497,12 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gc</code> |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gb</code> |
+| **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -542,6 +542,21 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(bullets-promote)</code> |
+| **Right hand side** | <code>:BulletPromoteVisual&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(bullets-demote)</code> |
+| **Right hand side** | <code>:BulletDemoteVisual&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(bullets-renumber)</code> |
+| **Right hand side** | <code>:RenumberSelection&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(openbrowser-smart-search)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call openbrowser#_keymap_smart_search('v')&lt;CR&gt;</code> |
 
@@ -559,21 +574,6 @@ post_style: page
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(openbrowser-open)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call openbrowser#_keymap_open('v')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(bullets-promote)</code> |
-| **Right hand side** | <code>:BulletPromoteVisual&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(bullets-demote)</code> |
-| **Right hand side** | <code>:BulletDemoteVisual&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(bullets-renumber)</code> |
-| **Right hand side** | <code>:RenumberSelection&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -606,7 +606,7 @@ post_style: page
 | **Right hand side** | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv-gv</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

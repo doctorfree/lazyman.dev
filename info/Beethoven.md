@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Beethoven Neovim Configuration Information
+# Beethoven Neovim Configuration Information
 
 Personal Neovim configuration of mechanical engineering student Alexander Vazquez. See the videos on [plugin setup](https://youtu.be/f5-XZadSFBc) and [workstation setup](https://youtu.be/adODck89qVk).
 
@@ -15,15 +15,15 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Beethoven`**
 
-### Git repository
+## Git repository
 
 [https://github.com/Elteoremadebeethoven/nvim-config](https://github.com/Elteoremadebeethoven/nvim-config)
 
-### YouTube channel
+## YouTube channel
 
 [https://www.youtube.com/@TheoremofBeethoven](https://www.youtube.com/@TheoremofBeethoven)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -86,9 +86,9 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
 - [mg979/vim-visual-multi](https://github.com/mg979/vim-visual-multi.git)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### Beethoven Keymaps
+## Beethoven Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | Search on current file |
 | :---- | :---- |
@@ -630,16 +630,6 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
 
-| **Description** | Move to previous reference |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-p&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Move to next reference |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-n&gt;</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle blockwise with count |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
@@ -668,6 +658,16 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
 | **Description** | Comment toggle linewise |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
+| **Right hand side** | |
+
+| **Description** | Move to previous reference |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-p&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Move to next reference |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-n&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -891,7 +891,7 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
 | **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -1053,16 +1053,6 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-i&gt;</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle blockwise (visual) |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
@@ -1072,6 +1062,11 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
 | **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
@@ -1086,7 +1081,7 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Find-Subword-Under)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;9_Visual('under')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;10_Visual('under')</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1106,12 +1101,17 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Visual-All)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;9_Visual('all')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;10_Visual('all')</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Visual-Find)</code> |
 | **Right hand side** | <code>vm#operators#find(1, 1)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-i&gt;</code> |
+| **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
@@ -1124,7 +1124,7 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
 | **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -1183,12 +1183,12 @@ Personal Neovim configuration of mechanical engineering student Alexander Vazque
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Left hand side** | <code>&lt;M-i&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;M-i&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
 | **Right hand side** | |
 
 | **Description** | |

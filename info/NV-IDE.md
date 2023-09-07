@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## NV-IDE Neovim Configuration Information
+# NV-IDE Neovim Configuration Information
 
 Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, javascript)
 
@@ -15,19 +15,19 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-NV-IDE`**
 
-### Git repository
+## Git repository
 
 [https://github.com/crivotz/nv-ide](https://github.com/crivotz/nv-ide)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [http://neovimcraft.com/plugin/crivotz/nv-ide](http://neovimcraft.com/plugin/crivotz/nv-ide)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/crivotz/nv-ide](https://dotfyle.com/crivotz/nv-ide)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim)
@@ -121,9 +121,9 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 - [zdharma-continuum/zinit-vim-syntax](https://github.com/zdharma-continuum/zinit-vim-syntax.git)
 
-### NV-IDE Keymaps
+## NV-IDE Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -420,14 +420,9 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 | **Left hand side** | <code>\nm</code> |
 | **Right hand side** | <code>:Dispatch npm start&lt;CR&gt;</code> |
 
-| **Description** | Create a selection for selcted text or word under the cursor |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>\mc</code> |
-| **Right hand side** | |
-
-| **Description** | Symbols Outline |
-| :---- | :---- |
-| **Left hand side** | <code>\cs</code> |
+| **Left hand side** | <code>\ld</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -440,9 +435,14 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 | **Left hand side** | <code>\x</code> |
 | **Right hand side** | |
 
-| **Description** | |
+| **Description** | Create a selection for selcted text or word under the cursor |
 | :---- | :---- |
-| **Left hand side** | <code>\ld</code> |
+| **Left hand side** | <code>\mc</code> |
+| **Right hand side** | |
+
+| **Description** | Symbols Outline |
+| :---- | :---- |
+| **Left hand side** | <code>\cs</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -540,11 +540,6 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 | **Left hand side** | <code>s</code> |
 | **Right hand side** | |
 
-| **Description** | Close all folds |
-| :---- | :---- |
-| **Left hand side** | <code>zM</code> |
-| **Right hand side** | |
-
 | **Description** | Peek folded lines under cursor |
 | :---- | :---- |
 | **Left hand side** | <code>zZ</code> |
@@ -553,6 +548,11 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 | **Description** | Open all folds |
 | :---- | :---- |
 | **Left hand side** | <code>zR</code> |
+| **Right hand side** | |
+
+| **Description** | Close all folds |
+| :---- | :---- |
+| **Left hand side** | <code>zM</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -595,6 +595,16 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
+| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;15_vsnip_cut_text_normal&lt;CR&gt;g@</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
+| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;15_vsnip_select_text_normal&lt;CR&gt;g@</code> |
+
 | **Description** | Comment toggle blockwise with count |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
@@ -627,6 +637,11 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
 
@@ -647,33 +662,18 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
-| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;19_vsnip_cut_text_normal&lt;CR&gt;g@</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
-| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;19_vsnip_select_text_normal&lt;CR&gt;g@</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;CapsLockDisable</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_disable('i')&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_disable('i')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;CapsLockEnable</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_enable('i',1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_enable('i',1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;CapsLockToggle</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_toggle('i',1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_toggle('i',1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -686,7 +686,7 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -785,26 +785,6 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_vsnip_visual_text(visualmode())&lt;CR&gt;gv"_c</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_vsnip_visual_text(visualmode())&lt;CR&gt;gv</code> |
-
-| **Description** | Comment toggle blockwise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-
-| **Description** | Comment toggle linewise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
 
@@ -823,13 +803,33 @@ Configuration oriented for web developers (rails, ruby, php, html, css, SCSS, ja
 | **Left hand side** | <code>&lt;C-H&gt;</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
 
+| **Description** | Comment toggle blockwise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle linewise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_vsnip_visual_text(visualmode())&lt;CR&gt;gv"_c</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;7_vsnip_visual_text(visualmode())&lt;CR&gt;gv</code> |
+
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

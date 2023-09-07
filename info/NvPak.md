@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## NvPak Neovim Configuration Information
+# NvPak Neovim Configuration Information
 
 PaK in Farsi means pure, something that is in its purest form
 
@@ -15,15 +15,15 @@ PaK in Farsi means pure, something that is in its purest form
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-NvPak`**
 
-### Git repository
+## Git repository
 
 [https://github.com/Pakrohk-DotFiles/NvPak.git](https://github.com/Pakrohk-DotFiles/NvPak.git)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [http://neovimcraft.com/plugin/Pakrohk-DotFiles/NvPak](http://neovimcraft.com/plugin/Pakrohk-DotFiles/NvPak)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim.git)
@@ -73,9 +73,9 @@ PaK in Farsi means pure, something that is in its purest form
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [folke/trouble.nvim](https://github.com/folke/trouble.nvim)
 
-### NvPak Keymaps
+## NvPak Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -288,7 +288,7 @@ PaK in Farsi means pure, something that is in its purest form
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -366,7 +366,7 @@ PaK in Farsi means pure, something that is in its purest form
 | **Right hand side** | <code>:s/^/#&lt;CR&gt;</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

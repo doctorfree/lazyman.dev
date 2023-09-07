@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Ember Neovim Configuration Information
+# Ember Neovim Configuration Information
 
 Dan is a computer science student at Arizona State University
 
@@ -15,15 +15,15 @@ Dan is a computer science student at Arizona State University
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Ember`**
 
-### Git repository
+## Git repository
 
 [https://github.com/danlikestocode/embervim](https://github.com/danlikestocode/embervim)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/danlikestocode/embervim-nvim](https://dotfyle.com/danlikestocode/embervim-nvim)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -82,9 +82,9 @@ Dan is a computer science student at Arizona State University
 - [danlikestocode/windows.nvim](https://github.com/danlikestocode/windows.nvim.git)
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 
-### Ember Keymaps
+## Ember Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -448,11 +448,6 @@ Dan is a computer science student at Arizona State University
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
 | **Right hand side** | |
 
@@ -464,42 +459,47 @@ Dan is a computer science student at Arizona State University
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;YSurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;8_opfunc2('setup')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;14_opfunc2('setup')</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;Ysurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;8_opfunc('setup')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;14_opfunc('setup')</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;YSsurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;8_opfunc2('setup').'_'</code> |
+| **Right hand side** | <code>&lt;SNR&gt;14_opfunc2('setup').'_'</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;Yssurround</code> |
-| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;8_opfunc('setup').'g_'</code> |
+| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;14_opfunc('setup').'g_'</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;CSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_changesurround(1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_changesurround(1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;Csurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_changesurround()&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_changesurround()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;Dsurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;8_dosurround(&lt;SNR&gt;8_inputtarget())&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_dosurround(&lt;SNR&gt;14_inputtarget())&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;SurroundRepeat</code> |
 | **Right hand side** | <code>.</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -507,7 +507,7 @@ Dan is a computer science student at Arizona State University
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -694,16 +694,6 @@ Dan is a computer science student at Arizona State University
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;VgSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;VSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;29_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
-
 | **Description** | Comment toggle blockwise (visual) |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
@@ -716,11 +706,21 @@ Dan is a computer science student at Arizona State University
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;VgSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;VSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
 | **Right hand side** | |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

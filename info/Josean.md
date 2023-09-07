@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Josean Neovim Configuration Information
+# Josean Neovim Configuration Information
 
 Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8)
 
@@ -15,35 +15,30 @@ Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8)
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Josean`**
 
-### Git repository
+## Git repository
 
 [https://github.com/josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files)
 
-### YouTube channel
+## YouTube channel
 
 [https://www.youtube.com/@joseanmartinez](https://www.youtube.com/@joseanmartinez)
 
-### Packer managed plugins
+## Packer managed plugins
 
 
-### Josean Keymaps
+## Josean Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
-| **Description** | Go to previous harpoon mark |
+| **Description** | Save session for auto session root dir |
 | :---- | :---- |
-| **Left hand side** | <code> hp</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('harpoon.ui').nav_prev()&lt;CR&gt;</code> |
+| **Left hand side** | <code> ws</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionSave&lt;CR&gt;</code> |
 
-| **Description** | Go to next harpoon mark |
+| **Description** | Restore session for cwd |
 | :---- | :---- |
-| **Left hand side** | <code> hn</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('harpoon.ui').nav_next()&lt;CR&gt;</code> |
-
-| **Description** | Mark file with harpoon |
-| :---- | :---- |
-| **Left hand side** | <code> hm</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('harpoon.mark').add_file()&lt;CR&gt;</code> |
+| **Left hand side** | <code> wr</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionRestore&lt;CR&gt;</code> |
 
 | **Description** | Refresh file explorer |
 | :---- | :---- |
@@ -65,15 +60,20 @@ Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8)
 | **Left hand side** | <code> ee</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;NvimTreeToggle&lt;CR&gt;</code> |
 
-| **Description** | Save session for auto session root dir |
+| **Description** | Go to previous harpoon mark |
 | :---- | :---- |
-| **Left hand side** | <code> ws</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;SessionSave&lt;CR&gt;</code> |
+| **Left hand side** | <code> hp</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('harpoon.ui').nav_prev()&lt;CR&gt;</code> |
 
-| **Description** | Restore session for cwd |
+| **Description** | Go to next harpoon mark |
 | :---- | :---- |
-| **Left hand side** | <code> wr</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;SessionRestore&lt;CR&gt;</code> |
+| **Left hand side** | <code> hn</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('harpoon.ui').nav_next()&lt;CR&gt;</code> |
+
+| **Description** | Mark file with harpoon |
+| :---- | :---- |
+| **Left hand side** | <code> hm</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('harpoon.mark').add_file()&lt;CR&gt;</code> |
 
 | **Description** | Find string under cursor in cwd |
 | :---- | :---- |
@@ -271,7 +271,7 @@ Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8)
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -369,7 +369,7 @@ Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8)
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

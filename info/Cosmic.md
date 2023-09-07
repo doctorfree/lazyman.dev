@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Cosmic Neovim Configuration Information
+# Cosmic Neovim Configuration Information
 
 Install 'Node.js', 'prettierd', and 'eslint_d'
 
@@ -15,23 +15,23 @@ Install 'Node.js', 'prettierd', and 'eslint_d'
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Cosmic`**
 
-### Git repository
+## Git repository
 
 [https://github.com/CosmicNvim/CosmicNvim](https://github.com/CosmicNvim/CosmicNvim)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [http://neovimcraft.com/plugin/CosmicNvim/CosmicNvim](http://neovimcraft.com/plugin/CosmicNvim/CosmicNvim)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/plugins/CosmicNvim/CosmicNvim](https://dotfyle.com/plugins/CosmicNvim/CosmicNvim)
 
-### Website
+## Website
 
 [https://cosmicnvim.vercel.app](https://cosmicnvim.vercel.app)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -75,9 +75,9 @@ Install 'Node.js', 'prettierd', and 'eslint_d'
 - [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### Cosmic Keymaps
+## Cosmic Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -145,7 +145,7 @@ Install 'Node.js', 'prettierd', and 'eslint_d'
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -218,7 +218,7 @@ Install 'Node.js', 'prettierd', and 'eslint_d'
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

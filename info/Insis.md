@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Insis Neovim Configuration Information
+# Insis Neovim Configuration Information
 
 An out-of-the-box Neovim IDE solution with simple development environment setup
 
@@ -15,19 +15,19 @@ An out-of-the-box Neovim IDE solution with simple development environment setup
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Insis`**
 
-### Git repository
+## Git repository
 
 [https://github.com/nshen/InsisVim](https://github.com/nshen/InsisVim)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [http://neovimcraft.com/plugin/nshen/InsisVim](http://neovimcraft.com/plugin/nshen/InsisVim)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/nshen/insisvim](https://dotfyle.com/nshen/insisvim)
 
-### Packer managed plugins
+## Packer managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -97,9 +97,9 @@ An out-of-the-box Neovim IDE solution with simple development environment setup
 - [moll/vim-bbye](https://github.com/moll/vim-bbye)
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 
-### Insis Keymaps
+## Insis Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -587,7 +587,7 @@ An out-of-the-box Neovim IDE solution with simple development environment setup
 | **Right hand side** | <code>:BufferLineCycleNext&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -750,7 +750,7 @@ An out-of-the-box Neovim IDE solution with simple development environment setup
 | **Right hand side** | <code>5j</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

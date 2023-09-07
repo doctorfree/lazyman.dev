@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Wuelner Neovim Configuration Information
+# Wuelner Neovim Configuration Information
 
 Wuelner's Neovim setup follows a well-defined philosophy governed by coherence and minimalism
 
@@ -15,19 +15,19 @@ Wuelner's Neovim setup follows a well-defined philosophy governed by coherence a
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Wuelner`**
 
-### Git repository
+## Git repository
 
 [https://github.com/wuelnerdotexe/nvim](https://github.com/wuelnerdotexe/nvim)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [http://neovimcraft.com/plugin/wuelnerdotexe/nvim](http://neovimcraft.com/plugin/wuelnerdotexe/nvim)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/wuelnerdotexe/nvim](https://dotfyle.com/wuelnerdotexe/nvim)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -94,9 +94,9 @@ Wuelner's Neovim setup follows a well-defined philosophy governed by coherence a
 - vim-visual-multi
 - [gbprod/yanky.nvim](https://github.com/gbprod/yanky.nvim)
 
-### Wuelner Keymaps
+## Wuelner Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -124,7 +124,7 @@ Wuelner's Neovim setup follows a well-defined philosophy governed by coherence a
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -147,5 +147,5 @@ Wuelner's Neovim setup follows a well-defined philosophy governed by coherence a
 | **Right hand side** | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 

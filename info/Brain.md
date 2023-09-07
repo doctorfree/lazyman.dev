@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Brain Neovim Configuration Information
+# Brain Neovim Configuration Information
 
 Well structured personal config based on the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle
 
@@ -15,15 +15,15 @@ Well structured personal config based on the [KISS](https://en.wikipedia.org/wik
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Brain`**
 
-### Git repository
+## Git repository
 
 [https://github.com/brainfucksec/neovim-lua](https://github.com/brainfucksec/neovim-lua)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [http://neovimcraft.com/plugin/brainfucksec/neovim-lua](http://neovimcraft.com/plugin/brainfucksec/neovim-lua)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim)
@@ -47,9 +47,9 @@ Well structured personal config based on the [KISS](https://en.wikipedia.org/wik
 - [rose-pine/neovim](https://github.com/rose-pine/neovim)
 - [preservim/tagbar](https://github.com/preservim/tagbar.git)
 
-### Brain Keymaps
+## Brain Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -247,7 +247,7 @@ Well structured personal config based on the [KISS](https://en.wikipedia.org/wik
 | **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -345,7 +345,7 @@ Well structured personal config based on the [KISS](https://en.wikipedia.org/wik
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

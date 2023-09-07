@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## SpaceVim Neovim Configuration Information
+# SpaceVim Neovim Configuration Information
 
 SpaceVim started in December 2016, it is a mature and well supported Neovim configuration distribution. Lazyman custom SpaceVim configuration installed in `~/.SpaceVim.d/`
 
@@ -15,15 +15,15 @@ SpaceVim started in December 2016, it is a mature and well supported Neovim conf
 - Plugin manager:         [SP (dein)](https://github.com/Shougo/dein.vim)
 - Installation location:  **`~/.config/nvim-SpaceVim`**
 
-### Git repository
+## Git repository
 
 [https://github.com/doctorfree/spacevim](https://github.com/doctorfree/spacevim)
 
-### Website
+## Website
 
 [https://spacevim.org](https://spacevim.org)
 
-### SP (dein) managed plugins
+## SP (dein) managed plugins
 
 - [2072/PHP-Indenting-for-VIm](https://github.com/2072/PHP-Indenting-for-VIm)
 - [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
@@ -114,9 +114,9 @@ SpaceVim started in December 2016, it is a mature and well supported Neovim conf
 - [ynkdir/vim-vimlparser](https://github.com/ynkdir/vim-vimlparser)
 - [zchee/deoplete-zsh](https://github.com/zchee/deoplete-zsh)
 
-### SpaceVim Keymaps
+## SpaceVim Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -3889,7 +3889,7 @@ SpaceVim started in December 2016, it is a mature and well supported Neovim conf
 | **Right hand side** | <code>:TmuxNavigateRight&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -4787,7 +4787,7 @@ SpaceVim started in December 2016, it is a mature and well supported Neovim conf
 | **Right hand side** | <code>:m '&gt;+1&lt;CR&gt;gv=gv</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

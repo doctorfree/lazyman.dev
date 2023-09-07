@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Simple Neovim Configuration Information
+# Simple Neovim Configuration Information
 
 A remarkably effective Neovim configuration in only one small file. The author's [video description of this config](https://youtu.be/AzhSnM0uHvM)
 
@@ -15,15 +15,15 @@ A remarkably effective Neovim configuration in only one small file. The author's
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Simple`**
 
-### Git repository
+## Git repository
 
 [https://github.com/anthdm/.nvim](https://github.com/anthdm/.nvim)
 
-### YouTube channel
+## YouTube channel
 
 [https://www.youtube.com/@anthonygg_](https://www.youtube.com/@anthonygg_)
 
-### Packer managed plugins
+## Packer managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
@@ -51,9 +51,9 @@ A remarkably effective Neovim configuration in only one small file. The author's
 - [fatih/vim-go](https://github.com/fatih/vim-go)
 - [CreaturePhil/vim-handmade-hero](https://github.com/CreaturePhil/vim-handmade-hero)
 
-### Simple Keymaps
+## Simple Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -216,7 +216,7 @@ A remarkably effective Neovim configuration in only one small file. The author's
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -304,7 +304,7 @@ A remarkably effective Neovim configuration in only one small file. The author's
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Nv Neovim Configuration Information
+# Nv Neovim Configuration Information
 
 'LazyVim' based Neovim configuration. Andreas Gerlach develops smart farming tech and maintains the 'Sway' edition of 'Manjaro-arm'
 
@@ -15,23 +15,23 @@ post_style: page
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Nv`**
 
-### Git repository
+## Git repository
 
 [https://github.com/appelgriebsch/Nv](https://github.com/appelgriebsch/Nv)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [http://neovimcraft.com/plugin/appelgriebsch/Nv](http://neovimcraft.com/plugin/appelgriebsch/Nv)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/appelgriebsch/nv](https://dotfyle.com/appelgriebsch/nv)
 
-### Website
+## Website
 
 [https://www.lazyvim.org](https://www.lazyvim.org)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [LazyVim/LazyVim](https://github.com/LazyVim/LazyVim.git)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -117,143 +117,23 @@ post_style: page
 - [gbprod/yanky.nvim](https://github.com/gbprod/yanky.nvim)
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 
-### Nv Keymaps
+## Nv Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
-| **Description** | Open Yank History |
+| **Description** | Debug Class |
 | :---- | :---- |
-| **Left hand side** | <code> p</code> |
+| **Left hand side** | <code> dPc</code> |
 | **Right hand side** | |
 
-| **Description** | Replace in files (Spectre) |
+| **Description** | Debug Method |
 | :---- | :---- |
-| **Left hand side** | <code> sr</code> |
+| **Left hand side** | <code> dPt</code> |
 | **Right hand side** | |
 
-| **Description** | Dismiss all Notifications |
+| **Description** | Don't Save Current Session |
 | :---- | :---- |
-| **Left hand side** | <code> un</code> |
-| **Right hand side** | |
-
-| **Description** | Adapter Lua |
-| :---- | :---- |
-| **Left hand side** | <code> dal</code> |
-| **Right hand side** | |
-
-| **Description** | Adapter Lua Server |
-| :---- | :---- |
-| **Left hand side** | <code> daL</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer NeoTree (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> fe</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer NeoTree (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> E</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer NeoTree (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> e</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer NeoTree (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> fE</code> |
-| **Right hand side** | |
-
-| **Description** | Todo/Fix/Fixme |
-| :---- | :---- |
-| **Left hand side** | <code> sT</code> |
-| **Right hand side** | |
-
-| **Description** | Todo/Fix/Fixme (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xT</code> |
-| **Right hand side** | |
-
-| **Description** | Todo |
-| :---- | :---- |
-| **Left hand side** | <code> st</code> |
-| **Right hand side** | |
-
-| **Description** | Todo (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xt</code> |
-| **Right hand side** | |
-
-| **Description** | Quickfix List (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xQ</code> |
-| **Right hand side** | |
-
-| **Description** | Location List (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xL</code> |
-| **Right hand side** | |
-
-| **Description** | Workspace Diagnostics (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xX</code> |
-| **Right hand side** | |
-
-| **Description** | Document Diagnostics (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xx</code> |
-| **Right hand side** | |
-
-| **Description** | Edgy Toggle |
-| :---- | :---- |
-| **Left hand side** | <code> ue</code> |
-| **Right hand side** | |
-
-| **Description** | Edgy Select Window |
-| :---- | :---- |
-| **Left hand side** | <code> uE</code> |
-| **Right hand side** | |
-
-| **Description** | Noice Last Message |
-| :---- | :---- |
-| **Left hand side** | <code> snl</code> |
-| **Right hand side** | |
-
-| **Description** | Dismiss All |
-| :---- | :---- |
-| **Left hand side** | <code> snd</code> |
-| **Right hand side** | |
-
-| **Description** | Noice All |
-| :---- | :---- |
-| **Left hand side** | <code> sna</code> |
-| **Right hand side** | |
-
-| **Description** | Noice History |
-| :---- | :---- |
-| **Left hand side** | <code> snh</code> |
-| **Right hand side** | |
-
-| **Description** | Projects |
-| :---- | :---- |
-| **Left hand side** | <code> fp</code> |
-| **Right hand side** | |
-
-| **Description** | Delete Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> bd</code> |
-| **Right hand side** | |
-
-| **Description** | Delete Buffer (Force) |
-| :---- | :---- |
-| **Left hand side** | <code> bD</code> |
-| **Right hand side** | |
-
-| **Description** | Symbols Outline |
-| :---- | :---- |
-| **Left hand side** | <code> cs</code> |
+| **Left hand side** | <code> qd</code> |
 | **Right hand side** | |
 
 | **Description** | Restore Last Session |
@@ -266,214 +146,39 @@ post_style: page
 | **Left hand side** | <code> qs</code> |
 | **Right hand side** | |
 
-| **Description** | Don't Save Current Session |
-| :---- | :---- |
-| **Left hand side** | <code> qd</code> |
-| **Right hand side** | |
-
-| **Description** | status |
-| :---- | :---- |
-| **Left hand side** | <code> gs</code> |
-| **Right hand side** | |
-
-| **Description** | commits |
-| :---- | :---- |
-| **Left hand side** | <code> gc</code> |
-| **Right hand side** | |
-
-| **Description** | Recent (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> fR</code> |
-| **Right hand side** | |
-
-| **Description** | Recent |
-| :---- | :---- |
-| **Left hand side** | <code> fr</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> fF</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> ff</code> |
-| **Right hand side** | |
-
-| **Description** | Buffers |
-| :---- | :---- |
-| **Left hand side** | <code> fb</code> |
-| **Right hand side** | |
-
-| **Description** | Command History |
-| :---- | :---- |
-| **Left hand side** | <code> :</code> |
-| **Right hand side** | |
-
-| **Description** | Grep (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> /</code> |
-| **Right hand side** | |
-
-| **Description** | Switch Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> ,</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code>  </code> |
-| **Right hand side** | |
-
-| **Description** | Goto Symbol (Workspace) |
-| :---- | :---- |
-| **Left hand side** | <code> sS</code> |
-| **Right hand side** | |
-
-| **Description** | Goto Symbol |
-| :---- | :---- |
-| **Left hand side** | <code> ss</code> |
-| **Right hand side** | |
-
-| **Description** | Colorscheme with preview |
-| :---- | :---- |
-| **Left hand side** | <code> uC</code> |
-| **Right hand side** | |
-
-| **Description** | Word (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> sW</code> |
-| **Right hand side** | |
-
-| **Description** | Word (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> sw</code> |
-| **Right hand side** | |
-
-| **Description** | Resume |
-| :---- | :---- |
-| **Left hand side** | <code> sR</code> |
-| **Right hand side** | |
-
-| **Description** | Options |
-| :---- | :---- |
-| **Left hand side** | <code> so</code> |
-| **Right hand side** | |
-
-| **Description** | Jump to Mark |
-| :---- | :---- |
-| **Left hand side** | <code> sm</code> |
-| **Right hand side** | |
-
-| **Description** | Man Pages |
-| :---- | :---- |
-| **Left hand side** | <code> sM</code> |
-| **Right hand side** | |
-
-| **Description** | Key Maps |
-| :---- | :---- |
-| **Left hand side** | <code> sk</code> |
-| **Right hand side** | |
-
-| **Description** | Search Highlight Groups |
-| :---- | :---- |
-| **Left hand side** | <code> sH</code> |
-| **Right hand side** | |
-
-| **Description** | Help Pages |
-| :---- | :---- |
-| **Left hand side** | <code> sh</code> |
-| **Right hand side** | |
-
-| **Description** | Grep (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> sG</code> |
-| **Right hand side** | |
-
-| **Description** | Grep (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> sg</code> |
-| **Right hand side** | |
-
-| **Description** | Workspace diagnostics |
-| :---- | :---- |
-| **Left hand side** | <code> sD</code> |
-| **Right hand side** | |
-
-| **Description** | Document diagnostics |
-| :---- | :---- |
-| **Left hand side** | <code> sd</code> |
-| **Right hand side** | |
-
-| **Description** | Commands |
-| :---- | :---- |
-| **Left hand side** | <code> sC</code> |
-| **Right hand side** | |
-
-| **Description** | Command History |
-| :---- | :---- |
-| **Left hand side** | <code> sc</code> |
-| **Right hand side** | |
-
-| **Description** | Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> sb</code> |
-| **Right hand side** | |
-
-| **Description** | Auto Commands |
-| :---- | :---- |
-| **Left hand side** | <code> sa</code> |
-| **Right hand side** | |
-
-| **Description** | Registers |
-| :---- | :---- |
-| **Left hand side** | <code> s"</code> |
-| **Right hand side** | |
-
-| **Description** | Zen Mode |
-| :---- | :---- |
-| **Left hand side** | <code> z</code> |
-| **Right hand side** | |
-
 | **Description** | Mason |
 | :---- | :---- |
 | **Left hand side** | <code> cm</code> |
 | **Right hand side** | |
 
-| **Description** | Stop |
+| **Description** | Threads |
 | :---- | :---- |
-| **Left hand side** | <code> tS</code> |
+| **Left hand side** | <code> dwt</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle Output Panel |
+| **Description** | Scopes |
 | :---- | :---- |
-| **Left hand side** | <code> tO</code> |
+| **Left hand side** | <code> dws</code> |
 | **Right hand side** | |
 
-| **Description** | Show Output |
+| **Description** | Frames |
 | :---- | :---- |
-| **Left hand side** | <code> to</code> |
+| **Left hand side** | <code> dwf</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle Summary |
+| **Description** | Eval |
 | :---- | :---- |
-| **Left hand side** | <code> ts</code> |
+| **Left hand side** | <code> de</code> |
 | **Right hand side** | |
 
-| **Description** | Run Nearest |
+| **Description** | Debug Nearest |
 | :---- | :---- |
-| **Left hand side** | <code> tr</code> |
+| **Left hand side** | <code> td</code> |
 | **Right hand side** | |
 
-| **Description** | Run All Test Files |
+| **Description** | Widgets |
 | :---- | :---- |
-| **Left hand side** | <code> tT</code> |
-| **Right hand side** | |
-
-| **Description** | Run File |
-| :---- | :---- |
-| **Left hand side** | <code> tt</code> |
+| **Left hand side** | <code> dw</code> |
 | **Right hand side** | |
 
 | **Description** | Terminate |
@@ -551,49 +256,44 @@ post_style: page
 | **Left hand side** | <code> dB</code> |
 | **Right hand side** | |
 
-| **Description** | Threads |
+| **Description** | Symbols Outline |
 | :---- | :---- |
-| **Left hand side** | <code> dwt</code> |
+| **Left hand side** | <code> cs</code> |
 | **Right hand side** | |
 
-| **Description** | Scopes |
+| **Description** | Zen Mode |
 | :---- | :---- |
-| **Left hand side** | <code> dws</code> |
+| **Left hand side** | <code> z</code> |
 | **Right hand side** | |
 
-| **Description** | Frames |
+| **Description** | Open Yank History |
 | :---- | :---- |
-| **Left hand side** | <code> dwf</code> |
+| **Left hand side** | <code> p</code> |
 | **Right hand side** | |
 
-| **Description** | Eval |
+| **Description** | Edgy Toggle |
 | :---- | :---- |
-| **Left hand side** | <code> de</code> |
+| **Left hand side** | <code> ue</code> |
 | **Right hand side** | |
 
-| **Description** | Debug Nearest |
+| **Description** | Edgy Select Window |
 | :---- | :---- |
-| **Left hand side** | <code> td</code> |
+| **Left hand side** | <code> uE</code> |
 | **Right hand side** | |
 
-| **Description** | Widgets |
+| **Description** | Toggle pin |
 | :---- | :---- |
-| **Left hand side** | <code> dw</code> |
+| **Left hand side** | <code> bp</code> |
 | **Right hand side** | |
 
-| **Description** | Select VirtualEnv |
+| **Description** | Delete non-pinned buffers |
 | :---- | :---- |
-| **Left hand side** | <code> cv</code> |
+| **Left hand side** | <code> bP</code> |
 | **Right hand side** | |
 
-| **Description** | Debug Class |
+| **Description** | Dismiss all Notifications |
 | :---- | :---- |
-| **Left hand side** | <code> dPc</code> |
-| **Right hand side** | |
-
-| **Description** | Debug Method |
-| :---- | :---- |
-| **Left hand side** | <code> dPt</code> |
+| **Left hand side** | <code> un</code> |
 | **Right hand side** | |
 
 | **Description** | Run Request |
@@ -606,14 +306,314 @@ post_style: page
 | **Left hand side** | <code> hp</code> |
 | **Right hand side** | |
 
-| **Description** | Delete non-pinned buffers |
+| **Description** | Todo/Fix/Fixme (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> bP</code> |
+| **Left hand side** | <code> xT</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle pin |
+| **Description** | Todo (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> bp</code> |
+| **Left hand side** | <code> xt</code> |
+| **Right hand side** | |
+
+| **Description** | Todo/Fix/Fixme |
+| :---- | :---- |
+| **Left hand side** | <code> sT</code> |
+| **Right hand side** | |
+
+| **Description** | Todo |
+| :---- | :---- |
+| **Left hand side** | <code> st</code> |
+| **Right hand side** | |
+
+| **Description** | Document Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xx</code> |
+| **Right hand side** | |
+
+| **Description** | Quickfix List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xQ</code> |
+| **Right hand side** | |
+
+| **Description** | Location List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xL</code> |
+| **Right hand side** | |
+
+| **Description** | Workspace Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xX</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> bd</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer (Force) |
+| :---- | :---- |
+| **Left hand side** | <code> bD</code> |
+| **Right hand side** | |
+
+| **Description** | Adapter Lua Server |
+| :---- | :---- |
+| **Left hand side** | <code> daL</code> |
+| **Right hand side** | |
+
+| **Description** | Adapter Lua |
+| :---- | :---- |
+| **Left hand side** | <code> dal</code> |
+| **Right hand side** | |
+
+| **Description** | Dismiss All |
+| :---- | :---- |
+| **Left hand side** | <code> snd</code> |
+| **Right hand side** | |
+
+| **Description** | Noice All |
+| :---- | :---- |
+| **Left hand side** | <code> sna</code> |
+| **Right hand side** | |
+
+| **Description** | Noice History |
+| :---- | :---- |
+| **Left hand side** | <code> snh</code> |
+| **Right hand side** | |
+
+| **Description** | Noice Last Message |
+| :---- | :---- |
+| **Left hand side** | <code> snl</code> |
+| **Right hand side** | |
+
+| **Description** | Projects |
+| :---- | :---- |
+| **Left hand side** | <code> fp</code> |
+| **Right hand side** | |
+
+| **Description** | Run Nearest |
+| :---- | :---- |
+| **Left hand side** | <code> tr</code> |
+| **Right hand side** | |
+
+| **Description** | Run All Test Files |
+| :---- | :---- |
+| **Left hand side** | <code> tT</code> |
+| **Right hand side** | |
+
+| **Description** | Run File |
+| :---- | :---- |
+| **Left hand side** | <code> tt</code> |
+| **Right hand side** | |
+
+| **Description** | Stop |
+| :---- | :---- |
+| **Left hand side** | <code> tS</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Output Panel |
+| :---- | :---- |
+| **Left hand side** | <code> tO</code> |
+| **Right hand side** | |
+
+| **Description** | Show Output |
+| :---- | :---- |
+| **Left hand side** | <code> to</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Summary |
+| :---- | :---- |
+| **Left hand side** | <code> ts</code> |
+| **Right hand side** | |
+
+| **Description** | Recent |
+| :---- | :---- |
+| **Left hand side** | <code> fr</code> |
+| **Right hand side** | |
+
+| **Description** | Find Files (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> fF</code> |
+| **Right hand side** | |
+
+| **Description** | Find Files (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> ff</code> |
+| **Right hand side** | |
+
+| **Description** | Buffers |
+| :---- | :---- |
+| **Left hand side** | <code> fb</code> |
+| **Right hand side** | |
+
+| **Description** | Command History |
+| :---- | :---- |
+| **Left hand side** | <code> :</code> |
+| **Right hand side** | |
+
+| **Description** | Grep (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> /</code> |
+| **Right hand side** | |
+
+| **Description** | Switch Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> ,</code> |
+| **Right hand side** | |
+
+| **Description** | Commands |
+| :---- | :---- |
+| **Left hand side** | <code> sC</code> |
+| **Right hand side** | |
+
+| **Description** | Document diagnostics |
+| :---- | :---- |
+| **Left hand side** | <code> sd</code> |
+| **Right hand side** | |
+
+| **Description** | Workspace diagnostics |
+| :---- | :---- |
+| **Left hand side** | <code> sD</code> |
+| **Right hand side** | |
+
+| **Description** | Registers |
+| :---- | :---- |
+| **Left hand side** | <code> s"</code> |
+| **Right hand side** | |
+
+| **Description** | Auto Commands |
+| :---- | :---- |
+| **Left hand side** | <code> sa</code> |
+| **Right hand side** | |
+
+| **Description** | Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> sb</code> |
+| **Right hand side** | |
+
+| **Description** | Find Files (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code>  </code> |
+| **Right hand side** | |
+
+| **Description** | Command History |
+| :---- | :---- |
+| **Left hand side** | <code> sc</code> |
+| **Right hand side** | |
+
+| **Description** | Goto Symbol (Workspace) |
+| :---- | :---- |
+| **Left hand side** | <code> sS</code> |
+| **Right hand side** | |
+
+| **Description** | Goto Symbol |
+| :---- | :---- |
+| **Left hand side** | <code> ss</code> |
+| **Right hand side** | |
+
+| **Description** | Colorscheme with preview |
+| :---- | :---- |
+| **Left hand side** | <code> uC</code> |
+| **Right hand side** | |
+
+| **Description** | Word (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> sW</code> |
+| **Right hand side** | |
+
+| **Description** | Word (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> sw</code> |
+| **Right hand side** | |
+
+| **Description** | Resume |
+| :---- | :---- |
+| **Left hand side** | <code> sR</code> |
+| **Right hand side** | |
+
+| **Description** | Options |
+| :---- | :---- |
+| **Left hand side** | <code> so</code> |
+| **Right hand side** | |
+
+| **Description** | Jump to Mark |
+| :---- | :---- |
+| **Left hand side** | <code> sm</code> |
+| **Right hand side** | |
+
+| **Description** | Man Pages |
+| :---- | :---- |
+| **Left hand side** | <code> sM</code> |
+| **Right hand side** | |
+
+| **Description** | Key Maps |
+| :---- | :---- |
+| **Left hand side** | <code> sk</code> |
+| **Right hand side** | |
+
+| **Description** | Search Highlight Groups |
+| :---- | :---- |
+| **Left hand side** | <code> sH</code> |
+| **Right hand side** | |
+
+| **Description** | Help Pages |
+| :---- | :---- |
+| **Left hand side** | <code> sh</code> |
+| **Right hand side** | |
+
+| **Description** | Grep (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> sG</code> |
+| **Right hand side** | |
+
+| **Description** | Grep (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> sg</code> |
+| **Right hand side** | |
+
+| **Description** | status |
+| :---- | :---- |
+| **Left hand side** | <code> gs</code> |
+| **Right hand side** | |
+
+| **Description** | commits |
+| :---- | :---- |
+| **Left hand side** | <code> gc</code> |
+| **Right hand side** | |
+
+| **Description** | Recent (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> fR</code> |
+| **Right hand side** | |
+
+| **Description** | Select VirtualEnv |
+| :---- | :---- |
+| **Left hand side** | <code> cv</code> |
+| **Right hand side** | |
+
+| **Description** | Replace in files (Spectre) |
+| :---- | :---- |
+| **Left hand side** | <code> sr</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer NeoTree (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> fe</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer NeoTree (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> E</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer NeoTree (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> e</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer NeoTree (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> fE</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -626,19 +626,14 @@ post_style: page
 | **Left hand side** | <code>&</code> |
 | **Right hand side** | <code>:&&&lt;CR&gt;</code> |
 
-| **Description** | Put before and indent left |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;lt&gt;P</code> |
-| **Right hand side** | |
-
 | **Description** | Put and indent left |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;lt&gt;p</code> |
 | **Right hand side** | |
 
-| **Description** | Put after applying a filter |
+| **Description** | Put before and indent left |
 | :---- | :---- |
-| **Left hand side** | <code>=p</code> |
+| **Left hand side** | <code>&lt;lt&gt;P</code> |
 | **Right hand side** | |
 
 | **Description** | Put before applying a filter |
@@ -646,14 +641,19 @@ post_style: page
 | **Left hand side** | <code>=P</code> |
 | **Right hand side** | |
 
-| **Description** | Put before and indent right |
+| **Description** | Put after applying a filter |
 | :---- | :---- |
-| **Left hand side** | <code>&gt;P</code> |
+| **Left hand side** | <code>=p</code> |
 | **Right hand side** | |
 
 | **Description** | Put and indent right |
 | :---- | :---- |
 | **Left hand side** | <code>&gt;p</code> |
+| **Right hand side** | |
+
+| **Description** | Put before and indent right |
+| :---- | :---- |
+| **Left hand side** | <code>&gt;P</code> |
 | **Right hand side** | |
 
 | **Description** | Put yanked text before cursor |
@@ -676,11 +676,6 @@ post_style: page
 | **Left hand side** | <code>[%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
 
-| **Description** | Put indented before cursor (linewise) |
-| :---- | :---- |
-| **Left hand side** | <code>[P</code> |
-| **Right hand side** | |
-
 | **Description** | Cycle forward through yank history |
 | :---- | :---- |
 | **Left hand side** | <code>[y</code> |
@@ -691,9 +686,9 @@ post_style: page
 | **Left hand side** | <code>[p</code> |
 | **Right hand side** | |
 
-| **Description** | Prev Reference |
+| **Description** | Put indented before cursor (linewise) |
 | :---- | :---- |
-| **Left hand side** | <code>[[</code> |
+| **Left hand side** | <code>[P</code> |
 | **Right hand side** | |
 
 | **Description** | Previous todo comment |
@@ -704,6 +699,11 @@ post_style: page
 | **Description** | Previous trouble/quickfix item |
 | :---- | :---- |
 | **Left hand side** | <code>[q</code> |
+| **Right hand side** | |
+
+| **Description** | Prev Reference |
+| :---- | :---- |
+| **Left hand side** | <code>[[</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -726,11 +726,6 @@ post_style: page
 | **Left hand side** | <code>]P</code> |
 | **Right hand side** | |
 
-| **Description** | Next Reference |
-| :---- | :---- |
-| **Left hand side** | <code>]]</code> |
-| **Right hand side** | |
-
 | **Description** | Next todo comment |
 | :---- | :---- |
 | **Left hand side** | <code>]t</code> |
@@ -739,6 +734,11 @@ post_style: page
 | **Description** | Next trouble/quickfix item |
 | :---- | :---- |
 | **Left hand side** | <code>]q</code> |
+| **Right hand side** | |
+
+| **Description** | Next Reference |
+| :---- | :---- |
+| **Left hand side** | <code>]]</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -761,26 +761,6 @@ post_style: page
 | **Left hand side** | <code>gp</code> |
 | **Right hand side** | |
 
-| **Description** | Highlight surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gzh</code> |
-| **Right hand side** | |
-
-| **Description** | Find left surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gzF</code> |
-| **Right hand side** | |
-
-| **Description** | Add surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gza</code> |
-| **Right hand side** | |
-
-| **Description** | Find right surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gzf</code> |
-| **Right hand side** | |
-
 | **Description** | Replace surrounding |
 | :---- | :---- |
 | **Left hand side** | <code>gzr</code> |
@@ -791,9 +771,29 @@ post_style: page
 | **Left hand side** | <code>gzd</code> |
 | **Right hand side** | |
 
+| **Description** | Find left surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gzF</code> |
+| **Right hand side** | |
+
+| **Description** | Highlight surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gzh</code> |
+| **Right hand side** | |
+
+| **Description** | Add surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gza</code> |
+| **Right hand side** | |
+
 | **Description** | Update `MiniSurround.config.n_lines` |
 | :---- | :---- |
 | **Left hand side** | <code>gzn</code> |
+| **Right hand side** | |
+
+| **Description** | Find right surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gzf</code> |
 | **Right hand side** | |
 
 | **Description** | Put yanked text after cursor |
@@ -857,12 +857,7 @@ post_style: page
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
-
-| **Description** | Eval |
-| :---- | :---- |
-| **Left hand side** | <code> de</code> |
-| **Right hand side** | |
+### Visual mode keymaps
 
 | **Description** | Selection (cwd) |
 | :---- | :---- |
@@ -872,6 +867,11 @@ post_style: page
 | **Description** | Selection (root dir) |
 | :---- | :---- |
 | **Left hand side** | <code> sw</code> |
+| **Right hand side** | |
+
+| **Description** | Eval |
+| :---- | :---- |
+| **Left hand side** | <code> de</code> |
 | **Right hand side** | |
 
 | **Description** | Nvim builtin |
@@ -995,7 +995,7 @@ post_style: page
 | **Right hand side** | |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

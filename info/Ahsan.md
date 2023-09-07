@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Ahsan Neovim Configuration Information
+# Ahsan Neovim Configuration Information
 
 Personal Neovim configuration of Ahsan Habib
 
@@ -15,11 +15,11 @@ Personal Neovim configuration of Ahsan Habib
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Ahsan`**
 
-### Git repository
+## Git repository
 
 [https://github.com/bibjaw99/workstation](https://github.com/bibjaw99/workstation)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -68,9 +68,9 @@ Personal Neovim configuration of Ahsan Habib
 - [xiyaowong/transparent.nvim](https://github.com/xiyaowong/transparent.nvim.git)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### Ahsan Keymaps
+## Ahsan Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -206,16 +206,6 @@ Personal Neovim configuration of Ahsan Habib
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
-| **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
@@ -414,11 +404,21 @@ Personal Neovim configuration of Ahsan Habib
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
 | **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -576,7 +576,7 @@ Personal Neovim configuration of Ahsan Habib
 | **Right hand side** | <code>:call emmet#expandAbbr(2,"")&lt;CR&gt;</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Xiao Neovim Configuration Information
+# Xiao Neovim Configuration Information
 
 Personal Neovim configuration of XiaoZhang
 
@@ -15,11 +15,11 @@ Personal Neovim configuration of XiaoZhang
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Xiao`**
 
-### Git repository
+## Git repository
 
 [https://github.com/onichandame/nvim-config](https://github.com/onichandame/nvim-config)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
 - [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
@@ -63,9 +63,9 @@ Personal Neovim configuration of XiaoZhang
 - [lifepillar/vim-solarized8](https://github.com/lifepillar/vim-solarized8.git)
 - [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip)
 
-### Xiao Keymaps
+## Xiao Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -215,12 +215,12 @@ Personal Neovim configuration of XiaoZhang
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
-| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;18_vsnip_cut_text_normal&lt;CR&gt;g@</code> |
+| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;17_vsnip_cut_text_normal&lt;CR&gt;g@</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
-| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;18_vsnip_select_text_normal&lt;CR&gt;g@</code> |
+| **Right hand side** | <code>:set operatorfunc=&lt;SNR&gt;17_vsnip_select_text_normal&lt;CR&gt;g@</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -233,7 +233,7 @@ Personal Neovim configuration of XiaoZhang
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -313,15 +313,15 @@ Personal Neovim configuration of XiaoZhang
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(vsnip-cut-text)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;18_vsnip_visual_text(visualmode())&lt;CR&gt;gv"_c</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;20_vsnip_visual_text(visualmode())&lt;CR&gt;gv"_c</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(vsnip-select-text)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;18_vsnip_visual_text(visualmode())&lt;CR&gt;gv</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;20_vsnip_visual_text(visualmode())&lt;CR&gt;gv</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

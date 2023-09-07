@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Modular Neovim Configuration Information
+# Modular Neovim Configuration Information
 
 Same as 'StartMason' but everything is split in modules
 
@@ -15,11 +15,11 @@ Same as 'StartMason' but everything is split in modules
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Modular`**
 
-### Git repository
+## Git repository
 
 [https://github.com/VonHeikemen/nvim-starter/tree/05-modular](https://github.com/VonHeikemen/nvim-starter/tree/05-modular)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -55,9 +55,14 @@ Same as 'StartMason' but everything is split in modules
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat)
 - [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
 
-### Modular Keymaps
+## Modular Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> e</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;NvimTreeToggle&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -93,11 +98,6 @@ Same as 'StartMason' but everything is split in modules
 | :---- | :---- |
 | **Left hand side** | <code> ?</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;Telescope oldfiles&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> e</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;NvimTreeToggle&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -270,7 +270,7 @@ Same as 'StartMason' but everything is split in modules
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -403,7 +403,7 @@ Same as 'StartMason' but everything is split in modules
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

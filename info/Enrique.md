@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Enrique Neovim Configuration Information
+# Enrique Neovim Configuration Information
 
 Personal Neovim configuration of Enrique Mejidas
 
@@ -15,16 +15,16 @@ Personal Neovim configuration of Enrique Mejidas
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Enrique`**
 
-### Git repository
+## Git repository
 
 [https://github.com/kiyov09/dotfiles](https://github.com/kiyov09/dotfiles)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 
-### Enrique Keymaps
+## Enrique Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -1757,7 +1757,7 @@ Personal Neovim configuration of Enrique Mejidas
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -2070,7 +2070,7 @@ Personal Neovim configuration of Enrique Mejidas
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

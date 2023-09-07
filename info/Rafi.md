@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Rafi Neovim Configuration Information
+# Rafi Neovim Configuration Information
 
 [Extensible](https://github.com/rafi/vim-config#extending) Neovim configuration
 
@@ -15,15 +15,15 @@ post_style: page
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Rafi`**
 
-### Git repository
+## Git repository
 
 [https://github.com/rafi/vim-config](https://github.com/rafi/vim-config)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/rafi/vim-config](https://dotfyle.com/rafi/vim-config)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [b0o/SchemaStore.nvim](https://github.com/b0o/SchemaStore.nvim)
@@ -129,9 +129,9 @@ post_style: page
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 - [mickael-menu/zk-nvim](https://github.com/mickael-menu/zk-nvim.git)
 
-### Rafi Keymaps
+## Rafi Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | Toggle Fold |
 | :---- | :---- |
@@ -273,39 +273,9 @@ post_style: page
 | **Left hand side** | <code> l</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;Lazy&lt;CR&gt;</code> |
 
-| **Description** | Zk New |
+| **Description** | Delete Buffer |
 | :---- | :---- |
-| **Left hand side** | <code> zn</code> |
-| **Right hand side** | |
-
-| **Description** | Zk Links |
-| :---- | :---- |
-| **Left hand side** | <code> zl</code> |
-| **Right hand side** | |
-
-| **Description** | Zk Backlinks |
-| :---- | :---- |
-| **Left hand side** | <code> zb</code> |
-| **Right hand side** | |
-
-| **Description** | Zk Search |
-| :---- | :---- |
-| **Left hand side** | <code> zf</code> |
-| **Right hand side** | |
-
-| **Description** | Zk Tags |
-| :---- | :---- |
-| **Left hand side** | <code> zt</code> |
-| **Right hand side** | |
-
-| **Description** | Zk Notes |
-| :---- | :---- |
-| **Left hand side** | <code> zo</code> |
-| **Right hand side** | |
-
-| **Description** | Zen Mode |
-| :---- | :---- |
-| **Left hand side** | <code> zz</code> |
+| **Left hand side** | <code> bd</code> |
 | **Right hand side** | |
 
 | **Description** | Diff View |
@@ -318,9 +288,29 @@ post_style: page
 | **Left hand side** | <code> gd</code> |
 | **Right hand side** | |
 
-| **Description** | Location List (Trouble) |
+| **Description** | Symbols Outline |
 | :---- | :---- |
-| **Left hand side** | <code> xL</code> |
+| **Left hand side** | <code> o</code> |
+| **Right hand side** | |
+
+| **Description** | Neogen Comment |
+| :---- | :---- |
+| **Left hand side** | <code> cc</code> |
+| **Right hand side** | |
+
+| **Description** | Noice History |
+| :---- | :---- |
+| **Left hand side** | <code> snh</code> |
+| **Right hand side** | |
+
+| **Description** | Noice Last Message |
+| :---- | :---- |
+| **Left hand side** | <code> snl</code> |
+| **Right hand side** | |
+
+| **Description** | Noice All |
+| :---- | :---- |
+| **Left hand side** | <code> sna</code> |
 | **Right hand side** | |
 
 | **Description** | Quickfix List (Trouble) |
@@ -348,114 +338,9 @@ post_style: page
 | **Left hand side** | <code> e</code> |
 | **Right hand side** | |
 
-| **Description** | Line diff reset |
+| **Description** | Location List (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> mdr</code> |
-| **Right hand side** | |
-
-| **Description** | Line diff show |
-| :---- | :---- |
-| **Left hand side** | <code> mds</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> v</code> |
-| **Right hand side** | |
-
-| **Description** | Delete Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> bd</code> |
-| **Right hand side** | |
-
-| **Description** | Select VirtualEnv |
-| :---- | :---- |
-| **Left hand side** | <code> cv</code> |
-| **Right hand side** | |
-
-| **Description** | Mason |
-| :---- | :---- |
-| **Left hand side** | <code> mm</code> |
-| **Right hand side** | |
-
-| **Description** | Undo Tree |
-| :---- | :---- |
-| **Left hand side** | <code> gu</code> |
-| **Right hand side** | |
-
-| **Description** | Dismiss all Notifications |
-| :---- | :---- |
-| **Left hand side** | <code> un</code> |
-| **Right hand side** | |
-
-| **Description** | Noice History |
-| :---- | :---- |
-| **Left hand side** | <code> snh</code> |
-| **Right hand side** | |
-
-| **Description** | Noice Last Message |
-| :---- | :---- |
-| **Left hand side** | <code> snl</code> |
-| **Right hand side** | |
-
-| **Description** | Noice All |
-| :---- | :---- |
-| **Left hand side** | <code> sna</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> ue</code> |
-| **Right hand side** | |
-
-| **Description** | Highlight word |
-| :---- | :---- |
-| **Left hand side** | <code> mt</code> |
-| **Right hand side** | |
-
-| **Description** | Duplicate Paragraph |
-| :---- | :---- |
-| **Left hand side** | <code> cp</code> |
-| **Right hand side** | <code>yap&lt;S-}&gt;p</code> |
-
-| **Description** | Neogen Comment |
-| :---- | :---- |
-| **Left hand side** | <code> cc</code> |
-| **Right hand side** | |
-
-| **Description** | Spectre |
-| :---- | :---- |
-| **Left hand side** | <code> sp</code> |
-| **Right hand side** | |
-
-| **Description** | Git open in browser |
-| :---- | :---- |
-| **Left hand side** | <code> go</code> |
-| **Right hand side** | |
-
-| **Description** | Execute HTTP request |
-| :---- | :---- |
-| **Left hand side** | <code> mh</code> |
-| **Right hand side** | |
-
-| **Description** | Git messenger |
-| :---- | :---- |
-| **Left hand side** | <code> gm</code> |
-| **Right hand side** | |
-
-| **Description** | Git blame (window) |
-| :---- | :---- |
-| **Left hand side** | <code> gB</code> |
-| **Right hand side** | |
-
-| **Description** | Git blame |
-| :---- | :---- |
-| **Left hand side** | <code> gb</code> |
-| **Right hand side** | |
-
-| **Description** | Symbols Outline |
-| :---- | :---- |
-| **Left hand side** | <code> o</code> |
+| **Left hand side** | <code> xL</code> |
 | **Right hand side** | |
 
 | **Description** | Colorscheme |
@@ -558,19 +443,9 @@ post_style: page
 | **Left hand side** | <code> ss</code> |
 | **Right hand side** | |
 
-| **Description** | Neogit |
-| :---- | :---- |
-| **Left hand side** | <code> mg</code> |
-| **Right hand side** | |
-
 | **Description** | Todo (Trouble) |
 | :---- | :---- |
 | **Left hand side** | <code> xt</code> |
-| **Right hand side** | |
-
-| **Description** | Todo/Fix/Fixme (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xT</code> |
 | **Right hand side** | |
 
 | **Description** | Todo/Fix/Fixme |
@@ -583,9 +458,134 @@ post_style: page
 | **Left hand side** | <code> st</code> |
 | **Right hand side** | |
 
+| **Description** | Todo/Fix/Fixme (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xT</code> |
+| **Right hand side** | |
+
+| **Description** | Neogit |
+| :---- | :---- |
+| **Left hand side** | <code> mg</code> |
+| **Right hand side** | |
+
+| **Description** | Highlight word |
+| :---- | :---- |
+| **Left hand side** | <code> mt</code> |
+| **Right hand side** | |
+
+| **Description** | Zen Mode |
+| :---- | :---- |
+| **Left hand side** | <code> zz</code> |
+| **Right hand side** | |
+
+| **Description** | Git blame (window) |
+| :---- | :---- |
+| **Left hand side** | <code> gB</code> |
+| **Right hand side** | |
+
+| **Description** | Git blame |
+| :---- | :---- |
+| **Left hand side** | <code> gb</code> |
+| **Right hand side** | |
+
+| **Description** | Git open in browser |
+| :---- | :---- |
+| **Left hand side** | <code> go</code> |
+| **Right hand side** | |
+
+| **Description** | Mason |
+| :---- | :---- |
+| **Left hand side** | <code> mm</code> |
+| **Right hand side** | |
+
+| **Description** | Git messenger |
+| :---- | :---- |
+| **Left hand side** | <code> gm</code> |
+| **Right hand side** | |
+
 | **Description** | Toggle structure panel |
 | :---- | :---- |
 | **Left hand side** | <code> tf</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> ue</code> |
+| **Right hand side** | |
+
+| **Description** | Line diff show |
+| :---- | :---- |
+| **Left hand side** | <code> mds</code> |
+| **Right hand side** | |
+
+| **Description** | Line diff reset |
+| :---- | :---- |
+| **Left hand side** | <code> mdr</code> |
+| **Right hand side** | |
+
+| **Description** | Duplicate Paragraph |
+| :---- | :---- |
+| **Left hand side** | <code> cp</code> |
+| **Right hand side** | <code>yap&lt;S-}&gt;p</code> |
+
+| **Description** | Dismiss all Notifications |
+| :---- | :---- |
+| **Left hand side** | <code> un</code> |
+| **Right hand side** | |
+
+| **Description** | Zk Tags |
+| :---- | :---- |
+| **Left hand side** | <code> zt</code> |
+| **Right hand side** | |
+
+| **Description** | Zk Notes |
+| :---- | :---- |
+| **Left hand side** | <code> zo</code> |
+| **Right hand side** | |
+
+| **Description** | Zk New |
+| :---- | :---- |
+| **Left hand side** | <code> zn</code> |
+| **Right hand side** | |
+
+| **Description** | Zk Links |
+| :---- | :---- |
+| **Left hand side** | <code> zl</code> |
+| **Right hand side** | |
+
+| **Description** | Zk Backlinks |
+| :---- | :---- |
+| **Left hand side** | <code> zb</code> |
+| **Right hand side** | |
+
+| **Description** | Zk Search |
+| :---- | :---- |
+| **Left hand side** | <code> zf</code> |
+| **Right hand side** | |
+
+| **Description** | Select VirtualEnv |
+| :---- | :---- |
+| **Left hand side** | <code> cv</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> v</code> |
+| **Right hand side** | |
+
+| **Description** | Undo Tree |
+| :---- | :---- |
+| **Left hand side** | <code> gu</code> |
+| **Right hand side** | |
+
+| **Description** | Spectre |
+| :---- | :---- |
+| **Left hand side** | <code> sp</code> |
+| **Right hand side** | |
+
+| **Description** | Execute HTTP request |
+| :---- | :---- |
+| **Left hand side** | <code> mh</code> |
 | **Right hand side** | |
 
 | **Description** | Execute Shell Command |
@@ -616,16 +616,6 @@ post_style: page
 | **Description** | Content-aware menu |
 | :---- | :---- |
 | **Left hand side** | <code>;c</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer NeoTree Reveal |
-| :---- | :---- |
-| **Left hand side** | <code>;a</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer NeoTree Toggle |
-| :---- | :---- |
-| **Left hand side** | <code>;e</code> |
 | **Right hand side** | |
 
 | **Description** | Search history |
@@ -758,6 +748,16 @@ post_style: page
 | **Left hand side** | <code>;dt</code> |
 | **Right hand side** | |
 
+| **Description** | Explorer NeoTree Toggle |
+| :---- | :---- |
+| **Left hand side** | <code>;e</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer NeoTree Reveal |
+| :---- | :---- |
+| **Left hand side** | <code>;a</code> |
+| **Right hand side** | |
+
 | **Description** | F |
 | :---- | :---- |
 | **Left hand side** | <code>F</code> |
@@ -793,14 +793,14 @@ post_style: page
 | **Left hand side** | <code>[q</code> |
 | **Right hand side** | |
 
-| **Description** | Prev Reference |
-| :---- | :---- |
-| **Left hand side** | <code>[[</code> |
-| **Right hand side** | |
-
 | **Description** | Previous todo comment |
 | :---- | :---- |
 | **Left hand side** | <code>[t</code> |
+| **Right hand side** | |
+
+| **Description** | Prev Reference |
+| :---- | :---- |
+| **Left hand side** | <code>[[</code> |
 | **Right hand side** | |
 
 | **Description** | Next Whitespace |
@@ -818,14 +818,14 @@ post_style: page
 | **Left hand side** | <code>]q</code> |
 | **Right hand side** | |
 
-| **Description** | Next Reference |
-| :---- | :---- |
-| **Left hand side** | <code>]]</code> |
-| **Right hand side** | |
-
 | **Description** | Next todo comment |
 | :---- | :---- |
 | **Left hand side** | <code>]t</code> |
+| **Right hand side** | |
+
+| **Description** | Next Reference |
+| :---- | :---- |
+| **Left hand side** | <code>]]</code> |
 | **Right hand side** | |
 
 | **Description** | Replace surrounding |
@@ -893,24 +893,19 @@ post_style: page
 | **Left hand side** | <code>gh</code> |
 | **Right hand side** | <code>g^</code> |
 
-| **Description** | Move to top edge |
-| :---- | :---- |
-| **Left hand side** | <code>gk</code> |
-| **Right hand side** | |
-
 | **Description** | Move to bottom edge |
 | :---- | :---- |
 | **Left hand side** | <code>gj</code> |
 | **Right hand side** | |
 
-| **Description** | |
+| **Description** | Move to top edge |
 | :---- | :---- |
-| **Left hand side** | <code>gpr</code> |
+| **Left hand side** | <code>gk</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gpy</code> |
+| **Left hand side** | <code>gpr</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -923,6 +918,11 @@ post_style: page
 | **Left hand side** | <code>gpi</code> |
 | **Right hand side** | |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gpy</code> |
+| **Right hand side** | |
+
 | **Description** | Highlight surrounding |
 | :---- | :---- |
 | **Left hand side** | <code>gzh</code> |
@@ -933,14 +933,14 @@ post_style: page
 | **Left hand side** | <code>gzF</code> |
 | **Right hand side** | |
 
-| **Description** | Find right surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gzf</code> |
-| **Right hand side** | |
-
 | **Description** | Update `MiniSurround.config.n_lines` |
 | :---- | :---- |
 | **Left hand side** | <code>gzn</code> |
+| **Right hand side** | |
+
+| **Description** | Find right surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gzf</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1013,6 +1013,31 @@ post_style: page
 | **Left hand side** | <code>sb</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;buffer#&lt;CR&gt;</code> |
 
+| **Description** | Pick window |
+| :---- | :---- |
+| **Left hand side** | <code>sp</code> |
+| **Right hand side** | |
+
+| **Description** | Swap picked window |
+| :---- | :---- |
+| **Left hand side** | <code>sw</code> |
+| **Right hand side** | |
+
+| **Description** | Add surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>sa</code> |
+| **Right hand side** | |
+
+| **Description** | Split arguments |
+| :---- | :---- |
+| **Left hand side** | <code>sk</code> |
+| **Right hand side** | |
+
+| **Description** | Join arguments |
+| :---- | :---- |
+| **Left hand side** | <code>sj</code> |
+| **Right hand side** | |
+
 | **Description** | Leap backward to |
 | :---- | :---- |
 | **Left hand side** | <code>sS</code> |
@@ -1021,31 +1046,6 @@ post_style: page
 | **Description** | Leap forward to |
 | :---- | :---- |
 | **Left hand side** | <code>ss</code> |
-| **Right hand side** | |
-
-| **Description** | Add surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>sa</code> |
-| **Right hand side** | |
-
-| **Description** | Swap picked window |
-| :---- | :---- |
-| **Left hand side** | <code>sw</code> |
-| **Right hand side** | |
-
-| **Description** | Pick window |
-| :---- | :---- |
-| **Left hand side** | <code>sp</code> |
-| **Right hand side** | |
-
-| **Description** | Join arguments |
-| :---- | :---- |
-| **Left hand side** | <code>sj</code> |
-| **Right hand side** | |
-
-| **Description** | Split arguments |
-| :---- | :---- |
-| **Left hand side** | <code>sk</code> |
 | **Right hand side** | |
 
 | **Description** | t |
@@ -1128,16 +1128,6 @@ post_style: page
 | **Left hand side** | <code>&lt;S-CR&gt;</code> |
 | **Right hand side** | <code>zMzv</code> |
 
-| **Description** | Jump to right pane |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-L&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;TmuxNavigateRight&lt;CR&gt;</code> |
-
-| **Description** | Jump to lower pane |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-J&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;TmuxNavigateDown&lt;CR&gt;</code> |
-
 | **Description** | Jump to left pane |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-H&gt;</code> |
@@ -1148,10 +1138,25 @@ post_style: page
 | **Left hand side** | <code>&lt;C-K&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;TmuxNavigateUp&lt;CR&gt;</code> |
 
+| **Description** | Jump to right pane |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;TmuxNavigateRight&lt;CR&gt;</code> |
+
+| **Description** | Jump to lower pane |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;TmuxNavigateDown&lt;CR&gt;</code> |
+
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
 | **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | Toggle terminal |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-_&gt;</code> |
+| **Right hand side** | |
 
 | **Description** | Scroll backward |
 | :---- | :---- |
@@ -1163,13 +1168,8 @@ post_style: page
 | **Left hand side** | <code>&lt;C-F&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle terminal |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-_&gt;</code> |
-| **Right hand side** | |
 
-
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Indent Left |
 | :---- | :---- |
@@ -1201,6 +1201,21 @@ post_style: page
 | **Left hand side** | <code> zf</code> |
 | **Right hand side** | |
 
+| **Description** | Grep cursor word |
+| :---- | :---- |
+| **Left hand side** | <code> gg</code> |
+| **Right hand side** | |
+
+| **Description** | Git bcommits range |
+| :---- | :---- |
+| **Left hand side** | <code> gc</code> |
+| **Right hand side** | |
+
+| **Description** | Highlight word |
+| :---- | :---- |
+| **Left hand side** | <code> mt</code> |
+| **Right hand side** | |
+
 | **Description** | Line diff add |
 | :---- | :---- |
 | **Left hand side** | <code> mda</code> |
@@ -1209,16 +1224,6 @@ post_style: page
 | **Description** | Line diff |
 | :---- | :---- |
 | **Left hand side** | <code> mdf</code> |
-| **Right hand side** | |
-
-| **Description** | Highlight word |
-| :---- | :---- |
-| **Left hand side** | <code> mt</code> |
-| **Right hand side** | |
-
-| **Description** | Spectre Word |
-| :---- | :---- |
-| **Left hand side** | <code> sp</code> |
 | **Right hand side** | |
 
 | **Description** | Git open in browser |
@@ -1231,14 +1236,9 @@ post_style: page
 | **Left hand side** | <code> v</code> |
 | **Right hand side** | |
 
-| **Description** | Grep cursor word |
+| **Description** | Spectre Word |
 | :---- | :---- |
-| **Left hand side** | <code> gg</code> |
-| **Right hand side** | |
-
-| **Description** | Git bcommits range |
-| :---- | :---- |
-| **Left hand side** | <code> gc</code> |
+| **Left hand side** | <code> sp</code> |
 | **Right hand side** | |
 
 | **Description** | Nvim builtin |
@@ -1341,6 +1341,16 @@ post_style: page
 | **Left hand side** | <code>sg</code> |
 | **Right hand side** | <code>:s//gc&lt;Left&gt;&lt;Left&gt;&lt;Left&gt;</code> |
 
+| **Description** | Split arguments |
+| :---- | :---- |
+| **Left hand side** | <code>sk</code> |
+| **Right hand side** | |
+
+| **Description** | Join arguments |
+| :---- | :---- |
+| **Left hand side** | <code>sj</code> |
+| **Right hand side** | |
+
 | **Description** | Leap forward to |
 | :---- | :---- |
 | **Left hand side** | <code>ss</code> |
@@ -1349,16 +1359,6 @@ post_style: page
 | **Description** | Leap backward to |
 | :---- | :---- |
 | **Left hand side** | <code>sS</code> |
-| **Right hand side** | |
-
-| **Description** | Join arguments |
-| :---- | :---- |
-| **Left hand side** | <code>sj</code> |
-| **Right hand side** | |
-
-| **Description** | Split arguments |
-| :---- | :---- |
-| **Left hand side** | <code>sk</code> |
 | **Right hand side** | |
 
 | **Description** | Add surrounding |
@@ -1397,7 +1397,7 @@ post_style: page
 | **Right hand side** | <code>&lt;lt&gt;gv</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | F |
 | :---- | :---- |

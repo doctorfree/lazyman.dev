@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Webdev Neovim Configuration Information
+# Webdev Neovim Configuration Information
 
 LazyVim based config for web developers. JavaScript, Typescript, React, and Tailwind CSS support
 
@@ -15,15 +15,15 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Webdev`**
 
-### Git repository
+## Git repository
 
 [https://github.com/doctorfree/nvim-webdev](https://github.com/doctorfree/nvim-webdev)
 
-### Website
+## Website
 
 [https://webdev.lazyman.dev](https://webdev.lazyman.dev)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [LazyVim/LazyVim](https://github.com/LazyVim/LazyVim.git)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -100,9 +100,9 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 
-### Webdev Keymaps
+## Webdev Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -189,6 +189,126 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 | **Left hand side** | <code>,ut</code> |
 | **Right hand side** | |
 
+| **Description** | Restore Session |
+| :---- | :---- |
+| **Left hand side** | <code>,qs</code> |
+| **Right hand side** | |
+
+| **Description** | Don't Save Current Session |
+| :---- | :---- |
+| **Left hand side** | <code>,qd</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Last Session |
+| :---- | :---- |
+| **Left hand side** | <code>,ql</code> |
+| **Right hand side** | |
+
+| **Description** | Auto Commands |
+| :---- | :---- |
+| **Left hand side** | <code>,sa</code> |
+| **Right hand side** | |
+
+| **Description** | Registers |
+| :---- | :---- |
+| **Left hand side** | <code>,s"</code> |
+| **Right hand side** | |
+
+| **Description** | status |
+| :---- | :---- |
+| **Left hand side** | <code>,gs</code> |
+| **Right hand side** | |
+
+| **Description** | commits |
+| :---- | :---- |
+| **Left hand side** | <code>,gc</code> |
+| **Right hand side** | |
+
+| **Description** | Recent (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code>,fR</code> |
+| **Right hand side** | |
+
+| **Description** | Recent |
+| :---- | :---- |
+| **Left hand side** | <code>,fr</code> |
+| **Right hand side** | |
+
+| **Description** | Find Files (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code>,fF</code> |
+| **Right hand side** | |
+
+| **Description** | Find Files (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code>, </code> |
+| **Right hand side** | |
+
+| **Description** | Buffers |
+| :---- | :---- |
+| **Left hand side** | <code>,fb</code> |
+| **Right hand side** | |
+
+| **Description** | Command History |
+| :---- | :---- |
+| **Left hand side** | <code>,:</code> |
+| **Right hand side** | |
+
+| **Description** | Grep (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code>,/</code> |
+| **Right hand side** | |
+
+| **Description** | Switch Buffer |
+| :---- | :---- |
+| **Left hand side** | <code>,,</code> |
+| **Right hand side** | |
+
+| **Description** | Find Files (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code>,ff</code> |
+| **Right hand side** | |
+
+| **Description** | Goto Symbol (Workspace) |
+| :---- | :---- |
+| **Left hand side** | <code>,sS</code> |
+| **Right hand side** | |
+
+| **Description** | Goto Symbol |
+| :---- | :---- |
+| **Left hand side** | <code>,ss</code> |
+| **Right hand side** | |
+
+| **Description** | Colorscheme with preview |
+| :---- | :---- |
+| **Left hand side** | <code>,uC</code> |
+| **Right hand side** | |
+
+| **Description** | Word (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code>,sW</code> |
+| **Right hand side** | |
+
+| **Description** | Word (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code>,sw</code> |
+| **Right hand side** | |
+
+| **Description** | Resume |
+| :---- | :---- |
+| **Left hand side** | <code>,sR</code> |
+| **Right hand side** | |
+
+| **Description** | Options |
+| :---- | :---- |
+| **Left hand side** | <code>,so</code> |
+| **Right hand side** | |
+
+| **Description** | Jump to Mark |
+| :---- | :---- |
+| **Left hand side** | <code>,sm</code> |
+| **Right hand side** | |
+
 | **Description** | Man Pages |
 | :---- | :---- |
 | **Left hand side** | <code>,sM</code> |
@@ -244,126 +364,6 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 | **Left hand side** | <code>,sb</code> |
 | **Right hand side** | |
 
-| **Description** | Auto Commands |
-| :---- | :---- |
-| **Left hand side** | <code>,sa</code> |
-| **Right hand side** | |
-
-| **Description** | Registers |
-| :---- | :---- |
-| **Left hand side** | <code>,s"</code> |
-| **Right hand side** | |
-
-| **Description** | status |
-| :---- | :---- |
-| **Left hand side** | <code>,gs</code> |
-| **Right hand side** | |
-
-| **Description** | commits |
-| :---- | :---- |
-| **Left hand side** | <code>,gc</code> |
-| **Right hand side** | |
-
-| **Description** | Recent (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code>,fR</code> |
-| **Right hand side** | |
-
-| **Description** | Recent |
-| :---- | :---- |
-| **Left hand side** | <code>,fr</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code>,fF</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code>,ff</code> |
-| **Right hand side** | |
-
-| **Description** | Buffers |
-| :---- | :---- |
-| **Left hand side** | <code>,fb</code> |
-| **Right hand side** | |
-
-| **Description** | Command History |
-| :---- | :---- |
-| **Left hand side** | <code>,:</code> |
-| **Right hand side** | |
-
-| **Description** | Grep (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code>,/</code> |
-| **Right hand side** | |
-
-| **Description** | Switch Buffer |
-| :---- | :---- |
-| **Left hand side** | <code>,,</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code>, </code> |
-| **Right hand side** | |
-
-| **Description** | Goto Symbol (Workspace) |
-| :---- | :---- |
-| **Left hand side** | <code>,sS</code> |
-| **Right hand side** | |
-
-| **Description** | Goto Symbol |
-| :---- | :---- |
-| **Left hand side** | <code>,ss</code> |
-| **Right hand side** | |
-
-| **Description** | Colorscheme with preview |
-| :---- | :---- |
-| **Left hand side** | <code>,uC</code> |
-| **Right hand side** | |
-
-| **Description** | Word (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code>,sW</code> |
-| **Right hand side** | |
-
-| **Description** | Word (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code>,sw</code> |
-| **Right hand side** | |
-
-| **Description** | Resume |
-| :---- | :---- |
-| **Left hand side** | <code>,sR</code> |
-| **Right hand side** | |
-
-| **Description** | Options |
-| :---- | :---- |
-| **Left hand side** | <code>,so</code> |
-| **Right hand side** | |
-
-| **Description** | Jump to Mark |
-| :---- | :---- |
-| **Left hand side** | <code>,sm</code> |
-| **Right hand side** | |
-
-| **Description** | Delete non-pinned buffers |
-| :---- | :---- |
-| **Left hand side** | <code>,bP</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle pin |
-| :---- | :---- |
-| **Left hand side** | <code>,bp</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer NeoTree (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code>,fe</code> |
-| **Right hand side** | |
-
 | **Description** | Explorer NeoTree (cwd) |
 | :---- | :---- |
 | **Left hand side** | <code>,E</code> |
@@ -379,19 +379,39 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 | **Left hand side** | <code>,fE</code> |
 | **Right hand side** | |
 
-| **Description** | Don't Save Current Session |
+| **Description** | Explorer NeoTree (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code>,qd</code> |
+| **Left hand side** | <code>,fe</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Last Session |
+| **Description** | Todo/Fix/Fixme (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code>,ql</code> |
+| **Left hand side** | <code>,xT</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Session |
+| **Description** | Todo |
 | :---- | :---- |
-| **Left hand side** | <code>,qs</code> |
+| **Left hand side** | <code>,st</code> |
+| **Right hand side** | |
+
+| **Description** | Todo/Fix/Fixme |
+| :---- | :---- |
+| **Left hand side** | <code>,sT</code> |
+| **Right hand side** | |
+
+| **Description** | Todo (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code>,xt</code> |
+| **Right hand side** | |
+
+| **Description** | JsDoc |
+| :---- | :---- |
+| **Left hand side** | <code>,d</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Treesitter Join |
+| :---- | :---- |
+| **Left hand side** | <code>,tt</code> |
 | **Right hand side** | |
 
 | **Description** | Terminal Send |
@@ -402,56 +422,6 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 | **Description** | Treesitter Join |
 | :---- | :---- |
 | **Left hand side** | <code>,tj</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Treesitter Join |
-| :---- | :---- |
-| **Left hand side** | <code>,tt</code> |
-| **Right hand side** | |
-
-| **Description** | JsDoc |
-| :---- | :---- |
-| **Left hand side** | <code>,d</code> |
-| **Right hand side** | |
-
-| **Description** | Todo/Fix/Fixme |
-| :---- | :---- |
-| **Left hand side** | <code>,sT</code> |
-| **Right hand side** | |
-
-| **Description** | Todo |
-| :---- | :---- |
-| **Left hand side** | <code>,st</code> |
-| **Right hand side** | |
-
-| **Description** | Todo (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code>,xt</code> |
-| **Right hand side** | |
-
-| **Description** | Todo/Fix/Fixme (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code>,xT</code> |
-| **Right hand side** | |
-
-| **Description** | Location List (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code>,xL</code> |
-| **Right hand side** | |
-
-| **Description** | Workspace Diagnostics (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code>,xX</code> |
-| **Right hand side** | |
-
-| **Description** | Document Diagnostics (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code>,xx</code> |
-| **Right hand side** | |
-
-| **Description** | Quickfix List (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code>,xQ</code> |
 | **Right hand side** | |
 
 | **Description** | Dismiss All |
@@ -479,14 +449,44 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 | **Left hand side** | <code>,fp</code> |
 | **Right hand side** | |
 
-| **Description** | Delete Buffer |
+| **Description** | Quickfix List (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code>,bd</code> |
+| **Left hand side** | <code>,xQ</code> |
+| **Right hand side** | |
+
+| **Description** | Location List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code>,xL</code> |
+| **Right hand side** | |
+
+| **Description** | Workspace Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code>,xX</code> |
+| **Right hand side** | |
+
+| **Description** | Document Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code>,xx</code> |
 | **Right hand side** | |
 
 | **Description** | Delete Buffer (Force) |
 | :---- | :---- |
 | **Left hand side** | <code>,bD</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer |
+| :---- | :---- |
+| **Left hand side** | <code>,bd</code> |
+| **Right hand side** | |
+
+| **Description** | Delete non-pinned buffers |
+| :---- | :---- |
+| **Left hand side** | <code>,bP</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle pin |
+| :---- | :---- |
+| **Left hand side** | <code>,bp</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle zen mode |
@@ -549,21 +549,6 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 | **Left hand side** | <code>g%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
 
-| **Description** | Delete surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gzd</code> |
-| **Right hand side** | |
-
-| **Description** | Add surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gza</code> |
-| **Right hand side** | |
-
-| **Description** | Find left surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gzF</code> |
-| **Right hand side** | |
-
 | **Description** | Find right surrounding |
 | :---- | :---- |
 | **Left hand side** | <code>gzf</code> |
@@ -579,9 +564,24 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 | **Left hand side** | <code>gzr</code> |
 | **Right hand side** | |
 
+| **Description** | Add surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gza</code> |
+| **Right hand side** | |
+
+| **Description** | Delete surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gzd</code> |
+| **Right hand side** | |
+
 | **Description** | Update `MiniSurround.config.n_lines` |
 | :---- | :---- |
 | **Left hand side** | <code>gzn</code> |
+| **Right hand side** | |
+
+| **Description** | Find left surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gzF</code> |
 | **Right hand side** | |
 
 | **Description** | Flash |
@@ -624,14 +624,14 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 | **Left hand side** | <code>&lt;C-Space&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | Scroll backward |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-B&gt;</code> |
-| **Right hand side** | |
-
 | **Description** | Scroll forward |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-F&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Scroll backward |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-B&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Nvim builtin |
@@ -640,7 +640,7 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -743,7 +743,7 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 | **Right hand side** | |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

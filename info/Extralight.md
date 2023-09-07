@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Extralight Neovim Configuration Information
+# Extralight Neovim Configuration Information
 
 Single file lightweight configuration focused on providing basic features
 
@@ -15,11 +15,11 @@ Single file lightweight configuration focused on providing basic features
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Extralight`**
 
-### Git repository
+## Git repository
 
 [https://github.com/VonHeikemen/nvim-starter/tree/xx-light](https://github.com/VonHeikemen/nvim-starter/tree/xx-light)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
@@ -38,9 +38,9 @@ Single file lightweight configuration focused on providing basic features
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
 
-### Extralight Keymaps
+## Extralight Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -254,11 +254,6 @@ Single file lightweight configuration focused on providing basic features
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
 | **Right hand side** | |
 
@@ -267,13 +262,18 @@ Single file lightweight configuration focused on providing basic features
 | **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
 | **Right hand side** | |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
 | **Description** | Nvim builtin |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -371,7 +371,7 @@ Single file lightweight configuration focused on providing basic features
 | **Right hand side** | |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

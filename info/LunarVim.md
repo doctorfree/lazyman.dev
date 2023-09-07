@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## LunarVim Neovim Configuration Information
+# LunarVim Neovim Configuration Information
 
 Installs LunarVim plus the [IfCodingWereNatural custom user config](https://youtu.be/Qf9gfx7gWEY)
 
@@ -15,15 +15,15 @@ Installs LunarVim plus the [IfCodingWereNatural custom user config](https://yout
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-LunarVim`**
 
-### Git repository
+## Git repository
 
 [https://github.com/IfCodingWereNatural/minimal-nvim](https://github.com/IfCodingWereNatural/minimal-nvim)
 
-### Website
+## Website
 
 [https://lunarvim.lazyman.dev](https://lunarvim.lazyman.dev)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -91,9 +91,9 @@ Installs LunarVim plus the [IfCodingWereNatural custom user config](https://yout
 - [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### LunarVim Keymaps
+## LunarVim Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -342,8 +342,8 @@ Installs LunarVim plus the [IfCodingWereNatural custom user config](https://yout
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-Left&gt;</code> |
-| **Right hand side** | <code>:vertical resize -2&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-Right&gt;</code> |
+| **Right hand side** | <code>:vertical resize +2&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -352,8 +352,8 @@ Installs LunarVim plus the [IfCodingWereNatural custom user config](https://yout
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-Down&gt;</code> |
-| **Right hand side** | <code>:resize +2&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-Left&gt;</code> |
+| **Right hand side** | <code>:vertical resize -2&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -362,18 +362,23 @@ Installs LunarVim plus the [IfCodingWereNatural custom user config](https://yout
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;C-Down&gt;</code> |
+| **Right hand side** | <code>:resize +2&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;C-Up&gt;</code> |
 | **Right hand side** | <code>:resize -2&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-K&gt;</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Right hand side** | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-Q&gt;</code> |
-| **Right hand side** | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateUp&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -387,16 +392,11 @@ Installs LunarVim plus the [IfCodingWereNatural custom user config](https://yout
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-Right&gt;</code> |
-| **Right hand side** | <code>:vertical resize +2&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -501,12 +501,12 @@ Installs LunarVim plus the [IfCodingWereNatural custom user config](https://yout
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;VgSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;11_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;VSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;11_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;10_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -530,13 +530,13 @@ Installs LunarVim plus the [IfCodingWereNatural custom user config](https://yout
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;M-j&gt;</code> |
-| **Right hand side** | <code>:m '&gt;+1&lt;CR&gt;gv-gv</code> |
+| **Left hand side** | <code>&lt;M-k&gt;</code> |
+| **Right hand side** | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv-gv</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;M-k&gt;</code> |
-| **Right hand side** | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv-gv</code> |
+| **Left hand side** | <code>&lt;M-j&gt;</code> |
+| **Right hand side** | <code>:m '&gt;+1&lt;CR&gt;gv-gv</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -544,7 +544,7 @@ Installs LunarVim plus the [IfCodingWereNatural custom user config](https://yout
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateRight&lt;CR&gt;</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

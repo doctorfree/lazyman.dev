@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## CodeArt Neovim Configuration Information
+# CodeArt Neovim Configuration Information
 
 Use Neovim as a general purpose IDE
 
@@ -15,19 +15,19 @@ Use Neovim as a general purpose IDE
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-CodeArt`**
 
-### Git repository
+## Git repository
 
 [https://github.com/artart222/CodeArt](https://github.com/artart222/CodeArt)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [http://neovimcraft.com/plugin/artart222/CodeArt](http://neovimcraft.com/plugin/artart222/CodeArt)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/plugins/artart222/CodeArt](https://dotfyle.com/plugins/artart222/CodeArt)
 
-### Packer managed plugins
+## Packer managed plugins
 
 - [antoinemadec/FixCursorHold.nvim](https://github.com/antoinemadec/FixCursorHold.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -81,9 +81,9 @@ Use Neovim as a general purpose IDE
 - [artart222/vim-resize](https://github.com/artart222/vim-resize)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### CodeArt Keymaps
+## CodeArt Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -236,7 +236,7 @@ Use Neovim as a general purpose IDE
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -339,7 +339,7 @@ Use Neovim as a general purpose IDE
 | **Right hand side** | <code>&lt;Cmd&gt;lua require("packer.load")({'kommentary'}, { keys = "&lt;lt&gt;Plug&gt;kommentary_line_default", prefix = "" }, _G.packer_plugins)&lt;CR&gt;</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

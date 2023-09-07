@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## BasicLsp Neovim Configuration Information
+# BasicLsp Neovim Configuration Information
 
 Example lua configuration showing one way to setup LSP servers without plugins
 
@@ -15,16 +15,16 @@ Example lua configuration showing one way to setup LSP servers without plugins
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-BasicLsp`**
 
-### Git repository
+## Git repository
 
 [https://github.com/VonHeikemen/nvim-starter/tree/xx-basic-lsp](https://github.com/VonHeikemen/nvim-starter/tree/xx-basic-lsp)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 
-### BasicLsp Keymaps
+## BasicLsp Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -92,7 +92,7 @@ Example lua configuration showing one way to setup LSP servers without plugins
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -165,7 +165,7 @@ Example lua configuration showing one way to setup LSP servers without plugins
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

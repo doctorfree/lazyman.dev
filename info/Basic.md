@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Basic Neovim Configuration Information
+# Basic Neovim Configuration Information
 
 Starter config by the author of NvChad with [video tutorial](https://youtube.com/playlist?list=PLYVQrj2EVSUL1NqYn3jsIVXG3U9eWaMcq)
 
@@ -15,15 +15,15 @@ Starter config by the author of NvChad with [video tutorial](https://youtube.com
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Basic`**
 
-### Git repository
+## Git repository
 
 [https://github.com/NvChad/basic-config](https://github.com/NvChad/basic-config)
 
-### YouTube channel
+## YouTube channel
 
 [https://www.youtube.com/@siduck_og](https://www.youtube.com/@siduck_og)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -50,9 +50,9 @@ Starter config by the author of NvChad with [video tutorial](https://youtube.com
 - [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 
-### Basic Keymaps
+## Basic Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -125,7 +125,7 @@ Starter config by the author of NvChad with [video tutorial](https://youtube.com
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -143,5 +143,5 @@ Starter config by the author of NvChad with [video tutorial](https://youtube.com
 | **Right hand side** | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 

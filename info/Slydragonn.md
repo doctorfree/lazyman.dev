@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Slydragonn Neovim Configuration Information
+# Slydragonn Neovim Configuration Information
 
 [Introductory video](https://youtu.be/vkCnPdaRBE0)
 
@@ -15,15 +15,15 @@ post_style: page
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Slydragonn`**
 
-### Git repository
+## Git repository
 
 [https://github.com/slydragonn/dotfiles](https://github.com/slydragonn/dotfiles)
 
-### YouTube channel
+## YouTube channel
 
 [https://www.youtube.com/@slydragonn](https://www.youtube.com/@slydragonn)
 
-### Packer managed plugins
+## Packer managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
@@ -52,9 +52,9 @@ post_style: page
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 
-### Slydragonn Keymaps
+## Slydragonn Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -267,7 +267,7 @@ post_style: page
 | **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -345,7 +345,7 @@ post_style: page
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

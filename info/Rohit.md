@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Rohit Neovim Configuration Information
+# Rohit Neovim Configuration Information
 
 Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim)
 
@@ -15,11 +15,11 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Rohit`**
 
-### Git repository
+## Git repository
 
 [https://github.com/rohit-kumar-j/nvim](https://github.com/rohit-kumar-j/nvim)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -128,9 +128,9 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 - [mcchrish/zenbones.nvim](https://github.com/mcchrish/zenbones.nvim.git)
 
-### Rohit Keymaps
+## Rohit Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | Help |
 | :---- | :---- |
@@ -192,9 +192,64 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 | **Left hand side** | <code> N</code> |
 | **Right hand side** | <code>:lua require('neogen').generate()&lt;CR&gt;</code> |
 
-| **Description** | Twilight |
+| **Description** | GodBolt |
 | :---- | :---- |
-| **Left hand side** | <code> zt</code> |
+| **Left hand side** | <code> GG</code> |
+| **Right hand side** | |
+
+| **Description** | GodBolt Compiler |
+| :---- | :---- |
+| **Left hand side** | <code> GC</code> |
+| **Right hand side** | |
+
+| **Description** | DapUI Toggle |
+| :---- | :---- |
+| **Left hand side** | <code> du</code> |
+| **Right hand side** | |
+
+| **Description** | Lazy Git |
+| :---- | :---- |
+| **Left hand side** | <code> gg</code> |
+| **Right hand side** | |
+
+| **Description** | TrueZen Minimalist |
+| :---- | :---- |
+| **Left hand side** | <code> zm</code> |
+| **Right hand side** | |
+
+| **Description** | TrueZen Focus |
+| :---- | :---- |
+| **Left hand side** | <code> zf</code> |
+| **Right hand side** | |
+
+| **Description** | TrueZen Narrow Visual |
+| :---- | :---- |
+| **Left hand side** | <code> zn</code> |
+| **Right hand side** | |
+
+| **Description** | TrueZen Ataraxis |
+| :---- | :---- |
+| **Left hand side** | <code> za</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle BreakPoint |
+| :---- | :---- |
+| **Left hand side** | <code> dt</code> |
+| **Right hand side** | |
+
+| **Description** | UndotreeToggle |
+| :---- | :---- |
+| **Left hand side** | <code> U</code> |
+| **Right hand side** | |
+
+| **Description** | Todo List |
+| :---- | :---- |
+| **Left hand side** | <code> tt</code> |
+| **Right hand side** | |
+
+| **Description** | Help Tags |
+| :---- | :---- |
+| **Left hand side** | <code> th</code> |
 | **Right hand side** | |
 
 | **Description** | Hex Dump |
@@ -232,61 +287,6 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 | **Left hand side** | <code>  p</code> |
 | **Right hand side** | |
 
-| **Description** | UndotreeToggle |
-| :---- | :---- |
-| **Left hand side** | <code> U</code> |
-| **Right hand side** | |
-
-| **Description** | TrueZen Minimalist |
-| :---- | :---- |
-| **Left hand side** | <code> zm</code> |
-| **Right hand side** | |
-
-| **Description** | TrueZen Focus |
-| :---- | :---- |
-| **Left hand side** | <code> zf</code> |
-| **Right hand side** | |
-
-| **Description** | TrueZen Narrow Visual |
-| :---- | :---- |
-| **Left hand side** | <code> zn</code> |
-| **Right hand side** | |
-
-| **Description** | TrueZen Ataraxis |
-| :---- | :---- |
-| **Left hand side** | <code> za</code> |
-| **Right hand side** | |
-
-| **Description** | GodBolt |
-| :---- | :---- |
-| **Left hand side** | <code> GG</code> |
-| **Right hand side** | |
-
-| **Description** | GodBolt Compiler |
-| :---- | :---- |
-| **Left hand side** | <code> GC</code> |
-| **Right hand side** | |
-
-| **Description** | Lazy Git |
-| :---- | :---- |
-| **Left hand side** | <code> gg</code> |
-| **Right hand side** | |
-
-| **Description** | Todo List |
-| :---- | :---- |
-| **Left hand side** | <code> tt</code> |
-| **Right hand side** | |
-
-| **Description** | Help Tags |
-| :---- | :---- |
-| **Left hand side** | <code> th</code> |
-| **Right hand side** | |
-
-| **Description** | DapUI Toggle |
-| :---- | :---- |
-| **Left hand side** | <code> du</code> |
-| **Right hand side** | |
-
 | **Description** | Add file to Harpoon |
 | :---- | :---- |
 | **Left hand side** | <code> ha</code> |
@@ -302,9 +302,9 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 | **Left hand side** | <code> zz</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle BreakPoint |
+| **Description** | Twilight |
 | :---- | :---- |
-| **Left hand side** | <code> dt</code> |
+| **Left hand side** | <code> zt</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Format on Save |
@@ -453,7 +453,7 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 | **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -486,5 +486,5 @@ Good example use of [mason-tool-installer](https://github.com/WhoIsSethDaniel/ma
 | **Right hand side** | <code>"_x</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 

@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## CandyVim Neovim Configuration Information
+# CandyVim Neovim Configuration Information
 
 Eye Candy frontend development with React and Vue.js
 
@@ -15,19 +15,19 @@ Eye Candy frontend development with React and Vue.js
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-CandyVim`**
 
-### Git repository
+## Git repository
 
 [https://github.com/doctorfree/CandyVim](https://github.com/doctorfree/CandyVim)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/doctorfree/candyvim](https://dotfyle.com/doctorfree/candyvim)
 
-### Website
+## Website
 
 [https://candyvim.lazyman.dev](https://candyvim.lazyman.dev)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [antoinemadec/FixCursorHold.nvim](https://github.com/antoinemadec/FixCursorHold.nvim)
@@ -130,9 +130,9 @@ Eye Candy frontend development with React and Vue.js
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 
-### CandyVim Keymaps
+## CandyVim Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -214,21 +214,6 @@ Eye Candy frontend development with React and Vue.js
 | **Left hand side** | <code>,cm</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,gwc</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.create_git_worktree()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,gww</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.git_worktrees()&lt;CR&gt;</code> |
-
-| **Description** | choose both |
-| :---- | :---- |
-| **Left hand side** | <code>,gcb</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
-
 | **Description** | choose theirs |
 | :---- | :---- |
 | **Left hand side** | <code>,gct</code> |
@@ -249,10 +234,25 @@ Eye Candy frontend development with React and Vue.js
 | **Left hand side** | <code>,gcn</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
 
+| **Description** | choose both |
+| :---- | :---- |
+| **Left hand side** | <code>,gcb</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
+
 | **Description** | terminal float |
 | :---- | :---- |
 | **Left hand side** | <code>,at</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm direction=float&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,gwc</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.create_git_worktree()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,gww</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.git_worktrees()&lt;CR&gt;</code> |
 
 | **Description** | save session |
 | :---- | :---- |
@@ -279,51 +279,6 @@ Eye Candy frontend development with React and Vue.js
 | **Left hand side** | <code>,/sc</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;SessionManager load_session&lt;CR&gt;</code> |
 
-| **Description** | multicursor |
-| :---- | :---- |
-| **Left hand side** | <code>,m</code> |
-| **Right hand side** | |
-
-| **Description** | preview |
-| :---- | :---- |
-| **Left hand side** | <code>,ghp</code> |
-| **Right hand side** | |
-
-| **Description** | diff hunk |
-| :---- | :---- |
-| **Left hand side** | <code>,ghd</code> |
-| **Right hand side** | |
-
-| **Description** | undo stage |
-| :---- | :---- |
-| **Left hand side** | <code>,ghu</code> |
-| **Right hand side** | |
-
-| **Description** | toggle deleted |
-| :---- | :---- |
-| **Left hand side** | <code>,ght</code> |
-| **Right hand side** | |
-
-| **Description** | stage buffer |
-| :---- | :---- |
-| **Left hand side** | <code>,ghS</code> |
-| **Right hand side** | |
-
-| **Description** | stage hunk |
-| :---- | :---- |
-| **Left hand side** | <code>,ghs</code> |
-| **Right hand side** | |
-
-| **Description** | reset hunk |
-| :---- | :---- |
-| **Left hand side** | <code>,ghr</code> |
-| **Right hand side** | |
-
-| **Description** | reset buffer |
-| :---- | :---- |
-| **Left hand side** | <code>,ghR</code> |
-| **Right hand side** | |
-
 | **Description** | diff file |
 | :---- | :---- |
 | **Left hand side** | <code>,gd</code> |
@@ -336,147 +291,17 @@ Eye Candy frontend development with React and Vue.js
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,dd</code> |
+| **Left hand side** | <code>,Di</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,dc</code> |
+| **Left hand side** | <code>,Da</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,db</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,da</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,dt</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,dO</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,do</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,di</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,dh</code> |
-| **Right hand side** | |
-
-| **Description** | refactor |
-| :---- | :---- |
-| **Left hand side** | <code>,pr</code> |
-| **Right hand side** | |
-
-| **Description** | lazygit |
-| :---- | :---- |
-| **Left hand side** | <code>,gg</code> |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 9 |
-| :---- | :---- |
-| **Left hand side** | <code>,9</code> |
-| **Right hand side** | |
-
-| **Description** | Sort by relative dir |
-| :---- | :---- |
-| **Left hand side** | <code>,bsr</code> |
-| **Right hand side** | |
-
-| **Description** | Sort by extension |
-| :---- | :---- |
-| **Left hand side** | <code>,bse</code> |
-| **Right hand side** | |
-
-| **Description** | Sort by directory |
-| :---- | :---- |
-| **Left hand side** | <code>,bsd</code> |
-| **Right hand side** | |
-
-| **Description** | Pin/Unpin Buffer |
-| :---- | :---- |
-| **Left hand side** | <code>,bP</code> |
-| **Right hand side** | |
-
-| **Description** | Pick Buffer |
-| :---- | :---- |
-| **Left hand side** | <code>,bp</code> |
-| **Right hand side** | |
-
-| **Description** | Move next |
-| :---- | :---- |
-| **Left hand side** | <code>,bn</code> |
-| **Right hand side** | |
-
-| **Description** | Close Right |
-| :---- | :---- |
-| **Left hand side** | <code>,br</code> |
-| **Right hand side** | |
-
-| **Description** | Close Left |
-| :---- | :---- |
-| **Left hand side** | <code>,bl</code> |
-| **Right hand side** | |
-
-| **Description** | Move back |
-| :---- | :---- |
-| **Left hand side** | <code>,bb</code> |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 1 |
-| :---- | :---- |
-| **Left hand side** | <code>,1</code> |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 2 |
-| :---- | :---- |
-| **Left hand side** | <code>,2</code> |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 3 |
-| :---- | :---- |
-| **Left hand side** | <code>,3</code> |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 4 |
-| :---- | :---- |
-| **Left hand side** | <code>,4</code> |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 5 |
-| :---- | :---- |
-| **Left hand side** | <code>,5</code> |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 6 |
-| :---- | :---- |
-| **Left hand side** | <code>,6</code> |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 7 |
-| :---- | :---- |
-| **Left hand side** | <code>,7</code> |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 8 |
-| :---- | :---- |
-| **Left hand side** | <code>,8</code> |
+| **Left hand side** | <code>,DA</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -519,19 +344,194 @@ Eye Candy frontend development with React and Vue.js
 | **Left hand side** | <code>,Dc</code> |
 | **Right hand side** | |
 
-| **Description** | |
+| **Description** | stage hunk |
 | :---- | :---- |
-| **Left hand side** | <code>,Di</code> |
+| **Left hand side** | <code>,ghs</code> |
+| **Right hand side** | |
+
+| **Description** | reset hunk |
+| :---- | :---- |
+| **Left hand side** | <code>,ghr</code> |
+| **Right hand side** | |
+
+| **Description** | reset buffer |
+| :---- | :---- |
+| **Left hand side** | <code>,ghR</code> |
+| **Right hand side** | |
+
+| **Description** | preview |
+| :---- | :---- |
+| **Left hand side** | <code>,ghp</code> |
+| **Right hand side** | |
+
+| **Description** | diff hunk |
+| :---- | :---- |
+| **Left hand side** | <code>,ghd</code> |
+| **Right hand side** | |
+
+| **Description** | undo stage |
+| :---- | :---- |
+| **Left hand side** | <code>,ghu</code> |
+| **Right hand side** | |
+
+| **Description** | toggle deleted |
+| :---- | :---- |
+| **Left hand side** | <code>,ght</code> |
+| **Right hand side** | |
+
+| **Description** | stage buffer |
+| :---- | :---- |
+| **Left hand side** | <code>,ghS</code> |
+| **Right hand side** | |
+
+| **Description** | refactor |
+| :---- | :---- |
+| **Left hand side** | <code>,pr</code> |
+| **Right hand side** | |
+
+| **Description** | multicursor |
+| :---- | :---- |
+| **Left hand side** | <code>,m</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,Da</code> |
+| **Left hand side** | <code>,do</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,DA</code> |
+| **Left hand side** | <code>,di</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,dh</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,dd</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,dc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,db</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,da</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,dt</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,dO</code> |
+| **Right hand side** | |
+
+| **Description** | lazygit |
+| :---- | :---- |
+| **Left hand side** | <code>,gg</code> |
+| **Right hand side** | |
+
+| **Description** | Move next |
+| :---- | :---- |
+| **Left hand side** | <code>,bn</code> |
+| **Right hand side** | |
+
+| **Description** | Close Right |
+| :---- | :---- |
+| **Left hand side** | <code>,br</code> |
+| **Right hand side** | |
+
+| **Description** | Close Left |
+| :---- | :---- |
+| **Left hand side** | <code>,bl</code> |
+| **Right hand side** | |
+
+| **Description** | Move back |
+| :---- | :---- |
+| **Left hand side** | <code>,bb</code> |
+| **Right hand side** | |
+
+| **Description** | Pick Buffer |
+| :---- | :---- |
+| **Left hand side** | <code>,bp</code> |
+| **Right hand side** | |
+
+| **Description** | Pin/Unpin Buffer |
+| :---- | :---- |
+| **Left hand side** | <code>,bP</code> |
+| **Right hand side** | |
+
+| **Description** | Sort by directory |
+| :---- | :---- |
+| **Left hand side** | <code>,bsd</code> |
+| **Right hand side** | |
+
+| **Description** | Sort by extension |
+| :---- | :---- |
+| **Left hand side** | <code>,bse</code> |
+| **Right hand side** | |
+
+| **Description** | Sort by relative dir |
+| :---- | :---- |
+| **Left hand side** | <code>,bsr</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 1 |
+| :---- | :---- |
+| **Left hand side** | <code>,1</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 2 |
+| :---- | :---- |
+| **Left hand side** | <code>,2</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 3 |
+| :---- | :---- |
+| **Left hand side** | <code>,3</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 4 |
+| :---- | :---- |
+| **Left hand side** | <code>,4</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 5 |
+| :---- | :---- |
+| **Left hand side** | <code>,5</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 6 |
+| :---- | :---- |
+| **Left hand side** | <code>,6</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 7 |
+| :---- | :---- |
+| **Left hand side** | <code>,7</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 8 |
+| :---- | :---- |
+| **Left hand side** | <code>,8</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 9 |
+| :---- | :---- |
+| **Left hand side** | <code>,9</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -674,6 +674,31 @@ Eye Candy frontend development with React and Vue.js
 | **Left hand side** | <code>g%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gs</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(Switch)</code> |
+
+| **Description** | Move to right "around" |
+| :---- | :---- |
+| **Left hand side** | <code>g]</code> |
+| **Right hand side** | |
+
+| **Description** | Move to left "around" |
+| :---- | :---- |
+| **Left hand side** | <code>g[</code> |
+| **Right hand side** | |
+
+| **Description** | Align with preview |
+| :---- | :---- |
+| **Left hand side** | <code>gA</code> |
+| **Right hand side** | |
+
+| **Description** | Align |
+| :---- | :---- |
+| **Left hand side** | <code>ga</code> |
+| **Right hand side** | |
+
 | **Description** | Comment insert end of line |
 | :---- | :---- |
 | **Left hand side** | <code>gcA</code> |
@@ -709,44 +734,9 @@ Eye Candy frontend development with React and Vue.js
 | **Left hand side** | <code>gc</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>gs</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(Switch)</code> |
-
-| **Description** | Move to right "around" |
-| :---- | :---- |
-| **Left hand side** | <code>g]</code> |
-| **Right hand side** | |
-
-| **Description** | Move to left "around" |
-| :---- | :---- |
-| **Left hand side** | <code>g[</code> |
-| **Right hand side** | |
-
-| **Description** | Align with preview |
-| :---- | :---- |
-| **Left hand side** | <code>gA</code> |
-| **Right hand side** | |
-
-| **Description** | Align |
-| :---- | :---- |
-| **Left hand side** | <code>ga</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Split/Join |
-| :---- | :---- |
-| **Left hand side** | <code>gJ</code> |
-| **Right hand side** | |
-
 | **Description** | LSP Implementations |
 | :---- | :---- |
 | **Left hand side** | <code>gm</code> |
-| **Right hand side** | |
-
-| **Description** | LSP References |
-| :---- | :---- |
-| **Left hand side** | <code>gr</code> |
 | **Right hand side** | |
 
 | **Description** | LSP Type Definitions |
@@ -757,6 +747,16 @@ Eye Candy frontend development with React and Vue.js
 | **Description** | LSP Definition |
 | :---- | :---- |
 | **Left hand side** | <code>gd</code> |
+| **Right hand side** | |
+
+| **Description** | LSP References |
+| :---- | :---- |
+| **Left hand side** | <code>gr</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Split/Join |
+| :---- | :---- |
+| **Left hand side** | <code>gJ</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -914,71 +914,6 @@ Eye Candy frontend development with React and Vue.js
 | **Left hand side** | <code>&lt;Plug&gt;SpeedDatingUp</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call speeddating#increment(v:count1)&lt;CR&gt;</code> |
 
-| **Description** | Change a surrounding pair, putting replacements on new lines |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |
-| **Right hand side** | |
-
-| **Description** | Change a surrounding pair |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-change)</code> |
-| **Right hand side** | |
-
-| **Description** | Delete a surrounding pair |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-delete)</code> |
-| **Right hand side** | |
-
-| **Description** | Add a surrounding pair around the current line, on new lines (normal mode) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal-cur-line)</code> |
-| **Right hand side** | |
-
-| **Description** | Add a surrounding pair around a motion, on new lines (normal mode) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal-line)</code> |
-| **Right hand side** | |
-
-| **Description** | Add a surrounding pair around the current line (normal mode) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal-cur)</code> |
-| **Right hand side** | |
-
-| **Description** | Add a surrounding pair around a motion (normal mode) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle blockwise with count |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle linewise with count |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle current block |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle current line |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle blockwise |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle linewise |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
-| **Right hand side** | |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(SwitchReverse)</code> |
@@ -1028,6 +963,71 @@ Eye Candy frontend development with React and Vue.js
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
 | **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle blockwise with count |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise with count |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current block |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current line |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
+| **Right hand side** | |
+
+| **Description** | Change a surrounding pair, putting replacements on new lines |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |
+| **Right hand side** | |
+
+| **Description** | Change a surrounding pair |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-change)</code> |
+| **Right hand side** | |
+
+| **Description** | Delete a surrounding pair |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-delete)</code> |
+| **Right hand side** | |
+
+| **Description** | Add a surrounding pair around the current line, on new lines (normal mode) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal-cur-line)</code> |
+| **Right hand side** | |
+
+| **Description** | Add a surrounding pair around a motion, on new lines (normal mode) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal-line)</code> |
+| **Right hand side** | |
+
+| **Description** | Add a surrounding pair around the current line (normal mode) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal-cur)</code> |
+| **Right hand side** | |
+
+| **Description** | Add a surrounding pair around a motion (normal mode) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal)</code> |
+| **Right hand side** | |
 
 | **Description** | multicursor down |
 | :---- | :---- |
@@ -1090,7 +1090,7 @@ Eye Candy frontend development with React and Vue.js
 | **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -1232,6 +1232,11 @@ Eye Candy frontend development with React and Vue.js
 | **Left hand side** | <code>g[</code> |
 | **Right hand side** | |
 
+| **Description** | Add a surrounding pair around a visual selection, on new lines |
+| :---- | :---- |
+| **Left hand side** | <code>gS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
+
 | **Description** | Align with preview |
 | :---- | :---- |
 | **Left hand side** | <code>gA</code> |
@@ -1241,11 +1246,6 @@ Eye Candy frontend development with React and Vue.js
 | :---- | :---- |
 | **Left hand side** | <code>ga</code> |
 | **Right hand side** | |
-
-| **Description** | Add a surrounding pair around a visual selection, on new lines |
-| :---- | :---- |
-| **Left hand side** | <code>gS</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
 
 | **Description** | Inside last textobject |
 | :---- | :---- |
@@ -1343,7 +1343,7 @@ Eye Candy frontend development with React and Vue.js
 | **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = false })&lt;CR&gt;</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

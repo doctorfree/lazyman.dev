@@ -5,26 +5,26 @@ toc: true
 post_style: page
 ---
 
-## LvimAdib Neovim Configuration Information
+# LvimAdib Neovim Configuration Information
 
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     [LunarVim](https://www.lunarvim.org)
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-LvimAdib`**
 
-### Git repository
+## Git repository
 
 [https://github.com/adibhanna/lvim-config](https://github.com/adibhanna/lvim-config)
 
-### Website
+## Website
 
 [https://www.lunarvim.org](https://www.lunarvim.org)
 
-### YouTube channel
+## YouTube channel
 
 [https://www.youtube.com/@adibhanna](https://www.youtube.com/@adibhanna)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -86,9 +86,9 @@ post_style: page
 - [fatih/vim-go](https://github.com/fatih/vim-go)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### LvimAdib Keymaps
+## LvimAdib Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -242,6 +242,11 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;C-D&gt;</code> |
+| **Right hand side** | <code>&lt;C-D&gt;zz</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;C-U&gt;</code> |
 | **Right hand side** | <code>&lt;C-U&gt;zz</code> |
 
@@ -249,11 +254,6 @@ post_style: page
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-S&gt;</code> |
 | **Right hand side** | <code>:w&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-D&gt;</code> |
-| **Right hand side** | <code>&lt;C-D&gt;zz</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -287,12 +287,27 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-J&gt;</code> |
-| **Right hand side** | <code>&lt;C-W&gt;j</code> |
+| **Left hand side** | <code>&lt;C-Down&gt;</code> |
+| **Right hand side** | <code>:resize +2&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;M-j&gt;</code> |
+| **Left hand side** | <code>&lt;C-Up&gt;</code> |
+| **Right hand side** | <code>:resize -2&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Right hand side** | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;k</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
 | **Right hand side** | <code>&lt;C-W&gt;j</code> |
 
 | **Description** | |
@@ -302,13 +317,13 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;M-k&gt;</code> |
-| **Right hand side** | <code>&lt;C-W&gt;k</code> |
+| **Left hand side** | <code>&lt;C-Right&gt;</code> |
+| **Right hand side** | <code>:vertical resize +2&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-Right&gt;</code> |
-| **Right hand side** | <code>:vertical resize +2&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;M-k&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;k</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -317,23 +332,8 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-Down&gt;</code> |
-| **Right hand side** | <code>:resize +2&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Q&gt;</code> |
-| **Right hand side** | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Up&gt;</code> |
-| **Right hand side** | <code>:resize -2&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-K&gt;</code> |
-| **Right hand side** | <code>&lt;C-W&gt;k</code> |
+| **Left hand side** | <code>&lt;M-j&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;j</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -341,7 +341,7 @@ post_style: page
 | **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -484,7 +484,7 @@ post_style: page
 | **Right hand side** | <code>:m '&gt;+1&lt;CR&gt;gv-gv</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## ONNO Neovim Configuration Information
+# ONNO Neovim Configuration Information
 
 One of the primary inspirations for Lazyman
 
@@ -15,15 +15,15 @@ One of the primary inspirations for Lazyman
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-ONNO`**
 
-### Git repository
+## Git repository
 
 [https://github.com/loctvl842/nvim](https://github.com/loctvl842/nvim)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/loctvl842/nvim](https://dotfyle.com/loctvl842/nvim)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [anuvyklack/animation.nvim](https://github.com/anuvyklack/animation.nvim.git)
@@ -90,38 +90,58 @@ One of the primary inspirations for Lazyman
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 - [anuvyklack/windows.nvim](https://github.com/anuvyklack/windows.nvim.git)
 
-### ONNO Keymaps
+## ONNO Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | Select Moonokai pro filter |
 | :---- | :---- |
 | **Left hand side** | <code> c</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;MonokaiProSelect&lt;CR&gt;</code> |
 
-| **Description** | Explorer Float (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> E</code> |
-| **Right hand side** | |
-
 | **Description** | Explorer (root dir) |
 | :---- | :---- |
 | **Left hand side** | <code> e</code> |
 | **Right hand side** | |
 
-| **Description** | Diff |
+| **Description** | Explorer Float (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code> gd</code> |
+| **Left hand side** | <code> E</code> |
 | **Right hand side** | |
 
-| **Description** | Undo Stage Hunk |
+| **Description** | Close Buffer |
 | :---- | :---- |
-| **Left hand side** | <code> gu</code> |
+| **Left hand side** | <code> d</code> |
 | **Right hand side** | |
 
-| **Description** | Stage Hunk |
+| **Description** | Open file manager |
 | :---- | :---- |
-| **Left hand side** | <code> gs</code> |
+| **Left hand side** | <code> r</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Session |
+| :---- | :---- |
+| **Left hand side** | <code> ss</code> |
+| **Right hand side** | |
+
+| **Description** | Don't Save Current Session |
+| :---- | :---- |
+| **Left hand side** | <code> sd</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Last Session |
+| :---- | :---- |
+| **Left hand side** | <code> sl</code> |
+| **Right hand side** | |
+
+| **Description** | Dashboard |
+| :---- | :---- |
+| **Left hand side** | <code> 0</code> |
+| **Right hand side** | |
+
+| **Description** | Peek (Markdown Preview) |
+| :---- | :---- |
+| **Left hand side** | <code> p</code> |
 | **Right hand side** | |
 
 | **Description** | Reset Buffer |
@@ -159,39 +179,39 @@ One of the primary inspirations for Lazyman
 | **Left hand side** | <code> gg</code> |
 | **Right hand side** | |
 
-| **Description** | Zoom window |
+| **Description** | Diff |
 | :---- | :---- |
-| **Left hand side** | <code> m</code> |
+| **Left hand side** | <code> gd</code> |
 | **Right hand side** | |
 
-| **Description** | Peek (Markdown Preview) |
+| **Description** | Undo Stage Hunk |
 | :---- | :---- |
-| **Left hand side** | <code> p</code> |
+| **Left hand side** | <code> gu</code> |
 | **Right hand side** | |
 
-| **Description** | Don't Save Current Session |
+| **Description** | Stage Hunk |
 | :---- | :---- |
-| **Left hand side** | <code> sd</code> |
-| **Right hand side** | |
-
-| **Description** | Restore Last Session |
-| :---- | :---- |
-| **Left hand side** | <code> sl</code> |
-| **Right hand side** | |
-
-| **Description** | Restore Session |
-| :---- | :---- |
-| **Left hand side** | <code> ss</code> |
-| **Right hand side** | |
-
-| **Description** | Dashboard |
-| :---- | :---- |
-| **Left hand side** | <code> 0</code> |
+| **Left hand side** | <code> gs</code> |
 | **Right hand side** | |
 
 | **Description** | Delete all Notifications |
 | :---- | :---- |
 | **Left hand side** | <code> n</code> |
+| **Right hand side** | |
+
+| **Description** | Zoom window |
+| :---- | :---- |
+| **Left hand side** | <code> m</code> |
+| **Right hand side** | |
+
+| **Description** | Open changed file |
+| :---- | :---- |
+| **Left hand side** | <code> go</code> |
+| **Right hand side** | |
+
+| **Description** | Find Text |
+| :---- | :---- |
+| **Left hand side** | <code> F</code> |
 | **Right hand side** | |
 
 | **Description** | Find buffer |
@@ -212,26 +232,6 @@ One of the primary inspirations for Lazyman
 | **Description** | Checkout branch |
 | :---- | :---- |
 | **Left hand side** | <code> gb</code> |
-| **Right hand side** | |
-
-| **Description** | Open changed file |
-| :---- | :---- |
-| **Left hand side** | <code> go</code> |
-| **Right hand side** | |
-
-| **Description** | Find Text |
-| :---- | :---- |
-| **Left hand side** | <code> F</code> |
-| **Right hand side** | |
-
-| **Description** | Open file manager |
-| :---- | :---- |
-| **Left hand side** | <code> r</code> |
-| **Right hand side** | |
-
-| **Description** | Close Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> d</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -269,69 +269,9 @@ One of the primary inspirations for Lazyman
 | **Left hand side** | <code>]]</code> |
 | **Right hand side** | |
 
-| **Description** | Close all folds under cursor |
-| :---- | :---- |
-| **Left hand side** | <code>fc</code> |
-| **Right hand side** | |
-
-| **Description** | Mark word as bad/misspelling |
-| :---- | :---- |
-| **Left hand side** | <code>fw</code> |
-| **Right hand side** | |
-
 | **Description** | Top this line |
 | :---- | :---- |
 | **Left hand side** | <code>ft</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle fold under cursor |
-| :---- | :---- |
-| **Left hand side** | <code>fa</code> |
-| **Right hand side** | |
-
-| **Description** | Center this line |
-| :---- | :---- |
-| **Left hand side** | <code>fz</code> |
-| **Right hand side** | |
-
-| **Description** | Left this line |
-| :---- | :---- |
-| **Left hand side** | <code>fs</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle all folds under cursor |
-| :---- | :---- |
-| **Left hand side** | <code>fA</code> |
-| **Right hand side** | |
-
-| **Description** | Right this line |
-| :---- | :---- |
-| **Left hand side** | <code>fe</code> |
-| **Right hand side** | |
-
-| **Description** | Half screen to the left |
-| :---- | :---- |
-| **Left hand side** | <code>fH</code> |
-| **Right hand side** | |
-
-| **Description** | Show cursor line |
-| :---- | :---- |
-| **Left hand side** | <code>fv</code> |
-| **Right hand side** | |
-
-| **Description** | Delete all folds in current buffer |
-| :---- | :---- |
-| **Left hand side** | <code>fE</code> |
-| **Right hand side** | |
-
-| **Description** | Close all folds |
-| :---- | :---- |
-| **Left hand side** | <code>fM</code> |
-| **Right hand side** | |
-
-| **Description** | Open all folds |
-| :---- | :---- |
-| **Left hand side** | <code>fR</code> |
 | **Right hand side** | |
 
 | **Description** | Fold more |
@@ -339,14 +279,24 @@ One of the primary inspirations for Lazyman
 | **Left hand side** | <code>fm</code> |
 | **Right hand side** | |
 
+| **Description** | Center this line |
+| :---- | :---- |
+| **Left hand side** | <code>fz</code> |
+| **Right hand side** | |
+
 | **Description** | Fold less |
 | :---- | :---- |
 | **Left hand side** | <code>fr</code> |
 | **Right hand side** | |
 
-| **Description** | Half screen to the right |
+| **Description** | Left this line |
 | :---- | :---- |
-| **Left hand side** | <code>fL</code> |
+| **Left hand side** | <code>fs</code> |
+| **Right hand side** | |
+
+| **Description** | Add word to spell list |
+| :---- | :---- |
+| **Left hand side** | <code>fg</code> |
 | **Right hand side** | |
 
 | **Description** | Update folds |
@@ -354,14 +304,14 @@ One of the primary inspirations for Lazyman
 | **Left hand side** | <code>fx</code> |
 | **Right hand side** | |
 
+| **Description** | Half screen to the right |
+| :---- | :---- |
+| **Left hand side** | <code>fL</code> |
+| **Right hand side** | |
+
 | **Description** | Delete fold under cursor |
 | :---- | :---- |
 | **Left hand side** | <code>fd</code> |
-| **Right hand side** | |
-
-| **Description** | Add word to spell list |
-| :---- | :---- |
-| **Left hand side** | <code>fg</code> |
 | **Right hand side** | |
 
 | **Description** | Open fold under cursor |
@@ -379,15 +329,60 @@ One of the primary inspirations for Lazyman
 | **Left hand side** | <code>fO</code> |
 | **Right hand side** | |
 
+| **Description** | Close all folds under cursor |
+| :---- | :---- |
+| **Left hand side** | <code>fc</code> |
+| **Right hand side** | |
+
+| **Description** | Mark word as bad/misspelling |
+| :---- | :---- |
+| **Left hand side** | <code>fw</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle fold under cursor |
+| :---- | :---- |
+| **Left hand side** | <code>fa</code> |
+| **Right hand side** | |
+
+| **Description** | Right this line |
+| :---- | :---- |
+| **Left hand side** | <code>fe</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle all folds under cursor |
+| :---- | :---- |
+| **Left hand side** | <code>fA</code> |
+| **Right hand side** | |
+
+| **Description** | Delete all folds in current buffer |
+| :---- | :---- |
+| **Left hand side** | <code>fE</code> |
+| **Right hand side** | |
+
+| **Description** | Show cursor line |
+| :---- | :---- |
+| **Left hand side** | <code>fv</code> |
+| **Right hand side** | |
+
+| **Description** | Close all folds |
+| :---- | :---- |
+| **Left hand side** | <code>fM</code> |
+| **Right hand side** | |
+
+| **Description** | Half screen to the left |
+| :---- | :---- |
+| **Left hand side** | <code>fH</code> |
+| **Right hand side** | |
+
+| **Description** | Open all folds |
+| :---- | :---- |
+| **Left hand side** | <code>fR</code> |
+| **Right hand side** | |
+
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>g%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
-
-| **Description** | Go to references |
-| :---- | :---- |
-| **Left hand side** | <code>gr</code> |
-| **Right hand side** | |
 
 | **Description** | Go to implementations |
 | :---- | :---- |
@@ -399,9 +394,9 @@ One of the primary inspirations for Lazyman
 | **Left hand side** | <code>gd</code> |
 | **Right hand side** | |
 
-| **Description** | Checkout branch |
+| **Description** | Go to references |
 | :---- | :---- |
-| **Left hand side** | <code>sb</code> |
+| **Left hand side** | <code>gr</code> |
 | **Right hand side** | |
 
 | **Description** | Colorscheme |
@@ -444,6 +439,11 @@ One of the primary inspirations for Lazyman
 | **Left hand side** | <code>sH</code> |
 | **Right hand side** | |
 
+| **Description** | Checkout branch |
+| :---- | :---- |
+| **Left hand side** | <code>sb</code> |
+| **Right hand side** | |
+
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
@@ -466,11 +466,6 @@ One of the primary inspirations for Lazyman
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
 | **Right hand side** | |
 
@@ -479,13 +474,18 @@ One of the primary inspirations for Lazyman
 | **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
 | **Right hand side** | |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
 | **Description** | Nvim builtin |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -553,7 +553,7 @@ One of the primary inspirations for Lazyman
 | **Right hand side** | |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

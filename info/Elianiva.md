@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Elianiva Neovim Configuration Information
+# Elianiva Neovim Configuration Information
 
 Personal Neovim configuration of Dicha Zelianivan Arkana
 
@@ -15,11 +15,11 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Elianiva`**
 
-### Git repository
+## Git repository
 
 [https://github.com/elianiva/dotfiles](https://github.com/elianiva/dotfiles)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
@@ -58,9 +58,9 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 - [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip)
 - [Mofiqul/vscode.nvim](https://github.com/Mofiqul/vscode.nvim.git)
 
-### Elianiva Keymaps
+## Elianiva Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -155,12 +155,12 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>gS</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;9_Mapping(g:splitjoin_split_mapping, "sj#Split")&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_Mapping(g:splitjoin_split_mapping, "sj#Split")&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>gJ</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;9_Mapping(g:splitjoin_join_mapping, "sj#Join")&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;12_Mapping(g:splitjoin_join_mapping, "sj#Join")&lt;CR&gt;</code> |
 
 | **Description** | Move down by visual line on wrapped lines |
 | :---- | :---- |
@@ -221,6 +221,81 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 | :---- | :---- |
 | **Left hand side** | <code>&lt;M-j&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;Sayonara!&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;2-LeftMouse&gt;</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-double-click)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-reload)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;MatchupReload&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-double-click)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#double_click()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;27_(wise)</code> |
+| **Right hand side** | <code>empty(g:v_motion_force) ? 'v' : g:v_motion_force</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-hi-surround)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#matchparen#highlight_surrounding()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(EasyAlignOperator)</code> |
+| **Right hand side** | <code>:set opfunc=&lt;SNR&gt;21_easy_align_op&lt;CR&gt;g@</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(EasyAlignRepeat)</code> |
+| **Right hand side** | <code>:call &lt;SNR&gt;21_easy_align_repeat()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(LiveEasyAlign)</code> |
+| **Right hand side** | <code>:set opfunc=&lt;SNR&gt;21_live_easy_align_op&lt;CR&gt;g@</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(EasyAlign)</code> |
+| **Right hand side** | <code>:set opfunc=&lt;SNR&gt;21_easy_align_op&lt;CR&gt;g@</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -354,81 +429,6 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(EasyAlignOperator)</code> |
-| **Right hand side** | <code>:set opfunc=&lt;SNR&gt;24_easy_align_op&lt;CR&gt;g@</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(EasyAlignRepeat)</code> |
-| **Right hand side** | <code>:call &lt;SNR&gt;24_easy_align_repeat()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(LiveEasyAlign)</code> |
-| **Right hand side** | <code>:set opfunc=&lt;SNR&gt;24_live_easy_align_op&lt;CR&gt;g@</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(EasyAlign)</code> |
-| **Right hand side** | <code>:set opfunc=&lt;SNR&gt;24_easy_align_op&lt;CR&gt;g@</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;2-LeftMouse&gt;</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-double-click)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-reload)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;MatchupReload&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-double-click)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#double_click()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;16_(wise)</code> |
-| **Right hand side** | <code>empty(g:v_motion_force) ? 'v' : g:v_motion_force</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-hi-surround)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#matchparen#highlight_surrounding()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
 | **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
@@ -503,7 +503,7 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 | **Right hand side** | <code>&lt;C-W&gt;&lt;C-L&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -547,11 +547,6 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>a%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>as</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(textobj-sandwich-query-a)</code> |
 
@@ -559,6 +554,11 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 | :---- | :---- |
 | **Left hand side** | <code>ab</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(textobj-sandwich-auto-a)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>a%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -572,11 +572,6 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>i%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-i%)</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>is</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(textobj-sandwich-query-i)</code> |
 
@@ -584,6 +579,11 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 | :---- | :---- |
 | **Left hand side** | <code>ib</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(textobj-sandwich-auto-i)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>i%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-i%)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -608,87 +608,17 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(EasyAlignRepeat)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;27_repeat_in_visual()&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_repeat_in_visual()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(LiveEasyAlign)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;27_live_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_live_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(EasyAlign)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;27_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(0, 1, 'delim_all')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-i%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(1, 1, 'delim_all')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;21_(matchup-Z%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;21_(matchup-Z%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;21_(matchup-z%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;21_(matchup-z%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;21_(matchup-[%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;21_(matchup-]%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;21_(matchup-[%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;21_(matchup-]%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;21_(matchup-g%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;21_(matchup-g%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;21_(matchup-%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;21_(matchup-%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;25_easy_align_op(visualmode(), 1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -835,13 +765,83 @@ Personal Neovim configuration of Dicha Zelianivan Arkana
 | **Left hand side** | <code>&lt;Plug&gt;(operator-sandwich-add)</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(operator-sandwich-add-pre)&lt;Plug&gt;(operator-sandwich-gv)&lt;Plug&gt;(operator-sandwich-g@)</code> |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(0, 1, 'delim_all')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-i%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(1, 1, 'delim_all')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;15_(matchup-Z%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;15_(matchup-Z%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;15_(matchup-z%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;15_(matchup-z%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;15_(matchup-[%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;15_(matchup-]%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;15_(matchup-[%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;15_(matchup-]%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;15_(matchup-g%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;15_(matchup-g%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;15_(matchup-%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;15_(matchup-%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 1)&lt;CR&gt;</code> |
+
 | **Description** | Yank selection to clipboard |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;M-y&gt;</code> |
 | **Right hand side** | <code>"+y</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

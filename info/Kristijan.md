@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Kristijan Neovim Configuration Information
+# Kristijan Neovim Configuration Information
 
 Personal Neovim configuration of Kristijan Husak, author of several Neovim plugins including `orgmode` and `vim-dadbod-ui`
 
@@ -15,15 +15,15 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Kristijan`**
 
-### Git repository
+## Git repository
 
 [https://github.com/kristijanhusak/neovim-config](https://github.com/kristijanhusak/neovim-config)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/kristijanhusak/neovim-config-nvim](https://dotfyle.com/kristijanhusak/neovim-config-nvim)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [LunarVim/bigfile.nvim](https://github.com/LunarVim/bigfile.nvim.git)
 - [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer.git)
@@ -81,9 +81,9 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 - [yioneko/vim-tmindent](https://github.com/yioneko/vim-tmindent.git)
 - [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip.git)
 
-### Kristijan Keymaps
+## Kristijan Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -172,6 +172,16 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>,hf</code> |
+| **Right hand side** | <code>:NvimTreeToggle&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,n</code> |
+| **Right hand side** | <code>:NvimTreeToggle&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>,yg</code> |
 | **Right hand side** | |
 
@@ -207,21 +217,6 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,hf</code> |
-| **Right hand side** | <code>:NvimTreeToggle&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,n</code> |
-| **Right hand side** | <code>:NvimTreeToggle&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,G</code> |
-| **Right hand side** | <code>:vert G&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>,df</code> |
 | **Right hand side** | <code>:Git push --force-with-lease&lt;CR&gt;</code> |
 
@@ -252,8 +247,8 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,c</code> |
-| **Right hand side** | |
+| **Left hand side** | <code>,G</code> |
+| **Right hand side** | <code>:vert G&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -263,6 +258,11 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>,oc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,c</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -501,7 +501,7 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 | **Right hand side** | <code>&lt;C-\&gt;&lt;C-N&gt;&lt;C-W&gt;l</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -734,7 +734,7 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 | **Right hand side** | <code>:w&lt;CR&gt;</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

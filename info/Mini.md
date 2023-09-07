@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Mini Neovim Configuration Information
+# Mini Neovim Configuration Information
 
 Uses the [mini.nvim](https://github.com/echasnovski/mini.nvim) library. Personal configuration of the 'mini.nvim' author
 
@@ -15,20 +15,20 @@ Uses the [mini.nvim](https://github.com/echasnovski/mini.nvim) library. Personal
 - Plugin manager:         [Mini](https://github.com/echasnovski/mini.nvim)
 - Installation location:  **`~/.config/nvim-Mini`**
 
-### Git repository
+## Git repository
 
 [https://github.com/echasnovski/nvim](https://github.com/echasnovski/nvim)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [http://neovimcraft.com/plugin/echasnovski/nvim](http://neovimcraft.com/plugin/echasnovski/nvim)
 
-### Mini.nvim managed plugins
+## Mini.nvim managed plugins
 
 
-### Mini Keymaps
+## Mini Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | Suite |
 | :---- | :---- |
@@ -571,7 +571,7 @@ Uses the [mini.nvim](https://github.com/echasnovski/mini.nvim) library. Personal
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Send to terminal |
 | :---- | :---- |
@@ -674,7 +674,7 @@ Uses the [mini.nvim](https://github.com/echasnovski/mini.nvim) library. Personal
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

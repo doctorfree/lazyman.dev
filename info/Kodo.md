@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Kodo Neovim Configuration Information
+# Kodo Neovim Configuration Information
 
 Personal Neovim configuration of chadcat, a high school student with no life. Kodo is a Neovim configuration that looks good and is fast (startuptime < 0.035s).
 
@@ -15,15 +15,15 @@ Personal Neovim configuration of chadcat, a high school student with no life. Ko
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Kodo`**
 
-### Git repository
+## Git repository
 
 [https://github.com/chadcat7/kodo](https://github.com/chadcat7/kodo)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/chadcat7/kodo](https://dotfyle.com/chadcat7/kodo)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim)
@@ -61,9 +61,9 @@ Personal Neovim configuration of chadcat, a high school student with no life. Ko
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 - [elkowar/yuck.vim](https://github.com/elkowar/yuck.vim.git)
 
-### Kodo Keymaps
+## Kodo Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -196,7 +196,7 @@ Personal Neovim configuration of chadcat, a high school student with no life. Ko
 | **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -269,7 +269,7 @@ Personal Neovim configuration of chadcat, a high school student with no life. Ko
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

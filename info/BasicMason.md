@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## BasicMason Neovim Configuration Information
+# BasicMason Neovim Configuration Information
 
 Minimal setup with 'mason.nvim'
 
@@ -15,11 +15,11 @@ Minimal setup with 'mason.nvim'
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-BasicMason`**
 
-### Git repository
+## Git repository
 
 [https://github.com/VonHeikemen/nvim-starter/tree/xx-mason](https://github.com/VonHeikemen/nvim-starter/tree/xx-mason)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
@@ -29,9 +29,9 @@ Minimal setup with 'mason.nvim'
 - [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
-### BasicMason Keymaps
+## BasicMason Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -109,7 +109,7 @@ Minimal setup with 'mason.nvim'
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -187,7 +187,7 @@ Minimal setup with 'mason.nvim'
 | **Right hand side** | |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

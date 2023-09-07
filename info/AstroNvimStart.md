@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## AstroNvimStart Neovim Configuration Information
+# AstroNvimStart Neovim Configuration Information
 
 Default AstroNvim example configuration
 
@@ -15,15 +15,15 @@ Default AstroNvim example configuration
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-AstroNvimStart`**
 
-### Git repository
+## Git repository
 
 [https://github.com/doctorfree/AstroNvimStart](https://github.com/doctorfree/AstroNvimStart)
 
-### Website
+## Website
 
 [https://astronvim.com](https://astronvim.com)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [stevearc/aerial.nvim](https://github.com/stevearc/aerial.nvim.git)
 - [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim.git)
@@ -79,43 +79,48 @@ Default AstroNvim example configuration
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim.git)
 - [s1n7ax/nvim-window-picker](https://github.com/s1n7ax/nvim-window-picker.git)
 
-### AstroNvimStart Keymaps
+## AstroNvimStart Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
+
+| **Description** | Toggle tabline |
+| :---- | :---- |
+| **Left hand side** | <code> ut</code> |
+| **Right hand side** | |
+
+| **Description** | Mason Update |
+| :---- | :---- |
+| **Left hand side** | <code> pM</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;MasonUpdateAll&lt;CR&gt;</code> |
+
+| **Description** | Evaluate Input |
+| :---- | :---- |
+| **Left hand side** | <code> dE</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle REPL |
+| :---- | :---- |
+| **Left hand side** | <code> dR</code> |
+| **Right hand side** | |
+
+| **Description** | Find words in all files |
+| :---- | :---- |
+| **Left hand side** | <code> fW</code> |
+| **Right hand side** | |
+
+| **Description** | Clear Breakpoints |
+| :---- | :---- |
+| **Left hand side** | <code> dB</code> |
+| **Right hand side** | |
 
 | **Description** | Close all buffers to the left |
 | :---- | :---- |
 | **Left hand side** | <code> bl</code> |
 | **Right hand side** | |
 
-| **Description** | Change indent setting |
+| **Description** | Start/Continue (F5) |
 | :---- | :---- |
-| **Left hand side** | <code> ui</code> |
-| **Right hand side** | |
-
-| **Description** | View Git blame |
-| :---- | :---- |
-| **Left hand side** | <code> gl</code> |
-| **Right hand side** | |
-
-| **Description** | ToggleTerm python |
-| :---- | :---- |
-| **Left hand side** | <code> tp</code> |
-| **Right hand side** | |
-
-| **Description** | View full Git blame |
-| :---- | :---- |
-| **Left hand side** | <code> gL</code> |
-| **Right hand side** | |
-
-| **Description** | Preview Git hunk |
-| :---- | :---- |
-| **Left hand side** | <code> gp</code> |
-| **Right hand side** | |
-
-| **Description** | Reset Git hunk |
-| :---- | :---- |
-| **Left hand side** | <code> gh</code> |
+| **Left hand side** | <code> dc</code> |
 | **Right hand side** | |
 
 | **Description** | Save |
@@ -123,24 +128,29 @@ Default AstroNvim example configuration
 | **Left hand side** | <code> w</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;w&lt;CR&gt;</code> |
 
-| **Description** | Reset Git buffer |
+| **Description** | Conditional Breakpoint (S-F9) |
 | :---- | :---- |
-| **Left hand side** | <code> gr</code> |
+| **Left hand side** | <code> dC</code> |
 | **Right hand side** | |
 
-| **Description** | Stage Git hunk |
+| **Description** | By relative path |
 | :---- | :---- |
-| **Left hand side** | <code> gs</code> |
+| **Left hand side** | <code> bsr</code> |
 | **Right hand side** | |
 
-| **Description** | Stage Git buffer |
+| **Description** | Step Into (F11) |
 | :---- | :---- |
-| **Left hand side** | <code> gS</code> |
+| **Left hand side** | <code> di</code> |
 | **Right hand side** | |
 
-| **Description** | Unstage Git hunk |
+| **Description** | Toggle CodeLens |
 | :---- | :---- |
-| **Left hand side** | <code> gu</code> |
+| **Left hand side** | <code> uL</code> |
+| **Right hand side** | |
+
+| **Description** | Step Over (F10) |
+| :---- | :---- |
+| **Left hand side** | <code> do</code> |
 | **Right hand side** | |
 
 | **Description** | New File |
@@ -148,109 +158,24 @@ Default AstroNvim example configuration
 | **Left hand side** | <code> n</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;enew&lt;CR&gt;</code> |
 
-| **Description** | View Git diff |
+| **Description** | Step Out (S-F11) |
 | :---- | :---- |
-| **Left hand side** | <code> gd</code> |
+| **Left hand side** | <code> dO</code> |
 | **Right hand side** | |
 
-| **Description** | Mason Installer |
+| **Description** | Close Session |
 | :---- | :---- |
-| **Left hand side** | <code> pm</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
-
-| **Description** | Toggle Explorer |
-| :---- | :---- |
-| **Left hand side** | <code> e</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;Neotree toggle&lt;CR&gt;</code> |
-
-| **Description** | Mason Update |
-| :---- | :---- |
-| **Left hand side** | <code> pM</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;MasonUpdateAll&lt;CR&gt;</code> |
-
-| **Description** | Toggle Explorer Focus |
-| :---- | :---- |
-| **Left hand side** | <code> o</code> |
+| **Left hand side** | <code> dq</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle color highlight |
+| **Description** | Toggle Debugger UI |
 | :---- | :---- |
-| **Left hand side** | <code> uC</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;ColorizerToggle&lt;CR&gt;</code> |
-
-| **Description** | Load last session |
-| :---- | :---- |
-| **Left hand side** | <code> Sl</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! load_last_session&lt;CR&gt;</code> |
-
-| **Description** | Save this session |
-| :---- | :---- |
-| **Left hand side** | <code> Ss</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! save_current_session&lt;CR&gt;</code> |
-
-| **Description** | Delete session |
-| :---- | :---- |
-| **Left hand side** | <code> Sd</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! delete_session&lt;CR&gt;</code> |
-
-| **Description** | Load current directory session |
-| :---- | :---- |
-| **Left hand side** | <code> S.</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! load_current_dir_session&lt;CR&gt;</code> |
-
-| **Description** | ToggleTerm gdu |
-| :---- | :---- |
-| **Left hand side** | <code> tu</code> |
+| **Left hand side** | <code> du</code> |
 | **Right hand side** | |
 
-| **Description** | Search sessions |
+| **Description** | Terminate Session (S-F5) |
 | :---- | :---- |
-| **Left hand side** | <code> Sf</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! load_session&lt;CR&gt;</code> |
-
-| **Description** | Toggle URL highlight |
-| :---- | :---- |
-| **Left hand side** | <code> uu</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle spellcheck |
-| :---- | :---- |
-| **Left hand side** | <code> us</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle signcolumn |
-| :---- | :---- |
-| **Left hand side** | <code> ug</code> |
-| **Right hand side** | |
-
-| **Description** | Git commits (current file) |
-| :---- | :---- |
-| **Left hand side** | <code> gC</code> |
-| **Right hand side** | |
-
-| **Description** | Git status |
-| :---- | :---- |
-| **Left hand side** | <code> gt</code> |
-| **Right hand side** | |
-
-| **Description** | Plugins Install |
-| :---- | :---- |
-| **Left hand side** | <code> pi</code> |
-| **Right hand side** | |
-
-| **Description** | Pick to close |
-| :---- | :---- |
-| **Left hand side** | <code> bD</code> |
-| **Right hand side** | |
-
-| **Description** | New tab |
-| :---- | :---- |
-| **Left hand side** | <code> bn</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;tabnew&lt;CR&gt;</code> |
-
-| **Description** | Symbols outline |
-| :---- | :---- |
-| **Left hand side** | <code> lS</code> |
+| **Left hand side** | <code> dQ</code> |
 | **Right hand side** | |
 
 | **Description** | Git branches |
@@ -258,19 +183,44 @@ Default AstroNvim example configuration
 | **Left hand side** | <code> gb</code> |
 | **Right hand side** | |
 
+| **Description** | Pause (F6) |
+| :---- | :---- |
+| **Left hand side** | <code> dp</code> |
+| **Right hand side** | |
+
 | **Description** | Git commits (repository) |
 | :---- | :---- |
 | **Left hand side** | <code> gc</code> |
 | **Right hand side** | |
 
-| **Description** | Resume previous search |
+| **Description** | Restart (C-F5) |
 | :---- | :---- |
-| **Left hand side** | <code> f&lt;CR&gt;</code> |
+| **Left hand side** | <code> dr</code> |
+| **Right hand side** | |
+
+| **Description** | Git commits (current file) |
+| :---- | :---- |
+| **Left hand side** | <code> gC</code> |
+| **Right hand side** | |
+
+| **Description** | Run To Cursor |
+| :---- | :---- |
+| **Left hand side** | <code> ds</code> |
+| **Right hand side** | |
+
+| **Description** | Plugins Install |
+| :---- | :---- |
+| **Left hand side** | <code> pi</code> |
 | **Right hand side** | |
 
 | **Description** | Find marks |
 | :---- | :---- |
 | **Left hand side** | <code> f'</code> |
+| **Right hand side** | |
+
+| **Description** | Plugins Status |
+| :---- | :---- |
+| **Left hand side** | <code> ps</code> |
 | **Right hand side** | |
 
 | **Description** | Find words in current buffer |
@@ -283,239 +233,14 @@ Default AstroNvim example configuration
 | **Left hand side** | <code> fa</code> |
 | **Right hand side** | |
 
-| **Description** | Find buffers |
-| :---- | :---- |
-| **Left hand side** | <code> fb</code> |
-| **Right hand side** | |
-
-| **Description** | Find word under cursor |
-| :---- | :---- |
-| **Left hand side** | <code> fc</code> |
-| **Right hand side** | |
-
-| **Description** | Find commands |
-| :---- | :---- |
-| **Left hand side** | <code> fC</code> |
-| **Right hand side** | |
-
-| **Description** | Find files |
-| :---- | :---- |
-| **Left hand side** | <code> ff</code> |
-| **Right hand side** | |
-
-| **Description** | Find all files |
-| :---- | :---- |
-| **Left hand side** | <code> fF</code> |
-| **Right hand side** | |
-
-| **Description** | Find help |
-| :---- | :---- |
-| **Left hand side** | <code> fh</code> |
-| **Right hand side** | |
-
-| **Description** | Find keymaps |
-| :---- | :---- |
-| **Left hand side** | <code> fk</code> |
-| **Right hand side** | |
-
-| **Description** | Find man |
-| :---- | :---- |
-| **Left hand side** | <code> fm</code> |
-| **Right hand side** | |
-
-| **Description** | Find notifications |
-| :---- | :---- |
-| **Left hand side** | <code> fn</code> |
-| **Right hand side** | |
-
-| **Description** | Find history |
-| :---- | :---- |
-| **Left hand side** | <code> fo</code> |
-| **Right hand side** | |
-
-| **Description** | Find registers |
-| :---- | :---- |
-| **Left hand side** | <code> fr</code> |
-| **Right hand side** | |
-
-| **Description** | Find themes |
-| :---- | :---- |
-| **Left hand side** | <code> ft</code> |
-| **Right hand side** | |
-
-| **Description** | Find words |
-| :---- | :---- |
-| **Left hand side** | <code> fw</code> |
-| **Right hand side** | |
-
-| **Description** | Find words in all files |
-| :---- | :---- |
-| **Left hand side** | <code> fW</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle conceal |
-| :---- | :---- |
-| **Left hand side** | <code> uS</code> |
-| **Right hand side** | |
-
-| **Description** | Search symbols |
-| :---- | :---- |
-| **Left hand side** | <code> ls</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle tabline |
-| :---- | :---- |
-| **Left hand side** | <code> ut</code> |
-| **Right hand side** | |
-
-| **Description** | ToggleTerm lazygit |
-| :---- | :---- |
-| **Left hand side** | <code> gg</code> |
-| **Right hand side** | |
-
-| **Description** | ToggleTerm lazygit |
-| :---- | :---- |
-| **Left hand side** | <code> tl</code> |
-| **Right hand side** | |
-
-| **Description** | ToggleTerm node |
-| :---- | :---- |
-| **Left hand side** | <code> tn</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle wrap |
-| :---- | :---- |
-| **Left hand side** | <code> uw</code> |
-| **Right hand side** | |
-
-| **Description** | ToggleTerm btm |
-| :---- | :---- |
-| **Left hand side** | <code> tt</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle syntax highlighting (buffer) |
-| :---- | :---- |
-| **Left hand side** | <code> uy</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle foldcolumn |
-| :---- | :---- |
-| **Left hand side** | <code> uh</code> |
-| **Right hand side** | |
-
-| **Description** | ToggleTerm float |
-| :---- | :---- |
-| **Left hand side** | <code> tf</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm direction=float&lt;CR&gt;</code> |
-
-| **Description** | ToggleTerm horizontal split |
-| :---- | :---- |
-| **Left hand side** | <code> th</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm size=10 direction=horizontal&lt;CR&gt;</code> |
-
-| **Description** | ToggleTerm vertical split |
-| :---- | :---- |
-| **Left hand side** | <code> tv</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm size=80 direction=vertical&lt;CR&gt;</code> |
-
-| **Description** | Quit |
-| :---- | :---- |
-| **Left hand side** | <code> q</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;confirm q&lt;CR&gt;</code> |
-
-| **Description** | Toggle Breakpoint (F9) |
-| :---- | :---- |
-| **Left hand side** | <code> db</code> |
-| **Right hand side** | |
-
-| **Description** | Clear Breakpoints |
-| :---- | :---- |
-| **Left hand side** | <code> dB</code> |
-| **Right hand side** | |
-
-| **Description** | Start/Continue (F5) |
-| :---- | :---- |
-| **Left hand side** | <code> dc</code> |
-| **Right hand side** | |
-
-| **Description** | Conditional Breakpoint (S-F9) |
-| :---- | :---- |
-| **Left hand side** | <code> dC</code> |
-| **Right hand side** | |
-
-| **Description** | Step Into (F11) |
-| :---- | :---- |
-| **Left hand side** | <code> di</code> |
-| **Right hand side** | |
-
-| **Description** | Step Over (F10) |
-| :---- | :---- |
-| **Left hand side** | <code> do</code> |
-| **Right hand side** | |
-
-| **Description** | Step Out (S-F11) |
-| :---- | :---- |
-| **Left hand side** | <code> dO</code> |
-| **Right hand side** | |
-
-| **Description** | Close Session |
-| :---- | :---- |
-| **Left hand side** | <code> dq</code> |
-| **Right hand side** | |
-
-| **Description** | Terminate Session (S-F5) |
-| :---- | :---- |
-| **Left hand side** | <code> dQ</code> |
-| **Right hand side** | |
-
-| **Description** | Pause (F6) |
-| :---- | :---- |
-| **Left hand side** | <code> dp</code> |
-| **Right hand side** | |
-
-| **Description** | Restart (C-F5) |
-| :---- | :---- |
-| **Left hand side** | <code> dr</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle REPL |
-| :---- | :---- |
-| **Left hand side** | <code> dR</code> |
-| **Right hand side** | |
-
-| **Description** | Run To Cursor |
-| :---- | :---- |
-| **Left hand side** | <code> ds</code> |
-| **Right hand side** | |
-
-| **Description** | Evaluate Input |
-| :---- | :---- |
-| **Left hand side** | <code> dE</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Debugger UI |
-| :---- | :---- |
-| **Left hand side** | <code> du</code> |
-| **Right hand side** | |
-
-| **Description** | Debugger Hover |
-| :---- | :---- |
-| **Left hand side** | <code> dh</code> |
-| **Right hand side** | |
-
-| **Description** | Plugins Status |
-| :---- | :---- |
-| **Left hand side** | <code> ps</code> |
-| **Right hand side** | |
-
-| **Description** | Plugins Sync |
-| :---- | :---- |
-| **Left hand side** | <code> pS</code> |
-| **Right hand side** | |
-
 | **Description** | Plugins Check Updates |
 | :---- | :---- |
 | **Left hand side** | <code> pu</code> |
+| **Right hand side** | |
+
+| **Description** | Find buffers |
+| :---- | :---- |
+| **Left hand side** | <code> fb</code> |
 | **Right hand side** | |
 
 | **Description** | Plugins Update |
@@ -523,19 +248,29 @@ Default AstroNvim example configuration
 | **Left hand side** | <code> pU</code> |
 | **Right hand side** | |
 
+| **Description** | Find word under cursor |
+| :---- | :---- |
+| **Left hand side** | <code> fc</code> |
+| **Right hand side** | |
+
 | **Description** | Update Plugins and Mason Packages |
 | :---- | :---- |
 | **Left hand side** | <code> pa</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;AstroUpdatePackages&lt;CR&gt;</code> |
+
+| **Description** | Find commands |
+| :---- | :---- |
+| **Left hand side** | <code> fC</code> |
+| **Right hand side** | |
 
 | **Description** | AstroNvim Update |
 | :---- | :---- |
 | **Left hand side** | <code> pA</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;AstroUpdate&lt;CR&gt;</code> |
 
-| **Description** | Toggle autopairs |
+| **Description** | Find all files |
 | :---- | :---- |
-| **Left hand side** | <code> ua</code> |
+| **Left hand side** | <code> fF</code> |
 | **Right hand side** | |
 
 | **Description** | AstroNvim Version |
@@ -543,9 +278,14 @@ Default AstroNvim example configuration
 | **Left hand side** | <code> pv</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;AstroVersion&lt;CR&gt;</code> |
 
-| **Description** | Toggle background |
+| **Description** | Find help |
 | :---- | :---- |
-| **Left hand side** | <code> ub</code> |
+| **Left hand side** | <code> fh</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle spellcheck |
+| :---- | :---- |
+| **Left hand side** | <code> us</code> |
 | **Right hand side** | |
 
 | **Description** | AstroNvim Changelog |
@@ -553,9 +293,14 @@ Default AstroNvim example configuration
 | **Left hand side** | <code> pl</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;AstroChangelog&lt;CR&gt;</code> |
 
-| **Description** | Toggle autocompletion |
+| **Description** | Debugger Hover |
 | :---- | :---- |
-| **Left hand side** | <code> uc</code> |
+| **Left hand side** | <code> dh</code> |
+| **Right hand side** | |
+
+| **Description** | Find man |
+| :---- | :---- |
+| **Left hand side** | <code> fm</code> |
 | **Right hand side** | |
 
 | **Description** | Close buffer |
@@ -563,14 +308,19 @@ Default AstroNvim example configuration
 | **Left hand side** | <code> c</code> |
 | **Right hand side** | |
 
+| **Description** | Find notifications |
+| :---- | :---- |
+| **Left hand side** | <code> fn</code> |
+| **Right hand side** | |
+
 | **Description** | Force close buffer |
 | :---- | :---- |
 | **Left hand side** | <code> C</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle diagnostics |
+| **Description** | Find history |
 | :---- | :---- |
-| **Left hand side** | <code> ud</code> |
+| **Left hand side** | <code> fo</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Notifications |
@@ -578,14 +328,19 @@ Default AstroNvim example configuration
 | **Left hand side** | <code> uN</code> |
 | **Right hand side** | |
 
-| **Description** | Close all buffers except current |
+| **Description** | Toggle wrap |
 | :---- | :---- |
-| **Left hand side** | <code> bc</code> |
+| **Left hand side** | <code> uw</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle paste mode |
+| **Description** | Toggle background |
 | :---- | :---- |
-| **Left hand side** | <code> up</code> |
+| **Left hand side** | <code> ub</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle syntax highlighting (buffer) |
+| :---- | :---- |
+| **Left hand side** | <code> uy</code> |
 | **Right hand side** | |
 
 | **Description** | Close all buffers |
@@ -593,19 +348,24 @@ Default AstroNvim example configuration
 | **Left hand side** | <code> bC</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle statusline |
+| **Description** | Toggle autocompletion |
 | :---- | :---- |
-| **Left hand side** | <code> ul</code> |
+| **Left hand side** | <code> uc</code> |
 | **Right hand side** | |
 
-| **Description** | Previous buffer |
+| **Description** | Toggle foldcolumn |
 | :---- | :---- |
-| **Left hand side** | <code> bp</code> |
+| **Left hand side** | <code> uh</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle CodeLens |
+| **Description** | Toggle color highlight |
 | :---- | :---- |
-| **Left hand side** | <code> uL</code> |
+| **Left hand side** | <code> uC</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;ColorizerToggle&lt;CR&gt;</code> |
+
+| **Description** | Find keymaps |
+| :---- | :---- |
+| **Left hand side** | <code> fk</code> |
 | **Right hand side** | |
 
 | **Description** | Close all buffers to the right |
@@ -613,9 +373,9 @@ Default AstroNvim example configuration
 | **Left hand side** | <code> br</code> |
 | **Right hand side** | |
 
-| **Description** | Change line numbering |
+| **Description** | Toggle diagnostics |
 | :---- | :---- |
-| **Left hand side** | <code> un</code> |
+| **Left hand side** | <code> ud</code> |
 | **Right hand side** | |
 
 | **Description** | By extension |
@@ -623,29 +383,49 @@ Default AstroNvim example configuration
 | **Left hand side** | <code> bse</code> |
 | **Right hand side** | |
 
-| **Description** | By relative path |
+| **Description** | Toggle signcolumn |
 | :---- | :---- |
-| **Left hand side** | <code> bsr</code> |
+| **Left hand side** | <code> ug</code> |
 | **Right hand side** | |
 
-| **Description** | By full path |
+| **Description** | ToggleTerm btm |
 | :---- | :---- |
-| **Left hand side** | <code> bsp</code> |
+| **Left hand side** | <code> tt</code> |
 | **Right hand side** | |
 
-| **Description** | By buffer number |
+| **Description** | Change indent setting |
 | :---- | :---- |
-| **Left hand side** | <code> bsi</code> |
+| **Left hand side** | <code> ui</code> |
 | **Right hand side** | |
 
-| **Description** | By modification |
+| **Description** | ToggleTerm python |
 | :---- | :---- |
-| **Left hand side** | <code> bsm</code> |
+| **Left hand side** | <code> tp</code> |
+| **Right hand side** | |
+
+| **Description** | Resume previous search |
+| :---- | :---- |
+| **Left hand side** | <code> f&lt;CR&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | ToggleTerm float |
+| :---- | :---- |
+| **Left hand side** | <code> tf</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm direction=float&lt;CR&gt;</code> |
+
+| **Description** | Symbols outline |
+| :---- | :---- |
+| **Left hand side** | <code> lS</code> |
 | **Right hand side** | |
 
 | **Description** | Select buffer from tabline |
 | :---- | :---- |
 | **Left hand side** | <code> bb</code> |
+| **Right hand side** | |
+
+| **Description** | By modification |
+| :---- | :---- |
+| **Left hand side** | <code> bsm</code> |
 | **Right hand side** | |
 
 | **Description** | Close buffer from tabline |
@@ -658,20 +438,240 @@ Default AstroNvim example configuration
 | **Left hand side** | <code> b\</code> |
 | **Right hand side** | |
 
+| **Description** | By buffer number |
+| :---- | :---- |
+| **Left hand side** | <code> bsi</code> |
+| **Right hand side** | |
+
 | **Description** | Vertical split buffer from tabline |
 | :---- | :---- |
 | **Left hand side** | <code> b&#124;</code> |
 | **Right hand side** | |
+
+| **Description** | By full path |
+| :---- | :---- |
+| **Left hand side** | <code> bsp</code> |
+| **Right hand side** | |
+
+| **Description** | ToggleTerm gdu |
+| :---- | :---- |
+| **Left hand side** | <code> tu</code> |
+| **Right hand side** | |
+
+| **Description** | Quit |
+| :---- | :---- |
+| **Left hand side** | <code> q</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;confirm q&lt;CR&gt;</code> |
 
 | **Description** | Home Screen |
 | :---- | :---- |
 | **Left hand side** | <code> h</code> |
 | **Right hand side** | |
 
+| **Description** | Git status |
+| :---- | :---- |
+| **Left hand side** | <code> gt</code> |
+| **Right hand side** | |
+
 | **Description** | Toggle comment line |
 | :---- | :---- |
 | **Left hand side** | <code> /</code> |
 | **Right hand side** | |
+
+| **Description** | ToggleTerm node |
+| :---- | :---- |
+| **Left hand side** | <code> tn</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle autopairs |
+| :---- | :---- |
+| **Left hand side** | <code> ua</code> |
+| **Right hand side** | |
+
+| **Description** | Previous buffer |
+| :---- | :---- |
+| **Left hand side** | <code> bp</code> |
+| **Right hand side** | |
+
+| **Description** | Find registers |
+| :---- | :---- |
+| **Left hand side** | <code> fr</code> |
+| **Right hand side** | |
+
+| **Description** | View Git blame |
+| :---- | :---- |
+| **Left hand side** | <code> gl</code> |
+| **Right hand side** | |
+
+| **Description** | Find words |
+| :---- | :---- |
+| **Left hand side** | <code> fw</code> |
+| **Right hand side** | |
+
+| **Description** | View full Git blame |
+| :---- | :---- |
+| **Left hand side** | <code> gL</code> |
+| **Right hand side** | |
+
+| **Description** | Close all buffers except current |
+| :---- | :---- |
+| **Left hand side** | <code> bc</code> |
+| **Right hand side** | |
+
+| **Description** | Preview Git hunk |
+| :---- | :---- |
+| **Left hand side** | <code> gp</code> |
+| **Right hand side** | |
+
+| **Description** | ToggleTerm lazygit |
+| :---- | :---- |
+| **Left hand side** | <code> gg</code> |
+| **Right hand side** | |
+
+| **Description** | Reset Git hunk |
+| :---- | :---- |
+| **Left hand side** | <code> gh</code> |
+| **Right hand side** | |
+
+| **Description** | Reset Git buffer |
+| :---- | :---- |
+| **Left hand side** | <code> gr</code> |
+| **Right hand side** | |
+
+| **Description** | ToggleTerm lazygit |
+| :---- | :---- |
+| **Left hand side** | <code> tl</code> |
+| **Right hand side** | |
+
+| **Description** | Stage Git hunk |
+| :---- | :---- |
+| **Left hand side** | <code> gs</code> |
+| **Right hand side** | |
+
+| **Description** | Stage Git buffer |
+| :---- | :---- |
+| **Left hand side** | <code> gS</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle statusline |
+| :---- | :---- |
+| **Left hand side** | <code> ul</code> |
+| **Right hand side** | |
+
+| **Description** | Unstage Git hunk |
+| :---- | :---- |
+| **Left hand side** | <code> gu</code> |
+| **Right hand side** | |
+
+| **Description** | View Git diff |
+| :---- | :---- |
+| **Left hand side** | <code> gd</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Explorer |
+| :---- | :---- |
+| **Left hand side** | <code> e</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Neotree toggle&lt;CR&gt;</code> |
+
+| **Description** | Toggle Explorer Focus |
+| :---- | :---- |
+| **Left hand side** | <code> o</code> |
+| **Right hand side** | |
+
+| **Description** | Load last session |
+| :---- | :---- |
+| **Left hand side** | <code> Sl</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! load_last_session&lt;CR&gt;</code> |
+
+| **Description** | Change line numbering |
+| :---- | :---- |
+| **Left hand side** | <code> un</code> |
+| **Right hand side** | |
+
+| **Description** | Save this session |
+| :---- | :---- |
+| **Left hand side** | <code> Ss</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! save_current_session&lt;CR&gt;</code> |
+
+| **Description** | Search symbols |
+| :---- | :---- |
+| **Left hand side** | <code> ls</code> |
+| **Right hand side** | |
+
+| **Description** | Find files |
+| :---- | :---- |
+| **Left hand side** | <code> ff</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle paste mode |
+| :---- | :---- |
+| **Left hand side** | <code> up</code> |
+| **Right hand side** | |
+
+| **Description** | Mason Installer |
+| :---- | :---- |
+| **Left hand side** | <code> pm</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
+
+| **Description** | Toggle conceal |
+| :---- | :---- |
+| **Left hand side** | <code> uS</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Breakpoint (F9) |
+| :---- | :---- |
+| **Left hand side** | <code> db</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle URL highlight |
+| :---- | :---- |
+| **Left hand side** | <code> uu</code> |
+| **Right hand side** | |
+
+| **Description** | Find themes |
+| :---- | :---- |
+| **Left hand side** | <code> ft</code> |
+| **Right hand side** | |
+
+| **Description** | Plugins Sync |
+| :---- | :---- |
+| **Left hand side** | <code> pS</code> |
+| **Right hand side** | |
+
+| **Description** | New tab |
+| :---- | :---- |
+| **Left hand side** | <code> bn</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;tabnew&lt;CR&gt;</code> |
+
+| **Description** | Pick to close |
+| :---- | :---- |
+| **Left hand side** | <code> bD</code> |
+| **Right hand side** | |
+
+| **Description** | Delete session |
+| :---- | :---- |
+| **Left hand side** | <code> Sd</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! delete_session&lt;CR&gt;</code> |
+
+| **Description** | ToggleTerm horizontal split |
+| :---- | :---- |
+| **Left hand side** | <code> th</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm size=10 direction=horizontal&lt;CR&gt;</code> |
+
+| **Description** | Search sessions |
+| :---- | :---- |
+| **Left hand side** | <code> Sf</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! load_session&lt;CR&gt;</code> |
+
+| **Description** | ToggleTerm vertical split |
+| :---- | :---- |
+| **Left hand side** | <code> tv</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm size=80 direction=vertical&lt;CR&gt;</code> |
+
+| **Description** | Load current directory session |
+| :---- | :---- |
+| **Left hand side** | <code> S.</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager! load_current_dir_session&lt;CR&gt;</code> |
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -693,11 +693,6 @@ Default AstroNvim example configuration
 | **Left hand side** | <code>Y</code> |
 | **Right hand side** | <code>y$</code> |
 
-| **Description** | Previous Git hunk |
-| :---- | :---- |
-| **Left hand side** | <code>[g</code> |
-| **Right hand side** | |
-
 | **Description** | Previous buffer |
 | :---- | :---- |
 | **Left hand side** | <code>[b</code> |
@@ -708,15 +703,15 @@ Default AstroNvim example configuration
 | **Left hand side** | <code>[t</code> |
 | **Right hand side** | |
 
+| **Description** | Previous Git hunk |
+| :---- | :---- |
+| **Left hand side** | <code>[g</code> |
+| **Right hand side** | |
+
 | **Description** | Horizontal Split |
 | :---- | :---- |
 | **Left hand side** | <code>\</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;split&lt;CR&gt;</code> |
-
-| **Description** | Next Git hunk |
-| :---- | :---- |
-| **Left hand side** | <code>]g</code> |
-| **Right hand side** | |
 
 | **Description** | Next buffer |
 | :---- | :---- |
@@ -728,19 +723,24 @@ Default AstroNvim example configuration
 | **Left hand side** | <code>]t</code> |
 | **Right hand side** | |
 
+| **Description** | Next Git hunk |
+| :---- | :---- |
+| **Left hand side** | <code>]g</code> |
+| **Right hand side** | |
+
 | **Description** | Open the file under cursor with system app |
 | :---- | :---- |
 | **Left hand side** | <code>gx</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle linewise |
-| :---- | :---- |
-| **Left hand side** | <code>gc</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle blockwise |
 | :---- | :---- |
 | **Left hand side** | <code>gb</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise |
+| :---- | :---- |
+| **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
 
 | **Description** | Move cursor down |
@@ -752,16 +752,6 @@ Default AstroNvim example configuration
 | :---- | :---- |
 | **Left hand side** | <code>k</code> |
 | **Right hand side** | <code>v:count == 0 ? 'gk' : 'k'</code> |
-
-| **Description** | Open all folds |
-| :---- | :---- |
-| **Left hand side** | <code>zR</code> |
-| **Right hand side** | |
-
-| **Description** | Close all folds |
-| :---- | :---- |
-| **Left hand side** | <code>zM</code> |
-| **Right hand side** | |
 
 | **Description** | Fold less |
 | :---- | :---- |
@@ -778,55 +768,20 @@ Default AstroNvim example configuration
 | **Left hand side** | <code>zp</code> |
 | **Right hand side** | |
 
+| **Description** | Open all folds |
+| :---- | :---- |
+| **Left hand side** | <code>zR</code> |
+| **Right hand side** | |
+
+| **Description** | Close all folds |
+| :---- | :---- |
+| **Left hand side** | <code>zM</code> |
+| **Right hand side** | |
+
 | **Description** | Vertical Split |
 | :---- | :---- |
 | **Left hand side** | <code>&#124;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;vsplit&lt;CR&gt;</code> |
-
-| **Description** | Resize split right |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Right&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Move to above split |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-K&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Resize split down |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Down&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Move to left split |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-H&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Force write |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-S&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;w!&lt;CR&gt;</code> |
-
-| **Description** | Resize split up |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Up&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Resize split left |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Left&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Force quit |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Q&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;qa!&lt;CR&gt;</code> |
-
-| **Description** | Toggle terminal |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F7&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm&lt;CR&gt;</code> |
 
 | **Description** | Toggle terminal |
 | :---- | :---- |
@@ -848,19 +803,14 @@ Default AstroNvim example configuration
 | **Left hand side** | <code>&lt;F21&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | Move to below split |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-J&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Debugger: Restart |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F29&gt;</code> |
-| **Right hand side** | |
-
 | **Description** | Debugger: Pause |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;F6&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Move to left split |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Debugger: Toggle Breakpoint |
@@ -868,9 +818,49 @@ Default AstroNvim example configuration
 | **Left hand side** | <code>&lt;F9&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | Debugger: Step Over |
+| **Description** | Resize split down |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;F10&gt;</code> |
+| **Left hand side** | <code>&lt;C-Down&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Resize split left |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Left&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Resize split right |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Right&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Debugger: Step Out |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F23&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Move to above split |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Force write |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-S&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;w!&lt;CR&gt;</code> |
+
+| **Description** | Force quit |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;qa!&lt;CR&gt;</code> |
+
+| **Description** | Toggle terminal |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F7&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm&lt;CR&gt;</code> |
+
+| **Description** | Move to below split |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Debugger: Step Into |
@@ -878,9 +868,19 @@ Default AstroNvim example configuration
 | **Left hand side** | <code>&lt;F11&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | Debugger: Step Out |
+| **Description** | Debugger: Step Over |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;F23&gt;</code> |
+| **Left hand side** | <code>&lt;F10&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Resize split up |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Up&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Debugger: Restart |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F29&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Move to right split |
@@ -889,7 +889,7 @@ Default AstroNvim example configuration
 | **Right hand side** | |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Indent line |
 | :---- | :---- |
@@ -932,5 +932,5 @@ Default AstroNvim example configuration
 | **Right hand side** | <code>&lt;lt&gt;gv</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 

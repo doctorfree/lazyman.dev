@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## AlanVim Neovim Configuration Information
+# AlanVim Neovim Configuration Information
 
 Oriented toward Python development
 
@@ -15,11 +15,11 @@ Oriented toward Python development
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-AlanVim`**
 
-### Git repository
+## Git repository
 
 [https://github.com/alanRizzo/dot-files](https://github.com/alanRizzo/dot-files)
 
-### Packer managed plugins
+## Packer managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim)
@@ -58,9 +58,9 @@ Oriented toward Python development
 - [altermo/ultimate-autopair.nvim](https://github.com/altermo/ultimate-autopair.nvim)
 - [dsznajder/vscode-es7-javascript-react-snippets](https://github.com/dsznajder/vscode-es7-javascript-react-snippets)
 
-### AlanVim Keymaps
+## AlanVim Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -459,23 +459,23 @@ Oriented toward Python development
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-H&gt;</code> |
-| **Right hand side** | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateLeft()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
 | **Right hand side** | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateLastActive()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-K&gt;</code> |
-| **Right hand side** | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateUp()&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
+| **Right hand side** | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateLeft()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-Space&gt;</code> |
 | **Right hand side** | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateNext()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateUp()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -513,7 +513,7 @@ Oriented toward Python development
 | **Right hand side** | <code>:lua require'nvim-tmux-navigation'.NvimTmuxNavigateRight()&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -656,7 +656,7 @@ Oriented toward Python development
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

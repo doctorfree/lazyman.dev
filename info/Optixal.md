@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Optixal Neovim Configuration Information
+# Optixal Neovim Configuration Information
 
 Hybrid Neovim config for developers with a functional yet aesthetic experience. Uses a combination of vimscript and lua with the 'vim-plug' plugin manager
 
@@ -15,15 +15,15 @@ Hybrid Neovim config for developers with a functional yet aesthetic experience. 
 - Plugin manager:         [Plug](https://github.com/junegunn/vim-plug)
 - Installation location:  **`~/.config/nvim-Optixal`**
 
-### Git repository
+## Git repository
 
 [https://github.com/Optixal/neovim-init.vim](https://github.com/Optixal/neovim-init.vim)
 
-### Neovimcraft entry
+## Neovimcraft entry
 
 [http://neovimcraft.com/plugin/Optixal/neovim-init.vim](http://neovimcraft.com/plugin/Optixal/neovim-init.vim)
 
-### Plug managed plugins
+## Plug managed plugins
 
 - [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs.git)
 - [psf/black](https://github.com/psf/black.git)
@@ -66,9 +66,9 @@ Hybrid Neovim config for developers with a functional yet aesthetic experience. 
 - [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip.git)
 - [zaki/zazen](https://github.com/zaki/zazen.git)
 
-### Optixal Keymaps
+## Optixal Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -636,7 +636,7 @@ Hybrid Neovim config for developers with a functional yet aesthetic experience. 
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -914,7 +914,7 @@ Hybrid Neovim config for developers with a functional yet aesthetic experience. 
 | **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;13_vsnip_visual_text(visualmode())&lt;CR&gt;gv</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

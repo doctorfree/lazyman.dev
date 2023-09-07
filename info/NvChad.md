@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## NvChad Neovim Configuration Information
+# NvChad Neovim Configuration Information
 
 Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom). Good [introductory video](https://youtu.be/Mtgo-nP_r8Y) to NvChad
 
@@ -15,19 +15,19 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-NvChad`**
 
-### Git repository
+## Git repository
 
 [https://github.com/doctorfree/NvChad-custom](https://github.com/doctorfree/NvChad-custom)
 
-### Website
+## Website
 
 [https://nvchad.lazyman.dev](https://nvchad.lazyman.dev)
 
-### YouTube channel
+## YouTube channel
 
 [https://www.youtube.com/@siduck_og](https://www.youtube.com/@siduck_og)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -73,9 +73,9 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 - [bluz71/vim-nightfly-guicolors](https://github.com/bluz71/vim-nightfly-guicolors)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### NvChad Keymaps
+## NvChad Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -90,6 +90,21 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>'</code> |
+| **Right hand side** | |
+
+| **Description** | Move to end of Treehopper node |
+| :---- | :---- |
+| **Left hand side** | <code>,h]</code> |
+| **Right hand side** | |
+
+| **Description** | Move to start of Treehopper node |
+| :---- | :---- |
+| **Left hand side** | <code>,h[</code> |
+| **Right hand side** | |
+
+| **Description** | Treehopper nodes |
+| :---- | :---- |
+| **Left hand side** | <code>,hm</code> |
 | **Right hand side** | |
 
 | **Description** | Open new line above HopLineStart target |
@@ -177,21 +192,6 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>,hw</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;HopWord&lt;CR&gt;</code> |
 
-| **Description** | Move to end of Treehopper node |
-| :---- | :---- |
-| **Left hand side** | <code>,h]</code> |
-| **Right hand side** | |
-
-| **Description** | Move to start of Treehopper node |
-| :---- | :---- |
-| **Left hand side** | <code>,h[</code> |
-| **Right hand side** | |
-
-| **Description** | Treehopper nodes |
-| :---- | :---- |
-| **Left hand side** | <code>,hm</code> |
-| **Right hand side** | |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>,</code> |
@@ -242,14 +242,14 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle blockwise |
-| :---- | :---- |
-| **Left hand side** | <code>gb</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle current line |
 | :---- | :---- |
 | **Left hand side** | <code>gcc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | Comment toggle current block |
@@ -338,7 +338,7 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -396,7 +396,7 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Right hand side** | <code>q</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -413,14 +413,14 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>f</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle blockwise |
-| :---- | :---- |
-| **Left hand side** | <code>gb</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle linewise |
 | :---- | :---- |
 | **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | |

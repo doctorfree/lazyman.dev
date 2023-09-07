@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Primeagen Neovim Configuration Information
+# Primeagen Neovim Configuration Information
 
 [Config from scratch](https://youtu.be/w7i4amO_zaE) by ThePrimeagen
 
@@ -15,15 +15,15 @@ post_style: page
 - Plugin manager:         [Packer](https://github.com/wbthomason/packer.nvim)
 - Installation location:  **`~/.config/nvim-Primeagen`**
 
-### Git repository
+## Git repository
 
 [https://github.com/ThePrimeagen/init.lua](https://github.com/ThePrimeagen/init.lua)
 
-### YouTube channel
+## YouTube channel
 
 [https://www.youtube.com/@ThePrimeagen](https://www.youtube.com/@ThePrimeagen)
 
-### Packer managed plugins
+## Packer managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [eandrju/cellular-automaton.nvim](https://github.com/eandrju/cellular-automaton.nvim)
@@ -54,9 +54,9 @@ post_style: page
 - [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 
-### Primeagen Keymaps
+## Primeagen Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -344,7 +344,7 @@ post_style: page
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -452,7 +452,7 @@ post_style: page
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

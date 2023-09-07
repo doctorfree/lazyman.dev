@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## StartMason Neovim Configuration Information
+# StartMason Neovim Configuration Information
 
 Same as 'StartLsp' but uses [mason.nvim](https://github.com/williamboman/mason.nvim) to install language servers
 
@@ -15,11 +15,11 @@ Same as 'StartLsp' but uses [mason.nvim](https://github.com/williamboman/mason.n
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-StartMason`**
 
-### Git repository
+## Git repository
 
 [https://github.com/VonHeikemen/nvim-starter/tree/04-lsp-installer](https://github.com/VonHeikemen/nvim-starter/tree/04-lsp-installer)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -55,9 +55,9 @@ Same as 'StartLsp' but uses [mason.nvim](https://github.com/williamboman/mason.n
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat)
 - [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
 
-### StartMason Keymaps
+## StartMason Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -291,53 +291,38 @@ Same as 'StartLsp' but uses [mason.nvim](https://github.com/williamboman/mason.n
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;YSurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;14_opfunc2('setup')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;20_opfunc2('setup')</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;Ysurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;14_opfunc('setup')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;20_opfunc('setup')</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;YSsurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;14_opfunc2('setup').'_'</code> |
+| **Right hand side** | <code>&lt;SNR&gt;20_opfunc2('setup').'_'</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;Yssurround</code> |
-| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;14_opfunc('setup').'g_'</code> |
+| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;20_opfunc('setup').'g_'</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;CSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_changesurround(1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;20_changesurround(1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;Csurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_changesurround()&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;20_changesurround()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;Dsurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;14_dosurround(&lt;SNR&gt;14_inputtarget())&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;20_dosurround(&lt;SNR&gt;20_inputtarget())&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -353,6 +338,21 @@ Same as 'StartLsp' but uses [mason.nvim](https://github.com/williamboman/mason.n
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
 | **Description** | Comment toggle blockwise with count |
 | :---- | :---- |
@@ -390,7 +390,7 @@ Same as 'StartLsp' but uses [mason.nvim](https://github.com/williamboman/mason.n
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -534,18 +534,13 @@ Same as 'StartLsp' but uses [mason.nvim](https://github.com/williamboman/mason.n
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;VgSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;19_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;VSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;15_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;19_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
 
 | **Description** | Comment toggle blockwise (visual) |
 | :---- | :---- |
@@ -557,8 +552,13 @@ Same as 'StartLsp' but uses [mason.nvim](https://github.com/williamboman/mason.n
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
 | **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
 
-#### operator mode keymaps
+
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

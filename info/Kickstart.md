@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Kickstart Neovim Configuration Information
+# Kickstart Neovim Configuration Information
 
 Popular starting point, small, single file, well documented, modular
 
@@ -15,11 +15,11 @@ Popular starting point, small, single file, well documented, modular
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Kickstart`**
 
-### Git repository
+## Git repository
 
 [https://github.com/doctorfree/kickstart.nvim](https://github.com/doctorfree/kickstart.nvim)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -50,9 +50,9 @@ Popular starting point, small, single file, well documented, modular
 - [tpope/vim-sleuth](https://github.com/tpope/vim-sleuth.git)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### Kickstart Keymaps
+## Kickstart Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | Open diagnostics list |
 | :---- | :---- |
@@ -295,7 +295,7 @@ Popular starting point, small, single file, well documented, modular
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -398,7 +398,7 @@ Popular starting point, small, single file, well documented, modular
 | **Right hand side** | |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Rust Neovim Configuration Information
+# Rust Neovim Configuration Information
 
 'NvChad' based Neovim config with Rust formatting, debugging, and diagnostics. Dreams of Code [video tutorial](https://youtu.be/mh_EJhH49Ms)
 
@@ -15,19 +15,19 @@ post_style: page
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Rust`**
 
-### Git repository
+## Git repository
 
 [https://github.com/dreamsofcode-io/neovim-rust](https://github.com/dreamsofcode-io/neovim-rust)
 
-### Website
+## Website
 
 [https://nvchad.com](https://nvchad.com)
 
-### YouTube channel
+## YouTube channel
 
 [https://www.youtube.com/@dreamsofcode](https://www.youtube.com/@dreamsofcode)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -60,9 +60,9 @@ post_style: page
 - [bluz71/vim-nightfly-guicolors](https://github.com/bluz71/vim-nightfly-guicolors)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### Rust Keymaps
+## Rust Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -104,16 +104,6 @@ post_style: page
 | **Left hand side** | <code>g</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle current line |
-| :---- | :---- |
-| **Left hand side** | <code>gcc</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle blockwise |
-| :---- | :---- |
-| **Left hand side** | <code>gb</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle current block |
 | :---- | :---- |
 | **Left hand side** | <code>gbc</code> |
@@ -122,6 +112,16 @@ post_style: page
 | **Description** | Comment toggle linewise |
 | :---- | :---- |
 | **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current line |
+| :---- | :---- |
+| **Left hand side** | <code>gcc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -140,7 +140,7 @@ post_style: page
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -152,18 +152,18 @@ post_style: page
 | **Left hand side** | <code>*</code> |
 | **Right hand side** | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
 
-| **Description** | Comment toggle blockwise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>gb</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle linewise (visual) |
 | :---- | :---- |
 | **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
 
+| **Description** | Comment toggle blockwise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
+| **Right hand side** | |
 
-#### operator mode keymaps
+
+### Operator mode keymaps
 
 | **Description** | Comment toggle blockwise |
 | :---- | :---- |

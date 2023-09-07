@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## Craftzdog Neovim Configuration Information
+# Craftzdog Neovim Configuration Information
 
 Takuya Matsuyama's Neovim configuration
 
@@ -15,20 +15,20 @@ Takuya Matsuyama's Neovim configuration
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Craftzdog`**
 
-### Git repository
+## Git repository
 
 [https://github.com/craftzdog/dotfiles-public](https://github.com/craftzdog/dotfiles-public)
 
-### Dotfyle entry
+## Dotfyle entry
 
 [https://dotfyle.com/craftzdog/dotfiles-public-config-nvim](https://dotfyle.com/craftzdog/dotfiles-public-config-nvim)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 
-### Craftzdog Keymaps
+## Craftzdog Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -391,7 +391,7 @@ Takuya Matsuyama's Neovim configuration
 | **Right hand side** | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -519,7 +519,7 @@ Takuya Matsuyama's Neovim configuration
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |

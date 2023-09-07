@@ -5,7 +5,7 @@ toc: true
 post_style: page
 ---
 
-## HardHacker Neovim Configuration Information
+# HardHacker Neovim Configuration Information
 
 A theme-driven modern Neovim configuration
 
@@ -15,11 +15,11 @@ A theme-driven modern Neovim configuration
 - Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-HardHacker`**
 
-### Git repository
+## Git repository
 
 [https://github.com/hardhackerlabs/oh-my-nvim](https://github.com/hardhackerlabs/oh-my-nvim)
 
-### Lazy managed plugins
+## Lazy managed plugins
 
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [stevearc/aerial.nvim](https://github.com/stevearc/aerial.nvim)
@@ -68,9 +68,9 @@ A theme-driven modern Neovim configuration
 - [folke/twilight.nvim](https://github.com/folke/twilight.nvim)
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 
-### HardHacker Keymaps
+## HardHacker Keymaps
 
-#### normal mode keymaps
+### Normal mode keymaps
 
 | **Description** | |
 | :---- | :---- |
@@ -99,16 +99,6 @@ A theme-driven modern Neovim configuration
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> q</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> e</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code> bb</code> |
 | **Right hand side** | |
 
@@ -125,6 +115,16 @@ A theme-driven modern Neovim configuration
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code> ff</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> q</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> e</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -278,7 +278,7 @@ A theme-driven modern Neovim configuration
 | **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
-#### visual mode keymaps
+### Visual mode keymaps
 
 | **Description** | Nvim builtin |
 | :---- | :---- |
@@ -356,7 +356,7 @@ A theme-driven modern Neovim configuration
 | **Right hand side** | |
 
 
-#### operator mode keymaps
+### Operator mode keymaps
 
 | **Description** | |
 | :---- | :---- |
