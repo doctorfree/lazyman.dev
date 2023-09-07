@@ -27,11 +27,9 @@ post_style: page
 
 [https://www.youtube.com/@dreamsofcode](https://www.youtube.com/@dreamsofcode)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -104,9 +102,14 @@ Jump to:
 | **Left hand side** | <code>c</code> |
 | **Right hand side** | |
 
-| **Description** | |
+| **Description** | Comment toggle linewise |
 | :---- | :---- |
-| **Left hand side** | <code>g</code> |
+| **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | Comment toggle current line |
@@ -114,19 +117,14 @@ Jump to:
 | **Left hand side** | <code>gcc</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle linewise |
-| :---- | :---- |
-| **Left hand side** | <code>gc</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle current block |
 | :---- | :---- |
 | **Left hand side** | <code>gbc</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle blockwise |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gb</code> |
+| **Left hand side** | <code>g</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -157,14 +155,14 @@ Jump to:
 | **Left hand side** | <code>*</code> |
 | **Right hand side** | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
 
-| **Description** | Comment toggle blockwise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>gb</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle linewise (visual) |
 | :---- | :---- |
 | **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 

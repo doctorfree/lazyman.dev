@@ -19,11 +19,9 @@ Neovim config of Heiker Curiel, author of [lsp-zero](https://github.com/VonHeike
 
 [https://github.com/VonHeikemen/dotfiles](https://github.com/VonHeikemen/dotfiles)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -89,13 +87,28 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> s</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;SearchBoxClear&lt;CR&gt;</code> |
+| **Left hand side** | <code> ui</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;IndentBlanklineToggle&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> ui</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;IndentBlanklineToggle&lt;CR&gt;</code> |
+| **Left hand side** | <code> uf</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;CtrlSFToggle&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> fw</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;exe 'Find' expand('&lt;lt&gt;cword&gt;')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> F</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;FineCmdline Find &lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> s</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SearchBoxClear&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -134,21 +147,6 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> uf</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;CtrlSFToggle&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> fw</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;exe 'Find' expand('&lt;lt&gt;cword&gt;')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> F</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;FineCmdline Find &lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code> da</code> |
 | **Right hand side** | |
 
@@ -159,12 +157,12 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> uz</code> |
+| **Left hand side** | <code> bc</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> bc</code> |
+| **Left hand side** | <code> uz</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -464,22 +462,22 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gB</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gc</code> |
+| **Left hand side** | <code>gB</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>gcc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -807,7 +805,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gB</code> |
+| **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -817,7 +815,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gc</code> |
+| **Left hand side** | <code>gB</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1005,12 +1003,12 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gb</code> |
+| **Left hand side** | <code>gB</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gB</code> |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | |

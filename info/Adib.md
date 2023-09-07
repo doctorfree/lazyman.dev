@@ -27,11 +27,9 @@ Personal Neovim configuration of Adib Hanna. Tips, distros, and configuration [d
 
 [https://www.youtube.com/@adibhanna](https://www.youtube.com/@adibhanna)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -112,24 +110,9 @@ Jump to:
 | **Left hand side** | <code>&lt;CR&gt;</code> |
 | **Right hand side** | <code>ciw</code> |
 
-| **Description** | Left File Explorer |
+| **Description** | Stop |
 | :---- | :---- |
-| **Left hand side** | <code> &lt;Tab&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Float File Explorer |
-| :---- | :---- |
-| **Left hand side** | <code> e</code> |
-| **Right hand side** | |
-
-| **Description** | Run All Test Files |
-| :---- | :---- |
-| **Left hand side** | <code> tT</code> |
-| **Right hand side** | |
-
-| **Description** | Run File |
-| :---- | :---- |
-| **Left hand side** | <code> tt</code> |
+| **Left hand side** | <code> tS</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Output Panel |
@@ -147,14 +130,29 @@ Jump to:
 | **Left hand side** | <code> ts</code> |
 | **Right hand side** | |
 
-| **Description** | Stop |
-| :---- | :---- |
-| **Left hand side** | <code> tS</code> |
-| **Right hand side** | |
-
 | **Description** | Run Nearest |
 | :---- | :---- |
 | **Left hand side** | <code> tr</code> |
+| **Right hand side** | |
+
+| **Description** | Run All Test Files |
+| :---- | :---- |
+| **Left hand side** | <code> tT</code> |
+| **Right hand side** | |
+
+| **Description** | Run File |
+| :---- | :---- |
+| **Left hand side** | <code> tt</code> |
+| **Right hand side** | |
+
+| **Description** | Float File Explorer |
+| :---- | :---- |
+| **Left hand side** | <code> e</code> |
+| **Right hand side** | |
+
+| **Description** | Left File Explorer |
+| :---- | :---- |
+| **Left hand side** | <code> &lt;Tab&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -272,24 +270,19 @@ Jump to:
 | **Left hand side** | <code>g%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
 
-| **Description** | Join the object under cursor |
-| :---- | :---- |
-| **Left hand side** | <code>gJ</code> |
-| **Right hand side** | |
-
 | **Description** | Split the object under cursor |
 | :---- | :---- |
 | **Left hand side** | <code>gS</code> |
 | **Right hand side** | |
 
+| **Description** | Join the object under cursor |
+| :---- | :---- |
+| **Left hand side** | <code>gJ</code> |
+| **Right hand side** | |
+
 | **Description** | Leap from windows |
 | :---- | :---- |
 | **Left hand side** | <code>gs</code> |
-| **Right hand side** | |
-
-| **Description** | Glance type_definitions |
-| :---- | :---- |
-| **Left hand side** | <code>gY</code> |
 | **Right hand side** | |
 
 | **Description** | Glance references |
@@ -305,6 +298,11 @@ Jump to:
 | **Description** | Glance implementations |
 | :---- | :---- |
 | **Left hand side** | <code>gM</code> |
+| **Right hand side** | |
+
+| **Description** | Glance type_definitions |
+| :---- | :---- |
+| **Left hand side** | <code>gY</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -329,11 +327,6 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>zb</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zb(250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>zt</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zt(250)&lt;CR&gt;</code> |
 
@@ -341,6 +334,11 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>zz</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zz(250)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zb</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').zb(250)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -362,10 +360,20 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
 
+| **Description** | Toggle Terminal |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-T&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
+
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-F&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Y&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -379,8 +387,8 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-Y&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
 | **Description** | Move to previous reference |
 | :---- | :---- |
@@ -391,16 +399,6 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>&lt;M-n&gt;</code> |
 | **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-
-| **Description** | Toggle Terminal |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-T&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -602,11 +600,6 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-U&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;C-B&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
 
@@ -614,6 +607,11 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-E&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-U&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |

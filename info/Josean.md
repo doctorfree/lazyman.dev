@@ -23,11 +23,9 @@ Josean Martinez [video tutorial](https://youtu.be/vdn_pKJUda8)
 
 [https://www.youtube.com/@joseanmartinez](https://www.youtube.com/@joseanmartinez)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Packer managed plugins
 
@@ -66,6 +64,21 @@ Jump to:
 | **Left hand side** | <code> ff</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;Telescope find_files&lt;CR&gt;</code> |
 
+| **Description** | Go to previous harpoon mark |
+| :---- | :---- |
+| **Left hand side** | <code> hp</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('harpoon.ui').nav_prev()&lt;CR&gt;</code> |
+
+| **Description** | Go to next harpoon mark |
+| :---- | :---- |
+| **Left hand side** | <code> hn</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('harpoon.ui').nav_next()&lt;CR&gt;</code> |
+
+| **Description** | Mark file with harpoon |
+| :---- | :---- |
+| **Left hand side** | <code> hm</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('harpoon.mark').add_file()&lt;CR&gt;</code> |
+
 | **Description** | Refresh file explorer |
 | :---- | :---- |
 | **Left hand side** | <code> er</code> |
@@ -85,21 +98,6 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code> ee</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;NvimTreeToggle&lt;CR&gt;</code> |
-
-| **Description** | Go to previous harpoon mark |
-| :---- | :---- |
-| **Left hand side** | <code> hp</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('harpoon.ui').nav_prev()&lt;CR&gt;</code> |
-
-| **Description** | Go to next harpoon mark |
-| :---- | :---- |
-| **Left hand side** | <code> hn</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('harpoon.ui').nav_next()&lt;CR&gt;</code> |
-
-| **Description** | Mark file with harpoon |
-| :---- | :---- |
-| **Left hand side** | <code> hm</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('harpoon.mark').add_file()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -346,6 +344,11 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;ReplaceWithRegisterVisual</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call setline('.', getline('.'))&#124;execute 'silent! call repeat#setreg("\&lt;lt&gt;Plug&gt;ReplaceWithRegisterVisual", v:register)'|call ReplaceWithRegister#SetRegister()|if ReplaceWithRegister#IsExprReg()|    let g:ReplaceWithRegister#expr = getreg('=')|endif|call ReplaceWithRegister#Operator('visual', "\&lt;lt&gt;Plug&gt;ReplaceWithRegisterVisual")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigatePrevious&lt;CR&gt;</code> |
 
@@ -363,11 +366,6 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-H&gt;</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;TmuxNavigateLeft&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;ReplaceWithRegisterVisual</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call setline('.', getline('.'))&#124;execute 'silent! call repeat#setreg("\&lt;lt&gt;Plug&gt;ReplaceWithRegisterVisual", v:register)'|call ReplaceWithRegister#SetRegister()|if ReplaceWithRegister#IsExprReg()|    let g:ReplaceWithRegister#expr = getreg('=')|endif|call ReplaceWithRegister#Operator('visual', "\&lt;lt&gt;Plug&gt;ReplaceWithRegisterVisual")&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |

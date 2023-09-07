@@ -23,11 +23,9 @@ Tailored for frontend development with React and Vue.js
 
 [http://neovimcraft.com/plugin/ecosse3/nvim](http://neovimcraft.com/plugin/ecosse3/nvim)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -191,26 +189,6 @@ Jump to:
 | **Left hand side** | <code> /l</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;:Lazy&lt;CR&gt;</code> |
 
-| **Description** | comment box |
-| :---- | :---- |
-| **Left hand side** | <code> ac</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('comment-box').lbox()&lt;CR&gt;</code> |
-
-| **Description** | terminal float |
-| :---- | :---- |
-| **Left hand side** | <code> at</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm direction=float&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> gwc</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.create_git_worktree()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> gww</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.git_worktrees()&lt;CR&gt;</code> |
-
 | **Description** | Mason |
 | :---- | :---- |
 | **Left hand side** | <code> cm</code> |
@@ -241,6 +219,11 @@ Jump to:
 | **Left hand side** | <code> gcp</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
 
+| **Description** | comment box |
+| :---- | :---- |
+| **Left hand side** | <code> ac</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('comment-box').lbox()&lt;CR&gt;</code> |
+
 | **Description** | save session |
 | :---- | :---- |
 | **Left hand side** | <code> /ss</code> |
@@ -266,39 +249,84 @@ Jump to:
 | **Left hand side** | <code> /sc</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;SessionManager load_session&lt;CR&gt;</code> |
 
+| **Description** | terminal float |
+| :---- | :---- |
+| **Left hand side** | <code> at</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm direction=float&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> gwc</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.create_git_worktree()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> gww</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.git_worktrees()&lt;CR&gt;</code> |
+
+| **Description** | multicursor |
+| :---- | :---- |
+| **Left hand side** | <code> m</code> |
+| **Right hand side** | |
+
 | **Description** | refactor |
 | :---- | :---- |
 | **Left hand side** | <code> pr</code> |
 | **Right hand side** | |
 
-| **Description** | summarize text |
+| **Description** | reset hunk |
 | :---- | :---- |
-| **Left hand side** | <code> as</code> |
+| **Left hand side** | <code> ghr</code> |
 | **Right hand side** | |
 
-| **Description** | generate git message |
+| **Description** | reset buffer |
 | :---- | :---- |
-| **Left hand side** | <code> ag</code> |
+| **Left hand side** | <code> ghR</code> |
+| **Right hand side** | |
+
+| **Description** | preview |
+| :---- | :---- |
+| **Left hand side** | <code> ghp</code> |
+| **Right hand side** | |
+
+| **Description** | diff hunk |
+| :---- | :---- |
+| **Left hand side** | <code> ghd</code> |
+| **Right hand side** | |
+
+| **Description** | undo stage |
+| :---- | :---- |
+| **Left hand side** | <code> ghu</code> |
+| **Right hand side** | |
+
+| **Description** | toggle deleted |
+| :---- | :---- |
+| **Left hand side** | <code> ght</code> |
+| **Right hand side** | |
+
+| **Description** | stage buffer |
+| :---- | :---- |
+| **Left hand side** | <code> ghS</code> |
+| **Right hand side** | |
+
+| **Description** | stage hunk |
+| :---- | :---- |
+| **Left hand side** | <code> ghs</code> |
+| **Right hand side** | |
+
+| **Description** | diff file |
+| :---- | :---- |
+| **Left hand side** | <code> gd</code> |
+| **Right hand side** | |
+
+| **Description** | status |
+| :---- | :---- |
+| **Left hand side** | <code> gs</code> |
 | **Right hand side** | |
 
 | **Description** | lazygit |
 | :---- | :---- |
 | **Left hand side** | <code> gg</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> dc</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> db</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> da</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -329,6 +357,31 @@ Jump to:
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code> dd</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> dc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> db</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> da</code> |
+| **Right hand side** | |
+
+| **Description** | summarize text |
+| :---- | :---- |
+| **Left hand side** | <code> as</code> |
+| **Right hand side** | |
+
+| **Description** | generate git message |
+| :---- | :---- |
+| **Left hand side** | <code> ag</code> |
 | **Right hand side** | |
 
 | **Description** | Sort by relative dir |
@@ -419,61 +472,6 @@ Jump to:
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code> 1</code> |
-| **Right hand side** | |
-
-| **Description** | diff hunk |
-| :---- | :---- |
-| **Left hand side** | <code> ghd</code> |
-| **Right hand side** | |
-
-| **Description** | undo stage |
-| :---- | :---- |
-| **Left hand side** | <code> ghu</code> |
-| **Right hand side** | |
-
-| **Description** | toggle deleted |
-| :---- | :---- |
-| **Left hand side** | <code> ght</code> |
-| **Right hand side** | |
-
-| **Description** | stage buffer |
-| :---- | :---- |
-| **Left hand side** | <code> ghS</code> |
-| **Right hand side** | |
-
-| **Description** | stage hunk |
-| :---- | :---- |
-| **Left hand side** | <code> ghs</code> |
-| **Right hand side** | |
-
-| **Description** | reset hunk |
-| :---- | :---- |
-| **Left hand side** | <code> ghr</code> |
-| **Right hand side** | |
-
-| **Description** | reset buffer |
-| :---- | :---- |
-| **Left hand side** | <code> ghR</code> |
-| **Right hand side** | |
-
-| **Description** | preview |
-| :---- | :---- |
-| **Left hand side** | <code> ghp</code> |
-| **Right hand side** | |
-
-| **Description** | diff file |
-| :---- | :---- |
-| **Left hand side** | <code> gd</code> |
-| **Right hand side** | |
-
-| **Description** | status |
-| :---- | :---- |
-| **Left hand side** | <code> gs</code> |
-| **Right hand side** | |
-
-| **Description** | multicursor |
-| :---- | :---- |
-| **Left hand side** | <code> m</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -631,16 +629,6 @@ Jump to:
 | **Left hand side** | <code>gs</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(Switch)</code> |
 
-| **Description** | Move to right "around" |
-| :---- | :---- |
-| **Left hand side** | <code>g]</code> |
-| **Right hand side** | |
-
-| **Description** | Move to left "around" |
-| :---- | :---- |
-| **Left hand side** | <code>g[</code> |
-| **Right hand side** | |
-
 | **Description** | Comment insert end of line |
 | :---- | :---- |
 | **Left hand side** | <code>gcA</code> |
@@ -676,6 +664,16 @@ Jump to:
 | **Left hand side** | <code>gc</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
 
+| **Description** | Move to right "around" |
+| :---- | :---- |
+| **Left hand side** | <code>g]</code> |
+| **Right hand side** | |
+
+| **Description** | Move to left "around" |
+| :---- | :---- |
+| **Left hand side** | <code>g[</code> |
+| **Right hand side** | |
+
 | **Description** | Align with preview |
 | :---- | :---- |
 | **Left hand side** | <code>gA</code> |
@@ -684,6 +682,11 @@ Jump to:
 | **Description** | Align |
 | :---- | :---- |
 | **Left hand side** | <code>ga</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Split/Join |
+| :---- | :---- |
+| **Left hand side** | <code>gJ</code> |
 | **Right hand side** | |
 
 | **Description** | LSP References |
@@ -704,11 +707,6 @@ Jump to:
 | **Description** | LSP Implementations |
 | :---- | :---- |
 | **Left hand side** | <code>gm</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Split/Join |
-| :---- | :---- |
-| **Left hand side** | <code>gJ</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -846,41 +844,6 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(Switch)</code> |
 | **Right hand side** | <code>:set opfunc=switch#OpfuncForward&lt;CR&gt;g@l</code> |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingFallbackDown</code> |
-| **Right hand side** | <code>&lt;C-X&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingFallbackUp</code> |
-| **Right hand side** | <code>&lt;C-A&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingNowUTC</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#timestamp(1,v:count)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingNowLocal</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#timestamp(0,v:count)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingDown</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#increment(-v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingUp</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#increment(v:count1)&lt;CR&gt;</code> |
-
-| **Description** | Toggle Terminal |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F12&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
-
 | **Description** | Comment toggle blockwise with count |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
@@ -910,6 +873,66 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
 | **Right hand side** | |
+
+| **Description** | Git Conflict: Previous Conflict |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-prev-conflict)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
+
+| **Description** | Git Conflict: Next Conflict |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-next-conflict)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
+
+| **Description** | Git Conflict: Choose Theirs |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-theirs)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> |
+
+| **Description** | Git Conflict: Choose None |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-none)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseNone&lt;CR&gt;</code> |
+
+| **Description** | Git Conflict: Choose Both |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-both)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
+
+| **Description** | Git Conflict: Choose Ours |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-ours)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingFallbackDown</code> |
+| **Right hand side** | <code>&lt;C-X&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingFallbackUp</code> |
+| **Right hand side** | <code>&lt;C-A&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingNowUTC</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#timestamp(1,v:count)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingNowLocal</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#timestamp(0,v:count)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingDown</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#increment(-v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingUp</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#increment(v:count1)&lt;CR&gt;</code> |
 
 | **Description** | Change a surrounding pair, putting replacements on new lines |
 | :---- | :---- |
@@ -946,40 +969,20 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal)</code> |
 | **Right hand side** | |
 
-| **Description** | Git Conflict: Previous Conflict |
+| **Description** | Toggle Terminal |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-prev-conflict)</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
-
-| **Description** | Git Conflict: Next Conflict |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-next-conflict)</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
-
-| **Description** | Git Conflict: Choose Theirs |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-theirs)</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> |
-
-| **Description** | Git Conflict: Choose None |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-none)</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseNone&lt;CR&gt;</code> |
-
-| **Description** | Git Conflict: Choose Both |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-both)</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
-
-| **Description** | Git Conflict: Choose Ours |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-ours)</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;F12&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
 | **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | multicursor down |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Down&gt;</code> |
+| **Right hand side** | |
 
 | **Description** | NvimTree |
 | :---- | :---- |
@@ -1031,11 +1034,6 @@ Jump to:
 | **Left hand side** | <code>&lt;M-1&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | multicursor down |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Down&gt;</code> |
-| **Right hand side** | |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
@@ -1059,14 +1057,14 @@ Jump to:
 | **Left hand side** | <code> ac</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('comment-box').lbox()&lt;CR&gt;</code> |
 
-| **Description** | multicursor |
-| :---- | :---- |
-| **Left hand side** | <code> m</code> |
-| **Right hand side** | |
-
 | **Description** | refactor |
 | :---- | :---- |
 | **Left hand side** | <code> pr</code> |
+| **Right hand side** | |
+
+| **Description** | multicursor |
+| :---- | :---- |
+| **Left hand side** | <code> m</code> |
 | **Right hand side** | |
 
 | **Description** | Nvim builtin |
@@ -1274,16 +1272,6 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
 | **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
 
-| **Description** | Add a surrounding pair around a visual selection, on new lines |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = true })&lt;CR&gt;</code> |
-
-| **Description** | Add a surrounding pair around a visual selection |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-visual)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = false })&lt;CR&gt;</code> |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;SpeedDatingDown</code> |
@@ -1293,6 +1281,16 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;SpeedDatingUp</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call speeddating#incrementvisual(v:count1)&lt;CR&gt;</code> |
+
+| **Description** | Add a surrounding pair around a visual selection, on new lines |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = true })&lt;CR&gt;</code> |
+
+| **Description** | Add a surrounding pair around a visual selection |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = false })&lt;CR&gt;</code> |
 
 
 ### Operator mode keymaps

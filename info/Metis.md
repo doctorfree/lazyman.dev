@@ -19,11 +19,9 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
 
 [https://github.com/metis-os/pwnvim](https://github.com/metis-os/pwnvim)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -142,7 +140,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> b</code> |
+| **Left hand side** | <code> ft</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -162,7 +160,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> ft</code> |
+| **Left hand side** | <code> b</code> |
 | **Right hand side** | |
 
 | **Description** | |

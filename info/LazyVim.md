@@ -23,11 +23,9 @@ The [LazyVim starter](https://github.com/LazyVim/starter) configuration
 
 [https://lazyvim.lazyman.dev](https://lazyvim.lazyman.dev)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -84,6 +82,11 @@ Jump to:
 
 ### Normal mode keymaps
 
+| **Description** | Replace in files (Spectre) |
+| :---- | :---- |
+| **Left hand side** | <code> sr</code> |
+| **Right hand side** | |
+
 | **Description** | Explorer NeoTree (root dir) |
 | :---- | :---- |
 | **Left hand side** | <code> e</code> |
@@ -104,29 +107,19 @@ Jump to:
 | **Left hand side** | <code> E</code> |
 | **Right hand side** | |
 
-| **Description** | Todo/Fix/Fixme (Trouble) |
+| **Description** | Delete Buffer |
 | :---- | :---- |
-| **Left hand side** | <code> xT</code> |
+| **Left hand side** | <code> bd</code> |
 | **Right hand side** | |
 
-| **Description** | Todo/Fix/Fixme |
+| **Description** | Delete Buffer (Force) |
 | :---- | :---- |
-| **Left hand side** | <code> sT</code> |
+| **Left hand side** | <code> bD</code> |
 | **Right hand side** | |
 
-| **Description** | Todo |
+| **Description** | Toggle pin |
 | :---- | :---- |
-| **Left hand side** | <code> st</code> |
-| **Right hand side** | |
-
-| **Description** | Todo (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xt</code> |
-| **Right hand side** | |
-
-| **Description** | Mason |
-| :---- | :---- |
-| **Left hand side** | <code> cm</code> |
+| **Left hand side** | <code> bp</code> |
 | **Right hand side** | |
 
 | **Description** | Delete non-pinned buffers |
@@ -134,9 +127,49 @@ Jump to:
 | **Left hand side** | <code> bP</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle pin |
+| **Description** | Dismiss all Notifications |
 | :---- | :---- |
-| **Left hand side** | <code> bp</code> |
+| **Left hand side** | <code> un</code> |
+| **Right hand side** | |
+
+| **Description** | Todo |
+| :---- | :---- |
+| **Left hand side** | <code> st</code> |
+| **Right hand side** | |
+
+| **Description** | Todo/Fix/Fixme |
+| :---- | :---- |
+| **Left hand side** | <code> sT</code> |
+| **Right hand side** | |
+
+| **Description** | Todo/Fix/Fixme (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xT</code> |
+| **Right hand side** | |
+
+| **Description** | Todo (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xt</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Last Session |
+| :---- | :---- |
+| **Left hand side** | <code> ql</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Session |
+| :---- | :---- |
+| **Left hand side** | <code> qs</code> |
+| **Right hand side** | |
+
+| **Description** | Don't Save Current Session |
+| :---- | :---- |
+| **Left hand side** | <code> qd</code> |
+| **Right hand side** | |
+
+| **Description** | Quickfix List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xQ</code> |
 | **Right hand side** | |
 
 | **Description** | Location List (Trouble) |
@@ -154,19 +187,9 @@ Jump to:
 | **Left hand side** | <code> xx</code> |
 | **Right hand side** | |
 
-| **Description** | Quickfix List (Trouble) |
+| **Description** | Mason |
 | :---- | :---- |
-| **Left hand side** | <code> xQ</code> |
-| **Right hand side** | |
-
-| **Description** | Noice All |
-| :---- | :---- |
-| **Left hand side** | <code> sna</code> |
-| **Right hand side** | |
-
-| **Description** | Noice History |
-| :---- | :---- |
-| **Left hand side** | <code> snh</code> |
+| **Left hand side** | <code> cm</code> |
 | **Right hand side** | |
 
 | **Description** | Noice Last Message |
@@ -179,34 +202,89 @@ Jump to:
 | **Left hand side** | <code> snd</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Session |
+| **Description** | Noice All |
 | :---- | :---- |
-| **Left hand side** | <code> qs</code> |
+| **Left hand side** | <code> sna</code> |
 | **Right hand side** | |
 
-| **Description** | Don't Save Current Session |
+| **Description** | Noice History |
 | :---- | :---- |
-| **Left hand side** | <code> qd</code> |
+| **Left hand side** | <code> snh</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Last Session |
+| **Description** | Goto Symbol (Workspace) |
 | :---- | :---- |
-| **Left hand side** | <code> ql</code> |
+| **Left hand side** | <code> sS</code> |
 | **Right hand side** | |
 
-| **Description** | Delete Buffer |
+| **Description** | Goto Symbol |
 | :---- | :---- |
-| **Left hand side** | <code> bd</code> |
+| **Left hand side** | <code> ss</code> |
 | **Right hand side** | |
 
-| **Description** | Delete Buffer (Force) |
+| **Description** | Colorscheme with preview |
 | :---- | :---- |
-| **Left hand side** | <code> bD</code> |
+| **Left hand side** | <code> uC</code> |
 | **Right hand side** | |
 
-| **Description** | Dismiss all Notifications |
+| **Description** | Word (cwd) |
 | :---- | :---- |
-| **Left hand side** | <code> un</code> |
+| **Left hand side** | <code> sW</code> |
+| **Right hand side** | |
+
+| **Description** | Word (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> sw</code> |
+| **Right hand side** | |
+
+| **Description** | Resume |
+| :---- | :---- |
+| **Left hand side** | <code> sR</code> |
+| **Right hand side** | |
+
+| **Description** | Options |
+| :---- | :---- |
+| **Left hand side** | <code> so</code> |
+| **Right hand side** | |
+
+| **Description** | Jump to Mark |
+| :---- | :---- |
+| **Left hand side** | <code> sm</code> |
+| **Right hand side** | |
+
+| **Description** | Man Pages |
+| :---- | :---- |
+| **Left hand side** | <code> sM</code> |
+| **Right hand side** | |
+
+| **Description** | Key Maps |
+| :---- | :---- |
+| **Left hand side** | <code> sk</code> |
+| **Right hand side** | |
+
+| **Description** | Search Highlight Groups |
+| :---- | :---- |
+| **Left hand side** | <code> sH</code> |
+| **Right hand side** | |
+
+| **Description** | Help Pages |
+| :---- | :---- |
+| **Left hand side** | <code> sh</code> |
+| **Right hand side** | |
+
+| **Description** | Grep (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> sG</code> |
+| **Right hand side** | |
+
+| **Description** | Grep (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> sg</code> |
+| **Right hand side** | |
+
+| **Description** | Workspace diagnostics |
+| :---- | :---- |
+| **Left hand side** | <code> sD</code> |
 | **Right hand side** | |
 
 | **Description** | Document diagnostics |
@@ -294,86 +372,6 @@ Jump to:
 | **Left hand side** | <code>  </code> |
 | **Right hand side** | |
 
-| **Description** | Goto Symbol (Workspace) |
-| :---- | :---- |
-| **Left hand side** | <code> sS</code> |
-| **Right hand side** | |
-
-| **Description** | Goto Symbol |
-| :---- | :---- |
-| **Left hand side** | <code> ss</code> |
-| **Right hand side** | |
-
-| **Description** | Colorscheme with preview |
-| :---- | :---- |
-| **Left hand side** | <code> uC</code> |
-| **Right hand side** | |
-
-| **Description** | Word (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> sW</code> |
-| **Right hand side** | |
-
-| **Description** | Word (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> sw</code> |
-| **Right hand side** | |
-
-| **Description** | Resume |
-| :---- | :---- |
-| **Left hand side** | <code> sR</code> |
-| **Right hand side** | |
-
-| **Description** | Options |
-| :---- | :---- |
-| **Left hand side** | <code> so</code> |
-| **Right hand side** | |
-
-| **Description** | Jump to Mark |
-| :---- | :---- |
-| **Left hand side** | <code> sm</code> |
-| **Right hand side** | |
-
-| **Description** | Man Pages |
-| :---- | :---- |
-| **Left hand side** | <code> sM</code> |
-| **Right hand side** | |
-
-| **Description** | Key Maps |
-| :---- | :---- |
-| **Left hand side** | <code> sk</code> |
-| **Right hand side** | |
-
-| **Description** | Search Highlight Groups |
-| :---- | :---- |
-| **Left hand side** | <code> sH</code> |
-| **Right hand side** | |
-
-| **Description** | Help Pages |
-| :---- | :---- |
-| **Left hand side** | <code> sh</code> |
-| **Right hand side** | |
-
-| **Description** | Grep (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> sG</code> |
-| **Right hand side** | |
-
-| **Description** | Grep (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> sg</code> |
-| **Right hand side** | |
-
-| **Description** | Workspace diagnostics |
-| :---- | :---- |
-| **Left hand side** | <code> sD</code> |
-| **Right hand side** | |
-
-| **Description** | Replace in files (Spectre) |
-| :---- | :---- |
-| **Left hand side** | <code> sr</code> |
-| **Right hand side** | |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>%</code> |
@@ -399,11 +397,6 @@ Jump to:
 | **Left hand side** | <code>[%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
 
-| **Description** | Prev Reference |
-| :---- | :---- |
-| **Left hand side** | <code>[[</code> |
-| **Right hand side** | |
-
 | **Description** | Previous todo comment |
 | :---- | :---- |
 | **Left hand side** | <code>[t</code> |
@@ -414,15 +407,15 @@ Jump to:
 | **Left hand side** | <code>[q</code> |
 | **Right hand side** | |
 
+| **Description** | Prev Reference |
+| :---- | :---- |
+| **Left hand side** | <code>[[</code> |
+| **Right hand side** | |
+
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>]%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-
-| **Description** | Next Reference |
-| :---- | :---- |
-| **Left hand side** | <code>]]</code> |
-| **Right hand side** | |
 
 | **Description** | Next todo comment |
 | :---- | :---- |
@@ -432,6 +425,11 @@ Jump to:
 | **Description** | Next trouble/quickfix item |
 | :---- | :---- |
 | **Left hand side** | <code>]q</code> |
+| **Right hand side** | |
+
+| **Description** | Next Reference |
+| :---- | :---- |
+| **Left hand side** | <code>]]</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -459,14 +457,14 @@ Jump to:
 | **Left hand side** | <code>gzn</code> |
 | **Right hand side** | |
 
+| **Description** | Find left surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gzF</code> |
+| **Right hand side** | |
+
 | **Description** | Add surrounding |
 | :---- | :---- |
 | **Left hand side** | <code>gza</code> |
-| **Right hand side** | |
-
-| **Description** | Replace surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gzr</code> |
 | **Right hand side** | |
 
 | **Description** | Highlight surrounding |
@@ -474,9 +472,9 @@ Jump to:
 | **Left hand side** | <code>gzh</code> |
 | **Right hand side** | |
 
-| **Description** | Find left surrounding |
+| **Description** | Replace surrounding |
 | :---- | :---- |
-| **Left hand side** | <code>gzF</code> |
+| **Left hand side** | <code>gzr</code> |
 | **Right hand side** | |
 
 | **Description** | Flash |

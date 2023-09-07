@@ -19,11 +19,9 @@ Minimal setup with 'mason.nvim'
 
 [https://github.com/VonHeikemen/nvim-starter/tree/xx-mason](https://github.com/VonHeikemen/nvim-starter/tree/xx-mason)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 

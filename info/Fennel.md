@@ -19,11 +19,9 @@ An opinionated configuration reminiscent of Doom-Emacs, written in Fennel
 
 [https://github.com/jhchabran/nvim-config](https://github.com/jhchabran/nvim-config)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Packer managed plugins
 

@@ -23,11 +23,9 @@ Well structured personal config based on the [KISS](https://en.wikipedia.org/wik
 
 [http://neovimcraft.com/plugin/brainfucksec/neovim-lua](http://neovimcraft.com/plugin/brainfucksec/neovim-lua)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 

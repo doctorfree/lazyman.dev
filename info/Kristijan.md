@@ -23,11 +23,9 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 
 [https://dotfyle.com/kristijanhusak/neovim-config-nvim](https://dotfyle.com/kristijanhusak/neovim-config-nvim)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -178,21 +176,6 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,hf</code> |
-| **Right hand side** | <code>:NvimTreeToggle&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,n</code> |
-| **Right hand side** | <code>:NvimTreeToggle&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,yg</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>,G</code> |
 | **Right hand side** | <code>:vert G&lt;CR&gt;</code> |
 
@@ -228,6 +211,21 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>,hf</code> |
+| **Right hand side** | <code>:NvimTreeToggle&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,n</code> |
+| **Right hand side** | <code>:NvimTreeToggle&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,yg</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>,df</code> |
 | **Right hand side** | <code>:Git push --force-with-lease&lt;CR&gt;</code> |
 
@@ -258,7 +256,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,oa</code> |
+| **Left hand side** | <code>,c</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -268,7 +266,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,c</code> |
+| **Left hand side** | <code>,oa</code> |
 | **Right hand side** | |
 
 | **Description** | |

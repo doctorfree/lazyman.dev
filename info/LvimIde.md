@@ -27,11 +27,9 @@ Not to be confused with 'LunarVim', this is a standalone Neovim configuration. M
 
 [https://www.youtube.com/@lvimtech5651](https://www.youtube.com/@lvimtech5651)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -226,6 +224,16 @@ Jump to:
 | **Left hand side** | <code> qn</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require('NeoComposer.ui').cycle_next()&lt;CR&gt;</code> |
 
+| **Description** | Mini files |
+| :---- | :---- |
+| **Left hand side** | <code> i</code> |
+| **Right hand side** | |
+
+| **Description** | FzfLua search |
+| :---- | :---- |
+| **Left hand side** | <code> s</code> |
+| **Right hand side** | |
+
 | **Description** | FzfLua files |
 | :---- | :---- |
 | **Left hand side** | <code> f</code> |
@@ -239,16 +247,6 @@ Jump to:
 | **Description** | FzfLua marks |
 | :---- | :---- |
 | **Left hand side** | <code> m</code> |
-| **Right hand side** | |
-
-| **Description** | FzfLua search |
-| :---- | :---- |
-| **Left hand side** | <code> s</code> |
-| **Right hand side** | |
-
-| **Description** | Mini files |
-| :---- | :---- |
-| **Left hand side** | <code> i</code> |
 | **Right hand side** | |
 
 | **Description** | Lvim file manager |
@@ -476,11 +474,6 @@ Jump to:
 | **Left hand side** | <code>cs</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-change)</code> |
 
-| **Description** | Delete a surrounding pair |
-| :---- | :---- |
-| **Left hand side** | <code>ds</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-delete)</code> |
-
 | **Description** | LspShowDiagnosticPrev |
 | :---- | :---- |
 | **Left hand side** | <code>dp</code> |
@@ -495,6 +488,11 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>dc</code> |
 | **Right hand side** | |
+
+| **Description** | Delete a surrounding pair |
+| :---- | :---- |
+| **Left hand side** | <code>ds</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-delete)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -571,10 +569,50 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
 
-| **Description** | Navbuddy |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;v</code> |
+| **Left hand side** | <code>&lt;Nul&gt;</code> |
+| **Right hand side** | <code>:CtrlSpace&lt;CR&gt;</code> |
+
+| **Description** | GitSignsBlameLine |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;m</code> |
 | **Right hand side** | |
+
+| **Description** | GitSignsToggleLineBlame |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;b</code> |
+| **Right hand side** | |
+
+| **Description** | GitSignsPreviewHunk |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-;&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | GitSignsPrevHunk |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-[&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | GitSignsNextHunk |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-]&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | DAPLocal |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;&lt;C-L&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(fzf-normal)</code> |
+| **Right hand side** | <code></code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(fzf-insert)</code> |
+| **Right hand side** | <code>i</code> |
 
 | **Description** | Change a surrounding pair, putting replacements on new lines |
 | :---- | :---- |
@@ -631,11 +669,6 @@ Jump to:
 | **Left hand side** | <code>&lt;F1&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | LspDiagnostic QF |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;&lt;C-H&gt;</code> |
-| **Right hand side** | |
-
 | **Description** | Ranger |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;M-f&gt;</code> |
@@ -658,53 +691,8 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(fzf-normal)</code> |
-| **Right hand side** | <code></code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(fzf-insert)</code> |
-| **Right hand side** | <code>i</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Nul&gt;</code> |
-| **Right hand side** | <code>:CtrlSpace&lt;CR&gt;</code> |
-
-| **Description** | GitSignsBlameLine |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;m</code> |
-| **Right hand side** | |
-
-| **Description** | GitSignsToggleLineBlame |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;b</code> |
-| **Right hand side** | |
-
-| **Description** | GitSignsPreviewHunk |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-;&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | GitSignsPrevHunk |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-[&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | GitSignsNextHunk |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-]&gt;</code> |
-| **Right hand side** | |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
 | **Description** | LvimLinguisticsTOGGLESpelling |
 | :---- | :---- |
@@ -716,54 +704,24 @@ Jump to:
 | **Left hand side** | <code>&lt;C-C&gt;l</code> |
 | **Right hand side** | |
 
+| **Description** | Navbuddy |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;v</code> |
+| **Right hand side** | |
+
+| **Description** | LspDiagnostic QF |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;&lt;C-H&gt;</code> |
+| **Right hand side** | |
+
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-
-| **Description** | DAPLocal |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;&lt;C-L&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
 | **Right hand side** | |
 
-| **Description** | Lvim forgit |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;M-t&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Neogit |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-n&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | LvimHelper |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F11&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | LvimHelper |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;h</code> |
-| **Right hand side** | |
-
-| **Description** | WinShift |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;w</code> |
-| **Right hand side** | |
-
-| **Description** | Undotree |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F5&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | NeoZoom |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;z</code> |
-| **Right hand side** | |
-
-| **Description** | Trouble |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-C&gt;&lt;C-V&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
 | **Right hand side** | |
 
 | **Description** | NeoTree git status |
@@ -781,14 +739,19 @@ Jump to:
 | **Left hand side** | <code>&lt;C-C&gt;&lt;C-F&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | Telescope live grep |
+| **Description** | Lvim forgit |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;M-.&gt;</code> |
+| **Left hand side** | <code>&lt;M-t&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | Telescope find files |
+| **Description** | Trouble |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;M-,&gt;</code> |
+| **Left hand side** | <code>&lt;C-C&gt;&lt;C-V&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | NeoZoom |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;z</code> |
 | **Right hand side** | |
 
 | **Description** | Telescope tmux session |
@@ -804,6 +767,41 @@ Jump to:
 | **Description** | Telescope file browser |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;M-/&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Telescope live grep |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-.&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Telescope find files |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-,&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | LvimHelper |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F11&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | LvimHelper |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;h</code> |
+| **Right hand side** | |
+
+| **Description** | Undotree |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F5&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Neogit |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-n&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | WinShift |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-C&gt;w</code> |
 | **Right hand side** | |
 
 | **Description** | Inspect |

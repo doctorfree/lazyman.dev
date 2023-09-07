@@ -19,11 +19,9 @@ Example lua configuration showing one way to setup LSP servers without plugins
 
 [https://github.com/VonHeikemen/nvim-starter/tree/xx-basic-lsp](https://github.com/VonHeikemen/nvim-starter/tree/xx-basic-lsp)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 

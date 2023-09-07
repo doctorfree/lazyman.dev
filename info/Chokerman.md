@@ -23,11 +23,9 @@ Personal Neovim configuration of Github user justchokingaround
 
 [https://dotfyle.com/justchokingaround/dotfiles-coding-neovim-nvim](https://dotfyle.com/justchokingaround/dotfiles-coding-neovim-nvim)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -119,6 +117,11 @@ Jump to:
 
 ### Normal mode keymaps
 
+| **Description** | Diff View |
+| :---- | :---- |
+| **Left hand side** | <code> gv</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;DiffviewOpen&lt;CR&gt;</code> |
+
 | **Description** | Commit history |
 | :---- | :---- |
 | **Left hand side** | <code> gH</code> |
@@ -128,11 +131,6 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code> gh</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;DiffviewFileHistory %&lt;CR&gt;</code> |
-
-| **Description** | Diff View |
-| :---- | :---- |
-| **Left hand side** | <code> gv</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;DiffviewOpen&lt;CR&gt;</code> |
 
 | **Description** | [Hydra] UI Options |
 | :---- | :---- |
@@ -159,19 +157,49 @@ Jump to:
 | **Left hand side** | <code> r</code> |
 | **Right hand side** | |
 
-| **Description** | Run File |
+| **Description** | Toggle pin |
 | :---- | :---- |
-| **Left hand side** | <code> tt</code> |
+| **Left hand side** | <code> bp</code> |
 | **Right hand side** | |
 
-| **Description** | Stop |
+| **Description** | Delete non-pinned buffers |
 | :---- | :---- |
-| **Left hand side** | <code> tS</code> |
+| **Left hand side** | <code> bP</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle Output Panel |
+| **Description** | Restore Session |
 | :---- | :---- |
-| **Left hand side** | <code> tO</code> |
+| **Left hand side** | <code> qs</code> |
+| **Right hand side** | |
+
+| **Description** | Don't Save Current Session |
+| :---- | :---- |
+| **Left hand side** | <code> qd</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Last Session |
+| :---- | :---- |
+| **Left hand side** | <code> ql</code> |
+| **Right hand side** | |
+
+| **Description** | Edgy Toggle |
+| :---- | :---- |
+| **Left hand side** | <code> ue</code> |
+| **Right hand side** | |
+
+| **Description** | Edgy Select Window |
+| :---- | :---- |
+| **Left hand side** | <code> uE</code> |
+| **Right hand side** | |
+
+| **Description** | Symbols Outline |
+| :---- | :---- |
+| **Left hand side** | <code> cs</code> |
+| **Right hand side** | |
+
+| **Description** | LSP Len Toggle |
+| :---- | :---- |
+| **Left hand side** | <code> uL</code> |
 | **Right hand side** | |
 
 | **Description** | Show Output |
@@ -194,79 +222,24 @@ Jump to:
 | **Left hand side** | <code> tT</code> |
 | **Right hand side** | |
 
-| **Description** | Replace in files (Spectre) |
+| **Description** | Run File |
 | :---- | :---- |
-| **Left hand side** | <code> sr</code> |
+| **Left hand side** | <code> tt</code> |
 | **Right hand side** | |
 
-| **Description** | Delete non-pinned buffers |
+| **Description** | Stop |
 | :---- | :---- |
-| **Left hand side** | <code> bP</code> |
+| **Left hand side** | <code> tS</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle pin |
+| **Description** | Toggle Output Panel |
 | :---- | :---- |
-| **Left hand side** | <code> bp</code> |
+| **Left hand side** | <code> tO</code> |
 | **Right hand side** | |
 
-| **Description** | Symbols Outline |
+| **Description** | Mason |
 | :---- | :---- |
-| **Left hand side** | <code> cs</code> |
-| **Right hand side** | |
-
-| **Description** | LSP Len Toggle |
-| :---- | :---- |
-| **Left hand side** | <code> uL</code> |
-| **Right hand side** | |
-
-| **Description** | org return |
-| :---- | :---- |
-| **Left hand side** | <code> or</code> |
-| **Right hand side** | |
-
-| **Description** | org index |
-| :---- | :---- |
-| **Left hand side** | <code> oi</code> |
-| **Right hand side** | |
-
-| **Description** | Todo |
-| :---- | :---- |
-| **Left hand side** | <code> st</code> |
-| **Right hand side** | |
-
-| **Description** | Todo/Fix/Fixme (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xT</code> |
-| **Right hand side** | |
-
-| **Description** | Todo (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xt</code> |
-| **Right hand side** | |
-
-| **Description** | Todo/Fix/Fixme |
-| :---- | :---- |
-| **Left hand side** | <code> sT</code> |
-| **Right hand side** | |
-
-| **Description** | Workspace Diagnostics (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xX</code> |
-| **Right hand side** | |
-
-| **Description** | Document Diagnostics (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xx</code> |
-| **Right hand side** | |
-
-| **Description** | Quickfix List (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xQ</code> |
-| **Right hand side** | |
-
-| **Description** | Location List (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xL</code> |
+| **Left hand side** | <code> cm</code> |
 | **Right hand side** | |
 
 | **Description** | Projects |
@@ -274,114 +247,34 @@ Jump to:
 | **Left hand side** | <code> fp</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Last Session |
+| **Description** | Dismiss All |
 | :---- | :---- |
-| **Left hand side** | <code> ql</code> |
+| **Left hand side** | <code> snd</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Session |
+| **Description** | Noice All |
 | :---- | :---- |
-| **Left hand side** | <code> qs</code> |
+| **Left hand side** | <code> sna</code> |
 | **Right hand side** | |
 
-| **Description** | Don't Save Current Session |
+| **Description** | Noice History |
 | :---- | :---- |
-| **Left hand side** | <code> qd</code> |
+| **Left hand side** | <code> snh</code> |
 | **Right hand side** | |
 
-| **Description** | Edgy Select Window |
+| **Description** | Noice Last Message |
 | :---- | :---- |
-| **Left hand side** | <code> uE</code> |
+| **Left hand side** | <code> snl</code> |
 | **Right hand side** | |
 
-| **Description** | Edgy Toggle |
+| **Description** | org index |
 | :---- | :---- |
-| **Left hand side** | <code> ue</code> |
+| **Left hand side** | <code> oi</code> |
 | **Right hand side** | |
 
-| **Description** | Word (root dir) |
+| **Description** | org return |
 | :---- | :---- |
-| **Left hand side** | <code> sw</code> |
-| **Right hand side** | |
-
-| **Description** | Goto Symbol (Workspace) |
-| :---- | :---- |
-| **Left hand side** | <code> sS</code> |
-| **Right hand side** | |
-
-| **Description** | Goto Symbol |
-| :---- | :---- |
-| **Left hand side** | <code> ss</code> |
-| **Right hand side** | |
-
-| **Description** | Colorscheme with preview |
-| :---- | :---- |
-| **Left hand side** | <code> uC</code> |
-| **Right hand side** | |
-
-| **Description** | Word (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> sW</code> |
-| **Right hand side** | |
-
-| **Description** | Find Files (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code>  </code> |
-| **Right hand side** | |
-
-| **Description** | Resume |
-| :---- | :---- |
-| **Left hand side** | <code> sR</code> |
-| **Right hand side** | |
-
-| **Description** | Options |
-| :---- | :---- |
-| **Left hand side** | <code> so</code> |
-| **Right hand side** | |
-
-| **Description** | Jump to Mark |
-| :---- | :---- |
-| **Left hand side** | <code> sm</code> |
-| **Right hand side** | |
-
-| **Description** | Man Pages |
-| :---- | :---- |
-| **Left hand side** | <code> sM</code> |
-| **Right hand side** | |
-
-| **Description** | Key Maps |
-| :---- | :---- |
-| **Left hand side** | <code> sk</code> |
-| **Right hand side** | |
-
-| **Description** | Search Highlight Groups |
-| :---- | :---- |
-| **Left hand side** | <code> sH</code> |
-| **Right hand side** | |
-
-| **Description** | Help Pages |
-| :---- | :---- |
-| **Left hand side** | <code> sh</code> |
-| **Right hand side** | |
-
-| **Description** | Grep (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code> sG</code> |
-| **Right hand side** | |
-
-| **Description** | Grep (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code> sg</code> |
-| **Right hand side** | |
-
-| **Description** | Workspace diagnostics |
-| :---- | :---- |
-| **Left hand side** | <code> sD</code> |
-| **Right hand side** | |
-
-| **Description** | Document diagnostics |
-| :---- | :---- |
-| **Left hand side** | <code> sd</code> |
+| **Left hand side** | <code> or</code> |
 | **Right hand side** | |
 
 | **Description** | Commands |
@@ -459,9 +352,94 @@ Jump to:
 | **Left hand side** | <code> ,</code> |
 | **Right hand side** | |
 
-| **Description** | Explorer NeoTree (cwd) |
+| **Description** | Find Files (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code> fE</code> |
+| **Left hand side** | <code>  </code> |
+| **Right hand side** | |
+
+| **Description** | Goto Symbol (Workspace) |
+| :---- | :---- |
+| **Left hand side** | <code> sS</code> |
+| **Right hand side** | |
+
+| **Description** | Goto Symbol |
+| :---- | :---- |
+| **Left hand side** | <code> ss</code> |
+| **Right hand side** | |
+
+| **Description** | Colorscheme with preview |
+| :---- | :---- |
+| **Left hand side** | <code> uC</code> |
+| **Right hand side** | |
+
+| **Description** | Word (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> sW</code> |
+| **Right hand side** | |
+
+| **Description** | Word (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> sw</code> |
+| **Right hand side** | |
+
+| **Description** | Resume |
+| :---- | :---- |
+| **Left hand side** | <code> sR</code> |
+| **Right hand side** | |
+
+| **Description** | Options |
+| :---- | :---- |
+| **Left hand side** | <code> so</code> |
+| **Right hand side** | |
+
+| **Description** | Jump to Mark |
+| :---- | :---- |
+| **Left hand side** | <code> sm</code> |
+| **Right hand side** | |
+
+| **Description** | Man Pages |
+| :---- | :---- |
+| **Left hand side** | <code> sM</code> |
+| **Right hand side** | |
+
+| **Description** | Key Maps |
+| :---- | :---- |
+| **Left hand side** | <code> sk</code> |
+| **Right hand side** | |
+
+| **Description** | Search Highlight Groups |
+| :---- | :---- |
+| **Left hand side** | <code> sH</code> |
+| **Right hand side** | |
+
+| **Description** | Help Pages |
+| :---- | :---- |
+| **Left hand side** | <code> sh</code> |
+| **Right hand side** | |
+
+| **Description** | Grep (cwd) |
+| :---- | :---- |
+| **Left hand side** | <code> sG</code> |
+| **Right hand side** | |
+
+| **Description** | Grep (root dir) |
+| :---- | :---- |
+| **Left hand side** | <code> sg</code> |
+| **Right hand side** | |
+
+| **Description** | Workspace diagnostics |
+| :---- | :---- |
+| **Left hand side** | <code> sD</code> |
+| **Right hand side** | |
+
+| **Description** | Document diagnostics |
+| :---- | :---- |
+| **Left hand side** | <code> sd</code> |
+| **Right hand side** | |
+
+| **Description** | Replace in files (Spectre) |
+| :---- | :---- |
+| **Left hand side** | <code> sr</code> |
 | **Right hand side** | |
 
 | **Description** | Explorer NeoTree (root dir) |
@@ -479,29 +457,49 @@ Jump to:
 | **Left hand side** | <code> e</code> |
 | **Right hand side** | |
 
-| **Description** | Mason |
+| **Description** | Explorer NeoTree (cwd) |
 | :---- | :---- |
-| **Left hand side** | <code> cm</code> |
+| **Left hand side** | <code> fE</code> |
 | **Right hand side** | |
 
-| **Description** | Dismiss All |
+| **Description** | Todo/Fix/Fixme |
 | :---- | :---- |
-| **Left hand side** | <code> snd</code> |
+| **Left hand side** | <code> sT</code> |
 | **Right hand side** | |
 
-| **Description** | Noice All |
+| **Description** | Todo |
 | :---- | :---- |
-| **Left hand side** | <code> sna</code> |
+| **Left hand side** | <code> st</code> |
 | **Right hand side** | |
 
-| **Description** | Noice History |
+| **Description** | Todo/Fix/Fixme (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> snh</code> |
+| **Left hand side** | <code> xT</code> |
 | **Right hand side** | |
 
-| **Description** | Noice Last Message |
+| **Description** | Todo (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> snl</code> |
+| **Left hand side** | <code> xt</code> |
+| **Right hand side** | |
+
+| **Description** | Quickfix List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xQ</code> |
+| **Right hand side** | |
+
+| **Description** | Location List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xL</code> |
+| **Right hand side** | |
+
+| **Description** | Workspace Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xX</code> |
+| **Right hand side** | |
+
+| **Description** | Document Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xx</code> |
 | **Right hand side** | |
 
 | **Description** |  Insert Macro Breakpoint. |
@@ -589,9 +587,9 @@ Jump to:
 | **Left hand side** | <code>gh</code> |
 | **Right hand side** | |
 
-| **Description** | Find right surrounding |
+| **Description** | Add surrounding |
 | :---- | :---- |
-| **Left hand side** | <code>gzf</code> |
+| **Left hand side** | <code>gza</code> |
 | **Right hand side** | |
 
 | **Description** | Delete surrounding |
@@ -609,9 +607,9 @@ Jump to:
 | **Left hand side** | <code>gzr</code> |
 | **Right hand side** | |
 
-| **Description** | Add surrounding |
+| **Description** | Find right surrounding |
 | :---- | :---- |
-| **Left hand side** | <code>gza</code> |
+| **Left hand side** | <code>gzf</code> |
 | **Right hand side** | |
 
 | **Description** | Highlight surrounding |
@@ -639,6 +637,11 @@ Jump to:
 | **Left hand side** | <code>yq</code> |
 | **Right hand side** | |
 
+| **Description** | ←/→ |
+| :---- | :---- |
+| **Left hand side** | <code>zl</code> |
+| **Right hand side** | |
+
 | **Description** | half screen ←/→ |
 | :---- | :---- |
 | **Left hand side** | <code>zL</code> |
@@ -647,11 +650,6 @@ Jump to:
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>zh</code> |
-| **Right hand side** | |
-
-| **Description** | ←/→ |
-| :---- | :---- |
-| **Left hand side** | <code>zl</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -714,6 +712,11 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(git-conflict-ours)</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
 
+| **Description** |  Switch Macro Slot |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Right hand side** | |
+
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(accelerated_jk_gk)</code> |
@@ -734,9 +737,9 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(accelerated_jk_gj)</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require'accelerated-jk'.move_to('gj')&lt;CR&gt;</code> |
 
-| **Description** |  Switch Macro Slot |
+| **Description** | cursor line |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)c</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -749,24 +752,9 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)s</code> |
 | **Right hand side** | |
 
-| **Description** | show invisible |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)i</code> |
-| **Right hand side** | |
-
-| **Description** | zen mode |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)z</code> |
-| **Right hand side** | |
-
 | **Description** | relativenumber |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)r</code> |
-| **Right hand side** | |
-
-| **Description** | wrap |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)w</code> |
 | **Right hand side** | |
 
 | **Description** | virtualedit |
@@ -774,14 +762,24 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)v</code> |
 | **Right hand side** | |
 
-| **Description** | cursor line |
+| **Description** | show invisible |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)c</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)i</code> |
 | **Right hand side** | |
 
 | **Description** | number |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)n</code> |
+| **Right hand side** | |
+
+| **Description** | zen mode |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)z</code> |
+| **Right hand side** | |
+
+| **Description** | wrap |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)w</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -796,7 +794,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)&lt;Esc&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -806,22 +804,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)L</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)p</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)&lt;Esc&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)h</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)D</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -831,7 +814,12 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)D</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)h</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)p</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -841,22 +829,17 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)L</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)&lt;CR&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)t</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)a</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)&lt;Esc&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -866,17 +849,17 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)r</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)P</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)o</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)&lt;Esc&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)r</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -891,72 +874,22 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)a</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)t</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)o</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)r</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;CR&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)k</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)f</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)p</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)/</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait);</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;Esc&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)g</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)h</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)?</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)o</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)c</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -966,12 +899,107 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait);</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)f</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)r</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)c</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)h</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)k</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)?</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;CR&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)p</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)g</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;Esc&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)/</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)o</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)w</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)m</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)&lt;Esc&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)d</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)D</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)r</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)h</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)g</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -986,37 +1014,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)m</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)p</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)r</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)&lt;Esc&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)g</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)h</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)D</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1026,12 +1024,22 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)d</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)w</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)</code> |
+| **Right hand side** | |
+
+| **Description** | ←/→ |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra1_wait)l</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra1_wait)&lt;Esc&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | half screen ←/→ |
@@ -1042,16 +1050,6 @@ Jump to:
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra1_wait)h</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra1_wait)&lt;Esc&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | ←/→ |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra1_wait)l</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1069,14 +1067,14 @@ Jump to:
 | **Left hand side** | <code>&lt;C-Space&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | Scroll forward |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-F&gt;</code> |
-| **Right hand side** | |
-
 | **Description** | Scroll backward |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Scroll forward |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-F&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Nvim builtin |
@@ -1212,29 +1210,9 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
-| **Description** | cursor line |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)c</code> |
-| **Right hand side** | |
-
 | **Description** | number |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)n</code> |
-| **Right hand side** | |
-
-| **Description** | virtualedit |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)v</code> |
-| **Right hand side** | |
-
-| **Description** | zen mode |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)z</code> |
-| **Right hand side** | |
-
-| **Description** | show invisible |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)i</code> |
 | **Right hand side** | |
 
 | **Description** | relativenumber |
@@ -1247,14 +1225,34 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)s</code> |
 | **Right hand side** | |
 
+| **Description** | show invisible |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)i</code> |
+| **Right hand side** | |
+
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)&lt;Esc&gt;</code> |
 | **Right hand side** | |
 
+| **Description** | virtualedit |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)v</code> |
+| **Right hand side** | |
+
 | **Description** | wrap |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)w</code> |
+| **Right hand side** | |
+
+| **Description** | zen mode |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)z</code> |
+| **Right hand side** | |
+
+| **Description** | cursor line |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra6_wait)c</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1264,22 +1262,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)D</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)s</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)&lt;CR&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)&lt;Esc&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)u</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1289,7 +1272,12 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)c</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)&lt;CR&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)s</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1299,17 +1287,27 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)h</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)u</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)&lt;Esc&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)p</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)D</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)h</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra5_wait)c</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1324,21 +1322,6 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)o</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)p</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)&lt;Esc&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)r</code> |
 | **Right hand side** | |
 
@@ -1349,7 +1332,22 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)o</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)a</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)t</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)&lt;Esc&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1359,7 +1357,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)a</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra4_wait)p</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1374,57 +1372,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)o</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)p</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait);</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)c</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;CR&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)?</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)r</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)f</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)h</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;Esc&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)/</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1434,7 +1382,57 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)?</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;CR&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)r</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)o</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)/</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)&lt;Esc&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait);</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)g</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)p</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)h</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra3_wait)f</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1444,22 +1442,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)D</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)c</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)h</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)g</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)w</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1469,12 +1452,12 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)&lt;Esc&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)d</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)r</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)&lt;Esc&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1484,7 +1467,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)d</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)r</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1494,12 +1477,27 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)g</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)p</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)w</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)D</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)h</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Hydra2_wait)c</code> |
 | **Right hand side** | |
 
 | **Description** | |

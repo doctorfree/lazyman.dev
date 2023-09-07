@@ -23,11 +23,9 @@ One of the inspirations for Lazyman. Excellent support for Python, Golang, Rust,
 
 [https://dotfyle.com/Allaman/nvim](https://dotfyle.com/Allaman/nvim)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -231,29 +229,49 @@ Jump to:
 | **Left hand side** | <code> bD</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;%bd&#124;e#|bd#&lt;CR&gt;</code> |
 
-| **Description** | Toggle Filetree |
+| **Description** | Toggle search and replace |
 | :---- | :---- |
-| **Left hand side** | <code> fp</code> |
+| **Left hand side** | <code> Rr</code> |
 | **Right hand side** | |
 
-| **Description** | Open file |
+| **Description** | Search on current file |
 | :---- | :---- |
-| **Left hand side** | <code> ff</code> |
+| **Left hand side** | <code> Rf</code> |
 | **Right hand side** | |
 
-| **Description** | Open file (ignore git) |
+| **Description** | Search current word |
 | :---- | :---- |
-| **Left hand side** | <code> fF</code> |
+| **Left hand side** | <code> Rw</code> |
 | **Right hand side** | |
 
-| **Description** | Recent files |
+| **Description** | Toggle SymbolsOutline |
 | :---- | :---- |
-| **Left hand side** | <code> fr</code> |
+| **Left hand side** | <code> tO</code> |
 | **Right hand side** | |
 
-| **Description** | Run make |
+| **Description** | Headings |
 | :---- | :---- |
-| **Left hand side** | <code> mm</code> |
+| **Left hand side** | <code> sh</code> |
+| **Right hand side** | |
+
+| **Description** | Help |
+| :---- | :---- |
+| **Left hand side** | <code> s?</code> |
+| **Right hand side** | |
+
+| **Description** | Strings |
+| :---- | :---- |
+| **Left hand side** | <code> st</code> |
+| **Right hand side** | |
+
+| **Description** | Commands |
+| :---- | :---- |
+| **Left hand side** | <code> sc</code> |
+| **Right hand side** | |
+
+| **Description** | Bufferlist |
+| :---- | :---- |
+| **Left hand side** | <code> bb</code> |
 | **Right hand side** | |
 
 | **Description** | Telescope |
@@ -261,9 +279,44 @@ Jump to:
 | **Left hand side** | <code> mt</code> |
 | **Right hand side** | |
 
-| **Description** | Bufferlist |
+| **Description** | Run make |
 | :---- | :---- |
-| **Left hand side** | <code> bb</code> |
+| **Left hand side** | <code> mm</code> |
+| **Right hand side** | |
+
+| **Description** | Recent files |
+| :---- | :---- |
+| **Left hand side** | <code> fr</code> |
+| **Right hand side** | |
+
+| **Description** | Open file (ignore git) |
+| :---- | :---- |
+| **Left hand side** | <code> fF</code> |
+| **Right hand side** | |
+
+| **Description** | Open file |
+| :---- | :---- |
+| **Left hand side** | <code> ff</code> |
+| **Right hand side** | |
+
+| **Description** | Zoxide |
+| :---- | :---- |
+| **Left hand side** | <code> fz</code> |
+| **Right hand side** | |
+
+| **Description** | Filebrowser |
+| :---- | :---- |
+| **Left hand side** | <code> fb</code> |
+| **Right hand side** | |
+
+| **Description** | Commits |
+| :---- | :---- |
+| **Left hand side** | <code> gm</code> |
+| **Right hand side** | |
+
+| **Description** | Status |
+| :---- | :---- |
+| **Left hand side** | <code> gg</code> |
 | **Right hand side** | |
 
 | **Description** | Branches |
@@ -316,69 +369,14 @@ Jump to:
 | **Left hand side** | <code> sk</code> |
 | **Right hand side** | |
 
-| **Description** | Headings |
-| :---- | :---- |
-| **Left hand side** | <code> sh</code> |
-| **Right hand side** | |
-
-| **Description** | Help |
-| :---- | :---- |
-| **Left hand side** | <code> s?</code> |
-| **Right hand side** | |
-
-| **Description** | Strings |
-| :---- | :---- |
-| **Left hand side** | <code> st</code> |
-| **Right hand side** | |
-
-| **Description** | Commands |
-| :---- | :---- |
-| **Left hand side** | <code> sc</code> |
-| **Right hand side** | |
-
-| **Description** | Zoxide |
-| :---- | :---- |
-| **Left hand side** | <code> fz</code> |
-| **Right hand side** | |
-
-| **Description** | Filebrowser |
-| :---- | :---- |
-| **Left hand side** | <code> fb</code> |
-| **Right hand side** | |
-
-| **Description** | Commits |
-| :---- | :---- |
-| **Left hand side** | <code> gm</code> |
-| **Right hand side** | |
-
-| **Description** | Status |
-| :---- | :---- |
-| **Left hand side** | <code> gg</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle SymbolsOutline |
-| :---- | :---- |
-| **Left hand side** | <code> tO</code> |
-| **Right hand side** | |
-
 | **Description** | Advanced Git Search |
 | :---- | :---- |
 | **Left hand side** | <code> ga</code> |
 | **Right hand side** | |
 
-| **Description** | Search current word |
+| **Description** | Toggle Filetree |
 | :---- | :---- |
-| **Left hand side** | <code> Rw</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle search and replace |
-| :---- | :---- |
-| **Left hand side** | <code> Rr</code> |
-| **Right hand side** | |
-
-| **Description** | Search on current file |
-| :---- | :---- |
-| **Left hand side** | <code> Rf</code> |
+| **Left hand side** | <code> fp</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -513,18 +511,18 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-J&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').down()&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-K&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').up()&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;fugitive:</code> |
+| **Right hand side** | <code></code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-H&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').left()&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
 
 | **Description** | Git Conflict: Previous Conflict |
 | :---- | :---- |
@@ -563,18 +561,18 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').down()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;fugitive:</code> |
-| **Right hand side** | <code></code> |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').up()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;fugitive:y&lt;C-G&gt;</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call setreg(v:register, fugitive#Object(@%))&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('Navigator').left()&lt;CR&gt;</code> |
 
 | **Description** | Search in buffer |
 | :---- | :---- |

@@ -23,11 +23,9 @@ An example [AstroNvim community](https://github.com/AstroNvim/astrocommunity) pl
 
 [https://astronvim.lazyman.dev](https://astronvim.lazyman.dev)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -132,14 +130,19 @@ Jump to:
 
 ### Normal mode keymaps
 
-| **Description** | Toggle statusline |
+| **Description** | Git commits (current file) |
 | :---- | :---- |
-| **Left hand side** | <code> ul</code> |
+| **Left hand side** | <code> gC</code> |
 | **Right hand side** | |
 
-| **Description** | Debugger Hover |
+| **Description** | Change line numbering |
 | :---- | :---- |
-| **Left hand side** | <code> dh</code> |
+| **Left hand side** | <code> un</code> |
+| **Right hand side** | |
+
+| **Description** | Change indent setting |
+| :---- | :---- |
+| **Left hand side** | <code> ui</code> |
 | **Right hand side** | |
 
 | **Description** | Run To Cursor |
@@ -147,64 +150,74 @@ Jump to:
 | **Left hand side** | <code> ds</code> |
 | **Right hand side** | |
 
+| **Description** | Stage Git hunk |
+| :---- | :---- |
+| **Left hand side** | <code> gs</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Breakpoint (F9) |
+| :---- | :---- |
+| **Left hand side** | <code> db</code> |
+| **Right hand side** | |
+
+| **Description** | Terminate Session (S-F5) |
+| :---- | :---- |
+| **Left hand side** | <code> dQ</code> |
+| **Right hand side** | |
+
+| **Description** | Clear Breakpoints |
+| :---- | :---- |
+| **Left hand side** | <code> dB</code> |
+| **Right hand side** | |
+
 | **Description** | Toggle REPL |
 | :---- | :---- |
 | **Left hand side** | <code> dR</code> |
 | **Right hand side** | |
 
-| **Description** | Restart (C-F5) |
+| **Description** | Start/Continue (F5) |
 | :---- | :---- |
-| **Left hand side** | <code> dr</code> |
+| **Left hand side** | <code> dc</code> |
 | **Right hand side** | |
 
-| **Description** | Quit |
+| **Description** | Conditional Breakpoint (S-F9) |
 | :---- | :---- |
-| **Left hand side** | <code> q</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;confirm q&lt;CR&gt;</code> |
-
-| **Description** | Change line numbering |
-| :---- | :---- |
-| **Left hand side** | <code> un</code> |
+| **Left hand side** | <code> dC</code> |
 | **Right hand side** | |
 
-| **Description** | New File |
+| **Description** | Evaluate Input |
 | :---- | :---- |
-| **Left hand side** | <code> n</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;enew&lt;CR&gt;</code> |
-
-| **Description** | Toggle spellcheck |
-| :---- | :---- |
-| **Left hand side** | <code> us</code> |
+| **Left hand side** | <code> dE</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle wrap |
+| **Description** | Step Into (F11) |
 | :---- | :---- |
-| **Left hand side** | <code> uw</code> |
+| **Left hand side** | <code> di</code> |
 | **Right hand side** | |
 
-| **Description** | Find man |
+| **Description** | Step Over (F10) |
 | :---- | :---- |
-| **Left hand side** | <code> fm</code> |
+| **Left hand side** | <code> do</code> |
 | **Right hand side** | |
 
-| **Description** | Pick to close |
+| **Description** | Step Out (S-F11) |
 | :---- | :---- |
-| **Left hand side** | <code> bD</code> |
+| **Left hand side** | <code> dO</code> |
 | **Right hand side** | |
 
-| **Description** | Plugins Install |
+| **Description** | Toggle signcolumn |
 | :---- | :---- |
-| **Left hand side** | <code> pi</code> |
+| **Left hand side** | <code> ug</code> |
 | **Right hand side** | |
 
-| **Description** | Plugins Status |
+| **Description** | Toggle statusline |
 | :---- | :---- |
-| **Left hand side** | <code> ps</code> |
+| **Left hand side** | <code> ul</code> |
 | **Right hand side** | |
 
-| **Description** | Plugins Sync |
+| **Description** | Symbols outline |
 | :---- | :---- |
-| **Left hand side** | <code> pS</code> |
+| **Left hand side** | <code> lS</code> |
 | **Right hand side** | |
 
 | **Description** | Plugins Check Updates |
@@ -212,15 +225,50 @@ Jump to:
 | **Left hand side** | <code> pu</code> |
 | **Right hand side** | |
 
+| **Description** | Plugins Install |
+| :---- | :---- |
+| **Left hand side** | <code> pi</code> |
+| **Right hand side** | |
+
+| **Description** | Find word under cursor |
+| :---- | :---- |
+| **Left hand side** | <code> fc</code> |
+| **Right hand side** | |
+
+| **Description** | Plugins Status |
+| :---- | :---- |
+| **Left hand side** | <code> ps</code> |
+| **Right hand side** | |
+
+| **Description** | Find keymaps |
+| :---- | :---- |
+| **Left hand side** | <code> fk</code> |
+| **Right hand side** | |
+
+| **Description** | Plugins Sync |
+| :---- | :---- |
+| **Left hand side** | <code> pS</code> |
+| **Right hand side** | |
+
 | **Description** | Plugins Update |
 | :---- | :---- |
 | **Left hand side** | <code> pU</code> |
 | **Right hand side** | |
 
+| **Description** | New tab |
+| :---- | :---- |
+| **Left hand side** | <code> bn</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;tabnew&lt;CR&gt;</code> |
+
 | **Description** | Update Plugins and Mason Packages |
 | :---- | :---- |
 | **Left hand side** | <code> pa</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;AstroUpdatePackages&lt;CR&gt;</code> |
+
+| **Description** | Pick to close |
+| :---- | :---- |
+| **Left hand side** | <code> bD</code> |
+| **Right hand side** | |
 
 | **Description** | AstroNvim Update |
 | :---- | :---- |
@@ -337,19 +385,9 @@ Jump to:
 | **Left hand side** | <code> gL</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle Breakpoint (F9) |
-| :---- | :---- |
-| **Left hand side** | <code> db</code> |
-| **Right hand side** | |
-
 | **Description** | Preview Git hunk |
 | :---- | :---- |
 | **Left hand side** | <code> gp</code> |
-| **Right hand side** | |
-
-| **Description** | Clear Breakpoints |
-| :---- | :---- |
-| **Left hand side** | <code> dB</code> |
 | **Right hand side** | |
 
 | **Description** | Reset Git hunk |
@@ -357,54 +395,29 @@ Jump to:
 | **Left hand side** | <code> gh</code> |
 | **Right hand side** | |
 
-| **Description** | Start/Continue (F5) |
-| :---- | :---- |
-| **Left hand side** | <code> dc</code> |
-| **Right hand side** | |
-
 | **Description** | Reset Git buffer |
 | :---- | :---- |
 | **Left hand side** | <code> gr</code> |
 | **Right hand side** | |
 
-| **Description** | Conditional Breakpoint (S-F9) |
+| **Description** | Quit |
 | :---- | :---- |
-| **Left hand side** | <code> dC</code> |
-| **Right hand side** | |
-
-| **Description** | Stage Git hunk |
-| :---- | :---- |
-| **Left hand side** | <code> gs</code> |
-| **Right hand side** | |
-
-| **Description** | Step Into (F11) |
-| :---- | :---- |
-| **Left hand side** | <code> di</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> q</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;confirm q&lt;CR&gt;</code> |
 
 | **Description** | Stage Git buffer |
 | :---- | :---- |
 | **Left hand side** | <code> gS</code> |
 | **Right hand side** | |
 
-| **Description** | Step Over (F10) |
+| **Description** | New File |
 | :---- | :---- |
-| **Left hand side** | <code> do</code> |
-| **Right hand side** | |
+| **Left hand side** | <code> n</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;enew&lt;CR&gt;</code> |
 
 | **Description** | Unstage Git hunk |
 | :---- | :---- |
 | **Left hand side** | <code> gu</code> |
-| **Right hand side** | |
-
-| **Description** | Step Out (S-F11) |
-| :---- | :---- |
-| **Left hand side** | <code> dO</code> |
-| **Right hand side** | |
-
-| **Description** | View Git diff |
-| :---- | :---- |
-| **Left hand side** | <code> gd</code> |
 | **Right hand side** | |
 
 | **Description** | Close Session |
@@ -412,9 +425,14 @@ Jump to:
 | **Left hand side** | <code> dq</code> |
 | **Right hand side** | |
 
-| **Description** | Terminate Session (S-F5) |
+| **Description** | View Git diff |
 | :---- | :---- |
-| **Left hand side** | <code> dQ</code> |
+| **Left hand side** | <code> gd</code> |
+| **Right hand side** | |
+
+| **Description** | Pause (F6) |
+| :---- | :---- |
+| **Left hand side** | <code> dp</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Explorer Focus |
@@ -422,9 +440,9 @@ Jump to:
 | **Left hand side** | <code> o</code> |
 | **Right hand side** | |
 
-| **Description** | Pause (F6) |
+| **Description** | Restart (C-F5) |
 | :---- | :---- |
-| **Left hand side** | <code> dp</code> |
+| **Left hand side** | <code> dr</code> |
 | **Right hand side** | |
 
 | **Description** | Load last session |
@@ -442,9 +460,9 @@ Jump to:
 | **Left hand side** | <code> Sd</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;SessionManager! delete_session&lt;CR&gt;</code> |
 
-| **Description** | Evaluate Input |
+| **Description** | Toggle Debugger UI |
 | :---- | :---- |
-| **Left hand side** | <code> dE</code> |
+| **Left hand side** | <code> du</code> |
 | **Right hand side** | |
 
 | **Description** | Search sessions |
@@ -452,9 +470,9 @@ Jump to:
 | **Left hand side** | <code> Sf</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;SessionManager! load_session&lt;CR&gt;</code> |
 
-| **Description** | Toggle Debugger UI |
+| **Description** | Debugger Hover |
 | :---- | :---- |
-| **Left hand side** | <code> du</code> |
+| **Left hand side** | <code> dh</code> |
 | **Right hand side** | |
 
 | **Description** | Load current directory session |
@@ -487,24 +505,9 @@ Jump to:
 | **Left hand side** | <code> uC</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;ColorizerToggle&lt;CR&gt;</code> |
 
-| **Description** | Symbols outline |
-| :---- | :---- |
-| **Left hand side** | <code> lS</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle signcolumn |
-| :---- | :---- |
-| **Left hand side** | <code> ug</code> |
-| **Right hand side** | |
-
 | **Description** | Git branches |
 | :---- | :---- |
 | **Left hand side** | <code> gb</code> |
-| **Right hand side** | |
-
-| **Description** | Change indent setting |
-| :---- | :---- |
-| **Left hand side** | <code> ui</code> |
 | **Right hand side** | |
 
 | **Description** | Git commits (repository) |
@@ -512,19 +515,14 @@ Jump to:
 | **Left hand side** | <code> gc</code> |
 | **Right hand side** | |
 
-| **Description** | Git commits (current file) |
+| **Description** | Toggle CodeLens |
 | :---- | :---- |
-| **Left hand side** | <code> gC</code> |
+| **Left hand side** | <code> uL</code> |
 | **Right hand side** | |
 
 | **Description** | Git status |
 | :---- | :---- |
 | **Left hand side** | <code> gt</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle CodeLens |
-| :---- | :---- |
-| **Left hand side** | <code> uL</code> |
 | **Right hand side** | |
 
 | **Description** | Resume previous search |
@@ -537,19 +535,14 @@ Jump to:
 | **Left hand side** | <code> f'</code> |
 | **Right hand side** | |
 
-| **Description** | Find words in current buffer |
-| :---- | :---- |
-| **Left hand side** | <code> f/</code> |
-| **Right hand side** | |
-
 | **Description** | Toggle Notifications |
 | :---- | :---- |
 | **Left hand side** | <code> uN</code> |
 | **Right hand side** | |
 
-| **Description** | Find buffers |
+| **Description** | Find words in current buffer |
 | :---- | :---- |
-| **Left hand side** | <code> fb</code> |
+| **Left hand side** | <code> f/</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle paste mode |
@@ -557,9 +550,14 @@ Jump to:
 | **Left hand side** | <code> up</code> |
 | **Right hand side** | |
 
-| **Description** | Find word under cursor |
+| **Description** | Find buffers |
 | :---- | :---- |
-| **Left hand side** | <code> fc</code> |
+| **Left hand side** | <code> fb</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle spellcheck |
+| :---- | :---- |
+| **Left hand side** | <code> us</code> |
 | **Right hand side** | |
 
 | **Description** | Find commands |
@@ -567,14 +565,14 @@ Jump to:
 | **Left hand side** | <code> fC</code> |
 | **Right hand side** | |
 
-| **Description** | Find files |
-| :---- | :---- |
-| **Left hand side** | <code> ff</code> |
-| **Right hand side** | |
-
 | **Description** | Toggle conceal |
 | :---- | :---- |
 | **Left hand side** | <code> uS</code> |
+| **Right hand side** | |
+
+| **Description** | Find files |
+| :---- | :---- |
+| **Left hand side** | <code> ff</code> |
 | **Right hand side** | |
 
 | **Description** | Find all files |
@@ -587,19 +585,24 @@ Jump to:
 | **Left hand side** | <code> fh</code> |
 | **Right hand side** | |
 
-| **Description** | Find keymaps |
+| **Description** | Toggle wrap |
 | :---- | :---- |
-| **Left hand side** | <code> fk</code> |
+| **Left hand side** | <code> uw</code> |
 | **Right hand side** | |
 
-| **Description** | Find notifications |
+| **Description** | Find man |
 | :---- | :---- |
-| **Left hand side** | <code> fn</code> |
+| **Left hand side** | <code> fm</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle syntax highlighting (buffer) |
 | :---- | :---- |
 | **Left hand side** | <code> uy</code> |
+| **Right hand side** | |
+
+| **Description** | Find notifications |
+| :---- | :---- |
+| **Left hand side** | <code> fn</code> |
 | **Right hand side** | |
 
 | **Description** | Find history |
@@ -621,11 +624,6 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code> fW</code> |
 | **Right hand side** | |
-
-| **Description** | New tab |
-| :---- | :---- |
-| **Left hand side** | <code> bn</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;tabnew&lt;CR&gt;</code> |
 
 | **Description** | Search symbols |
 | :---- | :---- |
@@ -677,14 +675,14 @@ Jump to:
 | **Left hand side** | <code> tv</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm size=80 direction=vertical&lt;CR&gt;</code> |
 
-| **Description** | Find themes |
-| :---- | :---- |
-| **Left hand side** | <code> ft</code> |
-| **Right hand side** | |
-
 | **Description** | Find AstroNvim config files |
 | :---- | :---- |
 | **Left hand side** | <code> fa</code> |
+| **Right hand side** | |
+
+| **Description** | Find themes |
+| :---- | :---- |
+| **Left hand side** | <code> ft</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -707,9 +705,74 @@ Jump to:
 | **Left hand side** | <code> w</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;w&lt;CR&gt;</code> |
 
+| **Description** | Structural search and replace |
+| :---- | :---- |
+| **Left hand side** | <code> sr</code> |
+| **Right hand side** | |
+
 | **Description** | Toggle autopairs |
 | :---- | :---- |
 | **Left hand side** | <code> ua</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle URL highlight |
+| :---- | :---- |
+| **Left hand side** | <code> uu</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle trouble for document |
+| :---- | :---- |
+| **Left hand side** | <code> fd</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle tabline |
+| :---- | :---- |
+| **Left hand side** | <code> ut</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Explorer |
+| :---- | :---- |
+| **Left hand side** | <code> ue</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle diagnostics |
+| :---- | :---- |
+| **Left hand side** | <code> ud</code> |
+| **Right hand side** | |
+
+| **Description** | Command palette |
+| :---- | :---- |
+| **Left hand side** | <code> P</code> |
+| **Right hand side** | |
+
+| **Description** | Split/join block |
+| :---- | :---- |
+| **Left hand side** | <code> m</code> |
+| **Right hand side** | |
+
+| **Description** | Split/join block recursively |
+| :---- | :---- |
+| **Left hand side** | <code> M</code> |
+| **Right hand side** | |
+
+| **Description** | Breadcrumb search |
+| :---- | :---- |
+| **Left hand side** | <code> fs</code> |
+| **Right hand side** | |
+
+| **Description** | Add file to Harpoon |
+| :---- | :---- |
+| **Left hand side** | <code> ha</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle foldcolumn |
+| :---- | :---- |
+| **Left hand side** | <code> uh</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Harpoon |
+| :---- | :---- |
+| **Left hand side** | <code> hh</code> |
 | **Right hand side** | |
 
 | **Description** | Go to Harpoon file 5 |
@@ -737,71 +800,6 @@ Jump to:
 | **Left hand side** | <code> h1</code> |
 | **Right hand side** | |
 
-| **Description** | Add file to Harpoon |
-| :---- | :---- |
-| **Left hand side** | <code> ha</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle foldcolumn |
-| :---- | :---- |
-| **Left hand side** | <code> uh</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Harpoon |
-| :---- | :---- |
-| **Left hand side** | <code> hh</code> |
-| **Right hand side** | |
-
-| **Description** | Split/join block |
-| :---- | :---- |
-| **Left hand side** | <code> m</code> |
-| **Right hand side** | |
-
-| **Description** | Split/join block recursively |
-| :---- | :---- |
-| **Left hand side** | <code> M</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Explorer |
-| :---- | :---- |
-| **Left hand side** | <code> ue</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle diagnostics |
-| :---- | :---- |
-| **Left hand side** | <code> ud</code> |
-| **Right hand side** | |
-
-| **Description** | Structural search and replace |
-| :---- | :---- |
-| **Left hand side** | <code> sr</code> |
-| **Right hand side** | |
-
-| **Description** | Command palette |
-| :---- | :---- |
-| **Left hand side** | <code> P</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle URL highlight |
-| :---- | :---- |
-| **Left hand side** | <code> uu</code> |
-| **Right hand side** | |
-
-| **Description** | Breadcrumb search |
-| :---- | :---- |
-| **Left hand side** | <code> fs</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle tabline |
-| :---- | :---- |
-| **Left hand side** | <code> ut</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle trouble for document |
-| :---- | :---- |
-| **Left hand side** | <code> fd</code> |
-| **Right hand side** | |
-
 | **Description** | Nvim builtin |
 | :---- | :---- |
 | **Left hand side** | <code>&</code> |
@@ -822,11 +820,6 @@ Jump to:
 | **Left hand side** | <code>Y</code> |
 | **Right hand side** | <code>y$</code> |
 
-| **Description** | Previous buffer |
-| :---- | :---- |
-| **Left hand side** | <code>[b</code> |
-| **Right hand side** | |
-
 | **Description** | Previous tab |
 | :---- | :---- |
 | **Left hand side** | <code>[t</code> |
@@ -835,6 +828,11 @@ Jump to:
 | **Description** | Previous Git hunk |
 | :---- | :---- |
 | **Left hand side** | <code>[g</code> |
+| **Right hand side** | |
+
+| **Description** | Previous buffer |
+| :---- | :---- |
+| **Left hand side** | <code>[b</code> |
 | **Right hand side** | |
 
 | **Description** | Previous Harpoon file |
@@ -867,11 +865,6 @@ Jump to:
 | **Left hand side** | <code>\\A</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(VM-Select-All)</code> |
 
-| **Description** | Next buffer |
-| :---- | :---- |
-| **Left hand side** | <code>]b</code> |
-| **Right hand side** | |
-
 | **Description** | Next tab |
 | :---- | :---- |
 | **Left hand side** | <code>]t</code> |
@@ -880,6 +873,11 @@ Jump to:
 | **Description** | Next Git hunk |
 | :---- | :---- |
 | **Left hand side** | <code>]g</code> |
+| **Right hand side** | |
+
+| **Description** | Next buffer |
+| :---- | :---- |
+| **Left hand side** | <code>]b</code> |
 | **Right hand side** | |
 
 | **Description** | Next Harpoon file |
@@ -982,6 +980,21 @@ Jump to:
 | **Left hand side** | <code>&#124;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;vsplit&lt;CR&gt;</code> |
 
+| **Description** | Debugger: Start |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F5&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Debugger: Stop |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F17&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Debugger: Conditional Breakpoint |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F21&gt;</code> |
+| **Right hand side** | |
+
 | **Description** | Debugger: Restart |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;F29&gt;</code> |
@@ -1002,11 +1015,6 @@ Jump to:
 | **Left hand side** | <code>&lt;F10&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | Force quit |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Q&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;qa!&lt;CR&gt;</code> |
-
 | **Description** | Debugger: Step Into |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;F11&gt;</code> |
@@ -1017,10 +1025,20 @@ Jump to:
 | **Left hand side** | <code>&lt;F23&gt;</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle terminal |
+| **Description** | Move to above split |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;F7&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Move to below split |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Force quit |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;qa!&lt;CR&gt;</code> |
 
 | **Description** | Move to left split |
 | :---- | :---- |
@@ -1042,65 +1060,15 @@ Jump to:
 | **Left hand side** | <code>&lt;C-S&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;w!&lt;CR&gt;</code> |
 
-| **Description** | Move to above split |
+| **Description** | Toggle terminal |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-K&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Move to below split |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-J&gt;</code> |
-| **Right hand side** | |
+| **Left hand side** | <code>&lt;F7&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm&lt;CR&gt;</code> |
 
 | **Description** | Toggle terminal |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-'&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm&lt;CR&gt;</code> |
-
-| **Description** | Debugger: Start |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F5&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Debugger: Stop |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F17&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Debugger: Conditional Breakpoint |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F21&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-E&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-B&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-F&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Y&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-U&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-D&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
 
 | **Description** | Resize split down |
 | :---- | :---- |
@@ -1269,18 +1237,33 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| **Right hand side** | |
+| **Left hand side** | <code>&lt;C-U&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
-| **Right hand side** | |
+| **Left hand side** | <code>&lt;C-D&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-Y&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-E&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-F&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1301,6 +1284,21 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;CamelCaseMotion_w</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call camelcasemotion#Motion('w',v:count1,'n')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
 | **Description** | Move to right split |
 | :---- | :---- |
@@ -1417,11 +1415,6 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>i</code> |
-| **Right hand side** | <code>targets#e('o', 'i', 'i')</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>i ge</code> |
 | **Right hand side** | <code>&lt;Plug&gt;CamelCaseMotion_ige</code> |
 
@@ -1439,6 +1432,11 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>i w</code> |
 | **Right hand side** | <code>&lt;Plug&gt;CamelCaseMotion_iw</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>i</code> |
+| **Right hand side** | <code>targets#e('o', 'i', 'i')</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1462,36 +1460,6 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-D&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Y&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-B&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-U&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-F&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-E&gt;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;C-N&gt;</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(VM-Find-Subword-Under)</code> |
 
@@ -1503,7 +1471,7 @@ Jump to:
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Find-Subword-Under)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_Visual('under')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_Visual('under')</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1523,7 +1491,7 @@ Jump to:
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Visual-All)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_Visual('all')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_Visual('all')</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1574,6 +1542,36 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
 | **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-E&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-F&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-U&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-D&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Y&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
 
 
 ### Operator mode keymaps

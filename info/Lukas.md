@@ -19,11 +19,9 @@ Personal Neovim configuration of Lukas Reineke, author of many excellent Neovim 
 
 [https://github.com/lukas-reineke/dotfiles](https://github.com/lukas-reineke/dotfiles)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Packer managed plugins
 

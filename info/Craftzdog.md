@@ -23,11 +23,9 @@ Takuya Matsuyama's Neovim configuration
 
 [https://dotfyle.com/craftzdog/dotfiles-public-config-nvim](https://dotfyle.com/craftzdog/dotfiles-public-config-nvim)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 

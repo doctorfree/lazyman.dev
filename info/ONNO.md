@@ -23,11 +23,9 @@ One of the primary inspirations for Lazyman
 
 [https://dotfyle.com/loctvl842/nvim](https://dotfyle.com/loctvl842/nvim)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -105,41 +103,6 @@ Jump to:
 | **Left hand side** | <code> c</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;MonokaiProSelect&lt;CR&gt;</code> |
 
-| **Description** | Don't Save Current Session |
-| :---- | :---- |
-| **Left hand side** | <code> sd</code> |
-| **Right hand side** | |
-
-| **Description** | Restore Last Session |
-| :---- | :---- |
-| **Left hand side** | <code> sl</code> |
-| **Right hand side** | |
-
-| **Description** | Restore Session |
-| :---- | :---- |
-| **Left hand side** | <code> ss</code> |
-| **Right hand side** | |
-
-| **Description** | Open file manager |
-| :---- | :---- |
-| **Left hand side** | <code> r</code> |
-| **Right hand side** | |
-
-| **Description** | Peek (Markdown Preview) |
-| :---- | :---- |
-| **Left hand side** | <code> p</code> |
-| **Right hand side** | |
-
-| **Description** | Close Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> d</code> |
-| **Right hand side** | |
-
-| **Description** | Delete all Notifications |
-| :---- | :---- |
-| **Left hand side** | <code> n</code> |
-| **Right hand side** | |
-
 | **Description** | Stage Hunk |
 | :---- | :---- |
 | **Left hand side** | <code> gs</code> |
@@ -190,9 +153,9 @@ Jump to:
 | **Left hand side** | <code> gu</code> |
 | **Right hand side** | |
 
-| **Description** | Checkout commit |
+| **Description** | Find files |
 | :---- | :---- |
-| **Left hand side** | <code> gc</code> |
+| **Left hand side** | <code> f</code> |
 | **Right hand side** | |
 
 | **Description** | Find buffer |
@@ -205,9 +168,9 @@ Jump to:
 | **Left hand side** | <code> F</code> |
 | **Right hand side** | |
 
-| **Description** | Find files |
+| **Description** | Checkout commit |
 | :---- | :---- |
-| **Left hand side** | <code> f</code> |
+| **Left hand side** | <code> gc</code> |
 | **Right hand side** | |
 
 | **Description** | Checkout branch |
@@ -220,14 +183,29 @@ Jump to:
 | **Left hand side** | <code> go</code> |
 | **Right hand side** | |
 
-| **Description** | Dashboard |
+| **Description** | Open file manager |
 | :---- | :---- |
-| **Left hand side** | <code> 0</code> |
+| **Left hand side** | <code> r</code> |
 | **Right hand side** | |
 
-| **Description** | Zoom window |
+| **Description** | Restore Last Session |
 | :---- | :---- |
-| **Left hand side** | <code> m</code> |
+| **Left hand side** | <code> sl</code> |
+| **Right hand side** | |
+
+| **Description** | Restore Session |
+| :---- | :---- |
+| **Left hand side** | <code> ss</code> |
+| **Right hand side** | |
+
+| **Description** | Don't Save Current Session |
+| :---- | :---- |
+| **Left hand side** | <code> sd</code> |
+| **Right hand side** | |
+
+| **Description** | Close Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> d</code> |
 | **Right hand side** | |
 
 | **Description** | Explorer Float (root dir) |
@@ -238,6 +216,26 @@ Jump to:
 | **Description** | Explorer (root dir) |
 | :---- | :---- |
 | **Left hand side** | <code> e</code> |
+| **Right hand side** | |
+
+| **Description** | Peek (Markdown Preview) |
+| :---- | :---- |
+| **Left hand side** | <code> p</code> |
+| **Right hand side** | |
+
+| **Description** | Dashboard |
+| :---- | :---- |
+| **Left hand side** | <code> 0</code> |
+| **Right hand side** | |
+
+| **Description** | Zoom window |
+| :---- | :---- |
+| **Left hand side** | <code> m</code> |
+| **Right hand side** | |
+
+| **Description** | Delete all Notifications |
+| :---- | :---- |
+| **Left hand side** | <code> n</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -275,64 +273,9 @@ Jump to:
 | **Left hand side** | <code>]]</code> |
 | **Right hand side** | |
 
-| **Description** | Top this line |
+| **Description** | Add word to spell list |
 | :---- | :---- |
-| **Left hand side** | <code>ft</code> |
-| **Right hand side** | |
-
-| **Description** | Bottom this line |
-| :---- | :---- |
-| **Left hand side** | <code>fb</code> |
-| **Right hand side** | |
-
-| **Description** | Open all folds under cursor |
-| :---- | :---- |
-| **Left hand side** | <code>fO</code> |
-| **Right hand side** | |
-
-| **Description** | Center this line |
-| :---- | :---- |
-| **Left hand side** | <code>fz</code> |
-| **Right hand side** | |
-
-| **Description** | Fold more |
-| :---- | :---- |
-| **Left hand side** | <code>fm</code> |
-| **Right hand side** | |
-
-| **Description** | Close all folds under cursor |
-| :---- | :---- |
-| **Left hand side** | <code>fc</code> |
-| **Right hand side** | |
-
-| **Description** | Mark word as bad/misspelling |
-| :---- | :---- |
-| **Left hand side** | <code>fw</code> |
-| **Right hand side** | |
-
-| **Description** | Left this line |
-| :---- | :---- |
-| **Left hand side** | <code>fs</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle fold under cursor |
-| :---- | :---- |
-| **Left hand side** | <code>fa</code> |
-| **Right hand side** | |
-
-| **Description** | Right this line |
-| :---- | :---- |
-| **Left hand side** | <code>fe</code> |
-| **Right hand side** | |
-
-| **Description** | Half screen to the right |
-| :---- | :---- |
-| **Left hand side** | <code>fL</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle all folds under cursor |
-| :---- | :---- |
-| **Left hand side** | <code>fA</code> |
+| **Left hand side** | <code>fg</code> |
 | **Right hand side** | |
 
 | **Description** | Delete all folds in current buffer |
@@ -340,9 +283,19 @@ Jump to:
 | **Left hand side** | <code>fE</code> |
 | **Right hand side** | |
 
+| **Description** | Delete fold under cursor |
+| :---- | :---- |
+| **Left hand side** | <code>fd</code> |
+| **Right hand side** | |
+
 | **Description** | Show cursor line |
 | :---- | :---- |
 | **Left hand side** | <code>fv</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle all folds under cursor |
+| :---- | :---- |
+| **Left hand side** | <code>fA</code> |
 | **Right hand side** | |
 
 | **Description** | Close all folds |
@@ -360,9 +313,19 @@ Jump to:
 | **Left hand side** | <code>fR</code> |
 | **Right hand side** | |
 
-| **Description** | Add word to spell list |
+| **Description** | Top this line |
 | :---- | :---- |
-| **Left hand side** | <code>fg</code> |
+| **Left hand side** | <code>ft</code> |
+| **Right hand side** | |
+
+| **Description** | Fold more |
+| :---- | :---- |
+| **Left hand side** | <code>fm</code> |
+| **Right hand side** | |
+
+| **Description** | Half screen to the right |
+| :---- | :---- |
+| **Left hand side** | <code>fL</code> |
 | **Right hand side** | |
 
 | **Description** | Fold less |
@@ -375,14 +338,49 @@ Jump to:
 | **Left hand side** | <code>fx</code> |
 | **Right hand side** | |
 
-| **Description** | Delete fold under cursor |
+| **Description** | Center this line |
 | :---- | :---- |
-| **Left hand side** | <code>fd</code> |
+| **Left hand side** | <code>fz</code> |
+| **Right hand side** | |
+
+| **Description** | Left this line |
+| :---- | :---- |
+| **Left hand side** | <code>fs</code> |
 | **Right hand side** | |
 
 | **Description** | Open fold under cursor |
 | :---- | :---- |
 | **Left hand side** | <code>fo</code> |
+| **Right hand side** | |
+
+| **Description** | Bottom this line |
+| :---- | :---- |
+| **Left hand side** | <code>fb</code> |
+| **Right hand side** | |
+
+| **Description** | Open all folds under cursor |
+| :---- | :---- |
+| **Left hand side** | <code>fO</code> |
+| **Right hand side** | |
+
+| **Description** | Close all folds under cursor |
+| :---- | :---- |
+| **Left hand side** | <code>fc</code> |
+| **Right hand side** | |
+
+| **Description** | Mark word as bad/misspelling |
+| :---- | :---- |
+| **Left hand side** | <code>fw</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle fold under cursor |
+| :---- | :---- |
+| **Left hand side** | <code>fa</code> |
+| **Right hand side** | |
+
+| **Description** | Right this line |
+| :---- | :---- |
+| **Left hand side** | <code>fe</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -405,24 +403,14 @@ Jump to:
 | **Left hand side** | <code>gi</code> |
 | **Right hand side** | |
 
-| **Description** | Highlight Groups |
-| :---- | :---- |
-| **Left hand side** | <code>sH</code> |
-| **Right hand side** | |
-
-| **Description** | Checkout branch |
-| :---- | :---- |
-| **Left hand side** | <code>sb</code> |
-| **Right hand side** | |
-
-| **Description** | Colorscheme |
-| :---- | :---- |
-| **Left hand side** | <code>sc</code> |
-| **Right hand side** | |
-
 | **Description** | Find Help |
 | :---- | :---- |
 | **Left hand side** | <code>sh</code> |
+| **Right hand side** | |
+
+| **Description** | Highlight Groups |
+| :---- | :---- |
+| **Left hand side** | <code>sH</code> |
 | **Right hand side** | |
 
 | **Description** | Man Pages |
@@ -448,6 +436,16 @@ Jump to:
 | **Description** | Commands |
 | :---- | :---- |
 | **Left hand side** | <code>sC</code> |
+| **Right hand side** | |
+
+| **Description** | Checkout branch |
+| :---- | :---- |
+| **Left hand side** | <code>sb</code> |
+| **Right hand side** | |
+
+| **Description** | Colorscheme |
+| :---- | :---- |
+| **Left hand side** | <code>sc</code> |
 | **Right hand side** | |
 
 | **Description** | |

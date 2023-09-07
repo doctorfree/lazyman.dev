@@ -19,11 +19,9 @@ Configure Neovim as a modernized development environment. Details described in [
 
 [https://github.com/alpha2phi/modern-neovim](https://github.com/alpha2phi/modern-neovim)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -200,24 +198,9 @@ Jump to:
 | **Left hand side** | <code> zz</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;:Lazy&lt;CR&gt;</code> |
 
-| **Description** | Toggle Split/Join |
+| **Description** | Search and Replace (SSR) |
 | :---- | :---- |
-| **Left hand side** | <code> lj</code> |
-| **Right hand side** | |
-
-| **Description** | Node Action |
-| :---- | :---- |
-| **Left hand side** | <code> ln</code> |
-| **Right hand side** | |
-
-| **Description** | Class |
-| :---- | :---- |
-| **Left hand side** | <code> lgc</code> |
-| **Right hand side** | |
-
-| **Description** | Annotation |
-| :---- | :---- |
-| **Left hand side** | <code> lgd</code> |
+| **Left hand side** | <code> sR</code> |
 | **Right hand side** | |
 
 | **Description** | Type |
@@ -230,259 +213,29 @@ Jump to:
 | **Left hand side** | <code> lgf</code> |
 | **Right hand side** | |
 
-| **Description** | Terminal 1 |
-| :---- | :---- |
-| **Left hand side** | <code> 3</code> |
-| **Right hand side** | |
-
-| **Description** | File 2 |
-| :---- | :---- |
-| **Left hand side** | <code> 2</code> |
-| **Right hand side** | |
-
-| **Description** | File 1 |
-| :---- | :---- |
-| **Left hand side** | <code> 1</code> |
-| **Right hand side** | |
-
-| **Description** | Command Menu |
-| :---- | :---- |
-| **Left hand side** | <code> jc</code> |
-| **Right hand side** | |
-
-| **Description** | File Menu |
-| :---- | :---- |
-| **Left hand side** | <code> jm</code> |
-| **Right hand side** | |
-
-| **Description** | Add File |
-| :---- | :---- |
-| **Left hand side** | <code> ja</code> |
-| **Right hand side** | |
-
-| **Description** | Command 2 |
-| :---- | :---- |
-| **Left hand side** | <code> 6</code> |
-| **Right hand side** | |
-
-| **Description** | Command 1 |
-| :---- | :---- |
-| **Left hand side** | <code> 5</code> |
-| **Right hand side** | |
-
-| **Description** | Terminal 2 |
-| :---- | :---- |
-| **Left hand side** | <code> 4</code> |
-| **Right hand side** | |
-
-| **Description** | Terminal #2 |
-| :---- | :---- |
-| **Left hand side** | <code> 0</code> |
-| **Right hand side** | |
-
-| **Description** | Code Outline (navbuddy) |
-| :---- | :---- |
-| **Left hand side** | <code> vO</code> |
-| **Right hand side** | |
-
-| **Description** | Visit |
-| :---- | :---- |
-| **Left hand side** | <code> tv</code> |
-| **Right hand side** | |
-
-| **Description** | Suite |
-| :---- | :---- |
-| **Left hand side** | <code> ts</code> |
-| **Right hand side** | |
-
-| **Description** | Nearest |
-| :---- | :---- |
-| **Left hand side** | <code> tn</code> |
-| **Right hand side** | |
-
-| **Description** | Last |
-| :---- | :---- |
-| **Left hand side** | <code> tl</code> |
-| **Right hand side** | |
-
-| **Description** | File |
-| :---- | :---- |
-| **Left hand side** | <code> tf</code> |
-| **Right hand side** | |
-
 | **Description** | Class |
 | :---- | :---- |
-| **Left hand side** | <code> tc</code> |
+| **Left hand side** | <code> lgc</code> |
 | **Right hand side** | |
 
-| **Description** | Command Palette |
+| **Description** | Annotation |
 | :---- | :---- |
-| **Left hand side** | <code> hc</code> |
+| **Left hand side** | <code> lgd</code> |
 | **Right hand side** | |
 
-| **Description** | Open Yank History |
+| **Description** | Explorer (Current File) |
 | :---- | :---- |
-| **Left hand side** | <code> zp</code> |
+| **Left hand side** | <code> fE</code> |
 | **Right hand side** | |
 
-| **Description** | Summarize Text |
+| **Description** | Explorer (Current Directory) |
 | :---- | :---- |
-| **Left hand side** | <code> as</code> |
+| **Left hand side** | <code> fe</code> |
 | **Right hand side** | |
 
-| **Description** | Generate Git Message |
+| **Description** | Toggle Highlighter |
 | :---- | :---- |
-| **Left hand side** | <code> ag</code> |
-| **Right hand side** | |
-
-| **Description** | ToDo (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> lt</code> |
-| **Right hand side** | |
-
-| **Description** | ToDo |
-| :---- | :---- |
-| **Left hand side** | <code> lT</code> |
-| **Right hand side** | |
-
-| **Description** | Forward jump |
-| :---- | :---- |
-| **Left hand side** | <code> nj</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Preview |
-| :---- | :---- |
-| **Left hand side** | <code> nt</code> |
-| **Right hand side** | |
-
-| **Description** | Close Preview |
-| :---- | :---- |
-| **Left hand side** | <code> nc</code> |
-| **Right hand side** | |
-
-| **Description** | Preview |
-| :---- | :---- |
-| **Left hand side** | <code> np</code> |
-| **Right hand side** | |
-
-| **Description** | Edit with Instructions |
-| :---- | :---- |
-| **Left hand side** | <code> ae</code> |
-| **Right hand side** | |
-
-| **Description** | Complete Code |
-| :---- | :---- |
-| **Left hand side** | <code> ac</code> |
-| **Right hand side** | |
-
-| **Description** | Chat |
-| :---- | :---- |
-| **Left hand side** | <code> aa</code> |
-| **Right hand side** | |
-
-| **Description** | Edgy Toggle |
-| :---- | :---- |
-| **Left hand side** | <code> ze</code> |
-| **Right hand side** | |
-
-| **Description** | Edgy Select Window |
-| :---- | :---- |
-| **Left hand side** | <code> zE</code> |
-| **Right hand side** | |
-
-| **Description** | Docker |
-| :---- | :---- |
-| **Left hand side** | <code> fd</code> |
-| **Right hand side** | |
-
-| **Description** | Search and Replace (SSR) |
-| :---- | :---- |
-| **Left hand side** | <code> sR</code> |
-| **Right hand side** | |
-
-| **Description** | Remove Mark |
-| :---- | :---- |
-| **Left hand side** | <code> xmr</code> |
-| **Right hand side** | |
-
-| **Description** | Mark Motion |
-| :---- | :---- |
-| **Left hand side** | <code> xmm</code> |
-| **Right hand side** | |
-
-| **Description** | Send Mark |
-| :---- | :---- |
-| **Left hand side** | <code> xms</code> |
-| **Right hand side** | |
-
-| **Description** | Clear |
-| :---- | :---- |
-| **Left hand side** | <code> xc</code> |
-| **Right hand side** | |
-
-| **Description** | Close REPL |
-| :---- | :---- |
-| **Left hand side** | <code> xC</code> |
-| **Right hand side** | |
-
-| **Description** | Interrupt |
-| :---- | :---- |
-| **Left hand side** | <code> xI</code> |
-| **Right hand side** | |
-
-| **Description** | ENTER |
-| :---- | :---- |
-| **Left hand side** | <code> x&lt;CR&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Send File |
-| :---- | :---- |
-| **Left hand side** | <code> xf</code> |
-| **Right hand side** | |
-
-| **Description** | Send Until Cursor |
-| :---- | :---- |
-| **Left hand side** | <code> xt</code> |
-| **Right hand side** | |
-
-| **Description** | Send Line |
-| :---- | :---- |
-| **Left hand side** | <code> xl</code> |
-| **Right hand side** | |
-
-| **Description** | Send Motion |
-| :---- | :---- |
-| **Left hand side** | <code> xs</code> |
-| **Right hand side** | |
-
-| **Description** | +Mark |
-| :---- | :---- |
-| **Left hand side** | <code> xm</code> |
-| **Right hand side** | |
-
-| **Description** | +REPL |
-| :---- | :---- |
-| **Left hand side** | <code> x</code> |
-| **Right hand side** | |
-
-| **Description** | Hide |
-| :---- | :---- |
-| **Left hand side** | <code> xH</code> |
-| **Right hand side** | |
-
-| **Description** | Focus |
-| :---- | :---- |
-| **Left hand side** | <code> xF</code> |
-| **Right hand side** | |
-
-| **Description** | Restart |
-| :---- | :---- |
-| **Left hand side** | <code> xS</code> |
-| **Right hand side** | |
-
-| **Description** | REPL |
-| :---- | :---- |
-| **Left hand side** | <code> xR</code> |
+| **Left hand side** | <code> zCh</code> |
 | **Right hand side** | |
 
 | **Description** | Convert |
@@ -500,59 +253,14 @@ Jump to:
 | **Left hand side** | <code> zC</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle Highlighter |
+| **Description** | Workspace Diagnostics |
 | :---- | :---- |
-| **Left hand side** | <code> zCh</code> |
+| **Left hand side** | <code> lD</code> |
 | **Right hand side** | |
 
-| **Description** | Select VirtualEnv |
+| **Description** | Document Diagnostics |
 | :---- | :---- |
-| **Left hand side** | <code> lv</code> |
-| **Right hand side** | |
-
-| **Description** | Search and Replace (Spectre) |
-| :---- | :---- |
-| **Left hand side** | <code> sr</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer (Current File) |
-| :---- | :---- |
-| **Left hand side** | <code> fE</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer (Current Directory) |
-| :---- | :---- |
-| **Left hand side** | <code> fe</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Zoom |
-| :---- | :---- |
-| **Left hand side** | <code> vz</code> |
-| **Right hand side** | |
-
-| **Description** | Close Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> bc</code> |
-| **Right hand side** | |
-
-| **Description** | Reload Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> br</code> |
-| **Right hand side** | |
-
-| **Description** | Delete Buffer (Force) |
-| :---- | :---- |
-| **Left hand side** | <code> bD</code> |
-| **Right hand side** | |
-
-| **Description** | Delete Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> bd</code> |
-| **Right hand side** | |
-
-| **Description** | Summary |
-| :---- | :---- |
-| **Left hand side** | <code> tNS</code> |
+| **Left hand side** | <code> ld</code> |
 | **Right hand side** | |
 
 | **Description** | Stop |
@@ -600,6 +308,11 @@ Jump to:
 | **Left hand side** | <code> tNF</code> |
 | **Right hand side** | |
 
+| **Description** | Summary |
+| :---- | :---- |
+| **Left hand side** | <code> tNS</code> |
+| **Right hand side** | |
+
 | **Description** | Rename Buffer |
 | :---- | :---- |
 | **Left hand side** | <code> Dr</code> |
@@ -620,119 +333,29 @@ Jump to:
 | **Left hand side** | <code> Dq</code> |
 | **Right hand side** | |
 
-| **Description** | Notation |
+| **Description** | ToDo |
 | :---- | :---- |
-| **Left hand side** | <code> nn</code> |
+| **Left hand side** | <code> lT</code> |
 | **Right hand side** | |
 
-| **Description** | Load Bundle |
+| **Description** | ToDo (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> tol</code> |
+| **Left hand side** | <code> lt</code> |
 | **Right hand side** | |
 
-| **Description** | Delete Bundle |
+| **Description** | Status |
 | :---- | :---- |
-| **Left hand side** | <code> tod</code> |
+| **Left hand side** | <code> gs</code> |
 | **Right hand side** | |
 
-| **Description** | Close |
+| **Description** | Edgy Toggle |
 | :---- | :---- |
-| **Left hand side** | <code> toc</code> |
+| **Left hand side** | <code> ze</code> |
 | **Right hand side** | |
 
-| **Description** | Build |
+| **Description** | Edgy Select Window |
 | :---- | :---- |
-| **Left hand side** | <code> tob</code> |
-| **Right hand side** | |
-
-| **Description** | Task Action |
-| :---- | :---- |
-| **Left hand side** | <code> toa</code> |
-| **Right hand side** | |
-
-| **Description** | Run Command |
-| :---- | :---- |
-| **Left hand side** | <code> toR</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle |
-| :---- | :---- |
-| **Left hand side** | <code> tot</code> |
-| **Right hand side** | |
-
-| **Description** | Save Bundle |
-| :---- | :---- |
-| **Left hand side** | <code> tos</code> |
-| **Right hand side** | |
-
-| **Description** | Run |
-| :---- | :---- |
-| **Left hand side** | <code> tor</code> |
-| **Right hand side** | |
-
-| **Description** | Quick Action |
-| :---- | :---- |
-| **Left hand side** | <code> toq</code> |
-| **Right hand side** | |
-
-| **Description** | Open |
-| :---- | :---- |
-| **Left hand side** | <code> too</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle Minimap |
-| :---- | :---- |
-| **Left hand side** | <code> vm</code> |
-| **Right hand side** | |
-
-| **Description** | Workspace Diagnostics |
-| :---- | :---- |
-| **Left hand side** | <code> lD</code> |
-| **Right hand side** | |
-
-| **Description** | Document Diagnostics |
-| :---- | :---- |
-| **Left hand side** | <code> ld</code> |
-| **Right hand side** | |
-
-| **Description** | Disconnect |
-| :---- | :---- |
-| **Left hand side** | <code> dd</code> |
-| **Right hand side** | |
-
-| **Description** | Continue |
-| :---- | :---- |
-| **Left hand side** | <code> dc</code> |
-| **Right hand side** | |
-
-| **Description** | Step Back |
-| :---- | :---- |
-| **Left hand side** | <code> db</code> |
-| **Right hand side** | |
-
-| **Description** | Toggle UI |
-| :---- | :---- |
-| **Left hand side** | <code> dU</code> |
-| **Right hand side** | |
-
-| **Description** | Conditional Breakpoint |
-| :---- | :---- |
-| **Left hand side** | <code> dC</code> |
-| **Right hand side** | |
-
-| **Description** | Evaluate Input |
-| :---- | :---- |
-| **Left hand side** | <code> dE</code> |
-| **Right hand side** | |
-
-| **Description** | Run to Cursor |
-| :---- | :---- |
-| **Left hand side** | <code> dR</code> |
-| **Right hand side** | |
-
-| **Description** | Step Out |
-| :---- | :---- |
-| **Left hand side** | <code> du</code> |
+| **Left hand side** | <code> zE</code> |
 | **Right hand side** | |
 
 | **Description** | Terminate |
@@ -800,6 +423,76 @@ Jump to:
 | **Left hand side** | <code> de</code> |
 | **Right hand side** | |
 
+| **Description** | Disconnect |
+| :---- | :---- |
+| **Left hand side** | <code> dd</code> |
+| **Right hand side** | |
+
+| **Description** | Continue |
+| :---- | :---- |
+| **Left hand side** | <code> dc</code> |
+| **Right hand side** | |
+
+| **Description** | Step Back |
+| :---- | :---- |
+| **Left hand side** | <code> db</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle UI |
+| :---- | :---- |
+| **Left hand side** | <code> dU</code> |
+| **Right hand side** | |
+
+| **Description** | Conditional Breakpoint |
+| :---- | :---- |
+| **Left hand side** | <code> dC</code> |
+| **Right hand side** | |
+
+| **Description** | Evaluate Input |
+| :---- | :---- |
+| **Left hand side** | <code> dE</code> |
+| **Right hand side** | |
+
+| **Description** | Run to Cursor |
+| :---- | :---- |
+| **Left hand side** | <code> dR</code> |
+| **Right hand side** | |
+
+| **Description** | Step Out |
+| :---- | :---- |
+| **Left hand side** | <code> du</code> |
+| **Right hand side** | |
+
+| **Description** | Edit with Instructions |
+| :---- | :---- |
+| **Left hand side** | <code> ae</code> |
+| **Right hand side** | |
+
+| **Description** | Complete Code |
+| :---- | :---- |
+| **Left hand side** | <code> ac</code> |
+| **Right hand side** | |
+
+| **Description** | Chat |
+| :---- | :---- |
+| **Left hand side** | <code> aa</code> |
+| **Right hand side** | |
+
+| **Description** | Summarize Text |
+| :---- | :---- |
+| **Left hand side** | <code> as</code> |
+| **Right hand side** | |
+
+| **Description** | Generate Git Message |
+| :---- | :---- |
+| **Left hand side** | <code> ag</code> |
+| **Right hand side** | |
+
+| **Description** | Debug Cleanup |
+| :---- | :---- |
+| **Left hand side** | <code> rc</code> |
+| **Right hand side** | |
+
 | **Description** | Debug Print Variable |
 | :---- | :---- |
 | **Left hand side** | <code> rp</code> |
@@ -825,19 +518,164 @@ Jump to:
 | **Left hand side** | <code> ri</code> |
 | **Right hand side** | |
 
-| **Description** | Debug Cleanup |
+| **Description** | Toggle Split/Join |
 | :---- | :---- |
-| **Left hand side** | <code> rc</code> |
+| **Left hand side** | <code> lj</code> |
 | **Right hand side** | |
 
-| **Description** | Status |
+| **Description** | Send Motion |
 | :---- | :---- |
-| **Left hand side** | <code> gs</code> |
+| **Left hand side** | <code> xs</code> |
 | **Right hand side** | |
 
-| **Description** | Find Files |
+| **Description** | Clear |
 | :---- | :---- |
-| **Left hand side** | <code>  </code> |
+| **Left hand side** | <code> xc</code> |
+| **Right hand side** | |
+
+| **Description** | +Mark |
+| :---- | :---- |
+| **Left hand side** | <code> xm</code> |
+| **Right hand side** | |
+
+| **Description** | +REPL |
+| :---- | :---- |
+| **Left hand side** | <code> x</code> |
+| **Right hand side** | |
+
+| **Description** | Send Mark |
+| :---- | :---- |
+| **Left hand side** | <code> xms</code> |
+| **Right hand side** | |
+
+| **Description** | Mark Motion |
+| :---- | :---- |
+| **Left hand side** | <code> xmm</code> |
+| **Right hand side** | |
+
+| **Description** | Remove Mark |
+| :---- | :---- |
+| **Left hand side** | <code> xmr</code> |
+| **Right hand side** | |
+
+| **Description** | REPL |
+| :---- | :---- |
+| **Left hand side** | <code> xR</code> |
+| **Right hand side** | |
+
+| **Description** | Restart |
+| :---- | :---- |
+| **Left hand side** | <code> xS</code> |
+| **Right hand side** | |
+
+| **Description** | Focus |
+| :---- | :---- |
+| **Left hand side** | <code> xF</code> |
+| **Right hand side** | |
+
+| **Description** | Close REPL |
+| :---- | :---- |
+| **Left hand side** | <code> xC</code> |
+| **Right hand side** | |
+
+| **Description** | Interrupt |
+| :---- | :---- |
+| **Left hand side** | <code> xI</code> |
+| **Right hand side** | |
+
+| **Description** | ENTER |
+| :---- | :---- |
+| **Left hand side** | <code> x&lt;CR&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Hide |
+| :---- | :---- |
+| **Left hand side** | <code> xH</code> |
+| **Right hand side** | |
+
+| **Description** | Send File |
+| :---- | :---- |
+| **Left hand side** | <code> xf</code> |
+| **Right hand side** | |
+
+| **Description** | Send Until Cursor |
+| :---- | :---- |
+| **Left hand side** | <code> xt</code> |
+| **Right hand side** | |
+
+| **Description** | Send Line |
+| :---- | :---- |
+| **Left hand side** | <code> xl</code> |
+| **Right hand side** | |
+
+| **Description** | Node Action |
+| :---- | :---- |
+| **Left hand side** | <code> ln</code> |
+| **Right hand side** | |
+
+| **Description** | Docker |
+| :---- | :---- |
+| **Left hand side** | <code> fd</code> |
+| **Right hand side** | |
+
+| **Description** | Command Palette |
+| :---- | :---- |
+| **Left hand side** | <code> hc</code> |
+| **Right hand side** | |
+
+| **Description** | Select VirtualEnv |
+| :---- | :---- |
+| **Left hand side** | <code> lv</code> |
+| **Right hand side** | |
+
+| **Description** | Terminal #2 |
+| :---- | :---- |
+| **Left hand side** | <code> 0</code> |
+| **Right hand side** | |
+
+| **Description** | File 1 |
+| :---- | :---- |
+| **Left hand side** | <code> 1</code> |
+| **Right hand side** | |
+
+| **Description** | Command Menu |
+| :---- | :---- |
+| **Left hand side** | <code> jc</code> |
+| **Right hand side** | |
+
+| **Description** | File Menu |
+| :---- | :---- |
+| **Left hand side** | <code> jm</code> |
+| **Right hand side** | |
+
+| **Description** | Add File |
+| :---- | :---- |
+| **Left hand side** | <code> ja</code> |
+| **Right hand side** | |
+
+| **Description** | Command 2 |
+| :---- | :---- |
+| **Left hand side** | <code> 6</code> |
+| **Right hand side** | |
+
+| **Description** | Command 1 |
+| :---- | :---- |
+| **Left hand side** | <code> 5</code> |
+| **Right hand side** | |
+
+| **Description** | Terminal 2 |
+| :---- | :---- |
+| **Left hand side** | <code> 4</code> |
+| **Right hand side** | |
+
+| **Description** | Terminal 1 |
+| :---- | :---- |
+| **Left hand side** | <code> 3</code> |
+| **Right hand side** | |
+
+| **Description** | File 2 |
+| :---- | :---- |
+| **Left hand side** | <code> 2</code> |
 | **Right hand side** | |
 
 | **Description** | Colorscheme |
@@ -925,9 +763,14 @@ Jump to:
 | **Left hand side** | <code> ff</code> |
 | **Right hand side** | |
 
-| **Description** | Mason |
+| **Description** | Find Files |
 | :---- | :---- |
-| **Left hand side** | <code> lm</code> |
+| **Left hand side** | <code>  </code> |
+| **Right hand side** | |
+
+| **Description** | Restore Session |
+| :---- | :---- |
+| **Left hand side** | <code> qs</code> |
 | **Right hand side** | |
 
 | **Description** | Don't Save Current Session |
@@ -940,9 +783,164 @@ Jump to:
 | **Left hand side** | <code> ql</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Session |
+| **Description** | Toggle Zoom |
 | :---- | :---- |
-| **Left hand side** | <code> qs</code> |
+| **Left hand side** | <code> vz</code> |
+| **Right hand side** | |
+
+| **Description** | Close Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> bc</code> |
+| **Right hand side** | |
+
+| **Description** | Reload Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> br</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer (Force) |
+| :---- | :---- |
+| **Left hand side** | <code> bD</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer |
+| :---- | :---- |
+| **Left hand side** | <code> bd</code> |
+| **Right hand side** | |
+
+| **Description** | Mason |
+| :---- | :---- |
+| **Left hand side** | <code> lm</code> |
+| **Right hand side** | |
+
+| **Description** | Forward jump |
+| :---- | :---- |
+| **Left hand side** | <code> nj</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Preview |
+| :---- | :---- |
+| **Left hand side** | <code> nt</code> |
+| **Right hand side** | |
+
+| **Description** | Close Preview |
+| :---- | :---- |
+| **Left hand side** | <code> nc</code> |
+| **Right hand side** | |
+
+| **Description** | Preview |
+| :---- | :---- |
+| **Left hand side** | <code> np</code> |
+| **Right hand side** | |
+
+| **Description** | Code Outline (navbuddy) |
+| :---- | :---- |
+| **Left hand side** | <code> vO</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle |
+| :---- | :---- |
+| **Left hand side** | <code> tot</code> |
+| **Right hand side** | |
+
+| **Description** | Save Bundle |
+| :---- | :---- |
+| **Left hand side** | <code> tos</code> |
+| **Right hand side** | |
+
+| **Description** | Run |
+| :---- | :---- |
+| **Left hand side** | <code> tor</code> |
+| **Right hand side** | |
+
+| **Description** | Quick Action |
+| :---- | :---- |
+| **Left hand side** | <code> toq</code> |
+| **Right hand side** | |
+
+| **Description** | Open |
+| :---- | :---- |
+| **Left hand side** | <code> too</code> |
+| **Right hand side** | |
+
+| **Description** | Load Bundle |
+| :---- | :---- |
+| **Left hand side** | <code> tol</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Bundle |
+| :---- | :---- |
+| **Left hand side** | <code> tod</code> |
+| **Right hand side** | |
+
+| **Description** | Close |
+| :---- | :---- |
+| **Left hand side** | <code> toc</code> |
+| **Right hand side** | |
+
+| **Description** | Build |
+| :---- | :---- |
+| **Left hand side** | <code> tob</code> |
+| **Right hand side** | |
+
+| **Description** | Task Action |
+| :---- | :---- |
+| **Left hand side** | <code> toa</code> |
+| **Right hand side** | |
+
+| **Description** | Run Command |
+| :---- | :---- |
+| **Left hand side** | <code> toR</code> |
+| **Right hand side** | |
+
+| **Description** | Notation |
+| :---- | :---- |
+| **Left hand side** | <code> nn</code> |
+| **Right hand side** | |
+
+| **Description** | Last |
+| :---- | :---- |
+| **Left hand side** | <code> tl</code> |
+| **Right hand side** | |
+
+| **Description** | File |
+| :---- | :---- |
+| **Left hand side** | <code> tf</code> |
+| **Right hand side** | |
+
+| **Description** | Class |
+| :---- | :---- |
+| **Left hand side** | <code> tc</code> |
+| **Right hand side** | |
+
+| **Description** | Visit |
+| :---- | :---- |
+| **Left hand side** | <code> tv</code> |
+| **Right hand side** | |
+
+| **Description** | Suite |
+| :---- | :---- |
+| **Left hand side** | <code> ts</code> |
+| **Right hand side** | |
+
+| **Description** | Nearest |
+| :---- | :---- |
+| **Left hand side** | <code> tn</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Minimap |
+| :---- | :---- |
+| **Left hand side** | <code> vm</code> |
+| **Right hand side** | |
+
+| **Description** | Open Yank History |
+| :---- | :---- |
+| **Left hand side** | <code> zp</code> |
+| **Right hand side** | |
+
+| **Description** | Search and Replace (Spectre) |
+| :---- | :---- |
+| **Left hand side** | <code> sr</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -965,14 +963,14 @@ Jump to:
 | **Left hand side** | <code>*</code> |
 | **Right hand side** | |
 
-| **Description** | Put and indent left |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;lt&gt;p</code> |
-| **Right hand side** | |
-
 | **Description** | Put before and indent left |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;lt&gt;P</code> |
+| **Right hand side** | |
+
+| **Description** | Put and indent left |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;lt&gt;p</code> |
 | **Right hand side** | |
 
 | **Description** | Put after applying a filter |
@@ -1015,9 +1013,14 @@ Jump to:
 | **Left hand side** | <code>Y</code> |
 | **Right hand side** | <code>y$</code> |
 
+| **Description** | Previous ToDo |
+| :---- | :---- |
+| **Left hand side** | <code>[t</code> |
+| **Right hand side** | |
+
 | **Description** | Put indented before cursor (linewise) |
 | :---- | :---- |
-| **Left hand side** | <code>[P</code> |
+| **Left hand side** | <code>[p</code> |
 | **Right hand side** | |
 
 | **Description** | Cycle forward through yank history |
@@ -1027,12 +1030,17 @@ Jump to:
 
 | **Description** | Put indented before cursor (linewise) |
 | :---- | :---- |
-| **Left hand side** | <code>[p</code> |
+| **Left hand side** | <code>[P</code> |
 | **Right hand side** | |
 
-| **Description** | Previous ToDo |
+| **Description** | Next ToDo |
 | :---- | :---- |
-| **Left hand side** | <code>[t</code> |
+| **Left hand side** | <code>]t</code> |
+| **Right hand side** | |
+
+| **Description** | Put indented after cursor (linewise) |
+| :---- | :---- |
+| **Left hand side** | <code>]p</code> |
 | **Right hand side** | |
 
 | **Description** | Cycle backward through yank history |
@@ -1042,17 +1050,7 @@ Jump to:
 
 | **Description** | Put indented after cursor (linewise) |
 | :---- | :---- |
-| **Left hand side** | <code>]p</code> |
-| **Right hand side** | |
-
-| **Description** | Put indented after cursor (linewise) |
-| :---- | :---- |
 | **Left hand side** | <code>]P</code> |
-| **Right hand side** | |
-
-| **Description** | Next ToDo |
-| :---- | :---- |
-| **Left hand side** | <code>]t</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1067,12 +1065,7 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>g*</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>g#</code> |
+| **Left hand side** | <code>gbc</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -1087,7 +1080,12 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gbc</code> |
+| **Left hand side** | <code>g*</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g#</code> |
 | **Right hand side** | |
 
 | **Description** | Put yanked text before selection |
@@ -1118,6 +1116,21 @@ Jump to:
 | **Description** | Yank text |
 | :---- | :---- |
 | **Left hand side** | <code>y</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zO</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>za</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>zA</code> |
 | **Right hand side** | |
 
 | **Description** | Open Folds Except Kinds |
@@ -1160,21 +1173,6 @@ Jump to:
 | **Left hand side** | <code>zC</code> |
 | **Right hand side** | |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>zO</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>za</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>zA</code> |
-| **Right hand side** | |
-
 | **Description** | Decrement |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-X&gt;</code> |
@@ -1194,16 +1192,6 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(dial-increment)</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Legendary |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-S-P&gt;</code> |
-| **Right hand side** | |
 
 | **Description** | Scroll backward |
 | :---- | :---- |
@@ -1235,6 +1223,16 @@ Jump to:
 | **Left hand side** | <code>&lt;M-e&gt;</code> |
 | **Right hand side** | |
 
+| **Description** | Legendary |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-S-P&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Bslash&gt;</code> |
+| **Right hand side** | |
+
 | **Description** | Nvim builtin |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
@@ -1242,6 +1240,11 @@ Jump to:
 
 
 ### Visual mode keymaps
+
+| **Description** | Extract Function to File |
+| :---- | :---- |
+| **Left hand side** | <code> rF</code> |
+| **Right hand side** | |
 
 | **Description** | Extract Function |
 | :---- | :---- |
@@ -1268,9 +1271,14 @@ Jump to:
 | **Left hand side** | <code> rx</code> |
 | **Right hand side** | |
 
-| **Description** | Extract Function to File |
+| **Description** | Evaluate |
 | :---- | :---- |
-| **Left hand side** | <code> rF</code> |
+| **Left hand side** | <code> de</code> |
+| **Right hand side** | |
+
+| **Description** | Edit with Instructions |
+| :---- | :---- |
+| **Left hand side** | <code> ae</code> |
 | **Right hand side** | |
 
 | **Description** | Complete Code |
@@ -1278,9 +1286,14 @@ Jump to:
 | **Left hand side** | <code> ac</code> |
 | **Right hand side** | |
 
-| **Description** | Edit with Instructions |
+| **Description** | Search and Replace (SSR) |
 | :---- | :---- |
-| **Left hand side** | <code> ae</code> |
+| **Left hand side** | <code> sR</code> |
+| **Right hand side** | |
+
+| **Description** | Mark Visual |
+| :---- | :---- |
+| **Left hand side** | <code> xmv</code> |
 | **Right hand side** | |
 
 | **Description** | Clear Highlight |
@@ -1301,21 +1314,6 @@ Jump to:
 | **Description** | +REPL |
 | :---- | :---- |
 | **Left hand side** | <code> x</code> |
-| **Right hand side** | |
-
-| **Description** | Mark Visual |
-| :---- | :---- |
-| **Left hand side** | <code> xmv</code> |
-| **Right hand side** | |
-
-| **Description** | Evaluate |
-| :---- | :---- |
-| **Left hand side** | <code> de</code> |
-| **Right hand side** | |
-
-| **Description** | Search and Replace (SSR) |
-| :---- | :---- |
-| **Left hand side** | <code> sR</code> |
 | **Right hand side** | |
 
 | **Description** | |

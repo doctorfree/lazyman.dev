@@ -19,11 +19,9 @@ Just a random Neovim config found on Github, works well
 
 [https://github.com/MrRoiz/rnvim](https://github.com/MrRoiz/rnvim)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -87,40 +85,15 @@ Jump to:
 | **Left hand side** | <code>&lt;Tab&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua MiniMove.move_line('right')&lt;CR&gt;</code> |
 
-| **Description** | Open a floating term |
+| **Description** | Open Telescope Keymaps |
 | :---- | :---- |
-| **Left hand side** | <code> tt</code> |
-| **Right hand side** | <code>:ToggleTerm direction=float&lt;CR&gt;</code> |
+| **Left hand side** | <code> k</code> |
+| **Right hand side** | <code>:Telescope keymaps&lt;CR&gt;</code> |
 
-| **Description** | Select all |
+| **Description** | Show git branches |
 | :---- | :---- |
-| **Left hand side** | <code> a</code> |
-| **Right hand side** | <code>ggvG&lt;S-End&gt;</code> |
-
-| **Description** | Test keymap |
-| :---- | :---- |
-| **Left hand side** | <code> test</code> |
-| **Right hand side** | <code>:echo 'This is a test keymap!'&lt;CR&gt;</code> |
-
-| **Description** | Open Spectre |
-| :---- | :---- |
-| **Left hand side** | <code> ss</code> |
-| **Right hand side** | <code>:lua require('spectre').open()&lt;CR&gt;</code> |
-
-| **Description** | Search on current file with Spectre |
-| :---- | :---- |
-| **Left hand side** | <code> sf</code> |
-| **Right hand side** | <code>:lua require('spectre').open_file_search({select_word=true})&lt;CR&gt;</code> |
-
-| **Description** | Search current word with Spectre |
-| :---- | :---- |
-| **Left hand side** | <code> sw</code> |
-| **Right hand side** | <code>:lua require('spectre').open_visual({select_word=true})&lt;CR&gt;</code> |
-
-| **Description** | Where am I |
-| :---- | :---- |
-| **Left hand side** | <code> wai</code> |
-| **Right hand side** | <code>:echo expand('%:p')&lt;CR&gt;</code> |
+| **Left hand side** | <code> gb</code> |
+| **Right hand side** | <code>:Telescope git_branches initial_mode=normal&lt;CR&gt;</code> |
 
 | **Description** | Show git log |
 | :---- | :---- |
@@ -142,35 +115,15 @@ Jump to:
 | **Left hand side** | <code> gst</code> |
 | **Right hand side** | <code>:Telescope git_status initial_mode=normal&lt;CR&gt;</code> |
 
-| **Description** | Open Telescope Keymaps |
+| **Description** | List PR's |
 | :---- | :---- |
-| **Left hand side** | <code> k</code> |
-| **Right hand side** | <code>:Telescope keymaps&lt;CR&gt;</code> |
+| **Left hand side** | <code> opl</code> |
+| **Right hand side** | <code>:Octo pr list initial_mode=normal&lt;CR&gt;</code> |
 
-| **Description** | Show git branches |
+| **Description** | Submit PR review |
 | :---- | :---- |
-| **Left hand side** | <code> gb</code> |
-| **Right hand side** | <code>:Telescope git_branches initial_mode=normal&lt;CR&gt;</code> |
-
-| **Description** | Close diffview |
-| :---- | :---- |
-| **Left hand side** | <code> dcc</code> |
-| **Right hand side** | <code>:DiffviewClose&lt;CR&gt;</code> |
-
-| **Description** | Open diffview |
-| :---- | :---- |
-| **Left hand side** | <code> dv</code> |
-| **Right hand side** | <code>:DiffviewOpen&lt;CR&gt;</code> |
-
-| **Description** | Show current file history |
-| :---- | :---- |
-| **Left hand side** | <code> dch</code> |
-| **Right hand side** | <code>:DiffviewFileHistory %&lt;CR&gt;</code> |
-
-| **Description** | Show Commit history with changes |
-| :---- | :---- |
-| **Left hand side** | <code> dh</code> |
-| **Right hand side** | <code>:DiffviewFileHistory&lt;CR&gt;</code> |
+| **Left hand side** | <code> orss</code> |
+| **Right hand side** | <code>:Octo review submit&lt;CR&gt;</code> |
 
 | **Description** | Start PR review |
 | :---- | :---- |
@@ -192,15 +145,60 @@ Jump to:
 | **Left hand side** | <code> opr</code> |
 | **Right hand side** | <code>:Octo pr reload&lt;CR&gt;</code> |
 
-| **Description** | List PR's |
+| **Description** | Open a floating term |
 | :---- | :---- |
-| **Left hand side** | <code> opl</code> |
-| **Right hand side** | <code>:Octo pr list initial_mode=normal&lt;CR&gt;</code> |
+| **Left hand side** | <code> tt</code> |
+| **Right hand side** | <code>:ToggleTerm direction=float&lt;CR&gt;</code> |
 
-| **Description** | Submit PR review |
+| **Description** | Search current word with Spectre |
 | :---- | :---- |
-| **Left hand side** | <code> orss</code> |
-| **Right hand side** | <code>:Octo review submit&lt;CR&gt;</code> |
+| **Left hand side** | <code> sw</code> |
+| **Right hand side** | <code>:lua require('spectre').open_visual({select_word=true})&lt;CR&gt;</code> |
+
+| **Description** | Open Spectre |
+| :---- | :---- |
+| **Left hand side** | <code> ss</code> |
+| **Right hand side** | <code>:lua require('spectre').open()&lt;CR&gt;</code> |
+
+| **Description** | Search on current file with Spectre |
+| :---- | :---- |
+| **Left hand side** | <code> sf</code> |
+| **Right hand side** | <code>:lua require('spectre').open_file_search({select_word=true})&lt;CR&gt;</code> |
+
+| **Description** | Close diffview |
+| :---- | :---- |
+| **Left hand side** | <code> dcc</code> |
+| **Right hand side** | <code>:DiffviewClose&lt;CR&gt;</code> |
+
+| **Description** | Open diffview |
+| :---- | :---- |
+| **Left hand side** | <code> dv</code> |
+| **Right hand side** | <code>:DiffviewOpen&lt;CR&gt;</code> |
+
+| **Description** | Show current file history |
+| :---- | :---- |
+| **Left hand side** | <code> dch</code> |
+| **Right hand side** | <code>:DiffviewFileHistory %&lt;CR&gt;</code> |
+
+| **Description** | Show Commit history with changes |
+| :---- | :---- |
+| **Left hand side** | <code> dh</code> |
+| **Right hand side** | <code>:DiffviewFileHistory&lt;CR&gt;</code> |
+
+| **Description** | Test keymap |
+| :---- | :---- |
+| **Left hand side** | <code> test</code> |
+| **Right hand side** | <code>:echo 'This is a test keymap!'&lt;CR&gt;</code> |
+
+| **Description** | Select all |
+| :---- | :---- |
+| **Left hand side** | <code> a</code> |
+| **Right hand side** | <code>ggvG&lt;S-End&gt;</code> |
+
+| **Description** | Where am I |
+| :---- | :---- |
+| **Left hand side** | <code> wai</code> |
+| **Right hand side** | <code>:echo expand('%:p')&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -272,31 +270,6 @@ Jump to:
 | **Left hand side** | <code>g%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
 
-| **Description** | Close preview windows |
-| :---- | :---- |
-| **Left hand side** | <code>gP</code> |
-| **Right hand side** | |
-
-| **Description** | Preview references |
-| :---- | :---- |
-| **Left hand side** | <code>gpr</code> |
-| **Right hand side** | |
-
-| **Description** | Preview implementation |
-| :---- | :---- |
-| **Left hand side** | <code>gpi</code> |
-| **Right hand side** | |
-
-| **Description** | Preview type definition |
-| :---- | :---- |
-| **Left hand side** | <code>gpt</code> |
-| **Right hand side** | |
-
-| **Description** | Preview definition |
-| :---- | :---- |
-| **Left hand side** | <code>gpd</code> |
-| **Right hand side** | |
-
 | **Description** | Comment insert end of line |
 | :---- | :---- |
 | **Left hand side** | <code>gcA</code> |
@@ -332,9 +305,29 @@ Jump to:
 | **Left hand side** | <code>gc</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
 
-| **Description** | Close all folds |
+| **Description** | Close preview windows |
 | :---- | :---- |
-| **Left hand side** | <code>zM</code> |
+| **Left hand side** | <code>gP</code> |
+| **Right hand side** | |
+
+| **Description** | Preview references |
+| :---- | :---- |
+| **Left hand side** | <code>gpr</code> |
+| **Right hand side** | |
+
+| **Description** | Preview implementation |
+| :---- | :---- |
+| **Left hand side** | <code>gpi</code> |
+| **Right hand side** | |
+
+| **Description** | Preview type definition |
+| :---- | :---- |
+| **Left hand side** | <code>gpt</code> |
+| **Right hand side** | |
+
+| **Description** | Preview definition |
+| :---- | :---- |
+| **Left hand side** | <code>gpd</code> |
 | **Right hand side** | |
 
 | **Description** | Open all folds |
@@ -342,15 +335,40 @@ Jump to:
 | **Left hand side** | <code>zR</code> |
 | **Right hand side** | |
 
+| **Description** | Close all folds |
+| :---- | :---- |
+| **Left hand side** | <code>zM</code> |
+| **Right hand side** | |
+
+| **Description** | Quit Nvim |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Right hand side** | <code>:q&lt;CR&gt;</code> |
+
+| **Description** | Move down faster |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>10j</code> |
+
+| **Description** | Move up faster |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>10k</code> |
+
+| **Description** | Format file |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-F&gt;</code> |
+| **Right hand side** | <code>:lua vim.lsp.buf.format({ timeout_ms = 5000 })&lt;CR&gt;</code> |
+
 | **Description** | Save current file |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-S&gt;</code> |
 | **Right hand side** | <code>:w&lt;CR&gt;</code> |
 
-| **Description** | Open Nvimtree |
+| **Description** | Update buffer |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-B&gt;</code> |
-| **Right hand side** | <code>:NvimTreeFindFileToggle&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;F5&gt;</code> |
+| **Right hand side** | <code>:bufdo e!&lt;CR&gt;</code> |
 
 | **Description** | Close current buffer |
 | :---- | :---- |
@@ -367,30 +385,10 @@ Jump to:
 | **Left hand side** | <code>&lt;M-l&gt;</code> |
 | **Right hand side** | <code>:BufferLineCycleNext&lt;CR&gt;</code> |
 
-| **Description** | Move up faster |
+| **Description** | Open Nvimtree |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-K&gt;</code> |
-| **Right hand side** | <code>10k</code> |
-
-| **Description** | Quit Nvim |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Q&gt;</code> |
-| **Right hand side** | <code>:q&lt;CR&gt;</code> |
-
-| **Description** | Move down faster |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-J&gt;</code> |
-| **Right hand side** | <code>10j</code> |
-
-| **Description** | Update buffer |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;F5&gt;</code> |
-| **Right hand side** | <code>:bufdo e!&lt;CR&gt;</code> |
-
-| **Description** | Format file |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-F&gt;</code> |
-| **Right hand side** | <code>:lua vim.lsp.buf.format({ timeout_ms = 5000 })&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Right hand side** | <code>:NvimTreeFindFileToggle&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -416,41 +414,6 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
-
-| **Description** | Comment toggle blockwise with count |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle linewise with count |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle current block |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle current line |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle blockwise |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle linewise |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -616,6 +579,41 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-At-Pos)</code> |
 | **Right hand side** | <code>:call vm#commands#add_cursor_at_pos(0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle blockwise with count |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise with count |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current block |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current line |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
+| **Right hand side** | |
 
 | **Description** | Move line up |
 | :---- | :---- |
@@ -820,6 +818,16 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Visual-Find)</code> |
 | **Right hand side** | <code>vm#operators#find(1, 1)</code> |
 
+| **Description** | Comment toggle blockwise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle linewise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
+
 | **Description** | Move up |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;M-k&gt;</code> |
@@ -834,16 +842,6 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>&lt;S-Tab&gt;</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua MiniMove.move_selection('left')&lt;CR&gt;</code> |
-
-| **Description** | Comment toggle blockwise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-
-| **Description** | Comment toggle linewise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
 
 
 ### Operator mode keymaps

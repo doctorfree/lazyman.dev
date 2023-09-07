@@ -23,11 +23,9 @@ Personal Neovim configuration of Maddison Hellstrom, author of 'incline.nvim' fl
 
 [https://dotfyle.com/b0o/nvim-conf](https://dotfyle.com/b0o/nvim-conf)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -226,13 +224,8 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>dm5</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark5()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>dm4</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark4()&lt;CR&gt;</code> |
+| **Left hand side** | <code>ds</code> |
+| **Right hand side** | <code>&lt;Plug&gt;Dsurround</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -241,8 +234,8 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>dm </code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_buf()&lt;CR&gt;</code> |
+| **Left hand side** | <code>dm</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -251,8 +244,18 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>dm7</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark7()&lt;CR&gt;</code> |
+| **Left hand side** | <code>dm </code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_buf()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>dm1</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark1()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>dm8</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark8()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -266,16 +269,6 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>dm1</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark1()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>dm</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>dm0</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark0()&lt;CR&gt;</code> |
 
@@ -286,18 +279,23 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>dm8</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark8()&lt;CR&gt;</code> |
+| **Left hand side** | <code>dm5</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark5()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>dm7</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark7()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>dm4</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark4()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>dm9</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.delete_bookmark9()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>ds</code> |
-| **Right hand side** | <code>&lt;Plug&gt;Dsurround</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -313,6 +311,11 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>g%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ge</code> |
+| **Right hand side** | <code>&lt;Plug&gt;WordMotion_ge</code> |
 
 | **Description** | Comment insert end of line |
 | :---- | :---- |
@@ -361,43 +364,23 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>ge</code> |
-| **Right hand side** | <code>&lt;Plug&gt;WordMotion_ge</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m;</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.toggle()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m5</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark5()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m{</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.prev_bookmark()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m2</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark2()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>m:</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.preview()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>m4</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark4()&lt;CR&gt;</code> |
+| **Left hand side** | <code>m[</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.prev()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>m0</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark0()&lt;CR&gt;</code> |
+| **Left hand side** | <code>m</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m2</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark2()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -411,18 +394,8 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>m]</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.next()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m9</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark9()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>m</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set()&lt;CR&gt;</code> |
+| **Left hand side** | <code>m8</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark8()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -431,8 +404,23 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>m1</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark1()&lt;CR&gt;</code> |
+| **Left hand side** | <code>m0</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark0()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m{</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.prev_bookmark()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m6</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark6()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m]</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.next()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -441,18 +429,28 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>m8</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark8()&lt;CR&gt;</code> |
+| **Left hand side** | <code>m5</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark5()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>m[</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.prev()&lt;CR&gt;</code> |
+| **Left hand side** | <code>m4</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark4()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>m6</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark6()&lt;CR&gt;</code> |
+| **Left hand side** | <code>m1</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark1()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.toggle()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>m9</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require'marks'.set_bookmark9()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -527,32 +525,362 @@ Jump to:
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;MoveCharLeft</code> |
-| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;65_MoveCharHorizontally(-v:count1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;58_MoveCharHorizontally(-v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;MoveCharRight</code> |
-| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;65_MoveCharHorizontally( v:count1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;58_MoveCharHorizontally( v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;MoveLineHalfPageUp</code> |
-| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;65_MoveLineVertically(-v:count1 * &lt;SNR&gt;65_HalfPageSize())&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;58_MoveLineVertically(-v:count1 * &lt;SNR&gt;58_HalfPageSize())&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;MoveLineHalfPageDown</code> |
-| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;65_MoveLineVertically( v:count1 * &lt;SNR&gt;65_HalfPageSize())&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;58_MoveLineVertically( v:count1 * &lt;SNR&gt;58_HalfPageSize())&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;MoveLineUp</code> |
-| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;65_MoveLineVertically(-v:count1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;58_MoveLineVertically(-v:count1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;MoveLineDown</code> |
-| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;65_MoveLineVertically( v:count1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;58_MoveLineVertically( v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(abolish-coerce-word)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;51_coerce(nr2char(getchar())).'iw'</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(abolish-coerce)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;51_coerce(nr2char(getchar()))</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;2-LeftMouse&gt;</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-double-click)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-reload)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;MatchupReload&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-double-click)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#double_click()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;44_(wise)</code> |
+| **Right hand side** | <code>empty(g:v_motion_force) ? 'v' : g:v_motion_force</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-hi-surround)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#matchparen#highlight_surrounding()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Down&gt;</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-Down)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Up&gt;</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-Up)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;S-Right&gt;</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(VM-Select-l)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;S-Left&gt;</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(VM-Select-h)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-N&gt;</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(VM-Find-Under)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-BBW)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('BBW', v:count1, 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-gE)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('gE', v:count1, 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-ge)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('ge', v:count1, 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-E)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('E', v:count1, 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-e)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('e', v:count1, 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-B)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('B', v:count1, 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-b)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('b', v:count1, 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-W)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('W', v:count1, 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-w)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('w', v:count1, 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-l)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('l', v:count1, 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-k)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('k', v:count1, 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-j)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('j', v:count1, 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-h)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('h', v:count1, 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Mouse-Column)</code> |
+| **Right hand side** | <code>:call vm#commands#mouse_column()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Mouse-Word)</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(VM-Left-Mouse)&lt;Plug&gt;(VM-Find-Under)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Mouse-Cursor)</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(VM-Left-Mouse)&lt;Plug&gt;(VM-Add-Cursor-At-Pos)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Left-Mouse)</code> |
+| **Right hand side** | <code>&lt;LeftMouse&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Slash-Search)</code> |
+| **Right hand side** | <code>@=vm#commands#find_by_regex(3)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Start-Regex-Search)</code> |
+| **Right hand side** | <code>@=vm#commands#find_by_regex(1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Find-Under)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#ctrln(v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-All)</code> |
+| **Right hand side** | <code>:call vm#commands#find_all(0, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Reselect-Last)</code> |
+| **Right hand side** | <code>:call vm#commands#reselect_last()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-Cursor-Up)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#add_cursor_up(1, v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-Cursor-Down)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#add_cursor_down(1, v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-Up)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#add_cursor_up(0, v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-Down)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#add_cursor_down(0, v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-At-Word)</code> |
+| **Right hand side** | <code>:call vm#commands#add_cursor_at_word(1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-At-Pos)</code> |
+| **Right hand side** | <code>:call vm#commands#add_cursor_at_pos(0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;YSurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;37_opfunc2('setup')</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Ysurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;37_opfunc('setup')</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;YSsurround</code> |
+| **Right hand side** | <code>&lt;SNR&gt;37_opfunc2('setup').'_'</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Yssurround</code> |
+| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;37_opfunc('setup').'g_'</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;CSurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;37_changesurround(1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Csurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;37_changesurround()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;Dsurround</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;37_dosurround(&lt;SNR&gt;37_inputtarget())&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SurroundRepeat</code> |
+| **Right hand side** | <code>.</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_ge</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'n', 'be', 0, [])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_b</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'n', 'b', 0, [])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_e</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'n', 'e', 0, [])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_w</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'n', '', 0, [])&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle blockwise with count |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise with count |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current block |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current line |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;26_</code> |
+| **Right hand side** | <code>&lt;SNR&gt;26_</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;26_(save-cursor-pos)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;26_save_cursor_pos()</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -716,71 +1044,6 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;2-LeftMouse&gt;</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-double-click)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-reload)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;MatchupReload&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-double-click)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#double_click()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(0, 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(0, 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;50_(wise)</code> |
-| **Right hand side** | <code>empty(g:v_motion_force) ? 'v' : g:v_motion_force</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-hi-surround)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#matchparen#highlight_surrounding()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(abolish-coerce-word)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;44_coerce(nr2char(getchar())).'iw'</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(abolish-coerce)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;44_coerce(nr2char(getchar()))</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
 | **Right hand side** | |
 
@@ -788,6 +1051,21 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
 | **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(dial-decrement)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(dial-increment)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1124,286 +1402,6 @@ Jump to:
 | **Left hand side** | <code>&lt;C-Z&gt;</code> |
 | **Right hand side** | <code></code> |
 
-| **Description** | Comment toggle blockwise with count |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle linewise with count |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle current block |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle current line |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle blockwise |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle linewise |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(dial-decrement)</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(dial-increment)</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;YSurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_opfunc2('setup')</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Ysurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_opfunc('setup')</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;YSsurround</code> |
-| **Right hand side** | <code>&lt;SNR&gt;22_opfunc2('setup').'_'</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Yssurround</code> |
-| **Right hand side** | <code>'^'.v:count1.&lt;SNR&gt;22_opfunc('setup').'g_'</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;CSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_changesurround(1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Csurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_changesurround()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;Dsurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;22_dosurround(&lt;SNR&gt;22_inputtarget())&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;SurroundRepeat</code> |
-| **Right hand side** | <code>.</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_ge</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'n', 'be', 0, [])&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_b</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'n', 'b', 0, [])&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_e</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'n', 'e', 0, [])&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_w</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'n', '', 0, [])&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
-| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Down&gt;</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-Down)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Up&gt;</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-Up)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;S-Right&gt;</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(VM-Select-l)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;S-Left&gt;</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(VM-Select-h)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-N&gt;</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(VM-Find-Under)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-BBW)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('BBW', v:count1, 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-gE)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('gE', v:count1, 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-ge)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('ge', v:count1, 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-E)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('E', v:count1, 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-e)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('e', v:count1, 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-B)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('B', v:count1, 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-b)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('b', v:count1, 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-W)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('W', v:count1, 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-w)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('w', v:count1, 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-l)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('l', v:count1, 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-k)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('k', v:count1, 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-j)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('j', v:count1, 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-h)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#motion('h', v:count1, 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Mouse-Column)</code> |
-| **Right hand side** | <code>:call vm#commands#mouse_column()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Mouse-Word)</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(VM-Left-Mouse)&lt;Plug&gt;(VM-Find-Under)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Mouse-Cursor)</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(VM-Left-Mouse)&lt;Plug&gt;(VM-Add-Cursor-At-Pos)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Left-Mouse)</code> |
-| **Right hand side** | <code>&lt;LeftMouse&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Slash-Search)</code> |
-| **Right hand side** | <code>@=vm#commands#find_by_regex(3)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Start-Regex-Search)</code> |
-| **Right hand side** | <code>@=vm#commands#find_by_regex(1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Find-Under)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#ctrln(v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-All)</code> |
-| **Right hand side** | <code>:call vm#commands#find_all(0, 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Reselect-Last)</code> |
-| **Right hand side** | <code>:call vm#commands#reselect_last()&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-Cursor-Up)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#add_cursor_up(1, v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Select-Cursor-Down)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#add_cursor_down(1, v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-Up)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#add_cursor_up(0, v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-Down)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call vm#commands#add_cursor_down(0, v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-At-Word)</code> |
-| **Right hand side** | <code>:call vm#commands#add_cursor_at_word(1, 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(VM-Add-Cursor-At-Pos)</code> |
-| **Right hand side** | <code>:call vm#commands#add_cursor_at_pos(0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;9_</code> |
-| **Right hand side** | <code>&lt;SNR&gt;9_</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;9_(save-cursor-pos)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;9_save_cursor_pos()</code> |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-L&gt;</code> |
@@ -1474,23 +1472,8 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>a%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>aw</code> |
 | **Right hand side** | <code>&lt;Plug&gt;WordMotion_aw</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>al</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(textobj-line-a)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>az</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(textobj-fold-a)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1509,6 +1492,21 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>az</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(textobj-fold-a)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>a%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>al</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(textobj-line-a)</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>b</code> |
 | **Right hand side** | <code>&lt;Plug&gt;WordMotion_b</code> |
 
@@ -1521,16 +1519,6 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>gx</code> |
 | **Right hand side** | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>g%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>ge</code> |
-| **Right hand side** | <code>&lt;Plug&gt;WordMotion_ge</code> |
 
 | **Description** | Comment toggle blockwise (visual) |
 | :---- | :---- |
@@ -1549,6 +1537,16 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>ge</code> |
+| **Right hand side** | <code>&lt;Plug&gt;WordMotion_ge</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>g&lt;Plug&gt;(dial-decrement)</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gvisual"&lt;CR&gt;g@gv</code> |
 
@@ -1559,23 +1557,8 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>i%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-i%)</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>iw</code> |
 | **Right hand side** | <code>&lt;Plug&gt;WordMotion_iw</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>il</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(textobj-line-i)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>iz</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(textobj-fold-i)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1599,6 +1582,21 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>iz</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(textobj-fold-i)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>i%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-i%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>il</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(textobj-line-i)</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>p</code> |
 | **Right hand side** | <code>user#fn#pasteRestore()</code> |
 
@@ -1617,110 +1615,15 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
 
-| **Description** | |
+| **Description** | Comment toggle blockwise (visual) |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(0, 1, 'delim_all')&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
 
-| **Description** | |
+| **Description** | Comment toggle linewise (visual) |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-i%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(1, 1, 'delim_all')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;60_(matchup-Z%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;60_(matchup-Z%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;60_(matchup-z%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;60_(matchup-z%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;60_(matchup-[%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;60_(matchup-]%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;60_(matchup-[%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;60_(matchup-]%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;60_(matchup-g%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;60_(matchup-g%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;60_(matchup-%)</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;60_(matchup-%)</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_iw</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#object(v:count1, 'x', 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_aw</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#object(v:count1, 'x', 0, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_ge</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'x', 'be', 0, [])&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_b</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'x', 'b', 0, [])&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_e</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'x', 'e', 0, [])&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_w</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'x', '', 0, [])&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(abolish-coerce)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;41_coerce(nr2char(getchar()))</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1764,83 +1667,13 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-L&gt;</code> |
-| **Right hand side** | <code>&lt;Plug&gt;MoveBlockRight</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-H&gt;</code> |
-| **Right hand side** | <code>&lt;Plug&gt;MoveBlockLeft</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-K&gt;</code> |
-| **Right hand side** | <code>&lt;Plug&gt;MoveBlockUp</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-J&gt;</code> |
-| **Right hand side** | <code>&lt;Plug&gt;MoveBlockDown</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;MoveBlockLeft</code> |
-| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;37_MoveBlockHorizontally(-v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;MoveBlockRight</code> |
-| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;37_MoveBlockHorizontally( v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;MoveBlockHalfPageUp</code> |
-| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;37_MoveBlockVertically(-v:count1 * &lt;SNR&gt;37_HalfPageSize())&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;MoveBlockHalfPageDown</code> |
-| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;37_MoveBlockVertically( v:count1 * &lt;SNR&gt;37_HalfPageSize())&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;MoveBlockUp</code> |
-| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;37_MoveBlockVertically(-v:count1)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;MoveBlockDown</code> |
-| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;37_MoveBlockVertically( v:count1)&lt;CR&gt;</code> |
-
-| **Description** | Comment toggle blockwise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-
-| **Description** | Comment toggle linewise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
-| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(textobj-line-i)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_line.do_by_function("select-i","-","v")&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(textobj-line-a)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_line.do_by_function("select-a","-","v")&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;VgSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;27_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;61_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;VSurround</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;27_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call &lt;SNR&gt;61_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1855,7 +1688,7 @@ Jump to:
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Find-Subword-Under)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;24_Visual('under')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;58_Visual('under')</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1875,7 +1708,7 @@ Jump to:
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(VM-Visual-All)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;24_Visual('all')</code> |
+| **Right hand side** | <code>&lt;SNR&gt;58_Visual('all')</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1884,58 +1717,148 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(textobj-fold-i)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_fold.do_by_function("select-i","-","v")&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_iw</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#object(v:count1, 'x', 1, 0)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(textobj-fold-a)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_fold.do_by_function("select-a","-","v")&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_aw</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#object(v:count1, 'x', 0, 0)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| **Right hand side** | |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_ge</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'x', 'be', 0, [])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_b</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'x', 'b', 0, [])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_e</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'x', 'e', 0, [])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_w</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'x', '', 0, [])&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(textobj-indent-i)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-i","-","v")&lt;CR&gt;</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-i","-","v")&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(textobj-indent-a)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-a","-","v")&lt;CR&gt;</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-a","-","v")&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(textobj-indent-same-i)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-i","same","v")&lt;CR&gt;</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-i","same","v")&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(textobj-indent-same-a)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-a","same","v")&lt;CR&gt;</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-a","same","v")&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(textobj-parameter-i)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_parameter.do_by_function("select-i","-","v")&lt;CR&gt;</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_parameter.do_by_function("select-i","-","v")&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(textobj-parameter-a)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_parameter.do_by_function("select-a","-","v")&lt;CR&gt;</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_parameter.do_by_function("select-a","-","v")&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(textobj-parameter-greedy-i)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_parameter.do_by_function("select-i","greedy","v")&lt;CR&gt;</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_parameter.do_by_function("select-i","greedy","v")&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_save_cursor_pos()</code> |
+| **Left hand side** | <code>&lt;Plug&gt;(textobj-fold-i)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_fold.do_by_function("select-i","-","v")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(textobj-fold-a)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_fold.do_by_function("select-a","-","v")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(0, 1, 'delim_all')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-i%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#text_obj#delimited(1, 1, 'delim_all')&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-Z%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;35_(matchup-Z%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;35_(matchup-Z%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside_prev(1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-z%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;35_(matchup-z%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;35_(matchup-z%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#jump_inside(1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-[%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;35_(matchup-[%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-]%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;35_(matchup-]%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;35_(matchup-[%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;35_(matchup-]%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_unmatched(1, 1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-g%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;35_(matchup-g%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;35_(matchup-g%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;35_(matchup-%)</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;35_(matchup-%)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#find_matching_pair(1, 1)&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -1962,6 +1885,81 @@ Jump to:
 | **Left hand side** | <code>&lt;C-Z&gt;</code> |
 | **Right hand side** | <code></code> |
 
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(textobj-line-i)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_line.do_by_function("select-i","-","v")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(textobj-line-a)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_line.do_by_function("select-a","-","v")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;23_(save-cursor-pos)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;23_save_cursor_pos()</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(abolish-coerce)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;17_coerce(nr2char(getchar()))</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>&lt;Plug&gt;MoveBlockRight</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
+| **Right hand side** | <code>&lt;Plug&gt;MoveBlockLeft</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>&lt;Plug&gt;MoveBlockUp</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>&lt;Plug&gt;MoveBlockDown</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;MoveBlockLeft</code> |
+| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;7_MoveBlockHorizontally(-v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;MoveBlockRight</code> |
+| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;7_MoveBlockHorizontally( v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;MoveBlockHalfPageUp</code> |
+| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;7_MoveBlockVertically(-v:count1 * &lt;SNR&gt;7_HalfPageSize())&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;MoveBlockHalfPageDown</code> |
+| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;7_MoveBlockVertically( v:count1 * &lt;SNR&gt;7_HalfPageSize())&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;MoveBlockUp</code> |
+| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;7_MoveBlockVertically(-v:count1)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;MoveBlockDown</code> |
+| **Right hand side** | <code>:&lt;C-U&gt; silent call &lt;SNR&gt;7_MoveBlockVertically( v:count1)&lt;CR&gt;</code> |
+
 
 ### Operator mode keymaps
 
@@ -1982,11 +1980,6 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>az</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(textobj-fold-a)</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>ai</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(textobj-indent-a)</code> |
 
@@ -1997,13 +1990,13 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>a%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
+| **Left hand side** | <code>al</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(textobj-line-a)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>al</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(textobj-line-a)</code> |
+| **Left hand side** | <code>az</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(textobj-fold-a)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -2017,6 +2010,11 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>a%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-a%)</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>b</code> |
 | **Right hand side** | <code>&lt;Plug&gt;WordMotion_b</code> |
 
@@ -2027,18 +2025,13 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>g%</code> |
-| **Right hand side** | <code>&lt;Ignore&gt;&lt;Plug&gt;(matchup-g%)</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>ge</code> |
 | **Right hand side** | <code>&lt;Plug&gt;WordMotion_ge</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>iz</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(textobj-fold-i)</code> |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Ignore&gt;&lt;Plug&gt;(matchup-g%)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -2052,13 +2045,13 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>i%</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(matchup-i%)</code> |
+| **Left hand side** | <code>il</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(textobj-line-i)</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>il</code> |
-| **Right hand side** | <code>&lt;Plug&gt;(textobj-line-i)</code> |
+| **Left hand side** | <code>iz</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(textobj-fold-i)</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -2077,6 +2070,11 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>i%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(matchup-i%)</code> |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>w</code> |
 | **Right hand side** | <code>&lt;Plug&gt;WordMotion_w</code> |
 
@@ -2087,33 +2085,103 @@ Jump to:
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(textobj-fold-i)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_fold.do_by_function("select-i","-","o")&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(textobj-fold-a)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_fold.do_by_function("select-a","-","o")&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(textobj-indent-i)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-i","-","o")&lt;CR&gt;</code> |
+| **Right hand side** | <code>&lt;SNR&gt;29_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-i","-","o")&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(textobj-indent-a)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-a","-","o")&lt;CR&gt;</code> |
+| **Right hand side** | <code>&lt;SNR&gt;29_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-a","-","o")&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(textobj-indent-same-i)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-i","same","o")&lt;CR&gt;</code> |
+| **Right hand side** | <code>&lt;SNR&gt;29_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-i","same","o")&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(textobj-indent-same-a)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-a","same","o")&lt;CR&gt;</code> |
+| **Right hand side** | <code>&lt;SNR&gt;29_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_indent.do_by_function("select-a","same","o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(textobj-line-i)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;29_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_line.do_by_function("select-i","-","o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(textobj-line-a)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;29_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_line.do_by_function("select-a","-","o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(textobj-fold-i)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;29_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_fold.do_by_function("select-i","-","o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(textobj-fold-a)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;29_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_fold.do_by_function("select-a","-","o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_iw</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#object(v:count1, 'o', 1, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_aw</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#object(v:count1, 'o', 0, 0)&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_ge</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'o', 'be', 0, [])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_b</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'o', 'b', 0, [])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_e</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'o', 'e', 0, [])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;WordMotion_w</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'o', '', 0, [])&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(textobj-parameter-i)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;29_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_parameter.do_by_function("select-i","-","o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(textobj-parameter-a)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;29_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_parameter.do_by_function("select-a","-","o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(textobj-parameter-greedy-i)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;29_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_parameter.do_by_function("select-i","greedy","o")&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;SNR&gt;29_(save-cursor-pos)</code> |
+| **Right hand side** | <code>&lt;SNR&gt;29_save_cursor_pos()</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Z&gt;</code> |
+| **Right hand side** | <code></code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -2154,74 +2222,4 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>&lt;Plug&gt;(matchup-%)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchup#motion#op('%')&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(textobj-line-i)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_line.do_by_function("select-i","-","o")&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(textobj-line-a)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_line.do_by_function("select-a","-","o")&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_iw</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#object(v:count1, 'o', 1, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_aw</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#object(v:count1, 'o', 0, 0)&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_ge</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'o', 'be', 0, [])&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_b</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'o', 'b', 0, [])&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_e</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'o', 'e', 0, [])&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;WordMotion_w</code> |
-| **Right hand side** | <code>:&lt;C-U&gt;call wordmotion#motion(v:count1, 'o', '', 0, [])&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Z&gt;</code> |
-| **Right hand side** | <code></code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(textobj-parameter-i)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_parameter.do_by_function("select-i","-","o")&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(textobj-parameter-a)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_parameter.do_by_function("select-a","-","o")&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;(textobj-parameter-greedy-i)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos):&lt;C-U&gt;call g:__textobj_parameter.do_by_function("select-i","greedy","o")&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;SNR&gt;13_(save-cursor-pos)</code> |
-| **Right hand side** | <code>&lt;SNR&gt;13_save_cursor_pos()</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
-| **Right hand side** | |
 

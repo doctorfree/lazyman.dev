@@ -27,11 +27,9 @@ An out-of-the-box Neovim IDE solution with simple development environment setup
 
 [https://dotfyle.com/nshen/insisvim](https://dotfyle.com/nshen/insisvim)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Packer managed plugins
 

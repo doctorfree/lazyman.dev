@@ -23,11 +23,9 @@ LazyVim based config for web developers. JavaScript, Typescript, React, and Tail
 
 [https://webdev.lazyman.dev](https://webdev.lazyman.dev)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -120,16 +118,6 @@ Jump to:
 | **Left hand side** | <code>&</code> |
 | **Right hand side** | <code>:&&&lt;CR&gt;</code> |
 
-| **Description** | Mason |
-| :---- | :---- |
-| **Left hand side** | <code>,cm</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
-
-| **Description** | Mason Menu |
-| :---- | :---- |
-| **Left hand side** | <code>,M</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
-
 | **Description** | Move Float |
 | :---- | :---- |
 | **Left hand side** | <code>,tf</code> |
@@ -190,29 +178,24 @@ Jump to:
 | **Left hand side** | <code>,to</code> |
 | **Right hand side** | |
 
+| **Description** | Mason Menu |
+| :---- | :---- |
+| **Left hand side** | <code>,M</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
+
+| **Description** | Mason |
+| :---- | :---- |
+| **Left hand side** | <code>,cm</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
+
 | **Description** | Toggle Transparency |
 | :---- | :---- |
 | **Left hand side** | <code>,ut</code> |
 | **Right hand side** | |
 
-| **Description** | Todo (Trouble) |
+| **Description** | JsDoc |
 | :---- | :---- |
-| **Left hand side** | <code>,xt</code> |
-| **Right hand side** | |
-
-| **Description** | Todo/Fix/Fixme (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code>,xT</code> |
-| **Right hand side** | |
-
-| **Description** | Todo/Fix/Fixme |
-| :---- | :---- |
-| **Left hand side** | <code>,sT</code> |
-| **Right hand side** | |
-
-| **Description** | Todo |
-| :---- | :---- |
-| **Left hand side** | <code>,st</code> |
+| **Left hand side** | <code>,d</code> |
 | **Right hand side** | |
 
 | **Description** | Quickfix List (Trouble) |
@@ -235,74 +218,59 @@ Jump to:
 | **Left hand side** | <code>,xx</code> |
 | **Right hand side** | |
 
-| **Description** | JsDoc |
+| **Description** | status |
 | :---- | :---- |
-| **Left hand side** | <code>,d</code> |
+| **Left hand side** | <code>,gs</code> |
 | **Right hand side** | |
 
-| **Description** | Noice All |
+| **Description** | commits |
 | :---- | :---- |
-| **Left hand side** | <code>,sna</code> |
+| **Left hand side** | <code>,gc</code> |
 | **Right hand side** | |
 
-| **Description** | Noice History |
+| **Description** | Recent (cwd) |
 | :---- | :---- |
-| **Left hand side** | <code>,snh</code> |
+| **Left hand side** | <code>,fR</code> |
 | **Right hand side** | |
 
-| **Description** | Noice Last Message |
+| **Description** | Recent |
 | :---- | :---- |
-| **Left hand side** | <code>,snl</code> |
+| **Left hand side** | <code>,fr</code> |
 | **Right hand side** | |
 
-| **Description** | Dismiss All |
+| **Description** | Find Files (cwd) |
 | :---- | :---- |
-| **Left hand side** | <code>,snd</code> |
+| **Left hand side** | <code>,fF</code> |
 | **Right hand side** | |
 
-| **Description** | Projects |
+| **Description** | Find Files (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code>,fp</code> |
+| **Left hand side** | <code>,ff</code> |
 | **Right hand side** | |
 
-| **Description** | Treesitter Join |
+| **Description** | Buffers |
 | :---- | :---- |
-| **Left hand side** | <code>,tj</code> |
+| **Left hand side** | <code>,fb</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle Treesitter Join |
+| **Description** | Command History |
 | :---- | :---- |
-| **Left hand side** | <code>,tt</code> |
+| **Left hand side** | <code>,:</code> |
 | **Right hand side** | |
 
-| **Description** | Terminal Send |
+| **Description** | Grep (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code>,ts</code> |
+| **Left hand side** | <code>,/</code> |
 | **Right hand side** | |
 
-| **Description** | Explorer NeoTree (root dir) |
+| **Description** | Switch Buffer |
 | :---- | :---- |
-| **Left hand side** | <code>,e</code> |
+| **Left hand side** | <code>,,</code> |
 | **Right hand side** | |
 
-| **Description** | Explorer NeoTree (cwd) |
+| **Description** | Find Files (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code>,fE</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer NeoTree (root dir) |
-| :---- | :---- |
-| **Left hand side** | <code>,fe</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer NeoTree (cwd) |
-| :---- | :---- |
-| **Left hand side** | <code>,E</code> |
-| **Right hand side** | |
-
-| **Description** | Auto Commands |
-| :---- | :---- |
-| **Left hand side** | <code>,sa</code> |
+| **Left hand side** | <code>, </code> |
 | **Right hand side** | |
 
 | **Description** | Goto Symbol (Workspace) |
@@ -400,9 +368,9 @@ Jump to:
 | **Left hand side** | <code>,sb</code> |
 | **Right hand side** | |
 
-| **Description** | Find Files (root dir) |
+| **Description** | Auto Commands |
 | :---- | :---- |
-| **Left hand side** | <code>, </code> |
+| **Left hand side** | <code>,sa</code> |
 | **Right hand side** | |
 
 | **Description** | Registers |
@@ -410,64 +378,69 @@ Jump to:
 | **Left hand side** | <code>,s"</code> |
 | **Right hand side** | |
 
-| **Description** | status |
+| **Description** | Explorer NeoTree (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code>,gs</code> |
+| **Left hand side** | <code>,fe</code> |
 | **Right hand side** | |
 
-| **Description** | commits |
+| **Description** | Explorer NeoTree (cwd) |
 | :---- | :---- |
-| **Left hand side** | <code>,gc</code> |
+| **Left hand side** | <code>,E</code> |
 | **Right hand side** | |
 
-| **Description** | Recent (cwd) |
+| **Description** | Explorer NeoTree (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code>,fR</code> |
+| **Left hand side** | <code>,e</code> |
 | **Right hand side** | |
 
-| **Description** | Recent |
+| **Description** | Explorer NeoTree (cwd) |
 | :---- | :---- |
-| **Left hand side** | <code>,fr</code> |
+| **Left hand side** | <code>,fE</code> |
 | **Right hand side** | |
 
-| **Description** | Find Files (cwd) |
+| **Description** | Dismiss All |
 | :---- | :---- |
-| **Left hand side** | <code>,fF</code> |
+| **Left hand side** | <code>,snd</code> |
 | **Right hand side** | |
 
-| **Description** | Find Files (root dir) |
+| **Description** | Noice All |
 | :---- | :---- |
-| **Left hand side** | <code>,ff</code> |
+| **Left hand side** | <code>,sna</code> |
 | **Right hand side** | |
 
-| **Description** | Buffers |
+| **Description** | Noice History |
 | :---- | :---- |
-| **Left hand side** | <code>,fb</code> |
+| **Left hand side** | <code>,snh</code> |
 | **Right hand side** | |
 
-| **Description** | Command History |
+| **Description** | Noice Last Message |
 | :---- | :---- |
-| **Left hand side** | <code>,:</code> |
+| **Left hand side** | <code>,snl</code> |
 | **Right hand side** | |
 
-| **Description** | Grep (root dir) |
+| **Description** | Projects |
 | :---- | :---- |
-| **Left hand side** | <code>,/</code> |
+| **Left hand side** | <code>,fp</code> |
 | **Right hand side** | |
 
-| **Description** | Switch Buffer |
+| **Description** | Treesitter Join |
 | :---- | :---- |
-| **Left hand side** | <code>,,</code> |
+| **Left hand side** | <code>,tj</code> |
 | **Right hand side** | |
 
-| **Description** | Delete non-pinned buffers |
+| **Description** | Toggle Treesitter Join |
 | :---- | :---- |
-| **Left hand side** | <code>,bP</code> |
+| **Left hand side** | <code>,tt</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle pin |
+| **Description** | Terminal Send |
 | :---- | :---- |
-| **Left hand side** | <code>,bp</code> |
+| **Left hand side** | <code>,ts</code> |
+| **Right hand side** | |
+
+| **Description** | Delete Buffer |
+| :---- | :---- |
+| **Left hand side** | <code>,bd</code> |
 | **Right hand side** | |
 
 | **Description** | Delete Buffer (Force) |
@@ -475,9 +448,9 @@ Jump to:
 | **Left hand side** | <code>,bD</code> |
 | **Right hand side** | |
 
-| **Description** | Delete Buffer |
+| **Description** | Restore Session |
 | :---- | :---- |
-| **Left hand side** | <code>,bd</code> |
+| **Left hand side** | <code>,qs</code> |
 | **Right hand side** | |
 
 | **Description** | Don't Save Current Session |
@@ -490,9 +463,34 @@ Jump to:
 | **Left hand side** | <code>,ql</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Session |
+| **Description** | Todo |
 | :---- | :---- |
-| **Left hand side** | <code>,qs</code> |
+| **Left hand side** | <code>,st</code> |
+| **Right hand side** | |
+
+| **Description** | Todo/Fix/Fixme (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code>,xT</code> |
+| **Right hand side** | |
+
+| **Description** | Todo (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code>,xt</code> |
+| **Right hand side** | |
+
+| **Description** | Todo/Fix/Fixme |
+| :---- | :---- |
+| **Left hand side** | <code>,sT</code> |
+| **Right hand side** | |
+
+| **Description** | Delete non-pinned buffers |
+| :---- | :---- |
+| **Left hand side** | <code>,bP</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle pin |
+| :---- | :---- |
+| **Left hand side** | <code>,bp</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle zen mode |
@@ -515,14 +513,14 @@ Jump to:
 | **Left hand side** | <code>[%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
 
-| **Description** | Previous todo comment |
-| :---- | :---- |
-| **Left hand side** | <code>[t</code> |
-| **Right hand side** | |
-
 | **Description** | Previous trouble/quickfix item |
 | :---- | :---- |
 | **Left hand side** | <code>[q</code> |
+| **Right hand side** | |
+
+| **Description** | Previous todo comment |
+| :---- | :---- |
+| **Left hand side** | <code>[t</code> |
 | **Right hand side** | |
 
 | **Description** | Prev Reference |
@@ -535,14 +533,14 @@ Jump to:
 | **Left hand side** | <code>]%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
 
-| **Description** | Next todo comment |
-| :---- | :---- |
-| **Left hand side** | <code>]t</code> |
-| **Right hand side** | |
-
 | **Description** | Next trouble/quickfix item |
 | :---- | :---- |
 | **Left hand side** | <code>]q</code> |
+| **Right hand side** | |
+
+| **Description** | Next todo comment |
+| :---- | :---- |
+| **Left hand side** | <code>]t</code> |
 | **Right hand side** | |
 
 | **Description** | Next Reference |
@@ -554,6 +552,21 @@ Jump to:
 | :---- | :---- |
 | **Left hand side** | <code>g%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+
+| **Description** | Replace surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gzr</code> |
+| **Right hand side** | |
+
+| **Description** | Delete surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gzd</code> |
+| **Right hand side** | |
+
+| **Description** | Add surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>gza</code> |
+| **Right hand side** | |
 
 | **Description** | Update `MiniSurround.config.n_lines` |
 | :---- | :---- |
@@ -573,21 +586,6 @@ Jump to:
 | **Description** | Highlight surrounding |
 | :---- | :---- |
 | **Left hand side** | <code>gzh</code> |
-| **Right hand side** | |
-
-| **Description** | Replace surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gzr</code> |
-| **Right hand side** | |
-
-| **Description** | Delete surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gzd</code> |
-| **Right hand side** | |
-
-| **Description** | Add surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>gza</code> |
 | **Right hand side** | |
 
 | **Description** | Flash |
@@ -625,6 +623,11 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
 
+| **Description** | Increment selection |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Space&gt;</code> |
+| **Right hand side** | |
+
 | **Description** | Scroll forward |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-F&gt;</code> |
@@ -633,11 +636,6 @@ Jump to:
 | **Description** | Scroll backward |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-B&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | Increment selection |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Space&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Nvim builtin |

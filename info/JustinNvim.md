@@ -27,11 +27,9 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 
 [https://www.youtube.com/@justindevelops](https://www.youtube.com/@justindevelops)
 
-Jump to:
-
-- [Normal mode keymaps](#normal-mode-keymaps)
-- [Visual mode keymaps](#visual-mode-keymaps)
-- [Operator mode keymaps](#operator-mode-keymaps)
+|  Jump  |   to   | Keymaps |
+| :----: | :----: | :-----: |
+| [Normal mode keymaps](#normal-mode-keymaps) | [Visual mode keymaps](#visual-mode-keymaps) | [Operator mode keymaps](#operator-mode-keymaps) |
 
 ## Lazy managed plugins
 
@@ -101,74 +99,64 @@ Jump to:
 
 ### Normal mode keymaps
 
-| **Description** | Todo/Fix/Fixme |
+| **Description** | Close Buffer |
 | :---- | :---- |
-| **Left hand side** | <code> sT</code> |
+| **Left hand side** | <code> bc</code> |
 | **Right hand side** | |
 
-| **Description** | Todo |
+| **Description** | Close Buffer (Force) |
 | :---- | :---- |
-| **Left hand side** | <code> st</code> |
+| **Left hand side** | <code> bC</code> |
 | **Right hand side** | |
 
-| **Description** | Todo/Fix/Fixme (Trouble) |
+| **Description** | Replace in files (Spectre) |
 | :---- | :---- |
-| **Left hand side** | <code> xT</code> |
+| **Left hand side** | <code> sr</code> |
 | **Right hand side** | |
 
-| **Description** | Todo (Trouble) |
+| **Description** | Find Plugin File |
 | :---- | :---- |
-| **Left hand side** | <code> xt</code> |
+| **Left hand side** | <code> fp</code> |
 | **Right hand side** | |
 
-| **Description** | Todo (Trouble) |
+| **Description** | Word (cwd) |
 | :---- | :---- |
-| **Left hand side** | <code> dt</code> |
+| **Left hand side** | <code> fW</code> |
 | **Right hand side** | |
 
-| **Description** | Todo/Fix/Fixme (Trouble) |
+| **Description** | Word (root dir) |
 | :---- | :---- |
-| **Left hand side** | <code> dT</code> |
+| **Left hand side** | <code> fw</code> |
 | **Right hand side** | |
 
-| **Description** | Document Diagnostics (Trouble) |
+| **Description** | All Buffers |
 | :---- | :---- |
-| **Left hand side** | <code> xx</code> |
+| **Left hand side** | <code> fB</code> |
 | **Right hand side** | |
 
-| **Description** | Quickfix List (Trouble) |
+| **Description** | Text |
 | :---- | :---- |
-| **Left hand side** | <code> dQ</code> |
+| **Left hand side** | <code> ft</code> |
 | **Right hand side** | |
 
-| **Description** | Location List (Trouble) |
+| **Description** | Command History |
 | :---- | :---- |
-| **Left hand side** | <code> dL</code> |
+| **Left hand side** | <code> fc</code> |
 | **Right hand side** | |
 
-| **Description** | Workspace Diagnostics (Trouble) |
+| **Description** | Goto Symbol (Workspace) |
 | :---- | :---- |
-| **Left hand side** | <code> dX</code> |
+| **Left hand side** | <code> sS</code> |
 | **Right hand side** | |
 
-| **Description** | Document Diagnostics (Trouble) |
+| **Description** | Goto Symbol |
 | :---- | :---- |
-| **Left hand side** | <code> dx</code> |
+| **Left hand side** | <code> ss</code> |
 | **Right hand side** | |
 
-| **Description** | Quickfix List (Trouble) |
+| **Description** | Colorscheme with preview |
 | :---- | :---- |
-| **Left hand side** | <code> xQ</code> |
-| **Right hand side** | |
-
-| **Description** | Location List (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xL</code> |
-| **Right hand side** | |
-
-| **Description** | Workspace Diagnostics (Trouble) |
-| :---- | :---- |
-| **Left hand side** | <code> xX</code> |
+| **Left hand side** | <code> uC</code> |
 | **Right hand side** | |
 
 | **Description** | Word (cwd) |
@@ -296,49 +284,39 @@ Jump to:
 | **Left hand side** | <code> fb</code> |
 | **Right hand side** | |
 
-| **Description** | Word (cwd) |
+| **Description** | Dismiss all Notifications |
 | :---- | :---- |
-| **Left hand side** | <code> fW</code> |
+| **Left hand side** | <code> un</code> |
 | **Right hand side** | |
 
-| **Description** | Word (root dir) |
+| **Description** | Todo (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> fw</code> |
+| **Left hand side** | <code> dt</code> |
 | **Right hand side** | |
 
-| **Description** | All Buffers |
+| **Description** | Todo/Fix/Fixme |
 | :---- | :---- |
-| **Left hand side** | <code> fB</code> |
+| **Left hand side** | <code> sT</code> |
 | **Right hand side** | |
 
-| **Description** | Text |
+| **Description** | Todo/Fix/Fixme (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> ft</code> |
+| **Left hand side** | <code> xT</code> |
 | **Right hand side** | |
 
-| **Description** | Command History |
+| **Description** | Todo (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> fc</code> |
+| **Left hand side** | <code> xt</code> |
 | **Right hand side** | |
 
-| **Description** | Goto Symbol (Workspace) |
+| **Description** | Todo |
 | :---- | :---- |
-| **Left hand side** | <code> sS</code> |
+| **Left hand side** | <code> st</code> |
 | **Right hand side** | |
 
-| **Description** | Goto Symbol |
+| **Description** | Todo/Fix/Fixme (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> ss</code> |
-| **Right hand side** | |
-
-| **Description** | Colorscheme with preview |
-| :---- | :---- |
-| **Left hand side** | <code> uC</code> |
-| **Right hand side** | |
-
-| **Description** | Mason |
-| :---- | :---- |
-| **Left hand side** | <code> cm</code> |
+| **Left hand side** | <code> dT</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle pin |
@@ -351,9 +329,14 @@ Jump to:
 | **Left hand side** | <code> bP</code> |
 | **Right hand side** | |
 
-| **Description** | Replace in files (Spectre) |
+| **Description** | Dismiss All |
 | :---- | :---- |
-| **Left hand side** | <code> sr</code> |
+| **Left hand side** | <code> snd</code> |
+| **Right hand side** | |
+
+| **Description** | Noice All |
+| :---- | :---- |
+| **Left hand side** | <code> sna</code> |
 | **Right hand side** | |
 
 | **Description** | Noice History |
@@ -366,24 +349,44 @@ Jump to:
 | **Left hand side** | <code> snl</code> |
 | **Right hand side** | |
 
-| **Description** | Dismiss All |
+| **Description** | Quickfix List (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> snd</code> |
+| **Left hand side** | <code> dQ</code> |
 | **Right hand side** | |
 
-| **Description** | Noice All |
+| **Description** | Location List (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> sna</code> |
+| **Left hand side** | <code> dL</code> |
 | **Right hand side** | |
 
-| **Description** | Dismiss all Notifications |
+| **Description** | Workspace Diagnostics (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> un</code> |
+| **Left hand side** | <code> dX</code> |
 | **Right hand side** | |
 
-| **Description** | Restore Session |
+| **Description** | Document Diagnostics (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> qs</code> |
+| **Left hand side** | <code> dx</code> |
+| **Right hand side** | |
+
+| **Description** | Quickfix List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xQ</code> |
+| **Right hand side** | |
+
+| **Description** | Location List (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xL</code> |
+| **Right hand side** | |
+
+| **Description** | Workspace Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xX</code> |
+| **Right hand side** | |
+
+| **Description** | Document Diagnostics (Trouble) |
+| :---- | :---- |
+| **Left hand side** | <code> xx</code> |
 | **Right hand side** | |
 
 | **Description** | Don't Save Current Session |
@@ -396,19 +399,14 @@ Jump to:
 | **Left hand side** | <code> ql</code> |
 | **Right hand side** | |
 
-| **Description** | Projects |
+| **Description** | Restore Session |
 | :---- | :---- |
-| **Left hand side** | <code> fp</code> |
+| **Left hand side** | <code> qs</code> |
 | **Right hand side** | |
 
-| **Description** | Close Buffer (Force) |
+| **Description** | Mason |
 | :---- | :---- |
-| **Left hand side** | <code> bC</code> |
-| **Right hand side** | |
-
-| **Description** | Close Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> bc</code> |
+| **Left hand side** | <code> cm</code> |
 | **Right hand side** | |
 
 | **Description** | Explorer |
@@ -441,6 +439,11 @@ Jump to:
 | **Left hand side** | <code>[%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
 
+| **Description** | Prev Reference |
+| :---- | :---- |
+| **Left hand side** | <code>[[</code> |
+| **Right hand side** | |
+
 | **Description** | Previous todo comment |
 | :---- | :---- |
 | **Left hand side** | <code>[t</code> |
@@ -451,14 +454,14 @@ Jump to:
 | **Left hand side** | <code>[q</code> |
 | **Right hand side** | |
 
-| **Description** | Prev Reference |
+| **Description** | Close Buffer |
 | :---- | :---- |
-| **Left hand side** | <code>[[</code> |
+| **Left hand side** | <code>\c</code> |
 | **Right hand side** | |
 
-| **Description** | Find right surrounding |
+| **Description** | Toggle TreeSJ |
 | :---- | :---- |
-| **Left hand side** | <code>\sf</code> |
+| **Left hand side** | <code>\j</code> |
 | **Right hand side** | |
 
 | **Description** | Delete surrounding |
@@ -469,11 +472,6 @@ Jump to:
 | **Description** | Add surrounding |
 | :---- | :---- |
 | **Left hand side** | <code>\sa</code> |
-| **Right hand side** | |
-
-| **Description** | Update `MiniSurround.config.n_lines` |
-| :---- | :---- |
-| **Left hand side** | <code>\sn</code> |
 | **Right hand side** | |
 
 | **Description** | Replace surrounding |
@@ -491,20 +489,25 @@ Jump to:
 | **Left hand side** | <code>\sF</code> |
 | **Right hand side** | |
 
-| **Description** | Close Buffer |
+| **Description** | Update `MiniSurround.config.n_lines` |
 | :---- | :---- |
-| **Left hand side** | <code>\c</code> |
+| **Left hand side** | <code>\sn</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle TreeSJ |
+| **Description** | Find right surrounding |
 | :---- | :---- |
-| **Left hand side** | <code>\j</code> |
+| **Left hand side** | <code>\sf</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>]%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+
+| **Description** | Next Reference |
+| :---- | :---- |
+| **Left hand side** | <code>]]</code> |
+| **Right hand side** | |
 
 | **Description** | Next todo comment |
 | :---- | :---- |
@@ -514,11 +517,6 @@ Jump to:
 | **Description** | Next trouble/quickfix item |
 | :---- | :---- |
 | **Left hand side** | <code>]q</code> |
-| **Right hand side** | |
-
-| **Description** | Next Reference |
-| :---- | :---- |
-| **Left hand side** | <code>]]</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -561,11 +559,6 @@ Jump to:
 | **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 | **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
 
-| **Description** | Increment selection |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;C-Space&gt;</code> |
-| **Right hand side** | |
-
 | **Description** | Scroll forward |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-F&gt;</code> |
@@ -574,6 +567,11 @@ Jump to:
 | **Description** | Scroll backward |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-B&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Increment selection |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Space&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | Nvim builtin |
