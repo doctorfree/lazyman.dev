@@ -12,88 +12,87 @@ Java, Python, Lua, and Rust IDE
 - Install and initialize: **`lazyman -L Magidc`**
 - Configuration category: [Language](https://lazyman.dev/configurations/#language-configurations)
 - Base configuration:     Custom
-- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-Magidc`**
-
 
 ### Git repository
 
-[https://github.com/magidc/nvim-config](https://github.com/magidc/nvim-config){:target="_blank"}{:rel="noopener noreferrer"}
+[https://github.com/magidc/nvim-config](https://github.com/magidc/nvim-config)
 
 ### Lazy managed plugins
 
-- [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip){:target="_blank"}{:rel="noopener noreferrer"}
-- [stevearc/aerial.nvim](https://github.com/stevearc/aerial.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [famiu/bufdelete.nvim](https://github.com/famiu/bufdelete.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer){:target="_blank"}{:rel="noopener noreferrer"}
-- [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline){:target="_blank"}{:rel="noopener noreferrer"}
-- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp){:target="_blank"}{:rel="noopener noreferrer"}
-- [hrsh7th/cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua){:target="_blank"}{:rel="noopener noreferrer"}
-- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path){:target="_blank"}{:rel="noopener noreferrer"}
-- [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip){:target="_blank"}{:rel="noopener noreferrer"}
-- [ms-jpq/coq.artifacts](https://github.com/ms-jpq/coq.artifacts.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [ms-jpq/coq.thirdparty](https://github.com/ms-jpq/coq.thirdparty.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [ms-jpq/coq_nvim](https://github.com/ms-jpq/coq_nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [monaqa/dial.nvim](https://github.com/monaqa/dial.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [sindrets/diffview.nvim](https://github.com/sindrets/diffview.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [folke/flash.nvim](https://github.com/folke/flash.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets){:target="_blank"}{:rel="noopener noreferrer"}
-- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [anuvyklack/hydra.nvim](https://github.com/anuvyklack/hydra.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [folke/lazy.nvim](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [VidocqH/lsp-lens.nvim](https://github.com/VidocqH/lsp-lens.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [ray-x/lsp_signature.nvim](https://github.com/ray-x/lsp_signature.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [onsails/lspkind-nvim](https://github.com/onsails/lspkind-nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [glepnir/lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [arkav/lualine-lsp-progress](https://github.com/arkav/lualine-lsp-progress){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-neo-tree/neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [karb94/neoscroll.nvim](https://github.com/karb94/neoscroll.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [aktersnurra/no-clown-fiesta.nvim](https://github.com/aktersnurra/no-clown-fiesta.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [jayp0521/mason-null-ls.nvim](https://github.com/jayp0521/mason-null-ls.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs){:target="_blank"}{:rel="noopener noreferrer"}
-- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp){:target="_blank"}{:rel="noopener noreferrer"}
-- [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua){:target="_blank"}{:rel="noopener noreferrer"}
-- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [mfussenegger/nvim-dap-python](https://github.com/mfussenegger/nvim-dap-python.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [rcarriga/nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui){:target="_blank"}{:rel="noopener noreferrer"}
-- [mfussenegger/nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls){:target="_blank"}{:rel="noopener noreferrer"}
-- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig){:target="_blank"}{:rel="noopener noreferrer"}
-- [AckslD/nvim-neoclip.lua](https://github.com/AckslD/nvim-neoclip.lua.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify){:target="_blank"}{:rel="noopener noreferrer"}
-- [sitiom/nvim-numbertoggle](https://github.com/sitiom/nvim-numbertoggle.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [petertriho/nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [chrisgrieser/nvim-spider](https://github.com/chrisgrieser/nvim-spider.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects){:target="_blank"}{:rel="noopener noreferrer"}
-- [mrjones2014/nvim-ts-rainbow](https://github.com/mrjones2014/nvim-ts-rainbow){:target="_blank"}{:rel="noopener noreferrer"}
-- [kevinhwang91/nvim-ufo](https://github.com/kevinhwang91/nvim-ufo){:target="_blank"}{:rel="noopener noreferrer"}
-- [chrisgrieser/nvim-various-textobjs](https://github.com/chrisgrieser/nvim-various-textobjs.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-treesitter/playground](https://github.com/nvim-treesitter/playground){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [ahmedkhalf/project.nvim](https://github.com/ahmedkhalf/project.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [kevinhwang91/promise-async](https://github.com/kevinhwang91/promise-async){:target="_blank"}{:rel="noopener noreferrer"}
-- [simrat39/rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-telescope/telescope-dap.nvim](https://github.com/nvim-telescope/telescope-dap.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [aserowy/tmux.nvim](https://github.com/aserowy/tmux.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [folke/todo-comments.nvim](https://github.com/folke/todo-comments.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [folke/trouble.nvim](https://github.com/folke/trouble.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [mbbill/undotree](https://github.com/mbbill/undotree){:target="_blank"}{:rel="noopener noreferrer"}
-- [terryma/vim-expand-region](https://github.com/terryma/vim-expand-region.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [RRethy/vim-illuminate](https://github.com/RRethy/vim-illuminate){:target="_blank"}{:rel="noopener noreferrer"}
-- [mhinz/vim-startify](https://github.com/mhinz/vim-startify.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [folke/which-key.nvim](https://github.com/folke/which-key.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+- [stevearc/aerial.nvim](https://github.com/stevearc/aerial.nvim)
+- [famiu/bufdelete.nvim](https://github.com/famiu/bufdelete.nvim)
+- [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
+- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
+- [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
+- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+- [hrsh7th/cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua)
+- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path)
+- [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+- [ms-jpq/coq.artifacts](https://github.com/ms-jpq/coq.artifacts.git)
+- [ms-jpq/coq.thirdparty](https://github.com/ms-jpq/coq.thirdparty.git)
+- [ms-jpq/coq_nvim](https://github.com/ms-jpq/coq_nvim.git)
+- [monaqa/dial.nvim](https://github.com/monaqa/dial.nvim.git)
+- [sindrets/diffview.nvim](https://github.com/sindrets/diffview.nvim.git)
+- [folke/flash.nvim](https://github.com/folke/flash.nvim.git)
+- [mhartington/formatter.nvim](https://github.com/mhartington/formatter.nvim)
+- [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
+- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [anuvyklack/hydra.nvim](https://github.com/anuvyklack/hydra.nvim.git)
+- [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
+- [VidocqH/lsp-lens.nvim](https://github.com/VidocqH/lsp-lens.nvim.git)
+- [ray-x/lsp_signature.nvim](https://github.com/ray-x/lsp_signature.nvim)
+- [onsails/lspkind-nvim](https://github.com/onsails/lspkind-nvim)
+- [glepnir/lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim)
+- [arkav/lualine-lsp-progress](https://github.com/arkav/lualine-lsp-progress)
+- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
+- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim)
+- [nvim-neo-tree/neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- [karb94/neoscroll.nvim](https://github.com/karb94/neoscroll.nvim)
+- [aktersnurra/no-clown-fiesta.nvim](https://github.com/aktersnurra/no-clown-fiesta.nvim.git)
+- [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim)
+- [jayp0521/mason-null-ls.nvim](https://github.com/jayp0521/mason-null-ls.nvim)
+- [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)
+- [jay-babu/mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim)
+- [mfussenegger/nvim-dap-python](https://github.com/mfussenegger/nvim-dap-python.git)
+- [rcarriga/nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
+- [mfussenegger/nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls)
+- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [AckslD/nvim-neoclip.lua](https://github.com/AckslD/nvim-neoclip.lua.git)
+- [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify)
+- [sitiom/nvim-numbertoggle](https://github.com/sitiom/nvim-numbertoggle.git)
+- [petertriho/nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar.git)
+- [chrisgrieser/nvim-spider](https://github.com/chrisgrieser/nvim-spider.git)
+- [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
+- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects)
+- [mrjones2014/nvim-ts-rainbow](https://github.com/mrjones2014/nvim-ts-rainbow)
+- [kevinhwang91/nvim-ufo](https://github.com/kevinhwang91/nvim-ufo)
+- [chrisgrieser/nvim-various-textobjs](https://github.com/chrisgrieser/nvim-various-textobjs.git)
+- [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
+- [nvim-treesitter/playground](https://github.com/nvim-treesitter/playground)
+- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
+- [ahmedkhalf/project.nvim](https://github.com/ahmedkhalf/project.nvim)
+- [kevinhwang91/promise-async](https://github.com/kevinhwang91/promise-async)
+- [simrat39/rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim)
+- [nvim-telescope/telescope-dap.nvim](https://github.com/nvim-telescope/telescope-dap.nvim)
+- [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
+- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [aserowy/tmux.nvim](https://github.com/aserowy/tmux.nvim.git)
+- [folke/todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
+- [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+- [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
+- [folke/trouble.nvim](https://github.com/folke/trouble.nvim)
+- [mbbill/undotree](https://github.com/mbbill/undotree)
+- [terryma/vim-expand-region](https://github.com/terryma/vim-expand-region.git)
+- [mhinz/vim-startify](https://github.com/mhinz/vim-startify.git)
+- [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
+- [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
 
 ### Magidc Keymaps
 
@@ -101,233 +100,222 @@ Java, Python, Lua, and Rust IDE
 
 | Description | LHS | RHS |
 | ----------- | --- | --- |
-| [Hydra] DAP |  x |  |
-|  |  z  |  |
-|  |  zE |  |
-|  |  zk |  |
-|  |  ze |  |
-|  |  zc |  |
-|  |  zj |  |
-|  |  zC |  |
-|  |  w= |  |
-|  |  wk |  |
-|  |  wj |  |
-|  |  wh |  |
-|  |  w<Down> |  |
-|  |  w<Up> |  |
-|  |  w<Right> |  |
-|  |  w<Left> |  |
-|  |  wl |  |
-| Toggle Terminal |  vt | <Cmd>execute v:count . "ToggleTerm"<CR> |
-|  | % | <Plug>(MatchitNormalForward) |
-| Nvim builtin | & | :&&<CR> |
-|  | + | <Plug>(expand_region_expand) |
-| Flash Treesitter | S |  |
-| Nvim builtin | Y | y$ |
-|  | [% | <Plug>(MatchitNormalMultiBackward) |
-|  | ]% | <Plug>(MatchitNormalMultiForward) |
-|  | _ | <Plug>(expand_region_shrink) |
-| Change a surrounding pair, putting replacements on new lines | cS | <Plug>(nvim-surround-change-line) |
-| Change a surrounding pair | cs | <Plug>(nvim-surround-change) |
-| Delete a surrounding pair | ds | <Plug>(nvim-surround-delete) |
-|  | gx | <Plug>NetrwBrowseX |
-|  | g% | <Plug>(MatchitNormalBackward) |
-|  | g<C-X> | <Cmd>lua require"dial.command".select_augend_gnormal()<CR><Cmd>let &opfunc="dial#operator#decrement_gnormal"<CR>g@<Cmd>lua require("dial.command").textobj()<CR> |
-|  | g<C-A> | <Cmd>lua require"dial.command".select_augend_gnormal()<CR><Cmd>let &opfunc="dial#operator#increment_gnormal"<CR>g@<Cmd>lua require("dial.command").textobj()<CR> |
-|  | g<Plug>(dial-decrement) | <Cmd>lua require"dial.command".select_augend_gnormal()<CR><Cmd>let &opfunc="dial#operator#decrement_gnormal"<CR>g@<Cmd>lua require("dial.command").textobj()<CR> |
-|  | g<Plug>(dial-increment) | <Cmd>lua require"dial.command".select_augend_gnormal()<CR><Cmd>let &opfunc="dial#operator#increment_gnormal"<CR>g@<Cmd>lua require("dial.command").textobj()<CR> |
-| Comment insert end of line | gcA |  |
-| Comment insert above | gcO |  |
-| Comment insert below | gco |  |
-| Flash | s |  |
-| Add a surrounding pair around the current line, on new lines (normal mode) | ySS | <Plug>(nvim-surround-normal-cur-line) |
-| Add a surrounding pair around a motion, on new lines (normal mode) | yS | <Plug>(nvim-surround-normal-line) |
-| Add a surrounding pair around the current line (normal mode) | yss | <Plug>(nvim-surround-normal-cur) |
-| Add a surrounding pair around a motion (normal mode) | ys | <Plug>(nvim-surround-normal) |
-|  | zb | <Cmd>lua require('neoscroll').zb(250)<CR> |
-|  | zt | <Cmd>lua require('neoscroll').zt(250)<CR> |
-|  | zz | <Cmd>lua require('neoscroll').zz(250)<CR> |
-|  | <Plug>NetrwBrowseX | :call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))<CR> |
-|  | <Plug>(MatchitNormalMultiForward) | :<C-U>call matchit#MultiMatch("W",  "n")<CR> |
-|  | <Plug>(MatchitNormalMultiBackward) | :<C-U>call matchit#MultiMatch("bW", "n")<CR> |
-|  | <Plug>(MatchitNormalBackward) | :<C-U>call matchit#Match_wrapper('',0,'n')<CR> |
-|  | <Plug>(MatchitNormalForward) | :<C-U>call matchit#Match_wrapper('',1,'n')<CR> |
-|  | <C-K> | <Cmd>lua require'tmux'.move_top()<CR> |
-|  | <C-H> | <Cmd>lua require'tmux'.move_left()<CR> |
-|  | <C-J> | <Cmd>lua require'tmux'.move_bottom()<CR> |
-|  | <C-X> | <Cmd>lua require"dial.command".select_augend_normal()<CR><Cmd>let &opfunc="dial#operator#decrement_normal"<CR>g@<Cmd>lua require("dial.command").textobj()<CR> |
-|  | <C-A> | <Cmd>lua require"dial.command".select_augend_normal()<CR><Cmd>let &opfunc="dial#operator#increment_normal"<CR>g@<Cmd>lua require("dial.command").textobj()<CR> |
-|  | <Plug>(dial-decrement) | <Cmd>lua require"dial.command".select_augend_normal()<CR><Cmd>let &opfunc="dial#operator#decrement_normal"<CR>g@<Cmd>lua require("dial.command").textobj()<CR> |
-|  | <Plug>(dial-increment) | <Cmd>lua require"dial.command".select_augend_normal()<CR><Cmd>let &opfunc="dial#operator#increment_normal"<CR>g@<Cmd>lua require("dial.command").textobj()<CR> |
-|  | <Plug>(expand_region_expand) | :<C-U>call expand_region#next('n', '+')<CR> |
-|  | <Plug>(Hydra2_wait)  |  |
-|  | <Plug>(Hydra2_wait)E |  |
-|  | <Plug>(Hydra2_wait)k |  |
-|  | <Plug>(Hydra2_wait)e |  |
-|  | <Plug>(Hydra2_wait)c |  |
-|  | <Plug>(Hydra2_wait)j |  |
-|  | <Plug>(Hydra2_wait)C |  |
-|  | <Plug>(Hydra2_wait)<Esc> |  |
-|  | <Plug>(Hydra2_wait) |  |
-|  | <Plug>(Hydra1_wait)= |  |
-|  | <Plug>(Hydra1_wait)<Esc> |  |
-|  | <Plug>(Hydra1_wait)k |  |
-|  | <Plug>(Hydra1_wait)j |  |
-|  | <Plug>(Hydra1_wait)h |  |
-|  | <Plug>(Hydra1_wait)<Down> |  |
-|  | <Plug>(Hydra1_wait)<Up> |  |
-|  | <Plug>(Hydra1_wait)<Right> |  |
-|  | <Plug>(Hydra1_wait)<Left> |  |
-|  | <Plug>(Hydra1_wait)l |  |
-|  | <Plug>(Hydra1_wait) |  |
-|  | <C-U> | <Cmd>lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)<CR> |
-|  | <C-Y> | <Cmd>lua require('neoscroll').scroll(-0.10, false, 100)<CR> |
-|  | <C-D> | <Cmd>lua require('neoscroll').scroll(vim.wo.scroll, true, 250)<CR> |
-|  | <C-F> | <Cmd>lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)<CR> |
-|  | <C-B> | <Cmd>lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)<CR> |
-|  | <C-E> | <Cmd>lua require('neoscroll').scroll(0.10, false, 100)<CR> |
-| Comment toggle current block | <C-N> |  |
-| Comment toggle current line | <C-M> |  |
-| Comment toggle blockwise with count | <Plug>(comment_toggle_blockwise_count) |  |
-| Comment toggle linewise with count | <Plug>(comment_toggle_linewise_count) |  |
-| Comment toggle current block | <Plug>(comment_toggle_blockwise_current) |  |
-| Comment toggle current line | <Plug>(comment_toggle_linewise_current) |  |
-| Comment toggle blockwise | <Plug>(comment_toggle_blockwise) |  |
-| Comment toggle linewise | <Plug>(comment_toggle_linewise) |  |
-|  | <Plug>luasnip-expand-repeat |  |
-|  | <Plug>luasnip-delete-check |  |
-|  | <Plug>(startify-open-buffers) | :<C-U>call startify#open_buffers()<CR> |
-| Move to previous reference | <M-p> |  |
-| Move to next reference | <M-n> |  |
-| Change a surrounding pair, putting replacements on new lines | <Plug>(nvim-surround-change-line) |  |
-| Change a surrounding pair | <Plug>(nvim-surround-change) |  |
-| Delete a surrounding pair | <Plug>(nvim-surround-delete) |  |
-| Add a surrounding pair around the current line, on new lines (normal mode) | <Plug>(nvim-surround-normal-cur-line) |  |
-| Add a surrounding pair around a motion, on new lines (normal mode) | <Plug>(nvim-surround-normal-line) |  |
-| Add a surrounding pair around the current line (normal mode) | <Plug>(nvim-surround-normal-cur) |  |
-| Add a surrounding pair around a motion (normal mode) | <Plug>(nvim-surround-normal) |  |
-|  | <Plug>PlenaryTestFile | :lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))<CR> |
-|  | <C-L> | <Cmd>lua require'tmux'.move_right()<CR> |
+| [Hydra] DAP | <code> x</code> |  |
+|  | <code> zc</code> |  |
+|  | <code> zj</code> |  |
+|  | <code> zC</code> |  |
+|  | <code> z </code> |  |
+|  | <code> zE</code> |  |
+|  | <code> zk</code> |  |
+|  | <code> ze</code> |  |
+|  | <code> wj</code> |  |
+|  | <code> w&lt;Left&gt;</code> |  |
+|  | <code> wh</code> |  |
+|  | <code> w&lt;Down&gt;</code> |  |
+|  | <code> w&lt;Up&gt;</code> |  |
+|  | <code> w&lt;Right&gt;</code> |  |
+|  | <code> wl</code> |  |
+|  | <code> w=</code> |  |
+|  | <code> wk</code> |  |
+| Toggle Terminal | <code> vt</code> | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
+|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+| Nvim builtin | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
+|  | <code>+</code> | <code>&lt;Plug&gt;(expand_region_expand)</code> |
+| Flash Treesitter | <code>S</code> |  |
+| Nvim builtin | <code>Y</code> | <code>y$</code> |
+|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+|  | <code>_</code> | <code>&lt;Plug&gt;(expand_region_shrink)</code> |
+| Change a surrounding pair, putting replacements on new lines | <code>cS</code> | <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |
+| Change a surrounding pair | <code>cs</code> | <code>&lt;Plug&gt;(nvim-surround-change)</code> |
+| Delete a surrounding pair | <code>ds</code> | <code>&lt;Plug&gt;(nvim-surround-delete)</code> |
+|  | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseX</code> |
+|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+|  | <code>g&lt;C-X&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gnormal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gnormal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+|  | <code>g&lt;C-A&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gnormal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gnormal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+|  | <code>g&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gnormal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gnormal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+|  | <code>g&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gnormal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gnormal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+| Flash | <code>s</code> |  |
+| Add a surrounding pair around the current line, on new lines (normal mode) | <code>ySS</code> | <code>&lt;Plug&gt;(nvim-surround-normal-cur-line)</code> |
+| Add a surrounding pair around a motion, on new lines (normal mode) | <code>yS</code> | <code>&lt;Plug&gt;(nvim-surround-normal-line)</code> |
+| Add a surrounding pair around the current line (normal mode) | <code>yss</code> | <code>&lt;Plug&gt;(nvim-surround-normal-cur)</code> |
+| Add a surrounding pair around a motion (normal mode) | <code>ys</code> | <code>&lt;Plug&gt;(nvim-surround-normal)</code> |
+|  | <code>zb</code> | <code>&lt;Cmd&gt;lua require('neoscroll').zb(250)&lt;CR&gt;</code> |
+|  | <code>zz</code> | <code>&lt;Cmd&gt;lua require('neoscroll').zz(250)&lt;CR&gt;</code> |
+|  | <code>zt</code> | <code>&lt;Cmd&gt;lua require('neoscroll').zt(250)&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;NetrwBrowseX</code> | <code>:call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(Hydra2_wait)c</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra2_wait)j</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra2_wait)C</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra2_wait) </code> |  |
+|  | <code>&lt;Plug&gt;(Hydra2_wait)&lt;Esc&gt;</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra2_wait)E</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra2_wait)k</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra2_wait)e</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra2_wait)</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra1_wait)j</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra1_wait)&lt;Left&gt;</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra1_wait)h</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra1_wait)&lt;Down&gt;</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra1_wait)&lt;Esc&gt;</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra1_wait)&lt;Up&gt;</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra1_wait)&lt;Right&gt;</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra1_wait)l</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra1_wait)=</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra1_wait)k</code> |  |
+|  | <code>&lt;Plug&gt;(Hydra1_wait)</code> |  |
+|  | <code>&lt;Plug&gt;(expand_region_expand)</code> | <code>:&lt;C-U&gt;call expand_region#next('n', '+')&lt;CR&gt;</code> |
+|  | <code>&lt;C-X&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+|  | <code>&lt;C-A&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_normal()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_normal"&lt;CR&gt;g@&lt;Cmd&gt;lua require("dial.command").textobj()&lt;CR&gt;</code> |
+| Change a surrounding pair, putting replacements on new lines | <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |  |
+| Change a surrounding pair | <code>&lt;Plug&gt;(nvim-surround-change)</code> |  |
+| Delete a surrounding pair | <code>&lt;Plug&gt;(nvim-surround-delete)</code> |  |
+| Add a surrounding pair around the current line, on new lines (normal mode) | <code>&lt;Plug&gt;(nvim-surround-normal-cur-line)</code> |  |
+| Add a surrounding pair around a motion, on new lines (normal mode) | <code>&lt;Plug&gt;(nvim-surround-normal-line)</code> |  |
+| Add a surrounding pair around the current line (normal mode) | <code>&lt;Plug&gt;(nvim-surround-normal-cur)</code> |  |
+| Add a surrounding pair around a motion (normal mode) | <code>&lt;Plug&gt;(nvim-surround-normal)</code> |  |
+|  | <code>&lt;C-H&gt;</code> | <code>&lt;Cmd&gt;lua require'tmux'.move_left()&lt;CR&gt;</code> |
+|  | <code>&lt;C-J&gt;</code> | <code>&lt;Cmd&gt;lua require'tmux'.move_bottom()&lt;CR&gt;</code> |
+|  | <code>&lt;C-K&gt;</code> | <code>&lt;Cmd&gt;lua require'tmux'.move_top()&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
+|  | <code>&lt;Plug&gt;luasnip-delete-check</code> |  |
+|  | <code>&lt;Plug&gt;(startify-open-buffers)</code> | <code>:&lt;C-U&gt;call startify#open_buffers()&lt;CR&gt;</code> |
+|  | <code>&lt;C-E&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
+|  | <code>&lt;C-U&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
+|  | <code>&lt;C-F&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+|  | <code>&lt;C-B&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+|  | <code>&lt;C-D&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
+|  | <code>&lt;C-Y&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;PlenaryTestFile</code> | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+|  | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;lua require'tmux'.move_right()&lt;CR&gt;</code> |
 
 #### visual mode keymaps
 
 | Description | LHS | RHS |
 | ----------- | --- | --- |
-| [Hydra] DAP |  x |  |
-| diagnostic textobj | ! | <Cmd>lua require('various-textobjs').diagnostic()<CR> |
-| Nvim builtin | # | y?\V<C-R>"<CR> |
-|  | % | <Plug>(MatchitVisualForward) |
-| Nvim builtin | * | y/\V<C-R>"<CR> |
-|  | + | <Plug>(expand_region_expand) |
-| url textobj | L | <Cmd>lua require('various-textobjs').url()<CR> |
-| restOfIndentation textobj | R | <Cmd>lua require('various-textobjs').restOfIndentation()<CR> |
-| Add a surrounding pair around a visual selection | S | <Plug>(nvim-surround-visual) |
-|  | [% | <Plug>(MatchitVisualMultiBackward) |
-|  | ]% | <Plug>(MatchitVisualMultiForward) |
-|  | _ | <Plug>(expand_region_shrink) |
-|  | a% | <Plug>(MatchitVisualTextObject) |
-| outer-outer indentation textobj | aI | <Cmd>lua require('various-textobjs').indentation(false, false)<CR> |
-| outer-inner indentation textobj | ai | <Cmd>lua require('various-textobjs').indentation(false, true)<CR> |
-| outer key textobj | ak | <Cmd>lua require('various-textobjs').key(false)<CR> |
-| outer number textobj | an | <Cmd>lua require('various-textobjs').number(false)<CR> |
-| outer value textobj | av | <Cmd>lua require('various-textobjs').value(false)<CR> |
-| outer lineCharacterwise textobj | a_ | <Cmd>lua require('various-textobjs').lineCharacterwise(false)<CR> |
-| outer closedFold textobj | az | <Cmd>lua require('various-textobjs').closedFold(false)<CR> |
-| outer subword textobj | aS | <Cmd>lua require('various-textobjs').subword(false)<CR> |
-| outer chainMember textobj | am | <Cmd>lua require('various-textobjs').chainMember(false)<CR> |
-|  | gx | <Plug>NetrwBrowseXVis |
-|  | g% | <Plug>(MatchitVisualBackward) |
-|  | g<C-X> | <Cmd>lua require"dial.command".select_augend_gvisual()<CR><Cmd>let &opfunc="dial#operator#decrement_gvisual"<CR>g@gv |
-|  | g<C-A> | <Cmd>lua require"dial.command".select_augend_gvisual()<CR><Cmd>let &opfunc="dial#operator#increment_gvisual"<CR>g@gv |
-|  | g<Plug>(dial-decrement) | <Cmd>lua require"dial.command".select_augend_gvisual()<CR><Cmd>let &opfunc="dial#operator#decrement_gvisual"<CR>g@gv |
-|  | g<Plug>(dial-increment) | <Cmd>lua require"dial.command".select_augend_gvisual()<CR><Cmd>let &opfunc="dial#operator#increment_gvisual"<CR>g@gv |
-| Add a surrounding pair around a visual selection, on new lines | gS | <Plug>(nvim-surround-visual-line) |
-| restOfWindow textobj | gW | <Cmd>lua require('various-textobjs').restOfWindow()<CR> |
-| visibleInWindow textobj | gw | <Cmd>lua require('various-textobjs').visibleInWindow()<CR> |
-| entireBuffer textobj | gG | <Cmd>lua require('various-textobjs').entireBuffer()<CR> |
-| inner-inner indentation textobj | iI | <Cmd>lua require('various-textobjs').indentation(true, true)<CR> |
-| inner-inner indentation textobj | ii | <Cmd>lua require('various-textobjs').indentation(true, true)<CR> |
-| inner key textobj | ik | <Cmd>lua require('various-textobjs').key(true)<CR> |
-| inner number textobj | in | <Cmd>lua require('various-textobjs').number(true)<CR> |
-| inner value textobj | iv | <Cmd>lua require('various-textobjs').value(true)<CR> |
-| inner lineCharacterwise textobj | i_ | <Cmd>lua require('various-textobjs').lineCharacterwise(true)<CR> |
-| inner closedFold textobj | iz | <Cmd>lua require('various-textobjs').closedFold(true)<CR> |
-| inner subword textobj | iS | <Cmd>lua require('various-textobjs').subword(true)<CR> |
-| inner chainMember textobj | im | <Cmd>lua require('various-textobjs').chainMember(true)<CR> |
-| nearEoL textobj | n | <Cmd>lua require('various-textobjs').nearEoL()<CR> |
-| restOfParagraph textobj | r | <Cmd>lua require('various-textobjs').restOfParagraph()<CR> |
-| Flash | s |  |
-|  | zb | <Cmd>lua require('neoscroll').zb(250)<CR> |
-|  | zz | <Cmd>lua require('neoscroll').zz(250)<CR> |
-|  | zt | <Cmd>lua require('neoscroll').zt(250)<CR> |
-| column textobj | | | <Cmd>lua require('various-textobjs').column()<CR> |
-|  | <Plug>NetrwBrowseXVis | :<C-U>call netrw#BrowseXVis()<CR> |
-|  | <Plug>(MatchitVisualTextObject) | <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward) |
-|  | <Plug>(MatchitVisualMultiForward) | :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv`` |
-|  | <Plug>(MatchitVisualMultiBackward) | :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv`` |
-|  | <Plug>(MatchitVisualBackward) | :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv`` |
-|  | <Plug>(MatchitVisualForward) | :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv`` |
-|  | <C-X> | <Cmd>lua require"dial.command".select_augend_visual()<CR><Cmd>let &opfunc="dial#operator#decrement_visual"<CR>g@gv |
-|  | <C-A> | <Cmd>lua require"dial.command".select_augend_visual()<CR><Cmd>let &opfunc="dial#operator#increment_visual"<CR>g@gv |
-|  | <Plug>(dial-decrement) | <Cmd>lua require"dial.command".select_augend_visual()<CR><Cmd>let &opfunc="dial#operator#decrement_visual"<CR>g@gv |
-|  | <Plug>(dial-increment) | <Cmd>lua require"dial.command".select_augend_visual()<CR><Cmd>let &opfunc="dial#operator#increment_visual"<CR>g@gv |
-|  | <C-U> | <Cmd>lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)<CR> |
-|  | <C-Y> | <Cmd>lua require('neoscroll').scroll(-0.10, false, 100)<CR> |
-|  | <C-F> | <Cmd>lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)<CR> |
-|  | <C-B> | <Cmd>lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)<CR> |
-|  | <C-D> | <Cmd>lua require('neoscroll').scroll(vim.wo.scroll, true, 250)<CR> |
-|  | <C-E> | <Cmd>lua require('neoscroll').scroll(0.10, false, 100)<CR> |
-| Add a surrounding pair around a visual selection, on new lines | <Plug>(nvim-surround-visual-line) | <Esc><Cmd>lua require'nvim-surround'.visual_surround({ line_mode = true })<CR> |
-| Add a surrounding pair around a visual selection | <Plug>(nvim-surround-visual) | <Esc><Cmd>lua require'nvim-surround'.visual_surround({ line_mode = false })<CR> |
-|  | <M-i> |  |
-|  | <Plug>(expand_region_shrink) | :<C-U>call expand_region#next('v', '-')<CR> |
-|  | <Plug>(expand_region_expand) | :<C-U>call expand_region#next('v', '+')<CR> |
-| Comment toggle blockwise (visual) | <C-N> | <Plug>(comment_toggle_blockwise_visual) |
-| Comment toggle linewise (visual) | <C-M> | <Plug>(comment_toggle_linewise_visual) |
-| Comment toggle blockwise (visual) | <Plug>(comment_toggle_blockwise_visual) | <Esc><Cmd>lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())<CR> |
-| Comment toggle linewise (visual) | <Plug>(comment_toggle_linewise_visual) | <Esc><Cmd>lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())<CR> |
-|  | <Plug>luasnip-expand-repeat |  |
+| [Hydra] DAP | <code> x</code> |  |
+| diagnostic textobj | <code>!</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').diagnostic()&lt;CR&gt;</code> |
+| Nvim builtin | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+| Nvim builtin | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+|  | <code>+</code> | <code>&lt;Plug&gt;(expand_region_expand)</code> |
+| toNextClosingBracket textobj | <code>C</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').toNextClosingBracket()&lt;CR&gt;</code> |
+| url textobj | <code>L</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').url()&lt;CR&gt;</code> |
+| toNextQuotationMark textobj | <code>Q</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').toNextQuotationMark()&lt;CR&gt;</code> |
+| restOfIndentation textobj | <code>R</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').restOfIndentation()&lt;CR&gt;</code> |
+| Add a surrounding pair around a visual selection | <code>S</code> | <code>&lt;Plug&gt;(nvim-surround-visual)</code> |
+|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+|  | <code>_</code> | <code>&lt;Plug&gt;(expand_region_shrink)</code> |
+|  | <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+| outer-outer indentation textobj | <code>aI</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').indentation('outer', 'outer')&lt;CR&gt;</code> |
+| outer-inner indentation textobj | <code>ai</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').indentation('outer', 'inner')&lt;CR&gt;</code> |
+| outer lineCharacterwise textobj | <code>a_</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').lineCharacterwise('outer')&lt;CR&gt;</code> |
+| outer closedFold textobj | <code>az</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').closedFold('outer')&lt;CR&gt;</code> |
+| outer greedyOuterIndentation textobj | <code>ag</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').greedyOuterIndentation('outer')&lt;CR&gt;</code> |
+| outer number textobj | <code>an</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').number('outer')&lt;CR&gt;</code> |
+| outer subword textobj | <code>aS</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').subword('outer')&lt;CR&gt;</code> |
+| outer value textobj | <code>av</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').value('outer')&lt;CR&gt;</code> |
+| outer chainMember textobj | <code>am</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').chainMember('outer')&lt;CR&gt;</code> |
+| outer key textobj | <code>ak</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').key('outer')&lt;CR&gt;</code> |
+|  | <code>gx</code> | <code>&lt;Plug&gt;NetrwBrowseXVis</code> |
+|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+| entireBuffer textobj | <code>gG</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').entireBuffer()&lt;CR&gt;</code> |
+| restOfWindow textobj | <code>gW</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').restOfWindow()&lt;CR&gt;</code> |
+| visibleInWindow textobj | <code>gw</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').visibleInWindow()&lt;CR&gt;</code> |
+| Add a surrounding pair around a visual selection, on new lines | <code>gS</code> | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
+|  | <code>g&lt;C-X&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gvisual"&lt;CR&gt;g@gv</code> |
+|  | <code>g&lt;C-A&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gvisual"&lt;CR&gt;g@gv</code> |
+|  | <code>g&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_gvisual"&lt;CR&gt;g@gv</code> |
+|  | <code>g&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_gvisual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_gvisual"&lt;CR&gt;g@gv</code> |
+| inner-inner indentation textobj | <code>iI</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').indentation('inner', 'inner')&lt;CR&gt;</code> |
+| inner-inner indentation textobj | <code>ii</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').indentation('inner', 'inner')&lt;CR&gt;</code> |
+| inner lineCharacterwise textobj | <code>i_</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').lineCharacterwise('inner')&lt;CR&gt;</code> |
+| inner closedFold textobj | <code>iz</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').closedFold('inner')&lt;CR&gt;</code> |
+| inner greedyOuterIndentation textobj | <code>ig</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').greedyOuterIndentation('inner')&lt;CR&gt;</code> |
+| inner number textobj | <code>in</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').number('inner')&lt;CR&gt;</code> |
+| inner subword textobj | <code>iS</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').subword('inner')&lt;CR&gt;</code> |
+| inner value textobj | <code>iv</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').value('inner')&lt;CR&gt;</code> |
+| inner chainMember textobj | <code>im</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').chainMember('inner')&lt;CR&gt;</code> |
+| inner key textobj | <code>ik</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').key('inner')&lt;CR&gt;</code> |
+| nearEoL textobj | <code>n</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').nearEoL()&lt;CR&gt;</code> |
+| restOfParagraph textobj | <code>r</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').restOfParagraph()&lt;CR&gt;</code> |
+| Flash | <code>s</code> |  |
+|  | <code>zz</code> | <code>&lt;Cmd&gt;lua require('neoscroll').zz(250)&lt;CR&gt;</code> |
+|  | <code>zt</code> | <code>&lt;Cmd&gt;lua require('neoscroll').zt(250)&lt;CR&gt;</code> |
+|  | <code>zb</code> | <code>&lt;Cmd&gt;lua require('neoscroll').zb(250)&lt;CR&gt;</code> |
+| column textobj | <code>&#124;</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').column()&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;NetrwBrowseXVis</code> | <code>:&lt;C-U&gt;call netrw#BrowseXVis()&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+|  | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
+|  | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
+|  | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
+|  | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
+|  | <code>&lt;C-F&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+|  | <code>&lt;C-B&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)&lt;CR&gt;</code> |
+|  | <code>&lt;C-Y&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-0.10, false, 100)&lt;CR&gt;</code> |
+|  | <code>&lt;C-E&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(0.10, false, 100)&lt;CR&gt;</code> |
+|  | <code>&lt;C-D&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
+|  | <code>&lt;C-U&gt;</code> | <code>&lt;Cmd&gt;lua require('neoscroll').scroll(-vim.wo.scroll, true, 250)&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(expand_region_shrink)</code> | <code>:&lt;C-U&gt;call expand_region#next('v', '-')&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(expand_region_expand)</code> | <code>:&lt;C-U&gt;call expand_region#next('v', '+')&lt;CR&gt;</code> |
+| Add a surrounding pair around a visual selection, on new lines | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = true })&lt;CR&gt;</code> |
+| Add a surrounding pair around a visual selection | <code>&lt;Plug&gt;(nvim-surround-visual)</code> | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = false })&lt;CR&gt;</code> |
+|  | <code>&lt;C-X&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_visual"&lt;CR&gt;g@gv</code> |
+|  | <code>&lt;C-A&gt;</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_visual"&lt;CR&gt;g@gv</code> |
+|  | <code>&lt;Plug&gt;(dial-decrement)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#decrement_visual"&lt;CR&gt;g@gv</code> |
+|  | <code>&lt;Plug&gt;(dial-increment)</code> | <code>&lt;Cmd&gt;lua require"dial.command".select_augend_visual()&lt;CR&gt;&lt;Cmd&gt;let &opfunc="dial#operator#increment_visual"&lt;CR&gt;g@gv</code> |
+|  | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |
 
 #### operator mode keymaps
 
 | Description | LHS | RHS |
 | ----------- | --- | --- |
-| diagnostic textobj | ! | <Cmd>lua require('various-textobjs').diagnostic()<CR> |
-|  | % | <Plug>(MatchitOperationForward) |
-| url textobj | L | <Cmd>lua require('various-textobjs').url()<CR> |
-| restOfIndentation textobj | R | <Cmd>lua require('various-textobjs').restOfIndentation()<CR> |
-| Flash Treesitter | S |  |
-|  | [% | <Plug>(MatchitOperationMultiBackward) |
-|  | ]% | <Plug>(MatchitOperationMultiForward) |
-| outer-outer indentation textobj | aI | <Cmd>lua require('various-textobjs').indentation(false, false)<CR> |
-| outer-inner indentation textobj | ai | <Cmd>lua require('various-textobjs').indentation(false, true)<CR> |
-| outer subword textobj | aS | <Cmd>lua require('various-textobjs').subword(false)<CR> |
-| outer chainMember textobj | am | <Cmd>lua require('various-textobjs').chainMember(false)<CR> |
-| outer value textobj | av | <Cmd>lua require('various-textobjs').value(false)<CR> |
-| outer key textobj | ak | <Cmd>lua require('various-textobjs').key(false)<CR> |
-| outer number textobj | an | <Cmd>lua require('various-textobjs').number(false)<CR> |
-| outer lineCharacterwise textobj | a_ | <Cmd>lua require('various-textobjs').lineCharacterwise(false)<CR> |
-| outer closedFold textobj | az | <Cmd>lua require('various-textobjs').closedFold(false)<CR> |
-|  | g% | <Plug>(MatchitOperationBackward) |
-| entireBuffer textobj | gG | <Cmd>lua require('various-textobjs').entireBuffer()<CR> |
-| restOfWindow textobj | gW | <Cmd>lua require('various-textobjs').restOfWindow()<CR> |
-| visibleInWindow textobj | gw | <Cmd>lua require('various-textobjs').visibleInWindow()<CR> |
-| inner-inner indentation textobj | iI | <Cmd>lua require('various-textobjs').indentation(true, true)<CR> |
-| inner-inner indentation textobj | ii | <Cmd>lua require('various-textobjs').indentation(true, true)<CR> |
-| inner subword textobj | iS | <Cmd>lua require('various-textobjs').subword(true)<CR> |
-| inner chainMember textobj | im | <Cmd>lua require('various-textobjs').chainMember(true)<CR> |
-| inner value textobj | iv | <Cmd>lua require('various-textobjs').value(true)<CR> |
-| inner key textobj | ik | <Cmd>lua require('various-textobjs').key(true)<CR> |
-| inner number textobj | in | <Cmd>lua require('various-textobjs').number(true)<CR> |
-| inner lineCharacterwise textobj | i_ | <Cmd>lua require('various-textobjs').lineCharacterwise(true)<CR> |
-| inner closedFold textobj | iz | <Cmd>lua require('various-textobjs').closedFold(true)<CR> |
-| nearEoL textobj | n | <Cmd>lua require('various-textobjs').nearEoL()<CR> |
-| restOfParagraph textobj | r | <Cmd>lua require('various-textobjs').restOfParagraph()<CR> |
-| Flash | s |  |
-| column textobj | | | <Cmd>lua require('various-textobjs').column()<CR> |
-|  | <Plug>(MatchitOperationMultiForward) | :<C-U>call matchit#MultiMatch("W",  "o")<CR> |
-|  | <Plug>(MatchitOperationMultiBackward) | :<C-U>call matchit#MultiMatch("bW", "o")<CR> |
-|  | <Plug>(MatchitOperationBackward) | :<C-U>call matchit#Match_wrapper('',0,'o')<CR> |
-|  | <Plug>(MatchitOperationForward) | :<C-U>call matchit#Match_wrapper('',1,'o')<CR> |
-|  | <M-i> |  |
-|  | <Plug>luasnip-expand-repeat |  |
+| diagnostic textobj | <code>!</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').diagnostic()&lt;CR&gt;</code> |
+|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+| toNextClosingBracket textobj | <code>C</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').toNextClosingBracket()&lt;CR&gt;</code> |
+| url textobj | <code>L</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').url()&lt;CR&gt;</code> |
+| toNextQuotationMark textobj | <code>Q</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').toNextQuotationMark()&lt;CR&gt;</code> |
+| restOfIndentation textobj | <code>R</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').restOfIndentation()&lt;CR&gt;</code> |
+| Flash Treesitter | <code>S</code> |  |
+|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+| outer-outer indentation textobj | <code>aI</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').indentation('outer', 'outer')&lt;CR&gt;</code> |
+| outer-inner indentation textobj | <code>ai</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').indentation('outer', 'inner')&lt;CR&gt;</code> |
+| outer key textobj | <code>ak</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').key('outer')&lt;CR&gt;</code> |
+| outer greedyOuterIndentation textobj | <code>ag</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').greedyOuterIndentation('outer')&lt;CR&gt;</code> |
+| outer value textobj | <code>av</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').value('outer')&lt;CR&gt;</code> |
+| outer subword textobj | <code>aS</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').subword('outer')&lt;CR&gt;</code> |
+| outer chainMember textobj | <code>am</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').chainMember('outer')&lt;CR&gt;</code> |
+| outer number textobj | <code>an</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').number('outer')&lt;CR&gt;</code> |
+| outer closedFold textobj | <code>az</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').closedFold('outer')&lt;CR&gt;</code> |
+| outer lineCharacterwise textobj | <code>a_</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').lineCharacterwise('outer')&lt;CR&gt;</code> |
+|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+| entireBuffer textobj | <code>gG</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').entireBuffer()&lt;CR&gt;</code> |
+| restOfWindow textobj | <code>gW</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').restOfWindow()&lt;CR&gt;</code> |
+| visibleInWindow textobj | <code>gw</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').visibleInWindow()&lt;CR&gt;</code> |
+| inner-inner indentation textobj | <code>iI</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').indentation('inner', 'inner')&lt;CR&gt;</code> |
+| inner-inner indentation textobj | <code>ii</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').indentation('inner', 'inner')&lt;CR&gt;</code> |
+| inner key textobj | <code>ik</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').key('inner')&lt;CR&gt;</code> |
+| inner greedyOuterIndentation textobj | <code>ig</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').greedyOuterIndentation('inner')&lt;CR&gt;</code> |
+| inner value textobj | <code>iv</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').value('inner')&lt;CR&gt;</code> |
+| inner subword textobj | <code>iS</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').subword('inner')&lt;CR&gt;</code> |
+| inner chainMember textobj | <code>im</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').chainMember('inner')&lt;CR&gt;</code> |
+| inner number textobj | <code>in</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').number('inner')&lt;CR&gt;</code> |
+| inner closedFold textobj | <code>iz</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').closedFold('inner')&lt;CR&gt;</code> |
+| inner lineCharacterwise textobj | <code>i_</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').lineCharacterwise('inner')&lt;CR&gt;</code> |
+| nearEoL textobj | <code>n</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').nearEoL()&lt;CR&gt;</code> |
+| restOfParagraph textobj | <code>r</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').restOfParagraph()&lt;CR&gt;</code> |
+| Flash | <code>s</code> |  |
+| column textobj | <code>&#124;</code> | <code>&lt;Cmd&gt;lua require('various-textobjs').column()&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |  |

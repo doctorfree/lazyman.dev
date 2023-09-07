@@ -12,74 +12,74 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 - Install and initialize: **`lazyman -w xero`**
 - Configuration category: [Personal](https://lazyman.dev/configurations/#personal-configurations)
 - Base configuration:     Custom
-- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim){:target="_blank"}{:rel="noopener noreferrer"}
+- Plugin manager:         [Lazy](https://github.com/folke/lazy.nvim)
 - Installation location:  **`~/.config/nvim-xero`**
-
 
 ### Git repository
 
-[https://github.com/xero/dotfiles](https://github.com/xero/dotfiles){:target="_blank"}{:rel="noopener noreferrer"}
+[https://github.com/xero/dotfiles](https://github.com/xero/dotfiles)
 
 ### Neovimcraft entry
 
-[http://neovimcraft.com/plugin/xero/dotfiles](http://neovimcraft.com/plugin/xero/dotfiles){:target="_blank"}{:rel="noopener noreferrer"}
+[http://neovimcraft.com/plugin/xero/dotfiles](http://neovimcraft.com/plugin/xero/dotfiles)
 
 ### Dotfyle entry
 
-[https://dotfyle.com/xero/dotfiles-neovim-config-nvim](https://dotfyle.com/xero/dotfiles-neovim-config-nvim){:target="_blank"}{:rel="noopener noreferrer"}
+[https://dotfyle.com/xero/dotfiles-neovim-config-nvim](https://dotfyle.com/xero/dotfiles-neovim-config-nvim)
 
 ### Lazy managed plugins
 
-- [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [hrsh7th/cmp-nvim-lsp-signature-help](https://github.com/hrsh7th/cmp-nvim-lsp-signature-help.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [hrsh7th/cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [ibhagwan/fzf-lua](https://github.com/ibhagwan/fzf-lua.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [nmac427/guess-indent.nvim](https://github.com/nmac427/guess-indent.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [smjonas/inc-rename.nvim](https://github.com/smjonas/inc-rename.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [folke/lazy.nvim](https://github.com/folke/lazy.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [onsails/lspkind-nvim](https://github.com/onsails/lspkind-nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [~whynothugo/lsp_lines.nvim](https://git.sr.ht/~whynothugo/lsp_lines.nvim){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-lua/lsp-status.nvim](https://github.com/nvim-lua/lsp-status.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [monkoose/matchparen.nvim](https://github.com/monkoose/matchparen.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [xero/miasma.nvim](https://github.com/xero/miasma.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [folke/neodev.nvim](https://github.com/folke/neodev.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [haringsrob/nvim_context_vt](https://github.com/haringsrob/nvim_context_vt.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [brenoprata10/nvim-highlight-colors](https://github.com/brenoprata10/nvim-highlight-colors.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [ojroques/nvim-osc52](https://github.com/ojroques/nvim-osc52.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [petertriho/nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [RRethy/nvim-treesitter-textsubjects](https://github.com/RRethy/nvim-treesitter-textsubjects.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [b0o/schemastore.nvim](https://github.com/b0o/schemastore.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [rktjmp/shipwright.nvim](https://github.com/rktjmp/shipwright.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-telescope/telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-telescope/telescope-live-grep-args.nvim](https://github.com/nvim-telescope/telescope-live-grep-args.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [debugloop/telescope-undo.nvim](https://github.com/debugloop/telescope-undo.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [levouh/tint.nvim](https://github.com/levouh/tint.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [aserowy/tmux.nvim](https://github.com/aserowy/tmux.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [rbong/vim-flog](https://github.com/rbong/vim-flog.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [ojroques/vim-oscyank](https://github.com/ojroques/vim-oscyank.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [powerman/vim-plugin-AnsiEsc](https://github.com/powerman/vim-plugin-AnsiEsc.git){:target="_blank"}{:rel="noopener noreferrer"}
-- [folke/which-key.nvim](https://github.com/folke/which-key.nvim.git){:target="_blank"}{:rel="noopener noreferrer"}
+- [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim.git)
+- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer.git)
+- [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip.git)
+- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp.git)
+- [hrsh7th/cmp-nvim-lsp-signature-help](https://github.com/hrsh7th/cmp-nvim-lsp-signature-help.git)
+- [hrsh7th/cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua.git)
+- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path.git)
+- [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets.git)
+- [ibhagwan/fzf-lua](https://github.com/ibhagwan/fzf-lua.git)
+- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim.git)
+- [nmac427/guess-indent.nvim](https://github.com/nmac427/guess-indent.nvim.git)
+- [smjonas/inc-rename.nvim](https://github.com/smjonas/inc-rename.nvim.git)
+- [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim.git)
+- [folke/lazy.nvim](https://github.com/folke/lazy.nvim.git)
+- [onsails/lspkind-nvim](https://github.com/onsails/lspkind-nvim.git)
+- [~whynothugo/lsp_lines.nvim](https://git.sr.ht/~whynothugo/lsp_lines.nvim)
+- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim.git)
+- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip.git)
+- [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim.git)
+- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim.git)
+- [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim.git)
+- [monkoose/matchparen.nvim](https://github.com/monkoose/matchparen.nvim.git)
+- [xero/miasma.nvim](https://github.com/xero/miasma.nvim.git)
+- [folke/neodev.nvim](https://github.com/folke/neodev.nvim.git)
+- [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs.git)
+- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp.git)
+- [terrortylor/nvim-comment](https://github.com/terrortylor/nvim-comment.git)
+- [brenoprata10/nvim-highlight-colors](https://github.com/brenoprata10/nvim-highlight-colors.git)
+- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig.git)
+- [ojroques/nvim-osc52](https://github.com/ojroques/nvim-osc52.git)
+- [petertriho/nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar.git)
+- [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround.git)
+- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter.git)
+- [nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git)
+- [RRethy/nvim-treesitter-textsubjects](https://github.com/RRethy/nvim-treesitter-textsubjects.git)
+- [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons.git)
+- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim.git)
+- [b0o/schemastore.nvim](https://github.com/b0o/schemastore.nvim.git)
+- [rktjmp/shipwright.nvim](https://github.com/rktjmp/shipwright.nvim.git)
+- [nvim-telescope/telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim.git)
+- [nvim-telescope/telescope-live-grep-args.nvim](https://github.com/nvim-telescope/telescope-live-grep-args.nvim.git)
+- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim.git)
+- [debugloop/telescope-undo.nvim](https://github.com/debugloop/telescope-undo.nvim.git)
+- [levouh/tint.nvim](https://github.com/levouh/tint.nvim.git)
+- [aserowy/tmux.nvim](https://github.com/aserowy/tmux.nvim.git)
+- [xero/trouble.nvim](https://github.com/xero/trouble.nvim.git)
+- [rbong/vim-flog](https://github.com/rbong/vim-flog.git)
+- [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive.git)
+- [ojroques/vim-oscyank](https://github.com/ojroques/vim-oscyank.git)
+- [powerman/vim-plugin-AnsiEsc](https://github.com/powerman/vim-plugin-AnsiEsc.git)
+- [folke/which-key.nvim](https://github.com/folke/which-key.nvim.git)
 
 ### xero Keymaps
 
@@ -87,66 +87,80 @@ Personal neovim configuration of [xero harrison](https://x-e.ro/). Xero is a fin
 
 | Description | LHS | RHS |
 | ----------- | --- | --- |
-| remove highlighting | <Esc><Esc> | :nohlsearch<CR> |
-|  | % | <Plug>(MatchitNormalForward) |
-| Nvim builtin | & | :&&<CR> |
-| toggle colorizer | ,c |  |
-| Find git files | ,/gf |  |
-| Search treesitter | ,/t |  |
-| Search keymaps | ,/k |  |
-| Search marks | ,/M |  |
-| Search highlights | ,/h |  |
-| Find files | ,/o |  |
-| Find files | ,/f |  |
-| Search command history | ,/C |  |
-| Search commands | ,/c |  |
-| Resume FZF | ,// |  |
-| Search git buffer commits | ,bc |  |
-| Search git buffer commits | ,/gC |  |
-| Search git commits | ,/gc |  |
-| Search git branches | ,/gb |  |
-| toggle spell check | ,s | :Sp<CR> |
-| jq format | ,j | :%!jq .<CR> |
-| Nvim builtin | Y | y$ |
-|  | [% | <Plug>(MatchitNormalMultiBackward) |
-|  | ]% | <Plug>(MatchitNormalMultiForward) |
-|  | g% | <Plug>(MatchitNormalBackward) |
-|  | <Plug>(MatchitNormalMultiForward) | :<C-U>call matchit#MultiMatch("W",  "n")<CR> |
-|  | <Plug>(MatchitNormalMultiBackward) | :<C-U>call matchit#MultiMatch("bW", "n")<CR> |
-|  | <Plug>(MatchitNormalBackward) | :<C-U>call matchit#Match_wrapper('',0,'n')<CR> |
-|  | <Plug>(MatchitNormalForward) | :<C-U>call matchit#Match_wrapper('',1,'n')<CR> |
-| ios home key | <M-Left> | 0 |
-| exit buffer | <C-D> | :bd<CR> |
-| prev buffer | <C-P> | :bp<CR> |
-| next buffer | <C-N> | :bn<CR> |
-| Nvim builtin | <C-L> | <Cmd>nohlsearch|diffupdate|normal! <C-L><CR> |
+| remove highlighting | <code>&lt;Esc&gt;&lt;Esc&gt;</code> | <code>:nohlsearch&lt;CR&gt;</code> |
+|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+| Nvim builtin | <code>&</code> | <code>:&&&lt;CR&gt;</code> |
+| Search git branches | <code>,/gb</code> |  |
+| Find git files | <code>,/gf</code> |  |
+| Search treesitter | <code>,/t</code> |  |
+| Search keymaps | <code>,/k</code> |  |
+| Search marks | <code>,/M</code> |  |
+| Search highlights | <code>,/h</code> |  |
+| Find files | <code>,/o</code> |  |
+| Find files | <code>,/f</code> |  |
+| Search command history | <code>,/C</code> |  |
+| Search commands | <code>,/c</code> |  |
+| Resume FZF | <code>,//</code> |  |
+| Search git buffer commits | <code>,bc</code> |  |
+| Search git buffer commits | <code>,/gC</code> |  |
+| Search git commits | <code>,/gc</code> |  |
+|  | <code>,</code> |  |
+| chmod +x buffer | <code>,x</code> | <code>:Chmodx&lt;CR&gt;</code> |
+| toggle spell check | <code>,s</code> | <code>:Sp&lt;CR&gt;</code> |
+| jq format | <code>,j</code> | <code>:%!jq .&lt;CR&gt;</code> |
+|  | <code>,&lt;Tab&gt;[</code> | <code>&lt;Cmd&gt;tabprevious&lt;CR&gt;</code> |
+|  | <code>,&lt;Tab&gt;d</code> | <code>&lt;Cmd&gt;tabclose&lt;CR&gt;</code> |
+|  | <code>,&lt;Tab&gt;]</code> | <code>&lt;Cmd&gt;tabnext&lt;CR&gt;</code> |
+|  | <code>,&lt;Tab&gt;&lt;Tab&gt;</code> | <code>&lt;Cmd&gt;tabnew&lt;CR&gt;</code> |
+|  | <code>,&lt;Tab&gt;f</code> | <code>&lt;Cmd&gt;tabfirst&lt;CR&gt;</code> |
+|  | <code>,&lt;Tab&gt;l</code> | <code>&lt;Cmd&gt;tablast&lt;CR&gt;</code> |
+| prev match | <code>N</code> | <code>Nzzzv</code> |
+|  | <code>Q</code> | <code></code> |
+| Nvim builtin | <code>Y</code> | <code>y$</code> |
+|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+| next match | <code>n</code> | <code>nzzzv</code> |
+|  | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitNormalForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+| scroll up | <code>&lt;C-U&gt;</code> | <code>&lt;C-U&gt;zz</code> |
+| scroll down | <code>&lt;C-D&gt;</code> | <code>&lt;C-D&gt;zz</code> |
+| ios home key | <code>&lt;M-Left&gt;</code> | <code>0</code> |
+| exit buffer | <code>&lt;C-X&gt;</code> | <code>:bd&lt;CR&gt;</code> |
+| prev buffer | <code>&lt;C-P&gt;</code> | <code>:bp&lt;CR&gt;</code> |
+| next buffer | <code>&lt;C-N&gt;</code> | <code>:bn&lt;CR&gt;</code> |
+| Nvim builtin | <code>&lt;C-L&gt;</code> | <code>&lt;Cmd&gt;nohlsearch&#124;diffupdate|normal! &lt;C-L&gt;&lt;CR&gt;</code> |
 
 #### visual mode keymaps
 
 | Description | LHS | RHS |
 | ----------- | --- | --- |
-| Nvim builtin | # | y?\V<C-R>"<CR> |
-|  | % | <Plug>(MatchitVisualForward) |
-| Nvim builtin | * | y/\V<C-R>"<CR> |
-|  | [% | <Plug>(MatchitVisualMultiBackward) |
-|  | ]% | <Plug>(MatchitVisualMultiForward) |
-|  | a% | <Plug>(MatchitVisualTextObject) |
-|  | g% | <Plug>(MatchitVisualBackward) |
-|  | <Plug>(MatchitVisualTextObject) | <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward) |
-|  | <Plug>(MatchitVisualMultiForward) | :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv`` |
-|  | <Plug>(MatchitVisualMultiBackward) | :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv`` |
-|  | <Plug>(MatchitVisualBackward) | :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv`` |
-|  | <Plug>(MatchitVisualForward) | :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv`` |
+| Nvim builtin | <code>#</code> | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+| Nvim builtin | <code>*</code> | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+| move block up | <code>J</code> | <code>:m '&gt;+1&lt;CR&gt;gv=gv</code> |
+| move block down | <code>K</code> | <code>:m '&lt;lt&gt;-2&lt;CR&gt;gv=gv</code> |
+|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+|  | <code>a%</code> | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+|  | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+|  | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
+|  | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
+|  | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
+|  | <code>&lt;Plug&gt;(MatchitVisualForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 #### operator mode keymaps
 
 | Description | LHS | RHS |
 | ----------- | --- | --- |
-|  | % | <Plug>(MatchitOperationForward) |
-|  | [% | <Plug>(MatchitOperationMultiBackward) |
-|  | ]% | <Plug>(MatchitOperationMultiForward) |
-|  | g% | <Plug>(MatchitOperationBackward) |
-|  | <Plug>(MatchitOperationMultiForward) | :<C-U>call matchit#MultiMatch("W",  "o")<CR> |
-|  | <Plug>(MatchitOperationMultiBackward) | :<C-U>call matchit#MultiMatch("bW", "o")<CR> |
-|  | <Plug>(MatchitOperationBackward) | :<C-U>call matchit#Match_wrapper('',0,'o')<CR> |
-|  | <Plug>(MatchitOperationForward) | :<C-U>call matchit#Match_wrapper('',1,'o')<CR> |
+|  | <code>%</code> | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+|  | <code>[%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+|  | <code>]%</code> | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+|  | <code>g%</code> | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+|  | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
+|  | <code>&lt;Plug&gt;(MatchitOperationForward)</code> | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
