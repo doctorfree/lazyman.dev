@@ -109,11 +109,6 @@ An opinionated configuration reminiscent of Doom-Emacs, written in Fennel
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> </code> |
-| **Right hand side** | <code></code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 

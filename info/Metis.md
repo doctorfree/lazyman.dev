@@ -140,6 +140,16 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code> e</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code> b</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code> ft</code> |
 | **Right hand side** | |
 
@@ -156,16 +166,6 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code> ff</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> b</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> e</code> |
 | **Right hand side** | |
 
 | **Description** | Nvim builtin |
@@ -230,17 +230,17 @@ Neovim config by the creator of 'MetisLinux' and 'Ewm'
 
 | **Description** | |
 | :---- | :---- |
+| **Left hand side** | <code>&lt;M-H&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
 | **Left hand side** | <code>&lt;M-h&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>&lt;M-t&gt;</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>&lt;M-H&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |

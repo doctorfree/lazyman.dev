@@ -101,13 +101,13 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> o</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;SymbolsOutline&lt;CR&gt;</code> |
+| **Left hand side** | <code> t</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;TroubleToggle&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> t</code> |
-| **Right hand side** | <code>&lt;Cmd&gt;TroubleToggle&lt;CR&gt;</code> |
+| **Left hand side** | <code> o</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SymbolsOutline&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -176,12 +176,12 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gb</code> |
+| **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gc</code> |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -251,13 +251,13 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-S&gt;</code> |
-| **Right hand side** | <code>:w&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-U&gt;</code> |
+| **Right hand side** | <code>&lt;C-U&gt;zz</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-U&gt;</code> |
-| **Right hand side** | <code>&lt;C-U&gt;zz</code> |
+| **Left hand side** | <code>&lt;C-S&gt;</code> |
+| **Right hand side** | <code>:w&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -291,8 +291,8 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-Left&gt;</code> |
-| **Right hand side** | <code>:vertical resize -2&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-Down&gt;</code> |
+| **Right hand side** | <code>:resize +2&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -301,8 +301,8 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-Down&gt;</code> |
-| **Right hand side** | <code>:resize +2&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-Up&gt;</code> |
+| **Right hand side** | <code>:resize -2&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -311,23 +311,18 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-Up&gt;</code> |
-| **Right hand side** | <code>:resize -2&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>&lt;C-K&gt;</code> |
 | **Right hand side** | <code>&lt;C-W&gt;k</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-Q&gt;</code> |
-| **Right hand side** | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;j</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;C-J&gt;</code> |
-| **Right hand side** | <code>&lt;C-W&gt;j</code> |
+| **Left hand side** | <code>&lt;C-Q&gt;</code> |
+| **Right hand side** | <code>:call QuickFixToggle()&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -338,6 +333,11 @@ post_style: page
 | :---- | :---- |
 | **Left hand side** | <code>&lt;C-Right&gt;</code> |
 | **Right hand side** | <code>:vertical resize +2&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Left&gt;</code> |
+| **Right hand side** | <code>:vertical resize -2&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -419,12 +419,12 @@ post_style: page
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gb</code> |
+| **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>gc</code> |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | |

@@ -176,8 +176,48 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,G</code> |
-| **Right hand side** | <code>:vert G&lt;CR&gt;</code> |
+| **Left hand side** | <code>,df</code> |
+| **Right hand side** | <code>:Git push --force-with-lease&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,dp</code> |
+| **Right hand side** | <code>:Git push&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,da</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,dc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,dh</code> |
+| **Right hand side** | <code>:DiffviewFileHistory %&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,do</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,yg</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,hf</code> |
+| **Right hand side** | <code>:NvimTreeToggle&lt;CR&gt;</code> |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,n</code> |
+| **Right hand side** | <code>:NvimTreeToggle&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
@@ -211,52 +251,12 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,hf</code> |
-| **Right hand side** | <code>:NvimTreeToggle&lt;CR&gt;</code> |
+| **Left hand side** | <code>,G</code> |
+| **Right hand side** | <code>:vert G&lt;CR&gt;</code> |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,n</code> |
-| **Right hand side** | <code>:NvimTreeToggle&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,yg</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,df</code> |
-| **Right hand side** | <code>:Git push --force-with-lease&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,dp</code> |
-| **Right hand side** | <code>:Git push&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,da</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,dc</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,dh</code> |
-| **Right hand side** | <code>:DiffviewFileHistory %&lt;CR&gt;</code> |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,do</code> |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code>,c</code> |
+| **Left hand side** | <code>,oa</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -266,7 +266,7 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>,oa</code> |
+| **Left hand side** | <code>,c</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -491,12 +491,12 @@ Personal Neovim configuration of Kristijan Husak, author of several Neovim plugi
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;F5&gt;</code> |
+| **Left hand side** | <code>&lt;F1&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code>&lt;F1&gt;</code> |
+| **Left hand side** | <code>&lt;F5&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | |

@@ -96,21 +96,6 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>'</code> |
 | **Right hand side** | |
 
-| **Description** | Move to end of Treehopper node |
-| :---- | :---- |
-| **Left hand side** | <code>,h]</code> |
-| **Right hand side** | |
-
-| **Description** | Move to start of Treehopper node |
-| :---- | :---- |
-| **Left hand side** | <code>,h[</code> |
-| **Right hand side** | |
-
-| **Description** | Treehopper nodes |
-| :---- | :---- |
-| **Left hand side** | <code>,hm</code> |
-| **Right hand side** | |
-
 | **Description** | Open new line above HopLineStart target |
 | :---- | :---- |
 | **Left hand side** | <code>,vO</code> |
@@ -196,6 +181,21 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>,hw</code> |
 | **Right hand side** | <code>&lt;Cmd&gt;HopWord&lt;CR&gt;</code> |
 
+| **Description** | Move to end of Treehopper node |
+| :---- | :---- |
+| **Left hand side** | <code>,h]</code> |
+| **Right hand side** | |
+
+| **Description** | Move to start of Treehopper node |
+| :---- | :---- |
+| **Left hand side** | <code>,h[</code> |
+| **Right hand side** | |
+
+| **Description** | Treehopper nodes |
+| :---- | :---- |
+| **Left hand side** | <code>,hm</code> |
+| **Right hand side** | |
+
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>,</code> |
@@ -241,19 +241,9 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>f</code> |
 | **Right hand side** | |
 
-| **Description** | |
+| **Description** | Comment toggle blockwise |
 | :---- | :---- |
-| **Left hand side** | <code>g</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle current line |
-| :---- | :---- |
-| **Left hand side** | <code>gcc</code> |
-| **Right hand side** | |
-
-| **Description** | Comment toggle linewise |
-| :---- | :---- |
-| **Left hand side** | <code>gc</code> |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | Comment toggle current block |
@@ -261,9 +251,19 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>gbc</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle blockwise |
+| **Description** | Comment toggle linewise |
 | :---- | :---- |
-| **Left hand side** | <code>gb</code> |
+| **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current line |
+| :---- | :---- |
+| **Left hand side** | <code>gcc</code> |
+| **Right hand side** | |
+
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -379,14 +379,14 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>f</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle linewise (visual) |
-| :---- | :---- |
-| **Left hand side** | <code>gc</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle blockwise (visual) |
 | :---- | :---- |
 | **Left hand side** | <code>gb</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise (visual) |
+| :---- | :---- |
+| **Left hand side** | <code>gc</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -417,14 +417,14 @@ Advanced [customization of NvChad](https://github.com/doctorfree/NvChad-custom).
 | **Left hand side** | <code>f</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle blockwise |
-| :---- | :---- |
-| **Left hand side** | <code>gb</code> |
-| **Right hand side** | |
-
 | **Description** | Comment toggle linewise |
 | :---- | :---- |
 | **Left hand side** | <code>gc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
 | **Right hand side** | |
 
 | **Description** | |

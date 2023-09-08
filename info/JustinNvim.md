@@ -99,26 +99,6 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 
 ### Normal mode keymaps
 
-| **Description** | Close Buffer |
-| :---- | :---- |
-| **Left hand side** | <code> bc</code> |
-| **Right hand side** | |
-
-| **Description** | Close Buffer (Force) |
-| :---- | :---- |
-| **Left hand side** | <code> bC</code> |
-| **Right hand side** | |
-
-| **Description** | Replace in files (Spectre) |
-| :---- | :---- |
-| **Left hand side** | <code> sr</code> |
-| **Right hand side** | |
-
-| **Description** | Find Plugin File |
-| :---- | :---- |
-| **Left hand side** | <code> fp</code> |
-| **Right hand side** | |
-
 | **Description** | Word (cwd) |
 | :---- | :---- |
 | **Left hand side** | <code> fW</code> |
@@ -284,11 +264,6 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 | **Left hand side** | <code> fb</code> |
 | **Right hand side** | |
 
-| **Description** | Dismiss all Notifications |
-| :---- | :---- |
-| **Left hand side** | <code> un</code> |
-| **Right hand side** | |
-
 | **Description** | Todo (Trouble) |
 | :---- | :---- |
 | **Left hand side** | <code> dt</code> |
@@ -299,9 +274,9 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 | **Left hand side** | <code> sT</code> |
 | **Right hand side** | |
 
-| **Description** | Todo/Fix/Fixme (Trouble) |
+| **Description** | Todo |
 | :---- | :---- |
-| **Left hand side** | <code> xT</code> |
+| **Left hand side** | <code> st</code> |
 | **Right hand side** | |
 
 | **Description** | Todo (Trouble) |
@@ -309,9 +284,9 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 | **Left hand side** | <code> xt</code> |
 | **Right hand side** | |
 
-| **Description** | Todo |
+| **Description** | Todo/Fix/Fixme (Trouble) |
 | :---- | :---- |
-| **Left hand side** | <code> st</code> |
+| **Left hand side** | <code> xT</code> |
 | **Right hand side** | |
 
 | **Description** | Todo/Fix/Fixme (Trouble) |
@@ -319,34 +294,14 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 | **Left hand side** | <code> dT</code> |
 | **Right hand side** | |
 
-| **Description** | Toggle pin |
+| **Description** | Close Buffer |
 | :---- | :---- |
-| **Left hand side** | <code> bp</code> |
+| **Left hand side** | <code> bc</code> |
 | **Right hand side** | |
 
-| **Description** | Delete non-pinned buffers |
+| **Description** | Close Buffer (Force) |
 | :---- | :---- |
-| **Left hand side** | <code> bP</code> |
-| **Right hand side** | |
-
-| **Description** | Dismiss All |
-| :---- | :---- |
-| **Left hand side** | <code> snd</code> |
-| **Right hand side** | |
-
-| **Description** | Noice All |
-| :---- | :---- |
-| **Left hand side** | <code> sna</code> |
-| **Right hand side** | |
-
-| **Description** | Noice History |
-| :---- | :---- |
-| **Left hand side** | <code> snh</code> |
-| **Right hand side** | |
-
-| **Description** | Noice Last Message |
-| :---- | :---- |
-| **Left hand side** | <code> snl</code> |
+| **Left hand side** | <code> bC</code> |
 | **Right hand side** | |
 
 | **Description** | Quickfix List (Trouble) |
@@ -389,9 +344,59 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 | **Left hand side** | <code> xx</code> |
 | **Right hand side** | |
 
-| **Description** | Don't Save Current Session |
+| **Description** | Mason |
 | :---- | :---- |
-| **Left hand side** | <code> qd</code> |
+| **Left hand side** | <code> cm</code> |
+| **Right hand side** | |
+
+| **Description** | Dismiss All |
+| :---- | :---- |
+| **Left hand side** | <code> snd</code> |
+| **Right hand side** | |
+
+| **Description** | Noice All |
+| :---- | :---- |
+| **Left hand side** | <code> sna</code> |
+| **Right hand side** | |
+
+| **Description** | Noice History |
+| :---- | :---- |
+| **Left hand side** | <code> snh</code> |
+| **Right hand side** | |
+
+| **Description** | Noice Last Message |
+| :---- | :---- |
+| **Left hand side** | <code> snl</code> |
+| **Right hand side** | |
+
+| **Description** | Replace in files (Spectre) |
+| :---- | :---- |
+| **Left hand side** | <code> sr</code> |
+| **Right hand side** | |
+
+| **Description** | Projects |
+| :---- | :---- |
+| **Left hand side** | <code> fp</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle pin |
+| :---- | :---- |
+| **Left hand side** | <code> bp</code> |
+| **Right hand side** | |
+
+| **Description** | Delete non-pinned buffers |
+| :---- | :---- |
+| **Left hand side** | <code> bP</code> |
+| **Right hand side** | |
+
+| **Description** | Dismiss all Notifications |
+| :---- | :---- |
+| **Left hand side** | <code> un</code> |
+| **Right hand side** | |
+
+| **Description** | Explorer |
+| :---- | :---- |
+| **Left hand side** | <code> e</code> |
 | **Right hand side** | |
 
 | **Description** | Restore Last Session |
@@ -404,14 +409,9 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 | **Left hand side** | <code> qs</code> |
 | **Right hand side** | |
 
-| **Description** | Mason |
+| **Description** | Don't Save Current Session |
 | :---- | :---- |
-| **Left hand side** | <code> cm</code> |
-| **Right hand side** | |
-
-| **Description** | Explorer |
-| :---- | :---- |
-| **Left hand side** | <code> e</code> |
+| **Left hand side** | <code> qd</code> |
 | **Right hand side** | |
 
 | **Description** | |
@@ -439,11 +439,6 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 | **Left hand side** | <code>[%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
 
-| **Description** | Prev Reference |
-| :---- | :---- |
-| **Left hand side** | <code>[[</code> |
-| **Right hand side** | |
-
 | **Description** | Previous todo comment |
 | :---- | :---- |
 | **Left hand side** | <code>[t</code> |
@@ -452,6 +447,11 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 | **Description** | Previous trouble/quickfix item |
 | :---- | :---- |
 | **Left hand side** | <code>[q</code> |
+| **Right hand side** | |
+
+| **Description** | Prev Reference |
+| :---- | :---- |
+| **Left hand side** | <code>[[</code> |
 | **Right hand side** | |
 
 | **Description** | Close Buffer |
@@ -464,6 +464,16 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 | **Left hand side** | <code>\j</code> |
 | **Right hand side** | |
 
+| **Description** | Find left surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>\sF</code> |
+| **Right hand side** | |
+
+| **Description** | Find right surrounding |
+| :---- | :---- |
+| **Left hand side** | <code>\sf</code> |
+| **Right hand side** | |
+
 | **Description** | Delete surrounding |
 | :---- | :---- |
 | **Left hand side** | <code>\sd</code> |
@@ -472,6 +482,11 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 | **Description** | Add surrounding |
 | :---- | :---- |
 | **Left hand side** | <code>\sa</code> |
+| **Right hand side** | |
+
+| **Description** | Update `MiniSurround.config.n_lines` |
+| :---- | :---- |
+| **Left hand side** | <code>\sn</code> |
 | **Right hand side** | |
 
 | **Description** | Replace surrounding |
@@ -484,30 +499,10 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 | **Left hand side** | <code>\sh</code> |
 | **Right hand side** | |
 
-| **Description** | Find left surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>\sF</code> |
-| **Right hand side** | |
-
-| **Description** | Update `MiniSurround.config.n_lines` |
-| :---- | :---- |
-| **Left hand side** | <code>\sn</code> |
-| **Right hand side** | |
-
-| **Description** | Find right surrounding |
-| :---- | :---- |
-| **Left hand side** | <code>\sf</code> |
-| **Right hand side** | |
-
 | **Description** | |
 | :---- | :---- |
 | **Left hand side** | <code>]%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
-
-| **Description** | Next Reference |
-| :---- | :---- |
-| **Left hand side** | <code>]]</code> |
-| **Right hand side** | |
 
 | **Description** | Next todo comment |
 | :---- | :---- |
@@ -517,6 +512,11 @@ LazyVim based Neovim configuration by Justin Angeles. Justin has created a serie
 | **Description** | Next trouble/quickfix item |
 | :---- | :---- |
 | **Left hand side** | <code>]q</code> |
+| **Right hand side** | |
+
+| **Description** | Next Reference |
+| :---- | :---- |
+| **Left hand side** | <code>]]</code> |
 | **Right hand side** | |
 
 | **Description** | |

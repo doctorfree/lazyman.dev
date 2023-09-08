@@ -158,11 +158,6 @@ Maintained by LunarVim, this is a descendent of 'Neovim from Scratch'.All plugin
 
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | <code> </code> |
-| **Right hand side** | <code></code> |
-
-| **Description** | |
-| :---- | :---- |
 | **Left hand side** | <code>%</code> |
 | **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 
@@ -289,11 +284,6 @@ Maintained by LunarVim, this is a descendent of 'Neovim from Scratch'.All plugin
 | **Left hand side** | <code> /</code> |
 | **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require('Comment.api').toggle.linewise(vim.fn.visualmode())&lt;CR&gt;</code> |
 
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> </code> |
-| **Right hand side** | <code></code> |
-
 | **Description** | Nvim builtin |
 | :---- | :---- |
 | **Left hand side** | <code>#</code> |
@@ -381,11 +371,6 @@ Maintained by LunarVim, this is a descendent of 'Neovim from Scratch'.All plugin
 
 
 ### Operator mode keymaps
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | <code> </code> |
-| **Right hand side** | <code></code> |
 
 | **Description** | |
 | :---- | :---- |
