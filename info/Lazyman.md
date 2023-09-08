@@ -159,1594 +159,1665 @@ The Lazyman Neovim configuration serves as a reference implementation of a confi
 
 ### Normal mode keymaps
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Tab&gt; |
-| **Right hand side** | :BufferLineCycleNext&lt;CR&gt; |
+| **Left hand side** | <code>&lt;Tab&gt;</code> |
+| **Right hand side** | <code>:BufferLineCycleNext&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;CR&gt; |
-| **Right hand side** | :noh&lt;CR&gt;&lt;CR&gt; |
+| **Left hand side** | <code>&lt;CR&gt;</code> |
+| **Right hand side** | <code>:noh&lt;CR&gt;&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | % |
-| **Right hand side** | &lt;Plug&gt;(MatchitNormalForward) |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
 
 | **Description** | Nvim builtin |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | & |
-| **Right hand side** | :&&&lt;CR&gt; |
+| **Left hand side** | <code>&</code> |
+| **Right hand side** | <code>:&&&lt;CR&gt;</code> |
 
 | **Description** | Previous Tab |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,&lt;Tab&gt;[ |
-| **Right hand side** | &lt;Cmd&gt;tabprevious&lt;CR&gt; |
+| **Left hand side** | <code>,&lt;Tab&gt;[</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;tabprevious&lt;CR&gt;</code> |
 
 | **Description** | Close Tab |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,&lt;Tab&gt;d |
-| **Right hand side** | &lt;Cmd&gt;tabclose&lt;CR&gt; |
+| **Left hand side** | <code>,&lt;Tab&gt;d</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;tabclose&lt;CR&gt;</code> |
 
 | **Description** | Next Tab |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,&lt;Tab&gt;] |
-| **Right hand side** | &lt;Cmd&gt;tabnext&lt;CR&gt; |
+| **Left hand side** | <code>,&lt;Tab&gt;]</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;tabnext&lt;CR&gt;</code> |
 
 | **Description** | New Tab |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,&lt;Tab&gt;&lt;Tab&gt; |
-| **Right hand side** | &lt;Cmd&gt;tabnew&lt;CR&gt; |
+| **Left hand side** | <code>,&lt;Tab&gt;&lt;Tab&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;tabnew&lt;CR&gt;</code> |
 
 | **Description** | First Tab |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,&lt;Tab&gt;f |
-| **Right hand side** | &lt;Cmd&gt;tabfirst&lt;CR&gt; |
+| **Left hand side** | <code>,&lt;Tab&gt;f</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;tabfirst&lt;CR&gt;</code> |
 
 | **Description** | Last Tab |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,&lt;Tab&gt;l |
-| **Right hand side** | &lt;Cmd&gt;tablast&lt;CR&gt; |
+| **Left hand side** | <code>,&lt;Tab&gt;l</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;tablast&lt;CR&gt;</code> |
 
 | **Description** | Split window right |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,&#124; |
-| **Right hand side** | &lt;C-W&gt;v |
+| **Left hand side** | <code>,&#124;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;v</code> |
 
 | **Description** | Split window below |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,- |
-| **Right hand side** | &lt;C-W&gt;s |
+| **Left hand side** | <code>,-</code> |
+| **Right hand side** | <code>&lt;C-W&gt;s</code> |
 
 | **Description** | Split window right |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,w&#124; |
-| **Right hand side** | &lt;C-W&gt;v |
+| **Left hand side** | <code>,w&#124;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;v</code> |
 
 | **Description** | Split window below |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,w- |
-| **Right hand side** | &lt;C-W&gt;s |
+| **Left hand side** | <code>,w-</code> |
+| **Right hand side** | <code>&lt;C-W&gt;s</code> |
 
 | **Description** | Delete window |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,wd |
-| **Right hand side** | &lt;C-W&gt;c |
+| **Left hand side** | <code>,wd</code> |
+| **Right hand side** | <code>&lt;C-W&gt;c</code> |
 
 | **Description** | Other window |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,ww |
-| **Right hand side** | &lt;C-W&gt;p |
+| **Left hand side** | <code>,ww</code> |
+| **Right hand side** | <code>&lt;C-W&gt;p</code> |
 
 | **Description** | Terminal (cwd) |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,fT |
+| **Left hand side** | <code>,fT</code> |
 | **Right hand side** | |
 
 | **Description** | Terminal (root dir) |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,ft |
+| **Left hand side** | <code>,ft</code> |
 | **Right hand side** | |
 
 | **Description** | Inspect Pos |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,ui |
+| **Left hand side** | <code>,ui</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle number |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,uN |
+| **Left hand side** | <code>,uN</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle mouse |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,um |
+| **Left hand side** | <code>,um</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle statusline |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,uS |
+| **Left hand side** | <code>,uS</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle tabline |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,uT |
+| **Left hand side** | <code>,uT</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle signcolumn |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,ug |
+| **Left hand side** | <code>,ug</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Conceal |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,uc |
+| **Left hand side** | <code>,uc</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Line Numbers |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,ul |
+| **Left hand side** | <code>,ul</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Word Wrap |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,uw |
+| **Left hand side** | <code>,uw</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle Spelling |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,us |
+| **Left hand side** | <code>,us</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle format on Save |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,uf |
+| **Left hand side** | <code>,uf</code> |
 | **Right hand side** | |
 
 | **Description** | Toggle barbecue winbar |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,ub |
+| **Left hand side** | <code>,ub</code> |
 | **Right hand side** | |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,cl |
-| **Right hand side** | &lt;Cmd&gt;lua vim.diagnostic.open_float({ border = 'rounded', max_width = 100 })&lt;CR&gt; |
+| **Left hand side** | <code>,cl</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua vim.diagnostic.open_float({ border = 'rounded', max_width = 100 })&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,cf |
-| **Right hand side** | &lt;Cmd&gt;lua vim.lsp.buf.format({ async = true })&lt;CR&gt; |
+| **Left hand side** | <code>,cf</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua vim.lsp.buf.format({ async = true })&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,cr |
-| **Right hand side** | &lt;Cmd&gt;lua vim.lsp.buf.rename()&lt;CR&gt; |
+| **Left hand side** | <code>,cr</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua vim.lsp.buf.rename()&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,ca |
-| **Right hand side** | &lt;Cmd&gt;lua vim.lsp.buf.code_action()&lt;CR&gt; |
+| **Left hand side** | <code>,ca</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua vim.lsp.buf.code_action()&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,q |
-| **Right hand side** | &lt;Cmd&gt;lua require('ecovim.utils').toggle_quicklist()&lt;CR&gt; |
+| **Left hand side** | <code>,q</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('ecovim.utils').toggle_quicklist()&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,. |
-| **Right hand side** | :cn&lt;CR&gt; |
+| **Left hand side** | <code>,.</code> |
+| **Right hand side** | <code>:cn&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,, |
-| **Right hand side** | :cp&lt;CR&gt; |
+| **Left hand side** | <code>,,</code> |
+| **Right hand side** | <code>:cp&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,pw |
-| **Right hand side** | &lt;Cmd&gt;lua require('telescope.builtin').grep_string({ initial_mode = 'normal' })&lt;CR&gt; |
+| **Left hand side** | <code>,pw</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope.builtin').grep_string({ initial_mode = 'normal' })&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,pf |
-| **Right hand side** | &lt;Cmd&gt;lua require('ecovim.plugins.telescope').project_files({ default_text = vim.fn.expand('&lt;lt&gt;cword&gt;'), initial_mode = 'normal' })&lt;CR&gt; |
+| **Left hand side** | <code>,pf</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('ecovim.plugins.telescope').project_files({ default_text = vim.fn.expand('&lt;lt&gt;cword&gt;'), initial_mode = 'normal' })&lt;CR&gt;</code> |
 
 | **Description** | Asciiville |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,av |
-| **Right hand side** | &lt;Cmd&gt;Asciiville&lt;CR&gt; |
+| **Left hand side** | <code>,av</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Asciiville&lt;CR&gt;</code> |
 
 | **Description** | Lazyman plugins |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,lp |
-| **Right hand side** | &lt;Cmd&gt;Lazyplug&lt;CR&gt; |
+| **Left hand side** | <code>,lp</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Lazyplug&lt;CR&gt;</code> |
 
 | **Description** | Lazyman configuration |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,lc |
-| **Right hand side** | &lt;Cmd&gt;Lazyconf&lt;CR&gt; |
+| **Left hand side** | <code>,lc</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Lazyconf&lt;CR&gt;</code> |
 
 | **Description** | Lazyman menu |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,lm |
-| **Right hand side** | &lt;Cmd&gt;Lazyman&lt;CR&gt; |
+| **Left hand side** | <code>,lm</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Lazyman&lt;CR&gt;</code> |
 
 | **Description** | Htop command |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,H |
-| **Right hand side** | &lt;Cmd&gt;Htop&lt;CR&gt; |
+| **Left hand side** | <code>,H</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Htop&lt;CR&gt;</code> |
 
 | **Description** | Toggle colorcolumn |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,C |
+| **Left hand side** | <code>,C</code> |
 | **Right hand side** | |
 
 | **Description** | Lazyman Keymaps |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,hk |
-| **Right hand side** | &lt;Cmd&gt;help Lazyman-Keymaps&lt;CR&gt; |
+| **Left hand side** | <code>,hk</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;help Lazyman-Keymaps&lt;CR&gt;</code> |
 
 | **Description** | Nvims Help |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,hn |
-| **Right hand side** | &lt;Cmd&gt;help Nvims&lt;CR&gt; |
+| **Left hand side** | <code>,hn</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;help Nvims&lt;CR&gt;</code> |
 
 | **Description** | Lazyman Help |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,hl |
-| **Right hand side** | &lt;Cmd&gt;help Lazyman&lt;CR&gt; |
+| **Left hand side** | <code>,hl</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;help Lazyman&lt;CR&gt;</code> |
 
 | **Description** | Options |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,o |
-| **Right hand side** | &lt;Cmd&gt;options&lt;CR&gt; |
+| **Left hand side** | <code>,o</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;options&lt;CR&gt;</code> |
 
 | **Description** | Lazy Update |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,U |
-| **Right hand side** | &lt;Cmd&gt;Lazy update&lt;CR&gt; |
+| **Left hand side** | <code>,U</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Lazy update&lt;CR&gt;</code> |
 
 | **Description** | Lazy Menu |
-| :---- | :---- |
-| **Left hand side** | ,L |
-| **Right hand side** | &lt;Cmd&gt;Lazy&lt;CR&gt; |
-
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,/l |
-| **Right hand side** | &lt;Cmd&gt;:Lazy&lt;CR&gt; |
+| **Left hand side** | <code>,L</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Lazy&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>,/l</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;:Lazy&lt;CR&gt;</code> |
+
+| **Description** | terminal float |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,at</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;ToggleTerm direction=float&lt;CR&gt;</code> |
 
 | **Description** | comment box |
-| :---- | :---- |
-| **Left hand side** | ,ac |
-| **Right hand side** | &lt;Cmd&gt;lua require('comment-box').lbox()&lt;CR&gt; |
-
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,gwc |
-| **Right hand side** | &lt;Cmd&gt;lua require('telescope').extensions.git_worktree.create_git_worktree()&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,gww |
-| **Right hand side** | &lt;Cmd&gt;lua require('telescope').extensions.git_worktree.git_worktrees()&lt;CR&gt; |
-
-| **Description** | Mason |
-| :---- | :---- |
-| **Left hand side** | ,cm |
-| **Right hand side** | &lt;Cmd&gt;Mason&lt;CR&gt; |
-
-| **Description** | choose theirs |
-| :---- | :---- |
-| **Left hand side** | ,gct |
-| **Right hand side** | &lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt; |
-
-| **Description** | move to prev conflict |
-| :---- | :---- |
-| **Left hand side** | ,gcp |
-| **Right hand side** | &lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt; |
-
-| **Description** | choose ours |
-| :---- | :---- |
-| **Left hand side** | ,gco |
-| **Right hand side** | &lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt; |
-
-| **Description** | move to next conflict |
-| :---- | :---- |
-| **Left hand side** | ,gcn |
-| **Right hand side** | &lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt; |
-
-| **Description** | choose both |
-| :---- | :---- |
-| **Left hand side** | ,gcb |
-| **Right hand side** | &lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt; |
+| **Left hand side** | <code>,ac</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('comment-box').lbox()&lt;CR&gt;</code> |
 
 | **Description** | Move Float |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,tf |
+| **Left hand side** | <code>,tf</code> |
 | **Right hand side** | |
 
 | **Description** | Move Bottom Right New |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,tH |
+| **Left hand side** | <code>,tH</code> |
 | **Right hand side** | |
 
 | **Description** | Move Below Right New |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,th |
+| **Left hand side** | <code>,th</code> |
 | **Right hand side** | |
 
 | **Description** | Move Bottom Right |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,tL |
+| **Left hand side** | <code>,tL</code> |
 | **Right hand side** | |
 
 | **Description** | Move Below Right |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,tl |
+| **Left hand side** | <code>,tl</code> |
 | **Right hand side** | |
 
 | **Description** | Terminal Prev |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,t[ |
+| **Left hand side** | <code>,t[</code> |
 | **Right hand side** | |
 
 | **Description** | Terminal Next |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,t] |
+| **Left hand side** | <code>,t]</code> |
 | **Right hand side** | |
 
 | **Description** | Terminal Kill |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,tk |
+| **Left hand side** | <code>,tk</code> |
 | **Right hand side** | |
 
 | **Description** | New Terminal Run |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,tR |
+| **Left hand side** | <code>,tR</code> |
 | **Right hand side** | |
 
 | **Description** | Terminal Run |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,tr |
+| **Left hand side** | <code>,tr</code> |
 | **Right hand side** | |
 
 | **Description** | New Terminal Toggle |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,tO |
+| **Left hand side** | <code>,tO</code> |
 | **Right hand side** | |
 
 | **Description** | Terminal Toggle |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,to |
+| **Left hand side** | <code>,to</code> |
 | **Right hand side** | |
 
 | **Description** | Terminal Send |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,ts |
+| **Left hand side** | <code>,ts</code> |
 | **Right hand side** | |
 
-| **Description** | terminal float |
 | :---- | :---- |
-| **Left hand side** | ,at |
-| **Right hand side** | &lt;Cmd&gt;ToggleTerm direction=float&lt;CR&gt; |
+| **Left hand side** | <code>,gwc</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.create_git_worktree()&lt;CR&gt;</code> |
 
-| **Description** | choose session |
 | :---- | :---- |
-| **Left hand side** | ,/sc |
-| **Right hand side** | &lt;Cmd&gt;SessionManager load_session&lt;CR&gt; |
+| **Left hand side** | <code>,gww</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('telescope').extensions.git_worktree.git_worktrees()&lt;CR&gt;</code> |
 
-| **Description** | save session |
+| **Description** | move to prev conflict |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,/ss |
-| **Right hand side** | &lt;Cmd&gt;SessionManager save_current_session&lt;CR&gt; |
+| **Left hand side** | <code>,gcp</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
 
-| **Description** | load last session |
+| **Description** | choose ours |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,/sl |
-| **Right hand side** | &lt;Cmd&gt;SessionManager load_last_session&lt;CR&gt; |
+| **Left hand side** | <code>,gco</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
 
-| **Description** | load current dir session |
+| **Description** | move to next conflict |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,/sd |
-| **Right hand side** | &lt;Cmd&gt;SessionManager load_current_dir_session&lt;CR&gt; |
+| **Left hand side** | <code>,gcn</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
+
+| **Description** | choose both |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,gcb</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
+
+| **Description** | choose theirs |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,gct</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> |
 
 | **Description** | remove session |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,/sr |
-| **Right hand side** | &lt;Cmd&gt;SessionManager delete_session&lt;CR&gt; |
+| **Left hand side** | <code>,/sr</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager delete_session&lt;CR&gt;</code> |
+
+| **Description** | choose session |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,/sc</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager load_session&lt;CR&gt;</code> |
+
+| **Description** | save session |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,/ss</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager save_current_session&lt;CR&gt;</code> |
+
+| **Description** | load last session |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,/sl</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager load_last_session&lt;CR&gt;</code> |
+
+| **Description** | load current dir session |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,/sd</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;SessionManager load_current_dir_session&lt;CR&gt;</code> |
+
+| **Description** | Mason |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,cm</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;Mason&lt;CR&gt;</code> |
 
 | **Description** | Select Moonokai pro filter |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,up |
-| **Right hand side** | &lt;Cmd&gt;MonokaiProSelect&lt;CR&gt; |
+| **Left hand side** | <code>,up</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;MonokaiProSelect&lt;CR&gt;</code> |
 
 | **Description** | Toggle Transparency |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,ut |
-| **Right hand side** | |
-
-| **Description** | refactor |
-| :---- | :---- |
-| **Left hand side** | ,pr |
-| **Right hand side** | |
-
-| **Description** | Move back |
-| :---- | :---- |
-| **Left hand side** | ,bb |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 3 |
-| :---- | :---- |
-| **Left hand side** | ,3 |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 4 |
-| :---- | :---- |
-| **Left hand side** | ,4 |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 5 |
-| :---- | :---- |
-| **Left hand side** | ,5 |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 6 |
-| :---- | :---- |
-| **Left hand side** | ,6 |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 7 |
-| :---- | :---- |
-| **Left hand side** | ,7 |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 8 |
-| :---- | :---- |
-| **Left hand side** | ,8 |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 9 |
-| :---- | :---- |
-| **Left hand side** | ,9 |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 1 |
-| :---- | :---- |
-| **Left hand side** | ,1 |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 2 |
-| :---- | :---- |
-| **Left hand side** | ,2 |
+| **Left hand side** | <code>,ut</code> |
 | **Right hand side** | |
 
 | **Description** | Sort by relative dir |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,bsr |
+| **Left hand side** | <code>,bsr</code> |
 | **Right hand side** | |
 
 | **Description** | Sort by extension |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,bse |
+| **Left hand side** | <code>,bse</code> |
 | **Right hand side** | |
 
 | **Description** | Sort by directory |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,bsd |
+| **Left hand side** | <code>,bsd</code> |
 | **Right hand side** | |
 
 | **Description** | Pin/Unpin Buffer |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,bP |
+| **Left hand side** | <code>,bP</code> |
 | **Right hand side** | |
 
 | **Description** | Pick Buffer |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,bp |
+| **Left hand side** | <code>,bp</code> |
 | **Right hand side** | |
 
 | **Description** | Move next |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,bn |
+| **Left hand side** | <code>,bn</code> |
 | **Right hand side** | |
 
 | **Description** | Close Right |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,br |
+| **Left hand side** | <code>,br</code> |
 | **Right hand side** | |
 
 | **Description** | Close Left |
-| :---- | :---- |
-| **Left hand side** | ,bl |
-| **Right hand side** | |
-
-| **Description** | diff file |
-| :---- | :---- |
-| **Left hand side** | ,gd |
-| **Right hand side** | |
-
-| **Description** | status |
-| :---- | :---- |
-| **Left hand side** | ,gs |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,dt |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,dO |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,do |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,di |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,dh |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,dd |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,dc |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,db |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,da |
-| **Right hand side** | |
-
-| **Description** | multicursor |
-| :---- | :---- |
-| **Left hand side** | ,M |
-| **Right hand side** | |
-
-| **Description** | lazygit |
-| :---- | :---- |
-| **Left hand side** | ,gg |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,Dd |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,Dc |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,Di |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,Da |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,DA |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,DK |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,Dk |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,Dt |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,Dh |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,Dg |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ,Ds |
-| **Right hand side** | |
-
-| **Description** | diff hunk |
-| :---- | :---- |
-| **Left hand side** | ,ghd |
-| **Right hand side** | |
-
-| **Description** | undo stage |
-| :---- | :---- |
-| **Left hand side** | ,ghu |
-| **Right hand side** | |
-
-| **Description** | toggle deleted |
-| :---- | :---- |
-| **Left hand side** | ,ght |
-| **Right hand side** | |
-
-| **Description** | stage buffer |
-| :---- | :---- |
-| **Left hand side** | ,ghS |
-| **Right hand side** | |
-
-| **Description** | stage hunk |
-| :---- | :---- |
-| **Left hand side** | ,ghs |
-| **Right hand side** | |
-
-| **Description** | reset hunk |
-| :---- | :---- |
-| **Left hand side** | ,ghr |
-| **Right hand side** | |
-
-| **Description** | reset buffer |
-| :---- | :---- |
-| **Left hand side** | ,ghR |
-| **Right hand side** | |
-
-| **Description** | preview |
-| :---- | :---- |
-| **Left hand side** | ,ghp |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;lt&gt;&lt;lt&gt; |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;lt&gt; |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | == |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | = |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &gt;&gt; |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &gt; |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | H |
-| **Right hand side** | ^ |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | K |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | L |
-| **Right hand side** | &lt;Cmd&gt;lua vim.lsp.buf.signature_help()&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | P |
-| **Right hand side** | &lt;Cmd&gt;lua require('ecovim.plugins.telescope.pickers.multi-rg')()&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | Q |
-| **Right hand side** | :lua require('mini.bufremove').delete(0, false)&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | X |
-| **Right hand side** | "_X |
-
-| **Description** | Nvim builtin |
-| :---- | :---- |
-| **Left hand side** | Y |
-| **Right hand side** | y$ |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | [g |
-| **Right hand side** | &lt;Cmd&gt;lua vim.diagnostic.goto_prev({ float = { border = 'rounded', max_width = 100 }})&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | [% |
-| **Right hand side** | &lt;Plug&gt;(MatchitNormalMultiBackward) |
-
-| **Description** | Previous todo comment |
-| :---- | :---- |
-| **Left hand side** | [t |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ]g |
-| **Right hand side** | &lt;Cmd&gt;lua vim.diagnostic.goto_next({ float = { border = 'rounded', max_width = 100 }})&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | ]% |
-| **Right hand side** | &lt;Plug&gt;(MatchitNormalMultiForward) |
-
-| **Description** | Next todo comment |
-| :---- | :---- |
-| **Left hand side** | ]t |
-| **Right hand side** | |
-
-| **Description** | Change a surrounding pair, putting replacements on new lines |
-| :---- | :---- |
-| **Left hand side** | cS |
-| **Right hand side** | &lt;Plug&gt;(nvim-surround-change-line) |
-
-| **Description** | Change a surrounding pair |
-| :---- | :---- |
-| **Left hand side** | cs |
-| **Right hand side** | &lt;Plug&gt;(nvim-surround-change) |
-
-| **Description** | Delete a surrounding pair |
-| :---- | :---- |
-| **Left hand side** | ds |
-| **Right hand side** | &lt;Plug&gt;(nvim-surround-delete) |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | gP |
-| **Right hand side** | &lt;Plug&gt;(printer_print)iw |
-
-| **Description** | Open URL |
-| :---- | :---- |
-| **Left hand side** | gh |
-| **Right hand side** | &lt;Cmd&gt;OpenRepo&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | gl |
-| **Right hand side** | &lt;Cmd&gt;lua vim.diagnostic.open_float({ border = 'rounded', max_width = 100 })&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | gx |
-| **Right hand side** | &lt;Cmd&gt;silent execute '!xdg-open ' . shellescape('&lt;lt&gt;cWORD&gt;')&lt;CR&gt; |
-
-| **Description** | Operator keymap for printer.nvim |
-| :---- | :---- |
-| **Left hand side** | gp |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | gn |
-| **Right hand side** | :bn&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | g% |
-| **Right hand side** | &lt;Plug&gt;(MatchitNormalBackward) |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | gs |
-| **Right hand side** | &lt;Plug&gt;(Switch) |
-
-| **Description** | Comment insert end of line |
-| :---- | :---- |
-| **Left hand side** | gcA |
-| **Right hand side** | |
-
-| **Description** | Comment insert above |
-| :---- | :---- |
-| **Left hand side** | gcO |
-| **Right hand side** | |
-
-| **Description** | Comment insert below |
-| :---- | :---- |
-| **Left hand side** | gco |
-| **Right hand side** | |
-
-| **Description** | Comment toggle current block |
-| :---- | :---- |
-| **Left hand side** | gbc |
-| **Right hand side** | |
-
-| **Description** | Comment toggle current line |
-| :---- | :---- |
-| **Left hand side** | gcc |
-| **Right hand side** | |
-
-| **Description** | Comment toggle blockwise |
-| :---- | :---- |
-| **Left hand side** | gb |
-| **Right hand side** | &lt;Plug&gt;(comment_toggle_blockwise) |
-
-| **Description** | Comment toggle linewise |
-| :---- | :---- |
-| **Left hand side** | gc |
-| **Right hand side** | &lt;Plug&gt;(comment_toggle_linewise) |
-
-| **Description** | Align with preview |
-| :---- | :---- |
-| **Left hand side** | gA |
-| **Right hand side** | |
-
-| **Description** | Align |
-| :---- | :---- |
-| **Left hand side** | ga |
-| **Right hand side** | |
-
-| **Description** | Move to right "around" |
-| :---- | :---- |
-| **Left hand side** | g] |
-| **Right hand side** | |
-
-| **Description** | Move to left "around" |
-| :---- | :---- |
-| **Left hand side** | g[ |
-| **Right hand side** | |
-
-| **Description** | Toggle Split/Join |
-| :---- | :---- |
-| **Left hand side** | gJ |
-| **Right hand side** | |
-
-| **Description** | LSP Implementations |
-| :---- | :---- |
-| **Left hand side** | gm |
-| **Right hand side** | |
-
-| **Description** | LSP Definition |
-| :---- | :---- |
-| **Left hand side** | gd |
-| **Right hand side** | |
-
-| **Description** | LSP References |
-| :---- | :---- |
-| **Left hand side** | gr |
-| **Right hand side** | |
-
-| **Description** | LSP Type Definitions |
-| :---- | :---- |
-| **Left hand side** | gy |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | s |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | x |
-| **Right hand side** | "_x |
-
-| **Description** | Add a surrounding pair around the current line, on new lines (normal mode) |
-| :---- | :---- |
-| **Left hand side** | ySS |
-| **Right hand side** | &lt;Plug&gt;(nvim-surround-normal-cur-line) |
-
-| **Description** | Add a surrounding pair around a motion, on new lines (normal mode) |
-| :---- | :---- |
-| **Left hand side** | yS |
-| **Right hand side** | &lt;Plug&gt;(nvim-surround-normal-line) |
-
-| **Description** | Add a surrounding pair around the current line (normal mode) |
-| :---- | :---- |
-| **Left hand side** | yss |
-| **Right hand side** | &lt;Plug&gt;(nvim-surround-normal-cur) |
-
-| **Description** | Add a surrounding pair around a motion (normal mode) |
-| :---- | :---- |
-| **Left hand side** | ys |
-| **Right hand side** | &lt;Plug&gt;(nvim-surround-normal) |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | zr |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | zM |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | zR |
-| **Right hand side** | |
-
-| **Description** | Get text out of textobject formatted for debug printing |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(printer_print) |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;luasnip-expand-repeat |
-| **Right hand side** | |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;luasnip-delete-check |
-| **Right hand side** | |
-
-| **Description** | Increase window width |
-| :---- | :---- |
-| **Left hand side** | &lt;C-Right&gt; |
-| **Right hand side** | &lt;Cmd&gt;vertical resize +2&lt;CR&gt; |
-
-| **Description** | Decrease window width |
-| :---- | :---- |
-| **Left hand side** | &lt;C-Left&gt; |
-| **Right hand side** | &lt;Cmd&gt;vertical resize -2&lt;CR&gt; |
-
-| **Description** | Increase window height |
-| :---- | :---- |
-| **Left hand side** | &lt;C-Up&gt; |
-| **Right hand side** | &lt;Cmd&gt;resize +2&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;C-Space&gt; |
-| **Right hand side** | &lt;Cmd&gt;lua vim.lsp.buf.code_action()&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;C-X&gt; |
-| **Right hand side** | :if !switch#Switch({'reverse': 1}) &#124; call speeddating#increment(-v:count1) | endif&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;C-A&gt; |
-| **Right hand side** | :if !switch#Switch() &#124; call speeddating#increment(v:count1) | endif&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;S-Tab&gt; |
-| **Right hand side** | :BufferLineCyclePrev&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;C-P&gt; |
-| **Right hand side** | &lt;Cmd&gt;lua require('ecovim.plugins.telescope').project_files()&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;C-S&gt; |
-| **Right hand side** | :w&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;C-K&gt; |
-| **Right hand side** | &lt;C-W&gt;k |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;C-J&gt; |
-| **Right hand side** | &lt;C-W&gt;j |
-
 | **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;C-H&gt; |
-| **Right hand side** | &lt;C-W&gt;h |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(MatchitNormalMultiForward) |
-| **Right hand side** | :&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(MatchitNormalMultiBackward) |
-| **Right hand side** | :&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(MatchitNormalBackward) |
-| **Right hand side** | :&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(MatchitNormalForward) |
-| **Right hand side** | :&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(SwitchReverse) |
-| **Right hand side** | :set opfunc=switch#OpfuncReverse&lt;CR&gt;g@l |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(Switch) |
-| **Right hand side** | :set opfunc=switch#OpfuncForward&lt;CR&gt;g@l |
-
-| **Description** | Comment toggle blockwise with count |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(comment_toggle_blockwise_count) |
-| **Right hand side** | |
-
-| **Description** | Comment toggle linewise with count |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(comment_toggle_linewise_count) |
-| **Right hand side** | |
-
-| **Description** | Comment toggle current block |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(comment_toggle_blockwise_current) |
-| **Right hand side** | |
-
-| **Description** | Comment toggle current line |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(comment_toggle_linewise_current) |
-| **Right hand side** | |
-
-| **Description** | Comment toggle blockwise |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(comment_toggle_blockwise) |
-| **Right hand side** | |
-
-| **Description** | Comment toggle linewise |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(comment_toggle_linewise) |
-| **Right hand side** | |
-
-| **Description** | Git Conflict: Previous Conflict |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(git-conflict-prev-conflict) |
-| **Right hand side** | &lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt; |
-
-| **Description** | Git Conflict: Next Conflict |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(git-conflict-next-conflict) |
-| **Right hand side** | &lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt; |
-
-| **Description** | Git Conflict: Choose Theirs |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(git-conflict-theirs) |
-| **Right hand side** | &lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt; |
-
-| **Description** | Git Conflict: Choose None |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(git-conflict-none) |
-| **Right hand side** | &lt;Cmd&gt;GitConflictChooseNone&lt;CR&gt; |
-
-| **Description** | Git Conflict: Choose Both |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(git-conflict-both) |
-| **Right hand side** | &lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt; |
-
-| **Description** | Git Conflict: Choose Ours |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(git-conflict-ours) |
-| **Right hand side** | &lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt; |
-
-| **Description** | Toggle Terminal |
-| :---- | :---- |
-| **Left hand side** | &lt;F12&gt; |
-| **Right hand side** | &lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;PlenaryTestFile |
-| **Right hand side** | :lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;SpeedDatingFallbackDown |
-| **Right hand side** | &lt;C-X&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;SpeedDatingFallbackUp |
-| **Right hand side** | &lt;C-A&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;SpeedDatingNowUTC |
-| **Right hand side** | :&lt;C-U&gt;call speeddating#timestamp(1,v:count)&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;SpeedDatingNowLocal |
-| **Right hand side** | :&lt;C-U&gt;call speeddating#timestamp(0,v:count)&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;SpeedDatingDown |
-| **Right hand side** | :&lt;C-U&gt;call speeddating#increment(-v:count1)&lt;CR&gt; |
-
-| **Description** | |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;SpeedDatingUp |
-| **Right hand side** | :&lt;C-U&gt;call speeddating#increment(v:count1)&lt;CR&gt; |
-
-| **Description** | Change a surrounding pair, putting replacements on new lines |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(nvim-surround-change-line) |
-| **Right hand side** | |
-
-| **Description** | Change a surrounding pair |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(nvim-surround-change) |
-| **Right hand side** | |
-
-| **Description** | Delete a surrounding pair |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(nvim-surround-delete) |
-| **Right hand side** | |
-
-| **Description** | Add a surrounding pair around the current line, on new lines (normal mode) |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(nvim-surround-normal-cur-line) |
-| **Right hand side** | |
-
-| **Description** | Add a surrounding pair around a motion, on new lines (normal mode) |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(nvim-surround-normal-line) |
-| **Right hand side** | |
-
-| **Description** | Add a surrounding pair around the current line (normal mode) |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(nvim-surround-normal-cur) |
-| **Right hand side** | |
-
-| **Description** | Add a surrounding pair around a motion (normal mode) |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(nvim-surround-normal) |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 9 |
-| :---- | :---- |
-| **Left hand side** | &lt;M-9&gt; |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 8 |
-| :---- | :---- |
-| **Left hand side** | &lt;M-8&gt; |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 7 |
-| :---- | :---- |
-| **Left hand side** | &lt;M-7&gt; |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 6 |
-| :---- | :---- |
-| **Left hand side** | &lt;M-6&gt; |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 5 |
-| :---- | :---- |
-| **Left hand side** | &lt;M-5&gt; |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 4 |
-| :---- | :---- |
-| **Left hand side** | &lt;M-4&gt; |
-| **Right hand side** | |
-
-| **Description** | Go to buffer 2 |
 | :---- | :---- |
-| **Left hand side** | &lt;M-2&gt; |
+| **Left hand side** | <code>,bl</code> |
 | **Right hand side** | |
 
 | **Description** | Go to buffer 1 |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;M-1&gt; |
+| **Left hand side** | <code>,1</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 2 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,2</code> |
 | **Right hand side** | |
 
 | **Description** | Go to buffer 3 |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;M-3&gt; |
+| **Left hand side** | <code>,3</code> |
 | **Right hand side** | |
 
-| **Description** | multicursor down |
+| **Description** | Go to buffer 4 |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;C-Down&gt; |
+| **Left hand side** | <code>,4</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 5 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,5</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 6 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,6</code> |
+| **Right hand side** | |
+
+| **Description** | Move back |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,bb</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 7 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,7</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 8 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,8</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 9 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,9</code> |
+| **Right hand side** | |
+
+| **Description** | refactor |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,pr</code> |
+| **Right hand side** | |
+
+| **Description** | multicursor |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,M</code> |
+| **Right hand side** | |
+
+| **Description** | reset hunk |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,ghr</code> |
+| **Right hand side** | |
+
+| **Description** | reset buffer |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,ghR</code> |
+| **Right hand side** | |
+
+| **Description** | preview |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,ghp</code> |
+| **Right hand side** | |
+
+| **Description** | diff hunk |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,ghd</code> |
+| **Right hand side** | |
+
+| **Description** | undo stage |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,ghu</code> |
+| **Right hand side** | |
+
+| **Description** | toggle deleted |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,ght</code> |
+| **Right hand side** | |
+
+| **Description** | stage buffer |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,ghS</code> |
+| **Right hand side** | |
+
+| **Description** | stage hunk |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,ghs</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,di</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,dh</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,dd</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,dc</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,db</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,da</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,dt</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,dO</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,do</code> |
+| **Right hand side** | |
+
+| **Description** | lazygit |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,gg</code> |
+| **Right hand side** | |
+
+| **Description** | diff file |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,gd</code> |
+| **Right hand side** | |
+
+| **Description** | status |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>,gs</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,DK</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,Dk</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,Dt</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,Dh</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,Dg</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,Ds</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,Dd</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,Dc</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,Di</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,Da</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>,DA</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;lt&gt;&lt;lt&gt;</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;lt&gt;</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>==</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>=</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>&gt;&gt;</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>&gt;</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>H</code> |
+| **Right hand side** | <code>^</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>K</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>L</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua vim.lsp.buf.signature_help()&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>P</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('ecovim.plugins.telescope.pickers.multi-rg')()&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>Q</code> |
+| **Right hand side** | <code>:lua require('mini.bufremove').delete(0, false)&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>X</code> |
+| **Right hand side** | <code>"_X</code> |
+
+| **Description** | Nvim builtin |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>Y</code> |
+| **Right hand side** | <code>y$</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>[g</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua vim.diagnostic.goto_prev({ float = { border = 'rounded', max_width = 100 }})&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+
+| **Description** | Previous todo comment |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>[t</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>]g</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua vim.diagnostic.goto_next({ float = { border = 'rounded', max_width = 100 }})&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+
+| **Description** | Next todo comment |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>]t</code> |
+| **Right hand side** | |
+
+| **Description** | Change a surrounding pair, putting replacements on new lines |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>cS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |
+
+| **Description** | Change a surrounding pair |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>cs</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-change)</code> |
+
+| **Description** | Delete a surrounding pair |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ds</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-delete)</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>gP</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(printer_print)iw</code> |
+
+| **Description** | Open URL |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gh</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;OpenRepo&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>gl</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua vim.diagnostic.open_float({ border = 'rounded', max_width = 100 })&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>gx</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;silent execute '!xdg-open ' . shellescape('&lt;lt&gt;cWORD&gt;')&lt;CR&gt;</code> |
+
+| **Description** | Operator keymap for printer.nvim |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gp</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>gn</code> |
+| **Right hand side** | <code>:bn&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>gs</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(Switch)</code> |
+
+| **Description** | Comment insert end of line |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gcA</code> |
+| **Right hand side** | |
+
+| **Description** | Comment insert above |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gcO</code> |
+| **Right hand side** | |
+
+| **Description** | Comment insert below |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gco</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current block |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gbc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current line |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gcc</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
+
+| **Description** | Comment toggle linewise |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gc</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
+
+| **Description** | Move to right "around" |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g]</code> |
+| **Right hand side** | |
+
+| **Description** | Move to left "around" |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>g[</code> |
+| **Right hand side** | |
+
+| **Description** | Align with preview |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gA</code> |
+| **Right hand side** | |
+
+| **Description** | Align |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ga</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Split/Join |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gJ</code> |
+| **Right hand side** | |
+
+| **Description** | LSP Definition |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gd</code> |
+| **Right hand side** | |
+
+| **Description** | LSP Implementations |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gm</code> |
+| **Right hand side** | |
+
+| **Description** | LSP References |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gr</code> |
+| **Right hand side** | |
+
+| **Description** | LSP Type Definitions |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gy</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>s</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>x</code> |
+| **Right hand side** | <code>"_x</code> |
+
+| **Description** | Add a surrounding pair around the current line, on new lines (normal mode) |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ySS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-normal-cur-line)</code> |
+
+| **Description** | Add a surrounding pair around a motion, on new lines (normal mode) |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>yS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-normal-line)</code> |
+
+| **Description** | Add a surrounding pair around the current line (normal mode) |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>yss</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-normal-cur)</code> |
+
+| **Description** | Add a surrounding pair around a motion (normal mode) |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>ys</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-normal)</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>zr</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>zM</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>zR</code> |
+| **Right hand side** | |
+
+| **Description** | Get text out of textobject formatted for debug printing |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(printer_print)</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-delete-check</code> |
+| **Right hand side** | |
+
+| **Description** | Increase window width |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Right&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;vertical resize +2&lt;CR&gt;</code> |
+
+| **Description** | Decrease window width |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Left&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;vertical resize -2&lt;CR&gt;</code> |
+
+| **Description** | Increase window height |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Up&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;resize +2&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Space&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua vim.lsp.buf.code_action()&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-X&gt;</code> |
+| **Right hand side** | <code>:if !switch#Switch({'reverse': 1}) &#124; call speeddating#increment(-v:count1) | endif&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-A&gt;</code> |
+| **Right hand side** | <code>:if !switch#Switch() &#124; call speeddating#increment(v:count1) | endif&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;S-Tab&gt;</code> |
+| **Right hand side** | <code>:BufferLineCyclePrev&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-P&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('ecovim.plugins.telescope').project_files()&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-S&gt;</code> |
+| **Right hand side** | <code>:w&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-K&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;k</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-J&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;j</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-H&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;h</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'n')&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitNormalForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'n')&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(SwitchReverse)</code> |
+| **Right hand side** | <code>:set opfunc=switch#OpfuncReverse&lt;CR&gt;g@l</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(Switch)</code> |
+| **Right hand side** | <code>:set opfunc=switch#OpfuncForward&lt;CR&gt;g@l</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingFallbackDown</code> |
+| **Right hand side** | <code>&lt;C-X&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingFallbackUp</code> |
+| **Right hand side** | <code>&lt;C-A&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingNowUTC</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#timestamp(1,v:count)&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingNowLocal</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#timestamp(0,v:count)&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingDown</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#increment(-v:count1)&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingUp</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#increment(v:count1)&lt;CR&gt;</code> |
+
+| **Description** | Change a surrounding pair, putting replacements on new lines |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-change-line)</code> |
+| **Right hand side** | |
+
+| **Description** | Change a surrounding pair |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-change)</code> |
+| **Right hand side** | |
+
+| **Description** | Delete a surrounding pair |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-delete)</code> |
+| **Right hand side** | |
+
+| **Description** | Add a surrounding pair around the current line, on new lines (normal mode) |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal-cur-line)</code> |
+| **Right hand side** | |
+
+| **Description** | Add a surrounding pair around a motion, on new lines (normal mode) |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal-line)</code> |
+| **Right hand side** | |
+
+| **Description** | Add a surrounding pair around the current line (normal mode) |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal-cur)</code> |
+| **Right hand side** | |
+
+| **Description** | Add a surrounding pair around a motion (normal mode) |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-normal)</code> |
+| **Right hand side** | |
+
+| **Description** | Toggle Terminal |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;F12&gt;</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;execute v:count . "ToggleTerm"&lt;CR&gt;</code> |
+
+| **Description** | Comment toggle blockwise with count |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_count)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise with count |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_count)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current block |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_current)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle current line |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_current)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle blockwise |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise)</code> |
+| **Right hand side** | |
+
+| **Description** | Comment toggle linewise |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise)</code> |
+| **Right hand side** | |
+
+| **Description** | Git Conflict: Previous Conflict |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-prev-conflict)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictPrevConflict&lt;CR&gt;</code> |
+
+| **Description** | Git Conflict: Next Conflict |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-next-conflict)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictNextConflict&lt;CR&gt;</code> |
+
+| **Description** | Git Conflict: Choose Theirs |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-theirs)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseTheirs&lt;CR&gt;</code> |
+
+| **Description** | Git Conflict: Choose None |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-none)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseNone&lt;CR&gt;</code> |
+
+| **Description** | Git Conflict: Choose Both |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-both)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseBoth&lt;CR&gt;</code> |
+
+| **Description** | Git Conflict: Choose Ours |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;(git-conflict-ours)</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;GitConflictChooseOurs&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;PlenaryTestFile</code> |
+| **Right hand side** | <code>:lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))&lt;CR&gt;</code> |
+
+| **Description** | Go to buffer 7 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-7&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 6 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-6&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 4 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-4&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 3 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-3&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 2 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-2&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 1 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-1&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 9 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-9&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 8 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-8&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | Go to buffer 5 |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;M-5&gt;</code> |
 | **Right hand side** | |
 
 | **Description** | NvimTree |
-| :---- | :---- |
-| **Left hand side** | &lt;C-E&gt; |
-| **Right hand side** | |
-
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;C-L&gt; |
-| **Right hand side** | &lt;C-W&gt;l |
+| **Left hand side** | <code>&lt;C-E&gt;</code> |
+| **Right hand side** | |
+
+| **Description** | multicursor down |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-Down&gt;</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;C-L&gt;</code> |
+| **Right hand side** | <code>&lt;C-W&gt;l</code> |
 
 
 ### Visual mode keymaps
 
 | **Description** | Nvim builtin |
-| :---- | :---- |
-| **Left hand side** | # |
-| **Right hand side** | y?\V&lt;C-R&gt;"&lt;CR&gt; |
-
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | % |
-| **Right hand side** | &lt;Plug&gt;(MatchitVisualForward) |
+| **Left hand side** | <code>#</code> |
+| **Right hand side** | <code>y?\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
 
 | **Description** | Nvim builtin |
-| :---- | :---- |
-| **Left hand side** | * |
-| **Right hand side** | y/\V&lt;C-R&gt;"&lt;CR&gt; |
-
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,cf |
+| **Left hand side** | <code>*</code> |
+| **Right hand side** | <code>y/\V&lt;C-R&gt;"&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>,cf</code> |
 | **Right hand side** | |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,ca |
-| **Right hand side** | &lt;Cmd&gt;'&lt;lt&gt;,'&gt;lua vim.lsp.buf.code_action()&lt;CR&gt; |
+| **Left hand side** | <code>,ca</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;'&lt;lt&gt;,'&gt;lua vim.lsp.buf.code_action()&lt;CR&gt;</code> |
 
 | **Description** | Terminal Send |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,ts |
+| **Left hand side** | <code>,ts</code> |
 | **Right hand side** | |
 
 | **Description** | comment box |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,ac |
-| **Right hand side** | &lt;Cmd&gt;lua require('comment-box').lbox()&lt;CR&gt; |
+| **Left hand side** | <code>,ac</code> |
+| **Right hand side** | <code>&lt;Cmd&gt;lua require('comment-box').lbox()&lt;CR&gt;</code> |
 
 | **Description** | refactor |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,pr |
+| **Left hand side** | <code>,pr</code> |
 | **Right hand side** | |
 
 | **Description** | multicursor |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ,M |
+| **Left hand side** | <code>,M</code> |
 | **Right hand side** | |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;lt&gt; |
-| **Right hand side** | &lt;lt&gt;gv |
+| **Left hand side** | <code>&lt;lt&gt;</code> |
+| **Right hand side** | <code>&lt;lt&gt;gv</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | = |
+| **Left hand side** | <code>=</code> |
 | **Right hand side** | |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &gt; |
-| **Right hand side** | &gt;gv |
+| **Left hand side** | <code>&gt;</code> |
+| **Right hand side** | <code>&gt;gv</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | J |
-| **Right hand side** | :move '&gt;+1&lt;CR&gt;gv-gv |
+| **Left hand side** | <code>J</code> |
+| **Right hand side** | <code>:move '&gt;+1&lt;CR&gt;gv-gv</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | K |
-| **Right hand side** | :move '&lt;lt&gt;-2&lt;CR&gt;gv-gv |
+| **Left hand side** | <code>K</code> |
+| **Right hand side** | <code>:move '&lt;lt&gt;-2&lt;CR&gt;gv-gv</code> |
 
 | **Description** | Add a surrounding pair around a visual selection |
-| :---- | :---- |
-| **Left hand side** | S |
-| **Right hand side** | &lt;Plug&gt;(nvim-surround-visual) |
-
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | X |
-| **Right hand side** | "_X |
+| **Left hand side** | <code>S</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-visual)</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | [% |
-| **Right hand side** | &lt;Plug&gt;(MatchitVisualMultiBackward) |
+| **Left hand side** | <code>X</code> |
+| **Right hand side** | <code>"_X</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ]% |
-| **Right hand side** | &lt;Plug&gt;(MatchitVisualMultiForward) |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ` |
-| **Right hand side** | u |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | a% |
-| **Right hand side** | &lt;Plug&gt;(MatchitVisualTextObject) |
+| **Left hand side** | <code>`</code> |
+| **Right hand side** | <code>u</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>a%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
 
 | **Description** | Around last textobject |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | al |
+| **Left hand side** | <code>al</code> |
 | **Right hand side** | |
 
 | **Description** | Around next textobject |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | an |
+| **Left hand side** | <code>an</code> |
 | **Right hand side** | |
 
 | **Description** | Around textobject |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | a |
+| **Left hand side** | <code>a</code> |
 | **Right hand side** | |
 
 | **Description** | Operator keymap for printer.nvim |
-| :---- | :---- |
-| **Left hand side** | gp |
-| **Right hand side** | |
-
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | g% |
-| **Right hand side** | &lt;Plug&gt;(MatchitVisualBackward) |
+| **Left hand side** | <code>gp</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+
+| **Description** | Comment toggle blockwise (visual) |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gb</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
+
+| **Description** | Comment toggle linewise (visual) |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gc</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
 
 | **Description** | Move to right "around" |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | g] |
+| **Left hand side** | <code>g]</code> |
 | **Right hand side** | |
 
 | **Description** | Move to left "around" |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | g[ |
+| **Left hand side** | <code>g[</code> |
 | **Right hand side** | |
 
-| **Description** | Align with preview |
+| **Description** | Add a surrounding pair around a visual selection, on new lines |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | gA |
+| **Left hand side** | <code>gS</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
+
+| **Description** | Align with preview |
+| **Description** | |
+| :---- | :---- |
+| **Left hand side** | <code>gA</code> |
 | **Right hand side** | |
 
 | **Description** | Align |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ga |
+| **Left hand side** | <code>ga</code> |
 | **Right hand side** | |
 
-| **Description** | Comment toggle blockwise (visual) |
-| :---- | :---- |
-| **Left hand side** | gb |
-| **Right hand side** | &lt;Plug&gt;(comment_toggle_blockwise_visual) |
-
-| **Description** | Comment toggle linewise (visual) |
-| :---- | :---- |
-| **Left hand side** | gc |
-| **Right hand side** | &lt;Plug&gt;(comment_toggle_linewise_visual) |
-
-| **Description** | Add a surrounding pair around a visual selection, on new lines |
-| :---- | :---- |
-| **Left hand side** | gS |
-| **Right hand side** | &lt;Plug&gt;(nvim-surround-visual-line) |
-
 | **Description** | Inside last textobject |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | il |
+| **Left hand side** | <code>il</code> |
 | **Right hand side** | |
 
 | **Description** | Inside next textobject |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | in |
+| **Left hand side** | <code>in</code> |
 | **Right hand side** | |
 
 | **Description** | Inside textobject |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | i |
+| **Left hand side** | <code>i</code> |
 | **Right hand side** | |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | p |
-| **Right hand side** | "_dP |
+| **Left hand side** | <code>p</code> |
+| **Right hand side** | <code>"_dP</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | s |
+| **Left hand side** | <code>s</code> |
 | **Right hand side** | |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | x |
-| **Right hand side** | "_x |
+| **Left hand side** | <code>x</code> |
+| **Right hand side** | <code>"_x</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;luasnip-expand-repeat |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
 | **Right hand side** | |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;M-`&gt; |
-| **Right hand side** | U |
+| **Left hand side** | <code>&lt;M-`&gt;</code> |
+| **Right hand side** | <code>U</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(MatchitVisualTextObject) |
-| **Right hand side** | &lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward) |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualTextObject)</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)o&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(MatchitVisualMultiForward) |
-| **Right hand side** | :&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv`` |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "n")&lt;CR&gt;m'gv``</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(MatchitVisualMultiBackward) |
-| **Right hand side** | :&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv`` |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "n")&lt;CR&gt;m'gv``</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(MatchitVisualBackward) |
-| **Right hand side** | :&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv`` |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'v')&lt;CR&gt;m'gv``</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(MatchitVisualForward) |
-| **Right hand side** | :&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv`` |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitVisualForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'v')&lt;CR&gt;:if col("''") != col("$") &#124; exe ":normal! m'" | endif&lt;CR&gt;gv``</code> |
 
 | **Description** | Comment toggle blockwise (visual) |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(comment_toggle_blockwise_visual) |
-| **Right hand side** | &lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt; |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_blockwise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())&lt;CR&gt;</code> |
 
 | **Description** | Comment toggle linewise (visual) |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(comment_toggle_linewise_visual) |
-| **Right hand side** | &lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt; |
+| **Left hand side** | <code>&lt;Plug&gt;(comment_toggle_linewise_visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())&lt;CR&gt;</code> |
 
 | **Description** | Add a surrounding pair around a visual selection, on new lines |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(nvim-surround-visual-line) |
-| **Right hand side** | &lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = true })&lt;CR&gt; |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-visual-line)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = true })&lt;CR&gt;</code> |
 
 | **Description** | Add a surrounding pair around a visual selection |
-| :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(nvim-surround-visual) |
-| **Right hand side** | &lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = false })&lt;CR&gt; |
-
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;SpeedDatingDown |
-| **Right hand side** | :&lt;C-U&gt;call speeddating#incrementvisual(-v:count1)&lt;CR&gt; |
+| **Left hand side** | <code>&lt;Plug&gt;(nvim-surround-visual)</code> |
+| **Right hand side** | <code>&lt;Esc&gt;&lt;Cmd&gt;lua require'nvim-surround'.visual_surround({ line_mode = false })&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;SpeedDatingUp |
-| **Right hand side** | :&lt;C-U&gt;call speeddating#incrementvisual(v:count1)&lt;CR&gt; |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingDown</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#incrementvisual(-v:count1)&lt;CR&gt;</code> |
+
+| :---- | :---- |
+| **Left hand side** | <code>&lt;Plug&gt;SpeedDatingUp</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call speeddating#incrementvisual(v:count1)&lt;CR&gt;</code> |
 
 
 ### Operator mode keymaps
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | % |
-| **Right hand side** | &lt;Plug&gt;(MatchitOperationForward) |
+| **Left hand side** | <code>%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | [% |
-| **Right hand side** | &lt;Plug&gt;(MatchitOperationMultiBackward) |
+| **Left hand side** | <code>[%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | ]% |
-| **Right hand side** | &lt;Plug&gt;(MatchitOperationMultiForward) |
+| **Left hand side** | <code>]%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
 
 | **Description** | Around last textobject |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | al |
+| **Left hand side** | <code>al</code> |
 | **Right hand side** | |
 
 | **Description** | Around next textobject |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | an |
+| **Left hand side** | <code>an</code> |
 | **Right hand side** | |
 
 | **Description** | Around textobject |
-| :---- | :---- |
-| **Left hand side** | a |
-| **Right hand side** | |
-
 | **Description** | |
 | :---- | :---- |
-| **Left hand side** | g% |
-| **Right hand side** | &lt;Plug&gt;(MatchitOperationBackward) |
+| **Left hand side** | <code>a</code> |
+| **Right hand side** | |
+
+| :---- | :---- |
+| **Left hand side** | <code>g%</code> |
+| **Right hand side** | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
 
 | **Description** | Move to right "around" |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | g] |
+| **Left hand side** | <code>g]</code> |
 | **Right hand side** | |
 
 | **Description** | Move to left "around" |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | g[ |
+| **Left hand side** | <code>g[</code> |
 | **Right hand side** | |
 
 | **Description** | Inside last textobject |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | il |
+| **Left hand side** | <code>il</code> |
 | **Right hand side** | |
 
 | **Description** | Inside next textobject |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | in |
+| **Left hand side** | <code>in</code> |
 | **Right hand side** | |
 
 | **Description** | Inside textobject |
+| **Description** | |
 | :---- | :---- |
-| **Left hand side** | i |
+| **Left hand side** | <code>i</code> |
 | **Right hand side** | |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | s |
+| **Left hand side** | <code>s</code> |
 | **Right hand side** | |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;luasnip-expand-repeat |
+| **Left hand side** | <code>&lt;Plug&gt;luasnip-expand-repeat</code> |
 | **Right hand side** | |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(MatchitOperationMultiForward) |
-| **Right hand side** | :&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt; |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("W",  "o")&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(MatchitOperationMultiBackward) |
-| **Right hand side** | :&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt; |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationMultiBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#MultiMatch("bW", "o")&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(MatchitOperationBackward) |
-| **Right hand side** | :&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt; |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationBackward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',0,'o')&lt;CR&gt;</code> |
 
-| **Description** | |
 | :---- | :---- |
-| **Left hand side** | &lt;Plug&gt;(MatchitOperationForward) |
-| **Right hand side** | :&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt; |
+| **Left hand side** | <code>&lt;Plug&gt;(MatchitOperationForward)</code> |
+| **Right hand side** | <code>:&lt;C-U&gt;call matchit#Match_wrapper('',1,'o')&lt;CR&gt;</code> |
 
