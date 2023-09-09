@@ -981,8 +981,8 @@ show_plugin_menu() {
       options+=("Tabnine (AI)  [${use_tabnine}]")
     }
     options+=("Cheatsheets   [${use_cheatsheet}]")
+    options+=("Enable coding [${use_coding}]")
     [ "${use_namespace}" == "ecovim" ] || {
-      options+=("Enable coding [${use_coding}]")
       options+=("Compile & Run [${use_compile}]")
       [ "${use_namespace}" == "free" ] && {
         options+=("Dashboard [${use_dash}]")
@@ -1000,6 +1000,9 @@ show_plugin_menu() {
     options+=("Noice UI      [${use_noice}]")
     options+=("Enable Games  [${use_games}]")
     options+=("Indentline [${use_indentline}]")
+    options+=("Enable Motion [${use_motion}]")
+    options+=("Multi Cursor  [${use_multi_cursor}]")
+    options+=("Smooth Scroll [${use_smooth_scrolling}]")
     options+=("Terminal      [${use_terminal}]")
     [ "${use_namespace}" == "ecovim" ] || {
       options+=("File Tree [${use_neotree}]")
@@ -1009,7 +1012,6 @@ show_plugin_menu() {
         options+=(" Separator    [${use_lualine_separator}]")
       fi
       options+=(" Fancy Icons  [${use_fancy}]")
-      options+=("Enable Motion [${use_motion}]")
       options+=("Enable Notes  [${use_notes}]")
       if [ "${enable_notes}" == "true" ]; then
         options+=("Enable Obsidian [${use_obsidian}]")
@@ -1022,7 +1024,6 @@ show_plugin_menu() {
         }
       fi
       options+=("Media Backend [${use_media_backend}]")
-      options+=("Multi Cursor  [${use_multi_cursor}]")
       options+=("Navigator     [${use_navigator}]")
       options+=("Picker        [${use_picker}]")
       options+=("Project       [${use_project}]")
@@ -1034,7 +1035,6 @@ show_plugin_menu() {
       }
       options+=("Securitree    [${use_securitree}]")
       options+=("Session [${use_session_manager}]")
-      options+=("Smooth Scroll [${use_smooth_scrolling}]")
       options+=("StartupTime   [${use_startuptime}]")
       options+=("Surround      [${use_surround}]")
       options+=("Toggle Term   [${use_toggleterm}]")
@@ -1051,7 +1051,7 @@ show_plugin_menu() {
       diff ${CONFBACK} ${NVIMCONF} >/dev/null || options+=("Reset to Defaults")
     }
     [ -d "${LMANDIR}" ] && options+=("Open Lazyman")
-    [ "${use_namespace}" == "free" ] && {
+    [ "${use_namespace}" == "onno" ] || {
       options+=("Formatters")
       options+=("LSP Servers")
     }
@@ -1958,7 +1958,7 @@ show_lsp_menu() {
     done
     options+=("Disable All")
     options+=("Enable All")
-    [ "${use_namespace}" == "free" ] && {
+    [ "${use_namespace}" == "onno" ] || {
       options+=("Formatters Menu")
     }
     options+=("Plugins Menu")
@@ -2095,7 +2095,7 @@ show_formlint_menu() {
     done
     options+=("Disable All")
     options+=("Enable All")
-    [ "${use_namespace}" == "free" ] && {
+    [ "${use_namespace}" == "onno" ] || {
       options+=("LSP Servers Menu")
     }
     options+=("Plugins Menu")
@@ -2299,7 +2299,7 @@ show_conf_menu() {
     PS3="${BOLD}${PLEASE} (numeric or text, 'h' for help): ${NORM}"
     options=()
     options+=("Namespace [${use_namespace}]")
-    [ "${use_namespace}" == "free" ] && {
+    [ "${use_namespace}" == "onno" ] || {
       options+=("Diagnostics [${use_show_diagnostics}]")
     }
     options+=("Theme [${use_theme}]")
@@ -2344,7 +2344,7 @@ show_conf_menu() {
       diff ${CONFBACK} ${NVIMCONF} >/dev/null || options+=("Reset to Defaults")
     }
     [ -d "${LMANDIR}" ] && options+=("Open Lazyman")
-    [ "${use_namespace}" == "free" ] && {
+    [ "${use_namespace}" == "onno" ] || {
       options+=("Formatters")
       options+=("LSP Servers")
     }
