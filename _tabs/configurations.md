@@ -215,9 +215,6 @@ installed with the `-w conf` option.
 - [Brain](https://lazyman.dev/info/Brain.html)
   - Well structured personal config based on the [KISS](https://en.wikipedia.org/wiki/KISS_principle){:target="\_blank"}{:rel="noopener noreferrer"} principle
   - `lazyman -w Brain`
-- [CandyVim](https://lazyman.dev/info/CandyVim.html)
-  - Eye candy frontend development with React and Vue.js
-  - Install and initialize with `lazyman -w CandyVim`
 - [Charles](https://lazyman.dev/info/Charles.html)
   - Well structured lazy config with several setup scripts and a Wiki
   - Install and initialize with `lazyman -w Charles`
@@ -306,6 +303,9 @@ installed with the `-w conf` option.
 - [Rafi](https://lazyman.dev/info/Rafi.html)
   - [Extensible](https://github.com/rafi/vim-config#extending){:target="\_blank"}{:rel="noopener noreferrer"} Neovim configuration
   - Install and initialize with `lazyman -w Rafi`
+- [RNvim](https://lazyman.dev/info/RNvim.html)
+  - Personal Neovim configuration of Github user `RoryNesbitt`
+  - Install and initialize with `lazyman -w RNvim`
 - [Roiz](https://lazyman.dev/info/Roiz.html)
   - Just a random Neovim config found on Github, works well
   - Install and initialize with `lazyman -w Roiz`

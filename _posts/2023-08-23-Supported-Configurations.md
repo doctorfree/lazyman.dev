@@ -18,7 +18,7 @@ additional Lazyman supported Neovim configurations' details.
 | [2k](https://lazyman.dev/info/2k.html) | [Abstract](https://lazyman.dev/info/Abstract.html) | [Adib](https://lazyman.dev/info/Adib.html) | [Ahsan](https://lazyman.dev/info/Ahsan.html) | [AlanVim](https://lazyman.dev/info/AlanVim.html) |
 | [Allaman](https://lazyman.dev/info/Allaman.html) | [Artur](https://lazyman.dev/info/Artur.html) | [AstroNvimPlus](https://lazyman.dev/info/AstroNvimPlus.html) | [AstroNvimStart](https://lazyman.dev/info/AstroNvimStart.html) | [Barebones](https://lazyman.dev/info/Barebones.html) |
 | [Basic](https://lazyman.dev/info/Basic.html) | [BasicIde](https://lazyman.dev/info/BasicIde.html) | [BasicLsp](https://lazyman.dev/info/BasicLsp.html) | [BasicMason](https://lazyman.dev/info/BasicMason.html) | [Beethoven](https://lazyman.dev/info/Beethoven.html) |
-| [Brain](https://lazyman.dev/info/Brain.html) | [CandyVim](https://lazyman.dev/info/CandyVim.html) | [CatNvim](https://lazyman.dev/info/CatNvim.html) | [Charles](https://lazyman.dev/info/Charles.html) | [Chokerman](https://lazyman.dev/info/Chokerman.html) |
+| [Brain](https://lazyman.dev/info/Brain.html) | [RNvim](https://lazyman.dev/info/RNvim.html) | [CatNvim](https://lazyman.dev/info/CatNvim.html) | [Charles](https://lazyman.dev/info/Charles.html) | [Chokerman](https://lazyman.dev/info/Chokerman.html) |
 | [CodeArt](https://lazyman.dev/info/CodeArt.html) | [Cosmic](https://lazyman.dev/info/Cosmic.html) | [Cpp](https://lazyman.dev/info/Cpp.html) | [Craftzdog](https://lazyman.dev/info/Craftzdog.html) | [Daniel](https://lazyman.dev/info/Daniel.html) |
 | [Dillon](https://lazyman.dev/info/Dillon.html) | [Ecovim](https://lazyman.dev/info/Ecovim.html) | [Elianiva](https://lazyman.dev/info/Elianiva.html) | [Elijah](https://lazyman.dev/info/Elijah.html) | [Ember](https://lazyman.dev/info/Ember.html) |
 | [Enrique](https://lazyman.dev/info/Enrique.html) | [Extralight](https://lazyman.dev/info/Extralight.html) | [Fennel](https://lazyman.dev/info/Fennel.html) | [Folke](https://lazyman.dev/info/Folke.html) | [Go](https://lazyman.dev/info/Go.html) |
@@ -246,9 +246,9 @@ installed with the `-w conf` option.
 - [Brain](https://lazyman.dev/info/Brain.html)
   - Well structured personal config based on the [KISS](https://en.wikipedia.org/wiki/KISS_principle){:target="\_blank"}{:rel="noopener noreferrer"} principle
   - `lazyman -w Brain`
-- [CandyVim](https://lazyman.dev/info/CandyVim.html)
-  - Eye candy frontend development with React and Vue.js
-  - Install and initialize with `lazyman -w CandyVim`
+- [RNvim](https://lazyman.dev/info/RNvim.html)
+  - Personal Neovim configuration of Github user `RoryNesbitt`
+  - Install and initialize with `lazyman -w RNvim`
 - [Charles](https://lazyman.dev/info/Charles.html)
   - Well structured lazy config with several setup scripts and a Wiki
   - Install and initialize with `lazyman -w Charles`
