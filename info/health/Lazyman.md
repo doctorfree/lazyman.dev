@@ -8,11 +8,17 @@ post_style: page
 # nvim-Lazyman Neovim health check
 
 --------
-hydra: require("hydra.health").check()
+diffview: require("diffview.health").check()
 
-Hydra: Checking settings ~
-- OK             `timeoutlen` (value: 300) is set to a good value.
-  
+Checking plugin dependencies ~
+- OK nvim-web-devicons installed.
+
+Checking VCS tools ~
+- The plugin requires at least one of the supported VCS tools to be valid.
+- OK Git found.
+- WARNING Git version is outdated! Some functionality might not work as expected, or not at all! Current: 2.25.1, wanted: 2.31.0
+- WARNING Configured `hg_cmd` is not executable: 'hg'
+- ERROR No valid VCS tool was found!
 
 --------
 lazy: require("lazy.health").check()
@@ -26,7 +32,7 @@ lazy.nvim ~
 mason: require("mason.health").check()
 
 mason.nvim ~
-- OK mason.nvim version v1.7.0
+- OK mason.nvim version v1.8.0
 - OK PATH: prepend
 - OK Providers: 
   mason.providers.registry-api
@@ -34,7 +40,7 @@ mason.nvim ~
 - OK neovim version >= 0.7.0
 
 mason.nvim [Registries] ~
-- OK Registry `github.com/mason-org/mason-registry version: 2023-09-06-dirty-platy` is installed.
+- OK Registry `github.com/mason-org/mason-registry version: 2023-09-10-imaginary-glass` is installed.
 
 mason.nvim [Core utils] ~
 - OK unzip: `UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.`
@@ -48,12 +54,12 @@ mason.nvim [Core utils] ~
 mason.nvim [Languages] ~
 - OK Go: `go version go1.20.3 linux/amd64`
 - OK Ruby: `ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux-gnu]`
-- OK cargo: `cargo 1.72.0 (103a7ff2e 2023-08-15)`
 - OK PHP: `PHP 7.4.3-4ubuntu2.19 (cli) (built: Jun 27 2023 15:49:59) ( NTS )`
-- OK node: `v16.13.2`
 - WARNING luarocks: unsupported version `/usr/bin/luarocks 2.4.2`
   - ADVICE:
     - Luarocks version must be >= 3.0.0.
+- OK node: `v16.13.2`
+- OK cargo: `cargo 1.72.0 (103a7ff2e 2023-08-15)`
 - OK Composer: `Composer 1.10.1 2020-03-13 20:34:27`
 - OK julia: `julia version 1.4.1`
 - OK python: `Python 3.8.10`
@@ -62,12 +68,12 @@ mason.nvim [Languages] ~
 - OK RubyGem: `3.1.2`
 - OK javac: `javac 11.0.20.1`
 - OK npm: `8.5.2`
+- OK python3_host_prog pip: `pip 23.2.1 from /home/ronnie/.local/lib/python3.8/site-packages/pip (python 3.8)`
 - OK pip: `pip 23.2.1 from /home/ronnie/.local/lib/python3.8/site-packages/pip (python 3.8)`
 - OK python venv: `Ok`
-- OK python3_host_prog pip: `pip 23.2.1 from /home/ronnie/.local/lib/python3.8/site-packages/pip (python 3.8)`
 
 mason.nvim [GitHub] ~
-- OK GitHub API rate limit. Used: 27. Remaining: 4973. Limit: 5000. Reset: Wed 06 Sep 2023 01:01:44 PM PDT.
+- OK GitHub API rate limit. Used: 1. Remaining: 4999. Limit: 5000. Reset: Mon 11 Sep 2023 11:43:58 AM PDT.
 
 --------
 mkdp: health#mkdp#check
@@ -85,7 +91,6 @@ noice: require("noice.health").check()
 
 noice.nvim ~
 - OK **Neovim** >= 0.8.0
-- OK You're using a GUI that should work ok
 - OK **vim.go.lazyredraw** is not enabled
 - OK **nvim-notify** is installed
 - OK **TreeSitter vim** parser is installed
@@ -94,12 +99,26 @@ noice.nvim ~
 - OK **TreeSitter bash** parser is installed
 - OK **TreeSitter markdown** parser is installed
 - OK **TreeSitter markdown_inline** parser is installed
-- OK `vim.notify` is set to **Noice**
-- WARNING `vim.lsp.handlers["textDocument/hover"]` is not configured to be handled by **Noice**
-- OK `vim.lsp.handlers["textDocument/signatureHelp"]` is set to **Noice**
-- OK `vim.lsp.handlers["window/showMessage"]` is set to **Noice**
-- OK `vim.lsp.util.convert_input_to_markdown_lines` is set to **Noice**
-- OK `vim.lsp.util.stylize_markdown` is set to **Noice**
+
+--------
+null-ls: require("null-ls.health").check()
+
+- OK gitsigns: the source "gitsigns" can be ran.
+- OK zsh: the command "zsh" is executable.
+- OK actionlint: the command "actionlint" is executable.
+- OK stylua: the command "stylua" is executable.
+- OK prettier: the command "prettier" is executable.
+- OK ruff: the command "ruff" is executable.
+- OK black: the command "black" is executable.
+- OK beautysh: the command "beautysh" is executable.
+- OK flake8: the command "flake8" is executable.
+- OK latexindent: the command "latexindent" is executable.
+- OK shellcheck: the command "shellcheck" is executable.
+- OK shfmt: the command "shfmt" is executable.
+- OK markdownlint: the command "markdownlint" is executable.
+- OK goimports: the command "goimports" is executable.
+- OK gofumpt: the command "gofumpt" is executable.
+- OK golines: the command "golines" is executable.
 
 --------
 nvim: require("nvim.health").check()
@@ -135,15 +154,17 @@ Installation ~
 OS Info:
 {
   machine = "x86_64",
-  release = "5.4.0-156-generic",
+  release = "5.4.0-162-generic",
   sysname = "Linux",
-  version = "#173-Ubuntu SMP Tue Jul 11 07:25:22 UTC 2023"
+  version = "#179-Ubuntu SMP Mon Aug 14 08:51:31 UTC 2023"
 } ~
 
 Parser/Features         H L F I J
   - astro               ✓ ✓ ✓ ✓ ✓
   - bash                ✓ ✓ ✓ . ✓
+  - c                   ✓ ✓ ✓ ✓ ✓
   - css                 ✓ . ✓ ✓ ✓
+  - diff                ✓ . . . .
   - gitcommit           ✓ . . . ✓
   - graphql             ✓ . . ✓ ✓
   - html                ✓ ✓ ✓ ✓ ✓
@@ -162,6 +183,7 @@ Parser/Features         H L F I J
   - vim                 ✓ ✓ ✓ . ✓
   - vimdoc              ✓ . . . ✓
   - vue                 ✓ . ✓ ✓ ✓
+  - yaml                ✓ ✓ ✓ ✓ ✓
 
   Legend: H[ighlight], L[ocals], F[olds], I[ndents], In[j]ections
          +) multiple parsers found, only one will be used
@@ -204,44 +226,76 @@ rainbow-delimiters: require("rainbow-delimiters.health").check()
 --------
 telescope: require("telescope.health").check()
 
-- ERROR Failed to run healthcheck for "telescope" plugin. Exception:
-  function health#check, line 25
-  Vim(eval):E5108: Error executing lua ...share/nvim-Lazyman/lazy/plenary.nvim/lua/plenary/job.lua:498: 'fdfind --hidden --case-sensitive --absolute-path --exec echo {//} ; ^\.git$' was unable to complete in 5000 ms
-  stack traceback:
-  [C]: in function 'error'
-  ...share/nvim-Lazyman/lazy/plenary.nvim/lua/plenary/job.lua:498: in function 'wait'
-  ...share/nvim-Lazyman/lazy/plenary.nvim/lua/plenary/job.lua:452: in function 'sync'
-  ...cope-repo.nvim/lua/telescope/_extensions/repo/health.lua:25: in function 'find_repos'
-  ...cope-repo.nvim/lua/telescope/_extensions/repo/health.lua:54: in function 'check_list_cmd'
-  ...cope-repo.nvim/lua/telescope/_extensions/repo/health.lua:115: in function 'check'
-  ...y/telescope-repo.nvim/lua/telescope/_extensions/repo.lua:7: in function 'extension_healthcheck'
-  ...vim-Lazyman/lazy/telescope.nvim/lua/telescope/health.lua:123: in function 'check'
-  [string "luaeval()"]:1: in main chunk
+Checking for required plugins ~
+- OK plenary installed.
+- OK nvim-treesitter installed.
+
+Checking external dependencies ~
+- OK rg: found ripgrep 12.1.1 (rev 7cb211378a)
+- OK fd: found fd 7.4.0
+
+--------
+
+Telescope Extension: `fzf` ~
+- OK lib working as expected
+- WARNING file_sorter is not configured
+- OK generic_sorter correctly configured
+
+Telescope Extension: `git_worktree` ~
+- No healthcheck provided
+
+Telescope Extension: `noice` ~
+- No healthcheck provided
+
+Telescope Extension: `notify` ~
+- No healthcheck provided
+
+Telescope Extension: `repo` ~
+- OK Will use `bat` to preview non-markdown READMEs
+- OK Will use `bat` to preview markdown READMEs
+- WARNING Install `glow` for a better preview of markdown files
+- OK locate: found `locate`
+  mlocate 0.26
+  Copyright (C) 2007 Red Hat, Inc. All rights reserved.
+  This software is distributed under the GPL v.2.
+  
+  This program is provided with NO WARRANTY, to the extent permitted by law.
+- Repos found for `:Telescope repo cached_list`:
+  /home/btest/.config/nvim-Abstract/.git, /home/btest/.config/nvim-Allaman/.git...
+- OK fd: found `fdfind`
+  fd 7.4.0
+- Repos found for `:Telescope repo list`:
+  /home/ronnie/src/Neovim/nvim-lazyman...
 
 --------
 telescope._extensions.repo: require("telescope._extensions.repo.health").check()
 
-- ERROR Failed to run healthcheck for "telescope._extensions.repo" plugin. Exception:
-  function health#check, line 25
-  Vim(eval):E5108: Error executing lua ...share/nvim-Lazyman/lazy/plenary.nvim/lua/plenary/job.lua:498: 'fdfind --hidden --case-sensitive --absolute-path --exec echo {//} ; ^\.git$' was unable to complete in 5000 ms
-  stack traceback:
-  [C]: in function 'error'
-  ...share/nvim-Lazyman/lazy/plenary.nvim/lua/plenary/job.lua:498: in function 'wait'
-  ...share/nvim-Lazyman/lazy/plenary.nvim/lua/plenary/job.lua:452: in function 'sync'
-  ...cope-repo.nvim/lua/telescope/_extensions/repo/health.lua:25: in function 'find_repos'
-  ...cope-repo.nvim/lua/telescope/_extensions/repo/health.lua:54: in function 'check_list_cmd'
-  ...cope-repo.nvim/lua/telescope/_extensions/repo/health.lua:115: in function 'check'
-  [string "luaeval()"]:1: in main chunk
+- OK Will use `bat` to preview non-markdown READMEs
+- OK Will use `bat` to preview markdown READMEs
+- WARNING Install `glow` for a better preview of markdown files
+- OK locate: found `locate`
+  mlocate 0.26
+  Copyright (C) 2007 Red Hat, Inc. All rights reserved.
+  This software is distributed under the GPL v.2.
+  
+  This program is provided with NO WARRANTY, to the extent permitted by law.
+- Repos found for `:Telescope repo cached_list`:
+  /home/btest/.config/nvim-Abstract/.git, /home/btest/.config/nvim-Allaman/.git...
+- OK fd: found `fdfind`
+  fd 7.4.0
+- Repos found for `:Telescope repo list`:
+  /home/ronnie/src/Neovim/nvim-lazyman...
 
 --------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
 - Log path: /home/ronnie/.local/state/nvim-Lazyman/lsp.log
-- Log size: 6 KB
+- Log size: 635 KB
 
 vim.lsp: Active Clients ~
-- No active clients
+- tailwindcss (id=1, root_dir=/home/ronnie/.config/nvim-Lazyman)
+- null-ls (id=4, root_dir=/home/ronnie/.config/nvim-Lazyman)
 
 --------
 vim.treesitter: require("vim.treesitter.health").check()
@@ -249,8 +303,10 @@ vim.treesitter: require("vim.treesitter.health").check()
 - Nvim runtime ABI version: 14
 - OK Parser: astro      ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/astro.so
 - OK Parser: bash       ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/bash.so
+- OK Parser: c          ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/c.so
 - OK Parser: css        ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/css.so
 - OK Parser: dap_repl   ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/dap_repl.so
+- OK Parser: diff       ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/diff.so
 - OK Parser: gitcommit  ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/gitcommit.so
 - OK Parser: graphql    ABI: 13, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/graphql.so
 - OK Parser: html       ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/html.so
@@ -269,19 +325,11 @@ vim.treesitter: require("vim.treesitter.health").check()
 - OK Parser: vim        ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/vim.so
 - OK Parser: vimdoc     ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/vimdoc.so
 - OK Parser: vue        ABI: 13, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/vue.so
+- OK Parser: yaml       ABI: 13, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/yaml.so
 
 --------
 which-key: require("which-key.health").check()
 
 WhichKey: checking conflicting keymaps ~
-- WARNING conflicting keymap exists for mode **"n"**, lhs: **"yS"**
-- rhs: `<Plug>(nvim-surround-normal-line)`
-- WARNING conflicting keymap exists for mode **"n"**, lhs: **"ys"**
-- rhs: `<Plug>(nvim-surround-normal)`
-- WARNING conflicting keymap exists for mode **"n"**, lhs: **"="**
-- rhs: ` `
-- WARNING conflicting keymap exists for mode **"n"**, lhs: **"gb"**
-- rhs: `<Plug>(comment_toggle_blockwise)`
-- WARNING conflicting keymap exists for mode **"n"**, lhs: **"gc"**
-- rhs: `<Plug>(comment_toggle_linewise)`
+- OK No conflicting keymaps found
 
