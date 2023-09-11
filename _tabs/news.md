@@ -21,12 +21,15 @@ with modifications and enhancements to integrate this config with `lazyman`
 along with some fun eye candy and games.
 
 To use one of the supported Lazyman Neovim configuration namespaces, set the
-`namespace` property in `~/.config/nvim-Lazyman/lua/configuration.lua`.
+`namespace` property in `~/.config/nvim-Lazyman/lua/configuration.lua` with
+the command `lazyman -O <namespace>` where `<namespace>` can be one of
+`ecovim`, `free`, or `onno`.
 
-For example, to use the `ecovim` namespace, set:
+For example, to use the `ecovim` namespace, use the `lazyman` command to set
+this configuration property:
 
-```
-conf.namespace = "ecovim"
+```bash
+lazyman -O ecovim
 ```
 
 ## Supported configurations information documents

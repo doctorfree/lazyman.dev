@@ -266,26 +266,19 @@ configuration with modifications and enhancements to integrate this config with
 and enhancements to integrate this config with `lazyman` along with some fun eye
 candy and games.
 
-To use the `ecovim` namespace, set:
+Set the `namespace` property in `~/.config/nvim-Lazyman/lua/configuration.lua`
+with the command `lazyman -O <namespace>` where `<namespace>` can be one of
+`ecovim`, `free`, or `onno`.
 
-```
-conf.namespace = "ecovim"
-```
+For example, to use the `ecovim` namespace, use the `lazyman` command to set
+this configuration property:
 
-To use the `free` namespace, set:
-
-```
-conf.namespace = "free"
-```
-
-To use the `onno` namespace, set:
-
-```
-conf.namespace = "onno"
+```bash
+lazyman -O ecovim
 ```
 
 This setting is configurable via the `lazyman` menu system, as are most
-of the `Lazyman` configuration settings.
+of the `Lazyman` configuration settings (`lazyman -F`).
 
 ##### Theme configuration
 
