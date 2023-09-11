@@ -11,6 +11,8 @@ At the heart of the Lazyman project is the `lazyman` command. It is used
 to initialize Lazyman and subsequently install, initialize, manage, and
 explore multiple Neovim configurations.
 
+View the `lazyman` usage message with `lazyman -u`.
+
 When managing the Lazyman Neovim configuration in `~/.config/nvim-Lazyman`,
 the `lazyman` command invokes
 [scripts/lazyman_config.sh](https://lazyman.dev/info/lazyman_config.html).
@@ -1822,7 +1824,7 @@ install_config() {
   2k | AstroNvimStart | Barebones | Basic | Modern | pde | CodeArt | Cosmic | Ember | Fennel | JustinOhMy | Kabin | Lamia | Micah | Normal | NvPak | HardHacker | Rohit | Scratch | SingleFile | StartBase | Opinion | StartLsp | StartMason | Modular | BasicLsp | BasicMason | Extralight | LspCmp | Minimal)
     lazyman ${darg} -x ${confname} -z -y -Q -q
     ;;
-  Adib | Ahsan | Artur | ONNO | CandyVim | Charles | Chokerman | Craftzdog | Dillon | Daniel | JustinNvim | JustinLvim | Kodo | LamarVim | Lukas | LvimAdib | Maddison | Metis | Roiz | OnMyWay | Optixal | Plug | Kristijan | Heiker | Simple | Beethoven | Brain | Elianiva | Elijah | Enrique | J4de | Josean | Orhun | Primeagen | Rafi | Slydragonn | Spider | Traap | Wuelner | xero | Xiao)
+  Adib | Ahsan | Artur | ONNO | Charles | Chokerman | Craftzdog | Dillon | Daniel | JustinNvim | JustinLvim | Kodo | LamarVim | Lukas | LvimAdib | Maddison | Metis | RNvim | Roiz | OnMyWay | Optixal | Plug | Kristijan | Heiker | Simple | Beethoven | Brain | Elianiva | Elijah | Enrique | J4de | Josean | Orhun | Primeagen | Rafi | Slydragonn | Spider | Traap | Wuelner | xero | Xiao)
     lazyman ${darg} -w ${confname} -z -y -Q -q
     ;;
   *)
@@ -4161,11 +4163,6 @@ install_remove() {
         printf "\n${action} Mini Neovim configuration"
         lazyman ${darg} -M ${quietflag} -z ${yesflag}
       }
-      [ "$(getok nvim-CandyVim)" == "ok" ] && {
-        printf "\n${action} CandyVim Neovim configuration"
-        lazyman ${darg} -C https://github.com/doctorfree/CandyVim \
-          -N nvim-CandyVim ${quietflag} -z ${yesflag}
-      }
       [ "$(getok nvim-Charles)" == "ok" ] && {
         printf "\n${action} Charles Neovim configuration"
         lazyman ${darg} -C https://github.com/CharlesChiuGit/nvimdots.lua \
@@ -4270,6 +4267,11 @@ install_remove() {
         printf "\n${action} VonHeikemen Neovim configuration"
         lazyman ${darg} -C https://github.com/VonHeikemen/dotfiles \
           -D my-configs/neovim -N nvim-Heiker ${quietflag} -z ${yesflag}
+      }
+      [ "$(getok nvim-RNvim)" == "ok" ] && {
+        printf "\n${action} RNvim Neovim configuration"
+        lazyman ${darg} -C https://github.com/RoryNesbitt/RNvim \
+          -N nvim-RNvim ${quietflag} -z ${yesflag}
       }
       [ "$(getok nvim-Roiz)" == "ok" ] && {
         printf "\n${action} Roiz Neovim configuration"
@@ -4433,9 +4435,6 @@ install_remove() {
       Xiao)
         prsnl_url="https://github.com/onichandame/nvim-config"
         ;;
-      CandyVim)
-        prsnl_url="https://github.com/doctorfree/CandyVim"
-        ;;
       Charles)
         prsnl_url="https://github.com/CharlesChiuGit/nvimdots.lua"
         ;;
@@ -4499,6 +4498,9 @@ install_remove() {
         ;;
       Spider)
         prsnl_url="https://github.com/fearless-spider/FSAstroNvim"
+        ;;
+      RNvim)
+        prsnl_url="https://github.com/RoryNesbitt/RNvim"
         ;;
       Roiz)
         prsnl_url="https://github.com/MrRoiz/rnvim"
@@ -5562,24 +5564,33 @@ fi
 }
 
 [ "${namespace}" ] && {
-  case ${namespace} in
-    free|Free|FREE)
-      ${SUBMENUS} -s namespace free
-      [ "$tellme" ] || init_neovim "${LAZYMAN}"
-      ;;
-    onno|Onno|ONNO)
-      ${SUBMENUS} -s namespace onno
-      [ "$tellme" ] || init_neovim "${LAZYMAN}"
-      ;;
-    ecovim|Ecovim|ECOVIM)
-      ${SUBMENUS} -s namespace ecovim
-      [ "$tellme" ] || init_neovim "${LAZYMAN}"
-      ;;
-    *)
-      printf "\nUnsupported namespace: ${namespace}"
-      printf "\nSupported namespaces: ecovim free onno\n"
-      ;;
-  esac
+  currname=$(${SUBMENUS} -s get namespace)
+  [ "${currname}" == "${namespace}" ] || {
+    newname=
+    case ${namespace} in
+      free|Free|FREE)
+        newname=1
+        ;;
+      onno|Onno|ONNO)
+        newname=1
+        ;;
+      ecovim|Ecovim|ECOVIM)
+        newname=1
+        ;;
+      *)
+        printf "\nUnsupported namespace: ${namespace}"
+        printf "\nSupported namespaces: ecovim free onno\n"
+        ;;
+    esac
+    [ "${newname}" ] && {
+      printf "\nSwitching Lazyman Neovim configuration namespace to %s" "${namespace}"
+      [ "$tellme" ] || {
+        rm -rf "${HOME}/.cache/${LAZYMAN}"
+        ${SUBMENUS} -s namespace ${namespace}
+        init_neovim "${LAZYMAN}"
+      }
+    }
+  }
   [ "${interactive}" ] && exit 0
 }
 
