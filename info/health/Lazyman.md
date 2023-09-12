@@ -40,7 +40,7 @@ mason.nvim ~
 - OK neovim version >= 0.7.0
 
 mason.nvim [Registries] ~
-- OK Registry `github.com/mason-org/mason-registry version: 2023-09-10-imaginary-glass` is installed.
+- OK Registry `github.com/mason-org/mason-registry version: 2023-09-11-ragged-sea` is installed.
 
 mason.nvim [Core utils] ~
 - OK unzip: `UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.`
@@ -52,28 +52,28 @@ mason.nvim [Core utils] ~
 - OK sh: `Ok`
 
 mason.nvim [Languages] ~
-- OK Go: `go version go1.20.3 linux/amd64`
 - OK Ruby: `ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux-gnu]`
-- OK PHP: `PHP 7.4.3-4ubuntu2.19 (cli) (built: Jun 27 2023 15:49:59) ( NTS )`
+- OK Go: `go version go1.20.3 linux/amd64`
 - WARNING luarocks: unsupported version `/usr/bin/luarocks 2.4.2`
   - ADVICE:
     - Luarocks version must be >= 3.0.0.
-- OK node: `v16.13.2`
 - OK cargo: `cargo 1.72.0 (103a7ff2e 2023-08-15)`
-- OK Composer: `Composer 1.10.1 2020-03-13 20:34:27`
-- OK julia: `julia version 1.4.1`
+- OK node: `v16.13.2`
+- OK RubyGem: `3.1.2`
+- OK java: `openjdk version "11.0.20.1" 2023-08-24`
+- OK javac: `javac 11.0.20.1`
 - OK python: `Python 3.8.10`
 - OK python3_host_prog: `Python 3.8.10`
-- OK java: `openjdk version "11.0.20.1" 2023-08-24`
-- OK RubyGem: `3.1.2`
-- OK javac: `javac 11.0.20.1`
-- OK npm: `8.5.2`
-- OK python3_host_prog pip: `pip 23.2.1 from /home/ronnie/.local/lib/python3.8/site-packages/pip (python 3.8)`
+- OK PHP: `PHP 7.4.3-4ubuntu2.19 (cli) (built: Jun 27 2023 15:49:59) ( NTS )`
+- OK Composer: `Composer 1.10.1 2020-03-13 20:34:27`
+- OK julia: `julia version 1.4.1`
 - OK pip: `pip 23.2.1 from /home/ronnie/.local/lib/python3.8/site-packages/pip (python 3.8)`
+- OK python3_host_prog pip: `pip 23.2.1 from /home/ronnie/.local/lib/python3.8/site-packages/pip (python 3.8)`
 - OK python venv: `Ok`
+- OK npm: `8.5.2`
 
 mason.nvim [GitHub] ~
-- OK GitHub API rate limit. Used: 1. Remaining: 4999. Limit: 5000. Reset: Mon 11 Sep 2023 11:43:58 AM PDT.
+- OK GitHub API rate limit. Used: 77. Remaining: 4923. Limit: 5000. Reset: Mon 11 Sep 2023 05:58:43 PM PDT.
 
 --------
 mkdp: health#mkdp#check
@@ -265,7 +265,7 @@ Telescope Extension: `repo` ~
 - OK fd: found `fdfind`
   fd 7.4.0
 - Repos found for `:Telescope repo list`:
-  /home/ronnie/src/Neovim/nvim-lazyman...
+  ...
 
 --------
 telescope._extensions.repo: require("telescope._extensions.repo.health").check()
@@ -284,17 +284,18 @@ telescope._extensions.repo: require("telescope._extensions.repo.health").check()
 - OK fd: found `fdfind`
   fd 7.4.0
 - Repos found for `:Telescope repo list`:
-  /home/ronnie/src/Neovim/nvim-lazyman...
+  ...
 
 --------
 vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
 - Log path: /home/ronnie/.local/state/nvim-Lazyman/lsp.log
-- Log size: 635 KB
+- Log size: 787 KB
 
 vim.lsp: Active Clients ~
-- tailwindcss (id=1, root_dir=/home/ronnie/.config/nvim-Lazyman)
+- marksman (id=1, root_dir=/home/ronnie/.config/nvim-Lazyman)
+- tailwindcss (id=2, root_dir=/home/ronnie/.config/nvim-Lazyman)
 - null-ls (id=4, root_dir=/home/ronnie/.config/nvim-Lazyman)
 
 --------
