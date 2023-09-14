@@ -40,7 +40,7 @@ mason.nvim ~
 - OK neovim version >= 0.7.0
 
 mason.nvim [Registries] ~
-- OK Registry `github.com/mason-org/mason-registry version: 2023-09-11-ragged-sea` is installed.
+- OK Registry `github.com/mason-org/mason-registry version: 2023-09-13-steel-pump` is installed.
 
 mason.nvim [Core utils] ~
 - OK unzip: `UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.`
@@ -52,28 +52,28 @@ mason.nvim [Core utils] ~
 - OK sh: `Ok`
 
 mason.nvim [Languages] ~
-- OK Ruby: `ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux-gnu]`
 - OK Go: `go version go1.20.3 linux/amd64`
+- OK Ruby: `ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux-gnu]`
+- OK PHP: `PHP 7.4.3-4ubuntu2.19 (cli) (built: Jun 27 2023 15:49:59) ( NTS )`
+- OK RubyGem: `3.1.2`
+- OK node: `v16.13.2`
+- OK npm: `8.5.2`
 - WARNING luarocks: unsupported version `/usr/bin/luarocks 2.4.2`
   - ADVICE:
     - Luarocks version must be >= 3.0.0.
 - OK cargo: `cargo 1.72.0 (103a7ff2e 2023-08-15)`
-- OK node: `v16.13.2`
-- OK RubyGem: `3.1.2`
-- OK java: `openjdk version "11.0.20.1" 2023-08-24`
-- OK javac: `javac 11.0.20.1`
+- OK Composer: `Composer 1.10.1 2020-03-13 20:34:27`
 - OK python: `Python 3.8.10`
 - OK python3_host_prog: `Python 3.8.10`
-- OK PHP: `PHP 7.4.3-4ubuntu2.19 (cli) (built: Jun 27 2023 15:49:59) ( NTS )`
-- OK Composer: `Composer 1.10.1 2020-03-13 20:34:27`
-- OK julia: `julia version 1.4.1`
-- OK pip: `pip 23.2.1 from /home/ronnie/.local/lib/python3.8/site-packages/pip (python 3.8)`
 - OK python3_host_prog pip: `pip 23.2.1 from /home/ronnie/.local/lib/python3.8/site-packages/pip (python 3.8)`
+- OK pip: `pip 23.2.1 from /home/ronnie/.local/lib/python3.8/site-packages/pip (python 3.8)`
+- OK java: `openjdk version "11.0.20.1" 2023-08-24`
 - OK python venv: `Ok`
-- OK npm: `8.5.2`
+- OK julia: `julia version 1.4.1`
+- OK javac: `javac 11.0.20.1`
 
 mason.nvim [GitHub] ~
-- OK GitHub API rate limit. Used: 77. Remaining: 4923. Limit: 5000. Reset: Mon 11 Sep 2023 05:58:43 PM PDT.
+- OK GitHub API rate limit. Used: 0. Remaining: 5000. Limit: 5000. Reset: Wed 13 Sep 2023 06:04:41 PM PDT.
 
 --------
 mkdp: health#mkdp#check
@@ -105,7 +105,7 @@ null-ls: require("null-ls.health").check()
 
 - OK gitsigns: the source "gitsigns" can be ran.
 - OK zsh: the command "zsh" is executable.
-- OK actionlint: the command "actionlint" is executable.
+- ERROR actionlint: the command "actionlint" is not executable.
 - OK stylua: the command "stylua" is executable.
 - OK prettier: the command "prettier" is executable.
 - OK ruff: the command "ruff" is executable.
@@ -113,7 +113,6 @@ null-ls: require("null-ls.health").check()
 - OK beautysh: the command "beautysh" is executable.
 - OK flake8: the command "flake8" is executable.
 - OK latexindent: the command "latexindent" is executable.
-- OK shellcheck: the command "shellcheck" is executable.
 - OK shfmt: the command "shfmt" is executable.
 - OK markdownlint: the command "markdownlint" is executable.
 - OK goimports: the command "goimports" is executable.
@@ -141,6 +140,11 @@ terminal ~
 - $COLORTERM="truecolor"
 
 --------
+nvim-dap-repl-highlights: require("nvim-dap-repl-highlights.health").check()
+
+- OK 
+
+--------
 nvim-treesitter: require("nvim-treesitter.health").check()
 
 Installation ~
@@ -162,9 +166,8 @@ OS Info:
 Parser/Features         H L F I J
   - astro               ✓ ✓ ✓ ✓ ✓
   - bash                ✓ ✓ ✓ . ✓
-  - c                   ✓ ✓ ✓ ✓ ✓
   - css                 ✓ . ✓ ✓ ✓
-  - diff                ✓ . . . .
+  - dap_repl            ✓ . . . .
   - gitcommit           ✓ . . . ✓
   - graphql             ✓ . . ✓ ✓
   - html                ✓ ✓ ✓ ✓ ✓
@@ -183,7 +186,6 @@ Parser/Features         H L F I J
   - vim                 ✓ ✓ ✓ . ✓
   - vimdoc              ✓ . . . ✓
   - vue                 ✓ . ✓ ✓ ✓
-  - yaml                ✓ ✓ ✓ ✓ ✓
 
   Legend: H[ighlight], L[ocals], F[olds], I[ndents], In[j]ections
          +) multiple parsers found, only one will be used
@@ -291,12 +293,11 @@ vim.lsp: require("vim.lsp.health").check()
 
 - LSP log level : WARN
 - Log path: /home/ronnie/.local/state/nvim-Lazyman/lsp.log
-- Log size: 787 KB
+- Log size: 7 KB
 
 vim.lsp: Active Clients ~
 - marksman (id=1, root_dir=/home/ronnie/.config/nvim-Lazyman)
-- tailwindcss (id=2, root_dir=/home/ronnie/.config/nvim-Lazyman)
-- null-ls (id=4, root_dir=/home/ronnie/.config/nvim-Lazyman)
+- null-ls (id=2, root_dir=/home/ronnie/.config/nvim-Lazyman)
 
 --------
 vim.treesitter: require("vim.treesitter.health").check()
@@ -304,10 +305,8 @@ vim.treesitter: require("vim.treesitter.health").check()
 - Nvim runtime ABI version: 14
 - OK Parser: astro      ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/astro.so
 - OK Parser: bash       ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/bash.so
-- OK Parser: c          ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/c.so
 - OK Parser: css        ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/css.so
 - OK Parser: dap_repl   ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/dap_repl.so
-- OK Parser: diff       ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/diff.so
 - OK Parser: gitcommit  ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/gitcommit.so
 - OK Parser: graphql    ABI: 13, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/graphql.so
 - OK Parser: html       ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/html.so
@@ -326,7 +325,6 @@ vim.treesitter: require("vim.treesitter.health").check()
 - OK Parser: vim        ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/vim.so
 - OK Parser: vimdoc     ABI: 14, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/vimdoc.so
 - OK Parser: vue        ABI: 13, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/vue.so
-- OK Parser: yaml       ABI: 13, path: /home/ronnie/.local/share/nvim-Lazyman/lazy/nvim-treesitter/parser/yaml.so
 
 --------
 which-key: require("which-key.health").check()

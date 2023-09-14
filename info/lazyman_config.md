@@ -876,6 +876,24 @@ show_plugin_menu() {
     else
       use_dressing="✗"
     fi
+    enable_animate=$(get_conf_value enable_animate)
+    if [ "${enable_animate}" == "true" ]; then
+      use_animate=""
+    else
+      use_animate="✗"
+    fi
+    enable_duck=$(get_conf_value enable_duck)
+    if [ "${enable_duck}" == "true" ]; then
+      use_duck=""
+    else
+      use_duck="✗"
+    fi
+    enable_flirt=$(get_conf_value enable_flirt)
+    if [ "${enable_flirt}" == "true" ]; then
+      use_flirt=""
+    else
+      use_flirt="✗"
+    fi
     enable_games=$(get_conf_value enable_games)
     if [ "${enable_games}" == "true" ]; then
       use_games=""
@@ -995,6 +1013,11 @@ show_plugin_menu() {
     options+=("Dressing UI   [${use_dressing}]")
     options+=("Noice UI      [${use_noice}]")
     options+=("Enable Games  [${use_games}]")
+    [ "${use_namespace}" == "ecovim" ] && {
+      options+=("Animate       [${use_animate}]")
+      options+=("Duck hatcher  [${use_duck}]")
+      options+=("Flirt windows [${use_flirt}]")
+    }
     options+=("Indentline [${use_indentline}]")
     options+=("Enable Motion [${use_motion}]")
     options+=("Smooth Scroll [${use_smooth_scrolling}]")
@@ -1603,6 +1626,33 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
+        "Animate"*,* | *,"Animate"*)
+          if [ "${enable_animate}" == "true" ]; then
+            set_conf_value "enable_animate" "false"
+          else
+            set_conf_value "enable_animate" "true"
+          fi
+          pluginit=1
+          break
+          ;;
+        "Duck"*,* | *,"Duck"*)
+          if [ "${enable_duck}" == "true" ]; then
+            set_conf_value "enable_duck" "false"
+          else
+            set_conf_value "enable_duck" "true"
+          fi
+          pluginit=1
+          break
+          ;;
+        "Flirt"*,* | *,"Flirt"*)
+          if [ "${enable_flirt}" == "true" ]; then
+            set_conf_value "enable_flirt" "false"
+          else
+            set_conf_value "enable_flirt" "true"
+          fi
+          pluginit=1
+          break
+          ;;
         "Dashboard"*,* | *,"Dashboard"*)
           choices=("alpha" "dash" "mini" "none")
           choice=$(printf "%s\n" "${choices[@]}" | fzf --prompt=" Neovim Dashboard  " --layout=reverse --border --exit-0)
@@ -1762,6 +1812,9 @@ show_plugin_menu() {
           set_conf_value "enable_securitree" "false"
           set_conf_value "enable_bbye" "false"
           set_conf_value "enable_startuptime" "false"
+          set_conf_value "enable_animate" "false"
+          set_conf_value "enable_duck" "false"
+          set_conf_value "enable_flirt" "false"
           set_conf_value "enable_games" "false"
           set_conf_value "enable_bookmarks" "false"
           set_conf_value "enable_ide" "false"
@@ -1815,6 +1868,9 @@ show_plugin_menu() {
           set_conf_value "enable_securitree" "true"
           set_conf_value "enable_bbye" "true"
           set_conf_value "enable_startuptime" "true"
+          set_conf_value "enable_animate" "true"
+          set_conf_value "enable_duck" "true"
+          set_conf_value "enable_flirt" "true"
           set_conf_value "enable_games" "true"
           set_conf_value "enable_bookmarks" "true"
           set_conf_value "enable_ide" "true"
@@ -2589,6 +2645,9 @@ show_conf_menu() {
           set_conf_value "enable_securitree" "false"
           set_conf_value "enable_bbye" "false"
           set_conf_value "enable_startuptime" "false"
+          set_conf_value "enable_animate" "false"
+          set_conf_value "enable_duck" "false"
+          set_conf_value "enable_flirt" "false"
           set_conf_value "enable_games" "false"
           set_conf_value "enable_bookmarks" "false"
           set_conf_value "enable_ide" "false"
