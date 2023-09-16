@@ -561,11 +561,11 @@ install_neovim_dependencies() {
             tar -C /tmp/lual$$ -xzf "${TEMP_TGZ}"
             cp -a /tmp/lual$$ ${HOME}/.local/share/lua-language-server
             chmod 755 ${HOME}/.local/share/lua-language-server/bin/lua-language-server
-	    [ -f "${HOME}/.local/bin/lua-language-server" ] || {
+            [ -f "${HOME}/.local/bin/lua-language-server" ] || {
               echo '#!/usr/bin/env bash' > "${HOME}/.local/bin/lua-language-server"
               echo 'exec "${HOME}/.local/share/lua-language-server/bin/lua-language-server" "$@"' >> "${HOME}/.local/bin/lua-language-server"
-	      chmod 755 "${HOME}/.local/bin/lua-language-server"
-	    }
+              chmod 755 "${HOME}/.local/bin/lua-language-server"
+            }
             rm -f "${TEMP_TGZ}"
             rm -rf /tmp/lual$$
             [ "$quiet" ] || printf " done"
@@ -826,6 +826,47 @@ install_extra() {
   do
     plat_install ${pkg}
   done
+
+  if command -v lemonade >/dev/null 2>&1; then
+    log "Using previously installed lemonade"
+  else
+    [ "${darwin}" ] || {
+      if [ -x ${HOME}/.local/bin/lemonade ]
+      then
+        log "Existing ~/.local/bin/lemonade. Skipping installation of lemonade."
+      else
+        [[ $architecture =~ "arm" || $architecture =~ "aarch64" ]] || {
+          OWNER=lemonade-command
+          PROJECT=lemonade
+          API_URL="https://api.github.com/repos/${OWNER}/${PROJECT}/releases/latest"
+          DL_URL=
+          [ "${have_curl}" ] && [ "${have_jq}" ] && {
+            DL_URL=$(curl --silent "${API_URL}" \
+              | jq --raw-output '.assets | .[]?.browser_download_url' \
+              | grep "linux_amd64\.tar\.gz$")
+          }
+          [ "${DL_URL}" ] && {
+            [ "${have_wget}" ] && {
+              log "Installing lemonade ..."
+              TEMP_TGZ="$(mktemp --suffix=.tgz)"
+              wget --quiet -O "${TEMP_TGZ}" "${DL_URL}" >/dev/null 2>&1
+              chmod 644 "${TEMP_TGZ}"
+              mkdir -p /tmp/lmnd$$
+              tar -C /tmp/lmnd$$ -xzf "${TEMP_TGZ}"
+              [ -f /tmp/lmnd$$/lemonade ] && {
+                cp /tmp/lmnd$$/lemonade ${HOME}/.local/bin/lemonade
+                chmod 755 ${HOME}/.local/bin/lemonade
+              }
+              rm -f "${TEMP_TGZ}"
+              rm -rf /tmp/lmnd$$
+              [ "$quiet" ] || printf " done"
+            }
+          }
+        }
+      fi
+    }
+  fi
+
   have_check=$(type -p luacheck)
   [ "${have_check}" ] || {
     have_rocks=$(type -p luarocks)
@@ -856,8 +897,82 @@ install_extra() {
     }
   }
 }
+nvm_default_install_dir() {
+  [ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm"
+}
+
+nvm_install_dir() {
+  if [ -n "$NVM_DIR" ]; then
+    printf %s "${NVM_DIR}"
+  else
+    nvm_default_install_dir
+  fi
+}
 
 install_tools() {
+  # Check for n node version manager
+  have_n=$(type -p n)
+  [ "${have_n}" ] && {
+    n list 2>&1 | grep node > /dev/null || have_n=
+  }
+  [ "${have_n}" ] && {
+    printf "\nIt appears the 'n' node version manager is installed"
+    printf "\nLazyman uses the 'nvm' node version manager"
+    printf "\nResolve any node version mismatch post-initialization\n"
+  }
+  dir_nvm=$(nvm_install_dir)
+  if [ -d "${dir_nvm}/.git" ]; then
+    export NVM_DIR="${dir_nvm}"
+  else
+    if [ -d "${HOME}/.config/nvm/.git" ]; then
+      if [ -d "${HOME}/.nvm/.git" ]; then
+        export NVM_DIR="${HOME}/.nvm"
+      else
+        export NVM_DIR="${HOME}/.config/nvm"
+      fi
+    else
+      export NVM_DIR="${HOME}/.nvm"
+    fi
+  fi
+  HERE=$(pwd)
+  if [ -d "${NVM_DIR}" ]; then
+    log "Verifying latest version of nvm ..."
+    cd "$NVM_DIR"
+    git fetch --tags origin > /dev/null 2>&1
+    git checkout \
+      `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)` \
+      > /dev/null 2>&1
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+    cd "${HERE}"
+    [ "$quiet" ] || printf " done"
+  else
+    log "Installing nvm node version manager ..."
+    git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR" > /dev/null 2>&1
+    cd "$NVM_DIR"
+    git checkout \
+      `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)` \
+      > /dev/null 2>&1
+    if [ -x install.sh ]; then
+      ./install.sh > /dev/null 2>&1
+    else
+      [ -f install.sh ] && {
+        chmod 755 install.sh
+        ./install.sh > /dev/null 2>&1
+      }
+    fi
+    cd "${HERE}"
+    [ "$quiet" ] || printf " done"
+  fi
+  log "Verifying latest version of node with nvm ..."
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+  nvm install node --reinstall-packages-from=node > /dev/null 2>&1
+  nvm install node > /dev/null 2>&1
+  [ "$quiet" ] || printf " done"
+
+  log "Verifying latest version of npm with nvm ..."
+  nvm install-latest-npm > /dev/null 2>&1
+  [ "$quiet" ] || printf " done"
+
   [ "$quiet" ] || printf "\nInstalling language servers and tools"
   plat_install ccls
   [ "${use_homebrew}" ] && {

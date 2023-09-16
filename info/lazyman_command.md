@@ -2851,10 +2851,10 @@ show_main_menu() {
                 nvims
               fi
               ;;
-	  esac
-	fi
-	break
-	;;
+          esac
+        fi
+        break
+        ;;
       "Open Lazyman"*,* | *,"Open Lazyman"*)
         if [ "${USEGUI}" ]; then
           NVIM_APPNAME="nvim-Lazyman" neovide
@@ -5059,6 +5059,7 @@ numvimdirs=${#neovimdir[@]}
   [ -f "${LMANDIR}/.initialized" ] && interactive=1
 }
 if [ -d "${LMANDIR}" ]; then
+  # git -C "${LMANDIR}" checkout test >/dev/null 2>&1 # Needed for test branch
   [ "$branch" ] && {
     git -C "${LMANDIR}" checkout "$branch" >/dev/null 2>&1
   }
@@ -5072,6 +5073,7 @@ else
   [ "$tellme" ] || {
     git clone https://github.com/doctorfree/nvim-lazyman \
       "${LMANDIR}" >/dev/null 2>&1
+    # git -C "${LMANDIR}" checkout test >/dev/null 2>&1 # Needed for test branch
     [ "$branch" ] && {
       git -C "${LMANDIR}" checkout "$branch" >/dev/null 2>&1
     }
@@ -5099,6 +5101,8 @@ else
 fi
 
 [ "${instnvim}" ] && {
+  [ -d "${HOME}/.local" ] || mkdir -p "${HOME}/.local"
+  [ -d "${HOME}/.local/bin" ] || mkdir -p "${HOME}/.local/bin"
   if [ -x "${INSTNVIM}" ]; then
     "${INSTNVIM}" $darg $head $brew $yes
     have_nvim=$(type -p nvim)
@@ -5116,26 +5120,27 @@ fi
       have_matter=$(type -p ${matter})
       [ "${have_matter}" ] || ${SUBMENUS} -s formatters_linters ${matter} disable
     done
-    # Enable gopls on Linux, leave disabled on macOS
+    # Enable gopls if go is available
+    have_go=$(type -p go)
+    [ "${have_go}" ] && ${SUBMENUS} -s lsp_servers gopls enable
+
     platform=$(uname -s)
-    [ "${platform}" == "Darwin" ] || ${SUBMENUS} -s lsp_servers gopls enable
-    # If terminal type is supported by zen mode then enable it
-    [ -x "${SCRIPTSD}/get_term.sh" ] && {
-      terminal=$(${SCRIPTSD}/get_term.sh)
-      case "${terminal}" in
-        alacritty)
-          ${SUBMENUS} -s enable_alacritty true
-          ;;
-        kitty)
-          ${SUBMENUS} -s enable_kitty true
-          ;;
-        wezterm)
-          ${SUBMENUS} -s enable_wezterm true
-          ;;
-        *)
-          break
-          ;;
-      esac
+    [ "${platform}" == "Darwin" ] || {
+      # If terminal type is supported by zen mode then enable it
+      [ -x "${SCRIPTSD}/get_term.sh" ] && {
+        terminal=$(${SCRIPTSD}/get_term.sh)
+        case "${terminal}" in
+          alacritty)
+            ${SUBMENUS} -s enable_alacritty true
+            ;;
+          kitty)
+            ${SUBMENUS} -s enable_kitty true
+            ;;
+          wezterm)
+            ${SUBMENUS} -s enable_wezterm true
+            ;;
+        esac
+      }
     }
   else
     printf "\n${INSTNVIM} not executable"
