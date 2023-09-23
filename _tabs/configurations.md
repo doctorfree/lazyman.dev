@@ -373,6 +373,9 @@ installed with the `-x conf` option.
 - [Kickstart](https://lazyman.dev/info/Kickstart.html)
   - Popular starting point, small, single file, well documented, modular
   - Install and initialize with `lazyman -k`
+- [KickstartPython](https://lazyman.dev/info/KickstartPython.html)
+  - Kickstart configuration tailored for use with Python
+  - Install and initialize with `lazyman -x KickstartPython`
 - [nvim2k](https://lazyman.dev/info/2k.html)
   - [Video walkthrough](https://youtu.be/WfhylGI_F-o){:target="\_blank"}{:rel="noopener noreferrer"}
   - Install and initialize with `lazyman -x 2k`
