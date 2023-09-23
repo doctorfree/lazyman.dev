@@ -102,7 +102,7 @@ The Lazyman Neovim configuration manager can also be used from the command line.
 ```
 Usage: lazyman [-A] [-a] [-B] [-b branch] [-c] [-d] [-E config] [-e]
    [-f path] [-F menu] [-g] [-i group] [-j] [-k] [-l] [-m] [-M] [-s]
-   [-S] [-v] [-n] [-O name] [-p] [-P] [-q] [-Q] [-h] [-H] [-I] [-J]
+   [-S] [-v] [-n] [-o] [-O name] [-p] [-P] [-q] [-Q] [-h] [-H] [-I] [-J]
    [-L lang] [-rR] [-C url] [-D subdir] [-N nvimdir] [-G] [-tT] [-U]
    [-V url] [-w conf] [-W] [-x conf] [-X] [-y] [-Y] [-z] [-Z] [-K conf] [-u]
    [health] [info] [init] [install [bob]] [open] [remove] [search] [status] [usage]
@@ -132,6 +132,7 @@ Where:
     -l indicates install and initialize LazyVim Neovim configuration
     -m indicates install and initialize MagicVim Neovim configuration
     -M indicates install and initialize Mini Neovim configuration
+    -o indicates input required during initialization
     -O 'name' indicates set Lazyman configuration to namespace 'name'
        'name' can be one of: free onno ecovim
     -s indicates install and initialize SpaceVim Neovim configuration

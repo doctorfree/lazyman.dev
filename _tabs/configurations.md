@@ -239,6 +239,9 @@ installed with the `-w conf` option.
 - [Enrique](https://lazyman.dev/info/Enrique.html)
   - Personal Neovim configuration of Enrique Mejidas
   - `lazyman -w Enrique`
+- [Jdhao](https://lazyman.dev/info/Jdhao.html)
+  - Modern Neovim configuration with full support for Python, Lua, C++, Markdown, LaTeX, and more
+  - `lazyman -w Jdhao`
 - [Kristijan](https://lazyman.dev/info/Kristijan.html)
   - Personal Neovim configuration of Kristijan Husak, author of several Neovim plugins including `orgmode` and `vim-dadbod-ui`
   - `lazyman -w Kristijan`
