@@ -4,6 +4,7 @@ author: doctorfree
 date: 2023-08-15 16:20:00 +0800
 tags: [limits, debug, trouble, lazyman, nvims, neovim, config]
 pin: true
+toc: true
 img_path: "/posts/20230815"
 ---
 
