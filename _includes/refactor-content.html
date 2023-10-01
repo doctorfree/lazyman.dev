@@ -151,7 +151,7 @@
       {% if _parent == '</a>' %}
         <!-- add class to exist <a> tag -->
         {% assign _size = _img_content | size | minus: 1 %}
-        {% assign _img_content = _img_content | slice: 0, _size | append: '>' %}
+        {% assign _img_content = _img_content | slice: 0, _size %}
 
       {% else %}
         <!-- create the image wrapper -->
