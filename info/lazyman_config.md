@@ -71,23 +71,24 @@ themes=("nightfox" "tokyonight" "dracula" "kanagawa" "catppuccin" "tundra"
 styled_themes=("nightfox" "tokyonight" "dracula" "kanagawa" "catppuccin"
                "onedarkpro" "monokai-pro")
 
-all_lsp_servers=("bashls" "cssmodules_ls" "denols" "dockerls" "eslint" "gopls"
-                 "graphql" "html" "jdtls" "jsonls" "julials" "ltex" "lua_ls"
-                 "marksman" "pylsp" "pyright" "sqlls" "tailwindcss" "texlab"
-                 "tsserver" "vimls" "yamlls")
+all_lsp_servers=("cssls" "denols" "html" "jsonls" "lua_ls" "pylsp" "bashls"
+                 "cssmodules_ls" "dockerls" "emmet_ls" "eslint" "gopls" "graphql"
+                 "jdtls" "julials" "ltex" "marksman" "prismals" "pyright" "sqlls"
+                 "tailwindcss" "texlab" "tsserver" "vimls" "vuels" "yamlls")
 have_ccls=$(type -p ccls)
 [ "${have_ccls}" ] && all_lsp_servers+=("ccls")
 have_clangd=$(type -p clangd)
 [ "${have_clangd}" ] && all_lsp_servers+=("clangd")
 
-all_formatters=("actionlint" "goimports" "golangci-lint" "gofumpt"
-                "google-java-format" "latexindent" "markdownlint"
-                "prettier" "sql-formatter" "shellcheck" "shfmt"
-                "stylua" "tflint" "yamllint")
+all_formatters=("actionlint" "goimports" "golines" "golangci-lint" "gofumpt"
+                "google-java-format" "latexindent" "markdownlint" "prettier"
+                "sql-formatter" "shellcheck" "shfmt" "stylua" "tflint" "yamllint")
 have_beautysh=$(type -p beautysh)
 [ "${have_beautysh}" ] && all_formatters+=("beautysh")
 have_black=$(type -p black)
 [ "${have_black}" ] && all_formatters+=("black")
+have_flake=$(type -p flake8)
+[ "${have_flake}" ] && all_formatters+=("flake8")
 have_ruff=$(type -p ruff)
 [ "${have_ruff}" ] && all_formatters+=("ruff")
 
@@ -179,6 +180,9 @@ get_conf_table() {
     while read -r val; do
       lsp_enabled_table+=("$val")
     done < <(NVIM_APPNAME="${LAZYMAN}" nvim -l ${GET_CONF} ${confname} 2>&1)
+    while read -r val; do
+      lsp_enabled_table+=("$val")
+    done < <(NVIM_APPNAME="${LAZYMAN}" nvim -l ${GET_CONF} lsp_installed 2>&1)
     enable_ccls=$(get_conf_value enable_ccls)
     if [ "${enable_ccls}" == "true" ]; then
       lsp_enabled_table+=("ccls")
@@ -784,6 +788,12 @@ show_plugin_menu() {
     else
       use_lualine_lsp_progress="✗"
     fi
+    enable_telescope_themes=$(get_conf_value enable_telescope_themes)
+    if [ "${enable_telescope_themes}" == "true" ]; then
+      use_telescope_themes=""
+    else
+      use_telescope_themes="✗"
+    fi
     enable_terminal=$(get_conf_value enable_terminal)
     if [ "${enable_terminal}" == "true" ]; then
       use_terminal=""
@@ -857,6 +867,12 @@ show_plugin_menu() {
       use_compile=""
     else
       use_compile="✗"
+    fi
+    enable_database=$(get_conf_value enable_database)
+    if [ "${enable_database}" == "true" ]; then
+      use_database=""
+    else
+      use_database="✗"
     fi
     enable_bbye=$(get_conf_value enable_bbye)
     if [ "${enable_bbye}" == "true" ]; then
@@ -1010,6 +1026,7 @@ show_plugin_menu() {
     [ "${use_namespace}" == "ecovim" ] && {
       options+=("Alpha Header  [${use_dashboard_header}]")
     }
+    options+=("Database      [${use_database}]")
     options+=("Dressing UI   [${use_dressing}]")
     options+=("Noice UI      [${use_noice}]")
     options+=("Enable Games  [${use_games}]")
@@ -1020,8 +1037,11 @@ show_plugin_menu() {
     }
     options+=("Indentline [${use_indentline}]")
     options+=("Enable Motion [${use_motion}]")
+    options+=("Enable Ranger [${use_ranger}]")
+    options+=("Enable Rename [${use_renamer}]")
     options+=("Smooth Scroll [${use_smooth_scrolling}]")
     options+=("Terminal      [${use_terminal}]")
+    options+=("Theme Picker  [${use_telescope_themes}]")
     options+=("Toggle Term   [${use_toggleterm}]")
     [ "${use_namespace}" == "ecovim" ] || {
       options+=("File Tree [${use_neotree}]")
@@ -1046,8 +1066,6 @@ show_plugin_menu() {
       options+=("Navigator     [${use_navigator}]")
       options+=("Picker        [${use_picker}]")
       options+=("Project       [${use_project}]")
-      options+=("Enable Ranger [${use_ranger}]")
-      options+=("Enable Rename [${use_renamer}]")
       options+=("Screensaver [${use_screensaver}]")
       [ "${use_screensaver}" == "none" ] || {
         options+=(" Timeout    [${use_timeout}]")
@@ -1399,6 +1417,15 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
+        "Theme Picker"*,* | *,"Theme Picker"*)
+          if [ "${enable_telescope_themes}" == "true" ]; then
+            set_conf_value "enable_telescope_themes" "false"
+          else
+            set_conf_value "enable_telescope_themes" "true"
+          fi
+          pluginit=1
+          break
+          ;;
         "Terminal"*,* | *,"Terminal"*)
           if [ "${enable_terminal}" == "true" ]; then
             set_conf_value "enable_terminal" "false"
@@ -1610,6 +1637,15 @@ show_plugin_menu() {
           pluginit=1
           break
           ;;
+        "Database"*,* | *,"Database"*)
+          if [ "${enable_database}" == "true" ]; then
+            set_conf_value "enable_database" "false"
+          else
+            set_conf_value "enable_database" "true"
+          fi
+          pluginit=1
+          break
+          ;;
         "Dressing"*,* | *,"Dressing"*)
           if [ "${enable_dressing}" == "true" ]; then
             set_conf_value "enable_dressing" "false"
@@ -1796,6 +1832,7 @@ show_plugin_menu() {
           set_conf_value "enable_fancy" "false"
           set_conf_value "enable_wilder" "false"
           set_conf_value "enable_lualine_lsp_progress" "false"
+          set_conf_value "enable_telescope_themes" "false"
           set_conf_value "enable_terminal" "false"
           set_conf_value "enable_toggleterm" "false"
           set_conf_value "enable_neotest" "false"
@@ -1806,6 +1843,7 @@ show_plugin_menu() {
           set_conf_value "markdown_preview" "none"
           set_conf_value "enable_coding" "false"
           set_conf_value "enable_compile" "false"
+          set_conf_value "enable_database" "false"
           set_conf_value "enable_dressing" "false"
           set_conf_value "enable_motion" "none"
           set_conf_value "enable_obsidian" "false"
@@ -1852,6 +1890,7 @@ show_plugin_menu() {
           set_conf_value "enable_fancy" "true"
           set_conf_value "enable_wilder" "true"
           set_conf_value "enable_lualine_lsp_progress" "true"
+          set_conf_value "enable_telescope_themes" "true"
           set_conf_value "enable_terminal" "true"
           set_conf_value "enable_toggleterm" "true"
           set_conf_value "enable_neotest" "true"
@@ -1862,6 +1901,7 @@ show_plugin_menu() {
           set_conf_value "markdown_preview" "peek"
           set_conf_value "enable_coding" "true"
           set_conf_value "enable_compile" "true"
+          set_conf_value "enable_database" "true"
           set_conf_value "enable_dressing" "true"
           set_conf_value "enable_motion" "leap"
           set_conf_value "enable_obsidian" "true"
@@ -1990,6 +2030,12 @@ show_lsp_menu() {
     get_conf_table lsp_servers
     namespace=$(get_conf_value namespace)
     ts_server=$(get_conf_value typescript_server)
+    enable_lsp_timeout=$(get_conf_value enable_lsp_timeout)
+    if [ "${enable_lsp_timeout}" == "true" ]; then
+      lsp_timeout=""
+    else
+      lsp_timeout="✗"
+    fi
     PS3="${BOLD}${PLEASE} (numeric or text, 'h' for help): ${NORM}"
     options=()
     readarray -t lsp_sorted < <(printf '%s\0' "${all_lsp_servers[@]}" | sort -z | xargs -0n1)
@@ -2026,6 +2072,7 @@ show_lsp_menu() {
         }
       fi
     done
+    options+=("LSP Timeout    [${lsp_timeout}]")
     options+=("Disable All")
     options+=("Enable All")
     options+=("Formatters Menu")
@@ -2049,6 +2096,15 @@ show_lsp_menu() {
               pluginit=1
             }
           fi
+          break
+          ;;
+        "LSP Timeout"*,* | *,"LSP Timeout"*)
+          if [ "${enable_lsp_timeout}" == "true" ]; then
+            set_conf_value "enable_lsp_timeout" "false"
+          else
+            set_conf_value "enable_lsp_timeout" "true"
+          fi
+          pluginit=1
           break
           ;;
         "Disable All"*,* | *,"Disable All"*)
@@ -2688,6 +2744,7 @@ show_conf_menu() {
           set_conf_value "enable_asciiart" "false"
           set_conf_value "enable_coding" "false"
           set_conf_value "enable_compile" "false"
+          set_conf_value "enable_database" "false"
           set_conf_value "enable_dressing" "false"
           set_conf_value "enable_motion" "none"
           set_conf_value "enable_obsidian" "false"

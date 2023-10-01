@@ -312,6 +312,9 @@ installed with the `-w conf` option.
 - [Roiz](https://lazyman.dev/info/Roiz.html)
   - Just a random Neovim config found on Github, works well
   - Install and initialize with `lazyman -w Roiz`
+- [SeniorMars](https://lazyman.dev/info/SeniorMars.html)
+  - The popular Neovim configuration of SeniorMars
+  - Install and initialize with `lazyman -w SeniorMars`
 - [Simple](https://lazyman.dev/info/Simple.html)
   - A remarkably effective Neovim configuration in only one small file
   - The author's [video description of this config](https://youtu.be/AzhSnM0uHvM){:target="\_blank"}{:rel="noopener noreferrer"}
