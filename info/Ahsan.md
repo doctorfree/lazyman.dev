@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Ahsan Configuration Info
 toc: true
 post_style: page
 ---
