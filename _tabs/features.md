@@ -232,7 +232,7 @@ Neovim configuration.
 ### Coding
 
 <div><p>
-  <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/diagnostics.png" style="width:800px;height:600px;">
+  <img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/diagnostics.png" alt="diagnostics" style="width:800px;height:600px;">
 </p></div>
 
 - Auto completion powered by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp){:target="\_blank"}{:rel="noopener noreferrer"}
@@ -250,14 +250,14 @@ Neovim configuration.
 #### Go development
 
 <div align="center"><p>
-<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/go-dev.png" style="width:1152px;height:635px;">
+<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/go-dev.png" alt="go" style="width:1152px;height:635px;">
 </p>
 </div>
 
 #### Debugging via DAP
 
 <div align="center"><p>
-<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/dap.png" style="width:1152px;height:635px;">
+<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/dap.png" alt="dap" style="width:1152px;height:635px;">
 </p>
 </div>
 
@@ -293,20 +293,20 @@ The default namespace is `free`. This was the traditional namespace used by
 all previous versions of Lazyman:
 
 <div align="center"><p>
-<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/free.png" style="width:1040px;height:643px;">
+<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/free.png" alt="free" style="width:1040px;height:643px;">
 </p>
 </div>
 
 The `onno` namespace is based on the `ONNO` Lazyman Neovim configuration:
 
 <div align="center"><p>
-<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/onno.png" style="width:1040px;height:643px;">
+<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/onno.png" alt="onno" style="width:1040px;height:643px;">
 </p>
 </div>
 
 The `ecovim` namespace is based on the `Ecovim` Lazyman Neovim configuration:
 
 <div align="center"><p>
-<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/ecovim.png" style="width:1040px;height:643px;">
+<img src="https://raw.githubusercontent.com/wiki/doctorfree/nvim-lazyman/screenshots/ecovim.png" alt="ecovim" style="width:1040px;height:643px;">
 </p>
 </div>
