@@ -140,7 +140,7 @@
       {% assign _left = _left | append: ' loading="lazy"' %}
     {% endif %}
 
-    {% if page.layout == 'home' or page.layout == 'post' %}
+    {% if page.layout == 'home' %}
       <!-- create the image wrapper -->
       {% assign _wrapper_start = '<div class="preview-img ' | append: _class | append: '">' %}
 
@@ -157,10 +157,8 @@
         {% capture _class %}
           class="img-link{% unless _lqip %} shimmer{% endunless %}"
         {% endcapture %}
-<!--
         {% assign _img_content = _img_content | slice: 0, _size | append: _class | append: '>' %}
--->
-        {% assign _img_content = _img_content | slice: 0, _size | append: '>' %}
+
       {% else %}
         <!-- create the image wrapper -->
         {% assign _wrapper_start = _final_src
