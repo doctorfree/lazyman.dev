@@ -507,6 +507,19 @@ configuration is relocatable by doing something like the following in Lua:
 local config_path = vim.fn.stdpath("config") .. "/init.lua"
 ```
 
+Another example custom Neovim configuration not yet supported by Lazyman
+is the `NvChad` based [`Vimacs` configuration](https://github.com/UTFeight/vimacs).
+The `Vimacs` Neovim configuration can be installed with the command:
+
+```bash
+lazyman -V https://github.com/UTFeight/vimacs -D custom -N nvim-Vimacs
+```
+
+Note the `-V url` argument. This indicates to `lazyman` that this is an
+`NvChad` based configuration and should be installed accordingly. The `-D custom`
+argument indicates that the `NvChad` custom configuration resides in the
+`custom` subdirectory of the repository.
+
 Custom Neovim configurations will be displayed and available in subsequent
 runs of `lazyman` in the Lazyman Menu System.
 
