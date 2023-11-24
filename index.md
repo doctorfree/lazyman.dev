@@ -8,6 +8,12 @@ post_style: page
 
 The Lazyman project can be used to install, initialize, and manage multiple
 Neovim configurations. Over 100 popular Neovim configurations are supported.
+
+**NEWS!** `Lazyman` is now available as a [Kasm Workspace](https://kasmweb.com)
+by adding `https://doctorfree.github.io/kasm-registry/` as a
+[Kasm 3rd party registry](https://www.kasmweb.com/docs/latest/guide/workspace_registry.html)
+and installing the `Neovim` or `Deluxe` workspace in your Kasm instance.
+
 Lazyman provides a character-based menu interface as well as a weath of
 command line options. The Lazyman main menu looks like this:
 

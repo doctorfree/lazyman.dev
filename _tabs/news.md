@@ -8,6 +8,13 @@ post_style: page
 
 # Lazyman Neovim Configuration Manager News
 
+## Lazyman in Kasm workspaces
+
+`Lazyman` is now available as a [Kasm Workspace](https://kasmweb.com)
+by adding `https://doctorfree.github.io/kasm-registry/` as a
+[Kasm 3rd party registry](https://www.kasmweb.com/docs/latest/guide/workspace_registry.html)
+and installing the `Neovim` or `Deluxe` workspace in your Kasm instance.
+
 ## New namespace based on Ecovim
 
 Lazyman version 3.1 introduced the `ecovim` namespace of the `Lazyman`
