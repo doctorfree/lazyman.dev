@@ -13,7 +13,21 @@ post_style: page
 `Lazyman` is now available as a [Kasm Workspace](https://kasmweb.com)
 by adding `https://doctorfree.github.io/kasm-registry/` as a
 [Kasm 3rd party registry](https://www.kasmweb.com/docs/latest/guide/workspace_registry.html)
-and installing the `Neovim` or `Deluxe` workspace in your Kasm instance.
+and installing the `Neovim` or `Deluxe` workspace in your `Kasm` instance.
+
+## Lazyman `lman` convenience script
+
+Version 3.1.3r5 of Lazyman introduces a new convenience script `lman`.
+
+The `lman` command can be used to invoke Neovim with the Lazyman Neovim
+configuration regardless of `NVIM_APPNAME` environment setting. The `lman`
+command can be used to edit a file using the Lazyman Neovim config as follows:
+
+```bash
+lman /path/to/file.ext
+```
+
+Thanks to Github user `wxguy` for this convenience script.
 
 ## New namespace based on Ecovim
 
